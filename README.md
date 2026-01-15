@@ -153,6 +153,15 @@ Please open an issue before submitting major changes.
 
 ---
 
+## Roadmap
+
+- [ ] Graph-based attack path visualizer
+- [ ] Cloud environment support
+- [ ] Agent marketplace
+- [ ] Reinforcement learning–based decision engine
+
+---
+
 ## Status
 
 This repository contains the project structure and foundational components of the AAPP-MART engine.  

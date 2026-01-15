@@ -1,6 +1,6 @@
 # AAPP-MART  
 
-![AAPP-MART Logo](docs/logo/aappmart_logo.png)
+<p align="center"><img src="docs/logo/aappmart_logo.png" width="350" alt="AAPP-MART Logo"></p>
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/secwexen/secwexen-aappmart/build.yml?label=Build)
 ![Lint](https://img.shields.io/github/actions/workflow/status/secwexen/secwexen-aappmart/lint.yml?label=Lint)

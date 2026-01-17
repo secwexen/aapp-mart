@@ -9,6 +9,8 @@
 ![Release](https://img.shields.io/github/v/release/secwexen/aappmart)
 ![Python Versions](https://img.shields.io/pypi/pyversions/aappmart)
 ![License](https://img.shields.io/github/license/secwexen/aappmart)
+![Repo Size](https://img.shields.io/github/repo-size/secwexen/aappmart)
+![Last Commit](https://img.shields.io/github/last-commit/secwexen/aappmart)
 [![Website](https://img.shields.io/website?url=https://secwexen.github.io/aappmart/)](https://secwexen.github.io/aappmart/)
 
 *An autonomous intelligence engine that thinks like an attacker to protect defenders.*

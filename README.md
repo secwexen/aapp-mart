@@ -30,7 +30,7 @@ It predicts attack paths using artificial intelligence and simulates them with a
 helping organizations identify and mitigate risks before they are exploited.  
 
 
-for detailed documentation, please visit [Website](docs/index.md)
+for detailed documentation, please visit [Website](https://secwexen.github.io/aappmart/)
 
 ---
 

@@ -1,7 +1,7 @@
 # AAPP-MART  
 
 <p align="center">
-<img src="docs/logo/aappmart_logo.png" width="300" alt="aappmart_logo">
+<img src="docs/logo/aappmart_logo.png?raw=true" width="300" alt="aappmart_logo">
 </p>
 
 ![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aappmart/build.yml?label=Build)

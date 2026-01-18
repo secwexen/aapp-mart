@@ -1,0 +1,6 @@
+# Jekyll
+favicon: docs/logo/aappmart_logo.png
+
+# MkDocs / Material for MkDocs
+extra:
+  favicon: docs/logo/aappmart_logo.png

@@ -9,6 +9,8 @@
 ![Contributors](https://img.shields.io/github/contributors/secwexen/aappmart)
 ![Stars](https://img.shields.io/github/stars/secwexen/aappmart)
 ![Forks](https://img.shields.io/github/forks/secwexen/aappmart)
+![Open Issues](https://img.shields.io/github/issues/secwexen/aappmart)
+![Open PRs](https://img.shields.io/github/issues-pr/secwexen/aappmart)
 ![Release](https://img.shields.io/github/v/release/secwexen/aappmart)
 ![Python Versions](https://img.shields.io/pypi/pyversions/aappmart)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightblue)

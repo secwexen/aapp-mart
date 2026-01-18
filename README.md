@@ -8,6 +8,7 @@
 ![Coverage](https://img.shields.io/codecov/c/github/secwexen/aappmart)
 ![Release](https://img.shields.io/github/v/release/secwexen/aappmart)
 ![Python Versions](https://img.shields.io/pypi/pyversions/aappmart)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightblue)
 ![License](https://img.shields.io/github/license/secwexen/aappmart)
 ![Repo Size](https://img.shields.io/github/repo-size/secwexen/aappmart)
 ![Last Commit](https://img.shields.io/github/last-commit/secwexen/aappmart)
@@ -102,6 +103,18 @@ aappmart/
 ├── setup.py
 └── README.md
 ```
+
+---
+
+## Platform Support
+
+AAPP-MART is a cross-platform Python project and runs on:
+
+- Linux
+- macOS
+- Windows
+
+No platform-specific dependencies are required.
 
 ---
 

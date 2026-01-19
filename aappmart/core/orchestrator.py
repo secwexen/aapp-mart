@@ -16,7 +16,6 @@ class Orchestrator:
         self.engine.run()
         logging.info("Orchestrator finished")
 
-
 if __name__ == "__main__":
     orchestrator = Orchestrator()
     orchestrator.run()

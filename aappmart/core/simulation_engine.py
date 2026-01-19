@@ -1,11 +1,11 @@
 import logging
 from core.pipeline import Pipeline
-from agents.dummy_agent import DummyAgent
+from agents.agent_registry import AgentRegistry
 
 class SimulationEngine:
 
     def __init__(self):
-        self.agents = [DummyAgent("Agent1"), DummyAgent("Agent2")]
+        self.agents = AgentRegistry.get_all_agents()
         self.pipeline = Pipeline(steps=5)
 
     def run(self):

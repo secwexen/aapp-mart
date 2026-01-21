@@ -1,5 +1,5 @@
 import logging
-from core.simulation_engine import SimulationEngine
+from aappmart.core.simulation_engine import SimulationEngine
 
 logging.basicConfig(
     level=logging.INFO,

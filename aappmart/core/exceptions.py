@@ -1,3 +1,1 @@
-class SimulationError(Exception):
-    
-    pass
+

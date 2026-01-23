@@ -331,7 +331,7 @@ regulations, and organizational policies.
 ## Support & Contact
 
 For support, questions, or feature requests, please open an issue on GitHub:
-[issues](https://github.com/secwexen/aappmart/issues)
+[GitHub Issues](https://github.com/secwexen/aappmart/issues)
 
 You may also use GitHub Discussions for ideas and general discussions.  
 

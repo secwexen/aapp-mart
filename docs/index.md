@@ -181,5 +181,5 @@ New modules, agents, and predictive components will be added as development prog
 ## Author
 
 - Name: Secwexen
-- Role: Lead Dev
+- Role: Project Manager & Lead Dev
 - GitHub: [github.com/secwexen](https://github.com/secwexen)

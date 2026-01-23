@@ -87,12 +87,12 @@ pip install -r requirements.txt
 
 The documentation is organized as follows:
 
-* [Installation](https://github.com/secwexen/aappmart/blob/main/docs/installation.md)
-* [Agents](https://github.com/secwexen/aappmart/blob/main/docs/agents.md)
-* [Predictors](https://github.com/secwexen/aappmart/blob/main/docs/predictors.md)
-* [Modules](https://github.com/secwexen/aappmart/blob/main/docs/modules.md)
-* [API Reference](https://github.com/secwexen/aappmart/blob/main/docs/api_reference.md)
-* [Architecture Overview](https://github.com/secwexen/aappmart/blob/main/docs/architecture.md)
+* [Installation](installation.md)
+* [Agents](agents.md)
+* [Predictors](predictors.md)
+* [Modules](modules.md)
+* [API Reference](api_reference.md)
+* [Architecture Overview](architecture.md)
 
 ---
 
@@ -140,7 +140,7 @@ print(report)
 ## License
 
 This project is licensed under **Apache License 2.0**.  
-For full details, see the [LICENSE](https://github.com/secwexen/aappmart/blob/main/LICENSE) file in the repository root.  
+For full details, see the [LICENSE](LICENSE) file in the repository root.  
 
 ---
 
@@ -148,7 +148,7 @@ For full details, see the [LICENSE](https://github.com/secwexen/aappmart/blob/ma
 
 Contributions are welcome.  
 Please open an issue before submitting major changes or new features.  
-Refer to [CONTRIBUTING.md](https://github.com/secwexen/aappmart/blob/main/CONTRIBUTING.md) for detailed guidelines.  
+Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.  
 
 ---
 

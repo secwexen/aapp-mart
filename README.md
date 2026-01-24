@@ -223,7 +223,7 @@ No platform-specific dependencies are required.
 git clone https://github.com/secwexen/aappmart.git
 cd aappmart
 
-# 2. Create a virtual environment (Optional but recommended)
+# 2. (Optional but recommended) Create a virtual environment 
 # Linux / macOS
 python3 -m venv venv  
 source venv/bin/activate  

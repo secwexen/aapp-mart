@@ -42,6 +42,20 @@ for detailed documentation, please visit [Website](https://secwexen.github.io/aa
 
 Modern infrastructures are too complex for traditional security testing. AAPP-MART combines predictive AI with autonomous adversarial simulation to continuously evaluate an environment’s real attack surface.
 
+### Why AAPP-MART?
+
+AAPP-MART stands out from traditional offensive security tools in its approach:
+
+- **Traditional scanners** → static, reactive, often limited to known vulnerabilities.
+- **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
+- **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
+
+By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
+
+---
+
+## System Components
+
 The system operates in two major components:
 
 - **AAPP (AI Attack Path Predictor)**  
@@ -222,7 +236,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-> ⚠️ Note: Core implementation is still in progress. Some modules may not be functional yet.
+> ⚠️ Note: Some modules may be under active development. Functionality may be limited.
 
 ---
 
@@ -238,9 +252,7 @@ report = engine.get_report()
 print(report)
 ```
 
-> ⚠️ Note: Core implementation is still in progress.  
-> Some modules may not be fully functional yet.  
-> This example is for demonstration purposes and to help you get started.  
+> ⚠️ Note: Example is for demonstration purposes. Some features may not yet be fully implemented. 
 
 ---
 
@@ -251,6 +263,8 @@ Run unit tests with:
 ```bash
 pytest
 ```
+
+> ⚠️ Note: Some modules are under active development. Certain tests may be skipped or marked as expected failures until those features are fully implemented.
 
 ---
 
@@ -291,18 +305,36 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 
-- [ ] Graph-based attack path visualizer
-- [ ] Cloud environment support
-- [ ] Agent marketplace
-- [ ] Reinforcement learning–based decision engine
+AAPP-MART development is structured into strategic phases:
+
+**Phase 1 – Research & Architecture**
+- Core AI prediction engine (AAPP) design
+- Multi-agent simulation framework (MART) prototyping
+- Initial attack graph models and risk scoring
+
+**Phase 2 – Core Implementation**
+- Integration of prediction and simulation engines
+- Autonomous agent behaviors for reconnaissance, exploitation, and lateral movement
+- MITRE ATT&CK alignment and reporting pipeline
+
+**Phase 3 – Ecosystem & Advanced Features**
+- Graph-based visualization and dashboards
+- Cloud and hybrid environment support
+- Agent marketplace and reinforcement learning–based decision engine
+- Continuous security validation and SOC augmentation
 
 ---
 
 ## Development Status
 
-⚠️ Early-stage open source project. Core implementation is still in progress.  
-This repository provides the project structure and foundational components of the AAPP-MART engine.  
-Additional advanced modules and controlled security-testing features will be added progressively.  
+⚠️ Early-stage open source project. Core implementation is still in progress.   
+
+AAPP-MART is currently under active development.
+This repository provides the foundational architecture, core interfaces,
+and initial logic of the AAPP-MART engine.
+
+Advanced prediction models, autonomous agent behaviors,
+and controlled simulation capabilities are being implemented progressively.
 
 ---
 

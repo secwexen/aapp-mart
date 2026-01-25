@@ -204,6 +204,7 @@ Some modules are under active development and may not yet be fully implemented.
 │       ├── reports/               # Generated reports
 │       ├── main.py                # AAPPMART entry point
 │       └── __init__.py            # AAPPMART package initializer
+│ 
 ├── docs/
 ├── examples/
 ├── internal_api/

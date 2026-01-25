@@ -190,17 +190,20 @@ Some modules are under active development and may not yet be fully implemented.
 ```
 .
 ├── .github/
-├── aappmart/
-│   ├── aapp/                  # Attack Path Predictor
-│   ├── agents/                # Autonomous attacker agents
-│   ├── api/                   # Optional REST API
-│   ├── cli/                   # Command-line interface
-│   ├── core/                  # Autonomous simulation brain
-│   ├── data/                  # Sample data & signatures
-│   ├── mart/                  # Multi-Agent Red Team
-│   ├── modules/               # Pluggable engine modules
-│   ├── predictors/            # Prediction logic & models
-│   └── reports/               # Generated reports
+├── src/
+│   └── aappmart/
+│       ├── aapp/                  # Attack Path Predictor
+│       ├── agents/                # Autonomous attacker agents
+│       ├── api/                   # Optional REST API
+│       ├── cli/                   # Command-line interface
+│       ├── core/                  # Autonomous simulation brain
+│       ├── data/                  # Sample data & signatures
+│       ├── mart/                  # Multi-Agent Red Team
+│       ├── modules/               # Pluggable engine modules
+│       ├── predictors/            # Prediction logic & models
+│       ├── reports/               # Generated reports
+│       ├── main.py                # AAPPMART entry point
+│       └── __init__.py            # AAPPMART package initializer
 │
 ├── docs/
 ├── examples/

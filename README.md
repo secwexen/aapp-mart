@@ -221,7 +221,6 @@ Some modules are under active development and may not yet be fully implemented.
 ├── Makefile
 ├── README.md
 ├── SECURITY.md
-├── main.py
 ├── pyproject.toml
 ├── requirements-dev.txt
 ├── requirements.txt

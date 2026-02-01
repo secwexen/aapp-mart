@@ -188,7 +188,7 @@ The following directory layout shows the planned structure of the project.
 Some modules are under active development and may not yet be fully implemented.  
 
 ```
-aappmart
+.
 ├── .github/
 ├── src/
 │   └── aappmart/

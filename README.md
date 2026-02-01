@@ -187,7 +187,7 @@ Final Report & Defense Recommendations
 .
 ├── .github/
 ├── src/
-│   └── aappmart/
+│   └── aapp_mart/
 │       ├── aapp/                  # Attack Path Predictor
 │       ├── agents/                # Autonomous attacker agents
 │       ├── api/                   # Optional REST API

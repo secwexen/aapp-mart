@@ -70,8 +70,8 @@ AAPP‑MART is built on a modular architecture with the following layers:
 For development setup, you can clone the repository and create a Python virtual environment:
 
 ```bash
-git clone https://github.com/secwexen/aappmart
-cd aappmart
+git clone https://github.com/secwexen/aapp-mart
+cd aapp-mart
 
 # Create a virtual environment
 python -m venv venv

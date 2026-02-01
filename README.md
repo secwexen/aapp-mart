@@ -1,25 +1,25 @@
 # AAPP-MART  
 
 <p align="center">
-<img src="docs/logo/aappmart_logo.png" width="250" alt="aappmart_logo">
+<img src="docs/logo/aappmart_logo.png" width="250" alt="aapp-mart_logo">
 </p>
 
-![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aappmart/build.yml?label=Build)
-![Lint](https://img.shields.io/github/actions/workflow/status/secwexen/aappmart/lint.yml?label=Lint)
-![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aappmart/codeql.yml?label=CodeQL)
-![Coverage](https://img.shields.io/codecov/c/github/secwexen/aappmart)
-![Contributors](https://img.shields.io/github/contributors/secwexen/aappmart)
-![Stars](https://img.shields.io/github/stars/secwexen/aappmart)
-![Forks](https://img.shields.io/github/forks/secwexen/aappmart)
-![Open Issues](https://img.shields.io/github/issues/secwexen/aappmart)
-![Open PRs](https://img.shields.io/github/issues-pr/secwexen/aappmart)
-![Release](https://img.shields.io/github/v/release/secwexen/aappmart)
-![Python Versions](https://img.shields.io/pypi/pyversions/aappmart)
+![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/build.yml?label=Build)
+![Lint](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/lint.yml?label=Lint)
+![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?label=CodeQL)
+![Coverage](https://img.shields.io/codecov/c/github/secwexen/aapp-mart)
+![Contributors](https://img.shields.io/github/contributors/secwexen/aapp-mart)
+![Stars](https://img.shields.io/github/stars/secwexen/aapp-mart)
+![Forks](https://img.shields.io/github/forks/secwexen/aapp-mart)
+![Open Issues](https://img.shields.io/github/issues/secwexen/aapp-mart)
+![Open PRs](https://img.shields.io/github/issues-pr/secwexen/aapp-mart)
+![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)
+![Python Versions](https://img.shields.io/pypi/pyversions/aapp-mart)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgray)
-![License](https://img.shields.io/github/license/secwexen/aappmart)
-![Repo Size](https://img.shields.io/github/repo-size/secwexen/aappmart)
-![Last Commit](https://img.shields.io/github/last-commit/secwexen/aappmart)
-[![Website](https://img.shields.io/website?url=https://secwexen.github.io/aappmart/)](https://secwexen.github.io/aappmart/)
+![License](https://img.shields.io/github/license/secwexen/aapp-mart)
+![Repo Size](https://img.shields.io/github/repo-size/secwexen/aapp-mart)
+![Last Commit](https://img.shields.io/github/last-commit/secwexen/aapp-mart)
+[![Website](https://img.shields.io/website?url=https://secwexen.github.io/aappmart/)](https://secwexen.github.io/aapp-mart/)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
 *An autonomous intelligence engine that thinks like an attacker to protect defenders.*
@@ -247,8 +247,8 @@ No platform-specific dependencies are required.
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/secwexen/aappmart.git
-cd aappmart
+git clone https://github.com/secwexen/aapp-mart.git
+cd aapp-mart
 
 # 2. (Optional but recommended) Create a virtual environment 
 # Linux / macOS

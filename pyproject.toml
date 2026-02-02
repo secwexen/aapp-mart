@@ -14,26 +14,28 @@ authors = [
   { name = "secwexen" }
 ]
 
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
 dependencies = [
-  # Core analytics & graph
   "networkx>=3.2",
   "numpy>=1.26",
   "pandas>=2.1",
   "scikit-learn>=1.4",
 
-  # API layer
   "fastapi>=0.110",
   "uvicorn[standard]>=0.27",
 
-  # Data validation & config
   "pydantic>=2.6",
   "pyyaml>=6.0",
 
-  # Networking
   "requests>=2.31",
   "httpx>=0.26",
 
-  # CLI / UX / visualization
   "rich>=13.7",
   "tqdm>=4.66",
   "matplotlib>=3.8",

@@ -290,7 +290,7 @@ To run the unit tests:
 1. Ensure you are in the project root directory:
 
 ```bash
-cd aappmart
+cd aapp-mart
 ```
 
 2. (Optional) Activate your virtual environment:

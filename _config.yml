@@ -50,15 +50,3 @@ defaults:
       type: "agents"
     values:
       layout: "page"
-
-nav:
-  - name: "Home"
-    link: "/"
-  - name: "Docs"
-    link: "/docs/"
-  - name: "Examples"
-    link: "/examples/"
-  - name: "Modules"
-    link: "/modules/"
-  - name: "Agents"
-    link: "/agents/"

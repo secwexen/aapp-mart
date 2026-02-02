@@ -5,7 +5,7 @@
 </p>
 
 ![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/build.yml?branch=main&label=Build)
-![Lint](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/lint.yml?branch=main&label=Lint)
+![Lint](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/pylint.yml?branch=main&label=Lint)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
 ![Coverage](https://img.shields.io/codecov/c/github/secwexen/aapp-mart)
 ![Contributors](https://img.shields.io/github/contributors/secwexen/aapp-mart)

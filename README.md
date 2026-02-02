@@ -4,9 +4,10 @@
 <img src="docs/logo/aappmart_logo.png" width="250" alt="aapp-mart_logo">
 </p>
 
-![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/build.yml?branch=main&label=Build)
+![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/ci.yml?branch=main&label=Build)
 ![PyLint](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/pylint.yml?branch=main&label=PyLint)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
+![Dependencies](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/dependency-review.yml?branch=main&label=Dependencies)
 ![Coverage](https://img.shields.io/codecov/c/github/secwexen/aapp-mart)
 ![Contributors](https://img.shields.io/github/contributors/secwexen/aapp-mart)
 ![Stars](https://img.shields.io/github/stars/secwexen/aapp-mart)

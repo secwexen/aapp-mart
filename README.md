@@ -20,7 +20,6 @@
 ![License](https://img.shields.io/github/license/secwexen/aapp-mart)
 ![Repo Size](https://img.shields.io/github/repo-size/secwexen/aapp-mart)
 ![Last Commit](https://img.shields.io/github/last-commit/secwexen/aapp-mart)
-[![Website](https://img.shields.io/website?url=https://secwexen.github.io/aapp-mart/)](https://secwexen.github.io/aapp-mart/)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
 *An autonomous intelligence engine that thinks like an attacker to protect defenders.*

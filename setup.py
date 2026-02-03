@@ -9,7 +9,6 @@ with open(requirements_path, "r", encoding="utf-8") as f:
 
 setup(
     name="aapp-mart",
-    version="0.1.0",
     author="Secwexen",
     description="Autonomous Offensive Security Engine — AI-driven attack path prediction & multi-agent red team simulation",
     long_description=(this_directory / "README.md").read_text(encoding="utf-8"),

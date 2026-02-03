@@ -26,7 +26,7 @@ AAPP‑MART includes five primary module categories:
 Located in:
 
 ```
-aappmart/modules/system/
+aapp-mart/modules/system/
 ```
 
 System modules provide access to operating system information and local machine resources.
@@ -46,7 +46,7 @@ Example file: `system_info.py`
 Located in:
 
 ```
-aappmart/modules/network/
+aapp-mart/modules/network/
 ```
 
 Network modules enable agents to perform network‑related operations.
@@ -66,7 +66,7 @@ Example file: `network_scan.py`
 Located in:
 
 ```
-aappmart/modules/memory/
+aapp-mart/modules/memory/
 ```
 
 Memory modules focus on memory inspection and analysis.
@@ -85,7 +85,7 @@ Example file: `memory_parser.py`
 Located in:
 
 ```
-aappmart/modules/automation/
+aapp-mart/modules/automation/
 ```
 
 Automation modules allow agents to perform automated tasks and workflows.
@@ -105,7 +105,7 @@ Example file: `task_automation.py`
 Located in:
 
 ```
-aappmart/modules/offensive/
+aapp-mart/modules/offensive/
 ```
 
 Offensive modules are reserved for **controlled, ethical testing scenarios** such as simulation environments or sandboxed research.  
@@ -144,7 +144,7 @@ To create a new module:
 Example structure:
 
 ```
-aappmart/modules/custom_module/
+aapp-mart/modules/custom_module/
     ├── __init__.py
     └── custom_tool.py
 ```

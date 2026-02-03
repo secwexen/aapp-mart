@@ -9,7 +9,7 @@ Modules are designed to be lightweight, isolated, and easily extendable, allowin
 
 Each module follows a simple and consistent structure:
 
-- A dedicated directory under `aappmart/modules/`
+- A dedicated directory under `src/aapp-mart/modules/`
 - An `__init__.py` file to define the module package
 - One or more Python files implementing module functionality
 - Optional helper utilities or configuration files

@@ -21,8 +21,8 @@ Before installing AAPP‑MART, ensure your environment meets the following requi
 Use Git to clone the AAPP‑MART repository:
 
 ```bash
-git clone https://github.com/secwexen/aappmart.git
-cd aappmart
+git clone https://github.com/secwexen/aapp-mart.git
+cd aapp-mart
 ```
 
 ---
@@ -42,8 +42,8 @@ venv\Scripts\activate      # Windows
 ### Using Conda:
 
 ```bash
-conda create -n aappmart python=3.10
-conda activate aappmart
+conda create -n aapp-mart python=3.10
+conda activate aapp-mart
 ```
 
 ---
@@ -111,7 +111,7 @@ If you plan to contribute or extend the framework:
 pip install -r requirements-dev.txt
 ```
 
-3. Follow the project structure under `aappmart/`
+3. Follow the project structure under `src/aapp_mart/`
 
 ---
 
@@ -120,7 +120,7 @@ pip install -r requirements-dev.txt
 Once the first stable release is published, AAPP‑MART will be installable via PyPI:
 
 ```bash
-pip install aappmart
+pip install aapp-mart
 ```
 
 This section will be updated when the package becomes publicly available.

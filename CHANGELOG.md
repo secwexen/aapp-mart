@@ -32,6 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - ML training dataset and features in `ml_training/`
 
 ### Fixed
-- Potential fix for GitHub Actions workflow permission alerts (#2–#7)
+- Potential fix for GitHub Actions workflow permission alerts (#7)
 
 ⚠️ Core simulation engine and attack orchestration are still under active development. This is a **pre-release**.

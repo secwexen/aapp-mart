@@ -27,7 +27,7 @@ Both interfaces share a common schema layer for request and response validation.
 The REST API is located under:
 
 ```
-aappmart/api/rest/
+aapp-mart/api/rest/
 ```
 
 ### Base URL
@@ -98,7 +98,7 @@ Fetches the status or result of a task.
 The WebSocket API is located under:
 
 ```
-aappmart/api/websocket/
+aapp-mart/api/websocket/
 ```
 
 ### WebSocket Endpoint

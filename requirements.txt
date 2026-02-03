@@ -14,7 +14,7 @@ pyyaml>=6.0
 
 # === Networking ===
 httpx>=0.26
-requests>=2.31
+requests>=2.32.4
 
 # === CLI / UX / Visualization ===
 rich>=13.7

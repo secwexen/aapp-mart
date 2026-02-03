@@ -11,7 +11,7 @@ This document explains the predictor architecture, available predictor types, an
 All predictors inherit from the base class:
 
 ```
-aappmart/predictors/base_predictor.py
+aapp-mart/predictors/base_predictor.py
 ```
 
 A typical predictor implements:
@@ -36,7 +36,7 @@ AAPP‑MART includes three primary predictor categories:
 Located in:
 
 ```
-aappmart/predictors/ml_predictor.py
+aapp-mart/predictors/ml_predictor.py
 ```
 
 Machine learning predictors use statistical or learned models to generate predictions.
@@ -54,11 +54,9 @@ Example structure:
 ```python
 class MLPredictor(BasePredictor):
     def load(self):
-        # Load ML model or weights
         pass
 
     def predict(self, data):
-        # Run inference
         return {"score": 0.87}
 ```
 
@@ -69,7 +67,7 @@ class MLPredictor(BasePredictor):
 Located in:
 
 ```
-aappmart/predictors/rule_predictor.py
+aapp-mart/predictors/rule_predictor.py
 ```
 
 Rule‑based predictors use deterministic logic instead of learned models.
@@ -100,7 +98,7 @@ Rule‑based predictors are fast, transparent, and easy to debug.
 Located in:
 
 ```
-aappmart/predictors/hybrid_predictor.py
+aapp-mart/predictors/hybrid_predictor.py
 ```
 
 Hybrid predictors combine ML models with rule‑based logic.
@@ -146,7 +144,7 @@ pipeline = ["SystemAgent", "MLPredictor", "RulePredictor"]
 
 To create your own predictor:
 
-1. Create a new file under `aappmart/predictors/`
+1. Create a new file under `src/aapp-mart/predictors/`
 2. Inherit from `BasePredictor`
 3. Implement the required methods
 

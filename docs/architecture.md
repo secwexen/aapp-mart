@@ -27,7 +27,7 @@ All components communicate through a shared **Knowledge Graph**.
 ## 2. Directory Structure
 
 ```
-aappmart/
+aapp-mart/
     aapp/
     mart/
     core/

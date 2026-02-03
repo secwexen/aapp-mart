@@ -27,7 +27,7 @@ Both interfaces share a common schema layer for request and response validation.
 The REST API is located under:
 
 ```
-aapp-mart/api/rest/
+src/aapp-mart/api/rest/
 ```
 
 ### Base URL
@@ -54,6 +54,7 @@ Returns a list of registered agents.
 ---
 
 #### **POST /agents/run**
+
 Executes a specific agent with given parameters.
 
 **Request body**
@@ -76,6 +77,7 @@ Executes a specific agent with given parameters.
 ---
 
 #### **POST /pipeline/execute**
+
 Runs a pipeline consisting of agents, predictors, and modules.
 
 **Request body**
@@ -89,6 +91,7 @@ Runs a pipeline consisting of agents, predictors, and modules.
 ---
 
 #### **GET /tasks/{task_id}**
+
 Fetches the status or result of a task.
 
 ---

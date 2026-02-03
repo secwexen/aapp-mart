@@ -33,8 +33,6 @@ helping organizations identify and mitigate risks before they are exploited.
 For a high-level explanation of the project’s purpose and positioning,
 see [ABOUT.md](ABOUT.md).  
 
-for detailed documentation, please visit [Website](https://secwexen.github.io/aappmart/)
-
 ---
 
 ## Overview

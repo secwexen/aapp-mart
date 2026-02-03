@@ -98,7 +98,7 @@ Fetches the status or result of a task.
 The WebSocket API is located under:
 
 ```
-aapp-mart/api/websocket/
+src/aapp-mart/api/websocket/
 ```
 
 ### WebSocket Endpoint
@@ -131,7 +131,7 @@ aapp-mart/api/websocket/
 Schemas are defined under:
 
 ```
-aappmart/api/schemas/
+src/aapp-mart/api/schemas/
 ```
 
 Schemas ensure consistent validation for all API requests and responses.

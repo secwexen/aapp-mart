@@ -22,7 +22,7 @@
 
 *An autonomous intelligence engine that thinks like an attacker to protect defenders.*
 
-### Autonomous Attack Path Prediction & Multi-Agent Red Team Engine
+## Autonomous Attack Path Prediction & Multi-Agent Red Team Engine
 
 AAPP-MART is an autonomous offensive security engine designed for security teams and researchers.
 It predicts attack paths using artificial intelligence and simulates them with a multi-agent red team,

@@ -328,7 +328,7 @@ List available modules:
 aapp-mart modules list
 ```
 
-See [docs/cli.md](docs/cli.md) for more CLI commands and advanced options.
+See [CLI Details](docs/cli.md) for more CLI commands and advanced options.
 
 ---
 

@@ -8,7 +8,6 @@
 ![PyLint](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/pylint.yml?branch=main&label=PyLint)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
 ![Dependencies](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/dependency-review.yml?branch=main&label=Dependencies)
-![Coverage](https://img.shields.io/codecov/c/github/secwexen/aapp-mart)
 ![Python Versions](https://img.shields.io/pypi/pyversions/aapp-mart)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgray)
 ![License](https://img.shields.io/github/license/secwexen/aapp-mart)

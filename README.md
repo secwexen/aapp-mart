@@ -294,8 +294,8 @@ Target: 192.168.1.10
 ==========================================
 ```
 
-Output is illustrative—actual results depend on your environment and enabled modules.  
-Risk scores and attack paths are heuristic and for demonstration only.  
+> Output is illustrative—actual results depend on your environment and enabled modules.  
+> Risk scores and attack paths are heuristic and for demonstration only.  
 
 ---
 

@@ -175,8 +175,7 @@ Final Report & Defense Recommendations
 ## Directory Structure 
 
 ```
-.
-├── .github/
+aapp-mart
 ├── src/
 │   └── aapp_mart/
 │       ├── aapp/                  # Attack Path Predictor
@@ -199,8 +198,6 @@ Final Report & Defense Recommendations
 ├── ml_training/
 ├── scripts/
 ├── tests/
-├── .gitignore
-├── .pre-commit-config.yaml
 ├── ABOUT.md
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md

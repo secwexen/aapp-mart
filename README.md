@@ -187,6 +187,7 @@ Final Report & Defense Recommendations
 │       ├── aapp/                  # Attack Path Predictor
 │       ├── agents/                # Autonomous attacker agents
 │       ├── api/                   # Optional REST API
+│       ├── common/                # Common, reusable base classes or constants
 │       ├── cli/                   # Command-line interface
 │       ├── core/                  # Autonomous simulation brain
 │       ├── data/                  # Sample data & signatures

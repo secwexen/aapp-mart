@@ -261,6 +261,19 @@ pip install -r requirements.txt
 
 ---
 
+## Environment Configuration
+
+AAPP-MART uses environment variables for configuration.
+For local development, copy the example file and adjust values as needed:
+
+```bash
+cp .env.example .env
+```
+
+> Never commit your real .env file, as it may contain sensitive or environment‑specific information.
+
+---
+
 ## Example Quick Start
 
 ```python

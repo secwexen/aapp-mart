@@ -12,6 +12,7 @@
 ![Python Versions](https://img.shields.io/pypi/pyversions/aapp-mart)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgray)
 ![License](https://img.shields.io/github/license/secwexen/aapp-mart)
+![Downloads](https://img.shields.io/pypi/dm/aapp-mart?label=Downloads)
 ![Repo Size](https://img.shields.io/github/repo-size/secwexen/aapp-mart)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
@@ -256,11 +257,11 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-> ⚠️ Note: Some modules may be under active development. Functionality may be limited.
+> Note: Some modules may be under active development. Functionality may be limited.
 
 ---
 
-## Quick Start
+## Example Quick Start
 
 ```python
 from aappmart.core.orchestrator import AAPP_MART
@@ -271,37 +272,80 @@ report = engine.get_report()
 print(report)
 ```
 
-> ⚠️ Note: Example is for demonstration purposes. Some features may not yet be fully implemented. 
+> Note: Example is for demonstration purposes. Some features may not yet be fully implemented. 
+
+---
+
+## Example Output
+
+```bash
+=== Attack Path Prediction Report ===
+Target: 192.168.1.10
+
+[+] Predicted Attack Paths:
+  1. Internal Reconnaissance → Credential Access → Lateral Movement → Privilege Escalation
+  2. Initial Access → Exploit Service Vulnerability → Persistence
+
+[+] Risk Score: 8.5 / 10
+
+[+] Recommendations:
+- Patch service X and limit privileged account exposure.
+- Disable unused open ports.
+==========================================
+```
+
+Output is illustrative—actual results depend on your environment and enabled modules.  
+Risk scores and attack paths are heuristic and for demonstration only.  
+
+---
+
+## CLI/API Usage Example
+
+Run an attack simulation:
+```bash
+aapp-mart run --target 192.168.1.10
+```
+
+Generate a prediction-only report:
+```bash
+aapp-mart predict --input data/target_profile.json --output report.txt
+```
+
+List available modules:
+```bash
+aapp-mart modules list
+```
+
+See [docs/cli.md](docs/cli.md) for more CLI commands and advanced options.
 
 ---
 
 ## Testing
 
-To run the unit tests:
+To maintain code quality and reliability, please use the following checks before submitting code or pull requests.
 
-1. Ensure you are in the project root directory:
-
-```bash
-cd aapp-mart
-```
-
-2. (Optional) Activate your virtual environment:
-
-```bash
-# Linux / macOS
-source venv/bin/activate
-
-# Windows (PowerShell)
-venv\Scripts\activate
-```
-
-3. Run all tests with `pytest`:
-
+1. Run all unit tests
+Make sure your code passes all tests.
 ```bash
 pytest
 ```
 
-> ⚠️ Note: Some modules are under active development. Certain tests may be skipped or marked as expected failures until those features are fully implemented.
+2. Check test coverage
+Verify that your changes are covered by tests (coverage.py needs to be installed).
+```bash
+coverage run -m pytest
+coverage report
+```
+
+3. Check code style and linting
+Ensure your code meets the project's style and static analysis requirements.
+```bash
+make lint         # If you have a Makefile with lint target
+# or, run pylint directly:
+pylint src/aapp_mart
+```
+
+> Note: Some modules are under active development. Certain tests may be skipped or marked as expected failures until those features are fully implemented.
 
 ---
 
@@ -325,6 +369,18 @@ pytest
 
 ---
 
+## Documentation
+
+- [Full installation guide](docs/installation.md)
+- [Module development](docs/modules.md)
+- [Prediction engine details](docs/prediction_engine.md)
+- [Examples and quick starts](examples/)
+- [Contributing guidelines](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+- [Security policy](SECURITY.md)
+
+---
+
 ## License
 
 This project is licensed under the Apache License, Version 2.0.  
@@ -333,6 +389,14 @@ See the [LICENSE](LICENSE) file for full details.
 ---
 
 ## Contributing
+
+### Contributing Workflow (Summary)
+
+- Fork the repository and create a feature or fix branch (e.g. `feature/your-feature`).
+- Make your changes and add relevant tests.
+- Ensure all tests pass (`pytest`) and code style checks (e.g. `make lint`).
+- Open a pull request referencing related issues/discussion when possible.
+- All PRs must pass CI checks before merging.
 
 Contributions are welcome.  
 Please open an issue before submitting major changes or new features.  
@@ -364,7 +428,7 @@ AAPP-MART development is structured into strategic phases:
 
 ## Development Status
 
-⚠️ Early-stage open source project. Core implementation is still in progress.   
+Early-stage open source project. Core implementation is still in progress.   
 
 AAPP-MART is currently under active development.
 This repository provides the foundational architecture, core interfaces,

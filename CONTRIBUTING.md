@@ -1,7 +1,6 @@
 # Contributing to AAPP-MART
 
-Thank you for your interest in contributing to AAPP-MART.
-We welcome contributions that improve code quality, security, and documentation.
+Thank you for your interest in contributing to AAPP-MART. We welcome contributions that improve code quality, security, and documentation.  
 
 ---
 
@@ -25,18 +24,33 @@ We welcome contributions that improve code quality, security, and documentation.
 
 ## Development Guidelines
 
-* Follow Python best practices (PEP 8)
-* Write clear, readable, and well-documented code
-* Add or update tests for new functionality
-* Avoid introducing breaking changes without discussion
+- Follow Python best practices (PEP 8)
+- Write clear, readable, and well-documented code
+- Add or update tests for new functionality
+- Use the provided test framework (pytest) and ensure all tests pass
+
+  ```bash
+  pytest tests/
+  ```
+- Avoid introducing breaking changes without discussion
+- Keep code compatible with the project license (Apache-2.0 License)
+
+---
+
+## Branching and Merge Policy
+
+- Use descriptive branch names: `feature/*`, `fix/*`, `docs/*`
+- Base your branch on the latest `main`
+- Before merging, rebase or squash commits to maintain a clean history
+- Merges should be performed via Pull Request after review
 
 ---
 
 ## Commit Messages
 
-* Use clear, descriptive commit messages
-* Reference related issues when applicable
-* Squash commits before submitting a pull request
+- Use clear, descriptive commit messages
+- Reference related issues when applicable
+- Squash commits before submitting a pull request
 
 ---
 
@@ -44,10 +58,25 @@ We welcome contributions that improve code quality, security, and documentation.
 
 All pull requests must:
 
-* Be based on the latest `main` branch
-* Pass all CI checks
-* Include a clear description of the changes
-* Reference related issues or discussions when applicable
+- Be based on the latest `main` branch
+- Pass all CI checks (unit tests, linting, formatting)
+- Include a clear description of the changes
+- Reference related issues or discussions when applicable
+- Include necessary documentation updates if functionality or CLI changes
+
+### Code Review Process
+
+- At least one reviewer must approve the PR
+- Reviewers check for code quality, tests, security, and documentation updates
+- Feedback must be addressed before merging
+
+---
+
+## Documentation Contributions
+
+- Contributions to the documentation are gladly accepted.
+- Update `README.md` or other documentation as needed
+- Follow Markdown formatting and style conventions
 
 ---
 
@@ -67,4 +96,6 @@ Harassment, abuse, or malicious contributions will not be tolerated.
 
 ---
 
-Thank you for helping improve AAPP-MART.
+# Thank You
+
+Thank you for helping improve AAPP-MART!

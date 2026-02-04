@@ -9,15 +9,10 @@
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
 ![Dependencies](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/dependency-review.yml?branch=main&label=Dependencies)
 ![Coverage](https://img.shields.io/codecov/c/github/secwexen/aapp-mart)
-![Contributors](https://img.shields.io/github/contributors/secwexen/aapp-mart)
-![Stars](https://img.shields.io/github/stars/secwexen/aapp-mart)
-![Forks](https://img.shields.io/github/forks/secwexen/aapp-mart)
-![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)
 ![Python Versions](https://img.shields.io/pypi/pyversions/aapp-mart)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgray)
 ![License](https://img.shields.io/github/license/secwexen/aapp-mart)
 ![Repo Size](https://img.shields.io/github/repo-size/secwexen/aapp-mart)
-![Last Commit](https://img.shields.io/github/last-commit/secwexen/aapp-mart)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
 *An autonomous intelligence engine that thinks like an attacker to protect defenders.*

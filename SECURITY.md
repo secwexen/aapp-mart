@@ -16,6 +16,7 @@ Please **do not disclose security issues publicly** until a fix or mitigation ha
 - Initial response: **within 72 hours**
 - Fix or mitigation: **as soon as reasonably possible**
 - Coordinated disclosure will be handled in collaboration with the reporter
+- Security issues will be tracked via a **ticket system or CVE** where applicable
 
 ---
 
@@ -40,6 +41,26 @@ Out of scope:
 - Social engineering
 - Denial-of-service via unrealistic traffic
 - Issues requiring physical access
+
+---
+
+## Reporting Guidelines / Example Report Format
+
+When submitting a security report, please include the following:
+
+- **Software version**: The version of AAPP-MART affected
+- **Environment**: OS, Python version, dependencies
+- **Steps to reproduce**: Detailed step-by-step instructions
+- **Observed behavior**: What happens when the vulnerability occurs
+- **Expected behavior**: What should happen
+- **Supporting evidence**: Include any logs, screenshots, or proof-of-concept code. This **must be provided** to help understand and reproduce the issue.
+- **Additional context**: Any other relevant information, such as timing, frequency, or impact assessment
+
+---
+
+## Legal Notice
+
+Unauthorized testing or exploitation may **violate laws**. Please ensure you have permission before performing any security testing.
 
 ---
 

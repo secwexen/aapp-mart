@@ -15,8 +15,6 @@
 ![Repo Size](https://img.shields.io/github/repo-size/secwexen/aapp-mart)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
-*An autonomous intelligence engine that thinks like an attacker to protect defenders.*
-
 ## Autonomous Attack Path Prediction & Multi-Agent Red Team Engine
 
 AAPP-MART is an autonomous offensive security engine designed for security teams and researchers.
@@ -369,15 +367,10 @@ pylint src/aapp_mart
 
 ---
 
-## Acronym Breakdown and Pronunciation
+## Acronym
 
-**AAPP** → AI Attack Path Predictor  
-**MART** → Multi-Agent Red Team  
-
-**Pronunciation**
-
-- **AAPP** → **ey-ey pee-pee** 
-- **MART** → **maart** 
+- **AAPP** — AI Attack Path Predictor (*ey-ey pee-pee*)  
+- **MART** — Multi-Agent Red Team (*maart*)  
 
 **AAPP-MART** = The fusion of prediction and simulation into a single autonomous attack intelligence engine.
 
@@ -493,6 +486,5 @@ For responsible disclosure and reporting security issues, please see [SECURITY.m
 
 ## Author
 
-**Secwexen** – Project Author & Maintainer  
-**Role:** Project Manager | Lead Developer   
+**Secwexen** – Project Lead & Maintainer   
 **GitHub:** [github.com/secwexen](https://github.com/secwexen)  

@@ -372,7 +372,7 @@ pylint src/aapp_mart
 - **AAPP** — AI Attack Path Predictor (*ey-ey pee-pee*)  
 - **MART** — Multi-Agent Red Team (*maart*)  
 
-**AAPP-MART** = The fusion of prediction and simulation into a single autonomous attack intelligence engine.
+**AAPP-MART** — The fusion of AI-driven attack path prediction and autonomous multi-agent simulation into a unified attack intelligence engine.
 
 ---
 

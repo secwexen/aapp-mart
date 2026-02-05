@@ -21,10 +21,7 @@
 AAPP-MART is an autonomous offensive security engine designed for security teams and researchers.
 It predicts attack paths using artificial intelligence and simulates them with a multi-agent red team,
 helping organizations identify and mitigate risks before they are exploited.  
-
-For a high-level explanation of the project’s purpose and positioning,
-see [ABOUT.md](ABOUT.md).  
-
+  
 for detailed documentation, please visit [AAPP-MART Website](https://secwexen.github.io/aapp-mart/)
 
 ---
@@ -385,6 +382,9 @@ pylint src/aapp_mart
 
 ## Documentation
 
+Detailed guides and references are also available in the repository:
+
+- [About AAPP-MART](ABOUT.md)
 - [Full installation guide](docs/installation.md)
 - [Module development](docs/modules.md)
 - [Prediction engine details](docs/prediction_engine.md)

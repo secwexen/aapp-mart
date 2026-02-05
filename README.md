@@ -376,7 +376,7 @@ pylint src/aapp_mart
 
 **Pronunciation**
 
-- **AAPP** → **ey-ey pii-pii** 
+- **AAPP** → **ey-ey pee-pee** 
 - **MART** → **maart** 
 
 **AAPP-MART** = The fusion of prediction and simulation into a single autonomous attack intelligence engine.

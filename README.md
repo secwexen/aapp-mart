@@ -13,18 +13,16 @@
 ![License](https://img.shields.io/github/license/secwexen/aapp-mart)
 ![Downloads](https://img.shields.io/pypi/dm/aapp-mart?label=Downloads)
 ![Repo Size](https://img.shields.io/github/repo-size/secwexen/aapp-mart)
+![Website](https://img.shields.io/website?url=https://secwexen.github.io/aapp-mart/)](https://secwexen.github.io/aapp-mart/)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
-
-*An autonomous intelligence engine that thinks like an attacker to protect defenders.*
 
 ## Autonomous Attack Path Prediction & Multi-Agent Red Team Engine
 
 AAPP-MART is an autonomous offensive security engine designed for security teams and researchers.
 It predicts attack paths using artificial intelligence and simulates them with a multi-agent red team,
 helping organizations identify and mitigate risks before they are exploited.  
-
-For a high-level explanation of the project’s purpose and positioning,
-see [ABOUT.md](ABOUT.md).  
+  
+for detailed documentation, please visit [AAPP-MART Website](https://secwexen.github.io/aapp-mart/)
 
 ---
 
@@ -229,7 +227,11 @@ No platform-specific dependencies are required.
 
 ## Platform & Safety Notes
 
-- Techniques may perform sensitive actions; use only in isolated lab environments.
+- AAPP-MART is intended to run in **controlled and authorized environments only**.
+- Some simulation techniques may model sensitive attacker behaviors; **use exclusively in isolated lab or test environments**.
+- The engine avoids destructive actions by design, but **misconfiguration or improper use may still pose risks**.
+- Users are responsible for ensuring compliance with **organizational policies, legal requirements, and ethical guidelines**.
+- Do not deploy AAPP-MART against production systems without **explicit authorization and appropriate safeguards**.
 
 ---
 
@@ -273,7 +275,7 @@ cp .env.example .env
 ## Example Quick Start
 
 ```python
-from aappmart.core.orchestrator import AAPP_MART
+from aapp_mart.core.orchestrator import AAPP_MART
 
 engine = AAPP_MART(target="192.168.1.10")
 engine.run()
@@ -325,7 +327,11 @@ List available modules:
 aapp-mart modules list
 ```
 
+<<<<<<< HEAD
 See [CLI Details](docs/cli.md) for more CLI commands and advanced options.
+=======
+See the CLI documentation for available commands and advanced options: [CLI documentation](docs/cli.md)
+>>>>>>> origin/main
 
 ---
 
@@ -369,17 +375,20 @@ pylint src/aapp_mart
 
 ---
 
-## Acronym Breakdown
+## Acronym
 
-**AAPP** → AI Attack Path Predictor  
-**MART** → Multi-Agent Red Team  
+- **AAPP** — AI Attack Path Predictor (*ey-ey pee-pee*)  
+- **MART** — Multi-Agent Red Team (*maart*)  
 
-**AAPP-MART** = The fusion of prediction and simulation into a single autonomous attack intelligence engine.
+**AAPP-MART** — The fusion of AI-driven attack path prediction and autonomous multi-agent simulation into a unified attack intelligence engine.
 
 ---
 
 ## Documentation
 
+Detailed guides and references are also available in the repository:
+
+- [About AAPP-MART](ABOUT.md)
 - [Full installation guide](docs/installation.md)
 - [Module development](docs/modules.md)
 - [Prediction engine details](docs/prediction_engine.md)
@@ -474,7 +483,7 @@ regulations, and organizational policies.
 ## Support & Contact
 
 For support, questions, or feature requests, please open an issue on GitHub:
-[GitHub Issues](https://github.com/secwexen/aappmart/issues)
+[GitHub Issues](https://github.com/secwexen/aapp-mart/issues)
 
 You may also use GitHub Discussions for ideas and general discussions.  
 
@@ -488,6 +497,5 @@ For responsible disclosure and reporting security issues, please see [SECURITY.m
 
 ## Author
 
-**Secwexen** – Project Author & Maintainer  
-**Role:** Project Manager | Lead Developer   
+**Secwexen** – Project Lead & Maintainer   
 **GitHub:** [github.com/secwexen](https://github.com/secwexen)  

@@ -227,7 +227,10 @@ No platform-specific dependencies are required.
 
 ## Platform & Safety Notes
 
-- Techniques may perform sensitive actions; use only in isolated lab environments.
+- Intended for controlled and authorized environments only.
+- Use exclusively in isolated lab or test setups.
+- Avoid production deployment without explicit approval and safeguards.
+- Users are responsible for legal and ethical compliance.
 
 ---
 
@@ -271,7 +274,7 @@ cp .env.example .env
 ## Example Quick Start
 
 ```python
-from aappmart.core.orchestrator import AAPP_MART
+from aapp_mart.core.orchestrator import AAPP_MART
 
 engine = AAPP_MART(target="192.168.1.10")
 engine.run()
@@ -472,7 +475,7 @@ regulations, and organizational policies.
 ## Support & Contact
 
 For support, questions, or feature requests, please open an issue on GitHub:
-[GitHub Issues](https://github.com/secwexen/aappmart/issues)
+[GitHub Issues](https://github.com/secwexen/aapp-mart/issues)
 
 You may also use GitHub Discussions for ideas and general discussions.  
 

@@ -13,6 +13,7 @@
 ![License](https://img.shields.io/github/license/secwexen/aapp-mart)
 ![Downloads](https://img.shields.io/pypi/dm/aapp-mart?label=Downloads)
 ![Repo Size](https://img.shields.io/github/repo-size/secwexen/aapp-mart)
+[![Website](https://img.shields.io/website?url=https://secwexen.github.io/aapp-mart/)](https://secwexen.github.io/aapp-mart/)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
 ## Autonomous Attack Path Prediction & Multi-Agent Red Team Engine
@@ -23,6 +24,8 @@ helping organizations identify and mitigate risks before they are exploited.
 
 For a high-level explanation of the project’s purpose and positioning,
 see [ABOUT.md](ABOUT.md).  
+
+for detailed documentation, please visit [AAPP-MART Website](https://secwexen.github.io/aapp-mart/)
 
 ---
 

@@ -227,10 +227,11 @@ No platform-specific dependencies are required.
 
 ## Platform & Safety Notes
 
-- Intended for controlled and authorized environments only.
-- Use exclusively in isolated lab or test setups.
-- Avoid production deployment without explicit approval and safeguards.
-- Users are responsible for legal and ethical compliance.
+- AAPP-MART is intended to run in **controlled and authorized environments only**.
+- Some simulation techniques may model sensitive attacker behaviors; **use exclusively in isolated lab or test environments**.
+- The engine avoids destructive actions by design, but **misconfiguration or improper use may still pose risks**.
+- Users are responsible for ensuring compliance with **organizational policies, legal requirements, and ethical guidelines**.
+- Do not deploy AAPP-MART against production systems without **explicit authorization and appropriate safeguards**.
 
 ---
 

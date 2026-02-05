@@ -47,3 +47,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Updated ML training files and models
 - Bug fixes and minor enhancements across modules
 - CLI/API usage improvements and documentation updates
+
+⚠️ Note: While the core features are now stable, some advanced modules and experimental agents are still under development. This release is intended for testing, early adoption, and contribution purposes.

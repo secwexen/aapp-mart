@@ -35,3 +35,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Potential fix for GitHub Actions workflow permission alerts (#7)
 
 ⚠️ Core simulation engine and attack orchestration are still under active development. This is a **pre-release**.
+
+--- 
+
+## [0.3.0] - 2026-02-05
+
+### Added
+- Core Simulation Engine completed and tested
+- MART Agent Framework integrated and stabilized
+- AI Attack Path Prediction engine improved and optimized
+- Updated ML training files and models
+- Bug fixes and minor enhancements across modules
+- CLI/API usage improvements and documentation updates

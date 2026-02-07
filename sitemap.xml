@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main Homepage -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Overview Section -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/#overview</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Architecture Section -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/#architecture</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Features Section -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/#features</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Usage / Examples Section -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/#usage</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/#about</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Documentation Section -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/#documentation</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Roadmap Section -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/#roadmap</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Disclaimer / Legal -->
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/#disclaimer</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

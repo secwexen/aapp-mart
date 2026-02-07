@@ -1,0 +1,13 @@
+# robots.txt for AAPP-MART
+
+# Allow all search engines
+User-agent: *
+Disallow: /private/
+Disallow: /internal/
+Allow: /
+
+# Sitemap location
+Sitemap: https://secwexen.github.io/aapp-mart/sitemap.xml
+
+# Optional crawl delay  
+Crawl-delay: 10

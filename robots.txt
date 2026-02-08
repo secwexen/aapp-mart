@@ -2,12 +2,8 @@
 
 # Allow all search engines
 User-agent: *
-Disallow: /private/
-Disallow: /internal/
-Allow: /
+Disallow: /aapp-mart/private/
+Disallow: /aapp-mart/internal/
 
 # Sitemap location
 Sitemap: https://secwexen.github.io/aapp-mart/sitemap.xml
-
-# Optional crawl delay  
-Crawl-delay: 10

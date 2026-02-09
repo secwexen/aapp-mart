@@ -490,7 +490,9 @@ For ideas and general discussions, use GitHub Discussions.
 
 ## Security
 
-For responsible disclosure and reporting security issues, please see [SECURITY.md](SECURITY.md).  
+If you discover a security vulnerability, please follow our responsible disclosure process.
+
+👉 [Read SECURITY.md](SECURITY.md) for instructions on reporting issues securely.
 
 ---
 

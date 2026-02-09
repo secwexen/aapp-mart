@@ -492,7 +492,7 @@ For ideas and general discussions, use GitHub Discussions.
 
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
-👉 [Read SECURITY.md](SECURITY.md) for instructions on reporting issues securely.
+[Read SECURITY.md](SECURITY.md) for instructions on reporting issues securely.
 
 ---
 

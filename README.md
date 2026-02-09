@@ -476,12 +476,15 @@ regulations, and organizational policies.
 
 ---
 
-## Support & Contact
+## ⭐ Support & Community
 
-For support, questions, or feature requests, please open an issue on GitHub:
-[GitHub Issues](https://github.com/secwexen/aapp-mart/issues)
+If you find this project useful, consider giving it a ⭐ on GitHub.
+Contributions, issues, and pull requests are welcome.
 
-You may also use GitHub Discussions for ideas and general discussions.  
+For support, questions, or feature requests, please open an issue:
+👉 [Open an issue on GitHub](https://github.com/secwexen/aapp-mart/issues)
+
+For ideas and general discussions, use GitHub Discussions.
 
 ---
 

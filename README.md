@@ -16,13 +16,43 @@
 [![Website](https://img.shields.io/website?url=https://secwexen.github.io/aapp-mart/)](https://secwexen.github.io/aapp-mart/)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
-## Autonomous Attack Path Prediction & Multi-Agent Red Team Engine
+## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Framework
 
-AAPP-MART is an autonomous offensive security engine designed for security teams and researchers.
+AAPP-MART is an autonomous attack simulation and prediction framework for defensive security validation, designed for security teams and researchers.
 It predicts attack paths using artificial intelligence and simulates them with a multi-agent red team,
 helping organizations identify and mitigate risks before they are exploited.  
   
 for detailed documentation, please visit [AAPP-MART Website](https://secwexen.github.io/aapp-mart/)
+
+---
+
+## Intended Use & Ethics Statement
+
+AAPP-MART is designed exclusively for authorized security testing, defensive threat modeling, and red team simulations with explicit permission.  
+It is intended to help organizations understand and reduce their attack surface by simulating adversarial behavior in a controlled and authorized manner.  
+
+The project is not intended for unauthorized access, real-world exploitation, or destructive attack activities.  
+Users are responsible for complying with all applicable laws, regulations, and organizational policies.  
+Its primary goal is to improve defensive posture, not to facilitate real-world attacks.
+
+---
+
+## Who Should Use AAPP-MART?
+
+- Security Operations Centers (SOC)
+- Red & Blue Teams
+- Security Architects
+- Threat Modeling Teams
+- Academic & Security Researchers
+
+---
+
+## What AAPP-MART Is NOT
+
+- Not an exploitation framework
+- Not a malware delivery system
+- Not a zero-day weaponization tool
+- Not designed for uncontrolled or destructive attacks
 
 ---
 
@@ -32,7 +62,7 @@ Modern infrastructures are too complex for traditional security testing. AAPP-MA
 
 ### Why AAPP-MART?
 
-AAPP-MART stands out from traditional offensive security tools in its approach:
+AAPP-MART stands out from traditional security tools in its approach:
 
 - **Traditional scanners** → static, reactive, often limited to known vulnerabilities.
 - **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
@@ -450,14 +480,6 @@ and initial logic of the AAPP-MART engine.
 
 Advanced prediction models, autonomous agent behaviors,
 and controlled simulation capabilities are being implemented progressively.
-
----
-
-## Ethical Use Statement
-
-AAPP-MART is designed to help organizations understand and reduce their attack surface
-by simulating adversarial behavior in a controlled and authorized manner.
-Its primary goal is to improve defensive posture, not to facilitate real-world attacks.
 
 ---
 

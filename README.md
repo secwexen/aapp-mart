@@ -476,7 +476,7 @@ regulations, and organizational policies.
 
 ---
 
-## ⭐ Support & Community
+## Support & Community
 
 If you find this project useful, consider giving it a ⭐ on GitHub.
 Contributions, issues, and pull requests are welcome.

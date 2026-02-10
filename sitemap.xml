@@ -9,4 +9,10 @@
     <loc>https://secwexen.github.io/aapp-mart/assets/</loc>
   </url>
 
+  <url>
+    <loc>https://secwexen.github.io/aapp-mart/</loc>
+    <lastmod>2026-02-10</lastmod>
+    <priority>1.0</priority>
+  </url>
+
 </urlset>

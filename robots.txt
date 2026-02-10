@@ -1,9 +1,12 @@
 # robots.txt for AAPP-MART
+# Blocks private/internal directories from all crawlers
+# Sitemap provided for SEO
 
 # Allow all search engines
 User-agent: *
 Disallow: /aapp-mart/private/
 Disallow: /aapp-mart/internal/
+Allow: /aapp-mart/public/
 
 # Sitemap location
 Sitemap: https://secwexen.github.io/aapp-mart/sitemap.xml

@@ -6,7 +6,7 @@
 User-agent: *
 Disallow: /aapp-mart/private/
 Disallow: /aapp-mart/internal/
-Allow: /aapp-mart/public/
+Allow: /aapp-mart/
 Allow: /aapp-mart/assets/
 
 # Sitemap location

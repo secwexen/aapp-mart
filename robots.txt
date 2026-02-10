@@ -1,5 +1,4 @@
 # robots.txt for AAPP-MART
-# Blocks private/internal directories from all crawlers
 # Sitemap provided for SEO
 
 # Allow all search engines

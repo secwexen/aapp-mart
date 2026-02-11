@@ -3,10 +3,12 @@
 
   <url>
     <loc>https://secwexen.github.io/aapp-mart/</loc>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://secwexen.github.io/aapp-mart/ABOUT.md</loc>
+    <priority>1.0</priority>
   </url>
 
   <url>

@@ -3,7 +3,6 @@
 
 # Allow all search engines
 User-agent: *
-Disallow: /private/
 Disallow: /.github/
 Allow: /docs/
 Allow: /assets/

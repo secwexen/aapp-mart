@@ -9,4 +9,4 @@ Allow: /assets/
 Allow: /
 
 # Sitemap location
-Sitemap: https://secwexen.github.io/aapp-mart/sitemap.xml
+Sitemap: https://github.com/secwexen/aapp-mart/sitemap.xml

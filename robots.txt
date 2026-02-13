@@ -4,7 +4,6 @@
 # Allow all search engines
 User-agent: *
 Disallow: /.github/
-Allow: /docs/
 Allow: /assets/
 Allow: /
 

@@ -16,9 +16,9 @@
 [![Website](https://img.shields.io/website?url=https://secwexen.github.io/aapp-mart/)](https://secwexen.github.io/aapp-mart/)
 ![Status](https://img.shields.io/badge/status-early--stage-orange)
 
-## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Framework
+## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
 
-AAPP-MART is an autonomous attack simulation and prediction framework for defensive security validation, designed for security teams and researchers.
+AAPP-MART is an autonomous attack simulation and prediction engine for defensive security validation, designed for security teams and researchers.
 It predicts attack paths using artificial intelligence and simulates them with a multi-agent red team,
 helping organizations identify and mitigate risks before they are exploited.  
   

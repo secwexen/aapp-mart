@@ -39,11 +39,15 @@ Its primary goal is to improve defensive posture, not to facilitate real-world a
 
 ## Who Should Use AAPP-MART?
 
-- Security Operations Centers (SOC)
-- Red & Blue Teams
-- Security Architects
-- Threat Modeling Teams
-- Academic & Security Researchers
+- **Security Operations Centers (SOC)**
+- **Red Teams & Blue Teams**
+- **Penetration Testers**
+- **Security Architects**
+- **Threat Modeling Teams**
+- **Cybersecurity Researchers**
+- **Academic Researchers & Students**
+
+Note: This list is kept minimal for now. It will be expanded as the project grows and more use cases are supported.
 
 ---
 

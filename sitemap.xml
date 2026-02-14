@@ -6,9 +6,4 @@
     <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://github.com/secwexen/aapp-mart/ABOUT.md</loc>
-    <priority>0.9</priority>
-  </url>
-
 </urlset>

@@ -27,14 +27,42 @@ All components communicate through a shared **Knowledge Graph**.
 ## 2. Directory Structure
 
 ```
-aapp-mart/
-    aapp/
-    mart/
-    core/
-    api/
-    cli/
-    data/
-    reports/
+aapp-mart
+├── src/
+│   └── aapp_mart/
+│       ├── aapp/                  # Attack Path Predictor
+│       ├── agents/                # Autonomous attacker agents
+│       ├── api/                   # Optional REST API
+│       ├── common/                # Common, reusable base classes or constants
+│       ├── cli/                   # Command-line interface
+│       ├── core/                  # Autonomous simulation brain
+│       ├── data/                  # Sample data & signatures
+│       ├── mart/                  # Multi-Agent Red Team
+│       ├── modules/               # Pluggable engine modules
+│       ├── predictors/            # Prediction logic & models
+│       ├── reports/               # Generated reports
+│       ├── main.py                # AAPPMART entry point
+│       └── __init__.py            # AAPPMART package initializer
+│ 
+├── docs/
+├── examples/
+├── internal_api/
+├── ml_training/
+├── scripts/
+├── tests/
+├── ABOUT.md
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── DISCLAIMER.md
+├── LICENSE
+├── Makefile
+├── README.md
+├── SECURITY.md
+├── pyproject.toml
+├── requirements-dev.txt
+├── requirements.txt
+└── setup.py
 ```
 
 ---

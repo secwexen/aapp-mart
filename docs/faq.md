@@ -17,7 +17,7 @@ It uses AI to predict potential attack paths and simulates them, helping organiz
 - macOS  
 - Windows  
 
-A cross-platform Python project with no platform-specific dependencies. All requirements are listed in `requirements.txt`.
+A cross-platform Python project with no platform-specific dependencies. All requirements are listed in [requirements.txt](requirements.txt).
 
 ---
 

@@ -230,7 +230,6 @@ aapp-mart
 ├── ml_training/
 ├── scripts/
 ├── tests/
-├── ABOUT.md
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md

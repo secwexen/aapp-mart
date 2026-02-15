@@ -224,6 +224,7 @@ aapp-mart
 │       ├── main.py                # AAPPMART entry point
 │       └── __init__.py            # AAPPMART package initializer
 │ 
+├── assets/
 ├── docs/
 ├── examples/
 ├── internal_api/

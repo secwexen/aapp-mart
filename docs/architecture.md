@@ -44,13 +44,13 @@ aapp-mart
 │       ├── main.py                # AAPPMART entry point
 │       └── __init__.py            # AAPPMART package initializer
 │ 
+├── assets/
 ├── docs/
 ├── examples/
 ├── internal_api/
 ├── ml_training/
 ├── scripts/
 ├── tests/
-├── ABOUT.md
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md

@@ -471,7 +471,7 @@ AAPP-MART development is structured into strategic phases:
 
 ## Development Status
 
-Early-stage open source project. Core implementation is still in progress.   
+Actively Developed open source project. Core implementation is still in progress.   
 
 AAPP-MART is currently under active development.
 This repository provides the foundational architecture, core interfaces,

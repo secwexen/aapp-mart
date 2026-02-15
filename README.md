@@ -6,7 +6,6 @@
 
 ![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/ci.yml?branch=main&label=Build)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
-![Dependencies](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/dependency-review.yml?branch=main&label=Dependencies)
 ![Python Versions](https://img.shields.io/pypi/pyversions/aapp-mart)
 ![License](https://img.shields.io/github/license/secwexen/aapp-mart)
 [![Website](https://img.shields.io/website?url=https://secwexen.github.io/aapp-mart/)](https://secwexen.github.io/aapp-mart/)

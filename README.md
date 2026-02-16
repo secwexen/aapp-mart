@@ -21,37 +21,27 @@ for detailed documentation, please visit [AAPP-MART Website](https://secwexen.gi
 
 ---
 
-## Intended Use & Ethics Statement
+## Executive Summary
 
-AAPP-MART is designed exclusively for authorized security testing, defensive threat modeling, and red team simulations with explicit permission.  
-It is intended to help organizations understand and reduce their attack surface by simulating adversarial behavior in a controlled and authorized manner.  
+AAPP-MART is a deterministic attack path modeling and controlled adversary simulation engine 
+designed for authorized defensive security validation.
 
-The project is not intended for unauthorized access, real-world exploitation, or destructive attack activities.  
-Users are responsible for complying with all applicable laws, regulations, and organizational policies.  
-Its primary goal is to improve defensive posture, not to facilitate real-world attacks.
+The system combines:
+- Graph-based attack path prediction
+- Controlled multi-agent adversary simulation
+- Risk-scored analytical reporting
 
----
-
-## Who Should Use AAPP-MART?
-
-- **Security Operations Centers (SOC)**
-- **Red Teams & Blue Teams**
-- **Penetration Testers**
-- **Security Architects**
-- **Threat Modeling Teams**
-- **Cybersecurity Researchers**
-- **Academic Researchers & Students**
-
-Note: This list is kept minimal for now. It will be expanded as the project grows and more use cases are supported.
+It does not perform destructive exploitation.
 
 ---
 
-## What AAPP-MART Is NOT
+## Legal & Authorized Use
 
-- Not an exploitation framework
-- Not a malware delivery system
-- Not a zero-day weaponization tool
-- Not designed for uncontrolled or destructive attacks
+AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
+and controlled adversary simulation within environments where explicit permission has been granted.
+
+The system is designed for non-destructive analysis and does not support uncontrolled exploitation. 
+Users are responsible for ensuring lawful and policy-compliant usage.
 
 ---
 
@@ -199,6 +189,202 @@ Final Report & Defense Recommendations
 
 ---
 
+## Attack Graph Model
+
+AAPP-MART models the target environment as a directed attack graph:
+
+G = (V, E)
+
+Where:
+
+- **V (Vertices)** represent assets or security-relevant states
+
+- Host systems
+- Network services
+- Identity objects (users, roles, tokens)
+- Privilege states
+
+- **E (Edges)** represent feasible adversarial transitions between states
+
+- Exploit of a vulnerability
+- Credential abuse
+- Misconfiguration leverage
+- Privilege escalation step
+- Lateral movement action
+
+Each edge ( e \in E ) is associated with:
+
+- **Likelihood score (Lₑ)**
+- **Exploitability weight (Wₑ)**
+- Optional contextual modifiers (exposure, privilege level, asset criticality)
+
+### Path Scoring
+
+For an attack path ( P = {e_1, e_2, ..., e_n} ):
+
+[
+PathScore(P) = \prod_{i=1}^{n} L_{e_i} \times C_{context}
+]
+
+Where:
+
+- ( L_{e_i} ) = likelihood of each transition
+- ( C_{context} ) = contextual weighting factor (asset exposure, privilege amplification, etc.)
+
+The engine ranks predicted attack paths based on aggregated likelihood and impact weighting.
+
+The model is deterministic with respect to input data and configuration parameters.
+
+---
+
+## Risk Scoring Model
+
+AAPP-MART calculates risk using a structured composite model:
+
+[
+Risk = Likelihood \times Impact
+]
+
+### 1. Likelihood
+
+Derived from:
+
+- Vulnerability exploitability
+- Exposure level
+- Privilege requirements
+- Chaining feasibility within the attack graph
+
+### 2. Impact
+
+Weighted using:
+
+- Asset criticality
+- Privilege escalation level
+- Lateral movement amplification
+- Business sensitivity (if provided)
+
+### 3. Asset Criticality Weighting
+
+Each asset may be assigned a criticality factor:
+
+[
+AdjustedRisk = Risk \times AssetWeight
+]
+
+### 4. CVSS Integration 
+
+If vulnerability scan data is provided, scores may incorporate metrics aligned with
+FIRST and the
+Common Vulnerability Scoring System framework.
+
+CVSS values are treated as input modifiers rather than sole risk determinants.
+
+### 5. Confidence Score
+
+Each reported risk includes a confidence indicator based on:
+
+- Completeness of input data
+- Assumption density
+- Model coverage of the simulated path
+
+---
+
+## Security Boundaries & Operational Safeguards
+
+AAPP-MART is designed as a controlled simulation system. The following safeguards define its operational boundary:
+
+- **Non-destructive simulation enforcement**
+- No payload execution
+- No arbitrary command execution on targets
+- No uncontrolled exploitation logic
+- No automated scanning beyond defined scope
+
+### Scope Restriction
+
+Targets must be explicitly defined.
+The engine does not autonomously expand scope.
+
+### Operational Controls
+
+- Structured logging of all simulation steps
+- Deterministic execution boundaries
+- Configurable simulation mode (prediction-only vs simulation)
+
+These constraints ensure the system remains a defensive validation platform rather than an exploitation tool.
+
+---
+
+## Explainability & Audit Trail
+
+AAPP-MART is designed to produce traceable and explainable outputs.
+
+### Agent Decision Trace
+
+Each simulated action includes:
+
+- Triggering condition
+- Supporting evidence
+- Graph transition reference
+- Risk contribution
+
+### Attack Path Reasoning Log
+
+For each predicted path:
+
+- Ordered transition list
+- Cumulative score calculation
+- Context modifiers applied
+
+### Deterministic Replay
+
+Given identical input data and configuration:
+
+- The prediction engine produces consistent results
+- Simulation flows can be replayed for validation
+
+### Structured Output
+
+Reports can be exported in structured formats (e.g., JSON) to support:
+
+- SIEM ingestion
+- SOC workflows
+- External audit review
+
+---
+
+## Deployment Model
+
+AAPP-MART supports the following deployment patterns:
+
+### Standalone CLI
+
+- Local execution
+- Scriptable automation
+- CI/CD integration
+
+### REST API Mode (Planned)
+
+- Programmatic integration
+- External orchestration support
+
+### Offline / Air-Gapped Operation
+
+- No external service dependency required
+- Suitable for isolated environments
+
+### Containerization (Planned)
+
+- Docker-based deployment
+- Isolated execution boundary
+
+### System Requirements
+
+- Python 3.x
+- Standard system memory sufficient for graph size
+- No platform-specific dependencies
+
+---
+
 ## Directory Structure 
 
 ```
@@ -254,16 +440,6 @@ No platform-specific dependencies are required.
 
 ---
 
-## Platform & Safety Notes
-
-- AAPP-MART is intended to run in **controlled and authorized environments only**.
-- Some simulation techniques may model sensitive attacker behaviors; **use exclusively in isolated lab or test environments**.
-- The engine avoids destructive actions by design, but **misconfiguration or improper use may still pose risks**.
-- Users are responsible for ensuring compliance with **organizational policies, legal requirements, and ethical guidelines**.
-- Do not deploy AAPP-MART against production systems without **explicit authorization and appropriate safeguards**.
-
----
-
 ## Installation
 
 ```bash
@@ -316,29 +492,6 @@ print(report)
 
 ---
 
-## Example Output
-
-```bash
-=== Attack Path Prediction Report ===
-Target: 192.168.1.10
-
-[+] Predicted Attack Paths:
-  1. Internal Reconnaissance → Credential Access → Lateral Movement → Privilege Escalation
-  2. Initial Access → Exploit Service Vulnerability → Persistence
-
-[+] Risk Score: 8.5 / 10
-
-[+] Recommendations:
-- Patch service X and limit privileged account exposure.
-- Disable unused open ports.
-==========================================
-```
-
-> Output is illustrative—actual results depend on your environment and enabled modules.  
-> Risk scores and attack paths are heuristic and for demonstration only.  
-
----
-
 ## CLI/API Usage Example
 
 Run an attack simulation:
@@ -357,6 +510,21 @@ aapp-mart modules list
 ```
 
 See the CLI documentation for available commands and advanced options: [CLI documentation](docs/cli.md)
+
+---
+
+## Known Limitations
+
+AAPP-MART is subject to the following constraints:
+
+- Does not exploit zero-day vulnerabilities
+- Does not execute destructive payloads
+- Does not replace full manual penetration testing
+- Depends on accuracy and completeness of input data
+- Attack path prediction is model-driven and not a guarantee of real-world exploit success
+- Large-scale environments may require tuning for performance
+
+The system is intended for structured defensive analysis, not offensive weaponization.
 
 ---
 
@@ -389,26 +557,6 @@ pylint src/aapp_mart
 
 ---
 
-## Use Cases
-
-- Automated red teaming  
-- Continuous security validation  
-- Attack surface mapping  
-- Zero-day exposure modeling  
-- SOC augmentation  
-- Pre-breach risk forecasting  
-
----
-
-## Acronym
-
-- **AAPP** — AI Attack Path Predictor (*ey-ey pee-pee*)  
-- **MART** — Multi-Agent Red Team (*maart*)  
-
-**AAPP-MART** — The fusion of AI-driven attack path prediction and autonomous multi-agent simulation into a unified attack intelligence engine.
-
----
-
 ## Documentation
 
 Detailed guides and references are also available in the repository:
@@ -418,6 +566,7 @@ Detailed guides and references are also available in the repository:
 - [Module development](docs/modules.md)
 - [Prediction engine details](docs/prediction_engine.md)
 - [Examples and quick starts](examples/)
+- [Roadmap & Milestones](docs/roadmap.md)
 - [Contributing guidelines](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
 - [Security policy](SECURITY.md)
@@ -451,21 +600,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
 AAPP-MART development is structured into strategic phases:
 
-**Phase 1 – Research & Architecture**
-- Core AI prediction engine (AAPP) design
-- Multi-agent simulation framework (MART) prototyping
-- Initial attack graph models and risk scoring
-
-**Phase 2 – Core Implementation**
-- Integration of prediction and simulation engines
-- Autonomous agent behaviors for reconnaissance, exploitation, and lateral movement
-- MITRE ATT&CK alignment and reporting pipeline
-
-**Phase 3 – Ecosystem & Advanced Features**
-- Graph-based visualization and dashboards
-- Cloud and hybrid environment support
-- Agent marketplace and reinforcement learning–based decision engine
-- Continuous security validation and SOC augmentation
+**Phase 1 – Research & Architecture**  
+**Phase 2 – Core Implementation**  
+**Phase 3 – Ecosystem & Advanced Features**  
 
 ---
 
@@ -479,21 +616,6 @@ and initial logic of the AAPP-MART engine.
 
 Advanced prediction models, autonomous agent behaviors,
 and controlled simulation capabilities are being implemented progressively.
-
----
-
-## Disclaimer
-
-AAPP-MART is intended exclusively for ethical, legal, and authorized security research,
-penetration testing, and defensive security validation.
-
-The use of this tool against systems, networks, or applications without explicit
-authorization from the system owner is strictly prohibited and may be illegal.
-
-The authors and contributors of this project assume no responsibility or liability
-for any misuse, damage, or legal consequences resulting from the use of this software.
-Users are solely responsible for ensuring compliance with all applicable laws,
-regulations, and organizational policies.
 
 ---
 

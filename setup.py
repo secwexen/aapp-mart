@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 from pathlib import Path
 
 this_directory = Path(__file__).parent
-requirements_path = this_directory / "requirements.txt"
 
+requirements_path = this_directory / "requirements.txt"
 with open(requirements_path, "r", encoding="utf-8") as f:
     requirements = [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
@@ -40,7 +40,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "aapp-mart= aapp_mart.cli.aappmart_cli:main",  
+            "aapp-mart=aapp_mart.cli.aappmart_cli:main",  
         ],
     },
 )

@@ -402,15 +402,13 @@ aapp-mart
 │       ├── modules/               # Pluggable engine modules
 │       ├── predictors/            # Prediction logic & models
 │       ├── reports/               # Generated reports
-│       ├── main.py                # AAPPMART entry point
-│       └── __init__.py            # AAPPMART package initializer
+│       └── main.py                # AAPPMART entry point
 │ 
 ├── assets/
 ├── docs/
 ├── examples/
 ├── internal_api/
 ├── ml_training/
-├── scripts/
 ├── tests/
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md

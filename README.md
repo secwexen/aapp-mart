@@ -402,7 +402,7 @@ aapp-mart
 │       ├── modules/               # Pluggable engine modules
 │       ├── predictors/            # Prediction logic & models
 │       ├── reports/               # Generated reports
-│       └── main.py                # AAPPMART entry point
+│       └── main.py                # AAPP-MART entry point
 │ 
 ├── assets/
 ├── docs/

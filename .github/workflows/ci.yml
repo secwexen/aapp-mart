@@ -11,6 +11,9 @@ permissions:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.10, 3.11]
 
     steps:
       - name: Checkout repository
@@ -26,11 +29,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
+          pip install pytest pytest-cov flake8 black
 
-      - name: Lint
-        run: |
-          pylint $(git ls-files '*.py')
+      - name: Lint with pylint
+        run: pylint $(git ls-files '*.py')
 
-      - name: Run tests
-        run: |
-          pytest -v -maxfail=1 --disable-warnings
+      - name: Lint with flake8
+        run: flake8 .
+
+      - name: Format check with black
+        run: black --check .
+
+      - name: Run tests with coverage
+        run: pytest --cov=. -v --maxfail=1 --disable-warnings
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: htmlcov/
+
+      - name: CodeQL Analysis
+        uses: github/codeql-action/analyze@v2

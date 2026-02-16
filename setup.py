@@ -16,7 +16,7 @@ setup(
     url="https://github.com/secwexen/aapp-mart",
     packages=find_packages("src"),
     package_dir={"": "src"},
-    python_requires='>=3.10',
+    python_requires='>=3.11',
     install_requires=requirements,
     include_package_data=True,  
     package_data={

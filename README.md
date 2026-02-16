@@ -379,7 +379,7 @@ AAPP-MART supports the following deployment patterns:
 
 ### System Requirements
 
-- Python 3.x
+- Python 3.11
 - Standard system memory sufficient for graph size
 - No platform-specific dependencies
 

@@ -17,7 +17,7 @@ AAPP-MART is an autonomous attack simulation and prediction engine for defensive
 It predicts attack paths using artificial intelligence and simulates them with a multi-agent red team,
 helping organizations identify and mitigate risks before they are exploited.  
   
-for detailed documentation, please visit [AAPP-MART Website](https://secwexen.github.io/aapp-mart/)
+For full documentation and guides, visit the official [AAPP-MART Website](https://secwexen.github.io/aapp-mart/).
 
 ---
 

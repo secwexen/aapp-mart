@@ -66,6 +66,25 @@ to evaluate real-world defensive posture in a structured and explainable manner.
 
 ---
 
+## Theoretical Foundations & Threat Model
+
+AAPP-MART builds on established academic principles for research-grade credibility:
+
+- **Attack Graph Theory** – Models assets, privileges, and feasible adversary transitions.  
+- **Risk Modeling** – Likelihood × Impact framework.  
+- **Deterministic Simulation** – Predictable multi-agent behavior.  
+- **Graph Traversal** – DFS, Best-First, or A* exploration.
+
+Threat model formalization enhances clarity and reproducibility:
+
+- **STRIDE** – Spoofing, Tampering, Repudiation, Info Disclosure, DoS, Privilege Escalation.  
+- **Adversary Capability Model** – Attacker skills, access scope, potential actions.  
+- **Formal Risk Notation** – Transparent likelihood, impact, and path scoring.
+
+These foundations make AAPP-MART a defensible, explainable, and academically credible simulation engine.
+
+---
+
 ## Overview
 
 Modern infrastructures are too complex for traditional security testing. AAPP-MART combines predictive AI with autonomous adversarial simulation to continuously evaluate an environment’s real attack surface.

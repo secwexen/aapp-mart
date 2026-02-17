@@ -86,11 +86,20 @@ By combining **AI-driven attack path prediction** with **autonomous red team sim
 
 The system operates in two major components:
 
-- **AAPP (AI Attack Path Predictor)**  
-  Predicts the most likely attack paths by analyzing services, permissions, vulnerabilities, and configuration weaknesses.
+### **AAPP (AI Attack Path Predictor)**  
+Predicts the most likely attack paths by analyzing services, permissions, vulnerabilities, and configuration weaknesses.
 
-- **MART (Multi-Agent Red Team)**  
-  Executes autonomous red team simulations using specialized AI agents that emulate real attacker behavior.
+#### **AI Engine**
+Clarifying AAPP-MART’s AI approach:
+
+- **Decision Logic** – Rule-based / ML / Hybrid (per module).  
+- **Learning** – Offline training or deterministic scoring.  
+- **Decision Factors** – Exploitability, exposure, privileges, asset criticality.
+
+Explicit AI definition ensures credibility, reproducibility, and clarity for users and reviewers.
+
+### **MART (Multi-Agent Red Team)**  
+Executes autonomous red team simulations using specialized AI agents that emulate real attacker behavior.
 
 Together, they create a fully automated offensive security engine capable of forecasting and simulating attacks end-to-end.
 

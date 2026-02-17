@@ -178,7 +178,7 @@ If you find this project useful, consider giving it a ⭐ on GitHub.
 Contributions, issues, and pull requests are welcome.
 
 For support, questions, or feature requests, please open an issue:
-👉 [Open an issue on GitHub](https://github.com/secwexen/aapp-mart/issues)
+[Open an issue on GitHub](https://github.com/secwexen/aapp-mart/issues)
 
 For ideas and general discussions, use GitHub Discussions.
 

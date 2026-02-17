@@ -64,7 +64,7 @@ Threat modeling ensures clarity and reproducibility:
 - **Adversary Capability Model** – Attacker skills, access scope, potential actions
 - **Formal Risk Notation** – Transparent likelihood, impact, and path scoring
 
-**Result:** AAPP-MART is a defensible, explainable, and academically credible simulation engine, elevating it from a standard tool to a research-grade security platform.
+**Conclusion:** AAPP-MART is a defensible, explainable, and academically credible simulation engine, elevating it from a standard tool to a research-grade security platform.
 
 ---
 

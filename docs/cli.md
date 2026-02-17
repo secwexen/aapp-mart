@@ -1,11 +1,21 @@
-# AAPP-MART CLI Documentation
+## CLI/API Usage Example
 
-This document provides a complete guide for using the **AAPP-MART** command-line interface (CLI). The CLI allows running attack simulations, generating predictions, managing modules, and exporting reports.
+Run an attack simulation:
 
----
+```bash
+aapp-mart run --target 192.168.1.10
+```
 
-## See Also
+Generate a prediction-only report:
 
-* `README.md` – Project overview
-* `docs/architecture.md` – System architecture
-* `docs/modules.md` – Module reference
+```bash
+aapp-mart predict --input data/target_profile.json --output report.txt
+```
+
+List available modules:
+
+```bash
+aapp-mart modules list
+```
+
+See the CLI documentation for available commands and advanced options: [CLI documentation](docs/cli.md)

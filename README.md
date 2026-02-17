@@ -118,7 +118,7 @@ Detailed guides and references are also available in the repository:
 - [Full Installation Guide](docs/installation.md)
 - [Module Development](docs/modules.md)
 - [Prediction Engine Details](docs/prediction_engine.md)
-- [Examples & Quick Starts](examples/)
+- [Examples & Quick Starts](docs/examples.md)
 - [Roadmap & Milestones](docs/roadmap.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)

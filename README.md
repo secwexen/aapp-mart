@@ -107,7 +107,7 @@ Together, they create a fully automated offensive security engine capable of for
 
 ---
 
-## Documentation
+## Docs & Resources
 
 Detailed guides and references are also available in the repository:
 

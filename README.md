@@ -45,6 +45,27 @@ Users are responsible for ensuring lawful and policy-compliant usage.
 
 ---
 
+## Market Positioning
+
+AAPP-MART operates at the intersection of:
+
+- **Academic attack graph modeling**
+- **Breach & Attack Simulation (BAS) tooling**
+- **AI-assisted adversary simulation**
+
+Unlike traditional BAS platforms that rely on static playbooks,
+and unlike purely academic attack graph research models that remain theoretical,
+AAPP-MART combines deterministic graph-based prediction with controlled autonomous simulation.
+
+It can be described as a:
+
+### **Continuous Adversary Emulation Platform**
+
+A system that continuously models, predicts, and simulates attacker behavior
+to evaluate real-world defensive posture in a structured and explainable manner.
+
+---
+
 ## Overview
 
 Modern infrastructures are too complex for traditional security testing. AAPP-MART combines predictive AI with autonomous adversarial simulation to continuously evaluate an environment’s real attack surface.
@@ -137,12 +158,23 @@ to ensure standardized, explainable, and defensible security findings.
 Agent behaviors and predicted attack paths are mapped to high-level ATT&CK tactics
 and techniques, including but not limited to:
 
-- Reconnaissance → TA0043
-- Initial Access → TA0001
-- Credential Access → TA0006
-- Privilege Escalation → TA0004
-- Lateral Movement → TA0008
-- Persistence → TA0003
+- **Reconnaissance (TA0043)**
+  - Example: T1595 – Active Scanning
+
+- **Initial Access (TA0001)**
+  - Example: T1190 – Exploit Public-Facing Application
+
+- **Credential Access (TA0006)**
+  - Example: T1003 – OS Credential Dumping
+
+- **Privilege Escalation (TA0004)**
+  - Example: T1068 – Exploitation for Privilege Escalation
+
+- **Lateral Movement (TA0008)**
+  - Example: T1021 – Remote Services
+
+- **Persistence (TA0003)**
+  - Example: T1547 – Boot or Logon Autostart Execution
 
 This mapping is used for risk scoring, reporting, and defensive recommendations.
 
@@ -222,9 +254,9 @@ Each edge ( e \in E ) is associated with:
 
 For an attack path ( P = {e_1, e_2, ..., e_n} ):
 
-[
+$$
 PathScore(P) = \prod_{i=1}^{n} L_{e_i} \times C_{context}
-]
+$$
 
 Where:
 
@@ -241,9 +273,9 @@ The model is deterministic with respect to input data and configuration paramete
 
 AAPP-MART calculates risk using a structured composite model:
 
-[
+$$
 Risk = Likelihood \times Impact
-]
+$$
 
 ### 1. Likelihood
 

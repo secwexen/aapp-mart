@@ -50,8 +50,7 @@ print(report)
 
 > This example reflects the intended public API design.  
 > Core orchestration modules are currently under development.  
-> See [API Reference](docs/api_reference.md) and
-> [Architecture](docs/architecture.md) for interface details and system structure.  
+> See [API Reference](docs/api_reference.md) and [Architecture](docs/architecture.md) for interface details and system structure.  
 
 ---
 

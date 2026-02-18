@@ -1,5 +1,8 @@
 # Contributing to AAPP-MART
 
+> Note: AAPP-MART is currently under active development.  
+> Core components may evolve as the architecture stabilizes.  
+
 Thank you for your interest in contributing to AAPP-MART. We welcome contributions that improve code quality, security, and documentation.  
 
 ---
@@ -24,16 +27,19 @@ Thank you for your interest in contributing to AAPP-MART. We welcome contributio
 
 ## Development Guidelines
 
-- Follow Python best practices (PEP 8)
-- Write clear, readable, and well-documented code
-- Add or update tests for new functionality
-- Use the provided test framework (pytest) and ensure all tests pass
+- Follow Python best practices (PEP 8).
+- Write clear, readable, and well-documented code.
+- Add or update tests for new functionality.
+- Use the provided test framework (pytest) and ensure all tests pass:
 
   ```bash
   pytest tests/
   ```
-- Avoid introducing breaking changes without discussion
-- Keep code compatible with the project license (Apache-2.0 License)
+
+- All new features must align with the documented architecture.
+- Architectural changes require prior discussion.
+- Avoid introducing breaking changes without discussion.
+- Keep code compatible with the project license (Apache-2.0 License).
 
 ---
 
@@ -84,6 +90,8 @@ All pull requests must:
 
 AAPP-MART is a security-focused project.
 Contributions must **not include exploit code**, malware, or content intended for illegal use.
+
+- Contributions must remain within the scope of controlled, non-destructive security simulation.
 
 Security issues should be reported according to the [SECURITY.md](SECURITY.md) policy.
 

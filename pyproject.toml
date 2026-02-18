@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "aapp-mart"
 description = "Autonomous Attack Path Prediction & Multi-Agent Red Team Engine"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = { file = "LICENSE" }
 
 authors = [

@@ -35,6 +35,26 @@ It does not perform destructive exploitation.
 
 ---
 
+## Conceptual Usage Example
+
+The following illustrates the intended Python API design once the core engine is fully implemented:
+
+```python
+from aapp_mart.core.orchestrator import AAPP_MART
+
+engine = AAPP_MART(target="192.168.1.10")
+engine.run()
+report = engine.get_report()
+print(report)
+```
+
+> This example reflects the intended public API design.  
+> Core orchestration modules are currently under development.  
+> See [API Reference](docs/api_reference.md) and
+> [Architecture](docs/architecture.md) for interface details and system structure.  
+
+---
+
 ## Legal & Authorized Use
 
 AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 

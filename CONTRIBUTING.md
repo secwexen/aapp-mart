@@ -81,7 +81,7 @@ All pull requests must:
 ## Documentation Contributions
 
 - Contributions to the documentation are gladly accepted.
-- Update `README.md` or other documentation as needed
+- Update [README.md](README.md) or other documentation as needed
 - Follow Markdown formatting and style conventions
 
 ---

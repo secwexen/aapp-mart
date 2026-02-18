@@ -130,7 +130,6 @@ Together, they create a fully automated offensive security engine capable of for
 
 Detailed guides and references are also available in the repository:
 
-- [About AAPP-MART](ABOUT.md)
 - [Threat Model](docs/threat_model.md)
 - [Risk Model](docs/risk_model.md)
 - [Deployment Guide](docs/deployment.md)

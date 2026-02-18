@@ -41,7 +41,9 @@ cp .env.example .env
 
 ---
 
-## Quick Start Example
+## Conceptual Usage Example
+
+The following illustrates the intended Python API design once the core engine is fully implemented:
 
 ```python
 from aapp_mart.core.orchestrator import AAPP_MART
@@ -52,4 +54,6 @@ report = engine.get_report()
 print(report)
 ```
 
-> Note: Example is for demonstration purposes. Some features may not yet be fully implemented.
+> This example reflects the intended public API design.  
+> Core orchestration modules are currently under development.  
+> See [API Reference](docs/api_reference.md) and [Architecture](docs/architecture.md) for interface details and system structure.  

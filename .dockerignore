@@ -1,0 +1,27 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments and build info
+venv/
+env/
+*.egg-info/
+
+# Git and version control
+.git/
+.gitignore
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# Documentation and log files
+*.md
+*.txt
+*.log
+
+# Other unnecessary files
+.DS_Store

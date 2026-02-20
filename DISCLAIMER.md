@@ -1,12 +1,7 @@
 ## Disclaimer
 
-AAPP-MART is intended exclusively for ethical, legal, and authorized security research,
-penetration testing, and defensive security validation.
+AAPP‑MART is intended solely for ethical, legal, and explicitly authorized security research, penetration testing, and defensive security validation.
 
-The use of this tool against systems, networks, or applications without explicit
-authorization from the system owner is strictly prohibited and may be illegal.
+Using this tool against any system, network, or application without the explicit permission of the system owner is strictly prohibited and may violate local, national, or international laws.
 
-The authors and contributors of this project assume no responsibility or liability
-for any misuse, damage, or legal consequences resulting from the use of this software.
-Users are solely responsible for ensuring compliance with all applicable laws,
-regulations, and organizational policies.
+The developers and contributors of this project assume no responsibility or liability for misuse, damage, or legal consequences arising from the use of this software. Users are fully responsible for ensuring compliance with all applicable laws, regulations, and organizational policies when operating this tool.

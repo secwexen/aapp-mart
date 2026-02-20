@@ -1,21 +1,22 @@
 # Pull Request
 
 ## Description
-Provide a clear and concise description of the changes.
+Provide a clear and concise explanation of what this PR does and why the change is needed.
 
 ## Related Issues
-Link any related issues (e.g., `Closes #12`).
+Link any related issues here (e.g., `Closes #12`).
 
 ## Changes Made
--  
--  
--  
+- 
+- 
+- 
 
 ## Checklist
 - [ ] Code follows project style guidelines
 - [ ] Tests added or updated
 - [ ] Documentation updated
 - [ ] All CI checks pass
+- [ ] No breaking changes (or explained if present)
 
 ## Additional Notes
-Anything else reviewers should know.
+Add any extra context, testing steps, or information reviewers should know.

@@ -1,27 +1,33 @@
-# Python cache files
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Virtual environments and build info
+# Virtual environments
 venv/
 env/
+
+# Build artifacts
+build/
+dist/
 *.egg-info/
 
-# Git and version control
+# Git
 .git/
 .gitignore
 
-# IDE/editor files
+# IDE/editor
 .vscode/
 .idea/
 *.swp
 
-# Documentation and log files
-*.md
-*.txt
+# OS junk
+.DS_Store
+
+# Logs
 *.log
 
-# Other unnecessary files
-.DS_Store
+# Docker itself
+Dockerfile
+docker-compose.yml

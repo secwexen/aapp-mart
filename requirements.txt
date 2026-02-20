@@ -10,6 +10,7 @@ graphviz>=9.0
 fastapi>=0.110
 uvicorn[standard]>=0.27
 anyio>=4.2
+sniffio>=1.3
 
 # === Data validation & configuration ===
 pydantic>=2.6

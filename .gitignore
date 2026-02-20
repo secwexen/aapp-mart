@@ -1,5 +1,6 @@
-# Byte-compiled / optimized / DLL files
+# Python cache
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
 
@@ -9,16 +10,11 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
-develop-eggs/
 dist/
 downloads/
+sdist/
 eggs/
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -45,14 +41,18 @@ htmlcov/
 .coverage.*
 .cache
 pytest_cache/
+src/**/.pytest_cache/
 nosetests.xml
 coverage.xml
+test-results.xml
+junit.xml
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
 # MyPy
 .mypy_cache/
+src/**/.mypy_cache/
 
 # VSCode
 .vscode/
@@ -70,3 +70,6 @@ Thumbs.db
 # Project specific
 reports/generated/
 data/output/
+
+# Docker
+docker-compose.override.yml

@@ -1,3 +1,17 @@
+# === Testing ===
 pytest>=8.0
 pytest-asyncio>=0.23
+pytest-cov>=4.1
+
+# === Lint & Format ===
+pylint>=3.0
+flake8>=7.0
+black>=24.0
+isort>=5.13
+autoflake>=2.3
+
+# === Build tools ===
+build>=1.2
+
+# === Logging ===
 loguru>=0.7

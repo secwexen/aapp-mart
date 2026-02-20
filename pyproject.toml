@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aapp-mart"
+version = "0.1.0"
 description = "Autonomous Attack Path Prediction & Multi-Agent Red Team Engine"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -13,11 +14,14 @@ authors = [
   { name = "secwexen" }
 ]
 
+keywords = ["attack-path", "red-team", "multi-agent", "cybersecurity", "simulation"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: Apache-2.0 License",
+  "Operating System :: OS Independent"
 ]
 
 dependencies = [
@@ -25,32 +29,53 @@ dependencies = [
   "numpy>=1.26",
   "pandas>=2.1",
   "scikit-learn>=1.4",
-
   "fastapi>=0.110",
   "uvicorn[standard]>=0.27",
-
   "pydantic>=2.6",
   "pyyaml>=6.0",
-
   "requests>=2.31",
   "httpx>=0.26",
-
   "rich>=13.7",
   "tqdm>=4.66",
-  "matplotlib>=3.8",
+  "matplotlib>=3.8"
 ]
 
 [project.optional-dependencies]
 dev = [
   "pytest>=8.0",
-  "pytest-asyncio>=0.23"
+  "pytest-asyncio>=0.23",
+  "pytest-cov>=4.1",
+  "pylint>=3.0",
+  "flake8>=7.0",
+  "black>=24.0",
+  "isort>=5.13",
+  "autoflake>=2.3",
+  "build>=1.2"
 ]
 
-[project.scripts]
+[project.entry-points.console_scripts]
 aappmart = "aappmart.main:main"
 
 [tool.setuptools]
-packages = ["aappmart"]
+packages = { find = {} }
 
 [tool.setuptools.package-data]
-aappmart = ["**/*.json", "**/*.yaml", "**/*.yml", "**/*.md"]
+aappmart = ["**/*.json", "**/*.yaml", "**/*.yml", "**/*.md", "**/*.txt"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=aappmart --cov-report=term-missing"
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 120

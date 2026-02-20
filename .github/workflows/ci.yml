@@ -25,6 +25,17 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+           python-version: ${{ matrix.python-version }}
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -49,6 +60,11 @@ jobs:
         with:
           name: coverage-report
           path: htmlcov/
+
+      - name: CodeQL Init
+        uses: github/codeql-action/init@v2
+        with:
+         languages: python
 
       - name: CodeQL Analysis
         uses: github/codeql-action/analyze@v2

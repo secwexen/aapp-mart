@@ -1,11 +1,4 @@
-# robots.txt for AAPP-MART
-# Sitemap provided for SEO
-
-# Allow all search engines
 User-agent: *
-Disallow: /.github/
-Allow: /assets/
 Allow: /
 
-# Sitemap location
-Sitemap: https://github.com/secwexen/aapp-mart/sitemap.xml
+Sitemap: https://secwexen.github.io/aapp-mart/sitemap.xml

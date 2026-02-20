@@ -22,6 +22,7 @@ Thank you for your interest in contributing to AAPP-MART. We welcome contributio
    source .venv/bin/activate
    pip install -r requirements.txt
    ```
+If you are using VS Code, the recommended way is to open the project in the Dev Container environment.
 
 ---
 
@@ -38,9 +39,10 @@ Thank you for your interest in contributing to AAPP-MART. We welcome contributio
 
 - All new features must align with the documented architecture.
 - Architectural changes require prior discussion.
+  - For architectural proposals, please open a GitHub Discussion or an Issue with the label [Architecture](architecture).
 - Avoid introducing breaking changes without discussion.
 - Keep code compatible with the project license (Apache-2.0 License).
-
+  
 ---
 
 ## Branching and Merge Policy

@@ -1,0 +1,7 @@
+1.0.0
+Release Date: No due date
+Status: Production-ready milestone planned, awaiting final scheduling.
+
+This version defines the complete scope of all planned modules and agents. 
+The architecture of the simulation engine, the AI‑based attack‑path prediction system, integrated dashboards, cloud and hybrid environment support, and the reinforcement‑learning–based decision engine has been designed and prepared for implementation. 
+Ethical use guidelines, testing frameworks, and contribution workflows have been outlined, and the platform is now in the planning phase for full development and production readiness.

@@ -53,6 +53,11 @@ dev = [
   "build>=1.2"
 ]
 
+[project.urls]
+Homepage = "https://secwexen.github.io/aapp-mart/"
+Documentation = "https://github.com/secwexen/aapp-mart/wiki"
+Repository = "https://github.com/secwexen/aapp-mart"
+
 [project.entry-points.console_scripts]
 aappmart = "aappmart.main:main"
 

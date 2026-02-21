@@ -3,7 +3,13 @@
 
   <url>
     <loc>https://secwexen.github.io/aapp-mart/</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <image:image>
+    <image:loc>https://secwexen.github.io/aapp-mart/assets/images/aapp-mart-logo.png</image:loc>
+  </image:image>
+  
 </urlset>

@@ -9,6 +9,7 @@ AAPP-MART provides digital tools and features intended to support users in their
 
 ## 3. User Responsibilities  
 Users agree to:   
+- Maintain the confidentiality of their account credentials and are responsible for all activities conducted under their account.
 - Ensure all information provided to the platform is accurate and lawful.  
 - Use the service only for legal and authorized purposes.  
 - Avoid actions that may disrupt or harm the platform or other users.

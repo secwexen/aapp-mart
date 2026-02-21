@@ -195,8 +195,8 @@ and controlled simulation capabilities are being implemented progressively.
 
 ## Support & Community
 
-If you find this project useful, consider giving it a ⭐ on GitHub.
-Contributions, issues, and pull requests are welcome.
+⭐ Found AAPP-MART useful? Give us a star and support the project!   
+💬 Join discussions, report issues, or contribute your ideas!  
 
 For support, questions, or feature requests, please open an issue:
 [Open an issue on GitHub](https://github.com/secwexen/aapp-mart/issues)

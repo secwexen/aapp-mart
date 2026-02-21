@@ -48,6 +48,7 @@ aapp-mart
 ├── examples/
 ├── internal_api/
 ├── ml_training/
+├── scripts/
 ├── tests/
 ├── CHANGELOG.md
 ├── CITATION.cff

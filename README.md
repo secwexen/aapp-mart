@@ -124,6 +124,9 @@ Executes autonomous red team simulations using specialized AI agents that emulat
 
 Together, they create a fully automated offensive security engine capable of forecasting and simulating attacks end-to-end.
 
+### **CORE Orchestration Engine**
+The CORE Orchestration Engine is the central coordination layer of AAPP‑MART. It manages multi‑agent behavior, controls the execution flow of attack simulations, and ensures consistent interaction between all system modules.
+
 ---
 
 ## Docs & Resources

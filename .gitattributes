@@ -1,0 +1,34 @@
+# Normalize all text files
+* text=auto
+
+# Force LF for source code
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.rar binary
+
+# GitHub linguist cleanup
+docs/* linguist-documentation
+vendor/* linguist-vendored
+node_modules/* linguist-vendored
+dist/* linguist-generated
+build/* linguist-generated

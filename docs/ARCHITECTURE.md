@@ -44,6 +44,7 @@ aapp-mart
 │       └── main.py                # AAPP-MART entry point
 │ 
 ├── assets/
+├── deployment
 ├── docs/
 ├── examples/
 ├── internal_api/

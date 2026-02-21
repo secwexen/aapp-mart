@@ -50,6 +50,7 @@ aapp-mart
 ├── ml_training/
 ├── tests/
 ├── CHANGELOG.md
+├── CITATION.cff
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── DISCLAIMER.md

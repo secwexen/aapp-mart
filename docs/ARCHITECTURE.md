@@ -53,6 +53,7 @@ aapp-mart
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── DISCLAIMER.md
+├── Dockerfile
 ├── LICENSE
 ├── Makefile
 ├── README.md

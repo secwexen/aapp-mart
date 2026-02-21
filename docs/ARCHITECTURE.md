@@ -57,6 +57,7 @@ aapp-mart
 ├── Makefile
 ├── README.md
 ├── SECURITY.md
+├── VERSION
 ├── pyproject.toml
 ├── requirements-dev.txt
 ├── requirements.txt

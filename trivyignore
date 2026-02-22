@@ -1,0 +1,15 @@
+# Ignore low severity vulnerabilities
+LOW:*
+
+# Ignore Python virtual environments
+venv/
+.env/
+.env.local
+
+# Ignore cache directories
+__pycache__/
+.cache/
+
+# Ignore build artifacts
+dist/
+build/

@@ -40,9 +40,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 ## [0.3.0] - 2026-02-05
 
 ### Added
-- Core Simulation Engine completed and tested
-- MART Agent Framework integrated and stabilized
-- AI Attack Path Prediction engine improved and optimized
+- Core Simulation Engine files completed
 - Updated ML training files and models
 - Bug fixes and minor enhancements across modules
 - CLI/API usage improvements and documentation updates

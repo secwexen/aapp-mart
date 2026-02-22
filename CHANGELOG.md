@@ -40,9 +40,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 ## [0.3.0] - 2026-02-05
 
 ### Added
-- Core Simulation Engine files completed
-- Updated ML training files and models
-- Bug fixes and minor enhancements across modules
-- CLI/API usage improvements and documentation updates
+- Core Simulation Engine files completed.
+- Updated ML training files and models.
+- Bug fixes and minor enhancements across modules.
+- CLI/API usage improvements and documentation updates.
 
 ⚠️ Note: While the core features are now stable, some advanced modules and experimental agents are still under development. This release is intended for testing, early adoption, and contribution purposes.

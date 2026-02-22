@@ -10,6 +10,8 @@ exclude_dirs:
   - docs
   - examples
   - scripts
+  - venv
+  - .venv
 
 severity: high
 confidence: high

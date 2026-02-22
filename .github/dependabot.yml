@@ -5,9 +5,16 @@
 
 version: 2
 updates:
-  - package-ecosystem: "all" # See documentation for possible values
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - secwexen
+
+  - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
-      reviewers:
+    reviewers:
       - secwexen

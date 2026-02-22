@@ -1,0 +1,39 @@
+# Bandit configuration for AAPP-MART
+# High-severity Python security scanning
+
+skips:
+  - B101  # assert usage warning (not critical)
+  - B601  # subprocess popen low severity warning
+
+exclude_dirs:
+  - tests
+  - docs
+  - examples
+  - scripts
+
+severity: high
+confidence: high
+
+tests:
+  - B102  # exec used
+  - B103  # set_bad_file_permissions
+  - B104  # hardcoded_bind_all_interfaces
+  - B105  # hardcoded_password_string
+  - B106  # hardcoded_password_funcarg
+  - B107  # hardcoded_password_default
+  - B108  # hardcoded_tmp_directory
+  - B110  # try_except_pass
+  - B112  # try_except_continue
+  - B307  # eval used
+  - B313  # xml.etree insecure parser
+  - B314  # xml.minidom insecure parser
+  - B315  # xml.dom.pulldom insecure parser
+  - B316  # xml.sax insecure parser
+  - B317  # xml.expat insecure parser
+  - B318  # insecure yaml load
+  - B319  # insecure urllib usage
+  - B320  # insecure ftp usage
+  - B321  # insecure telnet usage
+  - B322  # insecure md5 usage
+  - B323  # insecure sha1 usage
+  - B324  # insecure temp file usage

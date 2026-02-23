@@ -1,3 +1,5 @@
+<!-- Autonomous Attack Path Prediction | Multi‑Agent Red Team Simulation | Offensive Security Automation | AI‑Driven Adversary Emulation | MITRE ATT&CK -->
+
 # AAPP-MART  
 
 <p align="center">

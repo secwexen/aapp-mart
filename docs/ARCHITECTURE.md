@@ -49,8 +49,11 @@ aapp-mart
 ├── deployment/
 ├── docs/
 ├── examples/
+├── helm/
 ├── internal_api/
+├── kubernetes
 ├── ml_training/
+├── observability
 ├── scripts/
 ├── tests/
 ├── CHANGELOG.md
@@ -62,12 +65,15 @@ aapp-mart
 ├── LICENSE
 ├── Makefile
 ├── README.md
+├── RELEASE_NOTES.md
 ├── SECURITY.md
-├── VERSION
+├── SECURITY_SCANNER.md
+├── bandit.yaml
+├── docker-compose.observability.yaml
 ├── pyproject.toml
 ├── requirements-dev.txt
 ├── requirements.txt
-└── setup.py
+└── trivyignore
 ```
 
 ---

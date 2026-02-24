@@ -32,15 +32,19 @@ aapp-mart
 │   └── aapp_mart/
 │       ├── aapp/                  # Attack Path Predictor
 │       ├── agents/                # Autonomous attacker agents
-│       ├── api/                   # Optional REST API
-│       ├── common/                # Common, reusable base classes or constants
+│       ├── api/                   # REST API (optional)
 │       ├── cli/                   # Command-line interface
+│       ├── common/                # Common, reusable base classes or constants
 │       ├── core/                  # Autonomous simulation brain
-│       ├── data/                  # Sample data & signatures
+│       ├── integrations/          # Sample data & signatures
 │       ├── mart/                  # Multi-Agent Red Team
 │       ├── modules/               # Pluggable engine modules
+│       ├── offline/               # Offline mode resources
 │       ├── predictors/            # Prediction logic & models
 │       ├── reports/               # Generated reports
+│       ├── risk/                  # Risk engine and CVSS mapping
+│       ├── rl/                    # Reinforcement learning agents & environment
+│       ├── utils/                 # Pluggable engine modules
 │       └── main.py                # AAPP-MART entry point
 │ 
 ├── assets/

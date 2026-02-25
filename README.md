@@ -111,7 +111,7 @@ AAPP-MART combines **attack path prediction**, **multi-agent red team simulation
 2. **Multi-Agent Simulation** – Autonomous adversary emulation using AI-driven agents.
 3. **CORE (Simulation Brain)** – Orchestrates AAPP + MART and manages execution.  
 
-See full architecture in [docs/architecture.md](docs/architecture.md).
+See full architecture in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ---
 

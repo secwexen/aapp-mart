@@ -18,15 +18,7 @@ messages:
       {{input}}
       </text>
 
-responseFormat: json_object
-
-responseSchema:
-  type: object
-  properties:
-    summary:
-      type: string
-  required:
-    - summary
+      responseFormat: json_object
 
 testData:
   - input: |
@@ -37,4 +29,3 @@ evaluators:
   - name: Output should start with 'Summary -'
     string:
       startsWith: Summary -
-responseFormat: json_object

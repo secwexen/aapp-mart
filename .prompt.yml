@@ -5,7 +5,7 @@ modelParameters:
   max_completion_tokens: 2048
   temperature: 0.3
   top_p: 0.9
-  stop: "END"
+  stop: END
 messages:
   - role: system
     content: >-
@@ -17,7 +17,6 @@ messages:
       <text>
       {{input}}
       </text>
-
 testData:
   - input: |
       The quick brown fox jumped over the lazy dog.
@@ -27,3 +26,4 @@ evaluators:
   - name: Output should start with 'Summary -'
     string:
       startsWith: Summary -
+responseFormat: json_object

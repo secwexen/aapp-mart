@@ -17,6 +17,17 @@ messages:
       <text>
       {{input}}
       </text>
+
+responseFormat: json_object
+
+responseSchema:
+  type: object
+  properties:
+    summary:
+      type: string
+  required:
+    - summary
+
 testData:
   - input: |
       The quick brown fox jumped over the lazy dog.

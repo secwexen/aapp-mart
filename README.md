@@ -17,17 +17,15 @@ Advanced AI-driven red team simulation engine for enterprise security evaluation
 ![Status](https://img.shields.io/badge/status-early--stage-brightgreen)
 
 ## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
-
 **AAPP‑MART (Autonomous Attack Path Prediction & Multi‑Agent Red Team)** is an open‑source Python engine for offensive security research and automated risk assessment. It combines AI‑driven attack‑path prediction with autonomous adversarial simulation to model how attackers move through an environment and to surface actionable security insights.
 
-Unlike traditional static vulnerability scanning, AAPP‑MART blends predictive analytics with multi‑agent red‑team behavior to provide continuous security evaluation. Its architecture helps defenders anticipate attack strategies, validate controls, and understand real‑world risk through repeatable and data‑driven simulations.  
+Unlike traditional static vulnerability scanning, AAPP‑MART blends predictive analytics with multi‑agent red‑team behavior to provide continuous security evaluation. Its architecture helps defenders anticipate attack strategies, validate controls, and understand real‑world risk through repeatable and data‑driven simulations.
   
 For full documentation and guides, visit the official [AAPP-MART Website](https://secwexen.github.io/aapp-mart/).
 
 ---
 
 ## Executive Summary
-
 AAPP-MART is a deterministic attack path modeling and controlled adversary simulation engine 
 designed for authorized defensive security validation.
 
@@ -41,7 +39,6 @@ It does not perform destructive exploitation.
 ---
 
 ## Conceptual Usage Example
-
 The following illustrates the intended Python API design once the core engine is fully implemented:
 
 ```python
@@ -60,7 +57,6 @@ print(report)
 ---
 
 ## Legal & Authorized Use
-
 AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
 and controlled adversary simulation within environments where explicit permission has been granted.
 
@@ -70,7 +66,6 @@ Users are responsible for ensuring lawful and policy-compliant usage.
 ---
 
 ## Market Positioning & Research Foundations
-
 AAPP-MART sits at the intersection of **academic attack graph modeling**, **BAS tooling**, and **AI-assisted adversary simulation**, combining **deterministic graph-based prediction** with **controlled autonomous simulation**.
 
 It continuously models, predicts, and simulates attacker behavior, providing **forward-looking defensive validation**.
@@ -93,7 +88,6 @@ Threat modeling ensures clarity and reproducibility:
 ---
 
 ## Overview
-
 Modern infrastructures are too complex for traditional security testing. AAPP-MART combines predictive AI with autonomous adversarial simulation to continuously evaluate an environment’s real attack surface.
 
 ### Why AAPP-MART?
@@ -109,7 +103,6 @@ By combining **AI-driven attack path prediction** with **autonomous red team sim
 ---
 
 ## Architecture Flow
-
 AAPP-MART combines **attack path prediction**, **multi-agent red team simulation** and **risk scoring** into a unified workflow:
 
 1. **Attack Path Prediction** – Graph-based analysis of services, permissions, and vulnerabilities.
@@ -121,7 +114,6 @@ See full architecture in [docs/architecture.md](docs/architecture.md).
 ---
 
 ## System Components
-
 The system operates in two major components:
 
 ### **AAPP (AI Attack Path Predictor)**  
@@ -147,7 +139,6 @@ The CORE Orchestration Engine is the central coordination layer of AAPP‑MART. 
 ---
 
 ## Docs & Resources
-
 Detailed guides and references are also available in the repository:
 
 - [Threat Model](docs/threat_model.md)
@@ -165,7 +156,6 @@ Detailed guides and references are also available in the repository:
 ---
 
 ## License
-
 This project is licensed under the Apache License, Version 2.0.  
 See the [LICENSE](LICENSE) file for full details.  
 
@@ -174,7 +164,6 @@ See the [LICENSE](LICENSE) file for full details.
 ## Contributing
 
 ### Contributing Workflow (Summary)
-
 - Fork the repository and create a feature or fix branch (e.g. `feature/your-feature`).
 - Make your changes and add relevant tests.
 - Ensure all tests pass (`pytest`) and code style checks (e.g. `make lint`).
@@ -188,7 +177,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 ---
 
 ## Roadmap
-
 AAPP-MART development is structured into strategic phases:
 
 **Phase 1 – Research & Architecture**  
@@ -198,7 +186,6 @@ AAPP-MART development is structured into strategic phases:
 ---
 
 ## Open Source & Proprietary Components
-
 AAPP‑MART is developed as a hybrid open-source project. Core components are fully open and community-driven, while certain production-grade modules remain proprietary to ensure security, reliability, and commercial sustainability.
 
 ### Open Source Components
@@ -215,7 +202,6 @@ This hybrid model ensures transparency and community collaboration while protect
 ---
 
 ## Development Status
-
 Early-stage open source project. Core implementation is still in progress.   
 
 AAPP-MART is currently under active development.
@@ -228,8 +214,7 @@ and controlled simulation capabilities are being implemented progressively.
 ---
 
 ## Support & Community
-
-⭐ Found AAPP-MART useful? Give us a star and support the project!  
+⭐ Found AAPP-MART useful? Give us a star and support the project!   
 💬 Join discussions, report issues, or contribute your ideas!  
 
 For support, questions, or feature requests, please open an issue:
@@ -240,7 +225,6 @@ For ideas and general discussions, use GitHub Discussions.
 ---
 
 ## Security
-
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
 [Read SECURITY.md](SECURITY.md) for instructions on reporting issues securely. 
@@ -248,6 +232,6 @@ If you discover a security vulnerability, please follow our responsible disclosu
 ---
 
 ## Author
-
-**Secwexen** – Project Lead & Maintainer   
-**GitHub:** [github.com/secwexen](https://github.com/secwexen)  
+**Secwexen**  
+Project Lead & Maintainer  
+GitHub: https://github.com/secwexen

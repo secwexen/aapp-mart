@@ -18,8 +18,6 @@ messages:
       {{input}}
       </text>
 
-      responseFormat: json_object
-
 testData:
   - input: |
       The quick brown fox jumped over the lazy dog.

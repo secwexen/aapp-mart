@@ -2,7 +2,11 @@ name: Text Summarizer
 description: Summarizes input text concisely
 model: openai/gpt-4.1
 modelParameters:
-  temperature: 0.5
+  max_completion_tokens: 2048
+  temperature: 0.3
+  top_p: 0.9
+  stop:
+    - '["END"] '
 messages:
   - role: system
     content: >-

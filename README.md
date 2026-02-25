@@ -108,6 +108,18 @@ By combining **AI-driven attack path prediction** with **autonomous red team sim
 
 ---
 
+## Architecture Flow
+
+AAPP-MART combines **attack path prediction**, **multi-agent red team simulation** and **risk scoring** into a unified workflow:
+
+1. **Attack Path Prediction** – Graph-based analysis of services, permissions, and vulnerabilities.
+2. **Multi-Agent Simulation** – Autonomous adversary emulation using AI-driven agents.
+3. **CORE (Simulation Brain)** – Orchestrates AAPP + MART and manages execution.  
+
+See full architecture in [docs/architecture.md](docs/architecture.md).
+
+---
+
 ## System Components
 
 The system operates in two major components:

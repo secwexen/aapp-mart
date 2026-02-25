@@ -1,8 +1,6 @@
 # AAPP-MART  
 
-<p align="center">
-<img src="assets/images/aapp-mart-logo.png" width="250" alt="aapp-mart-logo">
-</p>
+<p><img src="assets/images/aapp-mart-logo.png" width="250" alt="aapp-mart-logo"></p>
 
 **Predict. Simulate. Secure.**  
 Advanced AI-driven red team simulation engine for enterprise security evaluation.

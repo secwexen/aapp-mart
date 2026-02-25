@@ -1,6 +1,6 @@
 # AAPP-MART  
 
-<p align="center">
+<p>
 <img src="assets/images/aapp-mart-logo.png" width="250" alt="aapp-mart-logo">
 </p>
 

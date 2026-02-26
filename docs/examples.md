@@ -2,8 +2,6 @@
 
 This document provides installation instructions, environment setup, and example usage for AAPP-MART.
 
----
-
 ## Installation
 
 ```bash
@@ -26,8 +24,6 @@ pip install -r requirements.txt
 
 > Note: Some modules may be under active development. Functionality may be limited.
 
----
-
 ## Environment Configuration
 
 AAPP-MART uses environment variables for configuration.
@@ -38,8 +34,6 @@ cp .env.example .env
 ```
 
 > Never commit your real `.env` file, as it may contain sensitive or environment‑specific information.
-
----
 
 ## Conceptual Usage Example
 

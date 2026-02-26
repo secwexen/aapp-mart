@@ -3,8 +3,6 @@
 The AAPP‑MART API layer provides programmatic access to agents, pipelines, predictors, and system modules through REST and WebSocket interfaces.  
 This document outlines the structure, endpoints, schemas, and communication patterns used by the framework.
 
----
-
 ## Overview
 
 AAPP‑MART exposes two primary API interfaces:
@@ -19,8 +17,6 @@ AAPP‑MART exposes two primary API interfaces:
    - Used for streaming logs, agent events, and long‑running task updates
 
 Both interfaces share a common schema layer for request and response validation.
-
----
 
 ## REST API
 
@@ -51,8 +47,6 @@ Returns a list of registered agents.
 }
 ```
 
----
-
 #### **POST /agents/run**
 
 Executes a specific agent with given parameters.
@@ -74,8 +68,6 @@ Executes a specific agent with given parameters.
 }
 ```
 
----
-
 #### **POST /pipeline/execute**
 
 Runs a pipeline consisting of agents, predictors, and modules.
@@ -88,13 +80,10 @@ Runs a pipeline consisting of agents, predictors, and modules.
 }
 ```
 
----
-
 #### **GET /tasks/{task_id}**
 
 Fetches the status or result of a task.
 
----
 
 ## WebSocket API
 
@@ -126,8 +115,6 @@ src/aapp-mart/api/websocket/
   "message": "Agent completed system scan"
 }
 ```
-
----
 
 ## Schemas
 
@@ -167,8 +154,6 @@ Schemas ensure consistent validation for all API requests and responses.
 }
 ```
 
----
-
 ## Error Handling
 
 All API errors follow a unified structure:
@@ -191,8 +176,6 @@ Common error codes:
 - `TASK_NOT_FOUND`
 - `INTERNAL_ERROR`
 
----
-
 ## Future Extensions
 
 Planned API features:
@@ -202,8 +185,6 @@ Planned API features:
 - Streaming predictor outputs  
 - Multi‑pipeline orchestration  
 - Remote module execution  
-
----
 
 AAPP‑MART’s API layer is designed to be modular, extensible, and suitable for both local and distributed environments.  
 As the framework evolves, this reference will expand with full endpoint specifications and examples.

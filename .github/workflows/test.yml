@@ -34,7 +34,7 @@ jobs:
           pytest -q --disable-warnings --maxfail=1 --cov=src --cov-report=xml
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: coverage-report
           path: coverage.xml

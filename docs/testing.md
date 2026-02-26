@@ -2,8 +2,6 @@
 
 This document outlines testing procedures, quality checks, and best practices for contributing to the AAPP-MART project.
 
----
-
 ## 1. Unit Testing
 
 Unit tests ensure individual modules behave as expected. All new features or bug fixes **must** include corresponding tests.
@@ -27,8 +25,6 @@ coverage report
 
 Aim for high coverage, especially for core logic like AAPP prediction and MART agent behavior.
 
----
-
 ## 2. Linting & Code Style
 
 Maintain code consistency with PEP8 and project conventions.
@@ -47,8 +43,6 @@ pylint src/aapp_mart
 
 Linting ensures readability, maintainability, and reduces errors.
 
----
-
 ## 3. Integration Testing
 
 Integration tests validate interactions between:
@@ -63,8 +57,6 @@ Check that:
 - MART agents execute safely without destructive payloads
 - CORE orchestrates simulations consistently and maintains the Knowledge Graph state
 
----
-
 ## 4. Deterministic Replay
 
 AAPP-MART simulations are deterministic when input data and configuration remain identical.
@@ -72,8 +64,6 @@ AAPP-MART simulations are deterministic when input data and configuration remain
 - Use the same target dataset and environment configuration
 - Verify that repeated runs produce the same output
 - Ensure reports and risk scores are consistent
-
----
 
 ## 5. Test Data & Examples
 
@@ -88,16 +78,12 @@ Use these datasets for both unit and integration tests.
 
 > Note: Some modules are under active development; tests may be skipped or marked as expected failures until features are implemented.
 
----
-
 ## 6. Continuous Integration (CI)
 
 - GitHub Actions workflows are configured for testing and CodeQL analysis
 - All pull requests must pass CI checks before merging
 
 > CI ensures code quality and early detection of potential errors.
-
----
 
 ## 7. Contributing Guidelines for Testing
 
@@ -106,8 +92,6 @@ Use these datasets for both unit and integration tests.
 3. Run all tests locally before pushing changes
 4. Ensure code style checks pass
 5. Document any new test cases or mock datasets
-
----
 
 ## 8. Security Considerations
 

@@ -4,8 +4,6 @@
 
 This document introduces the key concepts and terminology behind **AAPP-MART** – the Autonomous Attack Path Prediction & Multi-Agent Red Team simulation engine. Understanding these concepts is essential for using, extending, or reviewing the system effectively.
 
----
-
 ## Core Concepts
 
 ### 1. Attack Graph
@@ -17,8 +15,6 @@ An **Attack Graph** is a directed graph (G = (V, E)) where:
 
 Edges are annotated with **likelihood** and **exploitability weights** to support predictive scoring.
 
----
-
 ### 2. AAPP (AI Attack Path Predictor)
 
 **AAPP** analyzes the target environment to predict the most probable attack paths. It uses:
@@ -28,8 +24,6 @@ Edges are annotated with **likelihood** and **exploitability weights** to suppor
 - Factors such as exploitability, exposure, and asset criticality
 
 AAPP outputs **risk-scored attack paths** for simulation or reporting.
-
----
 
 ### 3. MART (Multi-Agent Red Team)
 
@@ -44,14 +38,10 @@ AAPP outputs **risk-scored attack paths** for simulation or reporting.
 
 Agents collaborate and make decisions independently, creating realistic attack simulations.
 
----
-
 ### 4. Simulation Modes
 
 - **Prediction-Only Mode** – builds attack graphs and forecasts paths without executing actions. Safe for continuous monitoring.
 - **Simulation Mode** – runs controlled, non-destructive simulations to evaluate defenses. Intended for lab environments.
-
----
 
 ### 5. Risk Scoring
 
@@ -68,8 +58,6 @@ Where:
 
 Additional modifiers include **asset criticality weighting**, **CVSS integration**, and **confidence scores**.
 
----
-
 ### 6. Operational Safeguards
 
 AAPP-MART is designed for safe, authorized usage:
@@ -79,13 +67,9 @@ AAPP-MART is designed for safe, authorized usage:
 - Scope is explicitly defined
 - Detailed logging and deterministic execution for auditability
 
----
-
 ### 7. MITRE ATT&CK Alignment
 
 AAPP-MART maps predicted paths and agent behaviors to **MITRE ATT&CK tactics and techniques** for standardized reporting and defensible results.
-
----
 
 ### 8. Deployment Patterns
 
@@ -93,8 +77,6 @@ AAPP-MART maps predicted paths and agent behaviors to **MITRE ATT&CK tactics and
 - **REST API (planned)** – programmatic integration
 - **Air-Gapped / Offline Mode** – isolated environments
 - **Containerization (planned)** – Docker-based deployments
-
----
 
 ## References
 

@@ -3,7 +3,7 @@
 <p><img src="assets/images/aapp-mart-logo.png" width="250" alt="aapp-mart-logo"></p>
 
 **Predict. Simulate. Secure.**  
-Advanced AI-driven red team simulation engine for enterprise security evaluation.
+An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.
 
 ![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/ci.yml?branch=main&label=Build)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)

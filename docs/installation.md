@@ -3,8 +3,6 @@
 AAPP‑MART is currently under active development.  
 This guide explains how to set up the framework for local development, testing, and future production use.
 
----
-
 ## Requirements
 
 Before installing AAPP‑MART, ensure your environment meets the following requirements:
@@ -14,8 +12,6 @@ Before installing AAPP‑MART, ensure your environment meets the following requi
 - Git (for cloning the repository)  
 - Recommended: virtual environment (venv, conda, or similar)
 
----
-
 ## 1. Clone the Repository
 
 Use Git to clone the AAPP‑MART repository:
@@ -24,8 +20,6 @@ Use Git to clone the AAPP‑MART repository:
 git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 ```
-
----
 
 ## 2. Create a Virtual Environment (Recommended)
 
@@ -46,8 +40,6 @@ conda create -n aapp-mart python=3.10
 conda activate aapp-mart
 ```
 
----
-
 ## 3. Install Dependencies
 
 Install all required Python packages:
@@ -64,8 +56,6 @@ pip install -e .
 
 This allows you to modify the source code without reinstalling.
 
----
-
 ## 4. Running the Framework
 
 Once installed, you can test the framework using the example scripts:
@@ -79,8 +69,6 @@ Or run the CLI:
 ```bash
 python -m aappmart.cli.aappmart_cli
 ```
-
----
 
 ## 5. Running Tests
 
@@ -98,8 +86,6 @@ If `pytest` is not installed:
 pip install pytest
 ```
 
----
-
 ## Development Mode
 
 If you plan to contribute or extend the framework:
@@ -113,8 +99,6 @@ pip install -r requirements-dev.txt
 
 3. Follow the project structure under `src/aapp_mart/`
 
----
-
 ## Future Installation (PyPI)
 
 Once the first stable release is published, AAPP‑MART will be installable via PyPI:
@@ -124,8 +108,6 @@ pip install aapp-mart
 ```
 
 This section will be updated when the package becomes publicly available.
-
----
 
 ## Troubleshooting
 
@@ -151,8 +133,6 @@ Activate your environment again:
 ```bash
 source venv/bin/activate
 ```
-
----
 
 AAPP‑MART is evolving rapidly.  
 Installation steps will be updated as new components, APIs, and modules are introduced.

@@ -8,8 +8,6 @@ $$
 
 This document describes how risk is derived, weighted, and reported.
 
----
-
 ## 1. Likelihood
 
 Likelihood represents the probability of a given attack path being successful.  
@@ -19,8 +17,6 @@ It is derived from:
 - Exposure level
 - Privilege requirements
 - Chaining feasibility within the attack graph
-
----
 
 ## 2. Impact
 
@@ -32,8 +28,6 @@ It is weighted using:
 - Lateral movement amplification
 - Business sensitivity (if provided)
 
----
-
 ## 3. Asset Criticality Weighting
 
 Each asset may be assigned a criticality factor to adjust the risk:
@@ -44,16 +38,12 @@ $$
 
 This allows the model to prioritize more critical assets in scoring and reporting.
 
----
-
 ## 4. CVSS Integration
 
 If vulnerability scan data is provided, the system can incorporate **CVSS (Common Vulnerability Scoring System)** metrics aligned with FIRST standards.  
 
 - CVSS values act as input modifiers, not sole determinants.
 - This integration enhances risk scoring accuracy while maintaining deterministic control.
-
----
 
 ## 5. Confidence Score
 
@@ -64,8 +54,6 @@ Each reported risk includes a confidence indicator based on:
 - Coverage of the simulated path in the attack graph
 
 This ensures transparency and supports reproducibility of the results.
-
----
 
 ## 6. Security Boundaries & Operational Safeguards
 
@@ -89,8 +77,6 @@ AAPP-MART is designed as a controlled simulation engine. Safeguards include:
 - Configurable simulation modes (Prediction-Only vs Simulation)
 
 These constraints ensure that AAPP-MART remains a defensive validation platform rather than an offensive exploitation tool.
-
----
 
 ## References
 

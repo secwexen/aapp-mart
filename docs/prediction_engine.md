@@ -1,7 +1,5 @@
 # AAPP & MART Detailed Overview
 
----
-
 ## AAPP (AI Attack Path Predictor)
 
 AAPP predicts attack paths by evaluating:
@@ -40,8 +38,6 @@ CORE is the central orchestration engine that coordinates the entire system:
 - Maintains the **Knowledge Graph** as global state
 - Generates final analytical reports
 - Ensures reproducibility and traceable execution
-
----
 
 ## Integration
 

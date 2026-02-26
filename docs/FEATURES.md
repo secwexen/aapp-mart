@@ -2,8 +2,6 @@
 
 **AAPP‑MART (Autonomous Attack Path Prediction & Multi‑Agent Red Team)** is an AI‑powered offensive‑security engine designed to model attacker behavior, predict attack paths, and validate defensive controls through autonomous simulations. This document provides a detailed overview of the platform’s core capabilities.
 
----
-
 ## Core Capabilities
 
 ### **AI‑Driven Attack Path Prediction**
@@ -21,8 +19,6 @@
 - Manages the global environment state, event propagation, and scenario progression.  
 - Controls agent decision cycles, execution timing, and system‑wide synchronization.
 
----
-
 ## Intelligence & Analytics
 
 ### **Predictive Analytics Engine**
@@ -35,8 +31,6 @@
 - Visualizes relationships between assets, vulnerabilities, and attack vectors.
 - Supports export for external analysis tools.
 
----
-
 ## Security Validation
 
 ### **Continuous Security Assessment**
@@ -48,8 +42,6 @@
 - Safe, isolated execution of adversarial behavior.
 - Configurable constraints for risk‑free testing.
 - Supports cloud, hybrid, and on‑prem environments.
-
----
 
 ## Architecture & Extensibility
 
@@ -65,8 +57,6 @@
 - Python API for automation and scripting.
 - Extensible interfaces for custom agents and models.
 
----
-
 ## Output & Reporting
 
 ### **Simulation Reports**
@@ -77,8 +67,6 @@
 ### **Telemetry & Metrics**
 - Tracks agent decisions, environment changes, and attack outcomes.
 - Provides insights for tuning defenses and improving detection.
-
----
 
 ## Use Cases
 

@@ -5,8 +5,6 @@
 
 Thank you for your interest in contributing to AAPP-MART. We welcome contributions that improve code quality, security, and documentation.  
 
----
-
 ## Getting Started
 
 1. Fork the repository
@@ -23,8 +21,6 @@ Thank you for your interest in contributing to AAPP-MART. We welcome contributio
    pip install -r requirements.txt
    ```
 If you are using VS Code, the recommended way is to open the project in the Dev Container environment.
-
----
 
 ## Development Guidelines
 
@@ -43,8 +39,6 @@ If you are using VS Code, the recommended way is to open the project in the Dev 
 - Avoid introducing breaking changes without discussion.
 - Keep code compatible with the project license (Apache-2.0 License).
   
----
-
 ## Branching and Merge Policy
 
 - Use descriptive branch names: `feature/*`, `fix/*`, `docs/*`
@@ -52,15 +46,11 @@ If you are using VS Code, the recommended way is to open the project in the Dev 
 - Before merging, rebase or squash commits to maintain a clean history
 - Merges should be performed via Pull Request after review
 
----
-
 ## Commit Messages
 
 - Use clear, descriptive commit messages
 - Reference related issues when applicable
 - Squash commits before submitting a pull request
-
----
 
 ## Pull Requests
 
@@ -78,15 +68,11 @@ All pull requests must:
 - Reviewers check for code quality, tests, security, and documentation updates
 - Feedback must be addressed before merging
 
----
-
 ## Documentation Contributions
 
 - Contributions to the documentation are gladly accepted.
 - Update [README.md](README.md) or other documentation as needed
 - Follow Markdown formatting and style conventions
-
----
 
 ## Security and Ethics
 
@@ -97,14 +83,10 @@ Contributions must **not include exploit code**, malware, or content intended fo
 
 Security issues should be reported according to the [SECURITY.md](SECURITY.md) policy.
 
----
-
 ## Code of Conduct
 
 By participating in this project, you agree to act respectfully and professionally.
 Harassment, abuse, or malicious contributions will not be tolerated.
-
----
 
 # Thank You
 

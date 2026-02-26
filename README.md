@@ -9,7 +9,6 @@ Advanced AI-driven red team simulation engine for enterprise security evaluation
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
 ![Python Versions](https://img.shields.io/pypi/pyversions/aapp-mart)
 ![License](https://img.shields.io/github/license/secwexen/aapp-mart)
-[![Website](https://img.shields.io/website?url=https://secwexen.github.io/aapp-mart/)](https://secwexen.github.io/aapp-mart/)
 
 ## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
 

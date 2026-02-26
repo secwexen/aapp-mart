@@ -39,7 +39,9 @@ header p {
 nav {
     background: #1a1a1a;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
     padding: 15px 0;
 }
 nav a {
@@ -47,6 +49,7 @@ nav a {
       margin: 0 20px;
       text-decoration: none;
       font-weight: 500;
+      font-size: 0.9em;
       transition: color 0.3s ease;
 }
 nav a:hover {

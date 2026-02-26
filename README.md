@@ -18,8 +18,6 @@ Unlike traditional static vulnerability scanning, AAPP‑MART blends predictive 
   
 For full documentation and guides, visit the official [AAPP-MART Website](https://secwexen.github.io/aapp-mart/).
 
----
-
 ## Executive Summary
 
 AAPP-MART is a deterministic attack path modeling and controlled adversary simulation engine 
@@ -31,8 +29,6 @@ The system combines:
 - Risk-scored analytical reporting
 
 It does not perform destructive exploitation.
-
----
 
 ## Conceptual Usage Example
 
@@ -51,8 +47,6 @@ print(report)
 > Core orchestration modules are currently under development.  
 > See [API Reference](docs/api_reference.md) and [Architecture](docs/architecture.md) for interface details and system structure.  
 
----
-
 ## Legal & Authorized Use
 
 AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
@@ -60,8 +54,6 @@ and controlled adversary simulation within environments where explicit permissio
 
 The system is designed for non-destructive analysis and does not support uncontrolled exploitation. 
 Users are responsible for ensuring lawful and policy-compliant usage.
-
----
 
 ## Market Positioning & Research Foundations
 
@@ -84,8 +76,6 @@ Threat modeling ensures clarity and reproducibility:
 
 **Conclusion:** AAPP-MART is a defensible, explainable, and academically credible simulation engine, elevating it from a standard tool to a research-grade security platform.
 
----
-
 ## Overview
 
 Modern infrastructures are too complex for traditional security testing. AAPP-MART combines predictive AI with autonomous adversarial simulation to continuously evaluate an environment’s real attack surface.
@@ -100,8 +90,6 @@ AAPP-MART stands out from traditional security tools in its approach:
 
 By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
----
-
 ## Architecture Flow
 
 AAPP-MART combines **attack path prediction**, **multi-agent red team simulation** and **risk scoring** into a unified workflow:
@@ -111,8 +99,6 @@ AAPP-MART combines **attack path prediction**, **multi-agent red team simulation
 3. **CORE (Simulation Brain)** – Orchestrates AAPP + MART and manages execution.  
 
 See full architecture in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
-
----
 
 ## System Components
 
@@ -142,8 +128,6 @@ Together, they create a fully automated offensive security engine capable of for
 
 The CORE Orchestration Engine is the central coordination layer of AAPP‑MART. It manages multi‑agent behavior, controls the execution flow of attack simulations, and ensures consistent interaction between all system modules.
 
----
-
 ## Docs & Resources
 
 Detailed guides and references are also available in the repository:
@@ -160,14 +144,10 @@ Detailed guides and references are also available in the repository:
 - [Changelog](CHANGELOG.md)
 - [Security Policy](SECURITY.md)
 
----
-
 ## License
 
 This project is licensed under the Apache License, Version 2.0.  
 See the [LICENSE](LICENSE) file for full details.  
-
----
 
 ## Contributing
 
@@ -183,8 +163,6 @@ Contributions are welcome.
 Please open an issue before submitting major changes or new features.  
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.  
 
----
-
 ## Roadmap
 
 AAPP-MART development is structured into strategic phases:
@@ -192,8 +170,6 @@ AAPP-MART development is structured into strategic phases:
 **Phase 1 – Research & Architecture**  
 **Phase 2 – Core Implementation**  
 **Phase 3 – Ecosystem & Advanced Features**  
-
----
 
 ## Open Source & Proprietary Components
 
@@ -211,8 +187,6 @@ AAPP‑MART is developed as a hybrid open-source project. Core components are fu
 
 This hybrid model ensures transparency and community collaboration while protecting high-value components required for enterprise deployments.
 
----
-
 ## Development Status
 
 Early-stage open source project. Core implementation is still in progress.   
@@ -224,8 +198,6 @@ and initial logic of the AAPP-MART engine.
 Advanced prediction models, autonomous agent behaviors,
 and controlled simulation capabilities are being implemented progressively.
 
----
-
 ## Support & Community
 
 ⭐ Found AAPP-MART useful? Give us a star and support the project!   
@@ -236,15 +208,11 @@ For support, questions, or feature requests, please open an issue:
 
 For ideas and general discussions, use GitHub Discussions.
 
----
-
 ## Security
 
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
 [Read SECURITY.md](SECURITY.md) for instructions on reporting issues securely. 
-
----
 
 ## Author
 

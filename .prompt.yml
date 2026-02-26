@@ -1,6 +1,6 @@
 name: Text Summarizer
 description: Summarizes input text concisely
-model: openai/gpt-4.1
+model: microsoft/phi-4-reasoning
 modelParameters:
   max_completion_tokens: 2048
   temperature: 0.3

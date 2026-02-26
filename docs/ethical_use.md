@@ -18,8 +18,6 @@ Under no circumstances is AAPP-MART intended for facilitating unauthorized acces
 
 Users are solely responsible for ensuring full compliance with all applicable laws, regulations, contractual obligations, and internal governance policies when using this tool.
 
----
-
 ### 2. Intended Audience
 
 AAPP-MART is developed for use by qualified cybersecurity professionals, including but not limited to:
@@ -34,8 +32,6 @@ AAPP-MART is developed for use by qualified cybersecurity professionals, includi
 
 Use by individuals outside these contexts must still adhere strictly to authorized and lawful parameters.
 
----
-
 ### 3. Explicit Non-Objectives
 
 AAPP-MART is **not** designed to function as:
@@ -46,8 +42,6 @@ AAPP-MART is **not** designed to function as:
 - A destructive or uncontrolled attack tool
 
 Any attempt to repurpose the platform for offensive, unlawful, or malicious objectives directly contradicts its intended design and ethical framework.
-
----
 
 ### 4. Legal and Ethical Responsibility
 

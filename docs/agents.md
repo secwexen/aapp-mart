@@ -3,8 +3,6 @@
 The Multi-Agent Red Team (MART) subsystem simulates attacker behavior using autonomous agents.  
 Each agent represents a phase of the offensive security kill chain.
 
----
-
 ## 1. Agent Architecture
 
 All agents inherit from:
@@ -14,8 +12,6 @@ All agents inherit from:
 
 Agents do not communicate directly.  
 They interact only through the Knowledge Graph.
-
----
 
 ## 2. Agent Types
 
@@ -29,16 +25,12 @@ Performs reconnaissance:
 
 Outputs discovered assets to the Knowledge Graph.
 
----
-
 ### 2.2 Exploit Agent (`exploit_agent.py`)
 Attempts exploitation:
 
 - Matches vulnerabilities  
 - Executes exploit logic  
 - Records successful compromises  
-
----
 
 ### 2.3 Privilege Escalation Agent (`privesc_agent.py`)
 Attempts to escalate privileges:
@@ -47,16 +39,12 @@ Attempts to escalate privileges:
 - Credential harvesting  
 - Kernel/privilege exploits  
 
----
-
 ### 2.4 Lateral Movement Agent (`lateral_agent.py`)
 Moves across the network:
 
 - SSH/RDP pivoting  
 - Credential reuse  
 - Path traversal  
-
----
 
 ### 2.5 Persistence Agent (`persistence_agent.py`)
 Establishes persistence:
@@ -65,16 +53,12 @@ Establishes persistence:
 - Scheduled tasks  
 - Service modifications  
 
----
-
 ### 2.6 Report Agent (`report_agent.py`)
 Generates structured output:
 
 - Attack chains  
 - Compromise summary  
 - Recommendations  
-
----
 
 ## 3. Agent Lifecycle
 
@@ -84,8 +68,6 @@ Generates structured output:
 4. Write results  
 5. Repeat until simulation ends  
 
----
-
 ## 4. Extending Agents
 
 To add a new agent:
@@ -94,8 +76,6 @@ To add a new agent:
 2. Inherit from `agent_base.py`  
 3. Implement `run()`  
 4. Register agent in the orchestrator  
-
----
 
 ## 5. Summary
 

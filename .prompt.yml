@@ -5,7 +5,10 @@ modelParameters:
   max_completion_tokens: 2048
   temperature: 0.3
   top_p: 0.9
-  stop: END
+  stop: "END"
+
+responseFormat: json_object
+  
 messages:
   - role: system
     content: >-
@@ -21,9 +24,10 @@ testData:
   - input: |
       The quick brown fox jumped over the lazy dog.
       The dog was too tired to react.
-    expected: Summary - A fox jumped over a lazy, unresponsive dog.
+  expected: |
+    {"summary": "expected: Summary - A fox jumped over a lazy, unresponsive dog."}
+
 evaluators:
   - name: Output should start with 'Summary -'
     string:
-      startsWith: Summary -
-responseFormat: json_object
+      startsWith: "Summary -"

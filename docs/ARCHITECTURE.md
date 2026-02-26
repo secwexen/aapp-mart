@@ -5,8 +5,6 @@ It combines AI-driven Attack Path Prediction (AAPP) with a Multi-Agent Red Team 
 
 This document outlines the system architecture, core components, and internal data flow.
 
----
-
 ## 1. High-Level Overview
 
 AAPP-MART consists of three major subsystems:
@@ -21,8 +19,6 @@ AAPP-MART consists of three major subsystems:
    Orchestrates AAPP + MART, manages global state, and controls execution.
 
 All components communicate through a shared **Knowledge Graph**.
-
----
 
 ## 2. Directory Structure
 
@@ -80,8 +76,6 @@ aapp-mart
 └── trivyignore
 ```
 
----
-
 ## 3. Component Breakdown
 
 ### 3.1 AAPP — Attack Path Predictor
@@ -101,8 +95,6 @@ Key modules:
 - `scoring.py`
 - `models/`
 
----
-
 ### 3.2 MART — Multi-Agent Red Team
 
 Simulates attacker behavior using specialized agents:
@@ -115,8 +107,6 @@ Simulates attacker behavior using specialized agents:
 - Reporting  
 
 All agents inherit from `agent_base.py` and share memory via the Knowledge Graph.
-
----
 
 ### 3.3 CORE — Simulation Brain
 
@@ -134,8 +124,6 @@ Key modules:
 - `simulation_engine.py`
 - `knowledge_graph.py`
 
----
-
 ## 4. Knowledge Graph
 
 Stores:
@@ -149,15 +137,11 @@ Stores:
 
 Acts as the shared memory for all agents.
 
----
-
 ## 5. Data Flow
 
 ```
 Input → AAPP → Knowledge Graph → MART → Reports
 ```
-
----
 
 ## 6. Extensibility
 
@@ -167,8 +151,6 @@ AAPP-MART supports:
 - New ML models  
 - New scoring algorithms  
 - New simulation modes  
-
----
 
 ## 7. Summary
 

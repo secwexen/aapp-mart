@@ -4,8 +4,6 @@ Predictors in AAPP‑MART provide the decision‑making and inference capabiliti
 They analyze input data, generate predictions, evaluate conditions, and guide autonomous behavior.  
 This document explains the predictor architecture, available predictor types, and how to build custom models.
 
----
-
 ## Predictor Architecture
 
 All predictors inherit from the base class:
@@ -23,13 +21,9 @@ A typical predictor implements:
 
 Predictors are stateless by default, but can maintain internal state if needed.
 
----
-
 ## Predictor Types
 
 AAPP‑MART includes three primary predictor categories:
-
----
 
 ## 1. Machine Learning Predictors
 
@@ -60,8 +54,6 @@ class MLPredictor(BasePredictor):
         return {"score": 0.87}
 ```
 
----
-
 ## 2. Rule‑Based Predictors
 
 Located in:
@@ -91,8 +83,6 @@ class RulePredictor(BasePredictor):
 
 Rule‑based predictors are fast, transparent, and easy to debug.
 
----
-
 ## 3. Hybrid Predictors
 
 Located in:
@@ -117,8 +107,6 @@ Example workflow:
 
 Hybrid predictors offer the best balance between accuracy and interpretability.
 
----
-
 ## Using Predictors in Pipelines
 
 Predictors are commonly used inside pipelines:
@@ -137,8 +125,6 @@ Pipelines can chain multiple predictors:
 ```python
 pipeline = ["SystemAgent", "MLPredictor", "RulePredictor"]
 ```
-
----
 
 ## Creating a Custom Predictor
 
@@ -159,8 +145,6 @@ class CustomPredictor(BasePredictor):
         return {"custom_output": True}
 ```
 
----
-
 ## Best Practices
 
 - Keep predictors modular and stateless  
@@ -169,8 +153,6 @@ class CustomPredictor(BasePredictor):
 - Use logging instead of print statements  
 - Avoid heavy dependencies unless necessary  
 - Document expected input and output formats  
-
----
 
 ## Future Extensions
 
@@ -181,8 +163,6 @@ Planned enhancements include:
 - Predictor registry with auto‑discovery  
 - GPU‑accelerated inference  
 - Distributed prediction pipelines  
-
----
 
 Predictors form the intelligence layer of AAPP‑MART, enabling agents and pipelines to make informed, autonomous decisions.  
 As the framework evolves, additional predictor types and advanced inference engines will be introduced.

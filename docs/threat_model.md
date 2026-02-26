@@ -15,8 +15,6 @@ Out of scope:
 
 These boundaries are enforced by design and configuration defaults to ensure safe, authorized, and ethical use.
 
----
-
 # Input & Output Contract
 
 ## Inputs
@@ -35,8 +33,6 @@ The engine produces analytical security artifacts, including:
 - Risk-scored findings
 - Human-readable reports with mitigation guidance
 
----
-
 # Modes of Operation
 
 AAPP-MART operates in controlled modes designed for authorized security assessment and defensive validation.
@@ -54,8 +50,6 @@ AAPP-MART operates in controlled modes designed for authorized security assessme
 - Designed for lab environments and authorized testing only
 
 Destructive actions and uncontrolled exploitation are intentionally excluded.
-
----
 
 # MITRE ATT&CK Alignment
 

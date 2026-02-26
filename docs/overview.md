@@ -4,8 +4,6 @@
 
 This project goes beyond traditional static vulnerability scanning by combining predictive analytics and autonomous red-team style simulations. Its architecture supports **continuous security evaluation**, enabling defenders to anticipate attack strategies and validate defensive controls before breaches occur. ([GitHub][1])
 
----
-
 ## Key Capabilities
 
 - **Attack Path Prediction** – Analyzes assets, configurations, and known vulnerabilities to build predicted exploitation chains.
@@ -19,14 +17,10 @@ This project goes beyond traditional static vulnerability scanning by combining 
 User Credential → Phishing Exploit → Initial Access → Lateral Movement → Privilege Escalation → Critical Asset Compromise
 ```
 
----
-
 ## Why AAPP-MART?
 
 Modern computing environments are too complex for purely reactive or playbook-based security tools.
 AAPP-MART’s predictive and adaptive design enables organizations to move security validation earlier into their workflows and to identify high-impact risk scenarios that might otherwise be overlooked. ([GitHub][1])
-
----
 
 ## Usage Context
 

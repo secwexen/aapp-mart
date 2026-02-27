@@ -89,44 +89,6 @@ AAPP-MART stands out from traditional security tools in its approach:
 
 By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
-## Architecture Flow
-
-AAPP-MART combines **attack path prediction**, **multi-agent red team simulation** and **risk scoring** into a unified workflow:
-
-1. **Attack Path Prediction** – Graph-based analysis of services, permissions, and vulnerabilities.
-2. **Multi-Agent Simulation** – Autonomous adversary emulation using AI-driven agents.
-3. **CORE (Simulation Brain)** – Orchestrates AAPP + MART and manages execution.  
-
-See full architecture in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
-
-## System Components
-
-The system operates in two major components:
-
-### **AAPP (AI Attack Path Predictor)**  
-
-Predicts the most likely attack paths by analyzing services, permissions, vulnerabilities, and configuration weaknesses.
-
-#### **AI Engine**
-
-Clarifying AAPP-MART’s AI approach:
-
-- **Decision Logic** – Rule-based / ML / Hybrid (per module).  
-- **Learning** – Offline training or deterministic scoring.  
-- **Decision Factors** – Exploitability, exposure, privileges, asset criticality.
-
-Explicit AI definition ensures credibility, reproducibility, and clarity for users and reviewers.
-
-### **MART (Multi-Agent Red Team)**  
-
-Executes autonomous red team simulations using specialized AI agents that emulate real attacker behavior.
-
-Together, they create a fully automated offensive security engine capable of forecasting and simulating attacks end-to-end.
-
-### **CORE Orchestration Engine**
-
-The CORE Orchestration Engine is the central coordination layer of AAPP‑MART. It manages multi‑agent behavior, controls the execution flow of attack simulations, and ensures consistent interaction between all system modules.
-
 ## Docs & Resources
 
 Detailed guides and references are also available in the repository:
@@ -169,22 +131,6 @@ AAPP-MART development is structured into strategic phases:
 **Phase 1 – Research & Architecture**  
 **Phase 2 – Core Implementation**  
 **Phase 3 – Ecosystem & Advanced Features**  
-
-## Open Source & Proprietary Components
-
-AAPP‑MART is developed as a hybrid open-source project. Core components are fully open and community-driven, while certain production-grade modules remain proprietary to ensure security, reliability, and commercial sustainability.
-
-### Open Source Components
-
-- Core simulation engine
-- MART agent framework (behaviors, offensive modules)
-- MITRE ATT&CK integration layer
-- Attack graph engine
-- Reporting templates (HTML, Markdown, JSON)
-- Documentation and examples
-- Testing framework (unit, integration, e2e)
-
-This hybrid model ensures transparency and community collaboration while protecting high-value components required for enterprise deployments.
 
 ## Development Status
 

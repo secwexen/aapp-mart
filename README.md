@@ -72,6 +72,8 @@ By combining **AI-driven attack path prediction** with **autonomous red team sim
 
 Detailed guides and references are also available in the repository:
 
+- [Research Foundations](docs/research.md)
+- [System Components](docs/components.md)
 - [Threat Model](docs/threat_model.md)
 - [Risk Model](docs/risk_model.md)
 - [Deployment Guide](docs/deployment.md)

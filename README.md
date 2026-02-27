@@ -54,27 +54,6 @@ and controlled adversary simulation within environments where explicit permissio
 The system is designed for non-destructive analysis and does not support uncontrolled exploitation. 
 Users are responsible for ensuring lawful and policy-compliant usage.
 
-## Market Positioning & Research Foundations
-
-AAPP-MART sits at the intersection of **academic attack graph modeling**, **BAS tooling**, and **AI-assisted adversary simulation**, combining **deterministic graph-based prediction** with **controlled autonomous simulation**.
-
-It continuously models, predicts, and simulates attacker behavior, providing **forward-looking defensive validation**.
-
-Built on research-grade principles:
-
-- **Attack Graph Theory** – Models assets, privileges, and attacker transitions
-- **Risk Modeling** – Likelihood × Impact framework
-- **Deterministic Simulation** – Predictable multi-agent behavior
-- **Graph Traversal** – DFS, Best-First, or A* exploration
-
-Threat modeling ensures clarity and reproducibility:
-
-- **STRIDE** – Spoofing, Tampering, Repudiation, Info Disclosure, DoS, Privilege Escalation
-- **Adversary Capability Model** – Attacker skills, access scope, potential actions
-- **Formal Risk Notation** – Transparent likelihood, impact, and path scoring
-
-**Conclusion:** AAPP-MART is a defensible, explainable, and academically credible simulation engine, elevating it from a standard tool to a research-grade security platform.
-
 ## Overview
 
 Modern infrastructures are too complex for traditional security testing. AAPP-MART combines predictive AI with autonomous adversarial simulation to continuously evaluate an environment’s real attack surface.

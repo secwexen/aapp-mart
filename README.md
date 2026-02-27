@@ -5,10 +5,12 @@
 **Predict. Simulate. Secure.**  
 An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.
 
+![license](https://img.shields.io/github/license/secwexen/aapp-mart)
+![version](https://img.shields.io/github/v/release/secwexen/aapp-mart)
 ![Build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/ci.yml?branch=main&label=Build)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
-![Python Versions](https://img.shields.io/pypi/pyversions/aapp-mart)
-![License](https://img.shields.io/github/license/secwexen/aapp-mart)
+![python](https://img.shields.io/badge/python-3.11%2B-blue)
+![docs](https://img.shields.io/badge/docs-online-blue)
 
 ## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
 

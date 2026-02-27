@@ -134,6 +134,8 @@ Test coverage and reliability have improved across the platform.
 
 v0.4.0 remains a **pre‑release**. While the platform has expanded significantly and core components are stable, several advanced modules, RL policies, and attack graph rules are still under active development. This release is intended for early adopters, contributors, and research environments.
 
+---
+
 ## What's Changed
 
 * Potential fix for code scanning alert no. 8: Workflow does not contain permissions by @secwexen in https://github.com/secwexen/aapp-mart/pull/12

@@ -1,20 +1,20 @@
-# Research Foundations & Market Positioning
+## Market Positioning & Research Foundations
 
-AAPP-MART sits at the intersection of academic attack graph modeling, BAS tooling, and AI-assisted adversary simulation.
+AAPP-MART sits at the intersection of **academic attack graph modeling**, **BAS tooling**, and **AI-assisted adversary simulation**, combining **deterministic graph-based prediction** with **controlled autonomous simulation**.
 
-## Academic Foundations
+It continuously models, predicts, and simulates attacker behavior, providing **forward-looking defensive validation**.
 
-- Attack Graph Theory
-- Risk Modeling (Likelihood × Impact)
-- Deterministic Simulation
-- Graph Traversal (DFS, Best-First, A*)
+Built on research-grade principles:
 
-## Threat Modeling Frameworks
+- **Attack Graph Theory** – Models assets, privileges, and attacker transitions
+- **Risk Modeling** – Likelihood × Impact framework
+- **Deterministic Simulation** – Predictable multi-agent behavior
+- **Graph Traversal** – DFS, Best-First, or A* exploration
 
-- STRIDE
-- Adversary Capability Model
-- Formal Risk Notation
+Threat modeling ensures clarity and reproducibility:
 
-## Market Positioning
+- **STRIDE** – Spoofing, Tampering, Repudiation, Info Disclosure, DoS, Privilege Escalation
+- **Adversary Capability Model** – Attacker skills, access scope, potential actions
+- **Formal Risk Notation** – Transparent likelihood, impact, and path scoring
 
-AAPP-MART blends predictive analytics with multi-agent red-team behavior to provide continuous, forward-looking defensive validation.
+**Conclusion:** AAPP-MART is a defensible, explainable, and academically credible simulation engine, elevating it from a standard tool to a research-grade security platform.

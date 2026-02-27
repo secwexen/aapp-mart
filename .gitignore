@@ -1,5 +1,6 @@
 # Python cache
 __pycache__/
+__pypackages__/
 **/__pycache__/
 *.py[cod]
 *$py.class
@@ -24,6 +25,8 @@ venv/
 env/
 .venv/
 ENV/
+.env
+.env.*
 
 # PyInstaller
 *.manifest

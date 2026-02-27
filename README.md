@@ -10,7 +10,6 @@ An AI‑powered red‑team simulation and attack‑path prediction engine design
 ![build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/ci.yml?branch=main&label=Build)
 ![codeql](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
 ![python](https://img.shields.io/badge/python-3.10%2B-blue)
-![docs](https://img.shields.io/badge/docs-online-blue)
 
 ## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
 

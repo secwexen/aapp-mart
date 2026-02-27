@@ -41,7 +41,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 ⚠️ Note: While the core features are now stable, some advanced modules and experimental agents are still under development. This release is intended for testing, early adoption, and contribution purposes.
 
-# **[0.4.0] – 2026-02-27**
+## **[0.4.0] – 2026-02-27**
 
 ### **Added**
 - New functional modules under `src/aapp_mart/modules/`:

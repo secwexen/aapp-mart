@@ -40,3 +40,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 - CLI/API usage improvements and documentation updates.
 
 ⚠️ Note: While the core features are now stable, some advanced modules and experimental agents are still under development. This release is intended for testing, early adoption, and contribution purposes.
+
+# **[0.4.0] – 2026-02-27**
+
+### **Added**
+- New functional modules under `src/aapp_mart/modules/`:
+  - automation, memory, network, offensive, system  
+- Expanded agent framework with new offensive, forensic, network, and system agents  
+- Updated behavior mappings and multi‑step attack behavior pipelines  
+- Observability stack:
+  - centralized logging, Promtail integration  
+  - Prometheus metrics exporter  
+  - OpenTelemetry tracing + Jaeger integration  
+  - Grafana dashboards (agent activity, system health, platform overview)  
+- Reinforcement Learning components:
+  - RL agent, environment, memory, policy, trainer  
+- New API endpoints and expanded CLI commands (simulate, scan, report)  
+- Helm chart and updated Kubernetes manifests  
+- Expanded documentation (architecture, features, API, CLI, deployment, threat model, prediction engine, examples)  
+- New API, integration, end‑to‑end, stability, and performance tests  
+
+### **Changed**
+- Improved attack graph and knowledge graph engine  
+- Updated prediction engine, ML models, and model registry  
+- Enhanced dashboard backend (timeline, attack graph, risk heatmap)  
+- Improved Dockerfiles, Nginx configuration, and deployment pipeline  
+- Updated environment configuration templates (dev, staging, prod)  
+
+### **Fixed**
+- Multiple GitHub Actions workflow permission issues  
+- Minor bugs across modules and agents  
+
+### **Notes**
+- This version is a **pre‑release**.  
+- Some advanced modules, RL policies, and attack graph rules remain under active development.
+
+### **Full Changelog**
+https://github.com/secwexen/aapp-mart/compare/v0.3.0...v0.4.0

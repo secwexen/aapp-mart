@@ -6,7 +6,7 @@
 An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.
 
 ![license](https://img.shields.io/github/license/secwexen/aapp-mart)
-![version](https://img.shields.io/github/v/release/secwexen/aapp-mart)
+![version](https://img.shields.io/github/v/release/secwexen/aapp-mart?include_prereleases)
 ![build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/ci.yml?branch=main&label=Build)
 ![codeql](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/codeql.yml?branch=main&label=CodeQL)
 ![python](https://img.shields.io/badge/python-3.10%2B-blue)

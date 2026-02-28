@@ -1,7 +1,12 @@
 name: Pylint
 
-on: [push]
-permissions:
+on:
+  push:
+    branches: [ "main", "develop", "release/*", "hotfix/*" ]
+  pull_request:
+    branches: [ "main", "develop", "release/*", "hotfix/*" ]
+
+permissions: 
   contents: read
 
 jobs:
@@ -10,16 +15,40 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.11", "3.12"]
+        
     steps:
     - uses: actions/checkout@v6
+    
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
+        
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pylint
-    - name: Analysing the code with pylint
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Full pylint scan (entire codebase)
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py') --output-format=parseable > pylint-full-report.txt || true
+
+    - name: Determine changed Python files
+      id: changes
+      run: |
+        FILES=$(git diff --name-only HEAD~1 | grep -E '\.py$' || true)
+        echo "files=$FILES" >> $GITHUB_OUTPUT
+
+    - name: Incremental pylint scan (changed files only)
+      if: steps.changes.outputs.files != ''
+      run: |
+        pylint ${{ steps.changes.outputs.files }} --output-format=parseable > pylint-incremental-report.txt || true
+
+    - name: Upload pylint reports 
+      uses: actions/upload-artifact@v6 
+      with: 
+        name: pylint-reports 
+        path: | 
+          pylint-full-report.txt 
+          pylint-incremental-report.txt

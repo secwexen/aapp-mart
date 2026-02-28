@@ -9,12 +9,28 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 10
     reviewers:
       - secwexen
+    labels:
+      - "dependencies"
+      - "backend"
+      
+    groups:
+      security-fixes:
+        applies-to: security-updates
+        
+      python-libs:
+        patterns:
+          - "*"
 
-  - package-ecosystem: "github-actions" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 5
     reviewers:
       - secwexen
+    labels:
+      - "ci"
+      - "dependencies"

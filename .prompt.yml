@@ -24,8 +24,7 @@ testData:
   - input: |
       The quick brown fox jumped over the lazy dog.
       The dog was too tired to react.
-    expected:
-      summary: "Summary - A fox jumped over a lazy, unresponsive dog."
+    expected: "Summary - A fox jumped over a lazy, unresponsive dog."
 
 evaluators:
   - name: Output should start with 'Summary -'

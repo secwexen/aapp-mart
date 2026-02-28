@@ -11,6 +11,9 @@ permissions:
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.11", "3.12" ]
 
     steps:
       - name: Checkout repository
@@ -19,13 +22,23 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
+          pip install pytest flake8 bandit safety
+
+      - name: Lint check
+        run: flake8 src tests
+
+      - name: Security check
+        run: bandit -r src
+
+      - name: Dependency security check
+        run: safety check --full-report
 
       - name: Run tests
         run: |
@@ -47,3 +60,9 @@ jobs:
           files: dist/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to PyPI
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: pypa/gh-action-pypi-publish@v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}

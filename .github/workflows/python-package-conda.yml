@@ -3,13 +3,18 @@ name: Python Package using Conda
 permissions:
   contents: read
 
-on: [push]
+on:
+  push:
+    branches: [ "main", "develop", "release/*", "hotfix/*" ]
+  pull_request:
+    branches: [ "main", "develop", "release/*", "hotfix/*" ]
 
 jobs:
   build-linux:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 5
+      matrix:
+        python-version: ["3.11", "3.12"]
 
     steps:
     - uses: actions/checkout@v6

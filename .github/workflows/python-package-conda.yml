@@ -18,10 +18,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v6
-    - name: Set up Python 3.10
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v6
       with:
-        python-version: '3.10'
+        python-version: ${{ matrix.python-version }}
     - name: Add conda to system path
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
@@ -29,14 +29,22 @@ jobs:
     - name: Install dependencies
       run: |
         conda env update --file environment.yml --name base
+    - name: Install dev tools
+      run: |
+        conda install flake8 pytest
+        pip install bandit safety pytest-cov
     - name: Lint with flake8
       run: |
-        conda install flake8
-        # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        conda install pytest
-        pytest
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics  
+    - name: Security check (Bandit)
+      run: bandit -r src
+    - name: Dependency security check (Safety)
+      run: safety check --full-report
+    - name: Test with pytest + coverage 
+      run: pytest --cov=src --cov-report=xml
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v6
+      with:
+        name: coverage-report
+        path: coverage.xml

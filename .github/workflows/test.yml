@@ -5,9 +5,9 @@ permissions:
 
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches: [ "main", "develop", "feature/*", "gh-pages", "hotfix/*", "release/*" ]
   pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ "main", "develop" "release/*", "hotfix/*" ]
 
 jobs:
   tests:

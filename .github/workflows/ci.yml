@@ -8,6 +8,7 @@ on:
 permissions:
   contents: read
   security-events: write
+  actions: read
 
 jobs:
   ci:
@@ -20,15 +21,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: ${{ matrix.python-version }}
+      - name: CodeQL Init 
+        uses: github/codeql-action/init@v4 
+        with: 
+          languages: python
 
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-           python-version: ${{ matrix.python-version }}
+          python-version: ${{ matrix.python-version }}
 
       - name: Cache pip
         uses: actions/cache@v5
@@ -53,7 +54,7 @@ jobs:
         run: black --check .
 
       - name: Run tests with coverage
-        run: pytest --cov=. -v --maxfail=1 --disable-warnings
+        run: pytest --cov=. --cov-report=html -v --maxfail=1 --disable-warnings
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v6

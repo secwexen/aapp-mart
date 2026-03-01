@@ -7,6 +7,9 @@ on:
 
 jobs:
   update_release_draft:
+    permissions:
+      contents: write
+      pull-requests: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

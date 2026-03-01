@@ -88,6 +88,8 @@ Detailed guides and references are also available in the repository:
 
 ## License
 
+Copyright © 2026 secwexen.
+
 This project is licensed under the Apache License, Version 2.0.  
 See the [LICENSE](LICENSE) file for full details.  
 

@@ -9,9 +9,7 @@ An AI‑powered red‑team simulation and attack‑path prediction engine design
 
 ![license](https://img.shields.io/github/license/secwexen/aapp-mart)
 ![version](https://img.shields.io/github/v/release/secwexen/aapp-mart?include_prereleases)
-![build](https://img.shields.io/github/actions/workflow/status/secwexen/aapp-mart/ci.yml?branch=main&label=Build)
-[![CodeQL](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql)
-![python](https://img.shields.io/badge/python-3.11%2B-blue)
+[![CI](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 
 ## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
 

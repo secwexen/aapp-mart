@@ -54,3 +54,26 @@ jobs:
       uses: github/codeql-action/upload-sarif@v3
       with:
         sarif_file: ${{ steps.ossar.outputs.sarifFile }}
+
+  codeql-analysis:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: python
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dependabot auto-merge
+        uses: dependabot/fetch-metadata@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

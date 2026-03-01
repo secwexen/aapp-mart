@@ -13,9 +13,9 @@ on:
     branches: [ "main", "develop", "feature/*", "gh-pages", "hotfix/*", "release/*" ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "main" ]
+    branches: [ "main", "develop", "release/*" ]
   schedule:
-    - cron: '28 16 * * 2'
+    - cron: '0 3 * * 1'
 
 permissions:
   contents: read

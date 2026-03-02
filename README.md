@@ -69,6 +69,14 @@ AAPP-MART stands out from traditional security tools in its approach:
 
 By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
+## Use Cases
+
+AAPP-MART is designed for:
+- **Security researchers** → to simulate adversarial behavior and validate defenses.  
+- **Enterprise security teams** → to forecast attack paths and strengthen controls.  
+- **Academia** → for studying AI-driven threat modeling and red-team automation.  
+- **Developers** → to integrate predictive security insights into custom workflows.
+
 ## Docs & Resources
 
 Detailed guides and references are also available in the repository:

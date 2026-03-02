@@ -127,14 +127,7 @@ and initial logic of the AAPP-MART engine.
 Advanced prediction models, autonomous agent behaviors,
 and controlled simulation capabilities are being implemented progressively.
 
-## Support & Community
-
-For support, questions, or feature requests, please open an issue:
-[Open an issue on GitHub](https://github.com/secwexen/aapp-mart/issues)
-
-For ideas and general discussions, use GitHub Discussions.
-
-## Get Involved
+## Community & Contribution
 
 - 💡 Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 - 💬 Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  

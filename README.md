@@ -69,6 +69,14 @@ AAPP-MART stands out from traditional security tools in its approach:
 
 By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
+## Use Cases
+
+AAPP-MART is designed for:
+- **Security researchers** → to simulate adversarial behavior and validate defenses.  
+- **Enterprise security teams** → to forecast attack paths and strengthen controls.  
+- **Academia** → for studying AI-driven threat modeling and red-team automation.  
+- **Developers** → to integrate predictive security insights into custom workflows.
+
 ## Docs & Resources
 
 Detailed guides and references are also available in the repository:
@@ -127,15 +135,12 @@ and initial logic of the AAPP-MART engine.
 Advanced prediction models, autonomous agent behaviors,
 and controlled simulation capabilities are being implemented progressively.
 
-## Support & Community
+## Community & Contribution
 
-⭐ Found AAPP-MART useful? Give us a star and support the project!   
-💬 Join discussions, report issues, or contribute your ideas!  
-
-For support, questions, or feature requests, please open an issue:
-[Open an issue on GitHub](https://github.com/secwexen/aapp-mart/issues)
-
-For ideas and general discussions, use GitHub Discussions.
+- 💡 Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
+- 💬 Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
+- ⭐ Found AAPP-MART useful? Give us a star and help grow the community!  
+- 🔧 Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
 
 ## Security
 

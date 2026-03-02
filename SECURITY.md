@@ -18,6 +18,19 @@ If you discover a security vulnerability in AAPP-MART, please report it responsi
 - Security issues will be tracked via a **ticket system or CVE** where applicable  
 - Coordinated disclosure will be handled in collaboration with the reporter
 
+## CVE Process
+
+Where applicable, security vulnerabilities may be assigned a **CVE (Common Vulnerabilities and Exposures)** identifier.  
+We will coordinate with the reporter to request and publish CVEs for confirmed issues, ensuring transparency and industry-standard tracking.
+
+## Disclosure Timeline
+
+- **Critical vulnerabilities** will be disclosed publicly within **30 days** of confirmation, or sooner if a fix/mitigation is available.  
+- **High/Medium severity issues** will be disclosed within **60 days**.  
+- **Low severity issues** may be disclosed at the discretion of the maintainers.  
+
+This timeline ensures a balance between responsible disclosure and timely communication to the community.
+
 ## Supported Versions
 
 Security updates are provided **only for the latest stable release** of AAPP-MART (currently `v0.3.0-alpha`).  

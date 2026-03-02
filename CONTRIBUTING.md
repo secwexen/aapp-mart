@@ -5,6 +5,13 @@
 
 Thank you for your interest in contributing to AAPP-MART. We welcome contributions that improve code quality, security, and documentation.  
 
+## Useful Links
+
+- [README.md](README.md)
+- [SECURITY.md](SECURITY.md)
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- [Roadmap](docs/roadmap.md)
+
 ## Getting Started
 
 1. Fork the repository
@@ -46,6 +53,12 @@ If you are using VS Code, the recommended way is to open the project in the Dev 
 - Before merging, rebase or squash commits to maintain a clean history
 - Merges should be performed via Pull Request after review
 
+## Release Workflow
+
+- We follow **semantic versioning** (MAJOR.MINOR.PATCH).
+- All releases must update the [CHANGELOG](CHANGELOG.md).
+- Release candidates are tagged and tested before final publication.
+
 ## Commit Messages
 
 - Use clear, descriptive commit messages
@@ -61,6 +74,12 @@ All pull requests must:
 - Include a clear description of the changes
 - Reference related issues or discussions when applicable
 - Include necessary documentation updates if functionality or CLI changes
+
+### Issue Labels
+
+We use GitHub labels to guide contributors:
+- `good first issue` → beginner-friendly tasks
+- `help wanted` → tasks where community support is welcome
 
 ### Code Review Process
 
@@ -88,6 +107,10 @@ Security issues should be reported according to the [SECURITY.md](SECURITY.md) p
 By participating in this project, you agree to act respectfully and professionally.
 Harassment, abuse, or malicious contributions will not be tolerated.
 
-# Thank You
+## Community Channels
+
+- Join GitHub Discussions for ideas and feedback
+
+## Thank You
 
 Thank you for helping improve AAPP-MART!

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AAPP-MART Updates</title>
+    <link>https://secwexen.github.io/aapp-mart/</link>
+    <description>Predictive AI meets autonomous red team simulation. Latest updates and releases from AAPP-MART.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Mar 2026</lastBuildDate>
+    <generator>AAPP-MART RSS Generator</generator>
+
+    <item>
+      <title>Release v0.4.0-alpha</title>
+      <link>https://github.com/secwexen/aapp-mart/releases/tag/v0.4.0-alpha</link>
+      <guid isPermaLink="true">https://github.com/secwexen/aapp-mart/releases/tag/v0.4.0-alpha</guid>
+      <pubDate>Thu, 05 Feb 2026</pubDate>
+      <description>Platform Expansion, Observability Integration, and System Enhancements.</description>
+    </item>
+  </channel>
+</rss>

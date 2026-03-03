@@ -5,7 +5,8 @@
 </p>
 
 **Predict. Simulate. Secure.**  
-An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.
+An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.  
+AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑driven simulations.  
 
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 [![Version](https://img.shields.io/github/v/release/secwexen/aapp-mart?include_prereleases)](https://github.com/secwexen/aapp-mart/releases)

@@ -156,9 +156,3 @@ and controlled simulation capabilities are being implemented progressively.
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
 [Read SECURITY.md](SECURITY.md) for instructions on reporting issues securely. 
-
-## Author
-
-**Secwexen**  
-Project Lead & Maintainer  
-GitHub: https://github.com/secwexen

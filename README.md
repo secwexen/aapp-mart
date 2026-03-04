@@ -78,6 +78,12 @@ AAPP-MART stands out from traditional security tools in its approach:
 
 By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
+## Installation
+
+AAPP‑MART is currently in development. A full installation workflow will be made available once the platform reaches the v1.0.0 production‑ready release.
+
+For detailed information, see the [Development Guide](docs/development.md).
+
 ## Use Cases
 
 AAPP-MART is designed for:

@@ -41,7 +41,7 @@ It does not perform destructive exploitation.
 
 ## Conceptual Usage Example
 
-The following illustrates the intended Python API design once the core engine is fully implemented:
+This example reflects the intended public API design:
 
 ```python
 from aapp_mart.core.orchestrator import AAPP_MART
@@ -52,7 +52,7 @@ report = engine.get_report()
 print(report)
 ```
 
-This example reflects the intended public API design. Core orchestration modules are currently under development.  
+Core orchestration modules are currently under development.  
 
 See [API Reference](docs/api_reference.md) and [Architecture](docs/architecture.md) for interface details and system structure.  
 

@@ -74,6 +74,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dependabot auto-merge
-        uses: dependabot/fetch-metadata@v1
+        uses: dependabot/fetch-metadata@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

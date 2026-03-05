@@ -1,6 +1,8 @@
 # Terms of Service  
 
-AAPP-MART
+**Last updated:** 2026-03-05
+
+> Note: AAPP-MART is currently in development; some features may not be fully implemented.
 
 ## 1. Acceptance of Terms  
 
@@ -37,7 +39,7 @@ The AAPP-MART source code is provided under the Apache License 2.0. Users may us
 
 ## 7. Data Usage  
 
-User data is processed solely for the purpose of providing and improving the service. Details about data collection and processing are described in the [PrivacyPolicy.md](PrivacyPolicy.md) document.
+User data is processed solely for the purpose of providing and improving the service. Details about data collection and processing are described in the [PrivacyPolicy.md](Legal/PrivacyPolicy.md) document.
 
 ## 8. Service Availability  
 

@@ -22,12 +22,12 @@ Certain advanced modules and resources cannot be included in the open‑source r
 
 Proprietary modules include:
 
-- Machine learning models and model artifacts  
-- Offline threat intelligence datasets  
-- Reinforcement learning training pipelines  
-- Offline mode resources (embeddings, cached data)  
-- Security‑sensitive production configurations  
-- SIEM and enterprise integrations (Splunk, Elastic, QRadar)
+- **Machine learning models and model artifacts**  
+- **Offline threat intelligence datasets**  
+- **Reinforcement learning training pipelines**  
+- **Offline mode resources** (embeddings, cached data)  
+- **Security‑sensitive production configurations**  
+- **SIEM and enterprise integrations** (Splunk, Elastic, QRadar)
 
 This separation ensures security, controlled distribution, and long‑term maintainability.
 

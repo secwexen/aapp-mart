@@ -24,37 +24,41 @@ All components communicate through a shared **Knowledge Graph**.
 
 ```
 aapp-mart
-├── src/
-│   └── aapp_mart/
-│       ├── agents/                # Autonomous attacker agents
-│       ├── cli/                   # Command-line interface
-│       ├── common/                # Common, reusable base classes or constants
-│       ├── integrations/          # Sample data & signatures
-│       ├── mart/                  # Multi-Agent Red Team
-│       ├── modules/               # Pluggable engine modules
-│       ├── offline/               # Offline mode resources
-│       ├── reports/               # Generated reports
-│       ├── risk/                  # Risk engine and CVSS mapping
-│       ├── rl/                    # Reinforcement learning agents & environment
-│       ├── utils/                 # Pluggable engine modules
-│       └── main.py                # AAPP-MART entry point
-│ 
 ├── assets/
 ├── configs/
 ├── docs/
 ├── examples/
 ├── helm/
+├── observability/
 ├── scripts/
+├── src/
+│   └── aapp_mart/
+│       ├── agents/  
+│       ├── cli/  
+│       ├── domain/                
+│       ├── common/  
+│       ├── integrations/  
+│       ├── mart/  
+│       ├── modules/  
+│       ├── offline/  
+│       ├── rl/  
+│       ├── utils/  
+│       └── main.py  
 ├── tests/
 ├── CHANGELOG.md
 ├── CITATION.cff
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── DISCLAIMER.md
+├── GOVERNANCE.md
 ├── LICENSE
+├── LICENSE‑3RD‑PARTY.md
+├── MAINTAINERS
+├── NOTICE
 ├── README.md
 ├── RELEASE_NOTES.md
 ├── SECURITY.md
+├── SUPPORT.md
 ├── requirements-dev.txt
 ├── requirements.txt
 └── trivyignore

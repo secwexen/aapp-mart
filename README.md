@@ -9,7 +9,6 @@ An AI‑powered red‑team simulation and attack‑path prediction engine design
 AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑driven simulations.  
 
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
-[![Version](https://img.shields.io/github/v/release/secwexen/aapp-mart?include_prereleases)](https://github.com/secwexen/aapp-mart/releases)
 [![CI](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Coverage](https://codecov.io/gh/secwexen/aapp-mart/branch/main/graph/badge.svg?branch=main)](https://codecov.io/gh/secwexen/aapp-mart)
 

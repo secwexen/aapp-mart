@@ -227,6 +227,7 @@ data/output/
 
 # Docker
 docker-compose.override.yml
+docker-compose.observability.yaml
 
 # ML training data
 ml_training/*.csv

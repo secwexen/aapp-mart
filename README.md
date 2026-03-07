@@ -12,7 +12,7 @@ AAPP‑MART helps organizations anticipate attack paths and validate defenses us
 [![Tests](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml)
 ![CodeQL](https://github.com/secwexen/aapp-mart/actions/workflows/codeql.yml/badge.svg?branch=main)
 ![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)
-[![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/secwexen/aapp-mart?branch=main)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 
 ## About
 

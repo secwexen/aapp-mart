@@ -26,17 +26,13 @@ All components communicate through a shared **Knowledge Graph**.
 aapp-mart
 ├── src/
 │   └── aapp_mart/
-│       ├── aapp/                  # Attack Path Predictor
 │       ├── agents/                # Autonomous attacker agents
-│       ├── api/                   # REST API (optional)
 │       ├── cli/                   # Command-line interface
 │       ├── common/                # Common, reusable base classes or constants
-│       ├── core/                  # Autonomous simulation brain
 │       ├── integrations/          # Sample data & signatures
 │       ├── mart/                  # Multi-Agent Red Team
 │       ├── modules/               # Pluggable engine modules
 │       ├── offline/               # Offline mode resources
-│       ├── predictors/            # Prediction logic & models
 │       ├── reports/               # Generated reports
 │       ├── risk/                  # Risk engine and CVSS mapping
 │       ├── rl/                    # Reinforcement learning agents & environment
@@ -45,15 +41,9 @@ aapp-mart
 │ 
 ├── assets/
 ├── configs/
-├── dashboard/
-├── deployment/
 ├── docs/
 ├── examples/
 ├── helm/
-├── internal_api/
-├── kubernetes
-├── ml_training/
-├── observability
 ├── scripts/
 ├── tests/
 ├── CHANGELOG.md
@@ -61,16 +51,10 @@ aapp-mart
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── DISCLAIMER.md
-├── Dockerfile
 ├── LICENSE
-├── Makefile
 ├── README.md
 ├── RELEASE_NOTES.md
 ├── SECURITY.md
-├── SECURITY_SCANNER.md
-├── bandit.yaml
-├── docker-compose.observability.yaml
-├── pyproject.toml
 ├── requirements-dev.txt
 ├── requirements.txt
 └── trivyignore

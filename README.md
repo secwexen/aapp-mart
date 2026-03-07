@@ -77,6 +77,11 @@ AAPP-MART stands out from traditional security tools in its approach:
 
 By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
+## **Why This Project Exists**
+
+AAPP‑MART was created to help security teams and researchers better understand and simulate modern cyber‑attacks. Traditional tools focus on detection after an incident, while AAPP‑MART predicts attacker behavior, models possible attack paths, and provides insights before damage occurs.  
+By open‑sourcing this project, we aim to make advanced attack simulation, risk modeling, and security automation accessible to everyone.
+
 ## Installation
 
 AAPP‑MART is currently in development. A full installation workflow will be made available once the platform reaches the v1.0.0 production‑ready release.

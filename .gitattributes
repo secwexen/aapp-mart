@@ -3,8 +3,8 @@
 
 # Force LF for source code
 *.py text eol=lf
-*.js text eol=lf
-*.ts text eol=lf
+*.js text eol=false
+*.ts text eol=false
 *.css text eol=lf
 *.html text eol=lf
 *.md text eol=lf

@@ -4,9 +4,12 @@
 <img src="assets/images/aapp-mart-logo.png" width="350" alt="aapp-mart-logo">
 </p>
 
-**Predict. Simulate. Secure.**  
+**Predict. Simulate. Secure.** 
+
 An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.  
 AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑driven simulations.  
+
+AAPP-MART: AI-driven multi-agent red-team simulator and attack-path prediction engine for offensive security, threat modeling, and ML-based enterprise security assessment.
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Tests](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml)
@@ -22,7 +25,7 @@ Unlike traditional tools that only provide reactive alerts, AAPP-MART leverages 
 By combining **machine learning, penetration testing methodologies, and MITRE ATT&CK alignment**, AAPP-MART delivers a forward-looking security posture assessment.  
 It is designed for **security researchers, enterprise security teams, academia, and developers** who need reproducible, scalable, and AI-enhanced threat simulations.  
 
-## Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
+## AI-Driven Multi-Agent Red-Team Simulator & Attack-Path Prediction Engine
 
 **AAPP‑MART (Autonomous Attack Path Prediction & Multi‑Agent Red Team)** is an open‑source Python engine for offensive security research and automated risk assessment. It combines AI‑driven attack‑path prediction with autonomous adversarial simulation to model how attackers move through an environment and to surface actionable security insights.
 
@@ -45,6 +48,7 @@ It does not perform destructive exploitation.
 This example reflects the intended public API design:
 
 ```python
+# Run AI-driven red-team simulation and generate attack-path report
 from aapp_mart.core.orchestrator import AAPP_MART
 
 engine = AAPP_MART(target="192.168.1.10")
@@ -81,17 +85,17 @@ By combining **AI-driven attack path prediction** with **autonomous red team sim
 
 ## **Why This Project Exists**
 
-AAPP‑MART was created to help security teams and researchers better understand and simulate modern cyber‑attacks. Traditional tools focus on detection after an incident, while AAPP‑MART predicts attacker behavior, models possible attack paths, and provides insights before damage occurs.  
+AAPP‑MART was created to help security teams and researchers better understand and simulate modern cyber‑attacks. Traditional tools focus on detection after an incident, while AAPP‑MART predicts attacker behavior, models possible attack paths, and provides insights before damage occurs. 
 
 By open‑sourcing this project, we aim to make advanced attack simulation, risk modeling, and security automation accessible to everyone.
 
-## Installation
+## Installation: AI Red-Team Simulation & Attack-Path Engine
 
 AAPP‑MART is currently in development. A full installation workflow will be made available once the platform reaches the v1.0.0 production‑ready release.
 
 For detailed information, see the [Development Guide](docs/development.md).
 
-## Use Cases
+## Use Cases: Offensive Security, Threat Modeling, Predictive Attack Simulation
 
 AAPP-MART is designed for:
 - **Security researchers** → to simulate adversarial behavior and validate defenses.  
@@ -105,12 +109,13 @@ Detailed guides and references are also available in the repository:
 
 - [Research Foundations](docs/research.md)
 - [System Components](docs/components.md)
-- [Threat Model](docs/threat_model.md)
+- [AI Red-Team API Reference](docs/api_reference.md)
+- [Threat Modeling & Attack Path Prediction](docs/threat_model.md)
 - [Risk Model](docs/risk_model.md)
 - [Deployment Guide](docs/deployment.md)
 - [Full Installation Guide](docs/installation.md)
 - [Module Development](docs/modules.md)
-- [Prediction Engine Details](docs/prediction_engine.md)
+- [ML-Based Attack Path Prediction Engine Details](docs/prediction_engine.md)
 - [Examples & Quick Starts](docs/examples.md)
 - [Roadmap & Milestones](docs/roadmap.md)
 - [Contributing Guidelines](CONTRIBUTING.md)

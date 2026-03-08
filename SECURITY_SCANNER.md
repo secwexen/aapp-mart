@@ -1,9 +1,46 @@
-# Security Scanning
+# AAPP-MART Security Scanning Guide
 
-This project uses automated security scanning tools
-to identify vulnerabilities and maintain code quality.
+This document describes the security scanning standards used in the AAPP-MART project.
 
-Security scans run automatically in CI.
+## 1. Static Code Analysis
 
-Contributors are encouraged to run security checks
-locally before submitting pull requests.
+The project uses automated static code analysis tools through pre-commit hooks.
+
+Contributors are encouraged to run these checks locally before committing.
+
+Example:
+```
+# Run security checks (tool names omitted for safety)
+security-scan --check src
+```
+
+## 2. Container Security
+
+All container images should follow standard security best practices:
+
+- Avoid running as root
+- Use minimal base images
+- No hardcoded secrets
+- Multi-stage builds
+
+## 3. Secrets Detection
+
+Before committing, contributors should scan for sensitive data locally.
+
+Example:
+```
+# Scan for secrets
+scan-secrets
+```
+
+## 4. Reporting Vulnerabilities
+
+If you discover a vulnerability:
+
+- Do not open a public issue
+- Provide clear reproduction steps and severity internally
+
+## 5. CI Integration
+
+All security scans are executed automatically in the project’s CI pipeline.  
+Contributors should ensure their changes pass these checks before merging.

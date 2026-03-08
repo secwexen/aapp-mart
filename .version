@@ -1,1 +1,8 @@
+# AAPP-MART Version Information
+# Title: AAPP‑MART v1.0.1 — Initial Open Source Release
+# Format: MAJOR.MINOR.PATCH
+# Date: 2026-03-08
 
+VERSION=1.0.1
+RELEASE_DATE=2026-03-07
+DESCRIPTION="First open-source release with core architecture, modules, APIs, Helm charts, observability, and documentation."

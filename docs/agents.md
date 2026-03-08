@@ -16,6 +16,7 @@ They interact only through the Knowledge Graph.
 ## 2. Agent Types
 
 ### 2.1 Recon Agent (`recon_agent.py`)
+
 Performs reconnaissance:
 
 - Host discovery  
@@ -26,6 +27,7 @@ Performs reconnaissance:
 Outputs discovered assets to the Knowledge Graph.
 
 ### 2.2 Exploit Agent (`exploit_agent.py`)
+
 Attempts exploitation:
 
 - Matches vulnerabilities  
@@ -33,6 +35,7 @@ Attempts exploitation:
 - Records successful compromises  
 
 ### 2.3 Privilege Escalation Agent (`privesc_agent.py`)
+
 Attempts to escalate privileges:
 
 - Local enumeration  
@@ -40,6 +43,7 @@ Attempts to escalate privileges:
 - Kernel/privilege exploits  
 
 ### 2.4 Lateral Movement Agent (`lateral_agent.py`)
+
 Moves across the network:
 
 - SSH/RDP pivoting  
@@ -47,6 +51,7 @@ Moves across the network:
 - Path traversal  
 
 ### 2.5 Persistence Agent (`persistence_agent.py`)
+
 Establishes persistence:
 
 - Backdoors  
@@ -54,6 +59,7 @@ Establishes persistence:
 - Service modifications  
 
 ### 2.6 Report Agent (`report_agent.py`)
+
 Generates structured output:
 
 - Attack chains  

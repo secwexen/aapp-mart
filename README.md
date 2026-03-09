@@ -1,4 +1,4 @@
-# AAPP-MART — AI-Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine 
+# AAPP-MART — AI-Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine
 
 <p align="center">
 <img src="assets/images/aapp-mart-logo.png" width="350" alt="aapp-mart-logo">
@@ -32,19 +32,7 @@ It is designed for **security researchers, enterprise security teams, academia, 
 
 Unlike traditional static vulnerability scanning, AAPP‑MART blends predictive analytics with multi‑agent red‑team behavior to provide continuous security evaluation. Its architecture helps defenders anticipate attack strategies, validate controls, and understand real‑world risk through repeatable and data‑driven simulations.
 
-## Executive Summary
-
-AAPP-MART is a deterministic attack path modeling and controlled adversary simulation engine 
-designed for authorized defensive security validation.
-
-The system combines:
-- Graph-based attack path prediction
-- Controlled multi-agent adversary simulation
-- Risk-scored analytical reporting
-
-It does not perform destructive exploitation.
-
-## Conceptual Usage Example
+## Conceptual Usage Example (Planned API)
 
 This example reflects the intended public API design:
 
@@ -84,13 +72,12 @@ AAPP-MART stands out from traditional security tools in its approach:
 
 By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
-## **Why This Project Exists**
+## Why This Project Exists
 
-AAPP‑MART was created to help security teams and researchers better understand and simulate modern cyber‑attacks. Traditional tools focus on detection after an incident, while AAPP‑MART predicts attacker behavior, models possible attack paths, and provides insights before damage occurs. 
+AAPP-MART was created to help security teams anticipate and simulate modern cyber-attacks before damage occurs.  
+Unlike traditional tools that detect incidents after they happen, it predicts attacker behavior and models potential attack paths proactively.
 
-By open‑sourcing this project, we aim to make advanced attack simulation, risk modeling, and security automation accessible to everyone.
-
-## Installation: AI Red-Team Simulation & Attack-Path Engine
+## Installation: AI Red-Team Simulation & Attack-Path Engine (Coming Soon)
 
 AAPP‑MART is currently in development. A full installation workflow will be made available once the platform reaches the v1.0.0 production‑ready release.
 

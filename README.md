@@ -144,7 +144,8 @@ AAPP-MART development is structured into strategic phases:
 
 Active development open source project. Core implementation is still in progress.   
 
-This repository provides the foundational architecture, core interfaces, and initial logic of the AAPP-MART engine.  
+This repository provides the foundational architecture, core interfaces, and initial logic of the AAPP-MART engine.
+
 Advanced prediction models, autonomous agent behaviors, and controlled simulation capabilities are being implemented progressively.
 
 ## Community & Contribution

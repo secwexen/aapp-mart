@@ -66,7 +66,7 @@ engine.run()
 report = engine.get_report()
 
 # Print a concise summary of the predicted attack paths
-report.export(format="json", path="./attack_report.json")
+report.export(format="json", path="./logs/attack_report.json")
 ```
 
 Core orchestration modules are currently under development.  

@@ -156,7 +156,7 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 - 💬 Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
 - ⭐ Found AAPP-MART useful? Give us a star and help grow the community!  
 - 🔧 Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
-- 🌐 Visit the [Official Website](https://secwexen.github.io/aapp-mart)
+- 🌐 Visit the [Official Website](https://secwexen.github.io/aapp-mart) for documentation, updates, and project information.
 
 ## Security
 

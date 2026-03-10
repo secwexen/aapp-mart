@@ -30,7 +30,7 @@ It is designed for **security researchers, enterprise security teams, academia, 
 
 ## AI-Driven Multi-Agent Red-Team Simulator & Attack-Path Prediction Engine
 
-**AAPP‑MART (AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine)** is an open‑source Python security framework designed for offensive security research, adversarial modeling, and automated risk assessment. It combines AI‑powered attack‑path prediction with autonomous multi‑agent red‑team simulation to model how real attackers navigate an environment and to reveal actionable, data‑driven security insights.
+**AAPP‑MART | AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine** is an open‑source Python security framework designed for offensive security research, adversarial modeling, and automated risk assessment. It combines AI‑powered attack‑path prediction with autonomous multi‑agent red‑team simulation to model how real attackers navigate an environment and to reveal actionable, data‑driven security insights.
 
 Unlike traditional static vulnerability scanners or manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, validate defensive controls, and understand real‑world risk through repeatable, scalable, and intelligence‑driven simulations.
 

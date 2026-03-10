@@ -52,12 +52,21 @@ This example reflects the intended public API design:
 
 ```python
 # Run AI-driven red-team simulation and generate attack-path report
+
+# Import the orchestrator module
 from aapp_mart.core.orchestrator import AAPP_MART
 
+# Initialize the engine with a target IP or hostname
 engine = AAPP_MART(target="192.168.1.10")
+
+# Run the AI-driven red team simulation
 engine.run()
+
+# Retrieve the generated attack-path report
 report = engine.get_report()
-print(report)
+
+# Print a concise summary of the predicted attack paths
+report.export(format="json", path="./logs/attack_report.json")
 ```
 
 Core orchestration modules are currently under development.  

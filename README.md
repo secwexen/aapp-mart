@@ -4,7 +4,7 @@
 <img src="assets/images/aapp-mart-logo.png" width="350" alt="aapp-mart-logo">
 </p>
 
-**Predict. Simulate. Secure.** 
+**Predict. Simulate. Secure.**
 
 An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.  
 AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑driven simulations.  
@@ -22,7 +22,7 @@ AAPP-MART: AI-driven multi-agent red-team simulator and attack-path prediction e
 
 ## About
 
-AAPP-MART is an **AI‑driven multi‑agent red team engine** built to transform how organizations approach cybersecurity validation.  
+AAPP-MART is an **AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine** built to transform how organizations approach cybersecurity validation.  
 Unlike traditional tools that only provide reactive alerts, AAPP-MART leverages **autonomous agents** and **attack path prediction models** to simulate realistic adversarial behavior across complex infrastructures.  
 
 By combining **machine learning, penetration testing methodologies, and MITRE ATT&CK alignment**, AAPP-MART delivers a forward-looking security posture assessment.  

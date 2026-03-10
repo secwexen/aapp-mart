@@ -34,6 +34,18 @@ It is designed for **security researchers, enterprise security teams, academia, 
 
 Unlike traditional static vulnerability scanners or manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, validate defensive controls, and understand real‑world risk through repeatable, scalable, and intelligence‑driven simulations.
 
+## Key Features
+
+- AI-driven attack path prediction
+- Autonomous multi-agent red team simulation
+- Graph-based threat modeling and attack graph analysis
+- MITRE ATT&CK aligned adversary behavior modeling
+- Risk-based security posture analysis
+- ML-assisted vulnerability prioritization
+- Scalable adversarial simulation architecture
+- Extensible modular plugin system
+- Python-based open-source cybersecurity framework
+
 ## Conceptual Usage Example (Planned API)
 
 This example reflects the intended public API design:

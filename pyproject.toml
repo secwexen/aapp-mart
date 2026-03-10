@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aapp-mart"
-version = "0.4.0"
+version = "1.0.1"
 description = "First open-source release with core architecture, modules, APIs, Helm charts, observability, and documentation."
 readme = "README.md"
 requires-python = ">=3.11"

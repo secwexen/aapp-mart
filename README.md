@@ -143,9 +143,11 @@ See the [LICENSE](LICENSE) file for full details.
 
 ## Contributing
 
+Contributions are welcome!
+
 ### Contributing Workflow (Summary)
 
-- Fork the repository and create a feature or fix branch (e.g. `feature/your-feature`).
+- Fork the repository and create a feature or fix branch (e.g. `feature/your-feature` or `fix/bug-name`).
 - Make your changes and add relevant tests.
 - Ensure all tests pass (`pytest`) and code style checks (e.g. `make lint`).
 - Open a pull request referencing related issues/discussion when possible.

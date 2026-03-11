@@ -153,9 +153,9 @@ Contributions are welcome!
 - Open a pull request referencing related issues/discussion when possible.
 - All PRs must pass CI checks before merging.
 
-Please open an issue before submitting major changes or new features.  
+Please open an issue before submitting major changes or new features.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.  
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 

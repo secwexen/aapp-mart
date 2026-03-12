@@ -46,7 +46,7 @@ jobs:
         pylint ${{ steps.changes.outputs.files }} --output-format=parseable > pylint-incremental-report.txt || true
 
     - name: Upload pylint reports 
-      uses: actions/upload-artifact@v6 
+      uses: actions/upload-artifact@v7 
       with: 
         name: pylint-reports 
         path: | 

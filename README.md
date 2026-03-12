@@ -109,10 +109,13 @@ For detailed information, see the [Development Guide](docs/development.md).
 ## Use Cases: Offensive Security, Threat Modeling, Predictive Attack Simulation
 
 AAPP-MART is designed for:
-- **Security researchers** → to simulate adversarial behavior and validate defenses.  
-- **Enterprise security teams** → to forecast attack paths and strengthen controls.  
-- **Academia** → for studying AI-driven threat modeling and red-team automation.  
-- **Developers** → to integrate predictive security insights into custom workflows.
+
+| Audience | How AAPP‑MART Helps |
+|----------|---------------------|
+| Security Researchers | Simulate adversarial behavior, test hypotheses, model attacker strategies |
+| Enterprise Security Teams | Predict attack paths, validate controls, strengthen defenses |
+| Academia | Study AI-driven threat modeling and autonomous red teaming |
+| Developers | Integrate predictive security insights into CI/CD or custom workflows |
 
 ## Docs & Resources
 
@@ -127,6 +130,7 @@ Detailed guides and references are also available in the repository:
 - [Full Installation Guide](docs/installation.md)
 - [Module Development](docs/modules.md)
 - [ML-Based Attack Path Prediction Engine Details](docs/prediction_engine.md)
+- [Benchmark & Performance Evaluation](docs/benchmark.md)
 - [Quick Start](docs/quickstart.md)
 - [Examples](docs/examples.md)
 - [Roadmap & Milestones](docs/roadmap.md)
@@ -186,3 +190,10 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
 [Read SECURITY.md](SECURITY.md) for instructions on reporting issues securely. 
+
+## External References
+
+- MITRE ATT&CK Framework — https://attack.mitre.org  
+- NIST Cybersecurity Framework — https://www.nist.gov/cyberframework  
+- OWASP Security Projects — https://owasp.org  
+- DARPA Cyber Research — https://www.darpa.mil

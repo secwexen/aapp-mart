@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
+
   <channel>
     <title>AAPP-MART Updates</title>
     <link>https://secwexen.github.io/aapp-mart/</link>
@@ -9,4 +10,5 @@
     <lastBuildDate>Mon, 02 Mar 2026</lastBuildDate>
     <generator>AAPP-MART RSS Generator</generator>
   </channel>
+
 </rss>

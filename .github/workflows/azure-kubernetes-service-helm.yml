@@ -55,11 +55,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checks out the repository this file is in
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       # Logs in with your Azure credentials
       - name: Azure login
-        uses: azure/login@v1.4.6
+        uses: azure/login@v2.3.0
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -79,11 +79,11 @@ jobs:
     needs: [buildImage]
     steps:
       # Checks out the repository this file is in
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       # Logs in with your Azure credentials
       - name: Azure login
-        uses: azure/login@v1.4.6
+        uses: azure/login@v2.3.0
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -106,7 +106,7 @@ jobs:
 
       # Runs Helm to create manifest files
       - name: Bake deployment
-        uses: azure/k8s-bake@v2
+        uses: azure/k8s-bake@v3
         with:
           renderEngine: "helm"
           helmChart: ${{ env.CHART_PATH }}

@@ -1,7 +1,7 @@
 # AAPP-MART | AI-Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine
 
 <p align="center">
-<img src="assets/images/aapp-mart-logo.png" width="350" alt="aapp-mart-logo">
+<img src="assets/images/aapp-mart-logo.png" width="350" alt="AAPP-MART AI-Autonomous Attack Path Prediction and Multi‑Agent Red Team Simulation Engine Logo">
 </p>
 
 **Predict. Simulate. Secure.**
@@ -198,4 +198,5 @@ If you discover a security vulnerability, please follow our responsible disclosu
 - MITRE ATT&CK Framework — https://attack.mitre.org  
 - NIST Cybersecurity Framework — https://www.nist.gov/cyberframework  
 - OWASP Security Projects — https://owasp.org  
-- DARPA Cyber Research — https://www.darpa.mil
+- Google Red Team — https://redteam.google/  
+- Microsoft Security Research — https://www.microsoft.com/en-us/security/blog/  

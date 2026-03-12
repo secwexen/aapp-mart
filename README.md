@@ -102,7 +102,9 @@ Unlike traditional tools that detect incidents after they happen, it predicts at
 
 ## Installation: AI Red-Team Simulation & Attack-Path Engine (Coming Soon)
 
-AAPP‑MART is currently in development.
+AAPP‑MART is currently under active development and the installation process is not yet finalized.
+
+The installation instructions, environment setup, and deployment workflow will be published in an upcoming release.
 
 For detailed information, see the [Development Guide](docs/development.md).
 

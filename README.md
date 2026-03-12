@@ -19,6 +19,7 @@ AAPP-MART: AI-driven multi-agent red-team simulator and attack-path prediction e
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart?branch=main)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 [![Open PRs](https://img.shields.io/github/issues-pr/secwexen/aapp-mart?label=Contribute!&style=flat-square&color=brightgreen)](https://github.com/secwexen/aapp-mart/pulls)
+![Docs](https://img.shields.io/badge/docs-available-brightgreen)
 
 ## About
 

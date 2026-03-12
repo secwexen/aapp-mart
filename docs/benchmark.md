@@ -1,4 +1,11 @@
-# Comparison: AAPP‑MART vs Other Security Tools
+# **AAPP‑MART Benchmark & Performance Evaluation**
+
+This document provides the performance evaluation, benchmarking methodology, test environment, and comparative results for **AAPP‑MART — AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine**.
+
+AAPP‑MART is designed to deliver **scalable, fast, and accurate** attack‑path prediction and **autonomous red‑team simulations** for enterprise‑grade environments.  
+The benchmarks below reflect the performance characteristics of the early engine implementation.
+
+## **Comparison: AAPP‑MART vs Other Security Tools**
 
 | Capability | Traditional Scanners | BAS Tools | **AAPP‑MART** |
 |------------|----------------------|-----------|---------------|

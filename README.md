@@ -25,6 +25,16 @@ AAPP-MART: AI-driven multi-agent red-team simulator and attack-path prediction e
 
 Unlike traditional static vulnerability scanners or manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, validate defensive controls, and understand real‑world risk through repeatable, scalable, and intelligence‑driven simulations.
 
+## Overview
+
+Modern infrastructures are too dynamic and interconnected for traditional security testing to keep pace. 
+Static scanners and predefined BAS playbooks often fail to capture how real attackers move across complex environments. 
+
+AAPP‑MART addresses this gap by combining predictive AI, AI-driven threat modeling, cyber attack surface prediction, 
+and autonomous adversarial simulation to evaluate an environment’s real exposure. The engine models attacker behavior, 
+forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
+intelligence-driven insights into organizational security posture.
+
 ## Architecture Diagram
 
 AAPP-MART is an AI-driven cybersecurity simulation engine designed for predictive attack-path analysis and autonomous red-team experimentation.
@@ -77,16 +87,6 @@ and controlled adversary simulation within environments where explicit permissio
 
 The system is designed for non-destructive analysis and does not support uncontrolled exploitation. 
 Users are responsible for ensuring lawful and policy-compliant usage.
-
-## Overview
-
-Modern infrastructures are too dynamic and interconnected for traditional security testing to keep pace. 
-Static scanners and predefined BAS playbooks often fail to capture how real attackers move across complex environments. 
-
-AAPP‑MART addresses this gap by combining predictive AI, AI-driven threat modeling, cyber attack surface prediction, 
-and autonomous adversarial simulation to evaluate an environment’s real exposure. The engine models attacker behavior, 
-forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
-intelligence-driven insights into organizational security posture.
 
 ## Why AAPP-MART?
 

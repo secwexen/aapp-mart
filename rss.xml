@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   
  <channel>
-    <title>AAPP-MART | AI-Autonomous Driven Attack Path Prediction & Multi-Agent Red Team Simulation Engine</title>
+    <title>AAPP-MART | AI-Autonomous Driven Attack Path Prediction and Multi-Agent Red Team Simulation Engine</title>
     <link>https://secwexen.github.io/aapp-mart/</link>
     <atom:link href="https://secwexen.github.io/aapp-mart/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Predictive AI meets autonomous red team simulation. Latest updates and releases from AAPP-MART.</description>

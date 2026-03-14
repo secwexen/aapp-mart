@@ -78,7 +78,7 @@ report.export(format="json", path="./logs/attack-path/attack_report.json")
 
 Core orchestration modules are currently under development.  
 
-See [API Reference](docs/api_reference.md) and [Architecture](docs/architecture.md) for interface details and system structure.  
+See [AAPP-MART AI Red-Team API Reference](docs/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
 
 ## Legal & Authorized Use
 

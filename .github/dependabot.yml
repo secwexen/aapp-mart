@@ -15,6 +15,9 @@ updates:
     labels:
       - "dependencies"
       - "backend"
+
+    commit-message:
+      prefix: "deps"
       
     groups:
       security-fixes:

@@ -109,7 +109,7 @@ AAPP‑MART is currently under active development and the installation process i
 
 The installation instructions, environment setup, and deployment workflow will be published in an upcoming release.
 
-For detailed information, see the [Development Guide](docs/development.md).
+For detailed information, see the [AAPP-MART AI Red-Team Simulation Development Guide](docs/development.md).
 
 ## Use Cases: Offensive Security, Threat Modeling, Predictive Attack Simulation
 

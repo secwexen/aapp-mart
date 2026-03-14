@@ -168,11 +168,23 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 
-AAPP-MART development is structured into strategic phases:
+The development of **AAPP-MART** follows a structured roadmap focused on improving attack path prediction, red-team simulation, and security research capabilities.
 
-**Phase 1 – Research & Architecture**  
-**Phase 2 – Core Implementation**  
-**Phase 3 – Ecosystem & Advanced Features**  
+Planned improvements include:
+
+- advanced attack graph generation
+- improved AI-based attack path prediction
+- expanded MART offensive agents
+- enhanced risk scoring and reporting
+- improved visualization and dashboards
+- plugin ecosystem for custom modules and agents
+- distributed simulation support
+
+For the full roadmap and upcoming features, see:
+
+**[ROADMAP.md](ROADMAP.md)**
+
+The roadmap evolves over time based on community feedback, research outcomes, and contributor proposals. Contributions and suggestions are welcome.
 
 ## Development Status
 

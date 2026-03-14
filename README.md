@@ -182,7 +182,7 @@ Planned improvements include:
 
 For the full roadmap and upcoming features, see:
 
-**[ROADMAP.md](ROADMAP.md)**
+**[Roadmap.md](docs/roadmap.md)**
 
 The roadmap evolves over time based on community feedback, research outcomes, and contributor proposals. Contributions and suggestions are welcome.
 

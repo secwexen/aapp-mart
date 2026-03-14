@@ -11,7 +11,7 @@ AAPP‑MART helps organizations anticipate attack paths and validate defenses us
 
 AAPP-MART: AI-driven multi-agent red-team simulator and attack-path prediction engine for offensive security, threat modeling, and ML-based enterprise security assessment.
 
-**Official Website:** [https://secwexen.github.io/aapp-mart](https://secwexen.github.io/aapp-mart)
+**Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Tests](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml)

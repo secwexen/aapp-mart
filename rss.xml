@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  
   <channel>
-    <title>AAPP-MART Updates</title>
+    <title>AAPP-MART | AI-Autonomous Driven Attack Path Prediction & Multi-Agent Red Team Simulation Engine</title>
     <link>https://secwexen.github.io/aapp-mart/</link>
     <atom:link href="https://secwexen.github.io/aapp-mart/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Predictive AI meets autonomous red team simulation. Latest updates and releases from AAPP-MART.</description>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Mar 2026</lastBuildDate>
     <generator>AAPP-MART RSS Generator</generator>
-  </channel>
 
+  <item>
+   <title>AAPP‑MART v1.0.1 — Initial Open Source Release</title>
+   <link>https://github.com/secwexen/aapp-mart/releases/tag/v1.0.1</link>
+   <guid isPermaLink="true">https://github.com/secwexen/aapp-mart/releases/tag/v1.0.1</guid>
+   <pubDate>Sat, 07 Mar 2026</pubDate>
+   <description>Welcome to the first open‑source release of AAPP‑MART. This version introduces the core architecture, modules, APIs, Helm charts, observability components, and documentation that form the foundation of the project.</description>
+  </item>
+</channel>
+  
 </rss>

@@ -4,6 +4,8 @@
 <img src="assets/images/aapp-mart-logo.png" width="350" alt="AAPP-MART AI-Autonomous Attack Path Prediction and Multi‑Agent Red Team Simulation Engine Logo" loading="lazy">
 </p>
 
+⭐ If you find this project useful, consider giving it a star.
+
 **Predict. Simulate. Secure.**
 
 An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.  

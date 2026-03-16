@@ -93,7 +93,8 @@ This notebook demonstrates **AAPP-MART AI Red-Team Simulation** on a sample targ
 For detailed instructions, examples, and API references, please visit the [Open Demo Notebook in Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/demo_notebook.ipynb)
 
 For more information, visit:
-- [Documentation Website](https://secwexen.github.io/aapp-mart/)
+- [Official Documentation Website](https://secwexen.github.io/aapp-mart/)
+- [Contribution Guidelines](https://github.com/secwexen/aapp-mart/blob/main/CONTRIBUTING.md)
 
 ## Legal & Authorized Use
 

@@ -81,6 +81,17 @@ Core orchestration modules are currently under development.
 
 See [AAPP-MART AI Red-Team API Reference](docs/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
 
+## Demo
+
+[Open Demo Notebook in Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/demo_notebook.ipynb)  
+
+This notebook demonstrates **AAPP-MART AI Red-Team Simulation** on a sample target:  
+- Shows predicted attack paths  
+- Simulates red-team agent behavior  
+- Generates risk scores and MITRE ATT&CK technique mappings  
+
+In short, it lets you **interactively explore how AAPP-MART works**.
+
 ## Legal & Authorized Use
 
 AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 

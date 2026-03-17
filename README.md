@@ -99,7 +99,8 @@ No installation required — run directly in your browser.
 
 ### Learn More
 
-- [Official Documentation Website](https://secwexen.github.io/aapp-mart/)
+- [Official Website](https://secwexen.github.io/aapp-mart/)
+- [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
 - [API Reference & Guides](docs/api_reference.md)  
 - [Contribution Guidelines](https://github.com/secwexen/aapp-mart/blob/main/CONTRIBUTING.md)
 

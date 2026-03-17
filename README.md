@@ -90,7 +90,8 @@ This notebook demonstrates **AAPP-MART AI Red-Team Simulation** on a sample targ
 - Simulates red-team agent behavior  
 - Generates risk scores and MITRE ATT&CK technique mappings  
 
-For detailed instructions, examples, and API references, please visit the [Open Demo Notebook in Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/aapp_mart_attack_path_demo.ipynb)
+For detailed instructions, examples, and API references, please visit the 
+[Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/aapp_mart_attack_path_demo.ipynb)
 
 For more information, visit:
 - [Official Documentation Website](https://secwexen.github.io/aapp-mart/)

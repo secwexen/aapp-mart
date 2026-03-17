@@ -15,7 +15,7 @@ AAPP-MART: AI-driven multi-agent red-team simulator and attack-path prediction e
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Tests](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml)
-[![CodeQL](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql)
+[![CodeQL](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main&event=push)](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql)
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart?branch=main)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/aapp_mart_attack_path_demo.ipynb)

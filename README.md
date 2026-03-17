@@ -81,20 +81,26 @@ Core orchestration modules are currently under development.
 
 See [AAPP-MART AI Red-Team API Reference](docs/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
 
-## AAPP-MART Demo Notebook
+## AAPP-MART Demo: AI Red Team Simulation in Action
 
-**AAPP-MART** is an open source, AI-Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine.
+Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using AI-driven red team agents**.
 
-This notebook demonstrates **AAPP-MART AI Red-Team Simulation** on a sample target:  
-- Shows predicted attack paths  
-- Simulates red-team agent behavior  
-- Generates risk scores and MITRE ATT&CK technique mappings  
+This interactive demo showcases:
+- Shows predicted attack paths 
+- Simulates red-team agent behavior 
+- Generates risk scores and MITRE ATT&CK technique mappings 
 
-For detailed instructions, examples, and API references, please visit the 
+### Run the Demo (Google Colab)
+
+**Launch the interactive demo here:**
 [Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/aapp_mart_attack_path_demo.ipynb)
 
-For more information, visit:
+No installation required — run directly in your browser.
+
+### Learn More
+
 - [Official Documentation Website](https://secwexen.github.io/aapp-mart/)
+- [API Reference & Guides](docs/api_reference.md)  
 - [Contribution Guidelines](https://github.com/secwexen/aapp-mart/blob/main/CONTRIBUTING.md)
 
 ## Legal & Authorized Use

@@ -1,0 +1,37 @@
+name: "Risk Assessment"
+description: "Report a technical or operational risk"
+title: "[RISK] - "
+labels: ["risk"]
+body:
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk Description
+      description: Describe the risk clearly.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact Level
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+  - type: dropdown
+    id: probability
+    attributes:
+      label: Probability
+      options:
+        - Low
+        - Medium
+        - High
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected Areas
+      description: Systems, teams, or processes impacted.
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Mitigation Plan
+      description: Suggested actions to reduce or eliminate the risk.

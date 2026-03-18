@@ -1,0 +1,25 @@
+name: "Architecture Review"
+description: "Request an architectural change or propose a new architecture"
+title: "[ARCH] - "
+labels: ["architecture"]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Architecture Change
+      description: Describe the architectural change you want to introduce.
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this change necessary?
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacted Systems
+      description: List the systems, services, or modules affected.
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risk Assessment
+      description: Identify potential risks.

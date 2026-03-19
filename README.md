@@ -79,7 +79,7 @@ report.export(format="json", path="./logs/attack-path/attack_report.json")
 
 Core orchestration modules are currently under development.  
 
-See [AAPP-MART AI Red-Team API Reference](docs/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
+See [AAPP-MART AI Red-Team API Reference](docs/reference/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
 
 ## AAPP-MART Live Demo: AI Red Team Simulation in Action
 
@@ -101,7 +101,7 @@ No installation required — run directly in your browser.
 
 - [Official Website](https://secwexen.github.io/aapp-mart/)
 - [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
-- [API Reference & Guides](docs/api_reference.md)  
+- [API Reference & Guides](docs/reference/api_reference.md)  
 - [Contribution Guidelines](https://github.com/secwexen/aapp-mart/blob/main/CONTRIBUTING.md)
 
 ## Legal & Authorized Use
@@ -141,7 +141,7 @@ pip install -r dev-requirements.txt
 
 The installation instructions, environment setup, and deployment workflow will be published in an upcoming release.
 
-For detailed information, see the [AAPP-MART AI Red-Team Simulation Development Guide](docs/development.md).
+For detailed information, see the [AAPP-MART AI Red-Team Simulation Development Guide](docs/guides/development.md).
 
 ## Use Cases: Offensive Security, Threat Modeling, Predictive Attack Simulation
 
@@ -158,19 +158,18 @@ AAPP-MART is designed for:
 
 Detailed guides and references are also available in the repository:
 
-- [Research Foundations](docs/research.md)
-- [System Components](docs/components.md)
-- [AI Red-Team API Reference](docs/api_reference.md)
-- [Threat Modeling & Attack Path Prediction](docs/threat_model.md)
-- [Risk Model](docs/risk_model.md)
-- [Deployment Guide](docs/deployment.md)
-- [Full Installation Guide](docs/installation.md)
-- [Module Development](docs/modules.md)
-- [ML-Based Attack Path Prediction Engine Details](docs/prediction_engine.md)
-- [**Benchmark & Performance Evaluation**](docs/benchmark.md)
-- [Quick Start](docs/quickstart.md)
+- [Research Foundations](docs/research/research.md)
+- [System Components](docs/concepts/components.md)
+- [AI Red-Team API Reference](docs/reference/api_reference.md)
+- [Risk Model](docs/concepts/risk_model.md)
+- [Deployment Guide](docs/guides/deployment.md)
+- [Full Installation Guide](docs/guides/installation.md)
+- [Module Development](docs/architecture/modules.md)
+- [ML-Based Attack Path Prediction Engine Details](docs/concepts/prediction_engine.md)
+- [**Benchmark & Performance Evaluation**](docs/research/benchmark.md)
+- [Quick Start](docs/guides/quickstart.md)
 - [Examples](docs/examples.md)
-- [Roadmap & Milestones](docs/roadmap.md)
+- [Roadmap & Milestones](docs/research/roadmap.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
 - [Security Policy](SECURITY.md)
@@ -212,7 +211,7 @@ Planned improvements include:
 - plugin ecosystem for custom modules and agents
 - distributed simulation support
 
-For the full roadmap and upcoming features, see [Roadmap.md](docs/roadmap.md).
+For the full roadmap and upcoming features, see [Roadmap.md](docs/research/roadmap.md).
 
 The roadmap evolves over time based on community feedback, research outcomes, and contributor proposals. Contributions and suggestions are welcome.
 

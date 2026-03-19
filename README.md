@@ -131,6 +131,14 @@ Unlike traditional tools that detect incidents after they happen, it predicts at
 
 AAPP‑MART is currently under active development and the installation process is not yet finalized.
 
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Install dev dependencies
+pip install -r dev-requirements.txt
+```
+
 The installation instructions, environment setup, and deployment workflow will be published in an upcoming release.
 
 For detailed information, see the [AAPP-MART AI Red-Team Simulation Development Guide](docs/development.md).

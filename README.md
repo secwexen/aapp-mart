@@ -93,7 +93,7 @@ This interactive demo showcases:
 ### Run the Demo (Google Colab)
 
 **Launch the interactive demo here:**
-[Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/aapp_mart_attack_path_demo.ipynb)
+[Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/notebooks/aapp_mart_attack_path_demo.ipynb)
 
 No installation required — run directly in your browser.
 

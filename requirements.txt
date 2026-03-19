@@ -38,4 +38,6 @@ pyopenssl>=23.2
 # === Optional ML / AI / Graph extras ===
 torch>=2.1
 transformers>=4.40
-networkx-metis>=0.2.0
+
+# === Graph partitioning ===
+nxmetis>=0.2.0

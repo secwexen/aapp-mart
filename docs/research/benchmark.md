@@ -7,12 +7,15 @@ The benchmarks below reflect the performance characteristics of the early engine
 
 ## **Comparison: AAPP‑MART vs Other Security Tools**
 
-| Capability | Traditional Scanners | BAS Tools | **AAPP‑MART** |
-|------------|----------------------|-----------|---------------|
-| Detects known vulnerabilities | ✔️ | ✔️ | ✔️ |
-| Predicts attack paths | ❌ | ❌ | **✔️ AI-powered** |
-| Autonomous adversarial agents | ❌ | ⚠️ Limited | **✔️ Multi‑agent** |
-| MITRE ATT&CK behavioral modeling | ⚠️ Partial | ✔️ | **✔️ Advanced** |
-| Adaptive simulation | ❌ | ❌ | **✔️** |
-| Machine learning–based risk scoring | ❌ | ❌ | **✔️** |
-| Scalable simulation architecture | ⚠️ | ⚠️ | **✔️** |
+| Capability                          | Traditional Scanners | BAS Tools  | **AAPP‑MART**             |
+| ----------------------------------- | -------------------- | ---------- | ------------------------- |
+| Detects known vulnerabilities       | ✔️                   | ✔️         | ✔️                        |
+| Predicts attack paths               | ❌                    | ❌          | **✔️ AI-powered**         |
+| Autonomous adversarial agents       | ❌                    | ⚠️ Limited | **✔️ Multi-agent**        |
+| MITRE ATT&CK behavioral modeling    | ⚠️ Partial           | ✔️         | **✔️ Advanced**           |
+| Adaptive simulation                 | ❌                    | ❌          | **✔️**                    |
+| Machine learning–based risk scoring | ❌                    | ❌          | **✔️**                    |
+| Scalable simulation architecture    | ⚠️                   | ⚠️         | **✔️**                    |
+| **Attack Path Demo Notebook**       | ❌                    | ❌          | **✔️ Public demo**        |
+| **CVE Mapping Integration**         | ❌                    | ❌          | **✔️ Sample CVE mapping** |
+| **Network Simulation Module**       | ❌                    | ❌          | **✔️ Sample topologies**  |

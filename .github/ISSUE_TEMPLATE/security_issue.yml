@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ⚠️ **Security Vulnerability Disclosure**
+           **Security Vulnerability Disclosure**
         
         Please use this form to responsibly report a security issue in AAPP-MART.
         Do NOT publicly disclose sensitive details.  

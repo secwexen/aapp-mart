@@ -167,7 +167,7 @@ Detailed guides and references are also available in the repository:
 - [Full Installation Guide](docs/installation.md)
 - [Module Development](docs/modules.md)
 - [ML-Based Attack Path Prediction Engine Details](docs/prediction_engine.md)
-- [Benchmark & Performance Evaluation](docs/benchmark.md)
+- [**Benchmark & Performance Evaluation**](docs/benchmark.md)
 - [Quick Start](docs/quickstart.md)
 - [Examples](docs/examples.md)
 - [Roadmap & Milestones](docs/roadmap.md)
@@ -228,7 +228,7 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 
 - Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 - Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
-- Found AAPP-MART useful? Give us a star and help grow the community!  
+- **Found AAPP-MART useful? Give us a star and help grow the community!**  
 - Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
 - Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.
 - Visit the [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.

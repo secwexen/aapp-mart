@@ -72,7 +72,7 @@ dependencies = [
   "pyopenssl>=23.2",
   "torch>=2.1",
   "transformers>=4.40",
-  "networkx-metis>=0.2.0"
+  "nxmetis>=0.2.0"
 ]
 
 [project.optional-dependencies]
@@ -94,6 +94,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://secwexen.github.io/aapp-mart/"
+Documentation = "https://github.com/secwexen/aapp-mart/wiki"
 Repository = "https://github.com/secwexen/aapp-mart"
 
 [project.entry-points.console_scripts]

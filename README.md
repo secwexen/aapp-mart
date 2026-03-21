@@ -159,6 +159,7 @@ AAPP-MART is designed for:
 Detailed guides and references are also available in the repository:
 
 - [Research Foundations](docs/research/research.md)
+- [**File & Folder Architecture**](docs/architecture.md)
 - [System Components](docs/concepts/components.md)
 - [AI Red-Team API Reference](docs/reference/api_reference.md)
 - [Risk Model](docs/concepts/risk_model.md)

@@ -1,6 +1,7 @@
 # Contributing to AAPP-MART
 
-> Note: AAPP-MART is currently under active development.  
+> [!NOTE]
+> AAPP-MART is currently under active development.  
 > Core components may evolve as the architecture stabilizes.  
 
 Thank you for your interest in contributing to AAPP-MART. We welcome contributions that improve code quality, security, and documentation.  

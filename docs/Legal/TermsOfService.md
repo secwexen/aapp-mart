@@ -2,7 +2,8 @@
 
 **Last updated:** 2026-03-05
 
-> Note: AAPP-MART is currently in development; some features may not be fully implemented.
+> [!NOTE]
+> AAPP-MART is currently in development; some features may not be fully implemented.
 
 ## 1. Acceptance of Terms  
 

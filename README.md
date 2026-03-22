@@ -44,15 +44,15 @@ The system models infrastructure assets, vulnerabilities, and relationships as a
 
 ## Key Features
 
-* AI-driven attack path prediction
-* Autonomous multi-agent red team simulation
-* Graph-based threat modeling and attack graph analysis
-* MITRE ATT&CK aligned adversary behavior modeling
-* Risk-based security posture analysis
-* ML-assisted vulnerability prioritization
-* Scalable adversarial simulation architecture
-* Extensible modular plugin system
-* Python-based open-source cybersecurity framework
+- AI-driven attack path prediction
+- Autonomous multi-agent red team simulation
+- Graph-based threat modeling and attack graph analysis
+- MITRE ATT&CK aligned adversary behavior modeling
+- Risk-based security posture analysis
+- ML-assisted vulnerability prioritization
+- Scalable adversarial simulation architecture
+- Extensible modular plugin system
+- Python-based open-source cybersecurity framework
 
 ## Conceptual Usage Example (Planned API)
 
@@ -86,9 +86,9 @@ See [AAPP-MART AI Red-Team API Reference](docs/reference/api_reference.md) and [
 Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using AI-driven red team agents**.
 
 This interactive demo showcases:
-* Shows predicted attack paths 
-* Simulates red-team agent behavior 
-* Generates risk scores and MITRE ATT&CK technique mappings 
+- Shows predicted attack paths 
+- Simulates red-team agent behavior 
+- Generates risk scores and MITRE ATT&CK technique mappings 
 
 ### Run the Demo (Google Colab)
 
@@ -99,10 +99,10 @@ No installation required — run directly in your browser.
 
 ### Learn More
 
-* [Official Website](https://secwexen.github.io/aapp-mart/)
-* [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
-* [API Reference & Guides](docs/reference/api_reference.md)  
-* [Contribution Guidelines](https://github.com/secwexen/aapp-mart/blob/main/CONTRIBUTING.md)
+- [Official Website](https://secwexen.github.io/aapp-mart/)
+- [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
+- [API Reference & Guides](docs/reference/api_reference.md)  
+- [Contribution Guidelines](https://github.com/secwexen/aapp-mart/blob/main/CONTRIBUTING.md)
 
 ## Legal & Authorized Use
 
@@ -116,9 +116,9 @@ Users are responsible for ensuring lawful and policy-compliant usage.
 
 AAPP-MART stands out from traditional security tools in its approach:
 
-* **Traditional scanners** → static, reactive, often limited to known vulnerabilities.
-* **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
-* **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
+- **Traditional scanners** → static, reactive, often limited to known vulnerabilities.
+- **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
+- **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
 
 By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
@@ -158,22 +158,22 @@ AAPP-MART is designed for:
 
 Detailed guides and references are also available in the repository:
 
-* [Research Foundations](docs/research/research.md)
-* [**Repository Structure**](docs/architecture.md)
-* [System Components](docs/concepts/components.md)
-* [AI Red-Team API Reference](docs/reference/api_reference.md)
-* [Risk Model](docs/concepts/risk_model.md)
-* [Deployment Guide](docs/guides/deployment.md)
-* [Full Installation Guide](docs/guides/installation.md)
-* [Module Development](docs/architecture/modules.md)
-* [ML-Based Attack Path Prediction Engine Details](docs/concepts/prediction_engine.md)
-* [**Benchmark & Performance Evaluation**](docs/research/benchmark.md)
-* [Quick Start](docs/guides/quickstart.md)
-* [Examples](docs/examples.md)
-* [Roadmap & Milestones](docs/research/roadmap.md)
-* [Contributing Guidelines](CONTRIBUTING.md)
-* [Changelog](CHANGELOG.md)
-* [Security Policy](SECURITY.md)
+- [Research Foundations](docs/research/research.md)
+- [**Repository Structure**](docs/architecture.md)
+- [System Components](docs/concepts/components.md)
+- [AI Red-Team API Reference](docs/reference/api_reference.md)
+- [Risk Model](docs/concepts/risk_model.md)
+- [Deployment Guide](docs/guides/deployment.md)
+- [Full Installation Guide](docs/guides/installation.md)
+- [Module Development](docs/architecture/modules.md)
+- [ML-Based Attack Path Prediction Engine Details](docs/concepts/prediction_engine.md)
+- [**Benchmark & Performance Evaluation**](docs/research/benchmark.md)
+- [Quick Start](docs/guides/quickstart.md)
+- [Examples](docs/examples.md)
+- [Roadmap & Milestones](docs/research/roadmap.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+- [Security Policy](SECURITY.md)
 
 ## License
 
@@ -188,11 +188,11 @@ Contributions are welcome!
 
 ### Contributing Workflow (Summary)
 
-* Fork the repository and create a feature or fix branch (e.g. `feature/your-feature` or `fix/bug-name`).
-* Make your changes and add relevant tests.
-* Ensure all tests pass (`pytest`) and code style checks (e.g. `make lint`).
-* Open a pull request referencing related issues/discussion when possible.
-* All PRs must pass CI checks before merging.
+- Fork the repository and create a feature or fix branch (e.g. `feature/your-feature` or `fix/bug-name`).
+- Make your changes and add relevant tests.
+- Ensure all tests pass (`pytest`) and code style checks (e.g. `make lint`).
+- Open a pull request referencing related issues/discussion when possible.
+- All PRs must pass CI checks before merging.
 
 Please open an issue before submitting major changes or new features.
 
@@ -204,13 +204,13 @@ The development of **AAPP-MART** follows a structured roadmap focused on improvi
 
 Planned improvements include:
 
-* advanced attack graph generation
-* improved AI-based attack path prediction
-* expanded MART offensive agents
-* enhanced risk scoring and reporting
-* improved visualization and dashboards
-* plugin ecosystem for custom modules and agents
-* distributed simulation support
+- advanced attack graph generation
+- improved AI-based attack path prediction
+- expanded MART offensive agents
+- enhanced risk scoring and reporting
+- improved visualization and dashboards
+- plugin ecosystem for custom modules and agents
+- distributed simulation support
 
 For the full roadmap and upcoming features, see [Roadmap.md](docs/research/roadmap.md).
 
@@ -226,12 +226,12 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 
 ## Community & Contribution
 
-* Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
-* Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
-* **Found AAPP-MART repository useful? Give us a star and help grow the community!**  
-* Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
-* Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.
-* Visit the [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
+- Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
+- Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
+- **Found AAPP-MART repository useful? Give us a star and help grow the community!**  
+- Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
+- Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.
+- Visit the [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
 
 ## Security
 
@@ -241,10 +241,10 @@ If you discover a security vulnerability, please follow our responsible disclosu
 
 ## External References
 
-* MITRE ATT&CK Framework — https://attack.mitre.org  
-* NIST Cybersecurity Framework — https://www.nist.gov/cyberframework
-* CIS Benchmarks — https://www.cisecurity.org/cis-benchmarks  
-* SANS Institute — https://www.sans.org  
-* OWASP Security Projects — https://owasp.org  
-* Google Red Team — https://redteam.google/  
-* Microsoft Security Research — https://www.microsoft.com/en-us/security/blog/  
+- MITRE ATT&CK Framework — https://attack.mitre.org  
+- NIST Cybersecurity Framework — https://www.nist.gov/cyberframework
+- CIS Benchmarks — https://www.cisecurity.org/cis-benchmarks  
+- SANS Institute — https://www.sans.org  
+- OWASP Security Projects — https://owasp.org  
+- Google Red Team — https://redteam.google/  
+- Microsoft Security Research — https://www.microsoft.com/en-us/security/blog/  

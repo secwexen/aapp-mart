@@ -246,5 +246,5 @@ If you discover a security vulnerability, please follow our responsible disclosu
 * CIS Benchmarks — https://www.cisecurity.org/cis-benchmarks  
 * SANS Institute — https://www.sans.org  
 * OWASP Security Projects — https://owasp.org  
-- Google Red Team — https://redteam.google/  
-- Microsoft Security Research — https://www.microsoft.com/en-us/security/blog/  
+* Google Red Team — https://redteam.google/  
+* Microsoft Security Research — https://www.microsoft.com/en-us/security/blog/  

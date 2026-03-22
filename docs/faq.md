@@ -61,6 +61,7 @@ $ aapp-mart --target 192.168.1.10 --mode full
 $ aapp-mart --report latest
 ```
 
+> [!NOTE]
 > ⚠ Always run simulations in **isolated lab environments** with **explicit authorization**.
 
 ## 6. Can I contribute to AAPP-MART?

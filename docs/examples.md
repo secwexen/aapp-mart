@@ -22,7 +22,8 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-> Note: Some modules may be under active development. Functionality may be limited.
+> [!Note]
+> Some modules may be under active development. Functionality may be limited.
 
 ## Environment Configuration
 

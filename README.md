@@ -125,7 +125,7 @@ By combining **AI-driven attack path prediction** with **autonomous red team sim
 AAPP-MART was created to help security teams anticipate and simulate modern cyber-attacks before damage occurs.  
 Unlike traditional tools that detect incidents after they happen, it predicts attacker behavior and models potential attack paths proactively.
 
-## Installation: AI Red-Team Simulation & Attack-Path Engine (Coming Soon)
+## Installation (Coming Soon)
 
 AAPP‑MART is currently under active development and the installation process is not yet finalized.
 
@@ -141,7 +141,7 @@ The installation instructions, environment setup, and deployment workflow will b
 
 For detailed information, see the [AAPP-MART AI Red-Team Simulation Development Guide](docs/guides/development.md).
 
-## Use Cases: Offensive Security, Threat Modeling, Predictive Attack Simulation
+## Use Cases
 
 AAPP-MART is designed for:
 

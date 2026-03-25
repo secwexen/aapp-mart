@@ -149,16 +149,11 @@ AAPP-MART is designed for:
 
 Detailed guides and references are also available in the repository:
 
-- [Research Foundations](docs/research/research.md)
-- [**Repository Structure**](docs/architecture.md)
-- [System Components](docs/concepts/components.md)
+- [**Repository Structure & System Components**](docs/architecture.md)
 - [AI Red-Team API Reference](docs/reference/api_reference.md)
 - [Risk Model](docs/concepts/risk_model.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Full Installation Guide](docs/guides/installation.md)
-- [Module Development](docs/architecture/modules.md)
-- [ML-Based Attack Path Prediction Engine Details](docs/concepts/prediction_engine.md)
-- [**Benchmark & Performance Evaluation**](docs/research/benchmark.md)
 - [Quick Start](docs/guides/quickstart.md)
 - [Examples](docs/examples.md)
 - [Roadmap & Milestones](docs/research/roadmap.md)

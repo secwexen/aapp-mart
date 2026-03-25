@@ -1,7 +1,7 @@
 # AAPP-MART
 
 <p align="center">
-<img src="assets/images/aapp-mart-logo.png" width="400" alt="AAPP-MART AI-Autonomous Attack Path Prediction and Multi‑Agent Red Team Simulation Engine Logo" loading="lazy" decoding="async">
+<img src="assets/images/aapp-mart-logo.png" width="350" alt="AAPP-MART AI-Autonomous Attack Path Prediction and Multi‑Agent Red Team Simulation Engine Logo" loading="lazy" decoding="async">
 </p>
 
 **Predict. Simulate. Secure.**

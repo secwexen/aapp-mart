@@ -41,12 +41,12 @@ intelligence-driven insights into organizational security posture.
 
 2. **MART (Multi-Agent Red Team)**  
    Autonomous agents simulate realistic adversary actions:
-   - Reconnaissance  
-   - Exploitation  
-   - Lateral Movement  
-   - Privilege Escalation  
-   - Persistence  
-   - Reporting  
+- Reconnaissance  
+- Exploitation  
+- Lateral Movement  
+- Privilege Escalation  
+- Persistence  
+- Reporting  
 
 3. **CORE Orchestration Engine**  
    Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.

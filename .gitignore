@@ -239,3 +239,16 @@ src/aapp_mart/offline/models/
 src/aapp_mart/domain/predictors/models/
 src/aapp_mart/aapp/models/
 
+# Runtime / simulation outputs
+output/attack_reports/
+output/simulation_results/
+
+# Project-specific / secrets
+config/*.key.yaml
+
+# ML / Offline models / cache
+ml_training/
+src/aapp_mart/offline/local_resources/
+src/aapp_mart/offline/models/
+src/aapp_mart/domain/predictors/models/
+src/aapp_mart/aapp/models/

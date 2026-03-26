@@ -16,7 +16,7 @@ AAPP‑MART helps organizations anticipate attack paths and validate defenses us
 [![CodeQL](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main&event=push)](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql)
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart?branch=main)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/notebooks/aapp_mart_attack_path_demo.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/aapp_mart_attack_path_demo.ipynb)
 
 ## About
 
@@ -33,6 +33,28 @@ AAPP‑MART addresses this gap by combining predictive AI, AI-driven threat mode
 and autonomous adversarial simulation to evaluate an environment’s real exposure. The engine models attacker behavior, 
 forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
 intelligence-driven insights into organizational security posture.
+
+## How AAPP-MART Works
+
+1. **AAPP (AI Attack Path Predictor)**  
+   Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
+
+2. **MART (Multi-Agent Red Team)**  
+   Autonomous agents simulate realistic adversary actions:
+- Reconnaissance  
+- Exploitation  
+- Lateral Movement  
+- Privilege Escalation  
+- Persistence  
+- Reporting  
+
+3. **CORE Orchestration Engine**  
+   Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
+
+**Example Attack Flow (Illustrative):** 
+```bash
+User Credential → Exploit → Initial Access → Lateral Movement → Privilege Escalation → Critical Asset Compromise
+```
 
 ## Architecture Diagram
 
@@ -91,7 +113,7 @@ This interactive demo showcases:
 ### Run the Demo (Google Colab)
 
 **Launch the interactive demo here:**
-[Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/notebooks/aapp_mart_attack_path_demo.ipynb)
+[Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/aapp_mart_attack_path_demo.ipynb)
 
 No installation required — run directly in your browser.
 

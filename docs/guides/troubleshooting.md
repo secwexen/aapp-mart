@@ -13,4 +13,5 @@ If your issue is not listed above:
 - Include logs, steps to reproduce, and environment information.  
 - Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to seek help from the community.
 
-> **Tip:** Always ensure you are running the latest version of AAPP-MART and follow the [Development Guide](docs/development.md) for updates.
+> [!TIP] 
+> Always ensure you are running the latest version of AAPP-MART and follow the [Development Guide](docs/development.md) for updates.

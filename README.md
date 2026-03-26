@@ -34,6 +34,28 @@ and autonomous adversarial simulation to evaluate an environment’s real exposu
 forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
 intelligence-driven insights into organizational security posture.
 
+## How AAPP-MART Works
+
+1. **AAPP (AI Attack Path Predictor)**  
+   Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
+
+2. **MART (Multi-Agent Red Team)**  
+   Autonomous agents simulate realistic adversary actions:
+   - Reconnaissance  
+   - Exploitation  
+   - Lateral Movement  
+   - Privilege Escalation  
+   - Persistence  
+   - Reporting  
+
+3. **CORE Orchestration Engine**  
+   Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
+
+**Example Attack Flow (Illustrative):** 
+```bash
+User Credential → Exploit → Initial Access → Lateral Movement → Privilege Escalation → Critical Asset Compromise
+```
+
 ## Architecture Diagram
 
 AAPP-MART is an AI-driven cybersecurity simulation engine designed for predictive attack-path analysis and autonomous red-team experimentation.

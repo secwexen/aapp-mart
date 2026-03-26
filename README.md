@@ -140,7 +140,7 @@ By combining **AI-driven attack path prediction** with **autonomous red team sim
 AAPP-MART was created to help security teams anticipate and simulate modern cyber-attacks before damage occurs.  
 Unlike traditional tools that detect incidents after they happen, it predicts attacker behavior and models potential attack paths proactively.
 
-## Installation (Coming Soon)
+## Installation
 
 AAPP‑MART is currently under active development and the installation process is not yet finalized.
 

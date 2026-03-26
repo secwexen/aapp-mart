@@ -145,10 +145,19 @@ Unlike traditional tools that detect incidents after they happen, it predicts at
 AAPP‑MART is currently under active development and the installation process is not yet finalized.
 
 ```bash
-# 1. Install dependencies
+# Clone repo
+git clone https://github.com/secwexen/aapp-mart.git
+cd aapp-mart
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+# Install dependencies
 pip install -r requirements.txt
 
-# 2. Install dev dependencies
+# Install dev dependencies
 pip install -r dev-requirements.txt
 ```
 

@@ -19,7 +19,7 @@ orjson>=3.9
 
 # === Networking ===
 httpx>=0.26
-requests>=2.32.4
+requests>=2.33.0
 
 # === CLI / UX / Visualization ===
 rich>=13.7

@@ -147,7 +147,7 @@ AAPP‑MART is currently under active development and the installation process i
 ### Supported Operating Systems
 
 - Windows 10 / 11  
-- Linux (Ubuntu 20.04+, Debian-based distros)  
+- Linux (Ubuntu 22.04+ / Debian 11+ / other Debian-based distributions)  
 - macOS (Intel & Apple Silicon)
 
 ### Python Requirements
@@ -174,6 +174,8 @@ pip install -r requirements.txt
 # Install dev dependencies
 pip install -r dev-requirements.txt
 ```
+
+For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
 ## Use Cases
 

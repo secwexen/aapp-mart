@@ -156,8 +156,6 @@ AAPP‑MART is currently under active development and the installation process i
 - pip 23+  
 - Virtual environment recommended
 
-The installation instructions, environment setup, and deployment workflow will be published in an upcoming release.
-
 ## Quick Start
 
 ```bash

@@ -146,8 +146,6 @@ AAPP‑MART is currently under active development and the installation process i
 
 The installation instructions, environment setup, and deployment workflow will be published in an upcoming release.
 
-For detailed information, see the [AAPP-MART AI Red-Team Simulation Development Guide](docs/guides/development.md).
-
 ## Quick Start
 
 ```bash

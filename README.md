@@ -142,7 +142,7 @@ Unlike traditional tools that detect incidents after they happen, it predicts at
 
 ## Installation
 
-AAPP‑MART is currently under active development and the installation process is not yet finalized.
+AAPP‑MART is currently under active development.
 
 ### Supported Operating Systems
 

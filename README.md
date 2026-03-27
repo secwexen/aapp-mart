@@ -144,6 +144,20 @@ Unlike traditional tools that detect incidents after they happen, it predicts at
 
 AAPP‑MART is currently under active development and the installation process is not yet finalized.
 
+### Supported Operating Systems
+
+- Windows 10 / 11  
+- Linux (Ubuntu 22.04+ / Debian 11+ / other Debian-based distributions)  
+- macOS (Intel & Apple Silicon)
+
+### Python Requirements
+
+- Python **3.11+**  
+- pip 23+  
+- Virtual environment recommended
+
+## Quick Start
+
 ```bash
 # Clone repo
 git clone https://github.com/secwexen/aapp-mart.git
@@ -161,9 +175,7 @@ pip install -r requirements.txt
 pip install -r dev-requirements.txt
 ```
 
-The installation instructions, environment setup, and deployment workflow will be published in an upcoming release.
-
-For detailed information, see the [AAPP-MART AI Red-Team Simulation Development Guide](docs/guides/development.md).
+For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
 ## Use Cases
 

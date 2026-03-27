@@ -144,6 +144,18 @@ Unlike traditional tools that detect incidents after they happen, it predicts at
 
 AAPP‑MART is currently under active development and the installation process is not yet finalized.
 
+### Supported Operating Systems
+
+- Windows 10 / 11  
+- Linux (Ubuntu 20.04+, Debian-based distros)  
+- macOS (Intel & Apple Silicon)
+
+### Python Requirements
+
+- Python **3.11+**  
+- pip 23+  
+- Virtual environment recommended
+
 The installation instructions, environment setup, and deployment workflow will be published in an upcoming release.
 
 ## Quick Start

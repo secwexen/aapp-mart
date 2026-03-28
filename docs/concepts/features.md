@@ -4,7 +4,7 @@
 
 ## Core Capabilities
 
-### **AI‑Driven Attack Path Prediction**
+### **AI‑Autonomous Attack Path Prediction**
 - Uses machine learning models to estimate likely attacker movement.
 - Generates dynamic attack paths based on environment state and security posture.
 - Supports probabilistic and deterministic prediction modes.

@@ -1,6 +1,6 @@
 # AAPP & MART Detailed Overview
 
-## AAPP (AI Attack Path Predictor)
+## AAPP (AI-Autonomous Attack Path Prediction)
 
 AAPP predicts attack paths by evaluating:
 

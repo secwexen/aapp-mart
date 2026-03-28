@@ -47,7 +47,7 @@ Linting ensures readability, maintainability, and reduces errors.
 
 Integration tests validate interactions between:
 
-- **AAPP** (AI-Autonomous Attack Path Predictor)
+- **AAPP** (AI-Autonomous Attack Path Prediction)
 - **MART** (Multi-Agent Red Team)
 - **CORE** (Simulation Brain / Orchestrator)
 

@@ -36,7 +36,7 @@ intelligence-driven insights into organizational security posture.
 
 ## How AAPP-MART Works
 
-1. **AAPP (AI Attack Path Predictor)**  
+1. **AAPP (AIAutonomous Attack Path Prediction)**  
    Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
 2. **MART (Multi-Agent Red Team)**  

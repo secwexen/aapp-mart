@@ -75,14 +75,6 @@ Responsible for:
 - Predicting attack paths  
 - Scoring risks  
 
-Key modules:
-
-- `analyzer.py`
-- `graph_builder.py`
-- `predictor.py`
-- `scoring.py`
-- `models/`
-
 ### 3.2 MART — Multi-Agent Red Team
 
 Simulates attacker behavior using specialized agents:
@@ -105,12 +97,6 @@ Coordinates the entire system:
 - Executes simulation loops  
 - Maintains global state  
 - Generates final reports  
-
-Key modules:
-
-- `orchestrator.py`
-- `simulation_engine.py`
-- `knowledge_graph.py`
 
 ## 4. Knowledge Graph
 

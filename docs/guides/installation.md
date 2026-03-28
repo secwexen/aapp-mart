@@ -7,8 +7,8 @@ This guide explains how to set up the framework for local development, testing, 
 
 Before installing AAPP‑MART, ensure your environment meets the following requirements:
 
-- Python 3.10 or higher  
-- pip (Python package manager)  
+- Python 3.11
+- pip 23+ (Python package manager)  
 - Git (for cloning the repository)  
 - Recommended: virtual environment (venv, conda, or similar)
 

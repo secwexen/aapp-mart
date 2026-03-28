@@ -15,7 +15,7 @@ An **Attack Graph** is a directed graph (G = (V, E)) where:
 
 Edges are annotated with **likelihood** and **exploitability weights** to support predictive scoring.
 
-### 2. AAPP (AI Attack Path Predictor)
+### 2. AAPP (AI-Autonomous Attack Path Prediction)
 
 **AAPP** analyzes the target environment to predict the most probable attack paths. It uses:
 

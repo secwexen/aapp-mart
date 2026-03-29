@@ -2,7 +2,7 @@
 
 AAPP‑MART operates through three major components that work together to predict and simulate attack paths.
 
-## AAPP (AI Attack Path Predictor)
+## AAPP (AI-Autonomous Attack Path Prediction)
 
 Predicts the most likely attack paths by analyzing services, permissions, vulnerabilities, and configuration weaknesses.
 
@@ -14,7 +14,7 @@ Predicts the most likely attack paths by analyzing services, permissions, vulner
 
 This explicit AI definition ensures credibility, reproducibility, and clarity for users and reviewers.
 
-## MART (Multi-Agent Red Team)
+## MART (Multi-Agent Red Team Simulation Engine)
 
 Executes autonomous red team simulations using specialized AI agents that emulate real attacker behavior.
 

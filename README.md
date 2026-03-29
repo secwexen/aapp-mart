@@ -6,8 +6,8 @@
 
 **Predict. Simulate. Secure.**
 
-An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.  
-AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑driven simulations.  
+An AI‑Autonomus Attack Path Prediction & Multi-Agent Red Team Simulation Engine designed for enterprise‑grade security assessment.  
+AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑Autonomous Attack Path Prediction.  
 
 **Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
 

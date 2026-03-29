@@ -9,4 +9,5 @@
 - **Documentation Updated:** features reflected in `README.md` and `docs/features.md`.
 - **Examples Provided:** demo scripts available in `examples/notebooks` and `examples/scripts`.
 
-> ⚠️ Note: Core engine, CVE matcher, and advanced simulation logic remain private.
+> [!NOTE]
+> Core engine, CVE matcher, and advanced simulation logic remain private.

@@ -36,7 +36,7 @@ venv\Scripts\activate      # Windows
 ### Using Conda:
 
 ```bash
-conda create -n aapp-mart python=3.10
+conda create -n aapp-mart python=3.11
 conda activate aapp-mart
 ```
 
@@ -94,7 +94,7 @@ If you plan to contribute or extend the framework:
 2. Install dev dependencies (optional):
 
 ```bash
-pip install -r requirements-dev.txt
+pip install -r dev-requirements.txt
 ```
 
 3. Follow the project structure under `src/aapp_mart/`

@@ -7,7 +7,7 @@ AAPP‑MART is a modular, multi‑agent red team simulation framework powered by
 AAPP‑MART is built around three core components that work together to simulate realistic offensive security behavior:
 
 - **AAPP (AI-Autonomous Attack Path Prediction)** — Analyzes the target environment and predicts potential attack paths based on vulnerabilities, configurations, and system topology.
-- **MART (Multi‑Agent Red Team)** — Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
+- **MART (Multi‑Agent Red Team Simulation Engine)** — Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
 - **Orchestrator** — Coordinates agents, manages execution flow, aggregates results, and generates reports.
 
 Each component is designed as an independent module to ensure extensibility and maintainability.

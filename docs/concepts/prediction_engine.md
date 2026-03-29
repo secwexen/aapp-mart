@@ -15,7 +15,7 @@ AAPP predicts attack paths by evaluating:
 - **Learning:** Offline or deterministic scoring  
 - **Decision Factors:** Exploitability, exposure, privilege, asset criticality
 
-## MART (Multi-Agent Red Team)
+## MART (Multi-Agent Red Team Simulation Engine)
 
 MART simulates realistic adversary behaviors:
 

@@ -75,7 +75,7 @@ Responsible for:
 - Predicting attack paths  
 - Scoring risks  
 
-### 3.2 MART — Multi-Agent Red Team
+### 3.2 MART — Multi-Agent Red Team Simulation Engine
 
 Simulates attacker behavior using specialized agents:
 

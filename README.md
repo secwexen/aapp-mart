@@ -39,21 +39,21 @@ intelligence-driven insights into organizational security posture.
 1. **AAPP (AI-Autonomous Attack Path Prediction)**  
    Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
+   **AI Engine:**
+   - Decision Logic: Rule-based / ML / Hybrid (per module).  
+   - Learning: Offline or deterministic scoring  
+   - Decision Factors: Exploitability, exposure, privilege, asset criticality
+
 2. **MART (Multi-Agent Red Team Simulation Engine)**  
-   Autonomous agents simulate realistic adversary actions:
-- Reconnaissance  
-- Exploitation  
-- Lateral Movement  
-- Privilege Escalation  
-- Persistence  
-- Reporting  
+   Autonomous agents simulate realistic adversary actions:  
+   Reconnaissance, Exploitation, Lateral Movement, Privilege Escalation, Persistence, Reporting 
 
 3. **CORE Orchestration Engine**  
    Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 
-**Example Attack Flow (Illustrative):** 
+**Example Attack Flow:** 
 ```bash
-User Credential → Exploit → Initial Access → Lateral Movement → Privilege Escalation → Critical Asset Compromise
+[User Credential] → [Phishing/Exploit] → [Initial Access] → [Lateral Movement] → [Privilege Escalation] → [Critical Asset Compromise]
 ```
 
 ## Architecture Diagram

@@ -79,8 +79,6 @@ The system models infrastructure assets, vulnerabilities, and relationships as a
 This example reflects the intended public API design:
 
 ```python
-# Run AI-Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine generate report
-
 # Import the orchestrator module
 from aapp_mart.core.orchestrator import AAPP_MART
 

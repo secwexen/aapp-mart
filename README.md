@@ -6,8 +6,8 @@
 
 **Predict. Simulate. Secure.**
 
-An AI‑powered red‑team simulation and attack‑path prediction engine designed for enterprise‑grade security assessment.  
-AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑driven simulations.  
+An AI‑Autonomus Attack Path Prediction & Multi-Agent Red Team Simulation Engine designed for enterprise‑grade security assessment.  
+AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑Autonomous Attack Path Prediction.  
 
 **Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
 
@@ -36,10 +36,10 @@ intelligence-driven insights into organizational security posture.
 
 ## How AAPP-MART Works
 
-1. **AAPP (AI Attack Path Predictor)**  
+1. **AAPP (AI-Autonomous Attack Path Prediction)**  
    Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
-2. **MART (Multi-Agent Red Team)**  
+2. **MART (Multi-Agent Red Team Simulation Engine)**  
    Autonomous agents simulate realistic adversary actions:
 - Reconnaissance  
 - Exploitation  
@@ -58,14 +58,14 @@ User Credential → Exploit → Initial Access → Lateral Movement → Privileg
 
 ## Architecture Diagram
 
-AAPP-MART is an AI-driven cybersecurity simulation engine designed for predictive attack-path analysis and autonomous red-team experimentation.
+AAPP-MART is an AI-Autonomous cybersecurity simulation engine designed for predictive AI-Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine experimentation.
 
 The system models infrastructure assets, vulnerabilities, and relationships as an attack graph that serves as the analytical foundation for the prediction engine and autonomous agent system. These components simulate adversarial behavior and forecast potential attack paths across complex environments.
 
 ## Key Features
 
-- AI-driven attack path prediction
-- Autonomous multi-agent red team simulation
+- AI-Autonomous Attack Path Prediction
+- Multi-Agent Red Team Simulation Engine
 - Graph-based threat modeling and attack graph analysis
 - MITRE ATT&CK aligned adversary behavior modeling
 - Risk-based security posture analysis
@@ -79,7 +79,7 @@ The system models infrastructure assets, vulnerabilities, and relationships as a
 This example reflects the intended public API design:
 
 ```python
-# Run AI-driven red-team simulation and generate attack-path report
+# Run AI-Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine generate report
 
 # Import the orchestrator module
 from aapp_mart.core.orchestrator import AAPP_MART
@@ -103,7 +103,7 @@ See [AAPP-MART AI Red-Team API Reference](docs/reference/api_reference.md) and [
 
 ## Live Demo
 
-Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using AI-driven red team agents**.
+Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using multi-agent red team simulation engine**.
 
 This interactive demo showcases:
 - Shows predicted attack paths 
@@ -133,7 +133,7 @@ AAPP-MART stands out from traditional security tools in its approach:
 - **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
 - **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
 
-By combining **AI-driven attack path prediction** with **autonomous red team simulations**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
+By combining **AI-Autonomous attack path prediction** with **Multi-Red Team Simulation Engine**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
 ## Why This Project Exists
 
@@ -229,7 +229,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 
-The development of **AAPP-MART** follows a structured roadmap focused on improving attack path prediction, red-team simulation, and security research capabilities.
+The development of **AAPP-MART** follows a structured roadmap focused on improving attack path prediction, Multi-Red Team Simulation Engine, and security research capabilities.
 
 Planned improvements include:
 

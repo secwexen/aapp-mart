@@ -9,7 +9,7 @@
 - Generates dynamic attack paths based on environment state and security posture.
 - Supports probabilistic and deterministic prediction modes.
 
-### **Multi‑Agent Red Team Simulation**
+### **Multi‑Agent Red Team Simulation Engine**
 - Autonomous adversarial agents emulate realistic attacker tactics.
 - Agents coordinate, compete, or specialize based on scenario configuration.
 - Behavior aligned with MITRE ATT&CK techniques.

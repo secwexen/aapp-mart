@@ -1,1 +1,51 @@
+# Include metadata & docs
+include README.md LICENSE CHANGELOG.md CITATION.cff
+include CODE_OF_CONDUCT.md CONTRIBUTING.md DISCLAIMER.md ETHICS.md GOVERNANCE.md NOTICE RELEASE_NOTES.md ROADMAP.md SBOM.md SECURITY.md SECURITY_SCANNER.md SUPPORT.md
 
+# Include configuration & templates
+include .env.example
+include .flake8
+include dev-requirements.txt
+include requirements.txt
+recursive-include configs *.yaml
+recursive-include templates *
+
+# Include main Python source code
+recursive-include src/aapp_mart *.py
+recursive-include api *.py
+recursive-include attack_graph *.py
+recursive-include cli *.py
+recursive-include commands *.py
+recursive-include common *.py
+recursive-include cve *.py
+recursive-include domain *.py
+recursive-include mart *.py
+recursive-include modules *.py
+recursive-include network *.py
+recursive-include offline *.py
+recursive-include reports *.py
+recursive-include risk *.py
+recursive-include integrations/siem *.py
+recursive-include utils *.py
+
+# Include examples, demo, and notebooks
+recursive-include examples *.py *.json
+recursive-include demo *.py *.ipynb *.md
+recursive-include docs *.md
+recursive-include start-here *.md
+
+# Include data files
+recursive-include data *
+recursive-include sample_targets *
+recursive-include attack_signatures.json *
+
+# Include assets
+recursive-include assets/images *.png
+
+# Exclude caches, temp files, and OS-specific files
+global-exclude __pycache__ *
+global-exclude *.py[cod]
+global-exclude *.swp
+global-exclude *.DS_Store
+global-exclude *.log
+global-exclude .nox

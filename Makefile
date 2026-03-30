@@ -1,4 +1,3 @@
-# Makefile for AAPP-MART
 .PHONY: all test lint format typecheck security dev clean
 
 # Default: run tests

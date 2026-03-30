@@ -72,7 +72,7 @@ The system models infrastructure assets, vulnerabilities, and relationships as a
 - ML-assisted vulnerability prioritization
 - Scalable adversarial simulation architecture
 - Extensible modular plugin system
-- Python-based open-source cybersecurity framework
+- Python-based open-source cybersecurity Engine
 
 ## Conceptual Usage Example (Planned API)
 

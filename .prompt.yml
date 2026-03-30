@@ -3,10 +3,12 @@ name: Text Summarizer
 version: 1.0.0
 owner: "Secwexen"
 createdAt: "2026-02-25"
-description: Summarizes input text concisely
+description: Summarizes input text concisely for security reports or attack simulations
 tags:
   - summarization
   - text-processing
+  - cybersecurity
+  - security-reports
 
 model: microsoft/phi-4-reasoning
 modelParameters:
@@ -28,6 +30,7 @@ messages:
       <text>
       {{input}}
       </text>
+
 testData:
   - input: |
       The quick brown fox jumped over the lazy dog.
@@ -52,3 +55,7 @@ evaluators:
   - name: Output must not contain extra keys
     json:
       onlyContains: ["summary"]
+  
+  - name: Output should be relevant to attack path and risk simulation reports
+    string:
+      contains: "attack path"  # Checking if summary applies to cyber attack paths or threat modeling reports

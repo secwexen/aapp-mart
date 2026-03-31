@@ -99,7 +99,7 @@ Core orchestration modules are currently under development.
 
 See [AAPP-MART AI Red-Team API Reference](docs/reference/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
 
-## Live Demo
+## Demo
 
 Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using multi-agent red team simulation engine**.
 

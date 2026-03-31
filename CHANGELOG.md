@@ -59,7 +59,8 @@ Public demo includes attack path visualization, sample CVE mapping, and network 
 - **Documentation Updated:** `README.md` and `docs/features.md` updated to reflect new public features.  
 - **Examples Provided:** Demo scripts and notebook available under `examples/notebooks` and `examples/scripts`.
 
-> ⚠️ Note: Core engine, CVE matcher, and advanced simulation logic remain private and are not included in the public release.
+> [!NOTE]
+> Core engine, CVE matcher, and advanced simulation logic remain private and are not included in the public release.
 
 ### Run the Demo (Google Colab)
 

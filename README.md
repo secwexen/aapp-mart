@@ -14,10 +14,6 @@ AAPP‑MART helps organizations anticipate attack paths and validate defenses us
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Tests](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml/badge.svg?branch=main&event=pull_request)](https://github.com/secwexen/aapp-mart/actions/workflows/test.yml)
 [![CodeQL](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main&event=push)](https://github.com/secwexen/aapp-mart/actions/workflows/github-code-scanning/codeql)
-[![Python Version](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/)
-[![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
-[![License](https://img.shields.io/github/license/secwexen/aapp-mart?branch=main)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/aapp_mart_attack_path_demo.ipynb)
 
 ## About
 
@@ -100,7 +96,7 @@ Core orchestration modules are currently under development.
 
 See [AAPP-MART AI Red-Team API Reference](docs/reference/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
 
-## Live Demo
+## Demo
 
 Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using multi-agent red team simulation engine**.
 

@@ -251,7 +251,7 @@ This repository provides the foundational architecture, core interfaces, and ini
 
 Advanced prediction models, autonomous agent behaviors, and controlled simulation capabilities are being implemented progressively.
 
-## Community & Contribution
+## Community
 
 📌 Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 💬 Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  

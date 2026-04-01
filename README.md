@@ -97,7 +97,7 @@ report.export(format="json", path="./logs/attack-path/attack_report.json")
 
 Core orchestration modules are currently under development.  
 
-See [AAPP-MART AI Red-Team API Reference](docs/reference/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
+See [API Reference](docs/reference/api_reference.md) and [System Architecture](docs/architecture.md) for interface details and system structure.  
 
 ## Demo
 
@@ -258,7 +258,7 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 **⭐ Found AAPP-MART repository useful? Give us a star and help grow the community!**  
 🤝 Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
 - Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.
-- Visit the [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
+- Visit the [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
 
 ## Security
 

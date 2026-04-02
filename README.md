@@ -103,7 +103,7 @@ See [API Reference](docs/reference/api_reference.md) and [System Architecture](d
 
 Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using multi-agent red team simulation engine**.
 
-This interactive demo showcases:
+This interactive demo includes:
 - Shows predicted attack paths 
 - Simulates red-team agent behavior 
 - Generates risk scores and MITRE ATT&CK technique mappings 

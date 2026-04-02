@@ -29,7 +29,7 @@ seaborn>=0.12
 Pygments>=2.20.0
 
 # === Security overrides ===
-pillow>=12.1.1
+pillow>=10.2.0
 
 # === Security / Environment ===
 cryptography>=41.0
@@ -37,7 +37,7 @@ python-dotenv>=1.0
 pyopenssl>=23.2
 
 # === Optional ML / AI / Graph extras ===
-torch>=2.1
+torch==2.1.2+cpu
 transformers>=4.40
 
 # === Graph partitioning ===

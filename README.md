@@ -62,7 +62,7 @@ AAPP-MART is an AI-Autonomous cybersecurity simulation engine designed for predi
 
 The system models infrastructure assets, vulnerabilities, and relationships as an attack graph that serves as the analytical foundation for the prediction engine and autonomous agent system. These components simulate adversarial behavior and forecast potential attack paths across complex environments.
 
-## Key Features
+## Features
 
 - AI-Autonomous Attack Path Prediction
 - Multi-Agent Red Team Simulation Engine
@@ -97,13 +97,13 @@ report.export(format="json", path="./logs/attack-path/attack_report.json")
 
 Core orchestration modules are currently under development.  
 
-See [AAPP-MART AI Red-Team API Reference](docs/reference/api_reference.md) and [AAPP-MART System Architecture](docs/architecture.md) for interface details and system structure.  
+See [API Reference](docs/reference/api_reference.md) and [System Architecture](docs/architecture.md) for interface details and system structure.  
 
 ## Demo
 
 Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using multi-agent red team simulation engine**.
 
-This interactive demo showcases:
+This interactive demo includes:
 - Shows predicted attack paths 
 - Simulates red-team agent behavior 
 - Generates risk scores and MITRE ATT&CK technique mappings 
@@ -251,14 +251,14 @@ This repository provides the foundational architecture, core interfaces, and ini
 
 Advanced prediction models, autonomous agent behaviors, and controlled simulation capabilities are being implemented progressively.
 
-## Community & Contribution
+## Community
 
 📌 Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 💬 Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
 **⭐ Found AAPP-MART repository useful? Give us a star and help grow the community!**  
 🤝 Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
-- Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.
-- Visit the [AAPP‑MART Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
+🌐 Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.  
+📘 Visit the [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
 
 ## Security
 

@@ -189,7 +189,7 @@ AAPP-MART is designed for:
 Detailed guides and references are also available in the repository:
 
 - [**Repository Structure & System Components**](docs/architecture.md)
-- [AI Red-Team API Reference](docs/reference/api_reference.md)
+- [API Reference](docs/reference/api_reference.md)
 - [Risk Model](docs/concepts/risk_model.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Full Installation Guide](docs/guides/installation.md)

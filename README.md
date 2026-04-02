@@ -251,12 +251,12 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 
 ## Community
 
-📌 Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
-💬 Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
-**⭐ Found AAPP-MART repository useful? Give us a star and help grow the community!**  
-🤝 Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
-🌐 Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.  
-📘 Visit the [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
+- Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
+- Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
+- ⭐ **Found AAPP-MART repository useful? Give us a star and help grow the community!**  
+- 🤝 **Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.**  
+- Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.  
+- Visit the [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
 
 ## Security
 

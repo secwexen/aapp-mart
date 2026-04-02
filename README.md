@@ -195,7 +195,7 @@ Detailed guides and references are also available in the repository:
 - [Full Installation Guide](docs/guides/installation.md)
 - [Quick Start](docs/guides/quickstart.md)
 - [Examples](docs/examples.md)
-- [Roadmap & Milestones](docs/research/roadmap.md)
+- [Roadmap & Milestones](ROADMAP.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
 - [Security Policy](SECURITY.md)

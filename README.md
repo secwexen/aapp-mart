@@ -188,7 +188,7 @@ AAPP-MART is designed for:
 
 Detailed guides and references are also available in the repository:
 
-- [Wiki](https://github.com/secwexen/aapp-mart/wiki)
+- [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
 - [Repository Structure & System Components](docs/architecture.md)
 - [API Reference](docs/reference/api_reference.md)
 - [Risk Model](docs/concepts/risk_model.md)

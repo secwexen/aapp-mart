@@ -113,6 +113,23 @@ This interactive demo includes:
 
 No installation required — run directly in your browser.
 
+### Demo Console Output
+
+```
+Environment is ready for AAPP-MART demo.
+Simulating attack path prediction for target: 192.168.1.10
+Report exported in json format to ./logs/attack-path/attack_report.json
+```
+
+### Explanation of the Output
+
+- The first line indicates the environment is set up.
+- The second line indicates that attack path prediction is being “simulated” for the target IP address (`192.168.1.10`).
+- The third line states that a report was exported in JSON format to `./logs/attack-path/attack_report.json`.
+
+> [!NOTE]
+> No actual file is created or report is generated unless that directory and export logic exist. The output is simply printed to the console as a simulation.
+
 ## Legal & Authorized Use
 
 AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
@@ -188,14 +205,15 @@ AAPP-MART is designed for:
 
 Detailed guides and references are also available in the repository:
 
-- [**Repository Structure & System Components**](docs/architecture.md)
-- [AI Red-Team API Reference](docs/reference/api_reference.md)
+- [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
+- [Repository Structure & System Components](docs/architecture.md)
+- [API Reference](docs/reference/api_reference.md)
 - [Risk Model](docs/concepts/risk_model.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Full Installation Guide](docs/guides/installation.md)
 - [Quick Start](docs/guides/quickstart.md)
 - [Examples](docs/examples.md)
-- [Roadmap & Milestones](docs/research/roadmap.md)
+- [Roadmap & Milestones](ROADMAP.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
 - [Security Policy](SECURITY.md)
@@ -249,14 +267,11 @@ This repository provides the foundational architecture, core interfaces, and ini
 
 Advanced prediction models, autonomous agent behaviors, and controlled simulation capabilities are being implemented progressively.
 
-## Community
+## Community & Support
 
-📌 Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
-💬 Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
-**⭐ Found AAPP-MART repository useful? Give us a star and help grow the community!**  
-🤝 Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
-🌐 Visit the [Official Website](https://secwexen.github.io/aapp-mart/) for documentation, updates, and project information.  
-📘 Visit the [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki) for detailed guides, architecture, agent behavior models, and project updates.
+- Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
+- Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
+- Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
 
 ## Security
 

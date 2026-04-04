@@ -113,7 +113,7 @@ This interactive demo includes:
 
 No installation required — run directly in your browser.
 
-### **Demo Console Output**
+### Demo Console Output
 
 ```
 Environment is ready for AAPP-MART demo.
@@ -121,7 +121,7 @@ Simulating attack path prediction for target: 192.168.1.10
 Report exported in json format to ./logs/attack-path/attack_report.json
 ```
 
-### **Explanation of the Output**
+### Explanation of the Output
 
 - The first line indicates the environment is set up.
 - The second line indicates that attack path prediction is being “simulated” for the target IP address (`192.168.1.10`).

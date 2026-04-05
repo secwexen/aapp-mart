@@ -37,5 +37,5 @@ python-dotenv>=1.0
 pyopenssl>=23.2
 
 # === Optional ML / AI / Graph extras ===
-torch==2.2.0
+torch==2.8.0
 transformers>=4.40

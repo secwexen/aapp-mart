@@ -20,4 +20,4 @@ ENV PYTHONPATH=/app/src
 
 EXPOSE 8080
 
-CMD ["python", "-m", "aapp_mart"]
+CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "aapp_mart.app:app", "--bind", "0.0.0.0:8080", "--workers", "4"]

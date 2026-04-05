@@ -4,10 +4,8 @@
 <img src="assets/images/aapp-mart-logo.png" width="350" alt="AAPP-MART AI-Autonomous Attack Path Prediction and Multi‑Agent Red Team Simulation Engine Logo" loading="lazy" decoding="async">
 </p>
 
-**Predict. Simulate. Secure.**
-
+**Predict. Simulate. Secure.**  
 An AI‑Autonomus Attack Path Prediction & Multi-Agent Red Team Simulation Engine designed for enterprise‑grade security assessment.  
-AAPP‑MART helps organizations anticipate attack paths and validate defenses using AI‑Autonomous Attack Path Prediction.  
 
 **Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
 

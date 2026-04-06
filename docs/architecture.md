@@ -59,7 +59,7 @@ aapp-mart
 ├── RELEASE_NOTES.md
 ├── SECURITY.md
 ├── SUPPORT.md
-├── requirements-dev.txt
+├── dev-requirements.txt
 ├── requirements.txt
 └── trivyignore
 ```

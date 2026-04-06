@@ -13,3 +13,6 @@ exclude =
     .pytest_cache,
     .idea,
     .vscode
+
+per-file-ignores =
+    __init__.py: F401

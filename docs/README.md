@@ -93,7 +93,9 @@ Research, benchmarks, and experiments:
 ### 10. `Legal/`
 
 Legal, compliance, and ethics documents:  
-- `terms-of-service.md` – Terms of service  
-- `privacy-policy.md` – Privacy policy  
+- `terms-of-service.md` – Terms of service
+- `terms.md` – Draft Terms
+- `privacy-policy.md` – Privacy policy
+- `privacy.md` – Draft Privacy
 - `cookie-policy.md` – Cookie policy  
 - `ethics.md` – Ethics policy

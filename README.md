@@ -206,7 +206,7 @@ Detailed guides and references are also available in the repository:
 - [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
 - [Repository Structure & System Components](docs/architecture/architecture.md)
 - [API Reference](docs/reference/api_reference.md)
-- [Risk Model](docs/concepts/risk_model.md)
+- [Risk Model](docs/ai/risk_model.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Full Installation Guide](docs/getting-started/installation.md)
 - [Quick Start](docs/getting-started/quickstart.md)

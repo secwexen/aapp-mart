@@ -1,10 +1,6 @@
 # Bandit configuration for AAPP-MART
 # High-severity Python security scanning
 
-skips:
-  - B101  # assert usage warning (not critical)
-  - B601  # subprocess popen low severity warning
-
 exclude_dirs:
   - tests
   - docs
@@ -12,9 +8,8 @@ exclude_dirs:
   - scripts
   - venv
   - .venv
-
-severity: high
-confidence: high
+  - migrations
+  - third_party
 
 tests:
   - B102  # exec used
@@ -23,10 +18,14 @@ tests:
   - B105  # hardcoded_password_string
   - B106  # hardcoded_password_funcarg
   - B107  # hardcoded_password_default
+  - B201  # flask debug=True
   - B108  # hardcoded_tmp_directory
   - B110  # try_except_pass
   - B112  # try_except_continue
   - B307  # eval used
+  - B602  # subprocess shell=True
+  - B603  # subprocess usage
+  - B607  # partial path execution 
   - B313  # xml.etree insecure parser
   - B314  # xml.minidom insecure parser
   - B315  # xml.dom.pulldom insecure parser

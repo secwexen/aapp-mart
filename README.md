@@ -170,7 +170,7 @@ AAPP‑MART is currently under active development.
 ## Quick Start
 
 ```bash
-# Clone repo
+# Clone repository
 git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 

@@ -208,7 +208,7 @@ Detailed guides and references are also available in the repository:
 - [API Reference](docs/reference/api_reference.md)
 - [Risk Model](docs/concepts/risk_model.md)
 - [Deployment Guide](docs/guides/deployment.md)
-- [Full Installation Guide](docs/guides/installation.md)
+- [Full Installation Guide](docs/getting-started/installation.md)
 - [Quick Start](docs/guides/quickstart.md)
 - [Examples](docs/examples.md)
 - [Roadmap & Milestones](ROADMAP.md)

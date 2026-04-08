@@ -170,7 +170,7 @@ AAPP‑MART is currently under active development.
 ## Quick Start
 
 ```bash
-# Clone repo
+# Clone repository
 git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 
@@ -204,12 +204,12 @@ AAPP-MART is designed for:
 Detailed guides and references are also available in the repository:
 
 - [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
-- [Repository Structure & System Components](docs/architecture.md)
+- [Repository Structure & System Components](docs/architecture/architecture.md)
 - [API Reference](docs/reference/api_reference.md)
-- [Risk Model](docs/concepts/risk_model.md)
+- [Risk Model](docs/ai/risk-model.md)
 - [Deployment Guide](docs/guides/deployment.md)
-- [Full Installation Guide](docs/guides/installation.md)
-- [Quick Start](docs/guides/quickstart.md)
+- [Full Installation Guide](docs/getting-started/installation.md)
+- [Quick Start](docs/getting-started/quickstart.md)
 - [Examples](docs/examples.md)
 - [Roadmap & Milestones](ROADMAP.md)
 - [Contributing Guidelines](CONTRIBUTING.md)
@@ -259,9 +259,7 @@ The roadmap evolves over time based on community feedback, research outcomes, an
 
 ## Development Status
 
-Active development open source project. Core implementation is still in progress.   
-
-This repository provides the foundational architecture, core interfaces, and initial logic of the AAPP-MART engine.
+Active development open source project. Core implementation is still in progress.  
 
 Advanced prediction models, autonomous agent behaviors, and controlled simulation capabilities are being implemented progressively.
 

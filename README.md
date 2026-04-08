@@ -259,9 +259,7 @@ The roadmap evolves over time based on community feedback, research outcomes, an
 
 ## Development Status
 
-Active development open source project. Core implementation is still in progress.   
-
-This repository provides the foundational architecture, core interfaces, and initial logic of the AAPP-MART engine.
+Active development open source project. Core implementation is still in progress.  
 
 Advanced prediction models, autonomous agent behaviors, and controlled simulation capabilities are being implemented progressively.
 

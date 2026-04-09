@@ -162,9 +162,3 @@ Please see:
 - [SECURITY.md](/SECURITY.md)
 
 for guidelines on contributing to the project.
-
-## Disclaimer
-
-AAPP‑MART is intended solely for ethical, legal, and explicitly authorized security research, penetration testing, and defensive security validation.
-
-Using this tool against any system, network, or application without the explicit permission of the system owner is strictly prohibited and may violate local, national, or international laws.

@@ -8,9 +8,9 @@ Thank you for your interest in contributing to AAPP-MART. We welcome contributio
 
 ## Useful Links
 
-- [README.md](README.md)
-- [SECURITY.md](SECURITY.md)
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- [README.md](/README.md)
+- [SECURITY.md](/SECURITY.md)
+- [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md)
 - [Roadmap](docs/roadmap.md)
 
 ## Getting Started
@@ -57,7 +57,7 @@ If you are using VS Code, the recommended way is to open the project in the Dev 
 ## Release Workflow
 
 - We follow **semantic versioning** (MAJOR.MINOR.PATCH).
-- All releases must update the [CHANGELOG](CHANGELOG.md).
+- All releases must update the [CHANGELOG](/CHANGELOG.md).
 - Release candidates are tagged and tested before final publication.
 
 ## Commit Messages
@@ -91,7 +91,7 @@ We use GitHub labels to guide contributors:
 ## Documentation Contributions
 
 - Contributions to the documentation are gladly accepted.
-- Update [README.md](README.md) or other documentation as needed
+- Update [README.md](/README.md) or other documentation as needed
 - Follow Markdown formatting and style conventions
 
 ## Security and Ethics
@@ -101,7 +101,7 @@ Contributions must **not include exploit code**, malware, or content intended fo
 
 - Contributions must remain within the scope of controlled, non-destructive security simulation.
 
-Security issues should be reported according to the [SECURITY.md](SECURITY.md) policy.
+Security issues should be reported according to the [SECURITY.md](/SECURITY.md) policy.
 
 ## Code of Conduct
 

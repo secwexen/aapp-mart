@@ -1,8 +1,8 @@
-# **Developer Guide**
+# Developer Guide
 
 AAPP‑MART is a modular, multi‑agent red team simulation framework powered by AI‑driven decision models. This guide provides developers with the architectural overview, contribution workflow, coding standards, and extension points required to build new features or improve the framework.
 
-## **Project Architecture**
+## Project Architecture
 
 AAPP‑MART is built around three core components that work together to simulate realistic offensive security behavior:
 
@@ -12,7 +12,7 @@ AAPP‑MART is built around three core components that work together to simulate
 
 Each component is designed as an independent module to ensure extensibility and maintainability.
 
-## **Agent Development**
+## Agent Development
 
 Agents are the core of the simulation engine. Each agent represents a specific offensive capability such as reconnaissance, exploitation, privilege escalation, or lateral movement.
 
@@ -26,7 +26,7 @@ Key requirements for creating a new agent:
 
 Agents should be deterministic in structure but flexible in behavior to support dynamic simulation scenarios.
 
-## **Simulation Workflow**
+## Simulation Workflow
 
 The simulation pipeline follows a structured sequence:
 
@@ -38,7 +38,7 @@ The simulation pipeline follows a structured sequence:
 
 Developers can modify or extend any stage of this workflow by adding new modules or adjusting orchestration logic.
 
-## **Setting Up the Development Environment**
+## Setting Up the Development Environment
 
 Clone the repository and install dependencies:
 
@@ -71,7 +71,7 @@ Create a feature branch before making changes:
 git checkout -b feature/new-module
 ```
 
-## **Coding Standards**
+## Coding Standards
 
 To maintain consistency across the project:
 
@@ -84,7 +84,7 @@ To maintain consistency across the project:
 
 All pull requests are automatically checked for formatting, linting, and test coverage.
 
-## **Testing Guidelines**
+## Testing Guidelines
 
 Every new feature must include:
 
@@ -94,7 +94,7 @@ Every new feature must include:
 
 Tests are stored under the [tests](tests/) directory and should follow a clear naming convention.
 
-## **Extending Reporting**
+## Extending Reporting
 
 Developers can add new report formats or extend existing ones. A report module should:
 
@@ -104,7 +104,7 @@ Developers can add new report formats or extend existing ones. A report module s
 
 Reports are located under the [reports](reports/) module.
 
-## **Framework Extension Points**
+## Framework Extension Points
 
 AAPP‑MART is designed to be extensible. Developers can add:
 
@@ -116,14 +116,14 @@ AAPP‑MART is designed to be extensible. Developers can add:
 
 Each extension should be modular and documented to ensure compatibility with the rest of the framework.
 
-## **Security and Ethical Requirements**
+## Security and Ethical Requirements
 
 - All development and testing must be performed in authorized environments.
 - Unauthorized use of the framework against real systems is strictly prohibited.
-- Vulnerabilities must be reported according to the project’s **[SECURITY.md](SECURITY.md)** policy.
+- Vulnerabilities must be reported according to the project’s **[SECURITY.md](/SECURITY.md)** policy.
 - Ethical guidelines must be followed at all times.
 
-## **Contribution Workflow**
+## Contribution Workflow
 
 To contribute to AAPP‑MART:
 

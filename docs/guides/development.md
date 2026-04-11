@@ -43,9 +43,20 @@ Developers can modify or extend any stage of this workflow by adding new modules
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/secwexen/aapp-mart
+# Clone repository
+git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Install dev dependencies
+pip install -r dev-requirements.txt
 ```
 
 Run tests to verify the environment:

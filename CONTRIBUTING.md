@@ -17,17 +17,25 @@ Thank you for your interest in contributing to AAPP-MART. We welcome contributio
 
 1. Fork the repository
 2. Create a new branch from `main`
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+```bash
+git checkout -b feature/your-feature-name
+```
 
 3. Set up a local development environment:
 
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate
-   pip install -r requirements.txt
-   ```
+```bash
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install dev dependencies
+pip install -r dev-requirements.txt
+```
+
 If you are using VS Code, the recommended way is to open the project in the Dev Container environment.
 
 ## Development Guidelines

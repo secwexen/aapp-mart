@@ -35,15 +35,15 @@ clear ownership, and effective collaboration among contributors.
 
 - Regular releases are scheduled every **quarter**.
 - Security patches and hotfixes are released as needed.
-- Release notes are documented in [RELEASE_NOTES.md](RELEASE_NOTES.md).
+- Releases are documented in [CHANGELOG.md](CHANGELOG.md).
 
 ## Security and Compliance
 
-- Compliance with open-source licenses is tracked in [NOTICE](NOTICE) and [LICENSE-3RD-PARTY.md](LICENSE-3RD-PARTY.md).
+- Compliance with open-source licenses is tracked in [NOTICE](/NOTICE) and [LICENSE-3RD-PARTY.md](/LICENSE-3RD-PARTY.md).
 
 ## Community Guidelines
 
-- All contributors must follow the [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
+- All contributors must follow the [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
 - Respectful communication and collaboration are expected at all times.
 
 ## Amendments

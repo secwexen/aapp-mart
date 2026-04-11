@@ -1,4 +1,4 @@
-## CLI/API Usage Example
+# CLI/API Usage Example
 
 Run an attack simulation:
 

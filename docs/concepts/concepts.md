@@ -78,8 +78,12 @@ AAPP-MART maps predicted paths and agent behaviors to **MITRE ATT&CK tactics and
 - **Air-Gapped / Offline Mode** – isolated environments
 - **Containerization (planned)** – Docker-based deployments
 
-## References
+## External References
 
-- [MITRE ATT&CK Framework](https://attack.mitre.org/)
-- [CVSS v3.1 Specification](https://www.first.org/cvss/specification-document)
-- [AAPP-MART Architecture & Documentation](architecture.md)
+- MITRE ATT&CK Framework — https://attack.mitre.org  
+- NIST Cybersecurity Framework — https://www.nist.gov/cyberframework
+- CIS Benchmarks — https://www.cisecurity.org/cis-benchmarks  
+- SANS Institute — https://www.sans.org  
+- OWASP Security Projects — https://owasp.org  
+- Microsoft Security Research — https://www.microsoft.com/en-us/security/blog/
+- Kaspersky Cybermap (Live Threat Map) — https://cybermap.kaspersky.com

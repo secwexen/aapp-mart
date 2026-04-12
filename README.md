@@ -14,6 +14,8 @@ An AI‑Autonomus Attack Path Prediction & Multi-Agent Red Team Simulation Engin
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 
+**⭐ If you find this project valuable, consider giving it a star.**
+
 ## About
 
 **AAPP‑MART | AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine** is an open‑source Python security engine designed for offensive security research, adversarial modeling, and automated risk assessment. It combines AI‑powered attack‑path prediction with autonomous multi‑agent red‑team simulation to model how real attackers navigate an environment and to reveal actionable, data‑driven security insights.
@@ -265,7 +267,7 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 
 - Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 - Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.
-- **Found AAPP-MART repository useful? Give us a star and help grow the community!**  
+- **If you find this project valuable, consider giving it a star.**  
 - Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
 
 ## Security

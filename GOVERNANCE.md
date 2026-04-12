@@ -39,11 +39,11 @@ clear ownership, and effective collaboration among contributors.
 
 ## Security and Compliance
 
-- Compliance with open-source licenses is tracked in [NOTICE](/NOTICE) and [LICENSE-3RD-PARTY.md](/LICENSE-3RD-PARTY.md).
+- Compliance with open-source licenses is tracked in [NOTICE](NOTICE) and [LICENSE-3RD-PARTY.md](LICENSE-3RD-PARTY.md).
 
 ## Community Guidelines
 
-- All contributors must follow the [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
+- All contributors must follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 - Respectful communication and collaboration are expected at all times.
 
 ## Amendments

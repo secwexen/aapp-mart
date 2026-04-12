@@ -22,6 +22,8 @@ An AI‑Autonomus Attack Path Prediction & Multi-Agent Red Team Simulation Engin
 
 Unlike traditional static vulnerability scanners or manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, validate defensive controls, and understand real‑world risk through repeatable, scalable, and intelligence‑driven simulations.
 
+The system generates structured attack-path reports, MITRE ATT&CK-mapped insights, and risk scoring outputs to support SOC operations, detection engineering, and continuous security improvement.
+
 ## Overview
 
 Modern infrastructures are too dynamic and interconnected for traditional security testing to keep pace. 

@@ -8,9 +8,9 @@ Thank you for your interest in contributing to AAPP-MART. We welcome contributio
 
 ## Useful Links
 
-- [README.md](/README.md)
-- [SECURITY.md](/SECURITY.md)
-- [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md)
+- [README.md](README.md)
+- [SECURITY.md](SECURITY.md)
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - [Roadmap](docs/roadmap.md)
 
 ## Getting Started
@@ -51,7 +51,7 @@ If you are using VS Code, the recommended way is to open the project in the Dev 
 
 - All new features must align with the documented architecture.
 - Architectural changes require prior discussion.
-  - For architectural proposals, please open a GitHub Discussion or an Issue with the label [Architecture](architecture).
+  - For architectural proposals, please open a GitHub Discussion or an Issue with the label [design](https://github.com/secwexen/aapp-mart/issues?q=state%3Aopen%20label%3Adesign).
 - Avoid introducing breaking changes without discussion.
 - Keep code compatible with the project license (Apache-2.0 License).
   
@@ -65,7 +65,7 @@ If you are using VS Code, the recommended way is to open the project in the Dev 
 ## Release Workflow
 
 - We follow **semantic versioning** (MAJOR.MINOR.PATCH).
-- All releases must update the [CHANGELOG](/CHANGELOG.md).
+- All releases must update the [CHANGELOG](CHANGELOG.md).
 - Release candidates are tagged and tested before final publication.
 
 ## Commit Messages
@@ -109,7 +109,7 @@ Contributions must **not include exploit code**, malware, or content intended fo
 
 - Contributions must remain within the scope of controlled, non-destructive security simulation.
 
-Security issues should be reported according to the [SECURITY.md](/SECURITY.md) policy.
+Security issues should be reported according to the [SECURITY.md](SECURITY.md) policy.
 
 ## Code of Conduct
 

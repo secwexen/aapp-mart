@@ -7,20 +7,19 @@
 **Predict. Simulate. Secure.**  
 An AI‑Autonomus Attack Path Prediction & Multi-Agent Red Team Simulation Engine designed for enterprise‑grade security assessment.  
 
-**Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
+**Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)  
+**⭐ If you find this project valuable, consider giving it a star.**
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Coverage](https://codecov.io/gh/secwexen/aapp-mart/branch/main/graph/badge.svg?branch=main&event=pull_request)](https://codecov.io/gh/secwexen/aapp-mart)
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 
-**⭐ If you find this project valuable, consider giving it a star.**
-
 ## About
 
-**AAPP‑MART | AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine** is an open‑source Python security engine designed for offensive security research, adversarial modeling, and automated risk assessment. It combines AI‑powered attack‑path prediction with autonomous multi‑agent red‑team simulation to model how real attackers navigate an environment and to reveal actionable, data‑driven security insights.
+**AAPP‑MART** (AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) is an open‑source Python security engine designed for offensive security research, adversarial modeling, and automated risk assessment. It combines AI‑powered attack‑path prediction with autonomous multi‑agent red‑team simulation to model how real attackers navigate an environment and to reveal actionable, data‑driven security insights.
 
-Unlike traditional static vulnerability scanners or manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, validate defensive controls, and understand real‑world risk through repeatable, scalable, and intelligence‑driven simulations.
+Unlike traditional static vulnerability scanners or manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, validate defensive controls, and understand real‑world risk through repeatable, scalable, and intelligence‑driven simulations. 
 
 The system generates structured attack-path reports, MITRE ATT&CK-mapped insights, and risk scoring outputs to support SOC operations, detection engineering, and continuous security improvement.
 
@@ -190,16 +189,12 @@ pip install -r dev-requirements.txt
 
 For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
-## Use Cases
+## Target Users
 
-AAPP-MART is designed for:
-
-| Audience | How AAPP‑MART Helps |
-|----------|---------------------|
-| Security Researchers | Simulate adversarial behavior, test hypotheses, model attacker strategies |
-| Enterprise Security Teams | Predict attack paths, validate controls, strengthen defenses |
-| Academia | Study AI-driven threat modeling and autonomous red teaming |
-| Developers | Integrate predictive security insights into CI/CD or custom workflows |
+- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
+- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
+- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
+- Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
 
 ## Docs & Resources
 

@@ -1,4 +1,4 @@
-# CONCEPTS.md
+# CONCEPTS
 
 ## Overview
 

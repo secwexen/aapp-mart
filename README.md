@@ -36,7 +36,7 @@ intelligence-driven insights into organizational security posture.
 
 ## How AAPP-MART Works
 
-1. **AAPP (AI-Autonomous Attack Path Prediction)**  
+1. **AAPP** (AI-Autonomous Attack Path Prediction)  
    Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
    **AI Engine:**
@@ -44,7 +44,7 @@ intelligence-driven insights into organizational security posture.
    - Learning: Offline or deterministic scoring  
    - Decision Factors: Exploitability, exposure, privilege, asset criticality
 
-2. **MART (Multi-Agent Red Team Simulation Engine)**  
+2. **MART** (Multi-Agent Red Team Simulation Engine)  
    Autonomous agents simulate realistic adversary actions:  
    Reconnaissance, Exploitation, Lateral Movement, Privilege Escalation, Persistence, Reporting 
 

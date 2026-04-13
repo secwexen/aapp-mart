@@ -1,4 +1,4 @@
-# AAPP‑MART — Feature Overview
+# Features
 
 **AAPP‑MART (AI-Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine)** is an AI‑powered offensive‑security engine designed to model attacker behavior, predict attack paths, and validate defensive controls through autonomous simulations. This document provides a detailed overview of the platform’s core capabilities.
 

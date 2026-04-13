@@ -29,15 +29,17 @@ intelligence-driven insights into organizational security posture.
 ### 1. `executive/`
 
 High-level information for stakeholders and management:  
-- `overview.md` – Project overview  
+- `executive-summary.md` – High-level overview for decision-makers  
+- `positioning.md` – Product’s market position  
 - `vision.md` – Vision and goals  
-- `faq.md` – Frequently asked questions  
 
 ### 2. `product/`
 
 Product capabilities and use cases:  
+- `differentiators.md` – Product differences from competitors  
 - `features.md` – Features and functionality  
 - `examples.md` – Example scenarios  
+- `overview.md` – Project overview  
 
 ### 3. `getting-started/`
 
@@ -98,3 +100,9 @@ Legal, compliance, and ethics documents:
 - `privacy.md` – Draft Privacy
 - `cookie-policy.md` – Cookie policy  
 - `ethics.md` – Ethics policy
+
+### 11. `docs/`
+
+All project documentation folder:  
+- `README.md` – Project introduction and entry point  
+- `faq.md` – Frequently asked questions  

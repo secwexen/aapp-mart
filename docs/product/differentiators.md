@@ -1,4 +1,4 @@
-# AAPP-MART: Key Differentiators
+# Key Differentiators
 
 AAPP-MART sets itself apart in the cybersecurity market with the following core differentiators:
 

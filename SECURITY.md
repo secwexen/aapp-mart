@@ -33,7 +33,7 @@ This timeline ensures a balance between responsible disclosure and timely commun
 
 ## Supported Versions
 
-Security updates are provided **only for the latest stable release** of AAPP-MART (currently `v0.3.0-alpha`).  
+Security updates are provided **only for the latest stable release** of AAPP-MART (currently `v1.1.0`).  
 Older versions may not receive security fixes.
 
 ## Scope

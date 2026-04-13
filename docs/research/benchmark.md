@@ -1,4 +1,4 @@
-# AAPP‑MART Benchmark & Performance Evaluation
+# Benchmark & Performance Evaluation
 
 This document provides the performance evaluation, benchmarking methodology, test environment, and comparative results for **AAPP‑MART | AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine**.
 

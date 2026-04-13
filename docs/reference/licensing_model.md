@@ -1,8 +1,8 @@
-# **Open Source & Proprietary Components**
+# Open Source & Proprietary Components
 
 AAPP‑MART is developed as a hybrid open-source project. Core components are fully open and community-driven, while certain production-grade modules remain proprietary to ensure security, reliability, and commercial sustainability.
 
-## **Open Source Components**
+## Open Source Components
 
 The following components are fully open and available to the community:
 
@@ -16,7 +16,7 @@ The following components are fully open and available to the community:
 
 These modules form the foundation of the platform and enable community collaboration, research, and extensibility.
 
-## **Proprietary Components**
+## Proprietary Components
 
 Certain advanced modules and resources cannot be included in the open‑source repository due to security, licensing, and operational requirements. These components are maintained privately and distributed separately.
 
@@ -31,7 +31,7 @@ Proprietary modules include:
 
 This separation ensures security, controlled distribution, and long‑term maintainability.
 
-## **Summary**
+## Summary
 
 This hybrid model ensures:
 

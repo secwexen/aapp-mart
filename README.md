@@ -5,10 +5,11 @@
 </p>
 
 **Predict. Simulate. Secure.**  
-An AI‑Autonomus Attack Path Prediction & Multi-Agent Red Team Simulation Engine designed for enterprise‑grade security assessment.  
+An AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine designed for enterprise‑grade security assessment.  
 
-**Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)  
-**⭐ If you find this project valuable, consider giving it a star.**
+**Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
+
+⭐ If you find this project valuable, consider starring the repository.
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Coverage](https://codecov.io/gh/secwexen/aapp-mart/branch/main/graph/badge.svg?branch=main&event=pull_request)](https://codecov.io/gh/secwexen/aapp-mart)
@@ -264,7 +265,7 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 
 - Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 - Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.
-- **If you find this project valuable, consider giving it a star.**  
+- **If you find this project valuable, consider starring the repository.**  
 - Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
 
 ## Security

@@ -22,6 +22,13 @@ User Credential → Phishing Exploit → Initial Access → Lateral Movement →
 Modern computing environments are too complex for purely reactive or playbook-based security tools.
 AAPP-MART’s predictive and adaptive design enables organizations to move security validation earlier into their workflows and to identify high-impact risk scenarios that might otherwise be overlooked.
 
+## Target Users
+
+- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
+- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
+- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
+- Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
+
 ## Usage Context
 
 AAPP-MART is intended for **authorized security evaluation**, penetration testing, research, and defensive validation.

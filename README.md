@@ -250,7 +250,7 @@ Planned improvements include:
 - plugin ecosystem for custom modules and agents
 - distributed simulation support
 
-For the full roadmap and upcoming features, see [Roadmap.md](docs/research/roadmap.md).
+For the full roadmap and upcoming features, see [Roadmap.md](ROADMAP.md).
 
 The roadmap evolves over time based on community feedback, research outcomes, and contributor proposals. Contributions and suggestions are welcome.
 

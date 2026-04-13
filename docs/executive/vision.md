@@ -1,4 +1,4 @@
-# AAPP-MART Vision
+# Vision
 
 **AAPP-MART | AI-Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine** is built with a clear and ambitious vision:
 

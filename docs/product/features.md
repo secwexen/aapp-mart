@@ -64,15 +64,9 @@
 - Risk scoring and impact summaries.
 - Exportable JSON/Markdown reports.
 
-### **Telemetry & Metrics**
-- Tracks agent decisions, environment changes, and attack outcomes.
-- Provides insights for tuning defenses and improving detection.
+## Target Users
 
-## Use Cases
-
-- Offensive security research  
-- Blue‑team readiness evaluation  
-- Automated penetration testing  
-- Cyber‑range training  
-- Threat modeling & risk analysis  
-- AI‑driven red‑team experimentation  
+- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
+- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
+- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
+- Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)

@@ -103,29 +103,41 @@ See [API Reference](docs/reference/api_reference.md) and [System Architecture](d
 
 Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using multi-agent red team simulation engine**.
 
-This interactive demo includes:
-- Shows predicted attack paths 
-- Simulates red-team agent behavior 
-- Generates risk scores and MITRE ATT&CK technique mappings 
+Run the AAPP-MART CLI simulation locally:
+```bash
+python demo/demo.py
+```
+
+This script demonstrates:
+- Attack path simulation
+- Agent-based execution flow
+- Risk scoring output (simulated mode if package is not installed)
+
+### Output Example
+
+```
+=== AAPP-MART Demo ===
+[!] Running in DEMO MODE (package not installed)
+
+[+] Target: 192.168.1.10
+[+] Simulating attack path prediction...
+[+] Running adversarial simulation...
+[✓] Simulation completed
+[+] Report exported → ./logs/attack-path/attack_report.json (json)
+```
 
 ### Run the Demo (Google Colab)
 
 **Launch the interactive demo here:**
 [Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/aapp_mart_attack_path_demo.ipynb)
 
-### Demo Console Output
+### Demo Console Output (Google Colab)
 
 ```
 Environment is ready for AAPP-MART demo.
 Simulating attack path prediction for target: 192.168.1.10
 Report exported in json format to ./logs/attack-path/attack_report.json
 ```
-
-### Explanation of the Output
-
-- The first line indicates the environment is set up.
-- The second line indicates that attack path prediction is being “simulated” for the target IP address (`192.168.1.10`).
-- The third line states that a report was exported in JSON format to `./logs/attack-path/attack_report.json`.
 
 > [!NOTE]
 > No actual file is created or report is generated unless that directory and export logic exist. The output is simply printed to the console as a simulation.

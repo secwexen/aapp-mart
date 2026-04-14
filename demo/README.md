@@ -35,5 +35,5 @@ When running successfully, you should see:
 
 ## Related
 
-- Main project: ../README.md
-- Example notebook: aapp-mart/examples/aapp_mart_attack_path_demo.ipynb
+- Main project: [../README.md](https://github.com/secwexen/aapp-mart/blob/main/README.md)
+- Example notebook: [aapp-mart/examples/aapp_mart_attack_path_demo.ipynb](https://github.com/secwexen/aapp-mart/blob/main/examples/aapp_mart_attack_path_demo.ipynb)

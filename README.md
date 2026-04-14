@@ -111,7 +111,7 @@ python demo/demo.py
 This script demonstrates:
 - Attack path simulation
 - Agent-based execution flow
-- Risk scoring output (simulated mode if package is not installed)
+- Risk scoring output
 
 ### Output Example
 

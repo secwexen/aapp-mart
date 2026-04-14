@@ -25,4 +25,4 @@ Please note that **disabling essential cookies may affect certain functionalitie
 We may update this Cookie Policy as AAPP-MART evolves.  
 All changes will be reflected on this page.
 
-For more information on privacy and data handling, see [Privacy Policy](docs/Legal/privacy.md).
+For more information on privacy and data handling, see [Privacy Policy](docs/Legal/privacy-policy.md).

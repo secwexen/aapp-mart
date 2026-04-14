@@ -41,13 +41,6 @@ Product capabilities and use cases:
 - `examples.md` – Example scenarios  
 - `overview.md` – Project overview  
 
-### 3. `getting-started/`
-
-Guides to set up and begin using the project:  
-- `getting-started.md` – Initial setup  
-- `installation.md` – Installation instructions  
-- `quickstart.md` – Quickstart guide  
-
 ### 4. `guides/`
 
 Developer and operational guides:  
@@ -55,7 +48,10 @@ Developer and operational guides:
 - `deployment.md` – Deployment instructions  
 - `development.md` – Development workflow  
 - `testing.md` – Testing procedures  
-- `troubleshooting.md` – Troubleshooting common issues  
+- `troubleshooting.md` – Troubleshooting common issues
+- `getting-started.md` – Initial setup  
+- `installation.md` – Installation instructions  
+- `quickstart.md` – Quickstart guide  
 
 ### 5. `architecture/`
 
@@ -95,9 +91,7 @@ Research, benchmarks, and experiments:
 
 Legal, compliance, and ethics documents:  
 - `terms-of-service.md` – Terms of service
-- `terms.md` – Draft Terms
 - `privacy-policy.md` – Privacy policy
-- `privacy.md` – Draft Privacy
 - `cookie-policy.md` – Cookie policy  
 - `ethics.md` – Ethics policy
 

@@ -98,8 +98,6 @@ See [API Reference](docs/reference/api_reference.md) and [System Architecture](d
 
 ## Demo
 
-Run a local simulation of attack path prediction and adversarial execution
-
 Run the AAPP-MART CLI simulation locally:
 ```bash
 python demo/demo.py
@@ -118,12 +116,12 @@ python demo/demo.py
 [+] Report exported → ./logs/attack-path/attack_report.json
 ```
 
-### Run the Demo (Google Colab)
+### Run on Google Colab
 
 **Launch the interactive demo here:**
 [Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/aapp_mart_attack_path_demo.ipynb)
 
-### Demo Console Output (Google Colab)
+### Colab Output
 
 ```
 Environment is ready for AAPP-MART demo.

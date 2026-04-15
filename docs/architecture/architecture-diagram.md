@@ -9,9 +9,9 @@ flowchart TD
     API --> Validation[Pydantic Validation Layer]
     API --> Services[Business Logic Layer / Services]
 
-    Services --> ML[Machine Learning Layer<br/>(scikit-learn, NumPy, pandas)]
-    Services --> DB[(Database)]
-    Services --> External[External APIs<br/>(httpx, requests)]
+    Services --> ML[Machine Learning Layer]
+    Services --> DB[Database]
+    Services --> External[External APIs]
 
-    ML --> Visualization[Visualization Layer<br/>(Matplotlib / Seaborn / Rich CLI)]
+    ML --> Visualization[Visualization Layer]
 ```

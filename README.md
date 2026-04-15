@@ -5,7 +5,7 @@
 </p>
 
 **Predict. Simulate. Secure.**  
-An AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine designed for enterprise‑grade security assessment.  
+**AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine**
 
 **Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
 

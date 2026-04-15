@@ -154,8 +154,6 @@ By combining **AI-Autonomous attack path prediction** with **Multi-Red Team Simu
 
 ## Installation
 
-AAPP‑MART is currently under active development.
-
 ### Supported Operating Systems
 
 - Windows 10 / 11  

@@ -43,7 +43,7 @@ This version introduces the core architecture, modules, APIs, Helm charts, obser
 
 This project is released under an open‑source license and welcomes community contributions, issues, and pull requests.
 
-# 🏷 Release v1.1.0 – 2026-03-19
+# Release v1.1.0 – 2026-03-19
 
 ## **v1.1.0 – Attack Graph Demo, CVE Mapping & Network Simulation Added**
 
@@ -57,7 +57,8 @@ Public demo includes attack path visualization, sample CVE mapping, and network 
 - **Documentation Updated:** `README.md` and `docs/features.md` updated to reflect new public features.  
 - **Examples Provided:** Demo scripts and notebook available under `examples/notebooks` and `examples/scripts`.
 
-> ⚠️ Note: Core engine, CVE matcher, and advanced simulation logic remain private and are not included in the public release.
+> [!Note]
+> Core engine, CVE matcher, and advanced simulation logic remain private and are not included in the public release.
 
 ### Run the Demo (Google Colab)
 

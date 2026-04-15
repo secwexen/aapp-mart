@@ -36,16 +36,11 @@ intelligence-driven insights into organizational security posture.
 1. **AAPP** (AI-Autonomous Attack Path Prediction)  
    Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
-   **AI Engine:**
-   - Decision Logic: Rule-based / ML / Hybrid (per module).  
-   - Learning: Offline or deterministic scoring  
-   - Decision Factors: Exploitability, exposure, privilege, asset criticality
-
 2. **MART** (Multi-Agent Red Team Simulation Engine)  
    Autonomous agents simulate realistic adversary actions:  
    Reconnaissance, Exploitation, Lateral Movement, Privilege Escalation, Persistence, Reporting 
 
-3. **CORE Orchestration Engine**  
+3. **Orchestration Engine**  
    Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 
 **Example Attack Flow:** 
@@ -55,9 +50,13 @@ intelligence-driven insights into organizational security posture.
 
 ## Architecture Diagram
 
-AAPP-MART is an AI-Autonomous cybersecurity simulation engine designed for predictive AI-Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine experimentation.
+The system is architected around three primary subsystems:
 
-The system models infrastructure assets, vulnerabilities, and relationships as an attack graph that serves as the analytical foundation for the prediction engine and autonomous agent system. These components simulate adversarial behavior and forecast potential attack paths across complex environments.
+- **Attack Path Prediction Engine (AAPP)**
+- **Multi-Agent Red Team Simulation Engine (MART)**
+- **Core Orchestration Layer**
+
+These subsystems operate in a tightly integrated manner through a shared graph-based simulation fabric, enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the platform.
 
 ## Features
 
@@ -252,7 +251,7 @@ Planned improvements include:
 
 For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
 
-The roadmap evolves over time based on community feedback, research outcomes, and contributor proposals. Contributions and suggestions are welcome.
+Contributions and suggestions are welcome.
 
 ## Development Status
 

@@ -218,7 +218,7 @@ See the [LICENSE](LICENSE) file for full details.
 
 ## Contributing
 
-Contributions are welcome!
+Contributions and suggestions are welcome!
 
 ### Contributing Workflow (Summary)
 
@@ -247,8 +247,6 @@ Planned improvements include:
 - distributed simulation support
 
 For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
-
-Contributions and suggestions are welcome.
 
 ## Development Status
 

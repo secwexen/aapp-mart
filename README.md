@@ -26,9 +26,6 @@ The system generates structured attack-path reports, MITRE ATT&CK-mapped insight
 
 ## Overview
 
-Modern infrastructures are too dynamic and interconnected for traditional security testing to keep pace. 
-Static scanners and predefined BAS playbooks often fail to capture how real attackers move across complex environments. 
-
 AAPP‑MART addresses this gap by combining predictive AI, AI-driven threat modeling, cyber attack surface prediction, 
 and autonomous adversarial simulation to evaluate an environment’s real exposure. The engine models attacker behavior, 
 forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
@@ -101,17 +98,12 @@ See [API Reference](docs/reference/api_reference.md) and [System Architecture](d
 
 ## Demo
 
-Experience how **AAPP-MART simulates real-world cyber attacks and predicts attack paths using multi-agent red team simulation engine**.
+Run a local simulation of attack path prediction and adversarial execution:
 
 Run the AAPP-MART CLI simulation locally:
 ```bash
 python demo/demo.py
 ```
-
-This script demonstrates:
-- Attack path simulation
-- Agent-based execution flow
-- Risk scoring output
 
 ### Output Example
 
@@ -159,11 +151,6 @@ AAPP-MART stands out from traditional security tools in its approach:
 - **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
 
 By combining **AI-Autonomous attack path prediction** with **Multi-Red Team Simulation Engine**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
-
-## Why This Project Exists
-
-AAPP-MART was created to help security teams anticipate and simulate modern cyber-attacks before damage occurs.  
-Unlike traditional tools that detect incidents after they happen, it predicts attacker behavior and models potential attack paths proactively.
 
 ## Installation
 
@@ -269,7 +256,7 @@ The roadmap evolves over time based on community feedback, research outcomes, an
 
 ## Development Status
 
-AAPP-MART active development open source project. Core implementation is still in progress.  
+Active development. Core modules are under implementation.
 
 Advanced prediction models, autonomous agent behaviors, and controlled simulation capabilities are being implemented progressively.
 

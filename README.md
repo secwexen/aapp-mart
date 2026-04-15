@@ -98,7 +98,7 @@ See [API Reference](docs/reference/api_reference.md) and [System Architecture](d
 
 ## Demo
 
-Run a local simulation of attack path prediction and adversarial execution:
+Run a local simulation of attack path prediction and adversarial execution
 
 Run the AAPP-MART CLI simulation locally:
 ```bash

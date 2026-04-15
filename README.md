@@ -94,7 +94,7 @@ report.export(format="json", path="./logs/attack-path/attack_report.json")
 
 > Core orchestration modules are currently under development.  
 
-See [API Reference](docs/reference/api_reference.md) and [System Architecture](docs/architecture/architecture.md) for interface details and system structure.  
+See [API Reference](docs/reference/api-reference.md) and [System Architecture](docs/architecture/architecture-diagram.md) for interface details and system structure.  
 
 ## Demo
 
@@ -196,7 +196,7 @@ For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
 - [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
 - [Repository Structure & System Components](docs/architecture/architecture.md)
-- [API Reference](docs/reference/api_reference.md)
+- [API Reference](docs/reference/api-reference.md)
 - [Risk Model](docs/ai/risk-model.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Full Installation Guide](docs/getting-started/installation.md)

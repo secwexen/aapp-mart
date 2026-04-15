@@ -5,7 +5,7 @@
 </p>
 
 **Predict. Simulate. Secure.**  
-An AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine designed for enterprise‑grade security assessment.  
+**AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine**
 
 **Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
 
@@ -27,8 +27,9 @@ The system generates structured attack-path reports, MITRE ATT&CK-mapped insight
 ## Overview
 
 AAPP‑MART addresses this gap by combining predictive AI, AI-driven threat modeling, cyber attack surface prediction, 
-and autonomous adversarial simulation to evaluate an environment’s real exposure. The engine models attacker behavior, 
-forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
+and autonomous adversarial simulation to evaluate an environment’s real exposure. 
+
+The engine models attacker behavior, forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
 intelligence-driven insights into organizational security posture.
 
 ## How AAPP-MART Works
@@ -52,7 +53,7 @@ intelligence-driven insights into organizational security posture.
 
 The system is architected around three primary subsystems:
 
-- **Attack Path Prediction Engine (AAPP)**
+- **AI-Attack Path Prediction Engine (AAPP)**
 - **Multi-Agent Red Team Simulation Engine (MART)**
 - **Core Orchestration Layer**
 

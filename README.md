@@ -234,7 +234,7 @@ Contributions are welcome!
 
 Please open an issue before submitting major changes or new features.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
+See [CONTRIBUTING](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 
@@ -250,7 +250,7 @@ Planned improvements include:
 - plugin ecosystem for custom modules and agents
 - distributed simulation support
 
-For the full roadmap and upcoming features, see [Roadmap.md](ROADMAP.md).
+For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
 
 The roadmap evolves over time based on community feedback, research outcomes, and contributor proposals. Contributions and suggestions are welcome.
 
@@ -265,10 +265,10 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 - Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 - Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.
 - **If you find this project valuable, consider starring the repository.**  
-- Contribute code, documentation, or testing — see [CONTRIBUTING.md](CONTRIBUTING.md) for details.  
+- Contribute code, documentation, or testing — see [CONTRIBUTING](CONTRIBUTING.md) for details.  
 
 ## Security
 
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
-[Read SECURITY.md](SECURITY.md) for instructions on reporting issues securely. 
+[Read SECURITY](SECURITY.md) for instructions on reporting issues securely. 

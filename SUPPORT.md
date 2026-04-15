@@ -22,4 +22,4 @@ We are committed to providing support for users and contributors.
 
 ## Contributing
 
-If you would like to contribute, please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+If you would like to contribute, please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.

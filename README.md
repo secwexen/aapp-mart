@@ -115,7 +115,7 @@ python demo/demo.py
 [+] Simulating attack path prediction...
 [+] Running adversarial simulation...
 [✓] Simulation completed
-[+] Report exported → ./logs/attack-path/attack_report.json (json)
+[+] Report exported → ./logs/attack-path/attack_report.json
 ```
 
 ### Run the Demo (Google Colab)

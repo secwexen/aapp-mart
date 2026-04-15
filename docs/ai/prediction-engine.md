@@ -9,12 +9,6 @@ AAPP predicts attack paths by evaluating:
 - Privilege escalation possibilities
 - Asset criticality and exposure
 
-### AI Engine
-
-- **Decision Logic:** Rule-based / ML / Hybrid (per module).  
-- **Learning:** Offline or deterministic scoring  
-- **Decision Factors:** Exploitability, exposure, privilege, asset criticality
-
 ## MART (Multi-Agent Red Team Simulation Engine)
 
 MART simulates realistic adversary behaviors:

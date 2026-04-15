@@ -194,8 +194,6 @@ For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
 ## Docs & Resources
 
-Detailed guides and references are also available in the repository:
-
 - [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
 - [Repository Structure & System Components](docs/architecture/architecture.md)
 - [API Reference](docs/reference/api_reference.md)

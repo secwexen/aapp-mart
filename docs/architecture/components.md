@@ -6,14 +6,6 @@ AAPP‑MART operates through three major components that work together to predic
 
 Predicts the most likely attack paths by analyzing services, permissions, vulnerabilities, and configuration weaknesses.
 
-### AI Engine
-
-- Decision Logic – Rule-based, ML-based, or hybrid depending on the module  
-- Learning – Offline training or deterministic scoring  
-- Decision Factors – Exploitability, exposure, privileges, asset criticality  
-
-This explicit AI definition ensures credibility, reproducibility, and clarity for users and reviewers.
-
 ## MART (Multi-Agent Red Team Simulation Engine)
 
 Executes autonomous red team simulations using specialized AI agents that emulate real attacker behavior.

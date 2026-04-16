@@ -8,7 +8,7 @@ AAPP-MART supports the following deployment patterns:
 - Scriptable automation
 - CI/CD integration
 
-## REST API Mode (Planned)
+## REST API Mode
 
 - Programmatic integration
 - External orchestration support
@@ -18,7 +18,7 @@ AAPP-MART supports the following deployment patterns:
 - No external service dependency required
 - Suitable for isolated environments
 
-## Containerization (Planned)
+## Containerization
 
 - Docker-based deployment
 - Isolated execution boundary

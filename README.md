@@ -148,7 +148,7 @@ AAPP-MART stands out from traditional security tools in its approach:
 - **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
 - **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
 
-By combining **AI-Autonomous attack path prediction** with **Multi-Red Team Simulation Engine**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
+By combining **AI-Autonomous Attack Path Prediction** with **Multi-Agent Red Team Simulation Engine**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
 ## Installation
 

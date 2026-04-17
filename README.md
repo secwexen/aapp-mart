@@ -7,8 +7,6 @@
 **Predict. Simulate. Secure.**  
 **AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine**
 
-**Official Website:** [https://secwexen.github.io/aapp-mart/](https://secwexen.github.io/aapp-mart/)
-
 ⭐ If you find this project valuable, consider starring the repository.
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
@@ -191,6 +189,7 @@ For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
 ## Docs & Resources
 
+- [Official Website](https://secwexen.github.io/aapp-mart/)
 - [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
 - [Repository Structure & System Components](docs/architecture/architecture.md)
 - [API Reference](docs/reference/api-reference.md)

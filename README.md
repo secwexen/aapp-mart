@@ -67,9 +67,6 @@ These subsystems operate in a tightly integrated manner through a shared graph-b
 - MITRE ATT&CK aligned adversary behavior modeling
 - Risk-based security posture analysis
 - ML-assisted vulnerability prioritization
-- Scalable adversarial simulation architecture
-- Extensible modular plugin system
-- Python-based open-source cybersecurity Engine
 
 ## Conceptual Usage Example (Planned API)
 

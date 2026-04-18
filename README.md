@@ -40,7 +40,17 @@ AAPP-MART stands out from traditional security tools in its approach:
 
 By combining **AI-Autonomous Attack Path Prediction** with **Multi-Agent Red Team Simulation Engine**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
-## How AAPP-MART Works
+## Use Cases
+
+AAPP-MART enables advanced, intelligence-driven security operations through the following core use cases:
+
+- **Predictive Attack Path Analysis**
+- **Autonomous Red Team Simulation**
+- **Attack Surface & Lateral Movement Modeling**
+- **MITRE ATT&CK–Aligned Threat Simulation**
+- **Vulnerability Prioritization & Risk Scoring**
+
+## How it Works
 
 1. **AAPP** (AI-Autonomous Attack Path Prediction)  
    Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
@@ -57,7 +67,7 @@ By combining **AI-Autonomous Attack Path Prediction** with **Multi-Agent Red Tea
 [User Credential] → [Phishing/Exploit] → [Initial Access] → [Lateral Movement] → [Privilege Escalation] → [Critical Asset Compromise]
 ```
 
-## Architecture Diagram
+## Architecture
 
 The system is architected around three primary subsystems:
 
@@ -83,16 +93,6 @@ Unauthorized use of this system is strictly prohibited and may violate applicabl
 - Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
 - Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
 - Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
-
-## Use Cases
-
-AAPP-MART enables advanced, intelligence-driven security operations through the following core use cases:
-
-- **Predictive Attack Path Analysis**
-- **Autonomous Red Team Simulation**
-- **Attack Surface & Lateral Movement Modeling**
-- **MITRE ATT&CK–Aligned Threat Simulation**
-- **Vulnerability Prioritization & Risk Scoring**
 
 ## Features
 
@@ -262,10 +262,9 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 
 ## Community & Support
 
-- Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
-- Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.
-- **If you find this project valuable, consider starring the repository.**  
 - Contribute code, documentation, or testing — see [CONTRIBUTING](CONTRIBUTING.md) for details.  
+- Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
+- Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 
 ## Security
 

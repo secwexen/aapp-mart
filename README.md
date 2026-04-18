@@ -30,6 +30,16 @@ and autonomous adversarial simulation to evaluate an environment’s real exposu
 The engine models attacker behavior, forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
 intelligence-driven insights into organizational security posture.
 
+## Why AAPP-MART?
+
+AAPP-MART stands out from traditional security tools in its approach:
+
+- **Traditional scanners** → static, reactive, often limited to known vulnerabilities.
+- **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
+- **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
+
+By combining **AI-Autonomous Attack Path Prediction** with **Multi-Agent Red Team Simulation Engine**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
+
 ## How AAPP-MART Works
 
 1. **AAPP** (AI-Autonomous Attack Path Prediction)  
@@ -57,12 +67,39 @@ The system is architected around three primary subsystems:
 
 These subsystems operate in a tightly integrated manner through a shared graph-based simulation fabric, enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the platform.
 
+## Legal & Authorized Use
+
+AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
+and controlled adversary simulation within environments where explicit permission has been granted.
+
+The system is designed for non-destructive analysis and does not support uncontrolled exploitation. 
+Users are responsible for ensuring lawful and policy-compliant usage.
+
+Unauthorized use of this system is strictly prohibited and may violate applicable laws and regulations.
+
+## Who is this for
+
+- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
+- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
+- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
+- Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
+
+## Use Cases
+
+AAPP-MART enables advanced, intelligence-driven security operations through the following core use cases:
+
+- **Predictive Attack Path Analysis**
+- **Autonomous Red Team Simulation**
+- **Attack Surface & Lateral Movement Modeling**
+- **MITRE ATT&CK–Aligned Threat Simulation**
+- **Vulnerability Prioritization & Risk Scoring**
+
 ## Features
 
-- AI-Autonomous Attack Path Prediction
-- Multi-Agent Red Team Simulation Engine
+- **AI-Autonomous Attack Path Prediction**
+- **Multi-Agent Red Team Simulation Engine**
 - Graph-based threat modeling and attack graph analysis
-- MITRE ATT&CK aligned adversary behavior modeling
+- **MITRE ATT&CK aligned adversary behavior modeling**
 - Risk-based security posture analysis
 - ML-assisted vulnerability prioritization
 
@@ -127,24 +164,6 @@ Report exported in json format to ./logs/attack-path/attack_report.json
 > [!NOTE]
 > No actual file is created or report is generated unless that directory and export logic exist. The output is simply printed to the console as a simulation.
 
-## Legal & Authorized Use
-
-AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
-and controlled adversary simulation within environments where explicit permission has been granted.
-
-The system is designed for non-destructive analysis and does not support uncontrolled exploitation. 
-Users are responsible for ensuring lawful and policy-compliant usage.
-
-## Why AAPP-MART?
-
-AAPP-MART stands out from traditional security tools in its approach:
-
-- **Traditional scanners** → static, reactive, often limited to known vulnerabilities.
-- **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
-- **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
-
-By combining **AI-Autonomous Attack Path Prediction** with **Multi-Agent Red Team Simulation Engine**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
-
 ## Installation
 
 ### Supported Operating Systems
@@ -179,23 +198,6 @@ pip install -r dev-requirements.txt
 ```
 
 For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
-
-## Who is this for
-
-- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
-- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
-- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
-- Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
-
-## Use Cases
-
-AAPP-MART enables advanced, intelligence-driven security operations through the following core use cases:
-
-- **Predictive Attack Path Analysis**
-- **Autonomous Red Team Simulation**
-- **Attack Surface & Lateral Movement Modeling**
-- **MITRE ATT&CK–Aligned Threat Simulation**
-- **Vulnerability Prioritization & Risk Scoring**
 
 ## Docs & Resources
 

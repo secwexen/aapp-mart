@@ -79,13 +79,6 @@ pre {
     border-radius: 8px;
     overflow-x: auto;
 }
-footer {
-       text-align: center;
-       padding: 30px;
-       background: #1a1a1a;
-       color: #fff;
-       margin-top: 40px;
-}
 a {
   color: #00bcd4;
 }

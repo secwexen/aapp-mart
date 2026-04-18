@@ -180,12 +180,22 @@ pip install -r dev-requirements.txt
 
 For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
-## Target Users
+## Who is this for
 
 - CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
 - Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
 - Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
 - Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
+
+## Use Cases
+
+AAPP-MART enables advanced, intelligence-driven security operations through the following core use cases:
+
+- **Predictive Attack Path Analysis**
+- **Autonomous Red Team Simulation**
+- **Attack Surface & Lateral Movement Modeling**
+- **MITRE ATT&CK–Aligned Threat Simulation**
+- **Vulnerability Prioritization & Risk Scoring**
 
 ## Docs & Resources
 

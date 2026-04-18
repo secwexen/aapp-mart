@@ -1,6 +1,6 @@
 # Deployment Model
 
-AAPP-MART supports the following deployment patterns:
+**AAPP-MART** supports the following deployment patterns:
 
 ## Standalone CLI
 

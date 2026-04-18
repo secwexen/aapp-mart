@@ -180,7 +180,7 @@ pip install -r dev-requirements.txt
 
 For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
-## Target Users
+## Who is this for
 
 - CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
 - Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  

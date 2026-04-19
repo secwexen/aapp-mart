@@ -4,8 +4,8 @@
 
 It combines:
 
-- **AI-driven attack path prediction** – Forecasts how an attacker could navigate your network.
-- **Autonomous multi-agent red team simulation** – Emulates realistic attacker behavior using multiple collaborating agents.
+- **AI-Autonomous Attack Path Prediction** – Forecasts how an attacker could navigate your network.
+- **Multi-Agent Red Team Simulation Engine** – Emulates realistic attacker behavior using multiple collaborating agents.
 - **Graph-based threat modeling** – Builds attack graphs from vulnerabilities, assets, and relationships.
 - **Risk-based analysis** – Prioritizes vulnerabilities and predicts likely attack vectors.
 

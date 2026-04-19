@@ -199,7 +199,6 @@ For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 ## Docs & Resources
 
 - [Official Website](https://secwexen.github.io/aapp-mart/)
-- [Wiki — Full Documentation](https://github.com/secwexen/aapp-mart/wiki)
 - [Repository Structure & System Components](docs/architecture/architecture.md)
 - [API Reference](docs/reference/api-reference.md)
 - [Risk Model](docs/ai/risk-model.md)

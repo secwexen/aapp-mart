@@ -168,15 +168,14 @@ Report exported in json format to ./logs/attack-path/attack_report.json
 
 ### Supported Operating Systems
 
-- Windows 10 / 11  
-- Linux (Ubuntu 22.04+ / Debian 11+ / other Debian-based distributions)  
-- macOS (Intel & Apple Silicon)
+- Windows 10 and 11  
+- Linux (Ubuntu 22.04+, Debian 11+)  
+- macOS (Intel and Apple Silicon)
 
-### Python Requirements
+### Requirements
 
 - Python **3.11+**  
-- pip 23+  
-- Virtual environment recommended
+- pip **23+**  
 
 ## Quick Start
 

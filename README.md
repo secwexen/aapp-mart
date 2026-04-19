@@ -79,6 +79,14 @@ Users are responsible for ensuring lawful and policy-compliant usage.
 
 Unauthorized use of this system is strictly prohibited and may violate applicable laws and regulations.
 
+## Disclaimer
+
+The developers and contributors of this project assume no responsibility or liability for misuse, damage, or legal consequences arising from the use of this software. Users are fully responsible for ensuring compliance with all applicable laws, regulations, and organizational policies when operating this tool.
+
+This software is provided “as is” without warranty of any kind, express or implied.
+
+For full details, see [DISCLAIMER](DISCLAIMER.md).
+
 ## Who is this for
 
 - CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  

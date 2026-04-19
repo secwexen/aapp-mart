@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /assets/images/
 Disallow: /404.html
 
 Sitemap: https://secwexen.github.io/aapp-mart/sitemap.xml

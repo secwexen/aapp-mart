@@ -1,9 +1,6 @@
 # Terms of Service  
 
-**Last updated:** 2026-03-05
-
-> [!NOTE]
-> AAPP-MART is currently in development; some features may not be fully implemented.
+**Last updated:** 2026-04-19
 
 ## 1. Acceptance of Terms  
 

@@ -22,14 +22,6 @@ Unlike traditional static vulnerability scanners or manual penetration testing, 
 
 The system generates structured attack-path reports, MITRE ATT&CK-mapped insights, and risk scoring outputs to support SOC operations, detection engineering, and continuous security improvement.
 
-## Overview
-
-AAPP‑MART addresses this gap by combining predictive AI, AI-driven threat modeling, cyber attack surface prediction, 
-and autonomous adversarial simulation to evaluate an environment’s real exposure. 
-
-The engine models attacker behavior, forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
-intelligence-driven insights into organizational security posture.
-
 ## Why AAPP-MART?
 
 AAPP-MART stands out from traditional security tools in its approach:

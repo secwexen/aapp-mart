@@ -25,7 +25,7 @@ Edges are annotated with **likelihood** and **exploitability weights** to suppor
 
 AAPP outputs **risk-scored attack paths** for simulation or reporting.
 
-### 3. MART (Multi-Agent Red Team)
+### 3. MART (Multi-Agent Red Team Simulation Engine)
 
 **MART** is the autonomous red team engine that simulates adversary behavior using specialized agents:
 

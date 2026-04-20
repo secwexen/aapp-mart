@@ -15,20 +15,5 @@
       <image:caption>AAPP-MART AI-Autonomous Attack Path Prediction and Multi‑Agent Red Team Simulation Engine</image:caption>
     </image:image> 
   </url>
-
-  <url>
-    <loc>https://secwexen.github.io/aapp-mart/en/</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://secwexen.github.io/aapp-mart/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://secwexen.github.io/aapp-mart/en/"/>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-
-    <image:image>
-      <image:loc>https://secwexen.github.io/aapp-mart/assets/images/aapp-mart-logo.png</image:loc>
-      <image:title>AAPP-MART AI Attack Path Prediction Engine Logo</image:title>
-      <image:caption>AAPP-MART AI-Autonomous Attack Path Prediction and Multi‑Agent Red Team Simulation Engine</image:caption>
-    </image:image>
-  </url>
   
 </urlset>

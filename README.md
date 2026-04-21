@@ -10,7 +10,7 @@
 ⭐ If you find this project valuable, consider starring the repository.
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
-[![Coverage](https://codecov.io/gh/secwexen/aapp-mart/branch/main/graph/badge.svg?branch=main&event=pull_request)](https://codecov.io/gh/secwexen/aapp-mart)
+[![Coverage](https://codecov.io/gh/secwexen/aapp-mart/branch/main/graph/badge.svg)](https://codecov.io/gh/secwexen/aapp-mart)
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 

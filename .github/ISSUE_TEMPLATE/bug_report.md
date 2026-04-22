@@ -1,7 +1,10 @@
 ---
 name: Bug Report
 about: Report a bug to help us improve AAPP-MART
-labels: bug
+title: ''
+labels: bug, good first issue, help wanted
+assignees: ''
+
 ---
 
 ## Description

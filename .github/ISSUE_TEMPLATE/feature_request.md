@@ -1,7 +1,10 @@
 ---
 name: Feature Request
 about: Suggest a new feature or improvement for AAPP-MART
+title: ''
 labels: enhancement
+assignees: ''
+
 ---
 
 ## Summary

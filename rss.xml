@@ -5,9 +5,9 @@
     <title>AAPP-MART</title>
     <link>https://secwexen.github.io/aapp-mart/</link>
     <atom:link href="https://secwexen.github.io/aapp-mart/rss.xml" rel="self" type="application/rss+xml"/>
-    <description>Predictive AI meets autonomous red team simulation. Latest updates and releases from AAPP-MART.</description>
+    <description>AAPP-MART is an autonomous offensive security engine designed for security teams and researchers. It predicts attack paths using artificial intelligence and simulates them with a multi-agent red team, helping organizations identify and mitigate risks before they are exploited.</description>
     <language>en-us</language>
-    <lastBuildDate>Thursday, 05 Feb 2026</lastBuildDate>
+    <lastBuildDate>Wednesday, 22 April 2026</lastBuildDate>
     <generator>AAPP-MART RSS Generator</generator>
 </channel>
 

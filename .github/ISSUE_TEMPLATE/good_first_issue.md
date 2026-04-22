@@ -1,8 +1,9 @@
 ---
-name: "Good First Issue"
-about: "A simple, beginner-friendly task for new contributors"
-title: ""
-labels: ["good first issue", "help wanted"]
+name: Good First Issue
+about: A simple, beginner-friendly task for new contributors
+title: ''
+labels: good first issue, help wanted
+assignees: ''
 
 ---
 

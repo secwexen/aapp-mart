@@ -1,7 +1,7 @@
 name: "Architecture Review"
 description: "Request an architectural change or propose a new architecture"
-title: "[ARCH] - "
-labels: ["architecture"]
+title: "[ARCH]: "
+labels: ["architecture", "design"]
 body:
   - type: textarea
     id: proposal

@@ -1,6 +1,5 @@
 # Installation
 
-AAPP‑MART is currently under active development.  
 This guide explains how to set up the framework for local development, testing, and future production use.
 
 ## Requirements
@@ -133,6 +132,3 @@ Activate your environment again:
 ```bash
 source venv/bin/activate
 ```
-
-AAPP‑MART is evolving rapidly.  
-Installation steps will be updated as new components, APIs, and modules are introduced.

@@ -1,7 +1,7 @@
 {
   "name": "AAPP-MART",
   "short_name": "AAPP-MART",
-  "start_url": "/aapp-mart/",
+  "start_url": "https://secwexen.github.io/aapp-mart/",
   "display": "standalone",
   "background_color": "#34495e",
   "theme_color": "#34495e",

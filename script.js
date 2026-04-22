@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const nodes = [];
     const nodeCount = Math.floor((canvas.width * canvas.height) / 30000);
-    const maxDistance = 150;
+    const maxDistance = 200;
 
     for (let i = 0; i < nodeCount; i++) {
         nodes.push({
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         for (let node of nodes) {
 
-            ctx.fillStyle = "rgba(0,188,212,0.5)";
+            ctx.fillStyle = "rgb(0, 225, 255)";
             ctx.beginPath();
             ctx.arc(node.x, node.y, 2, 0, Math.PI * 2);
             ctx.fill();

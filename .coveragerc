@@ -1,0 +1,53 @@
+[run]
+branch = True
+source =
+    aapp
+    mart
+    core
+parallel = True
+concurrency = multiprocessing
+relative_files = True
+
+[report]
+fail_under = 75
+show_missing = True
+skip_covered = False
+precision = 2
+sort = Miss
+
+omit =
+    tests/*
+    */__init__.py
+    */migrations/*
+    */config/*
+    */settings/*
+    */examples/*
+    */scripts/*
+    */venv/*
+    */.venv/*
+    */build/*
+    */dist/*
+
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    if TYPE_CHECKING:
+    raise NotImplementedError
+
+[html]
+directory = coverage_html_report
+show_contexts = True
+title = AAPP-MART Coverage Report
+
+[xml]
+output = coverage.xml
+
+[paths]
+source =
+    aapp
+    */site-packages/aapp
+    mart
+    */site-packages/mart
+
+[json]
+output = coverage.json

@@ -149,7 +149,7 @@ python demo/attack_simulation_demo.py
 ### Run on Google Colab
 
 **Launch the interactive demo here:**
-[Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/aapp_mart_attack_path_demo.ipynb)
+[Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/attack_path_demo.ipynb)
 
 ### Colab Output
 

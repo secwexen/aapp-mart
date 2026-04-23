@@ -16,7 +16,7 @@ This is intended for quick testing and validation.
 From the project root:
 
 ```bash
-python demo/demo.py
+python demo/attack_simulation_demo.py
 ```
 
 ## Expected Output
@@ -35,5 +35,5 @@ When running successfully, you should see:
 
 ## Related
 
-- Main project: [../README.md](https://github.com/secwexen/aapp-mart/blob/main/README.md)
-- Example notebook: [aapp-mart/examples/aapp_mart_attack_path_demo.ipynb](https://github.com/secwexen/aapp-mart/blob/main/examples/aapp_mart_attack_path_demo.ipynb)
+- Main project: [./README.md](https://github.com/secwexen/aapp-mart/blob/main/README.md)
+- Demo notebook: [aapp-mart/demo/attack_path_demo.ipynb](https://github.com/secwexen/aapp-mart/blob/main/demo/attack_path_demo.ipynb)

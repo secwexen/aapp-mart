@@ -130,7 +130,7 @@ See [API Reference](docs/reference/api-reference.md) and [System Architecture](d
 
 Run the AAPP-MART CLI simulation locally:
 ```bash
-python demo/demo.py
+python demo/attack_simulation_demo.py
 ```
 
 ### Output Example

@@ -240,11 +240,10 @@ The development of **AAPP-MART** follows a structured roadmap focused on improvi
 
 Planned improvements include:
 
-- advanced attack graph generation
 - improved AI-based attack path prediction
 - expanded MART offensive agents
-- enhanced risk scoring and reporting
-- improved visualization and dashboards
+- path-aware risk scoring based on simulated attack chains
+- optional visualization layer for simulation outputs
 - plugin ecosystem for custom modules and agents
 - distributed simulation support
 

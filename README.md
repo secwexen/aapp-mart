@@ -9,8 +9,8 @@
 
 ⭐ If you find this project valuable, consider starring the repository.
 
-[![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg?branch=main&event=pull_request)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
-[![Coverage](https://codecov.io/gh/secwexen/aapp-mart/branch/main/graph/badge.svg?branch=main&event=pull_request)](https://codecov.io/gh/secwexen/aapp-mart)
+[![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/secwexen/aapp-mart/branch/main/graph/badge.svg)](https://codecov.io/gh/secwexen/aapp-mart)
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 
@@ -240,11 +240,10 @@ The development of **AAPP-MART** follows a structured roadmap focused on improvi
 
 Planned improvements include:
 
-- advanced attack graph generation
 - improved AI-based attack path prediction
 - expanded MART offensive agents
-- enhanced risk scoring and reporting
-- improved visualization and dashboards
+- path-aware risk scoring based on simulated attack chains
+- optional visualization layer for simulation outputs
 - plugin ecosystem for custom modules and agents
 - distributed simulation support
 

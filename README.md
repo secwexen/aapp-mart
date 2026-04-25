@@ -210,7 +210,7 @@ For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
 Copyright © 2026 secwexen.
 
-This project is licensed under the Apache License, Version 2.0.  
+This project is licensed under the Apache-2.0 License.  
 See the [LICENSE](LICENSE) file for full details.  
 
 ## Contributing

@@ -120,9 +120,7 @@ report = engine.get_report()
 
 # Print a concise summary of the predicted attack paths
 report.export(format="json", path="./logs/attack-path/attack_report.json")
-```
-
-> Core orchestration modules are currently under development.  
+```  
 
 See [API Reference](docs/reference/api-reference.md) and [System Architecture](docs/architecture/architecture-diagram.md) for interface details and system structure.  
 
@@ -158,9 +156,6 @@ Environment is ready for AAPP-MART demo.
 Simulating attack path prediction for target: 192.168.1.10
 Report exported in json format to ./logs/attack-path/attack_report.json
 ```
-
-> [!NOTE]
-> No actual file is created or report is generated unless that directory and export logic exist. The output is simply printed to the console as a simulation.
 
 ## Installation
 

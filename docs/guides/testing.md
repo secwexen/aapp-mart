@@ -76,9 +76,6 @@ examples/
 
 Use these datasets for both unit and integration tests.
 
-> [!NOTE]
-> Some modules are under active development; tests may be skipped or marked as expected failures until features are implemented.
-
 ## 6. Continuous Integration (CI)
 
 - GitHub Actions workflows are configured for testing and CodeQL analysis

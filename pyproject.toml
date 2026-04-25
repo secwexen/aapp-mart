@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "aapp-mart"
 version = "1.1.0"
-description = "Public demo includes attack path visualization, sample CVE mapping, and network simulation. Core engine and advanced logic remain private."
+description = "AAPP‑MART is an AI-Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine designed for attack simulation, automated threat modeling, adversary emulation, and enterprise‑grade cybersecurity validation aligned with MITRE ATT&CK."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }

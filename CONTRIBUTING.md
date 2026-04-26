@@ -5,9 +5,10 @@ Thank you for your interest in contributing to AAPP-MART. We welcome contributio
 ## Useful Links
 
 - [README.md](README.md)
-- [SECURITY.md](SECURITY.md)
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-- [Roadmap](docs/roadmap.md)
+- [SECURITY.md](SECURITY.md)
+- [LICENSE](LICENSE)
+- [ROADMAP.md](ROADMAP.md)
 
 ## Getting Started
 

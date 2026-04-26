@@ -101,7 +101,7 @@ This software is provided “as is” without warranty of any kind, express or i
 - Risk-based security posture analysis
 - ML-assisted vulnerability prioritization
 
-## Conceptual Usage Example (Planned API)
+## Conceptual Usage Example
 
 This example reflects the intended public API design:
 

@@ -69,7 +69,7 @@ The system is architected around three primary subsystems:
 
 These subsystems operate in a tightly integrated manner through a shared graph-based simulation fabric, enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the platform.
 
-## Legal & Authorized Use
+## Legal & Authorized Use Only
 
 AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
 and controlled adversary simulation within environments where explicit permission has been granted.

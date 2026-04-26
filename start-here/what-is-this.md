@@ -23,8 +23,3 @@ Unlike traditional scanners or breach & attack simulation (BAS) tools, AAPP-MART
 - Experiment safely with attack simulations in a controlled environment.
 - Prioritize and mitigate vulnerabilities based on predictive intelligence.
 - Learn how real attackers might traverse your network before they strike.
-
----
-
-> [!TIP]
-> Start with the 5-minute demo to see AAPP-MART in action without any setup!

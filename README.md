@@ -196,7 +196,7 @@ For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 - [Quick Start](docs/getting-started/quickstart.md)
 - [Full Installation Guide](docs/getting-started/installation.md)
 - [API Reference](docs/reference/api-reference.md)
-- [Repository Structure & System Components](docs/architecture/architecture.md)
+- [Repository Structure](docs/architecture/architecture.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Risk Model](docs/ai/risk-model.md)
 - [Security Policy](SECURITY.md)

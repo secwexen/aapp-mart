@@ -1,4 +1,4 @@
-# Disclaimer
+# Legal Disclaimer
 
 AAPP‑MART is intended solely for ethical, legal, and explicitly authorized security research, penetration testing, and defensive security validation.
 

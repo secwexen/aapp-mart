@@ -79,7 +79,7 @@ Users are fully responsible for ensuring compliance with all applicable laws, re
 
 Unauthorized use of this system is strictly prohibited and may violate applicable laws and regulations.
 
-## Disclaimer
+## Legal Disclaimer
 
 The developers and contributors of this project assume no responsibility or liability for misuse, damage, or legal consequences arising from the use of this software.
 

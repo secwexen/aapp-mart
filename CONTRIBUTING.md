@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to AAPP-MART. We welcome contributions that improve code quality, security, and documentation.  
 
-## Useful Links
+## References
 
 - [README.md](README.md)
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
@@ -96,7 +96,7 @@ We use GitHub labels to guide contributors:
 ## Documentation Contributions
 
 - Contributions to the documentation are gladly accepted.
-- Update [README.md](/README.md) or other documentation as needed
+- Update [README.md](README.md) or other documentation as needed
 - Follow Markdown formatting and style conventions
 
 ## Security and Ethics
@@ -112,10 +112,6 @@ Security issues should be reported according to the [SECURITY.md](SECURITY.md) p
 
 By participating in this project, you agree to act respectfully and professionally.
 Harassment, abuse, or malicious contributions will not be tolerated.
-
-## Community Channels
-
-- Join GitHub Discussions for ideas and feedback
 
 ## Thank You
 

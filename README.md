@@ -161,7 +161,7 @@ Report exported in json format to ./logs/attack-path/attack_report.json
 
 ### Supported Operating Systems
 
-- Windows 10 and 11  
+- Windows 10 / 11  
 - Linux (Ubuntu 22.04+, Debian 11+)  
 - macOS (Intel and Apple Silicon)
 

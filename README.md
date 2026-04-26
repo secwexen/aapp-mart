@@ -193,17 +193,12 @@ For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
 ## Docs & Resources
 
-- [Official Website](https://secwexen.github.io/aapp-mart/)
-- [Repository Structure & System Components](docs/architecture/architecture.md)
-- [API Reference](docs/reference/api-reference.md)
-- [Risk Model](docs/ai/risk-model.md)
-- [Deployment Guide](docs/guides/deployment.md)
-- [Full Installation Guide](docs/getting-started/installation.md)
 - [Quick Start](docs/getting-started/quickstart.md)
-- [Examples](docs/examples.md)
-- [Roadmap & Milestones](ROADMAP.md)
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [Changelog](CHANGELOG.md)
+- [Full Installation Guide](docs/getting-started/installation.md)
+- [API Reference](docs/reference/api-reference.md)
+- [Repository Structure & System Components](docs/architecture/architecture.md)
+- [Deployment Guide](docs/guides/deployment.md)
+- [Risk Model](docs/ai/risk-model.md)
 - [Security Policy](SECURITY.md)
 
 ## License

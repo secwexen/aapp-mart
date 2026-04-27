@@ -72,7 +72,7 @@ If you are using VS Code, the recommended way is to open the project in the Dev 
 - Reference related issues when applicable
 - Squash commits before submitting a pull request
 
-See [COMMIT_CONVENTION.md](docs/COMMIT_CONVENTION.md) for full details.
+See [COMMIT_CONVENTION.md](docs/contributing/COMMIT_CONVENTION.md) for full details.
 
 ## Pull Requests
 

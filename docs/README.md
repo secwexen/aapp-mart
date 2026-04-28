@@ -2,28 +2,6 @@
 
 This folder contains all guides, references, research, and legal documents for the project. The structure follows enterprise standards for clarity, maintainability, and audit-readiness.
 
-## Project Overview
-
-Modern infrastructures are too dynamic and interconnected for traditional security testing to keep pace. 
-Static scanners and predefined BAS playbooks often fail to capture how real attackers move across complex environments. 
-
-AAPP‑MART addresses this gap by combining predictive AI, AI-driven threat modeling, cyber attack surface prediction, 
-and autonomous adversarial simulation to evaluate an environment’s real exposure. The engine models attacker behavior, 
-forecasts potential attack paths, and simulates multi-agent adversarial activity to provide proactive, 
-intelligence-driven insights into organizational security posture.
-
-**Key Features:**
-
-- AI-Autonomous Attack Path Prediction
-- Multi-Agent Red Team Simulation Engine
-- Graph-based threat modeling and attack graph analysis
-- MITRE ATT&CK aligned adversary behavior modeling
-- Risk-based security posture analysis
-- ML-assisted vulnerability prioritization
-- Scalable adversarial simulation architecture
-- Extensible modular plugin system
-- Python-based open-source cybersecurity Engine
-
 ## Folder Structure
 
 ### 1. `executive/`

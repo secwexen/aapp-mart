@@ -67,7 +67,12 @@ Core concepts and AI agents:
 - `concepts.md` – Fundamental concepts  
 - `agents.md` – Agent architecture  
 
-### 7. `ai/`
+### 7. `contributing/`
+
+Contribution guidelines and standards:
+- `COMMIT_CONVENTION.md` – Commit message format and standards
+
+### 8. `ai/`
 
 AI models and prediction engines:  
 - `models.md` – Models description  
@@ -75,19 +80,19 @@ AI models and prediction engines:
 - `predictors.md` – Predictor components  
 - `risk-model.md` – Risk modeling  
 
-### 8. `reference/`
+### 9. `reference/`
 
 Technical reference materials:  
 - `api-reference.md` – API endpoints  
 - `licensing-model.md` – Licensing and usage  
 
-### 9. `research/`
+### 10. `research/`
 
 Research, benchmarks, and experiments:  
 - `research.md` – Research documentation  
 - `benchmark.md` – Benchmark results  
 
-### 10. `Legal/`
+### 11. `Legal/`
 
 Legal, compliance, and ethics documents:  
 - `terms-of-service.md` – Terms of service
@@ -95,7 +100,7 @@ Legal, compliance, and ethics documents:
 - `cookie-policy.md` – Cookie policy  
 - `ethics.md` – Ethics policy
 
-### 11. `docs/`
+### 12. `docs/`
 
 All project documentation folder:  
 - `README.md` – Project introduction and entry point  

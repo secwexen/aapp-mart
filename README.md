@@ -122,7 +122,7 @@ report = engine.get_report()
 report.export(format="json", path="./logs/attack-path/attack_report.json")
 ```  
 
-See [API Reference](docs/reference/api-reference.md) and [System Architecture](docs/architecture/architecture-diagram.md) for interface details and system structure.  
+See [API Reference](docs/reference/api-reference.md) for interface details.  
 
 ## Demo
 

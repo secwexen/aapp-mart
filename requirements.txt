@@ -38,4 +38,4 @@ pyopenssl>=26.0.0
 
 # === Optional ML / AI / Graph extras ===
 torch==2.11.0
-transformers>=5.6.0
+transformers>=5.7.0

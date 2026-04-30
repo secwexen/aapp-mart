@@ -17,24 +17,24 @@ authors = [
 keywords = [
   "python",
   "machine-learning",
+  "artificial-intelligence",
   "cybersecurity",
-  "penetration-testing",
   "offensive-security",
-  "ethical-hacking",
   "security-automation",
   "blue-team",
   "multi-agent-system",
   "mitre-attack",
-  "ai-security",
+  "defensive-security",
   "cyber-range",
-  "cyber-risk",
+  "attack-graph",
+  "adversary-simulation",
   "attack-simulation",
+  "nist-cybersecurity-framework",
   "ai-red-team",
   "threat-simulation",
   "ai-cybersecurity",
   "attack-path-prediction",
-  "red-team-simulation",
-  "cyber-defense-automation"
+  "red-team-simulation"
 ]
 
 classifiers = [

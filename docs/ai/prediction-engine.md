@@ -1,4 +1,4 @@
-# AAPP & MART Detailed Overview
+# Detailed Overview
 
 ## AAPP (AI-Autonomous Attack Path Prediction)
 

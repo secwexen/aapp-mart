@@ -24,7 +24,7 @@ sphinx-rtd-theme>=3.1.0
 
 # === Pre-commit hooks ===
 pre-commit>=4.6.0
-tox>=4.9
+tox>=4.53.0
 
 # === Notebook / analysis tools ===
 jupyterlab>=4.0.0

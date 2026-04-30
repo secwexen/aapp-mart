@@ -123,9 +123,4 @@ AAPP-MART supports:
 - New agents  
 - New ML models  
 - New scoring algorithms  
-- New simulation modes  
-
-## 7. Summary
-
-AAPP-MART integrates predictive attack modeling with autonomous red-team simulation.  
-Its architecture is modular, scalable, and designed for advanced security research.
+- New simulation modes

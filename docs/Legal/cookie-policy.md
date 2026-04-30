@@ -1,7 +1,5 @@
 # Cookie Policy
 
-**Last updated:** 2026-03-05
-
 AAPP-MART uses cookies only to support essential functionality and analytics for improving the user experience.  
 
 This project is designed for **authorized security research and enterprise security teams**, and does not collect personal data for marketing purposes.  

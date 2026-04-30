@@ -83,9 +83,7 @@ Simulates attacker behavior using specialized agents:
 - Privilege escalation  
 - Lateral movement  
 - Persistence  
-- Reporting  
-
-All agents inherit from `agent_base.py` and share memory via the Knowledge Graph.
+- Reporting
 
 ### 3.3 CORE — Simulation Brain
 

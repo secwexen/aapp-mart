@@ -33,7 +33,7 @@ pillow>=10.2.0
 
 # === Security / Environment ===
 cryptography>=47.0.0
-python-dotenv>=1.0
+python-dotenv>=1.2.2
 pyopenssl>=26.0.0
 
 # === Optional ML / AI / Graph extras ===

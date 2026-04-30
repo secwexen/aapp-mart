@@ -1,7 +1,5 @@
 # Privacy Policy
 
-**Last updated:** 2026-03-05
-
 AAPP-MART respects your privacy. This project is designed for **authorized security research and enterprise security teams**. It does not collect personal data for marketing purposes.
 
 ## 1. Information We Collect

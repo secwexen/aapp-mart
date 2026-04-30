@@ -56,7 +56,6 @@ aapp-mart
 ├── MAINTAINERS
 ├── NOTICE
 ├── README.md
-├── RELEASE_NOTES.md
 ├── SECURITY.md
 ├── SUPPORT.md
 ├── dev-requirements.txt

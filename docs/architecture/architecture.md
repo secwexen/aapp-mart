@@ -1,4 +1,4 @@
-# AAPP-MART Architecture
+# Architecture
 
 AAPP-MART is a modular, extensible, and autonomous security analysis framework.  
 It combines AI-driven Attack Path Prediction (AAPP) with a Multi-Agent Red Team (MART) engine.

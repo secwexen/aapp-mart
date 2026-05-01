@@ -21,43 +21,185 @@ All components communicate through a shared **Knowledge Graph**.
 
 ```
 aapp-mart
-├── assets/
-├── configs/
-├── docs/
-├── examples/
-├── helm/
-├── observability/
-├── scripts/
-├── src/
-│   └── aapp_mart/
-│       ├── agents/  
-│       ├── cli/  
-│       ├── domain/                
-│       ├── common/  
-│       ├── integrations/  
-│       ├── mart/  
-│       ├── modules/  
-│       ├── offline/  
-│       ├── rl/  
-│       ├── utils/  
-│       └── main.py  
-├── tests/
-├── CHANGELOG.md
-├── CITATION.cff
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── DISCLAIMER.md
-├── GOVERNANCE.md
-├── LICENSE
-├── LICENSE‑3RD‑PARTY.md
-├── MAINTAINERS
-├── NOTICE
-├── README.md
-├── SECURITY.md
-├── SUPPORT.md
-├── dev-requirements.txt
-├── requirements.txt
-└── trivyignore
+│   .coveragerc
+│   .dockerignore
+│   .editorconfig
+│   .env.example
+│   .flake8
+│   .gitattributes
+│   .gitignore
+│   .pre-commit-config.yaml
+│   ACKNOWLEDGEMENTS.md
+│   bandit.yaml
+│   CHANGELOG.md
+│   CITATION.cff
+│   CODE_OF_CONDUCT.md
+│   CONTRIBUTING.md
+│   dev-requirements.txt
+│   DISCLAIMER.md
+│   Dockerfile
+│   GOVERNANCE.md
+│   LICENSE
+│   LICENSE‑3RD‑PARTY.md
+│   MAINTAINERS
+│   Makefile
+│   MANIFEST.in
+│   mypy.ini
+│   NOTICE
+│   noxfile.py
+│   pyproject.toml
+│   pytest.ini
+│   README.md
+│   requirements.txt
+│   ROADMAP.md
+│   SBOM.md
+│   SECURITY.md
+│   SUPPORT.md
+│   trivyignore
+│   
+├───.github/
+│   │   
+│   ├───ISSUE_TEMPLATE/
+│   │       
+│   └───workflows/
+│           
+├───assets
+│   └───images/
+│           
+├───configs/
+│       
+├───dashboard
+│   ├───backend/
+│   │       
+│   └───visualizations/
+│           
+├───data
+│   └───sample_targets/
+│           
+├───demo/
+│       
+├───docs/
+│   │   
+│   ├───ai/
+│   │       
+│   ├───architecture/
+│   │       
+│   ├───concepts/
+│   │       
+│   ├───contributing/
+│   │       
+│   ├───executive/
+│   │       
+│   ├───guides/
+│   │       
+│   ├───Legal/
+│   │       
+│   ├───product/
+│   │       
+│   ├───reference/
+│   │       
+│   └───research/
+│           
+├───examples/
+│   │   
+│   ├───scripts/
+│   │       
+│   └───tutorials/
+│           
+├───helm
+│   └───aapp-mart/
+│       │   
+│       └───templates/
+│               
+├───observability
+│   ├───grafana_dashboards/
+│   │       
+│   ├───logging/
+│   │       
+│   └───metrics/
+│           
+├───scripts
+│   ├───ci/
+│   │       
+│   ├───dev/
+│   │       
+│   └───ops/
+│           
+├───src
+│   └───aapp_mart
+│       │   
+│       ├───api/
+│       │   │   
+│       │   ├───docs/
+│       │   │       
+│       │   ├───endpoints/
+│       │   │       
+│       │   └───schemas/
+│       │           
+│       ├───attack_graph/
+│       │       
+│       ├───cli/
+│       │   │   
+│       │   ├───commands/
+│       │   │       
+│       │   ├───data/
+│       │   │   │   
+│       │   │   └───sample_targets/
+│       │   │           
+│       │   └───examples/
+│       │           
+│       ├───common/
+│       │       
+│       ├───cve/
+│       │       
+│       ├───domain
+│       │   ├───agents/
+│       │   │   │   
+│       │   │   └───custom/
+│       │   │           
+│       │   ├───predictors/
+│       │   │       
+│       │   ├───reports/
+│       │   │   │   
+│       │   │   ├───exporters/
+│       │   │   │       
+│       │   │   └───templates/
+│       │   │       │   
+│       │   │       └───attack/
+│       │   │               
+│       │   └───risk/
+│       │           
+│       ├───integrations/
+│       │   └───siem/
+│       │           
+│       ├───mart/
+│       │   │   
+│       │   └───offensive/
+│       │           
+│       ├───modules/
+│       │   ├───automation/
+│       │   │       
+│       │   ├───memory/
+│       │   │       
+│       │   ├───network/
+│       │   │       
+│       │   ├───offensive/
+│       │   │       
+│       │   └───system/
+│       │           
+│       ├───network/
+│       │       
+│       ├───offline/
+│       │       
+│       ├───rl/
+│       │       
+│       └───utils/
+│               
+├───start-here/
+│       
+└───tests/
+    │   
+    └───api/
 ```
 
 ## Component Breakdown

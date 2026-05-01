@@ -85,7 +85,7 @@ Simulates attacker behavior using specialized agents:
 - Persistence  
 - Reporting
 
-### 3.3 CORE — Simulation Brain
+### 3.3 CORE (Simulation Brain)
 
 Coordinates the entire system:
 

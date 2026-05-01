@@ -2,7 +2,7 @@
 
 This document outlines the system architecture, core components, and internal data flow.
 
-## 1. High-Level Overview
+## High-Level Overview
 
 AAPP-MART consists of three major subsystems:
 
@@ -17,7 +17,7 @@ AAPP-MART consists of three major subsystems:
 
 All components communicate through a shared **Knowledge Graph**.
 
-## 2. Repository Structure
+## Repository Structure
 
 ```
 aapp-mart
@@ -60,9 +60,9 @@ aapp-mart
 └── trivyignore
 ```
 
-## 3. Component Breakdown
+## Component Breakdown
 
-### 3.1 AAPP (AI-Autonomous Attack Path Prediction)
+### AAPP (AI-Autonomous Attack Path Prediction)
 
 Responsible for:
 
@@ -71,7 +71,7 @@ Responsible for:
 - Predicting attack paths  
 - Scoring risks  
 
-### 3.2 MART (Multi-Agent Red Team Simulation Engine)
+### MART (Multi-Agent Red Team Simulation Engine)
 
 Simulates attacker behavior using specialized agents:
 
@@ -82,7 +82,7 @@ Simulates attacker behavior using specialized agents:
 - Persistence  
 - Reporting
 
-### 3.3 CORE (Simulation Brain)
+### CORE (Simulation Brain)
 
 Coordinates the entire system:
 

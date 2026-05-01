@@ -65,7 +65,7 @@ aapp-mart
 
 ## 3. Component Breakdown
 
-### 3.1 AAPP — AI-Autonomous Attack Path Prediction
+### 3.1 AAPP (AI-Autonomous Attack Path Prediction)
 
 Responsible for:
 
@@ -74,7 +74,7 @@ Responsible for:
 - Predicting attack paths  
 - Scoring risks  
 
-### 3.2 MART — Multi-Agent Red Team Simulation Engine
+### 3.2 MART (Multi-Agent Red Team Simulation Engine)
 
 Simulates attacker behavior using specialized agents:
 

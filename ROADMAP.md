@@ -1,4 +1,4 @@
-# AAPP-MART Open Source Roadmap
+# Roadmap
 
 This document outlines the planned evolution of **AAPP-MART** as an open-source research and security simulation platform.  
 The roadmap focuses on improving attack path prediction, red-team simulation capabilities, observability, and developer extensibility.

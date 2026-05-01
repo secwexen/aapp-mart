@@ -67,7 +67,7 @@ The system is architected around three primary subsystems:
 - **Multi-Agent Red Team Simulation Engine (MART)**
 - **Core Orchestration Layer**
 
-These subsystems operate in a tightly integrated manner through a shared graph-based simulation fabric, enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the platform.
+These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the platform.
 
 ## Legal & Authorized Use Only
 

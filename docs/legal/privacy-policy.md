@@ -29,4 +29,4 @@ AAPP-MART respects your privacy. This project is designed for **authorized secur
 We may update this Privacy Policy as the project evolves.  
 All updates will be reflected on this page.  
 
-For information about cookies used in AAPP-MART, see [Cookie Policy](docs/Legal/cookie-policy.md).
+For information about cookies used in AAPP-MART, see [Cookie Policy](docs/legal/cookie-policy.md).

@@ -1,5 +1,5 @@
 Contact: https://github.com/secwexen/aapp-mart/security/advisories/new
 Preferred-Languages: en
-Canonical: https://secwexen.github.io/aapp-mart/.well-known/security.txt
+Canonical: https://github.com/secwexen/aapp-mart/blob/gh-pages/.well-known/security.txt
 Policy: https://github.com/secwexen/aapp-mart/blob/main/SECURITY.md
 Expires: 2027-01-01T00:00:00Z

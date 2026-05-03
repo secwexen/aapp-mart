@@ -1,4 +1,4 @@
-# AAPP-MART Demo
+# Demo
 
 This folder contains a minimal runnable example of the AAPP-MART system.
 

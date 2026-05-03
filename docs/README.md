@@ -70,7 +70,7 @@ Research, benchmarks, and experiments:
 - `research.md` – Research documentation  
 - `benchmark.md` – Benchmark results  
 
-### 11. `Legal/`
+### 11. `legal/`
 
 Legal, compliance, and ethics documents:  
 - `terms-of-service.md` – Terms of service

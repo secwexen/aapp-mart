@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 # Release v1.0.1 – 2026-03-07
 
-## **v1.0.1 — Initial Open Source Release**
+## v1.0.1 — Initial Open Source Release
 
 Welcome to the first open‑source release of **AAPP‑MART**.  
 This version introduces the core architecture, modules, APIs, Helm charts, observability components, and documentation that form the foundation of the project.
@@ -47,7 +47,7 @@ This project is released under an open‑source license and welcomes community c
 
 # Release v1.1.0 – 2026-03-19
 
-## **v1.1.0 – Attack Graph Demo, CVE Mapping & Network Simulation Added**
+## v1.1.0 – Attack Graph Demo, CVE Mapping & Network Simulation Added
 
 Public demo includes attack path visualization, sample CVE mapping, and network simulation. Core engine and advanced logic remain private.
 
@@ -59,14 +59,9 @@ Public demo includes attack path visualization, sample CVE mapping, and network 
 - **Documentation Updated:** `README.md` and `docs/features.md` updated to reflect new public features.  
 - **Examples Provided:** Demo scripts and notebook available under `examples/notebooks` and `examples/scripts`.
 
-> [!NOTE]
-> Core engine, CVE matcher, and advanced simulation logic remain private and are not included in the public release.
-
 ### Run the Demo (Google Colab)
 
-**Launch the interactive demo here:** [Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/examples/aapp_mart_attack_path_demo.ipynb)
-
-No installation required — run directly in your browser.
+**Launch the interactive demo here:** [Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/attack_path_demo.ipynb)
 
 ## What's Changed
 

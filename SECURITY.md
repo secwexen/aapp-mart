@@ -1,6 +1,7 @@
 # Security Policy
 
-AAPP-MART values responsible disclosure and safe, ethical security research. This document outlines the security policy for reporting vulnerabilities, response expectations, and legal guidance.
+AAPP-MART values responsible disclosure and safe, ethical security research.  
+This document outlines the security policy for reporting vulnerabilities, response expectations, and legal guidance.
 
 ## Reporting a Vulnerability
 
@@ -9,11 +10,12 @@ If you discover a security vulnerability in AAPP-MART, please report it responsi
 **Preferred method:**
 - Open a **[private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new)**.
 
-**Important:** Do **not disclose security issues publicly** until a fix or mitigation has been released.
+> [!IMPORTANT]
+> Do **not disclose security issues publicly** until a fix or mitigation has been released.
 
 ## Response Expectations
 
-- **Initial response:** within 72 hours  
+- **Initial response:** We aim to respond within 72 hours  
 - **Fix or mitigation:** as soon as reasonably possible  
 - Security issues will be tracked via a **ticket system or CVE** where applicable  
 - Coordinated disclosure will be handled in collaboration with the reporter
@@ -33,7 +35,7 @@ This timeline ensures a balance between responsible disclosure and timely commun
 
 ## Supported Versions
 
-Security updates are provided **only for the latest stable release** of AAPP-MART (currently `v1.1.0`).  
+Security updates are provided **only for the latest stable release** of AAPP-MART.  
 Older versions may not receive security fixes.
 
 ## Scope

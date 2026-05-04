@@ -23,7 +23,7 @@ updates:
       security-fixes:
         applies-to: security-updates
         
-      python-libs:
+      all-dependencies:
         patterns:
           - "*"
 

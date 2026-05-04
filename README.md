@@ -110,7 +110,7 @@ import os
 from aapp_mart.core.orchestrator import AAPP_MART
 
 # Initialize the engine with a target IP or hostname
-engine = AAPP_MART(target="192.168.1.10")
+engine = AAPP_MART(target="<TARGET>")
 
 # Run simulation
 engine.run()
@@ -119,7 +119,7 @@ engine.run()
 report = engine.get_report()
 
 # Print a concise summary of the predicted attack paths
-report.export(format="json", path="./logs/attack-path/attack_report.json")
+report.export(format="json", path="./logs/attack-path/attack_report_<TARGET>.json")
 ```  
 
 See [API Reference](docs/reference/api-reference.md) for interface details.
@@ -141,7 +141,7 @@ python demo/attack_simulation_demo.py
 [+] Simulating attack path prediction...
 [+] Running adversarial simulation...
 [✓] Simulation completed
-[+] Report exported → ./logs/attack-path/attack_report.json
+[+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
 ```
 
 ### Run on Google Colab
@@ -154,8 +154,11 @@ python demo/attack_simulation_demo.py
 ```
 Environment is ready for AAPP-MART demo.
 Simulating attack path prediction for target: 192.168.1.10
-Report exported in json format to ./logs/attack-path/attack_report.json
+Report exported in json format to ./logs/attack-path/attack_report_192.168.1.10.json
 ```
+
+> [!NOTE]
+> DEMO: This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
 
 ## Installation
 

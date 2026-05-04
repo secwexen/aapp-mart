@@ -29,6 +29,5 @@ When running successfully, you should see:
 
 ## Notes
 
-- If the `aapp_mart` package is not installed, the demo will run in **DEMO MODE**
 - No external dependencies are required for basic demonstration
 - This script is safe and uses only simulated logic if core modules are missing

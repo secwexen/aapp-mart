@@ -14,7 +14,7 @@ updates:
       - secwexen
     labels:
       - "dependencies"
-      - "backend"
+      - "frontend"
 
     commit-message:
       prefix: "deps"

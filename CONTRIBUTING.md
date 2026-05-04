@@ -34,8 +34,6 @@ pip install -r requirements.txt
 pip install -r dev-requirements.txt
 ```
 
-If you are using VS Code, the recommended way is to open the project in the Dev Container environment.
-
 ## Development Guidelines
 
 - Follow Python best practices (PEP 8).

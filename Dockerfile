@@ -8,13 +8,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
-COPY dev-requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt \
- && pip install --no-cache-dir -r dev-requirements.txt \
+RUN pip install --no-cache-dir -r requirements.txt
  && pip install gunicorn
 
-RUN useradd -m aappmart
-USER aappmart
+RUN useradd -m appuser
+USER appuser
 
 COPY src/ ./src/
 ENV PYTHONPATH=/app/src

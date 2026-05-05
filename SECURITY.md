@@ -53,7 +53,7 @@ This project **does not provide exploit code**.
 - Denial-of-service via unrealistic traffic  
 - Issues requiring physical access
 
-## Reporting Guidelines / Example Report Format
+## Reporting Guidelines
 
 When submitting a security report, please include the following:
 

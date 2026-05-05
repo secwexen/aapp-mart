@@ -30,13 +30,6 @@ source venv/bin/activate   # Linux / macOS
 venv\Scripts\activate      # Windows
 ```
 
-### Using Conda:
-
-```bash
-conda create -n aapp-mart python=3.11
-conda activate aapp-mart
-```
-
 ## 3. Install Dependencies
 
 Install all required Python packages:
@@ -58,7 +51,7 @@ This allows you to modify the source code without reinstalling.
 Once installed, you can test the framework using the example scripts:
 
 ```bash
-python examples/basic_usage.py
+python demo/attack_simulation_demo.py
 ```
 
 Or run the CLI:
@@ -67,64 +60,8 @@ Or run the CLI:
 python -m aappmart.cli.aappmart_cli
 ```
 
-## 5. Running Tests
+### Virtual environment not activated
 
-AAPP‑MART includes a full test suite under the `tests/` directory.
-
-Run all tests with:
-
-```bash
-pytest
-```
-
-If `pytest` is not installed:
-
-```bash
-pip install pytest
-```
-
-## Development Mode
-
-If you plan to contribute or extend the framework:
-
-1. Keep your virtual environment active  
-2. Install dev dependencies (optional):
-
-```bash
-pip install -r dev-requirements.txt
-```
-
-3. Follow the project structure under `src/aapp_mart/`
-
-## Future Installation (PyPI)
-
-Once the first stable release is published, AAPP‑MART will be installable via PyPI:
-
-```bash
-pip install aapp-mart
-```
-
-This section will be updated when the package becomes publicly available.
-
-## Troubleshooting
-
-Common issues:
-
-### **ModuleNotFoundError**
-Ensure you installed the project in editable mode:
-
-```bash
-pip install -e .
-```
-
-### **Python version mismatch**
-Verify your Python version:
-
-```bash
-python --version
-```
-
-### **Virtual environment not activated**
 Activate your environment again:
 
 ```bash

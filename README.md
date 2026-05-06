@@ -251,7 +251,7 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 
 ## Community & Support
 
-- Contribute code, documentation, testing, see [CONTRIBUTING](CONTRIBUTING.md) for details.  
+- Contribute code, documentation, and testing. See [CONTRIBUTING](CONTRIBUTING.md) for details.  
 - Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
 - Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
 

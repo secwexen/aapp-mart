@@ -5,7 +5,7 @@
 </p>
 
 **Predict. Simulate. Secure.**  
-**AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine**
+AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Coverage](https://codecov.io/gh/secwexen/aapp-mart/branch/main/graph/badge.svg)](https://codecov.io/gh/secwexen/aapp-mart)

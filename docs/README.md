@@ -30,6 +30,7 @@ Developer and operational guides:
 - `getting-started.md` – Initial setup  
 - `installation.md` – Installation instructions  
 - `quickstart.md` – Quickstart guide  
+- `guides.md` — Project guides
 
 ### 5. `architecture/`
 

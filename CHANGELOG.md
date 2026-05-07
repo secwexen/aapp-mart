@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 # Release v1.0.1 – 2026-03-07
 
-## v1.0.1 — Initial Open Source Release
+## AAPP-MART — Initial Open Source Release
 
 Welcome to the first open‑source release of **AAPP‑MART**.  
 This version introduces the core architecture, modules, APIs, Helm charts, observability components, and documentation that form the foundation of the project.
@@ -41,13 +41,9 @@ This version introduces the core architecture, modules, APIs, Helm charts, obser
 - All configuration files are provided as templates  
 - Private configuration values are intentionally omitted  
 
-## Open Source
-
-This project is released under an open‑source license and welcomes community contributions, issues, and pull requests.
-
 # Release v1.1.0 – 2026-03-19
 
-## v1.1.0 – Attack Graph Demo, CVE Mapping & Network Simulation Added
+## AAPP-MART – Attack Graph Demo, CVE Mapping & Network Simulation Added
 
 Public demo includes attack path visualization, sample CVE mapping, and network simulation. Core engine and advanced logic remain private.
 

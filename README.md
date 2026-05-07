@@ -209,7 +209,7 @@ For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 Copyright © 2026 secwexen.
 
 This project is licensed under the Apache-2.0 License.  
-See the [LICENSE](LICENSE) file for full details.  
+See the [LICENSE](LICENSE) file for full details.
 
 ## Contributing
 
@@ -253,10 +253,10 @@ Advanced prediction models, autonomous agent behaviors, and controlled simulatio
 
 - Contribute code, documentation, and testing. See [CONTRIBUTING](CONTRIBUTING.md) for details.  
 - Join [Discussions](https://github.com/secwexen/aapp-mart/discussions) to share feedback and proposals.  
-- Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.  
+- Check out [Issues](https://github.com/secwexen/aapp-mart/issues) for tasks and ideas.
 
 ## Security
 
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
-[Read SECURITY](SECURITY.md) for instructions on reporting issues securely. 
+[Read SECURITY](SECURITY.md) for instructions on reporting issues securely.

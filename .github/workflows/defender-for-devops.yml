@@ -23,7 +23,7 @@ permissions:
 
 on:
   push:
-    branches: [ "main", "develop", "feature/*", "gh-pages", "hotfix/*", "release/*" ]
+    branches: [ "main", "develop", "feature/*", "hotfix/*", "release/*" ]
   pull_request:
     branches: [ "main", "develop", "release/*", "hotfix/*" ]
   schedule:

@@ -4,7 +4,6 @@
 <img src="assets/images/aapp-mart-logo.png" width="400" alt="AAPP-MART Logo" loading="lazy" decoding="async">
 </p>
 
-**Predict. Simulate. Secure.**  
 AI‑Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)

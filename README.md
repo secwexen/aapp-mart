@@ -247,8 +247,6 @@ For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
 
 Active development. Core modules are under implementation.
 
-Advanced prediction models, autonomous agent behaviors, and controlled simulation capabilities are being implemented progressively.
-
 ## Community & Support
 
 - Contribute code, documentation, and testing. See [CONTRIBUTING](CONTRIBUTING.md) for details.  

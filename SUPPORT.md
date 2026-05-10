@@ -14,6 +14,13 @@ We are committed to providing support for users and contributors.
 - **Community Discussions**  
   Use the [Discussions](https://github.com/secwexen/aapp-mart/discussions) tab for general questions, ideas, and collaboration.
 
+## Security Issues
+
+If you discover a security vulnerability in AAPP-MART, please report it responsibly.
+
+**Preferred method:**
+- Open a [private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new).
+
 ## Service Level Agreement (SLA)
 
 - **Response Time:** We aim to respond to issues within **48 hours**.  
@@ -22,4 +29,8 @@ We are committed to providing support for users and contributors.
 
 ## Contributing
 
-If you would like to contribute, please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+If you would like to contribute, please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Community Standards
+
+Please be respectful and constructive in all discussions and contributions.

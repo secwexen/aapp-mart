@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- name: "Secwexen"
+- family-names: "Secwexen"
 title: "AAPP-MART"
 version: 1.1.0
 date-released: 2026-04-30

@@ -8,7 +8,7 @@ This document outlines the security policy for reporting vulnerabilities, respon
 If you discover a security vulnerability in AAPP-MART, please report it responsibly.
 
 **Preferred method:**
-- Open a **[private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new)**.
+- Open a [private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new).
 
 > [!IMPORTANT]
 > Do **not disclose security issues publicly** until a fix or mitigation has been released.

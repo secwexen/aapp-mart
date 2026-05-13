@@ -110,7 +110,7 @@ Harassment, abuse, or malicious contributions will not be tolerated.
 
 ## License
 
-By contributing to AAPP-MART, you acknowledge and agree that all contributions submitted to the project will be licensed under the terms of the Apache License 2.0.
+By contributing to AAPP-MART, you acknowledge and agree that all contributions submitted to the project will be licensed under the terms of the Apache-2.0 License.
 
 For full license details, see [LICENSE](LICENSE).
 

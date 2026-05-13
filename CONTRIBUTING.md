@@ -117,3 +117,5 @@ For full license details, see [LICENSE](LICENSE).
 ## Thank You
 
 Thank you for helping improve AAPP-MART!
+
+Your contributions, feedback, and participation help improve the quality, security, and sustainability of the project and are greatly appreciated.

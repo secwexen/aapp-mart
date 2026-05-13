@@ -82,12 +82,6 @@ All pull requests must:
 - Reference related issues or discussions when applicable
 - Include necessary documentation updates if functionality or CLI changes
 
-### Issue Labels
-
-We use GitHub labels to guide contributors:
-- `good first issue` → beginner-friendly tasks
-- `help wanted` → tasks where community support is welcome
-
 ### Code Review Process
 
 - At least one reviewer must approve the PR
@@ -113,6 +107,12 @@ Security issues should be reported according to the [SECURITY.md](SECURITY.md) p
 
 By participating in this project, you agree to act respectfully and professionally.
 Harassment, abuse, or malicious contributions will not be tolerated.
+
+## License
+
+By contributing to AAPP-MART, you acknowledge and agree that all contributions submitted to the project will be licensed under the terms of the Apache License 2.0.
+
+For full license details, see [LICENSE](LICENSE).
 
 ## Thank You
 

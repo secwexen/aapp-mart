@@ -26,8 +26,3 @@ When running successfully, you should see:
 - Target initialization
 - Simulation steps (recon, attack path generation, risk scoring)
 - Report export confirmation
-
-## Notes
-
-- No external dependencies are required for basic demonstration
-- This script is safe and uses only simulated logic if core modules are missing

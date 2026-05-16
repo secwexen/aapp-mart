@@ -7,6 +7,19 @@ We welcome contributions that improve code quality, security, and documentation.
 
 For planned features and project direction, see [ROADMAP.md](ROADMAP.md).
 
+## Contribution Types Accepted
+
+You may contribute in several ways:
+
+- Code Contributions  
+- Documentation  
+- Testing  
+- Issues & Suggestions  
+- Feature Suggestions  
+- Security Contributions  
+- Community & Support  
+- Maintenance
+
 ## Getting Started
 
 1. Fork the repository

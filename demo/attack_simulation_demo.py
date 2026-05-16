@@ -47,7 +47,7 @@ def main():
     engine.run()
 
     report = engine.get_report()
-    report.export(format="json", path="./logs/attack-path/attack_report.json")
+    report.export(format="json", path="./logs/attack-path/attack_report_192.168.1.10.json")
 
 
 if __name__ == "__main__":

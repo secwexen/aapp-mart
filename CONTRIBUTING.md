@@ -3,24 +3,20 @@
 Thank you for your interest in contributing to AAPP-MART.  
 We welcome contributions that improve code quality, security, and documentation.
 
-## References
+## Project Overview
 
-- [README.md](README.md)
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-- [SECURITY.md](SECURITY.md)
-- [LICENSE](LICENSE)
-- [ROADMAP.md](ROADMAP.md)
+For planned features and project direction, see [ROADMAP.md](ROADMAP.md).
 
 ## Getting Started
 
 1. Fork the repository
+
 2. Create a new branch from `main`
 ```bash
 git checkout -b feature/your-feature-name
 ```
 
 3. Set up a local development environment:
-
 ```bash
 # Create virtual environment
 python -m venv venv
@@ -40,14 +36,12 @@ pip install -r dev-requirements.txt
 - Write clear, readable, and well-documented code.
 - Add or update tests for new functionality.
 - Use the provided test framework (pytest) and ensure all tests pass:
-
-  ```bash
-  pytest tests/
-  ```
-
+```bash
+pytest tests/
+```
 - All new features must align with the documented architecture.
 - Architectural changes require prior discussion.
-  - For architectural proposals, please open a GitHub Discussion or an Issue with the label [design](https://github.com/secwexen/aapp-mart/issues?q=state%3Aopen%20label%3Adesign).
+  - For architectural proposals, please open a GitHub Discussion or an Issue with the label [design](#design).
 - Avoid introducing breaking changes without discussion.
 - Keep code compatible with the project license (Apache-2.0 License).
   
@@ -97,8 +91,8 @@ All pull requests must:
 ## Security and Ethics
 
 AAPP-MART is a security-focused project.
-Contributions must **not include exploit code**, malware, or content intended for illegal use.
 
+- Contributions must **not include exploit code**, malware, or content intended for illegal use.  
 - Contributions must remain within the scope of controlled, non-destructive security simulation.
 
 Security issues should be reported according to the [SECURITY.md](SECURITY.md) policy.

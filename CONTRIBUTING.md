@@ -10,6 +10,10 @@ For planned features and project direction, see [ROADMAP.md](ROADMAP.md).
 ## Getting Started
 
 1. Fork the repository
+```bash
+git clone https://github.com/secwexen/aapp-mart.git
+cd aapp-mart
+```
 
 2. Create a new branch from `main`
 ```bash
@@ -18,15 +22,11 @@ git checkout -b feature/your-feature-name
 
 3. Set up a local development environment:
 ```bash
-# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 
-# Install dependencies
 pip install -r requirements.txt
-
-# Install dev dependencies
 pip install -r dev-requirements.txt
 ```
 

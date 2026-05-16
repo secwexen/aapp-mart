@@ -167,8 +167,7 @@ Report exported in json format to ./logs/attack-path/attack_report_192.168.1.10.
 
 ### Requirements
 
-- Python **3.11+**  
-- pip **23+**  
+- Python **3.11+**
 
 ## Quick Start
 

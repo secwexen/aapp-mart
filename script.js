@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const nodes = [];
     const nodeCount = Math.floor((canvas.width * canvas.height) / 30000);
-    const maxDistance = 150;
+    const maxDistance = 120;
 
     for (let i = 0; i < nodeCount; i++) {
         nodes.push({

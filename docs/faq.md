@@ -33,3 +33,26 @@ Its purpose is to:
 - Improve defensive posture and detection engineering
 
 It should only be used in environments where explicit permission has been granted.
+
+## 4. What problems does AAPP-MART solve?
+
+AAPP-MART addresses limitations in traditional security approaches by providing:
+
+- Better visibility into multi-step attack chains
+- Prioritization of high-risk attack paths
+- Continuous and scalable simulation of adversarial behavior
+- Context-aware risk modeling instead of isolated vulnerability reporting
+
+## 5. Does AAPP-MART replace human red teams?
+
+No.
+
+AAPP-MART is designed to **augment, not replace**, human expertise.
+
+It helps security teams:
+
+- Automate repetitive analysis
+- Explore more attack scenarios than manually feasible
+- Identify non-obvious attack chains
+
+Human analysts remain essential for interpretation, validation, and strategic decision-making.

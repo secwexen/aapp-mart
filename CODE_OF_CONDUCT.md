@@ -61,7 +61,7 @@ representative at an online or offline event.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at.
 
-**GitHub Security Advisory:** https://github.com/secwexen/aapp-mart/security/advisories/new
+**Report a Problem:** [Report an Issue](https://github.com/secwexen/aapp-mart/discussions/categories/moderation-rules)
 
 All complaints will be reviewed and investigated promptly and fairly.
 

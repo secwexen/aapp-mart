@@ -7,7 +7,6 @@ This guide explains how to set up the framework for local development, testing, 
 Before installing AAPP‑MART, ensure your environment meets the following requirements:
 
 - Python **3.11**
-- pip **23+**
 
 ## 1. Clone the Repository
 

@@ -13,7 +13,7 @@ Unlike traditional scanners or breach & attack simulation (BAS) tools, AAPP-MART
 
 ## How to get started
 
-- Dive into the [docs](docs/) for architecture, API reference, and detailed guides.
+- Dive into the [docs/](docs/) for architecture, API reference, and detailed guides.
 
 ## Key Benefits
 

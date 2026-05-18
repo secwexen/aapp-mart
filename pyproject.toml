@@ -15,6 +15,7 @@ authors = [
 ]
 
 keywords = [
+  "python",
   "machine-learning",
   "artificial-intelligence",
   "cybersecurity",
@@ -29,7 +30,6 @@ keywords = [
   "adversary-simulation",
   "attack-simulation",
   "nist-cybersecurity-framework",
-  "ai-red-team",
   "threat-simulation",
   "ai-cybersecurity",
   "attack-path-prediction",

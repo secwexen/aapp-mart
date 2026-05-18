@@ -13,9 +13,7 @@ Unlike traditional scanners or breach & attack simulation (BAS) tools, AAPP-MART
 
 ## How to get started
 
-1. Check out the [5-minute demo](5-minute-demo.md) for a quick hands-on introduction.
-2. Explore the [use-cases](use-cases/) folder to see real-world attack simulations.
-3. Dive into the [docs](docs/) for architecture, API reference, and detailed guides.
+- Dive into the [docs](docs/) for architecture, API reference, and detailed guides.
 
 ## Key Benefits
 

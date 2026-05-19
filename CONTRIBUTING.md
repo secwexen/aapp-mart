@@ -77,7 +77,7 @@ pytest tests/
 - Reference related issues when applicable
 - Squash commits before submitting a pull request
 
-See [COMMIT_CONVENTION.md](docs/contributing/COMMIT_CONVENTION.md) for full details.
+See [commit-convention.md](docs/contributing/commit-convention.md) for full details.
 
 ## Pull Requests
 

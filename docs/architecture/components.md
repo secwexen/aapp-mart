@@ -1,4 +1,4 @@
-# System Components
+# Components
 
 AAPP‑MART operates through three major components that work together to predict and simulate attack paths.
 

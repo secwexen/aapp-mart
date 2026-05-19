@@ -1,5 +1,7 @@
 # Deployment Model
 
+AAPP-MART is designed to operate in multiple deployment environments ranging from local development systems to isolated production infrastructures.
+
 AAPP-MART supports the following deployment patterns:
 
 ## Standalone CLI

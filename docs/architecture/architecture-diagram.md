@@ -1,6 +1,6 @@
-# System Architecture Diagram
+# Architecture Diagram
 
-The following diagram illustrates the high-level architecture of the project:
+AAPP-MART is built with a modular architecture designed to support multiple execution modes (CLI, API, and containerized environments) while maintaining a shared core processing engine.
 
 ```mermaid
 flowchart TD

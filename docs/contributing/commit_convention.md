@@ -1,4 +1,4 @@
-# Conventional Commit Template
+# Commit Convention
 
 ## Format
 

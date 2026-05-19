@@ -49,7 +49,7 @@ Core concepts and AI agents:
 ### 7. `contributing/`
 
 Contribution guidelines and standards:
-- `COMMIT_CONVENTION.md` – Commit message format and standards
+- `commit-convention.md` – Commit message format and standards
 
 ### 8. `ai/`
 

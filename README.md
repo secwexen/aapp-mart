@@ -4,7 +4,7 @@ Official GitHub Pages site for **AAPP-MART (AI-Autonomous Attack Path Prediction
 
 This website serves as the official landing page and documentation hub for the AAPP-MART project.
 
-Official Website: **[Explore Project](https://secwexen.github.io/aapp-mart/)**
+**Official Website:** [Explore Project](https://secwexen.github.io/aapp-mart/)
 
 ## About
 

@@ -44,7 +44,7 @@ Critical Assets:
 ```
 
 > [!NOTE]
-> DEMO: This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
+> This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
 
 ## Attack Simulation Demo
 

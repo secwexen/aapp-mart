@@ -19,7 +19,7 @@ All components communicate through a shared **Knowledge Graph**.
 
 ## Repository Structure
 
-```
+```text
 aapp-mart/
 │   .coveragerc
 │   .dockerignore

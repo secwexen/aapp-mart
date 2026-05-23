@@ -1,28 +1,5 @@
 # Demo
 
-This folder contains a minimal runnable example of the AAPP-MART system.
+This directory contains runnable demonstration scripts and notebooks for the AAPP-MART platform.
 
-## Purpose
-
-The demo shows how to:
-- Initialize the attack path simulation engine
-- Run a basic simulation
-- Export a sample report
-
-This is intended for quick testing and validation.
-
-## How to run
-
-From the project root:
-
-```bash
-python demo/attack_simulation_demo.py
-```
-
-## Expected Output
-
-When running successfully, you should see:
-
-- Target initialization
-- Simulation steps (recon, attack path generation, risk scoring)
-- Report export confirmation
+All demos are **safe, non-destructive simulations** intended for showcasing attack-path prediction, adversarial modeling, and risk analysis concepts.

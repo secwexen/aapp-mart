@@ -1,4 +1,4 @@
-# Market Positioning & Research Foundations
+# Research Foundations & Market Positioning
 
 AAPP-MART sits at the intersection of **academic attack graph modeling**, **BAS tooling**, and **AI-assisted adversary simulation**, combining **deterministic graph-based prediction** with **controlled autonomous simulation**.
 

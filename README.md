@@ -157,12 +157,6 @@ Critical Assets:
 [+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
 ```
 
-### Run on Google Colab
-
-Launch the interactive demo:
-
-[Attack Path Demo Notebook](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/attack_path_demo.ipynb)
-
 > [!NOTE]
 > DEMO: This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
 

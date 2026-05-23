@@ -160,14 +160,6 @@ Critical Assets:
 **Launch the interactive demo here:**
 [Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/attack_path_demo.ipynb)
 
-### Colab Output
-
-```
-Environment is ready for AAPP-MART demo.
-Simulating attack path prediction for target: 192.168.1.10
-Report exported in json format to ./logs/attack-path/attack_report_192.168.1.10.json
-```
-
 > [!NOTE]
 > DEMO: This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
 

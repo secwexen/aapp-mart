@@ -122,6 +122,7 @@ See [API Reference](docs/reference/api-reference.md) for interface details.
 ## Demo
 
 Run the autonomous attack-path simulation locally:
+
 ```bash
 python demo/advanced_attack_simulation_demo.py
 ```

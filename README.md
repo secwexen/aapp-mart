@@ -121,21 +121,37 @@ See [API Reference](docs/reference/api-reference.md) for interface details.
 
 ## Demo
 
-Run the AAPP-MART CLI simulation locally:
+Run the autonomous attack-path simulation locally:
 ```bash
-python demo/attack_simulation_demo.py
+python demo/advanced_attack_simulation_demo.py
 ```
 
 ### Output Example
 
-```
-=== AAPP-MART Demo ===
-[!] Running in DEMO MODE (package not installed)
+```text
+=== AAPP-MART Autonomous Simulation ===
 
-[+] Target: 192.168.1.10
-[+] Simulating attack path prediction...
-[+] Running adversarial simulation...
-[✓] Simulation completed
+[*] Target acquired: 192.168.1.10
+
+[+] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected
+[+] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Credential harvesting attempt
+[+] Initial Access       | MITRE: T1078 | Severity: HIGH     | Valid account abuse
+[+] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting
+[+] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Kernel privilege escalation simulated
+
+[✓] Simulation completed successfully
+
+=== Risk Summary ===
+
+Target              : 192.168.1.10
+Risk Score          : 8.9/10
+Compromised Assets  : 3
+
+Critical Assets:
+- FILE-SERVER-01
+- DOMAIN-CONTROLLER
+- HR-DB
+
 [+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
 ```
 

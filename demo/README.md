@@ -4,9 +4,6 @@ This directory contains runnable demonstration scripts and notebooks for the AAP
 
 All demos are **safe, non-destructive simulations** intended for showcasing attack-path prediction, adversarial modeling, and risk analysis concepts.
 
-> [!NOTE]
-> DEMO: This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
-
 ## How to Run
 
 From the project root directory, execute the following commands
@@ -45,6 +42,9 @@ Critical Assets:
 
 [+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
 ```
+
+> [!NOTE]
+> DEMO: This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
 
 ## Attack Simulation Demo
 

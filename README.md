@@ -49,8 +49,9 @@ AAPP-MART enables advanced, intelligence-driven security operations through the 
 3. **Orchestration Engine**  
    Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 
-**Example Attack Flow:** 
-```bash
+**Example Attack Flow:**
+
+```text
 [User Credential] → [Phishing/Exploit] → [Initial Access] → [Lateral Movement] → [Privilege Escalation] → [Critical Asset Compromise]
 ```
 

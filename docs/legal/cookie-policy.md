@@ -1,8 +1,6 @@
 # Cookie Policy
 
-AAPP-MART uses cookies only to support essential functionality and analytics for improving the user experience.  
-
-This project is designed for **authorized security research and enterprise security teams**, and does not collect personal data for marketing purposes.  
+AAPP-MART uses cookies only to support essential functionality and analytics for improving the user experience.
 
 ## 1. What Are Cookies
 

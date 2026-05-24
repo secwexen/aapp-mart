@@ -39,11 +39,11 @@ AAPP-MART enables advanced, intelligence-driven security operations through the 
 
 ## How it Works
 
-1. **AAPP** (AI-Autonomous Attack Path Prediction):
+1. **AAPP (AI-Autonomous Attack Path Prediction):**
 
 Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
-2. **MART** (Multi-Agent Red Team Simulation Engine):
+2. **MART (Multi-Agent Red Team Simulation Engine):**
 
 Autonomous agents simulate realistic adversary actions:
 Reconnaissance, Exploitation, Lateral Movement, Privilege Escalation, Persistence, Reporting

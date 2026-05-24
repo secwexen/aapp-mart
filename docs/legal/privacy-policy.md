@@ -22,11 +22,4 @@ AAPP-MART respects your privacy. This project is designed for **authorized secur
 ## 4. Data Security
 
 - Data collected for simulations is stored temporarily during runtime.  
-- Users are responsible for protecting any sensitive test data in their own environment.  
-
-## 5. Changes to This Privacy Policy
-
-We may update this Privacy Policy as the project evolves.  
-All updates will be reflected on this page.  
-
-For information about cookies used in AAPP-MART, see [Cookie Policy](docs/legal/cookie-policy.md).
+- Users are responsible for protecting any sensitive test data in their own environment.

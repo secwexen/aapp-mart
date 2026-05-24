@@ -46,6 +46,7 @@ Evaluates assets, configurations, permissions, and vulnerabilities to predict pr
 2. **MART (Multi-Agent Red Team Simulation Engine):**
 
 Autonomous agents simulate realistic adversary actions:
+
 Reconnaissance, Exploitation, Lateral Movement, Privilege Escalation, Persistence, Reporting
 
 3. **Orchestration Engine:**

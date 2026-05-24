@@ -109,7 +109,6 @@ a {
   color: #00bcd4;
 }
 
-/* Tablets & Small Screens */
 @media (max-width: 1024px) {
     header {
         padding: 50px 20px;
@@ -124,7 +123,6 @@ a {
     }
 }
 
-/* Mobile Devices */
 @media (max-width: 768px) {
 
     header h1 {
@@ -166,7 +164,6 @@ a {
 
 }
 
-/* Extra Small Devices */
 @media (max-width: 480px) {
 
     header h1 {

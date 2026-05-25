@@ -16,9 +16,7 @@ You may contribute in several ways:
 - Testing  
 - Issues & Suggestions  
 - Feature Suggestions  
-- Security Contributions  
-- Community & Support  
-- Maintenance
+- Security Contributions
 
 ## Getting Started
 

@@ -196,14 +196,12 @@ pip install -r dev-requirements.txt
 
 For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
 
-## Docs & Resources
+## Documentation
 
-- [Quick Start](docs/getting-started/quickstart.md)
-- [Full Installation Guide](docs/getting-started/installation.md)
-- [API Reference](docs/reference/api-reference.md)
-- [Repository Structure](docs/architecture/architecture.md)
-- [Deployment Guide](docs/guides/deployment.md)
-- [Risk Model](docs/ai/risk-model.md)
+- [Quick Start](docs/getting-started/quickstart.md)  
+- [Installation Guide](docs/getting-started/installation.md)  
+- [API Reference](docs/reference/api-reference.md)  
+- [Deployment Guide](docs/guides/deployment.md)  
 - [Security Policy](SECURITY.md)
 
 ## License

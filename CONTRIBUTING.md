@@ -53,8 +53,6 @@ pip install -r dev-requirements.txt
 pytest tests/
 ```
 - All new features must align with the documented architecture.
-- Architectural changes require prior discussion.
-  - For architectural proposals, please open a GitHub Discussion or an Issue with the label [design](#design).
 - Avoid introducing breaking changes without discussion.
 - Keep code compatible with the project license (Apache-2.0 License).
   
@@ -64,12 +62,6 @@ pytest tests/
 - Base your branch on the latest `main`
 - Before merging, rebase or squash commits to maintain a clean history
 - Merges should be performed via Pull Request after review
-
-## Release Workflow
-
-- We follow **semantic versioning** (MAJOR.MINOR.PATCH).
-- All releases must update the [CHANGELOG](CHANGELOG.md).
-- Release candidates are tagged and tested before final publication.
 
 ## Commit Messages
 

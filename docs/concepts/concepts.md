@@ -1,4 +1,4 @@
-# CONCEPTS
+# Concepts
 
 ## Overview
 

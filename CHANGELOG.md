@@ -55,10 +55,6 @@ Public demo includes attack path visualization, sample CVE mapping, and network 
 - **Documentation Updated:** `README.md` and `docs/features.md` updated to reflect new public features.  
 - **Examples Provided:** Demo scripts and notebook available under `examples/notebooks` and `examples/scripts`.
 
-### Run the Demo (Google Colab)
-
-**Launch the interactive demo here:** [Attack Path Demo Notebook on Google Colab](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/attack_path_demo.ipynb)
-
 ## What's Changed
 
 * Bump actions/checkout from 3 to 6 by @dependabot[bot] in https://github.com/secwexen/aapp-mart/pull/53

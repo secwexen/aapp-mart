@@ -4,14 +4,14 @@
   <url>
     <loc>https://secwexen.github.io/aapp-mart/</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://secwexen.github.io/aapp-mart/"/>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
     <image:image>
       <image:loc>https://secwexen.github.io/aapp-mart/assets/images/aapp-mart-logo.png</image:loc>
-      <image:title>AAPP-MART Logo</image:title>
-      <image:caption>AAPP-MART (AI-Autonomous Attack Path Prediction and Multi‑Agent Red Team Simulation Engine)</image:caption>
+      <image:title>AAPP-MART</image:title>
+      <image:caption>AAPP-MART Logo</image:caption>
     </image:image> 
   </url>
   

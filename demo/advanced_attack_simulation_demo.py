@@ -16,6 +16,7 @@ class AttackStep:
     mitre_id: str
     description: str
     severity: str
+    duration: float
 
 
 @dataclass
@@ -25,6 +26,7 @@ class SimulationReport:
     attack_path: List[AttackStep]
     compromised_assets: List[str]
     generated_at: str
+    duration: float
 
 
 # =========================
@@ -48,33 +50,40 @@ class AAPPMartDemo:
                 phase="Reconnaissance",
                 mitre_id="T1595",
                 description="Active scanning detected",
-                severity="LOW"
+                severity="LOW",
+                duration=1.4
             ),
             AttackStep(
                 phase="Phishing",
                 mitre_id="T1566",
                 description="Credential harvesting attempt",
-                severity="MEDIUM"
+                severity="MEDIUM",
+                duration=2.1
             ),
             AttackStep(
                 phase="Initial Access",
                 mitre_id="T1078",
                 description="Valid account abuse",
-                severity="HIGH"
+                severity="HIGH",
+                duration=1.8
             ),
             AttackStep(
                 phase="Lateral Movement",
                 mitre_id="T1021",
                 description="Remote service pivoting",
-                severity="HIGH"
+                severity="HIGH",
+                duration=3.2
             ),
             AttackStep(
                 phase="Privilege Escalation",
                 mitre_id="T1068",
                 description="Kernel privilege escalation simulated",
-                severity="CRITICAL"
+                severity="CRITICAL",
+                duration=2.7
             ),
         ]
+
+        total_duration = sum(step.duration for step in attack_chain)
 
         for step in attack_chain:
             self._simulate_step(step)
@@ -94,7 +103,8 @@ class AAPPMartDemo:
             risk_score=risk_score,
             attack_path=attack_chain,
             compromised_assets=compromised_assets,
-            generated_at=time.strftime("%Y-%m-%d %H:%M:%S")
+            generated_at=time.strftime("%Y-%m-%d %H:%M:%S"),
+            duration=total_duration
         )
 
     def _simulate_step(self, step: AttackStep):
@@ -102,6 +112,7 @@ class AAPPMartDemo:
             f"[+] {step.phase:<22}"
             f" | MITRE: {step.mitre_id:<8}"
             f" | Severity: {step.severity:<8}"
+            f" | Duration: {step.duration:.1f}s"
             f" | {step.description}"
         )
         time.sleep(0.8)
@@ -149,9 +160,10 @@ def main():
     report = engine.run()
 
     print("\n=== Risk Summary ===\n")
-
+    
     print(f"Target              : {report.target}")
     print(f"Risk Score          : {report.risk_score}/10")
+    print(f"Duration            : {report.duration:.1f}s")
     print(f"Compromised Assets  : {len(report.compromised_assets)}")
     print(f"Generated At        : {report.generated_at}")
 

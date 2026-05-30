@@ -150,8 +150,8 @@ python demo/advanced_attack_simulation_demo.py
 
 Target              : 192.168.1.10
 Risk Score          : 8.9/10
-Generated At        : 2026-01-01 09:58:45
 Compromised Assets  : 3
+Generated At        : 2026-01-01 09:58:45
 
 Critical Assets:
 - FILE-SERVER-01

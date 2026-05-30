@@ -44,6 +44,8 @@ Critical Assets:
 [+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
 ```
 
+[Attack Simulation Report - 192.168.1.10](demo/attack_report_192.168.1.10.json)
+
 > [!NOTE]
 > This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
 

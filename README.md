@@ -131,7 +131,7 @@ Run the autonomous attack-path simulation locally:
 python demo/advanced_attack_simulation_demo.py
 ```
 
-### Output Example
+### Demo Output
 
 ```text
 === AAPP-MART Autonomous Simulation ===

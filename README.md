@@ -168,8 +168,8 @@ Critical Assets:
 
 ### Supported Operating Systems
 
+- Linux (Ubuntu 22.04+, Debian 11+) 
 - Windows 10 / 11  
-- Linux (Ubuntu 22.04+, Debian 11+)  
 - macOS (Intel and Apple Silicon)
 
 ### Requirements

@@ -118,7 +118,7 @@ engine.run()
 report = engine.get_report()
 
 # Print a concise summary of the predicted attack paths
-report.export(format="json", path="./logs/attack-path/attack_report_<TARGET>.json")
+report.export(format="json", path="aapp-mart/logs/attack-path/attack_report_<TARGET>.json")
 ```  
 
 See [API Reference](docs/reference/api-reference.md) for interface details.

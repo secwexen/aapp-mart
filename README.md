@@ -137,13 +137,11 @@ python demo/advanced_attack_simulation_demo.py
 === AAPP-MART Autonomous Simulation ===
 
 [*] Target acquired: 192.168.1.10
-
 [+] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected
 [+] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Credential harvesting attempt
 [+] Initial Access       | MITRE: T1078 | Severity: HIGH     | Valid account abuse
 [+] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting
 [+] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Kernel privilege escalation simulated
-
 [✓] Simulation completed successfully
 
 === Risk Summary ===

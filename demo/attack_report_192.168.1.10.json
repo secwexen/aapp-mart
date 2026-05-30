@@ -1,0 +1,48 @@
+{
+    "target": "192.168.1.10",
+    "risk_score": 9.1,
+    "attack_path": [
+        {
+            "phase": "Reconnaissance",
+            "mitre_id": "T1595",
+            "description": "Active scanning detected",
+            "severity": "LOW",
+            "duration": 1.4
+        },
+        {
+            "phase": "Phishing",
+            "mitre_id": "T1566",
+            "description": "Credential harvesting attempt",
+            "severity": "MEDIUM",
+            "duration": 2.1
+        },
+        {
+            "phase": "Initial Access",
+            "mitre_id": "T1078",
+            "description": "Valid account abuse",
+            "severity": "HIGH",
+            "duration": 1.8
+        },
+        {
+            "phase": "Lateral Movement",
+            "mitre_id": "T1021",
+            "description": "Remote service pivoting",
+            "severity": "HIGH",
+            "duration": 3.2
+        },
+        {
+            "phase": "Privilege Escalation",
+            "mitre_id": "T1068",
+            "description": "Kernel privilege escalation simulated",
+            "severity": "CRITICAL",
+            "duration": 2.7
+        }
+    ],
+    "compromised_assets": [
+        "FILE-SERVER-01",
+        "DOMAIN-CONTROLLER",
+        "HR-DB"
+    ],
+    "generated_at": "2026-01-01 09:58:45",
+    "duration": 11.200000000000001
+}

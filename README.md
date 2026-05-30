@@ -168,9 +168,9 @@ Critical Assets:
 
 ### Supported Operating Systems
 
-- Linux (Ubuntu 22.04+, Debian 11+) 
-- Windows 10 / 11  
-- macOS (Intel and Apple Silicon)
+- Linux (primary, production & deployment recommended)  
+- Windows (development & local testing via Docker)  
+- macOS (WSL2 required for full compatibility)
 
 ### Requirements
 

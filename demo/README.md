@@ -14,7 +14,7 @@ From the project root directory, execute the following commands
 python demo/advanced_attack_simulation_demo.py
 ```
 
-### Output Example
+### Advanced Attack Simulation Demo Output
 
 ```text
 === AAPP-MART Autonomous Simulation ===
@@ -53,7 +53,7 @@ Critical Assets:
 python demo/attack_simulation_demo.py
 ```
 
-### Output Example
+### Attack Simulation Demo Output
 
 ```text
 === AAPP-MART Demo ===
@@ -71,7 +71,7 @@ Launch the interactive demo:
 
 [Attack Path Demo Notebook](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/attack_path_demo.ipynb)
 
-### Colab Output
+### Google Colab Output
 
 ```
 Environment is ready for AAPP-MART demo.

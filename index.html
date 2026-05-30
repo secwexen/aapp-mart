@@ -336,7 +336,7 @@ engine.run()
 report = engine.get_report()
 
 # Print a concise summary of the predicted attack paths
-report.export(format="json", path="./logs/attack-path/attack_report_<TARGET>.json")
+report.export(format="json", path="aapp-mart/logs/attack-path/attack_report_<TARGET>.json")
 </code></pre>
 
 <p>
@@ -357,29 +357,33 @@ See <a href="https://github.com/secwexen/aapp-mart/blob/main/docs/reference/api-
 === AAPP-MART Autonomous Simulation ===
 
 [*] Target acquired: 192.168.1.10
-
 [+] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected
 [+] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Credential harvesting attempt
 [+] Initial Access       | MITRE: T1078 | Severity: HIGH     | Valid account abuse
 [+] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting
 [+] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Kernel privilege escalation simulated
-
 [✓] Simulation completed successfully
 
 === Risk Summary ===
 
 Target              : 192.168.1.10
 Risk Score          : 8.9/10
+Duration            : 11.2s
 Compromised Assets  : 3
+Generated At        : 2026-01-01 09:58:45
 
 Critical Assets:
 - FILE-SERVER-01
 - DOMAIN-CONTROLLER
 - HR-DB
 
-[+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
+[+] Report exported → aapp-mart/logs/attack-path/attack_report_192.168.1.10.json
 </code></pre>
 
+<p>
+See the <a href="https://github.com/secwexen/aapp-mart/blob/main/demo/attack_report_192.168.1.10.json">Attack Simulation Report - 192.168.1.10</a> file.
+</p>
+    
 <div>
 <strong>NOTE:</strong>
 <p>This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.</p>

@@ -42,7 +42,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART Autonomous Simulation ===\n")
 
-        self._log(f"Target acquired: {self.target}\n")
+        self._log(f"Target acquired: {self.target}")
         time.sleep(1)
 
         attack_chain = [

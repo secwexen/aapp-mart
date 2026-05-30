@@ -49,21 +49,3 @@ See the [Attack Simulation Report - 192.168.1.10](demo/attack_report_192.168.1.1
 
 > [!NOTE]
 > This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
-
-## Attack Simulation Demo
-
-```bash
-python demo/attack_simulation_demo.py
-```
-
-### Attack Simulation Demo Output
-
-```text
-=== AAPP-MART Demo ===
-[!] Running in DEMO MODE (package not installed)
-[+] Target: 192.168.1.10
-[+] Simulating attack path prediction...
-[+] Running adversarial simulation...
-[✓] Simulation completed
-[+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
-```

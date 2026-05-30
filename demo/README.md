@@ -65,15 +65,13 @@ python demo/attack_simulation_demo.py
 [+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
 ```
 
-## Run on Google Colab
-
-Launch the interactive demo:
+## Google Colab
 
 [Attack Path Demo Notebook](https://colab.research.google.com/github/secwexen/aapp-mart/blob/main/demo/attack_path_demo.ipynb)
 
 ### Google Colab Output
 
-```
+```text
 Environment is ready for AAPP-MART demo.
 Simulating attack path prediction for target: 192.168.1.10
 Report exported in json format to ./logs/attack-path/attack_report_192.168.1.10.json

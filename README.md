@@ -169,12 +169,18 @@ Critical Assets:
 ### Supported Operating Systems
 
 - Linux (primary, production & deployment recommended)  
-- Windows (development & local testing via Docker)  
-- macOS (WSL2 required for full compatibility)
+- Windows (WSL2 + Docker required for full compatibility)  
+- macOS (Docker or native development supported)
 
 ### Requirements
 
-- Python **3.11+**
+- Python 3.11+
+- Go 1.21+
+- C++17+
+- Node.js 18+ (frontend / visualization layer)
+- Docker
+- Kubernetes (for deployment)
+- YAML / JSON-based configuration ecosystem
 
 ## Quick Start
 

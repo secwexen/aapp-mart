@@ -42,7 +42,7 @@ Critical Assets:
 - DOMAIN-CONTROLLER
 - HR-DB
 
-[+] Report exported → ./logs/attack-path/attack_report_192.168.1.10.json
+[+] Report exported → aapp-mart/logs/attack-path/attack_report_192.168.1.10.json
 ```
 
 See the [Attack Simulation Report - 192.168.1.10](demo/attack_report_192.168.1.10.json) file.

@@ -153,6 +153,7 @@ def main():
     print(f"Target              : {report.target}")
     print(f"Risk Score          : {report.risk_score}/10")
     print(f"Compromised Assets  : {len(report.compromised_assets)}")
+    print(f"Generated At        : {report.generated_at}")
 
     print("\nCritical Assets:")
     for asset in report.compromised_assets:

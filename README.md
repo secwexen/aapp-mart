@@ -108,16 +108,11 @@ This example reflects the intended public API design:
 import os
 from aapp_mart.core.orchestrator import AAPP_MART
 
-# Initialize the engine with a target IP or hostname
 engine = AAPP_MART(target="<TARGET>")
-
-# Run simulation
 engine.run()
 
-# Retrieve the generated attack-path report
 report = engine.get_report()
 
-# Print a concise summary of the predicted attack paths
 report.export(format="json", path="aapp-mart/logs/attack-path/attack_report_<TARGET>.json")
 ```  
 

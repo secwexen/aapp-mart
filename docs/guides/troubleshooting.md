@@ -11,4 +11,4 @@ If your issue is not listed above:
 - Include logs, steps to reproduce, and environment information.
 
 > [!TIP] 
-> Always ensure you are running the latest version of AAPP-MART and follow the [Development Guide](docs/development.md) for updates.
+> Always ensure you are running the latest version of AAPP-MART and follow the [Development Guide](docs/guides/development.md) for updates.

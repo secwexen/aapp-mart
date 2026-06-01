@@ -100,24 +100,6 @@ This software is provided “as is” without warranty of any kind, express or i
 - Risk-based security posture analysis
 - ML-assisted vulnerability prioritization
 
-## Conceptual Usage Example
-
-This example reflects the intended public API design:
-
-```python
-import os
-from aapp_mart.core.orchestrator import AAPP_MART
-
-engine = AAPP_MART(target="<TARGET>")
-engine.run()
-
-report = engine.get_report()
-
-report.export(format="json", path="aapp-mart/logs/attack-path/attack_report_<TARGET>.json")
-```  
-
-See [API Reference](docs/reference/api-reference.md) for interface details.
-
 ## Demo
 
 Run the autonomous attack-path simulation locally:

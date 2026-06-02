@@ -78,9 +78,3 @@ Legal, compliance, and ethics documents:
 - `privacy-policy.md` – Privacy policy
 - `cookie-policy.md` – Cookie policy  
 - `ethics.md` – Ethics policy
-
-### 12. `docs/`
-
-All project documentation folder:  
-- `README.md` – Project introduction and entry point  
-- `faq.md` – Frequently asked questions  

@@ -21,4 +21,4 @@ USER appuser
 
 EXPOSE 8080
 
-CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "aapp_mart.main:app", "--bind", "0.0.0.0:8080", "--workers", "4"]
+CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "src.aapp_mart.main:app", "--bind", "0.0.0.0:8080", "--workers", "4"]

@@ -1,7 +1,5 @@
 # Concepts
 
-## Overview
-
 This document introduces the key concepts and terminology behind **AAPP-MART** – the Autonomous Attack Path Prediction & Multi-Agent Red Team simulation engine. Understanding these concepts is essential for using, extending, or reviewing the system effectively.
 
 ## Core Concepts

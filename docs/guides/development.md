@@ -102,8 +102,6 @@ Developers can add new report formats or extend existing ones. A report module s
 - Integrate with the Orchestrator’s result aggregation system.
 - Provide meaningful insights such as attack paths, risk scores, or agent activity timelines.
 
-Reports are located under the [reports](reports/) module.
-
 ## Framework Extension Points
 
 AAPP‑MART is designed to be extensible. Developers can add:
@@ -120,7 +118,7 @@ Each extension should be modular and documented to ensure compatibility with the
 
 - All development and testing must be performed in authorized environments.
 - Unauthorized use of the framework against real systems is strictly prohibited.
-- Vulnerabilities must be reported according to the project’s **[SECURITY.md](/SECURITY.md)** policy.
+- Vulnerabilities must be reported according to the project’s [SECURITY.md](/SECURITY.md) policy.
 - Ethical guidelines must be followed at all times.
 
 ## Contribution Workflow

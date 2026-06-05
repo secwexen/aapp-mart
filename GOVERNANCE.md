@@ -4,8 +4,7 @@ This document outlines the governance model for the AAPP-MART project.
 
 ## Purpose
 
-The purpose of this governance model is to ensure transparent decision-making,
-clear ownership, and effective collaboration among contributors.
+The purpose of this governance model is to ensure transparent decision-making, clear ownership, and effective collaboration among contributors.
 
 ## Roles and Responsibilities
 
@@ -26,15 +25,14 @@ clear ownership, and effective collaboration among contributors.
 
 ## Decision-Making Process
 
-- Technical decisions are made by maintainers with input from contributors.
-- Major changes (architecture, licensing, governance updates) require consensus
-  among maintainers and approval via community discussion.
+- Technical decisions are made by maintainers with input from contributors.  
+- Major changes (architecture, licensing, governance updates) require consensus among maintainers and approval via community discussion.  
 - In case of disagreement, a voting process among maintainers will be initiated.
 
 ## Release Management
 
-- Regular releases are scheduled every **quarter**.
-- Security patches and hotfixes are released as needed.
+- Regular releases are scheduled every **quarter**.  
+- Security patches and hotfixes are released as needed.  
 - Releases are documented in [CHANGELOG.md](CHANGELOG.md).
 
 ## Security and Compliance
@@ -43,10 +41,5 @@ clear ownership, and effective collaboration among contributors.
 
 ## Community Guidelines
 
-- All contributors must follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+- All contributors must follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).  
 - Respectful communication and collaboration are expected at all times.
-
-## Amendments
-
-This governance document may be updated through consensus among maintainers
-and approval via community discussion.

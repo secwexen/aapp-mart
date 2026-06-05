@@ -4,69 +4,73 @@
 
 ## Core Capabilities
 
-### **AI‑Autonomous Attack Path Prediction**
+### AI‑Autonomous Attack Path Prediction
+
 - Uses machine learning models to estimate likely attacker movement.
 - Generates dynamic attack paths based on environment state and security posture.
 - Supports probabilistic and deterministic prediction modes.
 
-### **Multi‑Agent Red Team Simulation Engine**
+### Multi‑Agent Red Team Simulation Engine
+
 - Autonomous adversarial agents emulate realistic attacker tactics.
 - Agents coordinate, compete, or specialize based on scenario configuration.
 - Behavior aligned with MITRE ATT&CK techniques.
 
-### **CORE Orchestration Engine**
+### CORE Orchestration Engine
+
 - Coordinates the interaction between AAPP and MART to maintain a unified simulation flow.  
 - Manages the global environment state, event propagation, and scenario progression.  
 - Controls agent decision cycles, execution timing, and system‑wide synchronization.
 
 ## Intelligence & Analytics
 
-### **Predictive Analytics Engine**
+### Predictive Analytics Engine
+
 - Identifies high‑risk nodes, misconfigurations, and privilege‑escalation paths.
 - Computes attack feasibility scores and risk impact metrics.
 - Generates actionable insights for defenders.
 
-### **Attack Graph Generation**
+### Attack Graph Generation
+
 - Builds dynamic attack graphs from environment data.
 - Visualizes relationships between assets, vulnerabilities, and attack vectors.
 - Supports export for external analysis tools.
 
 ## Security Validation
 
-### **Continuous Security Assessment**
+### Continuous Security Assessment
+
 - Runs scheduled or on‑demand simulations.
 - Detects drift in security posture over time.
 - Validates defensive controls before real attackers exploit them.
 
-### **Controlled Simulation Environment**
+### Controlled Simulation Environment
+
 - Safe, isolated execution of adversarial behavior.
 - Configurable constraints for risk‑free testing.
 - Supports cloud, hybrid, and on‑prem environments.
 
 ## Architecture & Extensibility
 
-### **Modular Architecture**
+### Modular Architecture
+
 - Pluggable components for agents, models, and environment adapters.
 - Easy integration with external tools and data sources.
 
-### **Scenario‑Based Simulation**
+### Scenario‑Based Simulation
+
 - Customizable attack scenarios.
 - Supports training, testing, and research workflows.
 
-### **API‑Driven Design**
+### API‑Driven Design
+
 - Python API for automation and scripting.
 - Extensible interfaces for custom agents and models.
 
 ## Output & Reporting
 
-### **Simulation Reports**
+### Simulation Reports
+
 - Detailed logs of agent actions and attack sequences.
 - Risk scoring and impact summaries.
 - Exportable JSON/Markdown reports.
-
-## Target Users
-
-- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
-- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
-- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
-- Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)

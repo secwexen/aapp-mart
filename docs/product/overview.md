@@ -33,6 +33,3 @@ AAPP-MART’s predictive and adaptive design enables organizations to move secur
 
 AAPP-MART is intended for **authorized security evaluation**, penetration testing, research, and defensive validation.
 It integrates with real-world workflows where understanding potential attack surfaces and adversary strategies yields stronger security postures.
-
-> [!WARNING]
-> Use against production systems **without explicit authorization is prohibited and may be unlawful**.

@@ -1,11 +1,10 @@
 # Troubleshooting Guide
 
-This document provides solutions to common issues encountered when setting up or using AAPP-MART.  
-If your problem is not listed here, please check [Issues](https://github.com/secwexen/aapp-mart/issues).
+This document provides solutions to common issues encountered when setting up or using AAPP-MART.
 
-## Other Issues
+## Issues
 
-If your issue is not listed above:
+If your problem is not listed here:
 
 - Open an [Issue](https://github.com/secwexen/aapp-mart/issues) with detailed information.  
 - Include logs, steps to reproduce, and environment information.

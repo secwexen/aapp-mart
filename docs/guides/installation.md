@@ -44,25 +44,3 @@ pip install -e .
 ```
 
 This allows you to modify the source code without reinstalling.
-
-## 4. Running the Framework
-
-Once installed, you can test the framework using the example scripts:
-
-```bash
-python demo/attack_simulation_demo.py
-```
-
-Or run the CLI:
-
-```bash
-python -m aappmart.cli.aappmart_cli
-```
-
-### Virtual environment not activated
-
-Activate your environment again:
-
-```bash
-source venv/bin/activate
-```

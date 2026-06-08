@@ -11,10 +11,6 @@ It combines:
 
 Unlike traditional scanners or breach & attack simulation (BAS) tools, AAPP-MART **predicts, simulates, and visualizes attacks** in a realistic, repeatable, and safe manner.
 
-## How to get started
-
-- Dive into the [docs/](docs/) for architecture, API reference, and detailed guides.
-
 ## Key Benefits
 
 - Quickly understand your exposure to potential attacks.

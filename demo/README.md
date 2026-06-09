@@ -4,10 +4,6 @@ This directory contains runnable demonstration scripts for the AAPP-MART platfor
 
 All demos are **safe, non-destructive simulations** intended for showcasing attack-path prediction, adversarial modeling, and risk analysis concepts.
 
-## How to Run
-
-From the project root directory, execute the following commands
-
 ## Advanced Attack Simulation Demo
 
 ```bash

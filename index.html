@@ -142,10 +142,9 @@
 <nav aria-label="Main Navigation">
     <a href="#about">About</a>
     <a href="#architecture">Architecture</a>
-    <a href="#use-cases">Use Cases</a>
-    <a href="#demo">Demo</a>
-    <a href="#documentation">Docs</a>
-    <a href="#support">Support</a>
+    <a href="#features">Features</a>
+    <a href="#documentation">Documentation</a>
+    <a href="#security">Security</a>
 </nav>
 
 <section id="about">
@@ -396,15 +395,21 @@ See the <a href="https://github.com/secwexen/aapp-mart/blob/main/demo/attack_rep
 <h3>Supported Operating Systems</h3>
 
 <ul>
-  <li>Windows 10 / 11</li>
-  <li>Linux (Ubuntu 22.04+, Debian 11+)</li>
-  <li>macOS (Intel and Apple Silicon)</li>
+  <li>Linux (primary, production & deployment recommended)</li>
+  <li>Windows (WSL2 + Docker required for full compatibility)</li>
+  <li>macOS (Docker or native development supported)</li>
 </ul>
 
 <h3>Requirements</h3>
 
 <ul>
-  <li>Python <strong>3.11+</strong></li>
+  <li>Python 3.11+</li>
+  <li>Go 1.21+</li>
+  <li>C++17+</li>
+  <li>Node.js 18+ (frontend / visualization layer)</li>
+  <li>Docker</li>
+  <li>Kubernetes (for deployment)</li>
+  <li>YAML / JSON-based configuration ecosystem</li>
 </ul>
 </section>
 
@@ -438,11 +443,9 @@ For full details, refer to the
 
   <ul>
     <li><a href="https://github.com/secwexen/aapp-mart/blob/main/docs/guides/quickstart.md">Quick Start</a></li>
-    <li><a href="https://github.com/secwexen/aapp-mart/blob/main/docs/guides/installation.md">Full Installation Guide</a></li>
+    <li><a href="https://github.com/secwexen/aapp-mart/blob/main/docs/guides/installation.md">Installation Guide</a></li>
     <li><a href="https://github.com/secwexen/aapp-mart/blob/main/docs/reference/api-reference.md">API Reference</a></li>
-    <li><a href="https://github.com/secwexen/aapp-mart/blob/main/docs/architecture/architecture.md">Repository Structure</a></li>
     <li><a href="https://github.com/secwexen/aapp-mart/blob/main/docs/guides/deployment.md">Deployment Guide</a></li>
-    <li><a href="https://github.com/secwexen/aapp-mart/blob/main/docs/ai/risk-model.md">Risk Model</a></li>
     <li><a href="https://github.com/secwexen/aapp-mart/blob/main/SECURITY.md">Security Policy</a></li>
   </ul>
 </section>

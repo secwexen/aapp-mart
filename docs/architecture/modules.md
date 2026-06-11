@@ -1,4 +1,4 @@
-# Project Modules Overview
+# Modules
 
 This document describes the main modules of the repository and their responsibilities.
 

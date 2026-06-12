@@ -1,5 +1,7 @@
 # Commit Convention
 
+Commit convention is a standard format for writing commit messages in a consistent way.
+
 ## Format
 
 `<type>(<scope>): <description>`

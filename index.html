@@ -317,32 +317,6 @@ This software is provided “as is” without warranty of any kind, express or i
 </ul>
 </section>
 
-<section id="conceptual-usage-example">   
-<h2>Conceptual Usage Example</h2>
-
-<p>This example reflects the intended public API design:</p>
-
-<pre><code>import os
-from aapp_mart.core.orchestrator import AAPP_MART
-
-# Initialize the engine with a target IP or hostname
-engine = AAPP_MART(target="<TARGET>")
-
-# Run simulation
-engine.run()
-
-# Retrieve the generated attack-path report
-report = engine.get_report()
-
-# Print a concise summary of the predicted attack paths
-report.export(format="json", path="aapp-mart/logs/attack-path/attack_report_<TARGET>.json")
-</code></pre>
-
-<p>
-See <a href="https://github.com/secwexen/aapp-mart/blob/main/docs/reference/api-reference.md">API Reference</a> for interface details.
-</p>
-</section>
-
 <section id="demo">
   <h2>Demo</h2>
 

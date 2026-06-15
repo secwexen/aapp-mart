@@ -22,10 +22,10 @@ Commit convention is a standard format for writing commit messages in a consiste
 
 ## Examples
 
-- feat(auth): add login with email and password  
-- fix(api): handle null response in user service  
-- docs(readme): update installation instructions  
-- refactor(payment): simplify transaction logic  
-- test(auth): add unit tests for login service  
-- chore(deps): update dependencies  
-- style(ui): fix indentation in header component
+- `feat(auth)`: add login with email and password  
+- `fix(api)`: handle null response in user service  
+- `docs(readme)`: update installation instructions  
+- `refactor(payment)`: simplify transaction logic  
+- `test(auth)`: add unit tests for login service  
+- `chore(deps)`: update dependencies  
+- `style(ui)`: fix indentation in header component

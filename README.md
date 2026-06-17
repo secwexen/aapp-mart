@@ -238,4 +238,4 @@ Active development. Core modules are under implementation.
 
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
-[Read SECURITY](SECURITY.md) for instructions on reporting issues securely.
+See [SECURITY](SECURITY.md) for instructions on reporting issues securely.

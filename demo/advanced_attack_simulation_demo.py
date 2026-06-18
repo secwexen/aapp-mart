@@ -153,7 +153,7 @@ class ReportExporter:
 
 def main():
 
-    target = "192.168.1.10"
+    target = "10.10.20.15"
 
     engine = AAPPMartDemo(target=target)
 

@@ -1,5 +1,5 @@
 {
-    "target": "192.168.1.10",
+    "target": "10.10.20.15",
     "risk_score": 9.1,
     "attack_path": [
         {

@@ -125,7 +125,7 @@ python demo/advanced_attack_simulation_demo.py
 
 === Risk Summary ===
 
-Target              : 192.168.1.10
+Target              : 10.10.20.15
 Risk Score          : 8.9/10
 Duration            : 11.2s
 Compromised Assets  : 3

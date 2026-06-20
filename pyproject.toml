@@ -20,6 +20,7 @@ keywords = [
   "artificial-intelligence",
   "cybersecurity",
   "offensive-security",
+  "red-team",
   "security-automation",
   "blue-team",
   "multi-agent-system",
@@ -27,13 +28,11 @@ keywords = [
   "defensive-security",
   "cyber-range",
   "attack-graph",
-  "adversary-simulation",
+  "risk-scoring",
+  "purple-team",
   "attack-simulation",
-  "nist-cybersecurity-framework",
   "threat-simulation",
-  "ai-cybersecurity",
-  "attack-path-prediction",
-  "red-team-simulation"
+  "attack-path-prediction"
 ]
 
 classifiers = [

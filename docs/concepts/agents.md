@@ -1,3 +1,3 @@
 # Agents
 
-**MART** (Multi-Agent Red Team Simulation Engine)
+AAPP-MART uses specialized autonomous agents to emulate realistic adversary behavior across the attack lifecycle.

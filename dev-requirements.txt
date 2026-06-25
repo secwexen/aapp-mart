@@ -27,4 +27,4 @@ pre-commit>=4.6.0
 tox>=4.55.1
 
 # === Notebook / analysis tools ===
-jupyterlab>=4.5.9
+jupyterlab>=4.6.0

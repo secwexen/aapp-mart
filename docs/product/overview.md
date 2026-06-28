@@ -4,32 +4,13 @@
 
 This project goes beyond traditional static vulnerability scanning by combining predictive analytics and autonomous red-team style simulations. Its architecture supports **continuous security evaluation**, enabling defenders to anticipate attack strategies and validate defensive controls before breaches occur.
 
-## Key Capabilities
+At the core of AAPP-MART are two tightly integrated subsystems:
 
-- **Attack Path Prediction** – Analyzes assets, configurations, and known vulnerabilities to build predicted exploitation chains.
-- **Multi-Agent Simulation** – Employs autonomous AI agents that emulate realistic adversary behavior to simulate attacks end-to-end.
-- **Risk Scoring & Reporting** – Produces structured findings and risk scores, helping teams prioritize remediation.
-- **Alignment with MITRE ATT&CK** – Maps simulation results to standard adversary tactics and techniques for defensible analysis.
+- **AAPP (AI-Autonomous Attack Path Prediction)**, which analyzes assets, identities, configurations, permissions, vulnerabilities, and relationships to forecast the most probable attack paths an adversary may exploit.
+- **MART (Multi-Agent Red Team Simulation Engine)**, which coordinates autonomous agents that emulate realistic attacker behavior across multiple stages of the cyber kill chain, including reconnaissance, initial access, lateral movement, privilege escalation, persistence, and reporting.
 
-**Example Attack Path:**
+These components are orchestrated through a centralized knowledge graph that continuously maintains the security state of the target environment. By correlating infrastructure relationships with simulated adversarial actions, AAPP-MART produces data-driven attack-path analysis and realistic risk assessments that reflect how an actual attacker could progress through a network.
 
-```
-User Credential → Phishing Exploit → Initial Access → Lateral Movement → Privilege Escalation → Critical Asset Compromise
-```
+The platform is designed with extensibility and automation in mind. A modular architecture allows researchers and security teams to integrate custom agents, attack techniques, risk models, and visualization components while maintaining a consistent orchestration framework. This flexibility makes AAPP-MART suitable for security research, enterprise security validation, detection engineering, red team exercises, and continuous security assessment workflows.
 
-## Why AAPP-MART?
-
-Modern computing environments are too complex for purely reactive or playbook-based security tools.
-AAPP-MART’s predictive and adaptive design enables organizations to move security validation earlier into their workflows and to identify high-impact risk scenarios that might otherwise be overlooked.
-
-## Target Users
-
-- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
-- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
-- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
-- Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
-
-## Usage Context
-
-AAPP-MART is intended for **authorized security evaluation**, penetration testing, research, and defensive validation.
-It integrates with real-world workflows where understanding potential attack surfaces and adversary strategies yields stronger security postures.
+Rather than focusing solely on identifying individual vulnerabilities, AAPP-MART emphasizes understanding **how vulnerabilities interact within an environment**, how attackers chain them together, and which attack paths present the greatest organizational risk. The resulting intelligence helps organizations prioritize remediation efforts, validate defensive controls, improve detection coverage, and make informed security decisions based on realistic adversarial behavior.

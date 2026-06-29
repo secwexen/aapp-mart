@@ -6,9 +6,9 @@ AAPP‑MART is a modular, multi‑agent red team simulation framework powered by
 
 AAPP‑MART is built around three core components that work together to simulate realistic offensive security behavior:
 
-- **AAPP (AI-Autonomous Attack Path Prediction)** — Analyzes the target environment and predicts potential attack paths based on vulnerabilities, configurations, and system topology.
-- **MART (Multi‑Agent Red Team Simulation Engine)** — Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
-- **Orchestrator** — Coordinates agents, manages execution flow, aggregates results, and generates reports.
+- AAPP (AI-Autonomous Attack Path Prediction) — Analyzes the target environment and predicts potential attack paths based on vulnerabilities, configurations, and system topology.
+- MART (Multi‑Agent Red Team Simulation Engine) — Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
+- Orchestrator — Coordinates agents, manages execution flow, aggregates results, and generates reports.
 
 Each component is designed as an independent module to ensure extensibility and maintainability.
 
@@ -18,10 +18,10 @@ Agents are the core of the simulation engine. Each agent represents a specific o
 
 Key requirements for creating a new agent:
 
-- Implement the shared **BaseAgent** interface.
-- Define the agent’s **role**, **decision logic**, and **action set**.
+- Implement the shared BaseAgent interface.
+- Define the agent’s role, decision logic, and action set.
 - Ensure outputs follow the standardized event format used by the Orchestrator.
-- Map agent actions to **MITRE ATT&CK** techniques when applicable.
+- Map agent actions to MITRE ATT&CK techniques when applicable.
 - Keep the agent modular so it can be enabled or disabled independently.
 
 Agents should be deterministic in structure but flexible in behavior to support dynamic simulation scenarios.
@@ -44,7 +44,7 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone repository
-git clone https://github.com/secwexen/aapp-mart.git
+git clone https://github.com/<your-username>/aapp-mart.git
 cd aapp-mart
 
 # Create virtual environment
@@ -75,7 +75,7 @@ git checkout -b feature/new-module
 
 To maintain consistency across the project:
 
-- Follow **PEP8** style guidelines.
+- Follow PEP8 style guidelines.
 - Use clear and descriptive docstrings for all functions and classes.
 - Keep modules small, focused, and reusable.
 - Avoid unnecessary dependencies.

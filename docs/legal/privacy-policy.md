@@ -1,12 +1,12 @@
 # Privacy Policy
 
-AAPP-MART respects your privacy. This project is designed for **authorized security research and enterprise security teams**.
+AAPP-MART respects your privacy. This project is designed for authorized security research and enterprise security teams.
 
 ## 1. Information We Collect
 
-- **Usage Data:** Anonymous analytics to understand interactions with documentation, examples, or optional interfaces.
-- **Session Information:** Temporary data to support simulations, API requests, and workflow operations.
-- **No Personal Data:** AAPP-MART does not collect or store personally identifiable information (PII) unless explicitly added by users for testing in their authorized environments.
+- Usage Data: Anonymous analytics to understand interactions with documentation, examples, or optional interfaces.
+- Session Information: Temporary data to support simulations, API requests, and workflow operations.
+- No Personal Data: AAPP-MART does not collect or store personally identifiable information (PII) unless explicitly added by users for testing in their authorized environments.
 
 ## 2. How We Use Information
 
@@ -16,7 +16,7 @@ AAPP-MART respects your privacy. This project is designed for **authorized secur
 
 ## 3. Data Sharing
 
-- AAPP-MART **does not share any data with third parties**.  
+- AAPP-MART does not share any data with third parties.  
 - All usage data remains local to the user environment or within authorized enterprise deployments.  
 
 ## 4. Data Security

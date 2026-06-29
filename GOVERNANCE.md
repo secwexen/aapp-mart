@@ -8,17 +8,17 @@ The purpose of this governance model is to ensure transparent decision-making, c
 
 ## Roles and Responsibilities
 
-- **Maintainers**
+- Maintainers
   - Responsible for reviewing and merging pull requests.
   - Ensure code quality, security, and compliance.
   - Manage releases and documentation updates.
 
-- **Contributors**
+- Contributors
   - Submit issues, bug reports, and feature requests.
   - Provide code contributions via pull requests.
   - Participate in discussions and community support.
 
-- **Community Members**
+- Community Members
   - Engage in discussions.
   - Share feedback and ideas.
   - Help improve documentation and usability.
@@ -31,7 +31,7 @@ The purpose of this governance model is to ensure transparent decision-making, c
 
 ## Release Management
 
-- Regular releases are scheduled every **quarter**.  
+- Regular releases are scheduled every quarter.  
 - Security patches and hotfixes are released as needed.  
 - Releases are documented in [CHANGELOG.md](CHANGELOG.md).
 

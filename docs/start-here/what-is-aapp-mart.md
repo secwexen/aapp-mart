@@ -4,12 +4,12 @@
 
 It combines:
 
-- **AI-Autonomous Attack Path Prediction** – Forecasts how an attacker could navigate your network.
-- **Multi-Agent Red Team Simulation Engine** – Emulates realistic attacker behavior using multiple collaborating agents.
-- **Graph-based threat modeling** – Builds attack graphs from vulnerabilities, assets, and relationships.
-- **Risk-based analysis** – Prioritizes vulnerabilities and predicts likely attack vectors.
+- AI-Autonomous Attack Path Prediction – Forecasts how an attacker could navigate your network.
+- Multi-Agent Red Team Simulation Engine – Emulates realistic attacker behavior using multiple collaborating agents.
+- Graph-based threat modeling – Builds attack graphs from vulnerabilities, assets, and relationships.
+- Risk-based analysis – Prioritizes vulnerabilities and predicts likely attack vectors.
 
-Unlike traditional scanners or breach & attack simulation (BAS) tools, AAPP-MART **predicts, simulates, and visualizes attacks** in a realistic, repeatable, and safe manner.
+Unlike traditional scanners or breach & attack simulation (BAS) tools, AAPP-MART predicts, simulates, and visualizes attacks in a realistic, repeatable, and safe manner.
 
 ## Key Benefits
 

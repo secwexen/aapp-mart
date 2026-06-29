@@ -6,14 +6,14 @@ This guide explains how to set up the framework for local development, testing, 
 
 Before installing AAPP‑MART, ensure your environment meets the following requirements:
 
-- Python **3.11**
+- Python 3.11
 
 ## 1. Clone the Repository
 
 Use Git to clone the AAPP‑MART repository:
 
 ```bash
-git clone https://github.com/secwexen/aapp-mart.git
+git clone https://github.com/<your-username>/aapp-mart.git
 cd aapp-mart
 ```
 

@@ -40,7 +40,7 @@ This allows the model to prioritize more critical assets in scoring and reportin
 
 ## 4. CVSS Integration
 
-If vulnerability scan data is provided, the system can incorporate **CVSS (Common Vulnerability Scoring System)** metrics aligned with FIRST standards.  
+If vulnerability scan data is provided, the system can incorporate CVSS (Common Vulnerability Scoring System) metrics aligned with FIRST standards.  
 
 - CVSS values act as input modifiers, not sole determinants.
 - This integration enhances risk scoring accuracy while maintaining deterministic control.
@@ -59,7 +59,7 @@ This ensures transparency and supports reproducibility of the results.
 
 AAPP-MART is designed as a controlled simulation engine. Safeguards include:
 
-- **Non-destructive simulation enforcement**
+- Non-destructive simulation enforcement
 - No payload execution
 - No arbitrary command execution on targets
 - No uncontrolled exploitation logic

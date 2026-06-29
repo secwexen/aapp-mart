@@ -10,10 +10,10 @@ AAPP-MART is positioned as the enterprise choice for autonomous attack path pred
 
 ## Key Differentiators
 
-- **AI-Native Simulation**: Unlike traditional tools, AAPP-MART leverages machine learning to predict and prioritize likely attack paths unique to each enterprise environment.
-- **Multi-Agent Red Team**: Orchestrates coordinated, intelligent agents to mimic advanced persistent threats (APTs) and multi-vector attacks.
-- **Comprehensive Reporting**: Executive-level summaries and technical breakdowns for all stakeholders, supporting transparency and regulatory needs.
-- **Integration-Ready**: Designed to work with SIEM, SOAR and vulnerability management platforms for a unified security ecosystem.
+- AI-Native Simulation: Unlike traditional tools, AAPP-MART leverages machine learning to predict and prioritize likely attack paths unique to each enterprise environment.
+- Multi-Agent Red Team: Orchestrates coordinated, intelligent agents to mimic advanced persistent threats (APTs) and multi-vector attacks.
+- Comprehensive Reporting: Executive-level summaries and technical breakdowns for all stakeholders, supporting transparency and regulatory needs.
+- Integration-Ready: Designed to work with SIEM, SOAR and vulnerability management platforms for a unified security ecosystem.
 
 ## Target Users
 

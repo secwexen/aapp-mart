@@ -4,7 +4,7 @@ This document outlines testing procedures, quality checks, and best practices fo
 
 ## 1. Unit Testing
 
-Unit tests ensure individual modules behave as expected. All new features or bug fixes **must** include corresponding tests.
+Unit tests ensure individual modules behave as expected. All new features or bug fixes must include corresponding tests.
 
 ### Run All Unit Tests
 
@@ -47,9 +47,9 @@ Linting ensures readability, maintainability, and reduces errors.
 
 Integration tests validate interactions between:
 
-- **AAPP** (AI-Autonomous Attack Path Prediction)
-- **MART** (Multi-Agent Red Team Simulation Engine)
-- **CORE** (Simulation Brain / Orchestrator)
+- AAPP (AI-Autonomous Attack Path Prediction)
+- MART (Multi-Agent Red Team Simulation Engine)
+- CORE (Simulation Brain / Orchestrator)
 
 Check that:
 

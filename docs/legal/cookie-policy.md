@@ -14,4 +14,4 @@ Cookies are small text files stored on your device when you use web applications
 ## 3. Managing Cookies
 
 You may choose to disable cookies via your browser settings.  
-Please note that **disabling essential cookies may affect certain functionalities** of AAPP-MART, such as session management or preference saving.
+Please note that disabling essential cookies may affect certain functionalities of AAPP-MART, such as session management or preference saving.

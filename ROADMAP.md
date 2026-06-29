@@ -1,6 +1,6 @@
 # Roadmap
 
-This document outlines the planned evolution of **AAPP-MART** as an open-source research and security simulation platform.  
+This document outlines the planned evolution of AAPP-MART as an open-source research and security simulation platform.  
 
 ## Short Term (Next Releases)
 

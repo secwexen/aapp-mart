@@ -14,4 +14,4 @@ We thank all contributors who have helped improve this project through code cont
 
 ---
 
-*If you believe your organization should be listed here, please open a pull request or contact the maintainers.*
+If you believe your organization should be listed here, please open a pull request or contact the maintainers.

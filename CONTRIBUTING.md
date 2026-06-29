@@ -1,13 +1,14 @@
 # Contributing to AAPP-MART 
 
-Thank you for your interest in contributing to AAPP-MART.  
-We welcome contributions that improve code quality, security, and documentation.
+Thank you for your interest in contributing to AAPP-MART.
+
+We welcome contributions that improve code quality, security, documentation, and maintainability.
 
 ## Project Overview
 
 For planned features and project direction, see [ROADMAP.md](ROADMAP.md).
 
-## Contribution Types Accepted
+## Ways to Contribute
 
 You may contribute in several ways:
 
@@ -22,7 +23,7 @@ You may contribute in several ways:
 
 1. Fork the repository
 ```bash
-git clone https://github.com/secwexen/aapp-mart.git
+git clone https://github.com/<your-username>/aapp-mart.git
 cd aapp-mart
 ```
 
@@ -52,11 +53,11 @@ pytest tests/
 ```
 - All new features must align with the documented architecture.
 - Avoid introducing breaking changes without discussion.
-- Keep code compatible with the project license (Apache-2.0 License).
+- Keep code compatible with the project Apache-2.0 license.
   
 ## Branching and Merge Policy
 
-- Use descriptive branch names: `feature/*`, `fix/*`, `docs/*`
+- Use descriptive branch names: `feature/*`, `fix/*`, `docs/*`, `chore/*`, `refactor/*`, `test/*`
 - Base your branch on the latest `main`
 - Before merging, rebase or squash commits to maintain a clean history
 - Merges should be performed via Pull Request after review
@@ -77,7 +78,7 @@ All pull requests must:
 - Pass all CI checks (unit tests, linting, formatting)
 - Include a clear description of the changes
 - Reference related issues or discussions when applicable
-- Include necessary documentation updates if functionality or CLI changes
+- Include necessary documentation updates if functionality, APIs, or CLI changes
 
 ### Code Review Process
 
@@ -95,7 +96,7 @@ All pull requests must:
 
 AAPP-MART is a security-focused project.
 
-- Contributions must **not include exploit code**, malware, or content intended for illegal use.  
+- Contributions must not include exploit code, malware, or content intended for illegal use.  
 - Contributions must remain within the scope of controlled, non-destructive security simulation.
 
 Security issues should be reported according to the [SECURITY.md](SECURITY.md) policy.
@@ -113,6 +114,6 @@ For full license details, see [LICENSE](LICENSE).
 
 ## Thank You
 
-Thank you for helping improve AAPP-MART!
+Thank you for helping improve AAPP-MART.
 
 Your contributions, feedback, and participation help improve the quality, security, and sustainability of the project and are greatly appreciated.

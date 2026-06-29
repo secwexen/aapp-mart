@@ -23,21 +23,21 @@ The system generates structured **attack-path reports**, **MITRE ATT&CK-mapped i
 
 AAPP-MART stands out from traditional security tools in its approach:
 
-- **Traditional scanners** → static, reactive, often limited to known vulnerabilities.
-- **BAS (Breach & Attack Simulation) tools** → rely on predefined playbooks and limited scenarios.
-- **AAPP-MART** → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
+- Traditional scanners → static, reactive, often limited to known vulnerabilities.
+- BAS (Breach & Attack Simulation) tools → rely on predefined playbooks and limited scenarios.
+- AAPP-MART → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
 
-By combining **AI-Autonomous Attack Path Prediction** with **Multi-Agent Red Team Simulation Engine**, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
+By combining AI-Autonomous Attack Path Prediction with Multi-Agent Red Team Simulation Engine, AAPP-MART provides organizations with a forward-looking security posture, not just reactive alerts.
 
 ## Use Cases
 
 AAPP-MART enables advanced, intelligence-driven security operations through the following core use cases:
 
-- **Predictive Attack Path Analysis**
-- **Autonomous Red Team Simulation**
-- **Attack Surface & Lateral Movement Modeling**
-- **MITRE ATT&CK–Aligned Threat Simulation**
-- **Vulnerability Prioritization & Risk Scoring**
+- Predictive Attack Path Analysis
+- Autonomous Red Team Simulation
+- Attack Surface & Lateral Movement Modeling
+- MITRE ATT&CK–Aligned Threat Simulation
+- Vulnerability Prioritization & Risk Scoring
 
 ## How it Works
 
@@ -64,9 +64,9 @@ Coordinates AAPP & MART, maintains a global knowledge graph, executes simulation
 
 The system is architected around three primary subsystems:
 
-- **AI-Attack Path Prediction Engine (AAPP)**
-- **Multi-Agent Red Team Simulation Engine (MART)**
-- **Core Orchestration Layer**
+- AI-Attack Path Prediction Engine (AAPP)
+- Multi-Agent Red Team Simulation Engine (MART)
+- Core Orchestration Layer
 
 These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the platform.
 
@@ -95,10 +95,10 @@ This software is provided “as is” without warranty of any kind, express or i
 
 ## Features
 
-- **AI-Autonomous Attack Path Prediction**
-- **Multi-Agent Red Team Simulation Engine**
+- AI-Autonomous Attack Path Prediction
+- Multi-Agent Red Team Simulation Engine
 - Graph-based threat modeling and attack graph analysis
-- **MITRE ATT&CK aligned adversary behavior modeling**
+- MITRE ATT&CK-aligned adversary behavior modeling
 - Risk-based security posture analysis
 - ML-assisted vulnerability prioritization
 
@@ -217,7 +217,7 @@ See [CONTRIBUTING](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 
-The development of **AAPP-MART** follows a structured roadmap focused on improving attack path prediction, Multi-Red Team Simulation Engine, and security research capabilities.
+The development of AAPP-MART follows a structured roadmap focused on improving attack path prediction, Multi-Agent Red Team Simulation Engine, and security research capabilities.
 
 Planned improvements include:
 

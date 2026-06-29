@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 ## AAPP-MART — Initial Open Source Release
 
-Welcome to the first open‑source release of **AAPP‑MART**.  
+Welcome to the first open‑source release of AAPP‑MART.  
 This version introduces the core architecture, modules, APIs, Helm charts, observability components, and documentation that form the foundation of the project.
 
 ## Core Features
@@ -49,11 +49,11 @@ Public demo includes attack path visualization, sample CVE mapping, and network 
 
 ## Highlights in v1.1.0
 
-- **Attack Path Demo:** Introduced a simplified attack graph demo notebook to showcase potential attack paths in sample networks.  
-- **CVE Mapping Integration:** Added CVE data mapping for sample services to demonstrate vulnerability impact.  
-- **Network Simulation Module:** Included a network simulation framework for generating sample topologies and assets.  
-- **Documentation Updated:** `README.md` and `docs/features.md` updated to reflect new public features.  
-- **Examples Provided:** Demo scripts and notebook available under `examples/notebooks` and `examples/scripts`.
+- Attack Path Demo: Introduced a simplified attack graph demo notebook to showcase potential attack paths in sample networks.  
+- CVE Mapping Integration: Added CVE data mapping for sample services to demonstrate vulnerability impact.  
+- Network Simulation Module: Included a network simulation framework for generating sample topologies and assets.  
+- Documentation Updated: `README.md` and `docs/features.md` updated to reflect new public features.  
+- Examples Provided: Demo scripts and notebook available under `examples/notebooks` and `examples/scripts`.
 
 ## What's Changed
 
@@ -67,6 +67,4 @@ Public demo includes attack path visualization, sample CVE mapping, and network 
 * Bump docker/build-push-action from 6 to 7 by @dependabot[bot] in https://github.com/secwexen/aapp-mart/pull/65
 * Bump azure/login from 2.3.0 to 3.0.0 by @dependabot[bot] in https://github.com/secwexen/aapp-mart/pull/68
 * Bump release-drafter/release-drafter from 6 to 7 by @dependabot[bot] in https://github.com/secwexen/aapp-mart/pull/66
-
-
 **Full Changelog**: https://github.com/secwexen/aapp-mart/compare/v1.0.1...v1.1.0

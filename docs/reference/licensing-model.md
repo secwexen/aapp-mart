@@ -6,13 +6,13 @@ AAPP‑MART is developed as a hybrid open-source project. Core components are fu
 
 The following components are fully open and available to the community:
 
-- **Core simulation engine**  
-- **MART agent framework**  
-- **MITRE ATT&CK integration layer**  
-- **Attack graph engine**  
-- **Reporting templates**  
-- **Documentation, examples, and developer guides**  
-- **Testing framework**  
+- Core simulation engine  
+- MART agent framework  
+- MITRE ATT&CK integration layer  
+- Attack graph engine  
+- Reporting templates  
+- Documentation, examples, and developer guides  
+- Testing framework  
 
 These modules form the foundation of the platform and enable community collaboration, research, and extensibility.
 
@@ -22,12 +22,12 @@ Certain advanced modules and resources cannot be included in the open‑source r
 
 Proprietary modules include:
 
-- **Machine learning models and model artifacts**  
-- **Offline threat intelligence datasets**  
-- **Reinforcement learning training pipelines**  
-- **Offline mode resources** (embeddings, cached data)  
-- **Security‑sensitive production configurations**  
-- **SIEM and enterprise integrations** (Splunk, Elastic, QRadar)
+- Machine learning models and model artifacts  
+- Offline threat intelligence datasets  
+- Reinforcement learning training pipelines  
+- Offline mode resources (embeddings, cached data)  
+- Security‑sensitive production configurations  
+- SIEM and enterprise integrations (Splunk, Elastic, QRadar)
 
 This separation ensures security, controlled distribution, and long‑term maintainability.
 
@@ -35,7 +35,7 @@ This separation ensures security, controlled distribution, and long‑term maint
 
 This hybrid model ensures:
 
-- **Transparency** for core research and community development  
-- **Security** for sensitive components  
-- **Commercial sustainability** for enterprise‑grade features  
-- **A clear separation** between open‑source and proprietary modules  
+- Transparency for core research and community development  
+- Security for sensitive components  
+- Commercial sustainability for enterprise‑grade features  
+- A clear separation between open‑source and proprietary modules  

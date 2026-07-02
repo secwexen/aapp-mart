@@ -165,7 +165,7 @@ See the [Attack Simulation Report - 10.10.20.15](demo/attack_report_10.10.20.15.
 
 ```bash
 # Clone repository
-git clone https://github.com/secwexen/aapp-mart.git
+git clone https://github.com/(your-username)/aapp-mart.git
 cd aapp-mart
 
 # Create virtual environment

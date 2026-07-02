@@ -177,7 +177,7 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 
 # Install dev dependencies
-pip install -r dev-requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.

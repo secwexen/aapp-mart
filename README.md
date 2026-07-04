@@ -154,8 +154,6 @@ See the [Attack Simulation Report - 10.10.20.15](demo/attack_report_10.10.20.15.
 ### Requirements
 
 - Python 3.11+
-- Go 1.21+
-- Node.js 18+ (frontend / visualization layer)
 - Docker
 - Kubernetes (for deployment)
 - YAML / JSON-based configuration ecosystem

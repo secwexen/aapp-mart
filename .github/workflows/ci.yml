@@ -36,7 +36,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install -r dev-requirements.txt
+          pip install -r requirements-dev.txt
 
       - name: Lint (pylint)
         run: pylint $(git ls-files '*.py')

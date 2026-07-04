@@ -7,9 +7,6 @@ This guide explains how to set up the framework for local development, testing, 
 Before installing AAPP‑MART, ensure your environment meets the following requirements:
 
 - Python 3.11+
-- Go 1.21+
-- C++17+
-- Node.js 18+ (frontend / visualization layer)
 - Docker
 - Kubernetes (for deployment)
 - YAML / JSON-based configuration ecosystem

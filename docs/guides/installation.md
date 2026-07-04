@@ -6,13 +6,20 @@ This guide explains how to set up the framework for local development, testing, 
 
 Before installing AAPP‑MART, ensure your environment meets the following requirements:
 
-- Python 3.11
+- Python 3.11+
+- Go 1.21+
+- C++17+
+- Node.js 18+ (frontend / visualization layer)
+- Docker
+- Kubernetes (for deployment)
+- YAML / JSON-based configuration ecosystem
 
 ## 1. Clone the Repository
 
 Use Git to clone the AAPP‑MART repository:
 
 ```bash
+# Clone repository
 git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 ```
@@ -24,9 +31,10 @@ Creating a virtual environment keeps dependencies isolated.
 ### Using `venv`:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate   # Linux / macOS
-venv\Scripts\activate      # Windows
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 ```
 
 ## 3. Install Dependencies
@@ -34,13 +42,9 @@ venv\Scripts\activate      # Windows
 Install all required Python packages:
 
 ```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Install dev dependencies
+pip install -r requirements-dev.txt
 ```
-
-If you are developing the framework, install it in editable mode:
-
-```bash
-pip install -e .
-```
-
-This allows you to modify the source code without reinstalling.

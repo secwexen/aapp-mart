@@ -13,7 +13,7 @@ Before installing AAPP‑MART, ensure your environment meets the following requi
 Use Git to clone the AAPP‑MART repository:
 
 ```bash
-git clone https://github.com/<your-username>/aapp-mart.git
+git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 ```
 

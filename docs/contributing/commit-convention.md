@@ -16,7 +16,7 @@ Commit convention is a standard format for writing commit messages in a consiste
 - chore    - Build process or auxiliary tool changes  
 - style    - Formatting, whitespace, etc. (no code logic change)
 
-## Scope (optional)
+## Scope
 
 - Indicates the part of the codebase affected (e.g. auth, api, ui, database, config)
 

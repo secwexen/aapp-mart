@@ -1,6 +1,4 @@
 # Ethics & Responsible Use Guidelines
-
-## Purpose
  
 This document outlines ethical guidelines for using the repository and its content.
 

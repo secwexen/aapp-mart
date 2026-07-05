@@ -106,8 +106,6 @@ aapp-mart/
 │       │   ├─── data/
 │       │   │   └─── sample_targets/
 │       │   └─── examples/
-│       │           
-│       ├─── common/
 │       │       
 │       ├─── cve/
 │       │       

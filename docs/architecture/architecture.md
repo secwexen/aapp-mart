@@ -27,7 +27,7 @@ aapp-mart/
 │   CITATION.cff
 │   CODE_OF_CONDUCT.md
 │   CONTRIBUTING.md
-│   dev-requirements.txt
+│   requirements-dev.txt
 │   DISCLAIMER.md
 │   Dockerfile
 │   GOVERNANCE.md
@@ -53,10 +53,6 @@ aapp-mart/
 │   └─── images/
 │           
 ├─── configs/
-│       
-├─── dashboard/
-│   ├─── backend/ 
-│   └─── visualizations/
 │           
 ├─── data/
 │   └─── sample_targets/

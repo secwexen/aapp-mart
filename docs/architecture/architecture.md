@@ -72,13 +72,12 @@ aapp-mart/
 │   ├─── research/
 │   └─── start-here/
 │           
-├───examples/
-│   ├───scripts/
-│   └───tutorials/
+├─── examples/
+│   └─── scripts/
 │           
 ├─── helm/
-│   └───aapp-mart/
-│       └───templates/
+│   └─── aapp-mart/
+│       └─── templates/
 │               
 ├─── observability/
 │   ├─── grafana_dashboards/     

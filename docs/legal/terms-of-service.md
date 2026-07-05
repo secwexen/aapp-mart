@@ -1,6 +1,6 @@
 # Terms of Service
 
-These Terms govern the use of AAPP-MART, an open-source platform for security research and enterprise testing. By using it, you agree to the conditions below.
+These Terms govern the use of AAPP-MART, an open-source system for security research and enterprise testing. By using it, you agree to the conditions below.
 
 ## 1. Acceptance of Terms  
 

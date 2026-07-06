@@ -5,7 +5,6 @@ from pathlib import Path
 from dataclasses import dataclass, asdict
 from typing import List
 
-
 # =========================
 # Data Models
 # =========================
@@ -27,7 +26,6 @@ class SimulationReport:
     compromised_assets: List[str]
     generated_at: str
     duration: float
-
 
 # =========================
 # Demo Engine
@@ -121,7 +119,6 @@ class AAPPMartDemo:
         prefix = "[✓]" if success else "[*]"
         print(f"{prefix} {message}")
 
-
 # =========================
 # Report Export
 # =========================
@@ -145,7 +142,6 @@ class ReportExporter:
             json.dump(report_data, f, indent=4)
 
         print(f"\n[+] Report exported → {output_path}")
-
 
 # =========================
 # Main

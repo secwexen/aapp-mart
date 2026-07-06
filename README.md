@@ -177,7 +177,7 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
 
-For full details, refer to the [Quick Start](docs/guides/quickstart.md) file.
+For full details, refer to the [Quick Start](docs/getting-started/quickstart.md) file.
 
 ## Documentation
 

@@ -30,6 +30,7 @@ aapp-mart/
 │   requirements-dev.txt
 │   DISCLAIMER.md
 │   Dockerfile
+│   docker-compose.yml
 │   GOVERNANCE.md
 │   LICENSE
 │   LICENSE‑3RD‑PARTY.md
@@ -47,7 +48,6 @@ aapp-mart/
 │   SBOM.md
 │   SECURITY.md
 │   SUPPORT.md
-│   trivyignore
 │           
 ├─── assets/
 │   └─── images/

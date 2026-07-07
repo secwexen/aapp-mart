@@ -7,7 +7,7 @@ All demos are safe, non-destructive simulations intended for showcasing attack-p
 ## Advanced Attack Simulation Demo
 
 ```bash
-python demo/advanced_attack_simulation_demo.py
+python demo/advanced_attack_simulation.py
 ```
 
 ### Advanced Attack Simulation Demo Output
@@ -39,7 +39,7 @@ Critical Assets:
 [+] Report exported → aapp-mart/logs/attack-path/attack_report_10.10.20.15.json
 ```
 
-See the [Attack Simulation Report - 10.10.20.15](demo/attack_report_10.10.20.15.json) file.
+See the [Attack Simulation Report](demo/reports/attack_report.json) file.
 
 > [!NOTE]
 > This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.

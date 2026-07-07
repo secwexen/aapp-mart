@@ -48,13 +48,6 @@ This document outlines the planned evolution of AAPP-MART as an open-source rese
 - Realistic lateral movement modeling
 - Privilege escalation path discovery improvements
 
-### AI-Based Prediction Enhancements
-
-- Graph-based machine learning predictors
-- Reinforcement learning strategy tuning
-- Attack strategy learning from simulation results
-- Predictor benchmarking framework
-
 ### Visualization & Dashboard
 
 - Interactive attack graph explorer
@@ -86,24 +79,6 @@ This document outlines the planned evolution of AAPP-MART as an open-source rese
 - Threat intelligence enrichment
 - ATT&CK-style attack technique mapping
 - Automated attack technique classification
-
-### Plugin Ecosystem
-
-- Plugin framework for:
-  - custom agents
-  - prediction engines
-  - reporting modules
-  - simulation modules
-
-- Community extension marketplace
-- Third-party module support
-
-### Distributed Simulation
-
-- Distributed attack simulations across multiple nodes
-- Parallel simulation execution
-- Large environment modeling
-- Cluster-based simulation execution
 
 ## Developer Experience
 

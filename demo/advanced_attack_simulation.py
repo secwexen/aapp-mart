@@ -169,7 +169,7 @@ def main():
 
     output_file = (
         f"aapp-mart/logs/attack-path/"
-        f"attack_report_{target}.json"
+        f"attack_report.json"
     )
 
     ReportExporter.export_json(report, output_file)

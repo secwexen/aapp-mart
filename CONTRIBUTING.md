@@ -21,18 +21,21 @@ You may contribute in several ways:
 
 ## Getting Started
 
-1. Fork the repository
+### 1. Fork the repository
+
 ```bash
 git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 ```
 
-2. Create a new branch from `main`
+### 2. Create a new branch from `main`
+
 ```bash
 git checkout -b feature/your-feature-name
 ```
 
-3. Set up a local development environment:
+### 3. Set up a local development environment:
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac

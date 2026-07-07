@@ -6,7 +6,7 @@ We welcome contributions that improve code quality, security, documentation, and
 
 ## Project Overview
 
-For planned features and project direction, see [ROADMAP.md](ROADMAP.md).
+For planned features and project direction, see [ROADMAP](ROADMAP.md).
 
 ## Ways to Contribute
 
@@ -23,7 +23,7 @@ You may contribute in several ways:
 
 1. Fork the repository
 ```bash
-git clone https://github.com/<your-username>/aapp-mart.git
+git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 ```
 
@@ -39,7 +39,7 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 
 pip install -r requirements.txt
-pip install -r dev-requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 ## Development Guidelines
@@ -68,7 +68,7 @@ pytest tests/
 - Reference related issues when applicable
 - Squash commits before submitting a pull request
 
-See [commit-convention.md](docs/contributing/commit-convention.md) for full details.
+See [Commit Convention](docs/contributing/commit-convention.md) for full details.
 
 ## Pull Requests
 
@@ -89,7 +89,7 @@ All pull requests must:
 ## Documentation Contributions
 
 - Contributions to the documentation are gladly accepted.
-- Update [README.md](README.md) or other documentation as needed
+- Update [README](README.md) or other documentation as needed
 - Follow Markdown formatting and style conventions
 
 ## Security and Ethics
@@ -99,7 +99,7 @@ AAPP-MART is a security-focused project.
 - Contributions must not include exploit code, malware, or content intended for illegal use.  
 - Contributions must remain within the scope of controlled, non-destructive security simulation.
 
-Security issues should be reported according to the [SECURITY.md](SECURITY.md) policy.
+Security issues should be reported according to the [SECURITY](SECURITY.md) policy.
 
 ## Code of Conduct
 

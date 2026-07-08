@@ -1,6 +1,6 @@
 # Support
 
-Thank you for using AAPP-MART.  
+Thank you for your interest in the **AAPP-MART** project.
 
 We are committed to providing support for users and contributors.
 

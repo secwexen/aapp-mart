@@ -226,10 +226,6 @@ Planned improvements include:
 
 For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
 
-## Development Status
-
-Active development. Core modules are under implementation.
-
 ## Security
 
 If you discover a security vulnerability, please follow our responsible disclosure process.

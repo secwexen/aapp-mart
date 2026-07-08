@@ -31,7 +31,7 @@ This hybrid model ensures:
 - Commercial sustainability for enterprise‑grade features  
 - A clear separation between open‑source and proprietary modules  
 
-## Copyright
+## Open Source License
 
 Copyright © 2026 AAPP-MART. All Rights Reserved.
 

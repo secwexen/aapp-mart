@@ -16,7 +16,7 @@ Submit a new issue labeled `feature-request` to propose enhancements.
 
 If you discover a security vulnerability in AAPP-MART, please report it responsibly.
 
-- Open a [private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new).
+- Open a [Private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new).
 
 ## Response Commitments
 
@@ -26,7 +26,7 @@ If you discover a security vulnerability in AAPP-MART, please report it responsi
 
 ## Contributing
 
-If you would like to contribute, please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+If you would like to contribute, please see [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
 
 ## Community Expectations
 

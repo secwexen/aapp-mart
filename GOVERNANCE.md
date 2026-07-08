@@ -19,7 +19,6 @@ The purpose of this governance model is to ensure transparent decision-making, c
   - Participate in discussions and community support.
 
 - Community Members
-  - Engage in discussions.
   - Share feedback and ideas.
   - Help improve documentation and usability.
 
@@ -33,13 +32,13 @@ The purpose of this governance model is to ensure transparent decision-making, c
 
 - Regular releases are scheduled every quarter.  
 - Security patches and hotfixes are released as needed.  
-- Releases are documented in [CHANGELOG.md](CHANGELOG.md).
+- Releases are documented in [CHANGELOG](CHANGELOG.md).
 
 ## Security and Compliance
 
-- Compliance with open-source licenses is tracked in [NOTICE](NOTICE) and [LICENSE-3RD-PARTY.md](LICENSE-3RD-PARTY.md).
+- Compliance with open-source licenses is tracked in [NOTICE](NOTICE) and [LICENSE-3RD-PARTY](LICENSE-3RD-PARTY.md).
 
 ## Community Guidelines
 
-- All contributors must follow the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).  
+- All contributors must follow the [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md).  
 - Respectful communication and collaboration are expected at all times.

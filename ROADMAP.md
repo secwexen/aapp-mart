@@ -69,16 +69,13 @@ This document outlines the planned evolution of AAPP-MART as an open-source rese
 
 - Large-scale simulation environments
 - Attack campaign modeling
-- Autonomous red-team simulations
 - AI-driven adversary behavior models
 - Threat emulation based on real-world attack patterns
 
 ### Security Knowledge Integration
 
 - Integration with public vulnerability databases
-- Threat intelligence enrichment
 - ATT&CK-style attack technique mapping
-- Automated attack technique classification
 
 ## Developer Experience
 
@@ -95,30 +92,3 @@ This document outlines the planned evolution of AAPP-MART as an open-source rese
 - Predictor stability tests
 - Scenario-based regression tests
 - Continuous simulation validation
-
-## Community & Ecosystem
-
-### Documentation Expansion
-
-- Advanced tutorials
-- Architecture deep dives
-- Research documentation
-- Simulation scenario guides
-
-### Community Collaboration
-
-- Community attack modules
-- Shared simulation scenarios
-- Research collaboration support
-- Contributor-driven feature development
-
-## Future Exploration
-
-The following areas are under research and may appear in future versions:
-
-- autonomous attack planning
-- adaptive red-team agents
-- attack graph neural networks
-- cyber range integration
-- digital twin security simulations
-- AI-driven defense modeling

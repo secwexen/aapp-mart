@@ -45,15 +45,14 @@ This version introduces the core architecture, modules, APIs, Helm charts, obser
 
 ## AAPP-MART – Attack Graph Demo, CVE Mapping & Network Simulation Added
 
-Public demo includes attack path visualization, sample CVE mapping, and network simulation. Core engine and advanced logic remain private.
+Public demo includes attack path visualization, sample CVE mapping, and network simulation.
 
 ## Highlights in v1.1.0
 
-- Attack Path Demo: Introduced a simplified attack graph demo notebook to showcase potential attack paths in sample networks.  
+- Attack Path Demo: Introduced a simplified attack graph demo to showcase potential attack paths in sample networks.  
 - CVE Mapping Integration: Added CVE data mapping for sample services to demonstrate vulnerability impact.  
 - Network Simulation Module: Included a network simulation framework for generating sample topologies and assets.  
-- Documentation Updated: `README.md` and `docs/features.md` updated to reflect new public features.  
-- Examples Provided: Demo scripts and notebook available under `examples/notebooks` and `examples/scripts`.
+- Documentation Updated: `README.md` and `docs/features.md` updated to reflect new public features.
 
 ## What's Changed
 

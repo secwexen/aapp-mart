@@ -1,6 +1,6 @@
 # Roadmap
 
-This document outlines the planned evolution of AAPP-MART as an open-source research and security simulation platform.  
+This document outlines the planned evolution of AAPP-MART as a research and security simulation engine.  
 
 ## Short Term (Next Releases)
 
@@ -9,7 +9,7 @@ This document outlines the planned evolution of AAPP-MART as an open-source rese
 - Improve stability of the core simulation engine
 - Optimize agent scheduling and task orchestration
 - Improve configuration validation and error handling
-- Standardize internal module interfaces
+- Standardize module interfaces
 - Expand logging capabilities and structured logging
 
 ### Attack Graph & Prediction Engine
@@ -34,21 +34,11 @@ This document outlines the planned evolution of AAPP-MART as an open-source rese
 - Interactive CLI mode
 - Improved command help and documentation
 - Simulation templates
-- Batch scanning and automation support
+- Batch simulation and automation support
 
 ## Mid Term
 
-### Advanced Attack Simulation
-
-- Additional MART agents:
-  - cloud attack agent
-  - identity attack agent
-  - container attack agent
-- Multi-stage attack chain simulation
-- Realistic lateral movement modeling
-- Privilege escalation path discovery improvements
-
-### Visualization & Dashboard
+### Visualization & Dashboards
 
 - Interactive attack graph explorer
 - Attack path timeline visualization
@@ -76,19 +66,3 @@ This document outlines the planned evolution of AAPP-MART as an open-source rese
 
 - Integration with public vulnerability databases
 - ATT&CK-style attack technique mapping
-
-## Developer Experience
-
-### SDK & Extension Development
-
-- Developer SDK for creating custom agents
-- Predictor development framework
-- Module testing harness
-- Plugin scaffolding tools
-
-### Testing Infrastructure
-
-- Improved end-to-end simulation testing
-- Predictor stability tests
-- Scenario-based regression tests
-- Continuous simulation validation

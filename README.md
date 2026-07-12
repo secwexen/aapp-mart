@@ -42,7 +42,7 @@ AAPP-MART enables advanced, intelligence-driven security operations through the 
 
 Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
-### 2. MART (Multi-Agent Red Team Simulation Engine)
+### 2. MART (Multi-Agent Red Team Simulation)
 
 Autonomous agents simulate realistic adversary actions:
 

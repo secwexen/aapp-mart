@@ -28,8 +28,6 @@ By combining AI-Autonomous Attack Path Prediction with Multi-Agent Red Team Simu
 
 ## Use Cases
 
-AAPP-MART enables advanced, intelligence-driven security operations through the following core use cases:
-
 - Predictive Attack Path Analysis
 - Autonomous Red Team Simulation
 - Attack Surface & Lateral Movement Modeling
@@ -65,7 +63,7 @@ The system is architected around three primary subsystems:
 - Multi-Agent Red Team Simulation Engine (MART)
 - Core Orchestration Layer (Engine)
 
-These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the platform.
+These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the engine.
 
 ## Legal & Authorized Use Only
 

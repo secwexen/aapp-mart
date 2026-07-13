@@ -28,11 +28,13 @@ By combining AI-Autonomous Attack Path Prediction with Multi-Agent Red Team Simu
 
 ## Use Cases
 
-- Predictive Attack Path Analysis
-- Autonomous Red Team Simulation
-- Attack Surface & Lateral Movement Modeling
-- MITRE ATT&CK–Aligned Threat Simulation
-- Vulnerability Prioritization & Risk Scoring
+- Predictive Attack Path Analysis  
+- Autonomous Red Team Simulation  
+- Attack Surface & Lateral Movement Modeling  
+- MITRE ATT&CK–Aligned Threat Simulation  
+- Vulnerability Prioritization & Risk Scoring  
+- Continuous Security Assessment  
+- Attack Simulation Research
 
 ## How it Works
 
@@ -59,8 +61,8 @@ Coordinates AAPP & MART, maintains a global knowledge graph, executes simulation
 
 The system is architected around three primary subsystems:
 
-- AI-Attack Path Prediction Engine (AAPP)
-- Multi-Agent Red Team Simulation Engine (MART)
+- AI-Autonomous Attack Path Prediction (AAPP)  
+- Multi-Agent Red Team Simulation (MART)  
 - Core Orchestration Layer (Engine)
 
 These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the engine.
@@ -90,12 +92,13 @@ This software is provided “as is” without warranty of any kind, express or i
 
 ## Features
 
-- AI-Autonomous Attack Path Prediction
-- Multi-Agent Red Team Simulation Engine
-- Graph-based threat modeling and attack graph analysis
-- MITRE ATT&CK-aligned adversary behavior modeling
-- Risk-based security posture analysis
-- ML-assisted vulnerability prioritization
+- Autonomous Attack Path Prediction  
+- Multi-Agent Red Team Simulation  
+- Graph-based threat modeling and attack graph analysis  
+- MITRE ATT&CK-aligned adversary behavior modeling  
+- Risk-based security posture analysis  
+- ML-assisted vulnerability prioritization  
+- AI Attack Graph Analysis
 
 ## Demo
 

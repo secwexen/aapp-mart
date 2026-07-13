@@ -65,4 +65,5 @@ Public demo includes attack path visualization, sample CVE mapping, and network 
 * Bump docker/build-push-action from 6 to 7 by @dependabot[bot] in https://github.com/secwexen/aapp-mart/pull/65
 * Bump azure/login from 2.3.0 to 3.0.0 by @dependabot[bot] in https://github.com/secwexen/aapp-mart/pull/68
 * Bump release-drafter/release-drafter from 6 to 7 by @dependabot[bot] in https://github.com/secwexen/aapp-mart/pull/66
+
 **Full Changelog**: https://github.com/secwexen/aapp-mart/compare/v1.0.1...v1.1.0

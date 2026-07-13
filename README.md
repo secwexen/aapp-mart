@@ -210,8 +210,6 @@ See [CONTRIBUTING](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 
-The development of AAPP-MART follows a structured roadmap focused on improving attack path prediction, Multi-Agent Red Team Simulation Engine, and security research capabilities.
-
 Planned improvements include:
 
 - improved AI-based attack path prediction

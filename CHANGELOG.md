@@ -43,7 +43,7 @@ This version introduces the core architecture, modules, APIs, Helm charts, obser
 
 # Release v1.1.0 – 2026-03-19
 
-## AAPP-MART – Attack Graph Demo, CVE Mapping & Network Simulation Added
+## AAPP-MART — Attack Graph Demo, CVE Mapping & Network Simulation Added
 
 Public demo includes attack path visualization, sample CVE mapping, and network simulation.
 

@@ -51,8 +51,7 @@ Public demo includes attack path visualization, sample CVE mapping, and network 
 
 - Attack Path Demo: Introduced a simplified attack graph demo to showcase potential attack paths in sample networks.  
 - CVE Mapping Integration: Added CVE data mapping for sample services to demonstrate vulnerability impact.  
-- Network Simulation Module: Included a network simulation framework for generating sample topologies and assets.  
-- Documentation Updated: `README.md` and `docs/features.md` updated to reflect new public features.
+- Network Simulation Module: Included a network simulation framework for generating sample topologies and assets.
 
 ## What's Changed
 

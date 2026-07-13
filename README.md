@@ -101,8 +101,6 @@ This software is provided “as is” without warranty of any kind, express or i
 
 ## Demo
 
-Run the autonomous attack-path simulation locally:
-
 ```bash
 python demo/advanced_attack_simulation.py
 ```

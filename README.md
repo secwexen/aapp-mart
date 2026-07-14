@@ -63,7 +63,7 @@ The system is architected around three primary subsystems:
 
 - AI-Autonomous Attack Path Prediction (AAPP)  
 - Multi-Agent Red Team Simulation (MART)  
-- Core Orchestration Layer (Engine)
+- Core Orchestration (Engine)
 
 These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the engine.
 

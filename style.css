@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 :root {
   --var-border: #1f2933;
   --var-bg: #0b0f14;
@@ -83,7 +88,7 @@ pre {
     color: #f8f8f2;
     padding: 20px;
     border-radius: 8px;
-    overflow-x: auto;
+    max-width: 100%;
 }
 footer {
     background: #1a1a1a;
@@ -183,5 +188,23 @@ a {
 
     pre {
         font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-center {
+        margin-left: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin-left: 0;
+        text-align: center;
     }
 }

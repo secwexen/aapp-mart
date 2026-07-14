@@ -99,7 +99,7 @@ footer {
     margin: auto;
 }
 .footer-center {
-    text-align: center;
+    margin-left: 130px;
 }
 .footer-left {
     text-align: left;

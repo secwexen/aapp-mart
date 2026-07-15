@@ -10,7 +10,7 @@
 
 ## About
 
-**AAPP‑MART** (AI‑powered Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) is a security engine for **offensive security**, **adversary emulation**, **security validation**, **threat modeling**, and **risk assessment**. It combines **AI‑powered autonomous attack‑path prediction** with **multi‑agent red‑team simulation** to model how real attackers navigate an environment and to reveal actionable, data‑driven security insights.
+**AAPP‑MART** (AI‑Powered Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) is a security engine for **offensive security**, **adversary emulation**, **security validation**, **threat modeling**, and **risk assessment**. It combines **AI‑Powered Autonomous Attack‑Path Prediction** with **Multi‑Agent Red‑Team Simulation** to model how real attackers navigate an environment and to reveal actionable, data‑driven security insights.
 
 Unlike traditional static vulnerability scanners or manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, validate defensive controls, and understand real‑world risk through repeatable, scalable, and intelligence‑driven simulations. 
 
@@ -38,7 +38,7 @@ By combining AI-powered Autonomous Attack Path Prediction with Multi-Agent Red T
 
 ## How it Works
 
-### 1. AAPP (AI-powered Autonomous Attack Path Prediction)
+### 1. AAPP (AI-Powered Autonomous Attack Path Prediction)
 
 Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
@@ -61,7 +61,7 @@ Coordinates AAPP & MART, maintains a global knowledge graph, executes simulation
 
 The system is architected around three primary subsystems:
 
-- AI-powered Autonomous Attack Path Prediction (AAPP)  
+- AI-Powered Autonomous Attack Path Prediction (AAPP)  
 - Multi-Agent Red Team Simulation (MART)  
 - Core Orchestration (Engine)
 
@@ -92,7 +92,7 @@ This software is provided “as is” without warranty of any kind, express or i
 
 ## Features
 
-- AI-powered Autonomous Attack Path Prediction  
+- AI-Powered Autonomous Attack Path Prediction  
 - Multi-Agent Red Team Simulation  
 - Graph-based threat modeling and attack graph analysis  
 - MITRE ATT&CK-aligned adversary behavior modeling  
@@ -212,7 +212,7 @@ See [CONTRIBUTING](CONTRIBUTING.md) for detailed contribution guidelines.
 
 Planned improvements include:
 
-- improved AI-powered attack path prediction
+- improved AI-Powered Attack Path Prediction
 - expanded MART offensive agents
 - path-aware risk scoring based on simulated attack chains
 - optional visualization layer for simulation outputs

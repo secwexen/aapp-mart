@@ -31,3 +31,5 @@ This project includes the following third‑party dependencies and their respect
 - autoflake — MIT
 - build — MIT
 - loguru — MIT
+
+The copyrights and licenses for these third-party components remain the property of their respective owners.

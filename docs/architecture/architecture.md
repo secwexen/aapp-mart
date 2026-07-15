@@ -6,13 +6,13 @@ This document outlines the system architecture, core components, and internal da
 
 AAPP-MART consists of three major subsystems:
 
-1. AAPP (AI-Autonomous Attack Path Prediction)  
+1. AAPP (AI-powered Autonomous Attack Path Prediction)  
    Builds attack graphs, predicts likely attack paths, and prioritizes risks.
 
-2. MART (Multi-Agent Red Team Simulation Engine)  
+2. MART (Multi-Agent Red Team Simulation)  
    Simulates attacker behavior using autonomous agents.
 
-3. CORE (Simulation Brain)  
+3. CORE (Engine)  
    Orchestrates AAPP + MART, manages global state, and controls execution.
 
 All components communicate through a shared Knowledge Graph.
@@ -145,7 +145,7 @@ aapp-mart/
 
 ## Component Breakdown
 
-### AAPP (AI-Autonomous Attack Path Prediction)
+### AAPP (AI-powered Autonomous Attack Path Prediction)
 
 Responsible for:
 
@@ -154,7 +154,7 @@ Responsible for:
 - Predicting attack paths  
 - Scoring risks  
 
-### MART (Multi-Agent Red Team Simulation Engine)
+### MART (Multi-Agent Red Team Simulation)
 
 Simulates attacker behavior using specialized agents:
 
@@ -165,7 +165,7 @@ Simulates attacker behavior using specialized agents:
 - Persistence  
 - Reporting
 
-### CORE (Simulation Brain)
+### CORE (Engine)
 
 Coordinates the entire system:
 

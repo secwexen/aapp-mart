@@ -6,7 +6,7 @@ AAPP-MART sets itself apart in the cybersecurity market with the following core 
 
 Harnesses the power of advanced machine learning to anticipate attacker behavior and visualize likely breach scenarios—tailored to your unique environment.
 
-## 2. Multi-Agent, Realistic Red Team Simulation
+## 2. Multi-Agent Red Team Simulation
 
 Simulates coordinated, persistent multi-agent attacks, replicating modern adversarial tactics, techniques, and procedures (TTPs) in line with MITRE ATT&CK.
 

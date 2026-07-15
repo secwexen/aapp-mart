@@ -2,7 +2,7 @@
 
 AAPP‑MART operates through three major components that work together to predict and simulate attack paths.
 
-## AAPP (AI-powered Autonomous Attack Path Prediction)
+## AAPP (AI-Powered Autonomous Attack Path Prediction)
 
 Predicts the most likely attack paths by analyzing services, permissions, vulnerabilities, and configuration weaknesses.
 

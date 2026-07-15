@@ -28,7 +28,7 @@ By combining AI-Powered Autonomous Attack Path Prediction with Multi-Agent Red T
 
 ## Use Cases
 
-- AI-Powered Autonomous Attack Path Analysis  
+- AI-Powered Autonomous Attack Path Prediction  
 - Multi-Agent Red Team Simulation  
 - Attack Surface & Lateral Movement Modeling  
 - MITRE ATT&CK–Aligned Threat Simulation  

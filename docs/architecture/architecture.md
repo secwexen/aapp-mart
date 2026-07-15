@@ -6,7 +6,7 @@ This document outlines the system architecture, core components, and internal da
 
 AAPP-MART consists of three major subsystems:
 
-1. AAPP (AI-powered Autonomous Attack Path Prediction)  
+1. AAPP (AI-Powered Autonomous Attack Path Prediction)  
    Builds attack graphs, predicts likely attack paths, and prioritizes risks.
 
 2. MART (Multi-Agent Red Team Simulation)  

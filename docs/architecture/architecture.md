@@ -12,7 +12,7 @@ AAPP-MART consists of three major subsystems:
 2. MART (Multi-Agent Red Team Simulation)  
    Simulates attacker behavior using autonomous agents.
 
-3. CORE (Engine)  
+3. CORE Orchestration (Engine)  
    Orchestrates AAPP + MART, manages global state, and controls execution.
 
 All components communicate through a shared Knowledge Graph.

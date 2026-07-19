@@ -201,7 +201,7 @@ Contributions and suggestions are welcome!
 - Make your changes and add relevant tests.
 - Use clear commit messages (e.g. Conventional Commits: `feat:`, `fix:`, `docs:`, `refactor:`).
 - Ensure all tests pass (`pytest`) and code style checks (e.g. `make lint`).
-- Open a pull request referencing related issues/discussion when possible.
+- Open a pull request referencing related issues when possible.
 - All PRs must pass CI checks before merging.
 
 Please open an issue before submitting major changes or new features.
@@ -213,7 +213,6 @@ See [CONTRIBUTING](CONTRIBUTING.md) for detailed contribution guidelines.
 Planned improvements include:
 
 - improved AI-Powered Attack Path Prediction
-- expanded MART offensive agents
 - path-aware risk scoring based on simulated attack chains
 - optional visualization layer for simulation outputs
 - plugin ecosystem for custom modules and agents

@@ -195,8 +195,6 @@ See the [LICENSE](LICENSE) file for full details.
 
 Contributions and suggestions are welcome!
 
-### Contributing Workflow (Summary)
-
 - Fork the repository and create a feature or fix branch (e.g. `feature/your-feature`, `fix/bug-name`, `docs/update-readme`, `chore/dependency-update`).
 - Make your changes and add relevant tests.
 - Use clear commit messages (e.g. Conventional Commits: `feat:`, `fix:`, `docs:`, `refactor:`).

@@ -1,6 +1,6 @@
 # Concepts
 
-This document introduces the key concepts and terminology behind **AAPP-MART** (AI-powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine). Understanding these concepts is essential for using, extending, or reviewing the system effectively.
+This document introduces the key concepts and terminology behind **AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine). Understanding these concepts is essential for using, extending, or reviewing the system effectively.
 
 ## Core Concepts
 
@@ -13,7 +13,7 @@ An Attack Graph is a directed graph (G = (V, E)) where:
 
 Edges are annotated with likelihood and exploitability weights to support predictive scoring.
 
-### 2. AAPP (AI-powered Autonomous Attack Path Prediction)
+### 2. AAPP (AI-Powered Autonomous Attack Path Prediction)
 
 AAPP analyzes the target environment to predict the most probable attack paths. It uses:
 

@@ -92,7 +92,7 @@ Every new feature must include:
 - Agent behavior tests.
 - Workflow integration tests when applicable.
 
-Tests are stored under the [tests](tests/) directory and should follow a clear naming convention.
+Tests are stored under the [tests](/tests) directory and should follow a clear naming convention.
 
 ## Extending Reporting
 
@@ -118,7 +118,7 @@ Each extension should be modular and documented to ensure compatibility with the
 
 - All development and testing must be performed in authorized environments.
 - Unauthorized use of the framework against real systems is strictly prohibited.
-- Vulnerabilities must be reported according to the project’s [SECURITY.md](/SECURITY.md) policy.
+- Vulnerabilities must be reported according to the project’s [SECURITY](/SECURITY.md) policy.
 - Ethical guidelines must be followed at all times.
 
 ## Contribution Workflow

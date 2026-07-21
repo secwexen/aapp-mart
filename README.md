@@ -109,7 +109,7 @@ python demo/advanced_attack_simulation.py
 ### Demo Output
 
 ```text
-=== AAPP-MART Autonomous Simulation ===
+=== AAPP-MART — Attack Path Simulation ===
 
 [*] Target acquired: 10.10.20.15
 [+] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected

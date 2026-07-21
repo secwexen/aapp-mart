@@ -42,4 +42,4 @@ Critical Assets:
 See the [Attack Path Simulation Report](demo/reports/attack_report.json) file.
 
 > [!NOTE]
-> This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.
+> This IP/hostname is an example target.

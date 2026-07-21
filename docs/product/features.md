@@ -4,13 +4,13 @@ This document provides a detailed overview of the system’s core capabilities.
 
 ## Core Capabilities
 
-### AI‑Powered Autonomous Attack Path Prediction
+### AAPP (AI‑Powered Autonomous Attack Path Prediction)
 
 - Uses machine learning models to estimate likely attacker movement.
 - Generates dynamic attack paths based on environment state and security posture.
 - Supports probabilistic and deterministic prediction modes.
 
-### Multi‑Agent Red Team Simulation
+### MART (Multi‑Agent Red Team Simulation)
 
 - Autonomous adversarial agents emulate realistic attacker tactics.
 - Agents coordinate, compete, or specialize based on scenario configuration.

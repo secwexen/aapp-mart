@@ -44,7 +44,7 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone repository
-git clone https://github.com/<your-username>/aapp-mart.git
+git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 
 # Create virtual environment
@@ -56,7 +56,7 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 
 # Install dev dependencies
-pip install -r dev-requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 Run tests to verify the environment:

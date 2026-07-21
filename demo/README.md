@@ -4,13 +4,13 @@ This directory contains runnable demonstration scripts for the AAPP-MART system.
 
 All demos are safe, non-destructive simulations intended for showcasing attack-path prediction, adversarial modeling, and risk analysis concepts.
 
-## Advanced Attack Simulation Demo
+## Attack Path Simulation Demo
 
 ```bash
 python demo/advanced_attack_simulation.py
 ```
 
-### Advanced Attack Simulation Demo Output
+### Attack Path Simulation Demo Output
 
 ```text
 === AAPP-MART — Attack Path Simulation ===
@@ -36,10 +36,10 @@ Critical Assets:
 - DOMAIN-CONTROLLER
 - HR-DB
 
-[+] Report exported → aapp-mart/logs/attack-path/attack_report.json
+[+] Report exported → aapp-mart/logs/attack-path/attack_path_report.json
 ```
 
-See the [Attack Simulation Report](demo/reports/attack_report.json) file.
+See the [Attack Path Simulation Report](demo/reports/attack_path_report.json) file.
 
 > [!NOTE]
 > This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.

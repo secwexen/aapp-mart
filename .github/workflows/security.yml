@@ -2,9 +2,9 @@ name: Security Scan
 
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ "main" ]
   schedule:
     - cron: "0 3 * * 1"
 
@@ -29,7 +29,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install -r dev-requirements.txt
+          pip install -r requirements-dev.txt
           pip install bandit safety
 
       - name: Run Bandit (static code security analysis)

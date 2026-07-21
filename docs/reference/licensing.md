@@ -35,4 +35,4 @@ This hybrid model ensures:
 
 Copyright © 2026 AAPP-MART.
 
-The open-source components of AAPP-MART are distributed under the [Apache-2.0](/LICENSE) open-source license. Proprietary components and all materials not explicitly released under an open-source license remain the intellectual property of the AAPP-MART.
+The open-source components of AAPP-MART are distributed under the [Apache-2.0 License](/LICENSE) open-source license. Proprietary components and all materials not explicitly released under an open-source license remain the intellectual property of the AAPP-MART.

@@ -145,7 +145,7 @@ aapp-mart/
 
 ## Component Breakdown
 
-### AAPP (AI-powered Autonomous Attack Path Prediction)
+### AAPP (AI-Powered Autonomous Attack Path Prediction)
 
 Responsible for:
 
@@ -165,7 +165,7 @@ Simulates attacker behavior using specialized agents:
 - Persistence  
 - Reporting
 
-### CORE (Engine)
+### CORE Orchestration (Engine)
 
 Coordinates the entire system:
 

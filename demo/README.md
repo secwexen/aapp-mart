@@ -39,7 +39,7 @@ Critical Assets:
 [+] Report exported → aapp-mart/logs/attack-path/attack_path_report.json
 ```
 
-See the [Attack Path Simulation Report](demo/reports/attack_path_report.json) file.
+See the [Attack Path Simulation Report](demo/reports/attack_report.json) file.
 
 > [!NOTE]
 > This IP/hostname is an example target. You will write the actual target IP/hostname yourself in the main project.

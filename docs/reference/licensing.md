@@ -1,6 +1,6 @@
 # Open Source & Proprietary Components
 
-AAPP‑MART is developed as a hybrid open-source project. Core components are fully open and community-driven, while certain production-grade modules remain proprietary to ensure security, reliability, and commercial sustainability.
+AAPP‑MART is developed as a hybrid project. Core components are fully open and community-driven, while certain production-grade modules remain proprietary to ensure security, reliability, and commercial sustainability.
 
 ## Open Source Components
 

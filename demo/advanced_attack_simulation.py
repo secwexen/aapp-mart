@@ -40,7 +40,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — Attack Path Simulation ===\n")
 
-        self._log(f"Target acquired: {self.target}")
+        self._log(f"Target Acquired: {self.target}")
         time.sleep(1)
 
         attack_chain = [
@@ -94,7 +94,7 @@ class AAPPMartDemo:
             "HR-DB-01"
         ]
 
-        self._log("Simulation completed successfully", success=True)
+        self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
             target=self.target,

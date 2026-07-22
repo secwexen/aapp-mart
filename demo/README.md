@@ -15,13 +15,13 @@ python demo/advanced_attack_simulation.py
 ```text
 === AAPP-MART — Attack Path Simulation ===
 
-[*] Target acquired: 10.10.20.15
+[*] Target Acquired: 10.10.20.15
 [+] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected
 [+] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Credential harvesting attempt
 [+] Initial Access       | MITRE: T1078 | Severity: HIGH     | Valid account abuse
 [+] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting
 [+] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Kernel privilege escalation simulated
-[✓] Simulation completed successfully
+[✓] Simulation Completed Successfully
 
 === Risk Summary ===
 

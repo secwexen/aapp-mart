@@ -94,7 +94,7 @@ class AAPPMartDemo:
             "HR-DB-01"
         ]
 
-        self._log("Simulation completed successfully", success=True)
+        self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
             target=self.target,

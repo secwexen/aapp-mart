@@ -1,6 +1,6 @@
 # Terms of Service
 
-These Terms govern your use of AAPP-MART, an open-source system. By using it, you agree to the conditions below.
+These Terms govern your use of AAPP-MART, a system. By using it, you agree to the conditions below.
 
 ## 1. Acceptance of Terms  
 

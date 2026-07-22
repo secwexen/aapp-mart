@@ -141,7 +141,7 @@ class ReportExporter:
         with open(output_path, "w") as f:
             json.dump(report_data, f, indent=4)
 
-        print(f"\n[+] Report exported → {output_path}")
+        print(f"\n[+] Report Exported → {output_path}")
 
 # =========================
 # Main

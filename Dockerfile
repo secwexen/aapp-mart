@@ -21,4 +21,4 @@ USER appuser
 
 EXPOSE 8080
 
-CMD ["python", "-m", "aapp_mart.main"]
+CMD ["python", "main.py"]

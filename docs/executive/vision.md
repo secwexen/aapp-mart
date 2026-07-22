@@ -22,7 +22,7 @@ By combining predictive analytics, autonomous simulation, and risk-based scoring
 2. Autonomy & Intelligence – Empower agents to simulate realistic adversary strategies.
 3. Actionable Insights – Deliver data-driven recommendations, not just alerts.
 4. Scalability & Modularity – Designed for enterprise-scale deployments with extensible components.
-5. Collaborative – community-driven to encourage research and innovation.
+5. Collaborative – Community-driven to encourage research and innovation.
 
 ## Long-Term Vision
 

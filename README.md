@@ -129,8 +129,8 @@ Generated At        : 2026-01-01 09:58:45
 
 Affected Critical Assets:
 [!] FILE-SERVER-01
-[!] DOMAIN-CONTROLLER
-[!] HR-DB
+[!] DOMAIN-CONTROLLER-01
+[!] HR-DB-01
 
 [+] Report Exported: /home/user/aapp-mart/logs/attack-path/attack_path_report.json
 ```

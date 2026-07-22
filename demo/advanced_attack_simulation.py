@@ -168,7 +168,7 @@ def main():
         print(f" [!] {asset}")
 
     output_file = (
-        f"C:/aapp-mart/logs/attack-path/"
+        f"/home/user/aapp-mart/logs/attack-path/"
         f"attack_path_report.json"
     )
 

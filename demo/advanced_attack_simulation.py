@@ -90,8 +90,8 @@ class AAPPMartDemo:
 
         compromised_assets = [
             "FILE-SERVER-01",
-            "DOMAIN-CONTROLLER",
-            "HR-DB"
+            "DOMAIN-CONTROLLER-01",
+            "HR-DB-01"
         ]
 
         self._log("Simulation completed successfully", success=True)

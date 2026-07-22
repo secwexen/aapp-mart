@@ -163,9 +163,9 @@ def main():
     print(f"Compromised Assets  : {len(report.compromised_assets)}")
     print(f"Generated At        : {report.generated_at}")
 
-    print("\nCritical Assets:")
+    print("\nAffected Critical Assets:")
     for asset in report.compromised_assets:
-        print(f" - {asset}")
+        print(f" [!] {asset}")
 
     output_file = (
         f"aapp-mart/logs/attack-path/"

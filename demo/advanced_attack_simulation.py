@@ -141,7 +141,7 @@ class ReportExporter:
         with open(output_path, "w") as f:
             json.dump(report_data, f, indent=4)
 
-        print(f"\n[+] Report Exported → {output_path}")
+        print(f"\n[+] Report Exported: {output_path}")
 
 # =========================
 # Main
@@ -168,7 +168,7 @@ def main():
         print(f" [!] {asset}")
 
     output_file = (
-        f"aapp-mart/logs/attack-path/"
+        f"C:/aapp-mart/logs/attack-path/"
         f"attack_path_report.json"
     )
 

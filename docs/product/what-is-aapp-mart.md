@@ -1,6 +1,6 @@
 # What is AAPP-MART?
 
-**AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is an open-source security engine designed to help organizations anticipate and simulate cyber attacks in a controlled environment.
+**AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is a security engine designed to help organizations anticipate and simulate cyber attacks in a controlled environment.
 
 It combines:
 

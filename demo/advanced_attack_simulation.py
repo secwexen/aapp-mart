@@ -38,7 +38,7 @@ class AAPPMartDemo:
 
     def run(self) -> SimulationReport:
 
-        print("\n=== AAPP-MART — Attack Path Demonstration ===\n")
+        print("\n=== AAPP-MART — Attack Path Simulation ===\n")
 
         self._log(f"Target acquired: {self.target}")
         time.sleep(1)

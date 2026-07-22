@@ -36,7 +36,7 @@ Affected Critical Assets:
 [!] DOMAIN-CONTROLLER
 [!] HR-DB
 
-[+] Report exported → aapp-mart/logs/attack-path/attack_path_report.json
+[+] Report Exported: C:/aapp-mart/logs/attack-path/attack_path_report.json
 ```
 
 See the [Attack Path Simulation Report](demo/reports/attack_report.json) file.

@@ -111,28 +111,28 @@ python demo/advanced_attack_simulation.py
 ```text
 === AAPP-MART — Attack Path Simulation ===
 
-[*] Target acquired: 10.10.20.15
+[*] Target Acquired: 10.10.20.15
 [+] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected
 [+] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Credential harvesting attempt
 [+] Initial Access       | MITRE: T1078 | Severity: HIGH     | Valid account abuse
 [+] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting
 [+] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Kernel privilege escalation simulated
-[✓] Simulation completed successfully
+[✓] Simulation Completed Successfully
 
 === Risk Summary ===
 
 Target              : 10.10.20.15
-Risk Score          : 8.9/10
+Risk Score          : 9.1/10
 Duration            : 11.2s
 Compromised Assets  : 3
 Generated At        : 2026-01-01 09:58:45
 
 Critical Assets:
 - FILE-SERVER-01
-- DOMAIN-CONTROLLER
-- HR-DB
+- DOMAIN-CONTROLLER-01
+- HR-DB-01
 
-[+] Report exported → aapp-mart/logs/attack-path/attack_path_report.json
+[+] Report Exported: aapp-mart/logs/attack-path/attack_path_report.json
 ```
 
 See the [Attack Path Simulation Report](demo/reports/attack_report.json) json file.

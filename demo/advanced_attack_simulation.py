@@ -40,7 +40,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — Attack Path Simulation ===\n")
 
-        self._log(f"Target acquired: {self.target}")
+        self._log(f"Target Acquired: {self.target}")
         time.sleep(1)
 
         attack_chain = [
@@ -90,8 +90,8 @@ class AAPPMartDemo:
 
         compromised_assets = [
             "FILE-SERVER-01",
-            "DOMAIN-CONTROLLER",
-            "HR-DB"
+            "DOMAIN-CONTROLLER-01",
+            "HR-DB-01"
         ]
 
         self._log("Simulation completed successfully", success=True)
@@ -141,7 +141,7 @@ class ReportExporter:
         with open(output_path, "w") as f:
             json.dump(report_data, f, indent=4)
 
-        print(f"\n[+] Report exported → {output_path}")
+        print(f"\n[+] Report Exported: {output_path}")
 
 # =========================
 # Main
@@ -168,7 +168,7 @@ def main():
         print(f" - {asset}")
 
     output_file = (
-        f"aapp-mart/logs/attack-path/"
+        f"/home/user/aapp-mart/logs/attack-path/"
         f"attack_path_report.json"
     )
 

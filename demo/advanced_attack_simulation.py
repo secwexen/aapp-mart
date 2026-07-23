@@ -90,7 +90,7 @@ class AAPPMartDemo:
         risk_score = round(random.uniform(7.8, 9.6), 1)
 
         compromised_assets = [
-            "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage        | Severity: HIGH     | Status: Isolated",
+            "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated",
             "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised",
             "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Compromised"
         ]

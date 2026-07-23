@@ -43,6 +43,6 @@
         "DOMAIN-CONTROLLER-01",
         "HR-DB-01"
     ],
-    "generated_at": "2026-01-01 09:58:45",
+    "generated_at": "2026-01-01T05:30:00.123456+00:00",
     "duration": 11.200000000000001
 }

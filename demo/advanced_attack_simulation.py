@@ -158,11 +158,11 @@ def main():
 
     print("\n=== Risk Summary ===\n")
     
-    print(f"Target              : {report.target}")
-    print(f"Risk Score          : {report.risk_score}/10")
-    print(f"Duration            : {report.duration:.1f}s")
-    print(f"Compromised Assets  : {len(report.compromised_assets)}")
-    print(f"Generated At        : {report.generated_at}")
+    print(f"Target             : {report.target}")
+    print(f"Risk Score         : {report.risk_score}/10")
+    print(f"Duration           : {report.duration:.1f}s")
+    print(f"Compromised Assets : {len(report.compromised_assets)}")
+    print(f"Generated At       : {report.generated_at}")
 
     print("\nAffected Critical Assets:")
     for asset in report.compromised_assets:

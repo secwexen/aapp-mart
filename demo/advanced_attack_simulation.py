@@ -1,6 +1,7 @@
 import json
 import random
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 from dataclasses import dataclass, asdict
 from typing import List
@@ -101,7 +102,7 @@ class AAPPMartDemo:
             risk_score=risk_score,
             attack_path=attack_chain,
             compromised_assets=compromised_assets,
-            generated_at=time.strftime("%Y-%m-%d %H:%M:%S"),
+            generated_at=datetime.now(timezone.utc).isoformat(),
             duration=total_duration
         )
 

@@ -39,9 +39,9 @@
         }
     ],
     "compromised_assets": [
-        "FILE-SERVER-01",
-        "DOMAIN-CONTROLLER-01",
-        "HR-DB-01"
+        "FILE-SERVER-01 (10.10.20.2)",
+        "DOMAIN-CONTROLLER-01 (10.10.20.45)",
+        "HR-DB-01 (10.10.20.12)"
     ],
     "generated_at": "2026-01-01T05:30:00.123456+00:00",
     "duration": 11.200000000000001

@@ -32,9 +32,9 @@ Compromised Assets  : 3
 Generated At        : 2026-01-01T05:30:00.123456+00:00
 
 Affected Critical Assets:
-[!] FILE-SERVER-01 - (10.10.20.2)
-[!] DOMAIN-CONTROLLER-01 - (10.10.20.45)
-[!] HR-DB-01 - (10.10.20.12)
+[!] FILE-SERVER-01 | IP: 10.10.20.2 | Type: Storage | Severity: HIGH | Status: Isolated
+[!] DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD | Severity: CRITICAL | Status: Compromised
+[!] HR-DB-01 | IP: 10.10.20.12 | Type: SQL Database | Severity: CRITICAL | Status: Compromised
 
 [+] Report Exported: /var/log/aapp-mart/logs/attack-path/attack_path_report.json
 ```

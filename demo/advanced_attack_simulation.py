@@ -18,7 +18,6 @@ class AttackStep:
     severity: str
     duration: float
 
-
 @dataclass
 class SimulationReport:
     target: str
@@ -174,7 +173,6 @@ def main():
     )
 
     ReportExporter.export_json(report, output_file)
-
 
 if __name__ == "__main__":
     main()

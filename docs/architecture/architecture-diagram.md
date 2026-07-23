@@ -1,6 +1,6 @@
 # Architecture Diagram
 
-AAPP-MART is built with a modular architecture designed to support multiple execution modes (CLI, API, and containerized environments) while maintaining a shared core processing engine.
+AAPP-MART is built with a modular architecture designed to support multiple execution modes while maintaining a shared core processing engine.
 
 ```mermaid
 flowchart TD

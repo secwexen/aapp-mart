@@ -177,7 +177,7 @@ def main():
     print(f"Compromised Assets : {len(report.compromised_assets)}")
     print(f"Generated At       : {report.generated_at}")
 
-    print("\n[!] Affected Critical Assets (3):")
+    print("\nAffected Critical Assets (3):")
     for asset in report.compromised_assets:
         print(f" [!] {asset}")
 

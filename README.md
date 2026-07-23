@@ -128,9 +128,9 @@ Compromised Assets  : 3
 Generated At        : 2026-01-01T05:30:00.123456+00:00
 
 Affected Critical Assets:
-[!] FILE-SERVER-01
-[!] DOMAIN-CONTROLLER-01
-[!] HR-DB-01
+[!] FILE-SERVER-01 (10.10.20.2)
+[!] DOMAIN-CONTROLLER-01 (10.10.20.45)
+[!] HR-DB-01 (10.10.20.12)
 
 [+] Report Exported: /var/log/aapp-mart/logs/attack-path/attack_path_report.json
 ```

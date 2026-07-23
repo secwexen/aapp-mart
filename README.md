@@ -121,11 +121,11 @@ python demo/advanced_attack_simulation.py
 
 === Risk Summary ===
 
-Target              : 10.10.20.15
-Risk Score          : 9.1/10
-Duration            : 11.2s
-Compromised Assets  : 3
-Generated At        : 2026-01-01T05:30:00.123456+00:00
+Target             : 10.10.20.15
+Risk Score         : 9.1/10
+Duration           : 11.2s
+Compromised Assets : 3
+Generated At       : 2026-01-01T05:30:00.123456+00:00
 
 Affected Critical Assets:
 [!] FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage      | Severity: HIGH     | Status: Isolated

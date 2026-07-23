@@ -144,6 +144,20 @@ class ReportExporter:
         print(f"\n[+] Report Exported: {output_path}")
 
 # =========================
+# Helper Functions
+# =========================
+
+def get_risk_label(score: float) -> str:
+    if score >= 9.0:
+        return "(CRITICAL)"
+    elif score >= 7.0:
+        return "(HIGH)"
+    elif score >= 4.0:
+        return "(MEDIUM)"
+    else:
+        return "(LOW)"
+
+# =========================
 # Main
 # =========================
 

@@ -169,7 +169,7 @@ def main():
         print(f" [!] {asset}")
 
     output_file = (
-        f"/var/log/aapp-mart/logs/attack-path/"
+        f"./aapp-mart/logs/attack-path/"
         f"attack_path_report.json"
     )
 

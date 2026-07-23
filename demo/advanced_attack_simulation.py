@@ -90,9 +90,9 @@ class AAPPMartDemo:
         risk_score = round(random.uniform(7.8, 9.6), 1)
 
         compromised_assets = [
-            "FILE-SERVER-01 (10.10.20.2)",
-            "DOMAIN-CONTROLLER-01 (10.10.20.45)",
-            "HR-DB-01 (10.10.20.12)"
+            "FILE-SERVER-01 - (10.10.20.2)",
+            "DOMAIN-CONTROLLER-01 - (10.10.20.45)",
+            "HR-DB-01 - (10.10.20.12)"
         ]
 
         self._log("Simulation Completed Successfully", success=True)

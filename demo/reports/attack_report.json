@@ -43,6 +43,6 @@
         "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised",
         "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Compromised"
     ],
-    "generated_at": "2026-01-01T05:30:00.123456+00:00",
+    "generated_at": "2026-01-01T05:30:03.123456+00:00",
     "duration": 11.200000000000001
 }

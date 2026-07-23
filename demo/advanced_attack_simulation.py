@@ -112,7 +112,7 @@ class AAPPMartDemo:
             f" | MITRE: {step.mitre_id:<8}"
             f" | Severity: {step.severity:<8}"
             f" | Duration: {step.duration:.1f}s"
-            f" | Description {step.description}"
+            f" | Description: {step.description}"
         )
         time.sleep(0.8)
 

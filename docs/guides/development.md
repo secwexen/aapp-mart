@@ -1,6 +1,6 @@
 # Developer Guide
 
-AAPP‑MART is a modular, multi‑agent red team simulation framework powered by AI‑driven decision models. This guide provides developers with the architectural overview, contribution workflow, coding standards, and extension points required to build new features or improve the framework.
+AAPP‑MART is a modular, multi‑agent red team simulation engine powered by AI‑Powered decision models. This guide provides developers with the architectural overview, contribution workflow, coding standards, and extension points required to build new features or improve the framework.
 
 ## Project Architecture
 

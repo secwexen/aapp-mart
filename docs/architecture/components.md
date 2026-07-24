@@ -12,6 +12,6 @@ Executes autonomous red team simulations using specialized AI agents that emulat
 
 Together, AAPP and MART create a fully automated offensive security engine capable of forecasting and simulating attacks end-to-end.
 
-## CORE Orchestration (Engine)
+## ENGINE (CORE Orchestration)
 
 The CORE engine coordinates multi-agent behavior, manages simulation flow, and ensures consistent interaction between all system modules.

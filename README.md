@@ -94,7 +94,7 @@ This software is provided “as is” without warranty of any kind, express or i
 
 - AAPP (AI-Powered Autonomous Attack Path Prediction)  
 - MART (Multi-Agent Red Team Simulation)  
-- ENGINE (Core Orchestration)
+- ENGINE (Core Orchestration)  
 - Graph-based threat modeling and attack graph analysis  
 - MITRE ATT&CK aligned adversary behavior modeling  
 - Risk-based security posture analysis  

@@ -53,7 +53,7 @@ Autonomous agents simulate realistic adversary actions:
 - Persistence  
 - Reporting
 
-### 3. Core Orchestration (Engine)
+### 3. ENGINE (Core Orchestration)
 
 Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 
@@ -63,7 +63,7 @@ The system is architected around three primary subsystems:
 
 - AAPP (AI-Powered Autonomous Attack Path Prediction)  
 - MART (Multi-Agent Red Team Simulation)  
-- Core Orchestration (Engine)
+- ENGINE (Core Orchestration)
 
 These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the engine.
 
@@ -92,8 +92,9 @@ This software is provided “as is” without warranty of any kind, express or i
 
 ## Features
 
-- AI-Powered Autonomous Attack Path Prediction  
-- Multi-Agent Red Team Simulation  
+- AAPP (AI-Powered Autonomous Attack Path Prediction)  
+- MART (Multi-Agent Red Team Simulation)  
+- ENGINE (Core Orchestration)
 - Graph-based threat modeling and attack graph analysis  
 - MITRE ATT&CK aligned adversary behavior modeling  
 - Risk-based security posture analysis  

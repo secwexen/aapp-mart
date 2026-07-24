@@ -30,4 +30,4 @@ If you would like to contribute, please see [CONTRIBUTING](CONTRIBUTING.md) for 
 
 ## Community Expectations
 
-Please be respectful and constructive in all discussions and contributions.
+Please be respectful and constructive in all contributions.

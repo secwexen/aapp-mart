@@ -2,7 +2,7 @@
 
 ## Enterprise-Grade Proactive Security Validation
 
-AAPP-MART is positioned as the enterprise choice for AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine. The system is purpose-built to address the needs of large-scale, complex organizations seeking to:
+AAPP-MART is positioned as the enterprise choice for (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine). The system is purpose-built to address the needs of large-scale, complex organizations seeking to:
 
 - Proactively test and improve their security controls using fully automated, AI-driven adversary emulation
 - Align offensive security operations with global standards (e.g., MITRE ATT&CK)

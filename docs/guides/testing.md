@@ -47,15 +47,15 @@ Linting ensures readability, maintainability, and reduces errors.
 
 Integration tests validate interactions between:
 
-- AAPP (AI-Autonomous Attack Path Prediction)
+- AAPP (AI-Powered Autonomous Attack Path Prediction)
 - MART (Multi-Agent Red Team Simulation Engine)
-- CORE (Simulation Brain / Orchestrator)
+- ENGINE (Simulation Brain / Core Orchestrator)
 
 Check that:
 
 - AAPP correctly generates attack paths
 - MART agents execute safely without destructive payloads
-- CORE orchestrates simulations consistently and maintains the Knowledge Graph state
+- ENGINE core orchestrates simulations consistently and maintains the Knowledge Graph state
 
 ## 4. Deterministic Replay
 

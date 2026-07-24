@@ -8,7 +8,7 @@ Modern infrastructures are increasingly complex, dynamic, and interconnected. Tr
 
 AAPP-MART’s mission is to:
 
-1. Predict: Forecast potential attack paths using AI-driven modeling and graph-based threat analysis.
+1. Predict: Forecast potential attack paths using AI-Powered modeling and graph-based threat analysis.
 2. Simulate: Enable autonomous multi-agent red team simulations that mirror real-world attacker behavior.
 3. Secure: Provide actionable, intelligence-driven insights for proactive defense and continuous security validation.
 
@@ -46,6 +46,6 @@ AAPP-MART envisions a world where organizations can:
 
 ## Call to Action
 
-We invite security researchers, cybersecuritys, developers, enterprises, and academia to contribute, collaborate, and innovate.
+We invite security researchers, cybersecuritys, red teams, developers, enterprises, and academia to contribute, collaborate, and innovate.
 
 By joining the AAPP-MART ecosystem, you become part of the movement to predict, simulate, and secure the digital world.

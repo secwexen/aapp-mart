@@ -102,7 +102,7 @@ Developers can add new report formats or extend existing ones. A report module s
 - Integrate with the Orchestrator’s result aggregation system.
 - Provide meaningful insights such as attack paths, risk scores, or agent activity timelines.
 
-## Framework Extension Points
+## System Extension Points
 
 AAPP‑MART is designed to be extensible. Developers can add:
 
@@ -112,23 +112,4 @@ AAPP‑MART is designed to be extensible. Developers can add:
 - New reporting formats  
 - New orchestration strategies  
 
-Each extension should be modular and documented to ensure compatibility with the rest of the framework.
-
-## Security and Ethical Requirements
-
-- All development and testing must be performed in authorized environments.
-- Unauthorized use of the framework against real systems is strictly prohibited.
-- Vulnerabilities must be reported according to the project’s [SECURITY](/SECURITY.md) policy.
-- Ethical guidelines must be followed at all times.
-
-## Contribution Workflow
-
-To contribute to AAPP‑MART:
-
-1. Open an issue to discuss the proposed change.
-2. Create a feature branch.
-3. Implement the change with proper documentation.
-4. Add tests for the new functionality.
-5. Submit a pull request with a clear description.
-
-Pull requests are reviewed for code quality, security, and architectural consistency.
+Each extension should be modular and documented to ensure compatibility with the rest of the system.

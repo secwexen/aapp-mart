@@ -95,7 +95,7 @@ This software is provided “as is” without warranty of any kind, express or i
 - AI-Powered Autonomous Attack Path Prediction  
 - Multi-Agent Red Team Simulation  
 - Graph-based threat modeling and attack graph analysis  
-- MITRE ATT&CK-aligned adversary behavior modeling  
+- MITRE ATT&CK aligned adversary behavior modeling  
 - Risk-based security posture analysis  
 - ML-assisted vulnerability prioritization  
 - AI Attack Graph Analysis

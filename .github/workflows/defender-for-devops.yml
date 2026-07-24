@@ -23,9 +23,9 @@ permissions:
 
 on:
   push:
-    branches: [ "main", "develop", "feature/*", "hotfix/*", "release/*" ]
+    branches: [ "main", "develop" ]
   pull_request:
-    branches: [ "main", "develop", "release/*", "hotfix/*" ]
+    branches: [ "main", "develop" ]
   schedule:
     - cron: '0 2 * * 1'
 

@@ -1,8 +1,6 @@
 # Vision
 
-**AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is built with a clear and ambitious vision.
-
-> To empower organizations to anticipate, simulate, and neutralize cyber threats before they materialize.
+**AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is built with a clear and ambitious vision. To empower organizations to anticipate, simulate, and neutralize cyber threats before they materialize.
 
 ## Our Mission
 
@@ -22,7 +20,6 @@ By combining predictive analytics, autonomous simulation, and risk-based scoring
 2. Autonomy & Intelligence – Empower agents to simulate realistic adversary strategies.
 3. Actionable Insights – Deliver data-driven recommendations, not just alerts.
 4. Scalability & Modularity – Designed for enterprise-scale deployments with extensible components.
-5. Collaborative – Community-driven to encourage research and innovation.
 
 ## Long-Term Vision
 
@@ -30,7 +27,7 @@ By combining predictive analytics, autonomous simulation, and risk-based scoring
 - Realistic Attack Modeling: Continuously evolve agent behaviors to reflect emerging adversary tactics and MITRE ATT&CK techniques.
 - Integration Ecosystem: Seamless integration with SIEMs, dashboards, and enterprise security pipelines.
 - Predictive Risk Management: Combine attack-path prediction with proactive defense recommendations.
-- Global Research Collaboration: Serve as a reference platform for academia, researchers, and security professionals worldwide.
+- Global Security Research Collaboration: Serve as a reference platform for academia, researchers, and security professionals worldwide.
 
 ## Future Outlook
 
@@ -38,7 +35,7 @@ AAPP-MART aims to become a next-generation cybersecurity research and validation
 
 ## Why This Vision Matters
 
-Cyberattacks are no longer linear or predictable. Security teams need anticipatory intelligence, not just detection.
+Cyber attacks are no longer linear or predictable. Security teams need anticipatory intelligence, not just detection.
 
 AAPP-MART envisions a world where organizations can:
 
@@ -49,6 +46,6 @@ AAPP-MART envisions a world where organizations can:
 
 ## Call to Action
 
-We invite security researchers, developers, enterprises, and academia to contribute, collaborate, and innovate.
+We invite security researchers, cybersecuritys, developers, enterprises, and academia to contribute, collaborate, and innovate.
 
 By joining the AAPP-MART ecosystem, you become part of the movement to predict, simulate, and secure the digital world.

@@ -8,7 +8,7 @@ AAPP‑MART is built around three core components that work together to simulate
 
 - AAPP (AI-Powered Autonomous Attack Path Prediction) — Analyzes the target environment and predicts potential attack paths based on vulnerabilities, configurations, and system topology.
 - MART (Multi‑Agent Red Team Simulation) — Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
-- Core Orchestrator (Engine) — Coordinates agents, manages execution flow, aggregates results, and generates reports.
+- ENGINE (Core Orchestrator) — Coordinates agents, manages execution flow, aggregates results, and generates reports.
 
 Each component is designed as an independent module to ensure extensibility and maintainability.
 

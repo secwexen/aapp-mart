@@ -110,7 +110,7 @@ python demo/advanced_attack_simulation.py
 ### Demo Output
 
 ```text
-=== AAPP-MART — Attack Path Simulation ===
+=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===
 
 [*] Initial Entry Point Acquired: 10.10.20.15
 [+] [Agent-Recon  ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected

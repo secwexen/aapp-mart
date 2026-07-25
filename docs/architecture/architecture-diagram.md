@@ -7,7 +7,8 @@ flowchart TD
 
     Client[Client CLI Dashboard] --> API[API Layer FastAPI]
 
-    API --> Orchestrator[Orchestration and Decision Engine]
+    API --> Queue[(Task Queue / Message Broker - Redis/RabbitMQ)]
+    Queue --> Orchestrator[Orchestration and Decision Engine]
 
     Orchestrator <--> Graph[Attack Graph and Knowledge Graph]
 

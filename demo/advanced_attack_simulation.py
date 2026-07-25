@@ -40,7 +40,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — Attack Path Simulation ===\n")
 
-        self._log(f"Initial Target Acquired: {self.target}")
+        self._log(f"Initial Entry Point Acquired: {self.target}")
         time.sleep(1)
 
         attack_chain = [
@@ -68,7 +68,7 @@ class AAPPMartDemo:
             AttackStep(
                 phase="Lateral Movement",
                 mitre_id="T1021",
-                description="Remote service pivoting",
+                description="Remote service pivoting to 10.10.20.45",
                 severity="HIGH",
                 duration=3.2
             ),
@@ -171,11 +171,11 @@ def main():
 
     print("\n=== Risk Summary ===\n")
     
-    print(f"Initial Target Access    : {report.target}")
-    print(f"Risk Score               : {report.risk_score}/10")
-    print(f"Duration                 : {report.duration:.1f}s")
-    print(f"Compromised Assets       : {len(report.compromised_assets)}")
-    print(f"Generated At             : {report.generated_at}")
+    print(f"Initial Entry Point Access  : {report.target}")
+    print(f"Risk Score                  : {report.risk_score}/10")
+    print(f"Duration                    : {report.duration:.1f}s")
+    print(f"Compromised Assets          : {len(report.compromised_assets)}")
+    print(f"Generated At                : {report.generated_at}")
 
     print("\nAffected Critical Assets:")
     for asset in report.compromised_assets:

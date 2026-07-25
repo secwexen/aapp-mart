@@ -178,11 +178,12 @@ def main():
 
     print("\n=== Risk Summary ===\n")
     
-    print(f"Initial Entry Point Access  : {report.target}")
-    print(f"Risk Score                  : {report.risk_score}/10 {risk_label}")
-    print(f"Duration                    : {report.duration:.1f}s")
-    print(f"Compromised Assets          : {len(report.compromised_assets)} Systems")
-    print(f"Generated At                : {report.generated_at}")
+    print(f"[*] Initial Entry Point Access  : {report.target}")
+    print(f"[*] Risk Score                  : {report.risk_score}/10 {risk_label}")
+    print(f"[*] Duration                    : {report.duration:.1f}s")
+    print(f"[*] Simulated Step Count        : {len(report.attack_path)} Stages")
+    print(f"[*] Compromised Assets          : {len(report.compromised_assets)} Systems")
+    print(f"[*] Generated At                : {report.generated_at}")
 
     print("\nAffected Critical Assets:")
     for asset in report.compromised_assets:

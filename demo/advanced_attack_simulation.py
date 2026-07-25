@@ -12,6 +12,7 @@ from typing import List
 
 @dataclass
 class AttackStep:
+    agent: str
     phase: str
     mitre_id: str
     description: str
@@ -45,6 +46,7 @@ class AAPPMartDemo:
 
         attack_chain = [
             AttackStep(
+                agent="Agent-Recon",
                 phase="Reconnaissance",
                 mitre_id="T1595",
                 description="Active scanning detected",
@@ -52,6 +54,7 @@ class AAPPMartDemo:
                 duration=1.4
             ),
             AttackStep(
+                agent="Agent-Access",
                 phase="Phishing",
                 mitre_id="T1566",
                 description="Credential harvesting attempt",
@@ -59,6 +62,7 @@ class AAPPMartDemo:
                 duration=2.1
             ),
             AttackStep(
+                agent="Agent-Access",
                 phase="Initial Access",
                 mitre_id="T1078",
                 description="Valid account abuse",
@@ -66,6 +70,7 @@ class AAPPMartDemo:
                 duration=1.8
             ),
             AttackStep(
+                agent="Agent-Exploit",
                 phase="Privilege Escalation",
                 mitre_id="T1068",
                 description="Kernel privilege escalation simulated",
@@ -73,6 +78,7 @@ class AAPPMartDemo:
                 duration=2.7
             ),
             AttackStep(
+                agent="Agent-Pivot",
                 phase="Lateral Movement",
                 mitre_id="T1021",
                 description="Remote service pivoting to 10.10.20.45",

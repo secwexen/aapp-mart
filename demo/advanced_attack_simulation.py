@@ -40,7 +40,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — Attack Path Simulation ===\n")
 
-        self._log(f"Target Acquired: {self.target}")
+        self._log(f"Initial Target Acquired: {self.target}")
         time.sleep(1)
 
         attack_chain = [
@@ -171,7 +171,7 @@ def main():
 
     print("\n=== Risk Summary ===\n")
     
-    print(f"Target             : {report.target}")
+    print(f"Initial Target     : {report.target}")
     print(f"Risk Score         : {report.risk_score}/10")
     print(f"Duration           : {report.duration:.1f}s")
     print(f"Compromised Assets : {len(report.compromised_assets)}")

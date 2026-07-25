@@ -179,7 +179,7 @@ def main():
     print("\n=== Risk Summary ===\n")
     
     print(f"Initial Entry Point Access  : {report.target}")
-    print(f"Risk Score                  : {report.risk_score}/10")
+    print(f"Risk Score                  : {report.risk_score}/10 {risk_label}")
     print(f"Duration                    : {report.duration:.1f} second")
     print(f"Compromised Assets          : {len(report.compromised_assets)} system")
     print(f"Generated At                : {report.generated_at}")

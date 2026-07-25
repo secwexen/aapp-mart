@@ -138,7 +138,7 @@ class ReportExporter:
             for step in report.attack_path
         ]
 
-        with open(output_path, "w") as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             json.dump(report_data, f, indent=4)
 
         print(f"\n[+] Report Exported: {output_path}")

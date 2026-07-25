@@ -66,18 +66,18 @@ class AAPPMartDemo:
                 duration=1.8
             ),
             AttackStep(
-                phase="Lateral Movement",
-                mitre_id="T1021",
-                description="Remote service pivoting to 10.10.20.45",
-                severity="HIGH",
-                duration=3.2
-            ),
-            AttackStep(
                 phase="Privilege Escalation",
                 mitre_id="T1068",
                 description="Kernel privilege escalation simulated",
                 severity="CRITICAL",
                 duration=2.7
+            ),
+            AttackStep(
+                phase="Lateral Movement",
+                mitre_id="T1021",
+                description="Remote service pivoting to 10.10.20.45",
+                severity="HIGH",
+                duration=3.2
             ),
         ]
 

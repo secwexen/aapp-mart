@@ -30,7 +30,7 @@ flowchart TD
     Graph --> Risk[Risk Analysis and Scoring Engine]
     Risk --> Reports[Report Generator]
 
-    Reports --> Export[Export JSON PDF SIEM]
+    Reports --> Export[Export JSON HTML CSV SIEM]
     Reports --> Visualization[Visualization Dashboard]
 
     External[Threat Intel CVE Assets Configs] --> Graph

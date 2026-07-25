@@ -27,7 +27,7 @@ python demo/advanced_attack_simulation.py
 
 Initial Entry Point Target  : 10.10.20.15
 Risk Score                  : 9.1/10 (CRITICAL)
-Duration                    : 11.2 second
+Duration                    : 11.2s
 Compromised Assets          : 3 system
 Generated At                : 2026-01-01T05:30:03.123456+00:00
 

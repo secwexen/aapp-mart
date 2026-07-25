@@ -39,7 +39,7 @@ class AAPPMartDemo:
 
     def run(self) -> SimulationReport:
 
-        print("\n=== AAPP-MART — Attack Path Simulation ===\n")
+        print("\n=== AAPP-MART — AI‑Powered Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) ===\n")
 
         self._log(f"Initial Entry Point Acquired: {self.target}")
         time.sleep(1)

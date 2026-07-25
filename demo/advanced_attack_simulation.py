@@ -178,7 +178,7 @@ def main():
 
     print("\n=== Risk Summary ===\n")
     
-    print(f"[*] Initial Entry Point Access  : {report.target}")
+    print(f"[*] Target IP (Initial Entry)   : {report.target}")
     print(f"[*] Risk Score                  : {report.risk_score}/10 {risk_label}")
     print(f"[*] Duration                    : {report.duration:.1f}s")
     print(f"[*] Simulated Step Count        : {len(report.attack_path)} Stages")

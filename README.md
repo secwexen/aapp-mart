@@ -28,8 +28,8 @@ By combining AI-Powered Autonomous Attack Path Prediction with Multi-Agent Red T
 
 ## Use Cases
 
-- AAPP (AI-Powered Autonomous Attack Path Prediction)  
-- MART (Multi-Agent Red Team Simulation)  
+- AI-Powered Autonomous Attack Path Prediction (AAPP)  
+- Multi-Agent Red Team Simulation (MART)  
 - Attack Surface & Lateral Movement Modeling  
 - MITRE ATT&CK Aligned Threat Simulation  
 - Vulnerability Prioritization & Risk Scoring  

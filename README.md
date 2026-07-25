@@ -120,7 +120,7 @@ python demo/advanced_attack_simulation.py
 [+] [Agent-Pivot  ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Duration: 3.2s | Remote service pivoting to 10.10.20.45
 [✓] Simulation Completed Successfully
 
-=== Risk Summary ===
+=== Comprehensive Risk Summary ===
 
 [*] Target IP (Initial Entry)   : 10.10.20.15
 [*] Risk Score                  : 9.1/10 (CRITICAL)

@@ -176,7 +176,7 @@ def main():
 
     report = engine.run()
 
-    print("\n=== Risk Summary ===\n")
+    print("\n=== Comprehensive Risk Summary ===\n")
     
     print(f"[*] Target IP (Initial Entry)   : {report.target}")
     print(f"[*] Risk Score                  : {report.risk_score}/10 {risk_label}")

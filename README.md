@@ -113,16 +113,16 @@ python demo/advanced_attack_simulation.py
 === AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===
 
 [*] Initial Entry Point Acquired: 10.10.20.15
-[+] [Agent-Recon  ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected
-[+] [Agent-Access ] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Credential harvesting attempt
-[+] [Agent-Access ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Valid account abuse
-[+] [Agent-Exploit] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Kernel privilege escalation simulated
-[+] [Agent-Pivot  ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting to 10.10.20.45
+[+] [Agent-Recon  ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Duration: 1.4s | Active scanning detected
+[+] [Agent-Access ] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Duration: 2.1s | Credential harvesting attempt
+[+] [Agent-Access ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Duration: 1.8s | Valid account abuse
+[+] [Agent-Exploit] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Duration: 2.7s | Kernel privilege escalation simulated
+[+] [Agent-Pivot  ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Duration: 3.2s | Remote service pivoting to 10.10.20.45
 [✓] Simulation Completed Successfully
 
 === Risk Summary ===
 
-[*] Initial Entry Point Target  : 10.10.20.15
+[*] Target IP (Initial Entry)   : 10.10.20.15
 [*] Risk Score                  : 9.1/10 (CRITICAL)
 [*] Duration                    : 11.2s
 [*] Simulated Step Count        : 5 Stages

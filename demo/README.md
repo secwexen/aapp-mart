@@ -20,7 +20,7 @@ python demo/advanced_attack_simulation.py
 [+] [Agent-Access ] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Credential harvesting attempt
 [+] [Agent-Access ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Valid account abuse
 [+] [Agent-Exploit] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Kernel privilege escalation simulated
-[+] [Agent-Pivot] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting to 10.10.20.45
+[+] [Agent-Pivot  ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting to 10.10.20.45
 [✓] Simulation Completed Successfully
 
 === Risk Summary ===

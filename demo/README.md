@@ -25,7 +25,7 @@ python demo/advanced_attack_simulation.py
 
 === Risk Summary ===
 
-[*] Initial Entry Point Target  : 10.10.20.15
+[*] Target IP (Initial Entry)   : 10.10.20.15
 [*] Risk Score                  : 9.1/10 (CRITICAL)
 [*] Duration                    : 11.2s
 [*] Simulated Step Count        : 5 Stages

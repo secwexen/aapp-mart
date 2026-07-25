@@ -38,11 +38,11 @@ By combining AI-Powered Autonomous Attack Path Prediction with Multi-Agent Red T
 
 ## How it Works
 
-### 1. AAPP (AI-Powered Autonomous Attack Path Prediction)
+### 1. AI-Powered Autonomous Attack Path Prediction (AAPP)
 
 Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
-### 2. MART (Multi-Agent Red Team Simulation)
+### 2. Multi-Agent Red Team Simulation (MART)
 
 Autonomous agents simulate realistic adversary actions:
 
@@ -53,7 +53,7 @@ Autonomous agents simulate realistic adversary actions:
 - Persistence  
 - Reporting
 
-### 3. ENGINE (Core Orchestration)
+### 3. Core Orchestration (ENGINE)
 
 Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 

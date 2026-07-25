@@ -16,7 +16,7 @@ This document provides a detailed overview of the system’s core capabilities.
 - Agents coordinate, compete, or specialize based on scenario configuration.
 - Behavior aligned with MITRE ATT&CK techniques.
 
-### CORE Orchestration (Engine)
+### ENGINE (Core Orchestration)
 
 - Coordinates the interaction between AAPP and MART to maintain a unified simulation flow.  
 - Manages the global environment state, event propagation, and scenario progression.  

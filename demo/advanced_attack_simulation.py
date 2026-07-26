@@ -185,7 +185,7 @@ def main():
     print("\n=== Comprehensive Risk Summary ===\n")
     
     print(f"[*] Target IP (Initial Entry)   : {report.target}")
-    print(f"[*] Risk Score                  : {report.risk_score}/10 {risk_label}")
+    print(f"[*] Risk Score                  : {report.risk_score}/10 ({report.risk_label})")
     print(f"[*] Duration                    : {report.duration:.1f}s")
     print(f"[*] Simulated Step Count        : {len(report.attack_path)} Stages")
     print(f"[*] Compromised Assets          : {len(report.compromised_assets)} Systems")

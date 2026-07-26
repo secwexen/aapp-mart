@@ -14,35 +14,35 @@
 
 Unlike traditional static vulnerability scanners or manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, validate defensive controls, and understand real‑world risk through repeatable, scalable, and intelligence‑driven simulations. 
 
-The system generates structured **attack-path reports**, **MITRE ATT&CK-mapped insights**, and **risk scoring outputs** to support SOC operations, detection engineering, and continuous security improvement.
+The system generates structured **attack-path reports**, **MITRE ATT&CK mapped insights**, and **risk scoring outputs** to support SOC operations, detection engineering, and continuous security improvement.
 
 ## Why AAPP-MART?
 
 AAPP-MART stands out from traditional security tools in its approach:
 
 - Traditional scanners → static, reactive, often limited to known vulnerabilities.
-- BAS (Breach & Attack Simulation) tools → rely on predefined playbooks and limited scenarios.
+- Breach & Attack Simulation (BAS) tools → rely on predefined playbooks and limited scenarios.
 - AAPP-MART → predictive, autonomous, and adaptive: forecasts attack paths and executes intelligent multi-agent simulations.
 
 By combining AI-Powered Autonomous Attack Path Prediction with Multi-Agent Red Team Simulation, AAPP-MART provides organizations with a forward-looking security posture rather than just reactive alerts.
 
 ## Use Cases
 
-- AI-Powered Autonomous Attack Path Prediction  
-- Multi-Agent Red Team Simulation  
+- AI-Powered Autonomous Attack Path Prediction (AAPP)  
+- Multi-Agent Red Team Simulation (MART)  
 - Attack Surface & Lateral Movement Modeling  
-- MITRE ATT&CK–Aligned Threat Simulation  
+- MITRE ATT&CK Aligned Threat Simulation  
 - Vulnerability Prioritization & Risk Scoring  
 - Continuous Security Assessment  
 - Attack Simulation Research
 
 ## How it Works
 
-### 1. AAPP (AI-Powered Autonomous Attack Path Prediction)
+### 1. AI-Powered Autonomous Attack Path Prediction (AAPP)
 
 Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
 
-### 2. MART (Multi-Agent Red Team Simulation)
+### 2. Multi-Agent Red Team Simulation (MART)
 
 Autonomous agents simulate realistic adversary actions:
 
@@ -53,7 +53,7 @@ Autonomous agents simulate realistic adversary actions:
 - Persistence  
 - Reporting
 
-### 3. Core Orchestration (Engine)
+### 3. Core Orchestration (ENGINE)
 
 Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 
@@ -63,16 +63,14 @@ The system is architected around three primary subsystems:
 
 - AI-Powered Autonomous Attack Path Prediction (AAPP)  
 - Multi-Agent Red Team Simulation (MART)  
-- Core Orchestration (Engine)
+- Core Orchestration (ENGINE)
 
 These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the engine.
 
 ## Legal & Authorized Use Only
 
-AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
-and controlled adversary simulation within environments where explicit permission has been granted.
+AAPP-MART is intended solely for offensive security, adversary emulation, security validation, threat modeling, and risk assessment within environments where explicit permission has been granted.
 
-The system is designed for non-destructive analysis and does not support uncontrolled exploitation. 
 Users are fully responsible for ensuring compliance with all applicable laws, regulations, and organizational policies when operating this system.
 
 Unauthorized use of this system is strictly prohibited and may violate applicable laws and regulations.
@@ -92,13 +90,13 @@ This software is provided “as is” without warranty of any kind, express or i
 
 ## Features
 
-- AI-Powered Autonomous Attack Path Prediction  
-- Multi-Agent Red Team Simulation  
-- Graph-based threat modeling and attack graph analysis  
-- MITRE ATT&CK-aligned adversary behavior modeling  
-- Risk-based security posture analysis  
-- ML-assisted vulnerability prioritization  
-- AI Attack Graph Analysis
+- AI-Powered Autonomous Attack Path Prediction (AAPP)  
+- Multi-Agent Red Team Simulation (MART)  
+- Core Orchestration (ENGINE)  
+- Graph-Based Threat Modeling
+- MITRE ATT&CK Aligned Adversary Behavior
+- Risk-Based Security Posture Analysis  
+- ML-Assisted Vulnerability Prioritization
 
 ## Demo
 
@@ -109,30 +107,31 @@ python demo/advanced_attack_simulation.py
 ### Demo Output
 
 ```text
-=== AAPP-MART — Attack Path Simulation ===
+=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===
 
-[*] Target Acquired: 10.10.20.15
-[+] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Active scanning detected
-[+] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Credential harvesting attempt
-[+] Initial Access       | MITRE: T1078 | Severity: HIGH     | Valid account abuse
-[+] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Remote service pivoting
-[+] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Kernel privilege escalation simulated
+[*] Initial Entry Point Acquired: 10.10.20.15
+[+] [Agent-Recon  ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Duration: 1.4s | Active scanning detected
+[+] [Agent-Access ] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Duration: 2.1s | Credential harvesting attempt
+[+] [Agent-Access ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Duration: 1.8s | Valid account abuse
+[+] [Agent-Exploit] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Duration: 2.7s | Kernel privilege escalation simulated
+[+] [Agent-Pivot  ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Duration: 3.2s | Remote service pivoting to 10.10.20.45
 [✓] Simulation Completed Successfully
 
-=== Risk Summary ===
+=== Comprehensive Risk Summary ===
 
-Target              : 10.10.20.15
-Risk Score          : 9.1/10
-Duration            : 11.2s
-Compromised Assets  : 3
-Generated At        : 2026-01-01 09:58:45
+[*] Target IP (Initial Entry)   : 10.10.20.15
+[*] Risk Score                  : 9.1/10 (CRITICAL)
+[*] Duration                    : 11.2s
+[*] Simulated Step Count        : 5 Stages
+[*] Compromised Assets          : 3 Systems
+[*] Generated At                : 2026-01-01T05:30:03.123456+00:00
 
-Critical Assets:
-- FILE-SERVER-01
-- DOMAIN-CONTROLLER-01
-- HR-DB-01
+Affected Critical Assets:
+[!] FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage      | Severity: HIGH     | Status: Isolated
+[!] DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD  | Severity: CRITICAL | Status: Compromised
+[!] HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database | Severity: CRITICAL | Status: Compromised
 
-[+] Report Exported: aapp-mart/logs/attack-path/attack_path_report.json
+[+] Report Exported: /home/user/aapp-mart/logs/attack-path/attack_path_report.json
 ```
 
 See the [Attack Path Simulation Report](demo/reports/attack_report.json) json file.

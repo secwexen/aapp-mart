@@ -25,6 +25,7 @@ class SimulationReport:
     target: str
     risk_score: float
     risk_label: str
+    executive_summary: str
     attack_path: List[AttackStep]
     compromised_assets: List[str]
     generated_at: str
@@ -104,6 +105,12 @@ class AAPPMartDemo:
             "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Compromised"
         ]
 
+         executive_summary = (
+            f"Simulated attack initiated on {self.target} resulted in a {risk_label} risk environment. "
+            f"The AI engine successfully pivoted through the network, compromising {len(compromised_assets)} "
+            f"critical assets including the Domain Controller."
+        )
+
         self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
@@ -111,6 +118,7 @@ class AAPPMartDemo:
             target=self.target,
             risk_score=risk_score,
             risk_label=risk_label,
+            executive_summary=executive_summary,
             attack_path=attack_chain,
             compromised_assets=compromised_assets,
             generated_at=datetime.now(timezone.utc).isoformat(),

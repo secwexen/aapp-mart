@@ -24,6 +24,7 @@ class SimulationReport:
     simulation_id: str
     target: str
     risk_score: float
+    risk_label: str
     attack_path: List[AttackStep]
     compromised_assets: List[str]
     generated_at: str
@@ -109,6 +110,7 @@ class AAPPMartDemo:
             simulation_id=str(uuid.uuid4()),
             target=self.target,
             risk_score=risk_score,
+            risk_label=risk_label,
             attack_path=attack_chain,
             compromised_assets=compromised_assets,
             generated_at=datetime.now(timezone.utc).isoformat(),

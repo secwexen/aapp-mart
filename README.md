@@ -69,10 +69,8 @@ These subsystems operate in a tightly integrated manner through a shared attack 
 
 ## Legal & Authorized Use Only
 
-AAPP-MART is intended solely for authorized security assessment, defensive threat modeling, 
-and controlled adversary simulation within environments where explicit permission has been granted.
+AAPP-MART is intended solely for offensive security, adversary emulation, security validation, threat modeling, and risk assessment within environments where explicit permission has been granted.
 
-The system is designed for non-destructive analysis and does not support uncontrolled exploitation. 
 Users are fully responsible for ensuring compliance with all applicable laws, regulations, and organizational policies when operating this system.
 
 Unauthorized use of this system is strictly prohibited and may violate applicable laws and regulations.

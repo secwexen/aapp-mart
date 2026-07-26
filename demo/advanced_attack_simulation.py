@@ -21,6 +21,7 @@ class AttackStep:
 
 @dataclass
 class SimulationReport:
+    simulation_id: str
     target: str
     risk_score: float
     attack_path: List[AttackStep]
@@ -103,6 +104,7 @@ class AAPPMartDemo:
         self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
+            simulation_id=str(uuid.uuid4()),
             target=self.target,
             risk_score=risk_score,
             attack_path=attack_chain,

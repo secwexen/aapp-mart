@@ -10,15 +10,15 @@
   --var-accent: #2563eb;
 }
 body {
-     font-family: 'Roboto', sans-serif;
-     margin: 0;
-     padding: 0;
-     line-height: 1.6;
-     color: #1a1a1a;
-     background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #f9f9f9;
 }
 header {
-       background: linear-gradient(90deg, #34728d, #34728d, #34728d);
+    background: linear-gradient(90deg, #34728d, #34728d, #34728d);
        color: #fff;
        padding: 60px 40px;
        text-align: center;
@@ -39,13 +39,13 @@ header > *:not(canvas) {
     z-index: 2;
 }
 header h1 {
-          font-size: 3em;
-          margin-bottom: 10px;
-       }
+    font-size: 3em;
+    margin-bottom: 10px;
+}
 header p {
-         font-size: 1.2em;
-         font-weight: 400;
-       }
+    font-size: 1.2em;
+    font-weight: 400;
+}
 nav {
     background: #1a1a1a;
     display: flex;
@@ -54,20 +54,20 @@ nav {
     padding: 15px 0;
 }
 nav a {
-      color: #fff;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 nav a:hover {
-            color: #00bcd4;
-       }
+    color: #00bcd4;
+}
 section {
-        padding: 40px 20px;
-        max-width: 1000px;
-        margin: auto;
-       }
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 h2 {
    font-size: 2em;
    margin-bottom: 20px;
@@ -80,9 +80,9 @@ p {
   margin-bottom: 20px;
 }
 .features li {
-             margin-bottom: 12px;
-             font-size: 1.05em;
-       }
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
 pre {
     background: #272822;
     color: #f8f8f2;

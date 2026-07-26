@@ -1,6 +1,7 @@
 import json
 import random
 import time
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from dataclasses import dataclass, asdict
@@ -46,7 +47,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
-        self._log(f"Initial Entry Point Acquired: {self.target}")
+        self._log(f"Initial Entry Point Acquired: {self.target} (WORKSTATION-01)")
         time.sleep(1)
 
         attack_chain = [
@@ -98,14 +99,16 @@ class AAPPMartDemo:
             self._simulate_step(step)
 
         risk_score = round(random.uniform(7.8, 9.6), 1)
+        risk_label = get_risk_label(risk_score)
 
         compromised_assets = [
-            "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated",
-            "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised",
-            "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Compromised"
+            "WORKSTATION-08       | IP: 10.10.20.15 | Type: Endpoint     | Severity: HIGH     | Status: Compromised (Initial Vector)",
+            "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated (Domain Admin)",
+            "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised (Data Exfiltrated)",
+            "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Compromised (Attack Blocked)"
         ]
 
-         executive_summary = (
+        executive_summary = (
             f"Simulated attack initiated on {self.target} resulted in a {risk_label} risk environment. "
             f"The AI engine successfully pivoted through the network, compromising {len(compromised_assets)} "
             f"critical assets including the Domain Controller."
@@ -118,6 +121,7 @@ class AAPPMartDemo:
             target=self.target,
             risk_score=risk_score,
             risk_label=risk_label,
+            engine_version=self.engine_version
             executive_summary=executive_summary,
             attack_path=attack_chain,
             compromised_assets=compromised_assets,
@@ -192,11 +196,11 @@ def main():
 
     print("\n=== Comprehensive Risk Summary ===\n")
     
-    print(f"[*] Target IP (Initial Entry)   : {report.target}")
+    print(f"[*] Target IP (Initial Entry)   : {report.target} (WORKSTATION-01)")
     print(f"[*] Risk Score                  : {report.risk_score}/10 ({report.risk_label})")
     print(f"[*] Duration                    : {report.duration:.1f}s")
     print(f"[*] Simulated Step Count        : {len(report.attack_path)} Stages")
-    print(f"[*] Compromised Assets          : {len(report.compromised_assets)} Systems")
+    print(f"[*] Compromised Assets          : {len(report.compromised_assets)} Systems (1 Isolated)")
     print(f"[*] Generated At                : {report.generated_at}")
 
     print("\nAffected Critical Assets:")

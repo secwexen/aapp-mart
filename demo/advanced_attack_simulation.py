@@ -28,6 +28,7 @@ class SimulationReport:
     compromised_assets: List[str]
     generated_at: str
     duration: float
+    engine_version: str
 
 # =========================
 # Demo Engine
@@ -37,6 +38,7 @@ class AAPPMartDemo:
 
     def __init__(self, target: str):
         self.target = target
+        self.engine_version = "v1.0.0-demo"
 
     def run(self) -> SimulationReport:
 

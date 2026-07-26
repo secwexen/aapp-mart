@@ -2,6 +2,7 @@
     "simulation_id": "c9a7b538-2a1d-4f15-8c3b-d1e3456789ab",
     "target": "10.10.20.15",
     "risk_score": 9.1,
+    "risk_label": "CRITICAL",
     "attack_path": [
         {
             "agent": "Agent-Recon",

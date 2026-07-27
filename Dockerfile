@@ -10,12 +10,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libmetis-dev \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
+RUN useradd -m appuser
+
+COPY --chown=appuser:appuser requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY --chown=appuser:appuser . .
 
-RUN useradd -m appuser
 USER appuser
 
 EXPOSE 8080

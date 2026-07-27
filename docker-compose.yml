@@ -8,5 +8,4 @@ services:
     working_dir: /app
     environment:
       - PYTHONUNBUFFERED=1
-    command: python main.py
     restart: unless-stopped

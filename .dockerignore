@@ -8,26 +8,33 @@ __pycache__/
 venv/
 env/
 
-# Build artifacts
+# Build & Test Artifacts
 build/
 dist/
 *.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
 
 # Git
 .git/
 .gitignore
 
-# IDE/editor
+# IDE / Editor / DevContainer
 .vscode/
 .idea/
+.devcontainer/
 *.swp
 
 # OS junk
 .DS_Store
 
-# Logs
+# Logs & Secrets
 *.log
+.env
 
 # Docker itself
 Dockerfile
 docker-compose.yml
+.dockerignore

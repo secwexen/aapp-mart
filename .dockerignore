@@ -7,6 +7,7 @@ __pycache__/
 # Virtual environments
 venv/
 env/
+.venv
 
 # Build & Test Artifacts
 build/
@@ -19,6 +20,7 @@ dist/
 
 # Git
 .git/
+.git
 .gitignore
 
 # IDE / Editor / DevContainer

@@ -6,7 +6,6 @@
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-
   "customizations": {
     "vscode": {
       "settings": {
@@ -15,7 +14,6 @@
         "editor.formatOnSave": true,
         "files.trimTrailingWhitespace": true
       },
-
       "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
@@ -28,7 +26,6 @@
       ]
     }
   },
-
   "postCreateCommand": "pip install --upgrade pip && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi && if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi",
   "forwardPorts": [8000],
   "remoteUser": "vscode"

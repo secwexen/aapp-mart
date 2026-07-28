@@ -14,6 +14,6 @@
 
 ## 2. Limitation of Liability
 
-**​2.1. No Developer Liability:** In no event shall the developers, contributors, and maintainers of this project assume no responsibility or liability for misuse, damage, or legal consequences arising from the use of this software.
+**​2.1. No Developer Liability:** In no event shall the developers, contributors, and maintainers of this project assume any responsibility or liability for misuse, damage, or legal consequences arising from the use of this software.
 
 **2.2. Warranty Disclaimer:** This software is provided **“as is”** and **"as available"**, without warranty of any kind, express or implied.

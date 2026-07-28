@@ -57,7 +57,8 @@ class AAPPMartDemo:
                 mitre_id="T1595",
                 description="Active scanning detected",
                 severity="LOW",
-                duration=1.4
+                duration=1.4,
+                remediation="Update firewall rules and IDS/IPS signatures."
             ),
             AttackStep(
                 agent="Agent-Access",
@@ -65,7 +66,8 @@ class AAPPMartDemo:
                 mitre_id="T1566",
                 description="Credential harvesting attempt",
                 severity="MEDIUM",
-                duration=2.1
+                duration=2.1,
+                remediation="Enforce Multi-Factor Authentication (MFA) and tighten email filters."
             ),
             AttackStep(
                 agent="Agent-Access",
@@ -73,7 +75,8 @@ class AAPPMartDemo:
                 mitre_id="T1078",
                 description="Valid account abuse",
                 severity="HIGH",
-                duration=1.8
+                duration=1.8,
+                remediation="Audit account privileges and enforce Privileged Access Management (PAM)."
             ),
             AttackStep(
                 agent="Agent-Exploit",
@@ -81,7 +84,8 @@ class AAPPMartDemo:
                 mitre_id="T1068",
                 description="Kernel privilege escalation simulated",
                 severity="CRITICAL",
-                duration=2.7
+                duration=2.7,
+                remediation="Apply the latest OS kernel patches and security updates."
             ),
             AttackStep(
                 agent="Agent-Pivot",
@@ -89,7 +93,8 @@ class AAPPMartDemo:
                 mitre_id="T1021",
                 description="Remote service pivoting to 10.10.20.45",
                 severity="HIGH",
-                duration=3.2
+                duration=3.2,
+                remediation="Implement network micro-segmentation and restrict RDP/SSH access."
             ),
         ]
 

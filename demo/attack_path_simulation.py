@@ -31,6 +31,7 @@ class AttackStep:
     description: str
     severity: str
     duration: float
+    remediation: str
 
 @dataclass
 class SimulationReport:
@@ -43,7 +44,6 @@ class SimulationReport:
     compromised_assets: List[str]
     generated_at: str
     duration: float
-    remediation: str
     engine_version: str
 
 # =========================

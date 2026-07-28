@@ -153,15 +153,15 @@ class ReportExporter:
     @staticmethod
     def export_json(report: SimulationReport, output_path: str):
         try:
-             Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        report_data = asdict(report)
+            Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+            report_data = asdict(report)
 
-        with open(output_path, "w", encoding="utf-8") as f:
+            with open(output_path, "w", encoding="utf-8") as f:
             json.dump(report_data, f, indent=4)
 
-        print(f"\n[+] Report Exported: {output_path}")
-    except Exception as e:
-        print(f"\n[!] Error exporting report: {e}")
+            print(f"\n[+] Report Exported: {output_path}")
+         except Exception as e:
+            print(f"\n[!] Error exporting report: {e}")
 
 # =========================
 # Helper Functions

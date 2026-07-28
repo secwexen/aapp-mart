@@ -8,18 +8,6 @@ from dataclasses import dataclass, asdict
 from typing import List
 
 # =========================
-# MITRE Remediations
-# =========================
-
-MITRE_REMEDIATIONS = {
-    "T1595": "Update firewall rules and IDS/IPS signatures.",
-    "T1566": "Enforce Multi-Factor Authentication (MFA) and tighten email filters.",
-    "T1078": "Audit account privileges and enforce Privileged Access Management (PAM).",
-    "T1068": "Apply the latest OS kernel patches and security updates.",
-    "T1021": "Implement network micro-segmentation and restrict RDP/SSH access."
-}
-
-# =========================
 # Data Models
 # =========================
 

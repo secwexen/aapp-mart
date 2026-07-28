@@ -154,7 +154,7 @@ class ReportExporter:
     def export_json(report: SimulationReport, output_path: str):
 
 try:        
-Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         report_data = asdict(report)
 
         with open(output_path, "w", encoding="utf-8") as f:

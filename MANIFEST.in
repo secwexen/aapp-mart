@@ -37,7 +37,7 @@ recursive-include start-here *.md
 # Include data files
 recursive-include data *
 recursive-include sample_targets *
-recursive-include attack_signatures.json *
+include attack_signatures.json *
 
 # Include assets
 recursive-include assets/images *.png

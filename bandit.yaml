@@ -9,6 +9,9 @@ exclude_dirs:
   - .venv
   - migrations
   - third_party
+  - demo
+  - build
+  - dist
 
 tests:
   - B102  # exec used
@@ -37,3 +40,8 @@ tests:
   - B322  # insecure md5 usage
   - B323  # insecure sha1 usage
   - B324  # insecure temp file usage
+  - B501  # request with verify=False (SSL validation bypassed)
+  - B602  # subprocess shell=True
+  - B603  # subprocess usage without shell
+  - B607  # partial path execution
+  - B608  # Possible SQL injection hazard

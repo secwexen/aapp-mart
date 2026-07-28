@@ -10,6 +10,8 @@
 
 **​1.4. Prior Authorization:** By using this software, users acknowledge that they have obtained all necessary permissions and authorizations prior to conducting any security testing activities.
 
+**1.5. Third-Party Policies:** This repository may contain links to or references for third-party tools, frameworks, and external resources. The repository owner is not responsible for the content, security, availability, accuracy, or functionality of any third-party materials.
+
 ## 2. Limitation of Liability
 
 **​2.1. No Developer Liability:** In no event shall the developers, contributors, and maintainers of this project assume no responsibility or liability for misuse, damage, or legal consequences arising from the use of this software.

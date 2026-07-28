@@ -111,7 +111,7 @@ class AAPPMartDemo:
             ),
         ]
 
-        total_duration = sum(step.duration for step in attack_chain)
+        total_duration = round(sum(step.duration for step in attack_chain), 1)
 
         for step in attack_chain:
             self._simulate_step(step)

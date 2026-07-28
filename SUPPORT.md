@@ -6,12 +6,14 @@ We are committed to providing support for users and contributors.
 
 ## Getting Help
 
-- [Documentation](docs/)
+### 1. [Documentation](docs/)
 
-- Issues & Bugs  
+### 2. Issues & Bugs:
+
 Please open a GitHub issue in the [Issues](https://github.com/secwexen/aapp-mart/issues) section with a clear description, steps to reproduce, and expected behavior.
 
-- Feature Requests  
+### 3. Feature Requests:
+
 Submit a new issue labeled `feature-request` to propose enhancements.
 
 ## Security Issues

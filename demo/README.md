@@ -39,7 +39,7 @@ Affected Critical Assets:
 [+] Report Exported: /home/user/aapp-mart/logs/attack-path/attack_path_simulation_logs.json
 ```
 
-See the [Attack Path Simulation Logs](demo/logs/attack_path/attack_path_simulation_logs.json) json file.
+See the [Attack Path Simulation Logs](demo/logs/attack-path/attack_path_simulation_logs.json) json file.
 
 > [!NOTE]
 > This IP/hostname is an example target.

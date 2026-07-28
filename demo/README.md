@@ -5,7 +5,7 @@ This directory contains runnable demonstration scripts for the AAPP-MART system.
 ## Attack Path Simulation Demo
 
 ```bash
-python demo/advanced_attack_simulation.py
+python demo/attack_path_simulation.py
 ```
 
 ### Attack Path Simulation Demo Output

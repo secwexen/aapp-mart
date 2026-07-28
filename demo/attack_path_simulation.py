@@ -157,12 +157,6 @@ class ReportExporter:
 
         report_data = asdict(report)
 
-        # dataclass nested conversion
-        report_data["attack_path"] = [
-            asdict(step)
-            for step in report.attack_path
-        ]
-
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(report_data, f, indent=4)
 

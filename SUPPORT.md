@@ -6,7 +6,7 @@ We are committed to providing support for users and contributors.
 
 ## Getting Help
 
-### 1. [Documentation](docs/)
+### 1. [Documentation](docs/) - Comprehensive project documentation, guides, and API references.
 
 ### 2. Issues & Bugs:
 

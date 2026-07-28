@@ -4,7 +4,9 @@ Thank you for your interest in the **AAPP-MART** project.
 
 We are committed to providing support for users and contributors.
 
-## How to Get Help
+## Getting Help
+
+- [Documentation](docs/)
 
 - Issues & Bugs  
 Please open a GitHub issue in the [Issues](https://github.com/secwexen/aapp-mart/issues) section with a clear description, steps to reproduce, and expected behavior.

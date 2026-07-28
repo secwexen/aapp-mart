@@ -152,7 +152,7 @@ class ReportExporter:
 
     @staticmethod
     def export_json(report: SimulationReport, output_path: str):
-     try:        
+     try:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         report_data = asdict(report)
 

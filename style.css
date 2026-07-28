@@ -18,8 +18,8 @@ body {
     background-color: #f9f9f9;
 }
 header {
-    background: linear-gradient(90deg, #34728d, #34728d, #34728d);
-       color: #fff;
+    background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff);
+       color: #ffffff;
        padding: 60px 40px;
        text-align: center;
        position: relative;
@@ -54,7 +54,7 @@ nav {
     padding: 15px 0;
 }
 nav a {
-    color: #fff;
+    color: #ffffff;
     margin: 0 20px;
     text-decoration: none;
     font-weight: 500;
@@ -92,7 +92,7 @@ pre {
 }
 footer {
     background: #1a1a1a;
-    color: #fff;
+    color: #ffffff;
     padding: 30px;
     margin-top: 40px;
 }

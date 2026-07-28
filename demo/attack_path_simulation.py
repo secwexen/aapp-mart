@@ -150,7 +150,7 @@ class AAPPMartDemo:
 
 class ReportExporter:
 
-    @staticmethod
+@staticmethod
 def export_json(report: SimulationReport, output_path: str):
     try:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)

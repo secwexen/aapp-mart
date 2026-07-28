@@ -36,10 +36,10 @@ Affected Critical Assets:
 [!] DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD  | Severity: CRITICAL | Status: Compromised (Data Exfiltrated)
 [!] HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database | Severity: CRITICAL | Status: Compromised (Attack Blocked)
 
-[+] Report Exported: /home/user/aapp-mart/logs/attack-path/attack_path_report.json
+[+] Report Exported: /home/user/aapp-mart/logs/attack-path/attack_path_simulation_logs.json
 ```
 
-See the [Attack Path Simulation Report](demo/reports/attack_report.json) file.
+See the [Attack Path Simulation Logs](demo/logs/attack_path_simulation_logs.json) json file.
 
 > [!NOTE]
 > This IP/hostname is an example target.

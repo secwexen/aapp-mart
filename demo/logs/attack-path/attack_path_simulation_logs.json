@@ -58,6 +58,6 @@
         "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Compromised (Attack Blocked)"
     ],
     "generated_at": "2026-01-01T05:30:03.123456+00:00",
-    "duration": "11.2",
+    "duration": 11.2,
     "engine_version": "v1.0.0-demo"
 }

@@ -42,4 +42,4 @@ Affected Critical Assets:
 See the [Attack Path Simulation Logs](demo/logs/attack-path/attack_path_simulation_logs.json) json file.
 
 > [!NOTE]
-> This IP/hostname is an example target.
+> This IP/hostname is an example target used for demonstration purposes only.

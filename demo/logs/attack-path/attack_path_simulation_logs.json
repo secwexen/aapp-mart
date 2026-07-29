@@ -2,7 +2,7 @@
     "simulation_id": "c9a7b538-2a1d-4f15-8c3b-d1e3456789ab",
     "target": "10.10.20.15",
     "risk_score": 9.1,
-    "risk_label": "(CRITICAL)",
+    "risk_label": "CRITICAL",
     "executive_summary": "Simulated attack initiated on 10.10.20.15 resulted in a (CRITICAL) risk environment. The AI engine successfully pivoted through the network, compromising 3 critical assets including the Domain Controller.",
     "attack_path": [
         {

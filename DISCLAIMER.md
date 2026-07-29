@@ -1,6 +1,6 @@
 # Legal Disclaimer
 
-All resources provided in this repository are developed strictly for educational, research, and authorized security testing purposes.
+All resources provided in this repository are developed strictly for educational, research, and authorized security research purposes.
 
 ## 1. Authorized and Ethical Use Only
 

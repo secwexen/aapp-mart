@@ -1,5 +1,7 @@
 # Legal Disclaimer
 
+All resources provided in this repository are developed strictly for educational, research, and authorized security testing purposes.
+
 ## 1. Authorized and Ethical Use Only
 
 **​1.1. Scope of Use:** AAPP‑MART is intended solely for ethical, legal, and explicitly authorized security research, penetration testing, and defensive security validation.

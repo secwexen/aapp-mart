@@ -43,9 +43,7 @@ AAPP-MART addresses limitations in traditional security approaches by providing:
 
 ## 5. Does AAPP-MART replace human red teams?
 
-No.
-
-AAPP-MART is designed to **augment, not replace**, human expertise.
+No. AAPP-MART is designed to **augment, not replace**, human expertise.
 
 It helps security teams:
 

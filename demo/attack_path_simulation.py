@@ -207,12 +207,12 @@ def main():
 
     print("\n=== Comprehensive Risk Summary ===\n")
 
-    print(f"[*] Target IP (Initial Entry)   : {report.target} (WORKSTATION-01)")
-    print(f"[*] Risk Score                  : {report.risk_score}/10 ({report.risk_label})")
-    print(f"[*] Duration                    : {report.duration:.1f}s")
-    print(f"[*] Simulated Step Count        : {len(report.attack_path)} Stages")
-    print(f"[*] Compromised Assets          : {len(report.compromised_assets)} Systems (1 Isolated)")
-    print(f"[*] Generated At                : {report.generated_at}")
+    print(f"[*] Target IP (Initial Entry)  : {report.target} (WORKSTATION-01)")
+    print(f"[*] Risk Score                 : {report.risk_score}/10 ({report.risk_label})")
+    print(f"[*] Duration                   : {report.duration:.1f}s")
+    print(f"[*] Simulated Step Count       : {len(report.attack_path)} Stages")
+    print(f"[*] Compromised Assets         : {len(report.compromised_assets)} Systems (1 Isolated)")
+    print(f"[*] Generated At               : {report.generated_at}")
 
     print("\nAffected Critical Assets:")
     for asset in report.compromised_assets:

@@ -89,6 +89,7 @@ pre {
     padding: 20px;
     border-radius: 8px;
     max-width: 100%;
+    overflow-x: auto;
 }
 footer {
     background: #1a1a1a;

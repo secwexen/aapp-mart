@@ -209,7 +209,7 @@ def main():
         print(f" [!] {asset}")
 
     output_file = (
-        f"./aapp-mart/logs/attack-path/attack_path_simulation_logs.json"
+        f"./aapp-mart/logs/attack-path/attack_path_simulation_{self.target}.json"
     )
 
     ReportExporter.export_json(report, output_file)

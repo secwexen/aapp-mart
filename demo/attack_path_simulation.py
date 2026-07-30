@@ -175,13 +175,13 @@ class ReportExporter:
 
 def get_risk_label(score: float) -> str:
     if score >= 9.0:
-        return "(CRITICAL)"
+        return "CRITICAL"
     elif score >= 7.0:
-        return "(HIGH)"
+        return "HIGH"
     elif score >= 4.0:
-        return "(MEDIUM)"
+        return "MEDIUM"
     else:
-        return "(LOW)"
+        return "LOW"
 
 # =========================
 # Main

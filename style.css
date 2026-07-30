@@ -115,6 +115,10 @@ footer {
     margin-left: auto;
 }
 
+a {
+    color: #0056b3;
+}
+
 @media (max-width: 1024px) {
     header {
         padding: 50px 20px;

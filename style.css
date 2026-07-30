@@ -114,9 +114,6 @@ footer {
     text-align: right;
     margin-left: auto;
 }
-a {
-  color: #00bcd4;
-}
 
 @media (max-width: 1024px) {
     header {

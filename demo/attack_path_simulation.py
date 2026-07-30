@@ -208,8 +208,12 @@ def main():
     for asset in report.compromised_assets:
         print(f" [!] {asset}")
 
+    clean_target = report.target.replace(".", "_")
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
     output_file = (
-        f"./aapp-mart/logs/attack-path/attack_path_simulation_{self.target}.json"
+        f"./aapp-mart/logs/attack-path/attack_path_{clean_target}_{timestamp}.json"
     )
 
     ReportExporter.export_json(report, output_file)

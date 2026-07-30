@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo
+AAPP-MART Engine
+
+An AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine designed for enterprise security analysis.
+
+Version: v1.0.0-demo
 """
 
 import json

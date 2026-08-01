@@ -29,6 +29,7 @@ class AttackStep:
     mitre_id: str
     description: str
     severity: str
+    status: str
     duration: float
     remediation: str
 
@@ -36,6 +37,7 @@ class AttackStep:
 class SimulationReport:
     simulation_id: str
     target: str
+    status: str
     risk_score: float
     risk_label: str
     executive_summary: str
@@ -69,6 +71,7 @@ class AAPPMartDemo:
                 mitre_id="T1595",
                 description="Active scanning detected",
                 severity="LOW",
+                status="SUCCESS",
                 duration=1.4,
                 remediation="Update firewall rules and IDS/IPS signatures."
             ),
@@ -78,6 +81,7 @@ class AAPPMartDemo:
                 mitre_id="T1566",
                 description="Credential harvesting attempt",
                 severity="MEDIUM",
+                status="SUCCESS",
                 duration=2.1,
                 remediation="Enforce Multi-Factor Authentication (MFA) and tighten email filters."
             ),
@@ -87,6 +91,7 @@ class AAPPMartDemo:
                 mitre_id="T1078",
                 description="Valid account abuse",
                 severity="HIGH",
+                status="SUCCESS",
                 duration=1.8,
                 remediation="Audit account privileges and enforce Privileged Access Management (PAM)."
             ),
@@ -96,6 +101,7 @@ class AAPPMartDemo:
                 mitre_id="T1068",
                 description="Kernel privilege escalation simulated",
                 severity="CRITICAL",
+                status="SUCCESS",
                 duration=2.7,
                 remediation="Apply the latest OS kernel patches and security updates."
             ),
@@ -105,6 +111,7 @@ class AAPPMartDemo:
                 mitre_id="T1021",
                 description="Remote service pivoting to 10.10.20.45",
                 severity="HIGH",
+                status="SUCCESS",
                 duration=3.2,
                 remediation="Implement network micro-segmentation and restrict RDP/SSH access."
             ),
@@ -136,6 +143,7 @@ class AAPPMartDemo:
         return SimulationReport(
             simulation_id=str(uuid.uuid4()),
             target=self.target,
+            status="COMPLETED",
             risk_score=risk_score,
             risk_label=risk_label,
             engine_version=self.engine_version,

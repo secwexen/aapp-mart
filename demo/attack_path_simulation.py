@@ -160,6 +160,7 @@ class AAPPMartDemo:
             f" {step.phase:<22}"
             f" | MITRE: {step.mitre_id:<8}"
             f" | Severity: {step.severity:<8}"
+            f" | Status: {step.status:<8}"
             f" | Duration: {step.duration:.1f}s"
             f" | {step.description}"
         )

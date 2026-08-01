@@ -13,7 +13,6 @@ import json
 import random
 import time
 import uuid
-import argparse
 from datetime import datetime, timezone
 from pathlib import Path
 from dataclasses import dataclass, asdict
@@ -200,11 +199,8 @@ def get_risk_label(score: float) -> str:
 # =========================
 
 def main():
-    parser = argparse.ArgumentParser(description="AAPP-MART demo attack path simulation")
-    parser.add_argument("--target", "-t", default="10.10.20.15", help="Target IP or hostname")
-    args = parser.parse_args()
 
-    target = args.target
+    target = "10.10.20.15"
 
     engine = AAPPMartDemo(target=target)
 

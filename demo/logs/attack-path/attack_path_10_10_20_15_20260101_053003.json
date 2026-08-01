@@ -1,6 +1,7 @@
 {
     "simulation_id": "c9a7b538-2a1d-4f15-8c3b-d1e3456789ab",
     "target": "10.10.20.15",
+    "status": "COMPLETED",
     "risk_score": 9.1,
     "risk_label": "CRITICAL",
     "executive_summary": "Simulated attack initiated on 10.10.20.15 resulted in a (CRITICAL) risk environment. The AI engine successfully pivoted through the network, compromising 3 critical assets including the Domain Controller.",
@@ -11,6 +12,7 @@
             "mitre_id": "T1595",
             "description": "Active scanning detected",
             "severity": "LOW",
+            "status": "SUCCESS",
             "duration": 1.4,
             "remediation": "Update firewall rules and IDS/IPS signatures."
         },
@@ -20,6 +22,7 @@
             "mitre_id": "T1566",
             "description": "Credential harvesting attempt",
             "severity": "MEDIUM",
+            "status": "SUCCESS",
             "duration": 2.1,
             "remediation": "Enforce Multi-Factor Authentication (MFA) and tighten email filters."
         },
@@ -29,6 +32,7 @@
             "mitre_id": "T1078",
             "description": "Valid account abuse",
             "severity": "HIGH",
+            "status": "SUCCESS",
             "duration": 1.8,
             "remediation": "Audit account privileges and enforce Privileged Access Management (PAM)."
         },
@@ -38,6 +42,7 @@
             "mitre_id": "T1068",
             "description": "Kernel privilege escalation simulated",
             "severity": "CRITICAL",
+            "status": "SUCCESS",
             "duration": 2.7,
             "remediation": "Apply the latest OS kernel patches and security updates."
         },
@@ -47,6 +52,7 @@
             "mitre_id": "T1021",
             "description": "Remote service pivoting to 10.10.20.45",
             "severity": "HIGH",
+            "status": "SUCCESS",
             "duration": 3.2,
             "remediation": "Implement network micro-segmentation and restrict RDP/SSH access."
         }

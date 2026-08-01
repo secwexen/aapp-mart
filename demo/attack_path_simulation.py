@@ -203,9 +203,7 @@ def main():
     parser = argparse.ArgumentParser(description="AAPP-MART demo attack path simulation")
     parser.add_argument("--target", "-t", default="10.10.20.15", help="Target IP or hostname")
     parser.add_argument("--outdir", "-o", default="aapp-mart/logs/attack-path", help="Output directory")
-
-    if args.seed is not None:
-        random.seed(args.seed)
+    args = parser.parse_args()
 
     target = args.target
 

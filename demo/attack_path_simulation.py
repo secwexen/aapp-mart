@@ -207,7 +207,7 @@ def main():
     if args.seed is not None:
         random.seed(args.seed)
 
-    target = "10.10.20.15"
+    target = args.target
 
     engine = AAPPMartDemo(target=target)
 

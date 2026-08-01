@@ -19,7 +19,6 @@ recursive-include commands *.py
 recursive-include common *.py
 recursive-include cve *.py
 recursive-include domain *.py
-recursive-include mart *.py
 recursive-include modules *.py
 recursive-include network *.py
 recursive-include offline *.py
@@ -33,11 +32,6 @@ recursive-include examples *.py *.json
 recursive-include demo *.py *.ipynb *.md
 recursive-include docs *.md
 recursive-include start-here *.md
-
-# Include data files
-recursive-include data *
-recursive-include sample_targets *
-include attack_signatures.json *
 
 # Include assets
 recursive-include assets/images *.png

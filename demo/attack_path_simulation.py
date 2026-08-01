@@ -223,7 +223,7 @@ def main():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     output_file = (
-        f"./aapp-mart/logs/attack-path/attack_path_{clean_target}_{timestamp}.json"
+        f"demo/aapp-mart/logs/attack-path/attack_path_{clean_target}_{timestamp}.json"
     )
 
     ReportExporter.export_json(report, output_file)

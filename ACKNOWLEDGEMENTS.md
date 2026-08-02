@@ -8,6 +8,10 @@ We gratefully acknowledge the individuals, projects, and organizations whose sup
 - The maintainers of Python, open source ML libraries, and graph libraries enabling rapid research and prototyping.  
 - The broader security and research community for continuously sharing knowledge, tools, and techniques.
 
+## Key Dependencies
+
+We extend our gratitude to the maintainers of the key dependencies, foundational tools, and open-source packages that made the development of AAPP-MART possible.
+
 ## Contributors
 
 We thank all contributors who have helped improve this project through code contributions, issue reporting, suggestions, and feature development.

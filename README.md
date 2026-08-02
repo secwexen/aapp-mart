@@ -117,7 +117,7 @@ python demo/attack_path_simulation.py
 [+] [Agent-Pivot  ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Status: SUCCESS | Duration: 3.2s | Remote service pivoting to 10.10.20.45
 [✓] Simulation Completed Successfully
 
-=== Comprehensive Risk Summary ===
+=== COMPREHENSIVE RISK SUMMARY ===
 
 [*] Target IP (Initial Entry)  : 10.10.20.15 (WORKSTATION-01)
 [*] Risk Score                 : 9.1/10 (CRITICAL)
@@ -126,7 +126,8 @@ python demo/attack_path_simulation.py
 [*] Affected Assets            : 4 Systems (2 Compromised, 1 Isolated, 1 Blocked)
 [*] Generated At               : 2026-01-01T05:30:03.123456+00:00
 
-[*] Affected Critical Assets:
+--- Affected Critical Assets ---
+
 [!] WORKSTATION-01       | IP: 10.10.20.15 | Type: Endpoint     | Severity: HIGH     | Status: Compromised | Detail: Initial Vector
 [!] FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage      | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin
 [!] DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD  | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated

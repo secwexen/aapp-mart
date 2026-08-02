@@ -27,7 +27,7 @@ python demo/attack_path_simulation.py
 [*] Risk Score                 : 9.1/10 (CRITICAL)
 [*] Duration                   : 11.2s
 [*] Simulated Step Count       : 5 Stages
-[*] Affected Assets            : 4 Systems (1 Isolated), (2 Compromised), (1 Blocked)
+[*] Affected Assets            : 4 Systems (2 Compromised, 1 Isolated, 1 Blocked)
 [*] Generated At               : 2026-01-01T05:30:03.123456+00:00
 
 Affected Critical Assets:

@@ -228,7 +228,7 @@ def main():
 
     report = engine.run()
 
-    print("\n=== Comprehensive Risk Summary ===\n")
+    print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
 
     print(f"[*] Target IP (Initial Entry)  : {report.target} (WORKSTATION-01)")
     print(f"[*] Risk Score                 : {report.risk_score}/10 ({report.risk_label})")
@@ -237,7 +237,7 @@ def main():
     print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems (2 Compromised, 1 Isolated, 1 Blocked)")
     print(f"[*] Generated At               : {report.generated_at}")
 
-    print("\n[*] Affected Critical Assets:")
+    print("\n--- Affected Critical Assets ---\n")
     for asset in report.compromised_assets:
         print(f" [!] {asset}")
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-==========================
+=========================
 AAPP-MART Security Engine
-==========================
+=========================
 
 An AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine
 designed for enterprise security analysis.
@@ -22,10 +22,10 @@ Requirements:
 Outputs:
     - JSON Execution Logs: aapp-mart/logs/attack-path/attack_path_<target>_<timestamp>.json
 
-----------------------------
+--------------------------
 :Project:      AAPP-MART
 :Version:      v1.0.0-demo
-============================
+==========================
 """
 
 import json

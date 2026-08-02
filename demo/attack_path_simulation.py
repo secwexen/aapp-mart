@@ -221,7 +221,7 @@ def main():
     print(f"[*] Risk Score                 : {report.risk_score}/10 ({report.risk_label})")
     print(f"[*] Duration                   : {report.duration:.1f}s")
     print(f"[*] Simulated Step Count       : {len(report.attack_path)} Stages")
-    print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems (1 Isolated), (2 Compromised), (1 Blocked)")
+    print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems (2 Compromised, 1 Isolated, 1 Blocked)")
     print(f"[*] Generated At               : {report.generated_at}")
 
     print("\nAffected Critical Assets:")

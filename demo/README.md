@@ -34,7 +34,7 @@ Affected Critical Assets:
 [!] WORKSTATION-01       | IP: 10.10.20.15 | Type: Endpoint     | Severity: HIGH     | Status: Compromised | Detail: Initial Vector
 [!] FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage      | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin
 [!] DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD  | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated
-[!] HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database | Severity: CRITICAL | Status: Compromised | Detail: Attack Blocked
+[!] HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database | Severity: CRITICAL | Status: Blocked | Detail: Attack Blocked
 
 [+] Report Exported: aapp-mart/logs/attack-path/attack_path_10_10_20_15_20260101_053003.json
 ```

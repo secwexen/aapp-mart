@@ -8,7 +8,6 @@ Before installing AAPP‑MART, ensure your environment meets the following requi
 
 - Python 3.11+
 - Docker
-- Kubernetes (for deployment)
 - YAML / JSON-based configuration ecosystem
 
 ## 1. Clone the Repository

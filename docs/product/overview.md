@@ -6,8 +6,8 @@ This project goes beyond traditional static vulnerability scanning by combining 
 
 At the core of AAPP-MART are two tightly integrated subsystems:
 
-- AAPP (AI-Powered Autonomous Attack Path Prediction), which analyzes assets, identities, configurations, permissions, vulnerabilities, and relationships to forecast the most probable attack paths an adversary may exploit.
-- MART (Multi-Agent Red Team Simulation), which coordinates autonomous agents that emulate realistic attacker behavior across multiple stages of the cyber kill chain, including reconnaissance, initial access, lateral movement, privilege escalation, persistence, and reporting.
+- AI-Powered Autonomous Attack Path Prediction (AAPP), which analyzes assets, identities, configurations, permissions, vulnerabilities, and relationships to forecast the most probable attack paths an adversary may exploit.
+- Multi-Agent Red Team Simulation (MART), which coordinates autonomous agents that emulate realistic attacker behavior across multiple stages of the cyber kill chain, including reconnaissance, initial access, lateral movement, privilege escalation, persistence, and reporting.
 
 These components are orchestrated through a centralized knowledge graph that continuously maintains the security state of the target environment. By correlating infrastructure relationships with simulated adversarial actions, AAPP-MART produces data-driven attack-path analysis and realistic risk assessments that reflect how an actual attacker could progress through a network.
 

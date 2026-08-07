@@ -121,6 +121,7 @@ python demo/attack_path_simulation.py
 
 [*] Target IP (Initial Entry)  : 10.10.20.15 (WORKSTATION-01)
 [*] Risk Score                 : 9.1/10 (CRITICAL)
+[*] Summary                    : DC breached via Workstation kernel exploit. High-value target compromise.
 [*] Duration                   : 11.2s
 [*] Simulated Step Count       : 5 Stages
 [*] Affected Assets            : 4 Systems (2 Compromised, 1 Isolated, 1 Blocked)

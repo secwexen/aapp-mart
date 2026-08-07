@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #1a1a1a;
+    color: #000000;
     background-color: #ffffff;
 }
 header {
@@ -95,7 +95,7 @@ pre {
     overflow-x: auto;
 }
 footer {
-    background: #1a1a1a;
+    background: #000000;
     color: #ffffff;
     padding: 30px;
     margin-top: 40px;

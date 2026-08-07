@@ -47,7 +47,7 @@ header p {
     font-weight: 400;
 }
 nav {
-    background: #1a1a1a;
+    background: #000000;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -1,6 +1,6 @@
 # Demo
 
-This directory contains runnable demonstration scripts for the AAPP-MART system.
+This directory contains runnable demonstration scripts for the AAPP-MART security engine.
 
 ## Attack Path Simulation Demo
 

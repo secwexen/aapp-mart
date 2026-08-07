@@ -150,7 +150,7 @@ class AAPPMartDemo:
 
         executive_summary = (
             f"Simulated attack initiated on {self.target} resulted in a {risk_label} risk environment. "
-            f"The AI engine successfully pivoted through the network, compromising {len(compromised_assets)} "
+            f"The AI engine successfully pivoted through the network, affecting {len(compromised_assets)} "
             f"critical assets including the Domain Controller."
         )
 

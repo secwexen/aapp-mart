@@ -53,6 +53,7 @@ class SimulationReport:
     status: str
     risk_score: float
     risk_label: str
+    short_summary: str
     executive_summary: str
     attack_path: List[AttackStep]
     compromised_assets: List[str]
@@ -145,6 +146,8 @@ class AAPPMartDemo:
             "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked"
         ]
 
+        short_summary = "DC breached via Workstation kernel exploit. High-value target compromise."
+
         executive_summary = (
             f"Simulated attack initiated on {self.target} resulted in a {risk_label} risk environment. "
             f"The AI engine successfully pivoted through the network, compromising {len(compromised_assets)} "
@@ -232,6 +235,7 @@ def main():
 
     print(f"[*] Target IP (Initial Entry)  : {report.target} (WORKSTATION-01)")
     print(f"[*] Risk Score                 : {report.risk_score}/10 ({report.risk_label})")
+    print(f"[*] Summary                    : {report.short_summary}")
     print(f"[*] Duration                   : {report.duration:.1f}s")
     print(f"[*] Simulated Step Count       : {len(report.attack_path)} Stages")
     print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems (2 Compromised, 1 Isolated, 1 Blocked)")

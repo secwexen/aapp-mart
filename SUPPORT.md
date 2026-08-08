@@ -33,3 +33,8 @@ If you discover a security vulnerability in AAPP-MART, please report it responsi
 ## Contributing
 
 If you would like to contribute, please see [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
+
+## Thank You
+
+Your feedback helps improve the project and supports the cybersecurity community.  
+We appreciate your interest and contributions!

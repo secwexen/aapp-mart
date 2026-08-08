@@ -26,9 +26,9 @@ If you discover a security vulnerability in AAPP-MART, please report it responsi
 
 ## Response Commitments
 
-- Response Time: We aim to respond to issues within 48 hours.  
+- Response Time: We aim to respond to issues within 24 business hours.  
 - Critical Bugs: Security or production-impacting bugs are prioritized.  
-- Community Contributions: Pull requests are reviewed within 7 days.
+- Community Contributions: Pull requests are reviewed within 3 business days.
 
 ## Contributing
 

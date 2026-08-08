@@ -4,25 +4,45 @@ Thank you for your interest in the **AAPP-MART** project.
 
 We are committed to providing support for users and contributors.
 
-## Getting Help
+## Where to Get Help
 
 ### 1. Project Documentation
 
 Comprehensive project [documentation](docs/), guides, and API references.
 
-### 2. Issues & Bugs:
-
-Please open a GitHub issue in the [Issues](https://github.com/secwexen/aapp-mart/issues) section with a clear description, steps to reproduce, and expected behavior.
-
-### 3. Feature Requests:
+### 2. Feature Requests:
 
 Submit a new issue labeled `feature-request` to propose enhancements.
 
-## Security Issues
+## GitHub Issues (Primary Support Channel)
 
-If you discover a security vulnerability in AAPP-MART, please report it responsibly.
+Use the **Issues** tab for:
 
-- Open a [Private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new).
+- Bug reports  
+- Documentation problems  
+- Broken links or missing files  
+- Feature requests  
+- General questions about repository usage
+
+Create an issue here: [Issues](https://github.com/secwexen/security-playbooks/issues)
+
+Please include:
+
+- Clear description of the problem  
+- Steps to reproduce  
+- Logs, screenshots, or error messages  
+- Environment details (OS, Python version, tools used)
+
+## Security & Vulnerability Reports
+
+If you discover a **security issue**, do **NOT** open a public GitHub issue.
+
+Instead, follow the instructions in:
+
+- Open a [Private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new)  
+- [SECURITY](SECURITY.md)
+
+This ensures responsible disclosure and safe handling.
 
 ## Response Commitments
 

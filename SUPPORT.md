@@ -24,7 +24,7 @@ Use the **Issues** tab for:
 - Feature requests  
 - General questions about repository usage
 
-Create an issue here: [Issues](https://github.com/secwexen/security-playbooks/issues)
+Create an issue here: [Issues](https://github.com/secwexen/aapp-mart/issues)
 
 Please include:
 

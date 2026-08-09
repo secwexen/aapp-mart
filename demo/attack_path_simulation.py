@@ -53,13 +53,13 @@ class SimulationReport:
     status: str
     risk_score: float
     risk_label: str
+    engine_version: str
     short_summary: str
     executive_summary: str
     attack_path: List[AttackStep]
     compromised_assets: List[str]
     generated_at: str
     duration: float
-    engine_version: str
 
 # =========================
 # Demo Engine

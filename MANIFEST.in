@@ -30,7 +30,6 @@ recursive-include utils *.py
 recursive-include examples *.py *.json
 recursive-include demo *.py *.ipynb *.md
 recursive-include docs *.md
-recursive-include start-here *.md
 
 # Include assets
 recursive-include assets/images *.png

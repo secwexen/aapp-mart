@@ -156,7 +156,8 @@ class AAPPMartDemo:
             f"critical assets including the Domain Controller."
         )
 
-        self._log("Simulation Completed Successfully \n", success=True)
+        print()
+        self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
             simulation_id=str(uuid.uuid4()),

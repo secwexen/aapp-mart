@@ -1,11 +1,10 @@
 # Include metadata & docs
 include README.md LICENSE CHANGELOG.md CITATION.cff
-include CODE_OF_CONDUCT.md CONTRIBUTING.md DISCLAIMER.md ETHICS.md GOVERNANCE.md NOTICE RELEASE_NOTES.md ROADMAP.md SBOM.md SECURITY.md SECURITY_SCANNER.md SUPPORT.md
+include CODE_OF_CONDUCT.md CONTRIBUTING.md DISCLAIMER.md ETHICS.md GOVERNANCE.md NOTICE ROADMAP.md SBOM.md SECURITY.md SUPPORT.md
 
 # Include configuration & templates
 include .env.example
-include .flake8
-include dev-requirements.txt
+include requirements-dev.txt
 include requirements.txt
 recursive-include configs *.yaml
 recursive-include templates *

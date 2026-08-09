@@ -75,7 +75,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
-        self._log(f"Initial Entry Point Acquired: {self.target} (WORKSTATION-01)")
+        self._log(f"Initial Entry Point Acquired: {self.target} (WORKSTATION-01) \n")
         time.sleep(1)
 
         attack_chain = [
@@ -156,7 +156,7 @@ class AAPPMartDemo:
             f"critical assets including the Domain Controller."
         )
 
-        self._log("Simulation Completed Successfully", success=True)
+        self._log("Simulation Completed Successfully \n", success=True)
 
         return SimulationReport(
             simulation_id=str(uuid.uuid4()),

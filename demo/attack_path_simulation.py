@@ -146,7 +146,9 @@ class AAPPMartDemo:
             "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked"
         ]
 
-        short_summary = "DC breached via Workstation kernel exploit. High-value target compromise."
+        short_summary = (
+            f"DC breached via Workstation kernel exploit. High-value target compromise."
+        )
 
         executive_summary = (
             f"Simulated attack initiated on {self.target} resulted in a {risk_label} risk environment. "

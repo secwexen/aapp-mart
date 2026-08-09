@@ -4,6 +4,8 @@
     "status": "COMPLETED",
     "risk_score": 9.1,
     "risk_label": "CRITICAL",
+    "engine_version": "v1.0.0-demo",
+    "short_summary": "DC breached via Workstation kernel exploit. High-value target compromise.",
     "executive_summary": "Simulated attack initiated on 10.10.20.15 resulted in a (CRITICAL) risk environment. The AI engine successfully pivoted through the network, compromising 3 critical assets including the Domain Controller.",
     "attack_path": [
         {
@@ -64,6 +66,5 @@
         "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked"
     ],
     "generated_at": "2026-01-01T05:30:03.123456+00:00",
-    "duration": 11.2,
-    "engine_version": "v1.0.0-demo"
+    "duration": 11.2
 }

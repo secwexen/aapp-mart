@@ -206,8 +206,10 @@ class ReportExporter:
                 json.dump(report_data, f, indent=4)
 
             print(f"\n[+] Report Exported: {output_path}")
+            return True
         except Exception as e:
-            print(f"\n[!] Error exporting report: {e}")
+            print(f"\n[!] Error exporting report: ({type(e).__name__}) {e}")
+            return False
 
 # =========================
 # Helper Functions

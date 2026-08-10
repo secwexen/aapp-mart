@@ -50,4 +50,4 @@ See the [Attack Path Simulation Logs](demo/logs/attack-path/attack_path_simulati
 
 ## Executive Summary
 
-AAPP-MART simulated a 5-stage attack chain from WORKSTATION-01 (10.10.20.15) to DOMAIN-CONTROLLER-01 (10.10.20.45) in 11.2 seconds, yielding a Critical Risk Score of 9.4/10. While the Domain Controller was compromised, automated security controls successfully contained the breach by isolating the file server and protecting the HR database.
+AAPP-MART simulated a 5-stage attack chain from WORKSTATION-01 (10.10.20.15) to DOMAIN-CONTROLLER-01 (10.10.20.45) in 11.2 seconds, yielding a **Critical Risk Score of 9.4/10**. While the Domain Controller was compromised, automated security controls successfully contained the breach by isolating the file server and protecting the HR database.

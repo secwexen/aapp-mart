@@ -2,11 +2,11 @@
     "simulation_id": "c9a7b538-2a1d-4f15-8c3b-d1e3456789ab",
     "target": "10.10.20.15",
     "status": "COMPLETED",
-    "risk_score": 8.9,
-    "risk_label": "HIGH",
+    "risk_score": 9.4,
+    "risk_label": "CRITICAL",
     "engine_version": "v1.0.0-demo",
     "short_summary": "DC breached via Workstation kernel exploit. High-value target compromise.",
-    "executive_summary": "Simulated attack initiated on 10.10.20.15 resulted in a HIGH risk environment. The AI engine successfully pivoted through the network, compromising 3 critical assets including the Domain Controller.",
+    "executive_summary": "Simulated attack initiated on 10.10.20.15 resulted in a CRITICAL risk environment. The AI engine successfully pivoted through the network, compromising 3 critical assets including the Domain Controller.",
     "attack_path": [
         {
             "agent": "Agent-Recon",

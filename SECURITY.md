@@ -8,6 +8,7 @@ This document outlines the security policy for reporting vulnerabilities, respon
 If you discover a security vulnerability in AAPP-MART, please report it responsibly.
 
 Preferred method:
+
 - Open a [private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new).
 
 > [!IMPORTANT]
@@ -15,7 +16,7 @@ Preferred method:
 
 ## Response Expectations
 
-- Initial response: We aim to respond within 72 hours  
+- Initial response: We aim to respond within 24 bussiens hours  
 - Fix or mitigation: as soon as reasonably possible  
 - Security issues will be tracked via a ticket system or CVE where applicable  
 - Coordinated disclosure will be handled in collaboration with the reporter

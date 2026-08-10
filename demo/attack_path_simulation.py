@@ -136,7 +136,7 @@ class AAPPMartDemo:
         for step in attack_chain:
             self._simulate_step(step)
 
-        risk_score = round(random.uniform(7.8, 9.6), 1)
+        risk_score = 9.4
         risk_label = get_risk_label(risk_score)
 
         compromised_assets = [
@@ -232,7 +232,6 @@ def main():
     target = "10.10.20.15"
 
     engine = AAPPMartDemo(target=target)
-
     report = engine.run()
 
     print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")

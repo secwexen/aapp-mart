@@ -207,7 +207,7 @@ class ReportExporter:
 
             print(f"\n[+] Report Exported: {output_path}")
             return True
-        except Exception as e:
+        except (PermissionError, OSError, TypeError) as e:
             print(f"\n[!] Error exporting report: ({type(e).__name__}) {e}")
             return False
 

@@ -238,7 +238,6 @@ def get_risk_label(score: float) -> str:
 def main():
 
     target = "10.10.20.15"
-    hostname = "WORKSTATION-01"
 
     engine = AAPPMartDemo(target=target)
     report = engine.run()
@@ -255,7 +254,7 @@ def main():
 
     print("\n--- Affected Critical Assets ---\n")
     for asset in report.compromised_assets:
-        print(f" [!] {asset}")
+        print(f"[!] {asset}")
 
     clean_target = report.target.replace(".", "_")
 

@@ -235,7 +235,7 @@ def get_risk_label(score: float) -> str:
 def main():
 
     target = "10.10.20.15"
-    self.hostname = "WORKSTATION-01"
+    hostname = "WORKSTATION-01"
 
     engine = AAPPMartDemo(target=target)
     report = engine.run()

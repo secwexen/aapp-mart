@@ -162,7 +162,7 @@ class AAPPMartDemo:
         self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
-            simulation_id=self.simulation_id,,
+            simulation_id=self.simulation_id,
             target=self.target,
             status="COMPLETED",
             risk_score=risk_score,

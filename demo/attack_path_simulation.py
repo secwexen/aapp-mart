@@ -7,7 +7,7 @@ An AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulat
 designed for enterprise security analysis.
 
 Key Features:
-    - Multi-Agent Red Team (Recon, Access, Exploit, Pivot)
+    - Multi-Agent Red Team (Recon, Access, Exploit, Pivot, Collection)
     - Automated Risk Scoring & MITRE ATT&CK Mapping
     - Automated Incident Report Generation (JSON Export)
 
@@ -132,6 +132,16 @@ class AAPPMartDemo:
                 duration=3.2,
                 remediation="Implement network micro-segmentation and restrict RDP/SSH access."
             ),
+            AttackStep(
+                agent="Agent-Collection",
+                phase="Collection",
+                mitre_id="T1005",
+                description="Backup data discovery and collection on BACKUP-SERVER-01 (10.10.20.25)",
+                severity="CRITICAL",
+                status="SUCCESS",
+                duration=2.5,
+                remediation="Restrict access, enforce least-privilege permissions, and isolate backup infrastructure."
+            ),
         ]
 
         total_duration = round(sum(step.duration for step in attack_chain), 1)
@@ -146,6 +156,7 @@ class AAPPMartDemo:
             "WORKSTATION-01       | IP: 10.10.20.15 | Type: Endpoint      | Severity: HIGH     | Status: Compromised | Detail: Initial Vector",
             "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin",
             "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated",
+            "BACKUP-SERVER-01     | IP: 10.10.20.25 | Type: Backup Server | Severity: HIGH     | Status: Compromised | Detail: Backup Access",
             "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked"
         ]
 
@@ -156,7 +167,7 @@ class AAPPMartDemo:
         executive_summary = (
             f"Simulated attack initiated on {self.target} ({self.hostname}) resulted in a {risk_label} risk environment. "
             f"The AI engine successfully pivoted through the network, affecting {len(compromised_assets)} "
-            f"critical assets including the Domain Controller."
+            f"critical assets including the Domain Controller and Backup Server."
         )
 
         print()
@@ -248,7 +259,7 @@ def main():
     print(f"[*] Summary                    : {report.short_summary}")
     print(f"[*] Duration                   : {report.duration:.1f}s")
     print(f"[*] Simulated Step Count       : {len(report.attack_path)} Stages")
-    print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems (2 Compromised, 1 Isolated, 1 Blocked)")
+    print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems (3 Compromised, 1 Isolated, 1 Blocked)")
     print(f"[*] Generated At               : {report.generated_at}")
 
     print("\n--- Affected Critical Assets ---\n")

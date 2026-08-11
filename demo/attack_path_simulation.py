@@ -245,7 +245,7 @@ def main():
 
     print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
 
-    print(f"[*] Target IP (Initial Entry)  : {report.target} ({report.self.hostname})")
+    print(f"[*] Target IP (Initial Entry)  : {report.target} ({report.hostname})")
     print(f"[*] Risk Score                 : {report.risk_score}/10 ({report.risk_label})")
     print(f"[*] Summary                    : {report.short_summary}")
     print(f"[*] Duration                   : {report.duration:.1f}s")

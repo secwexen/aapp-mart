@@ -77,7 +77,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
-        self._log(f"Initial Entry Point Acquired: {self.target} (WORKSTATION-01) \n")
+        self._log(f"Initial Entry Point Acquired: {self.target} ({self.hostname}) \n")
         time.sleep(1)
 
         attack_chain = [
@@ -153,7 +153,7 @@ class AAPPMartDemo:
         )
 
         executive_summary = (
-            f"Simulated attack initiated on {self.target} resulted in a {risk_label} risk environment. "
+            f"Simulated attack initiated on {self.target} ({self.hostname}) resulted in a {risk_label} risk environment. "
             f"The AI engine successfully pivoted through the network, affecting {len(compromised_assets)} "
             f"critical assets including the Domain Controller."
         )
@@ -235,13 +235,14 @@ def get_risk_label(score: float) -> str:
 def main():
 
     target = "10.10.20.15"
+    self.hostname = "WORKSTATION-01"
 
     engine = AAPPMartDemo(target=target)
     report = engine.run()
 
     print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
 
-    print(f"[*] Target IP (Initial Entry)  : {report.target} (WORKSTATION-01)")
+    print(f"[*] Target IP (Initial Entry)  : {report.target} ({report.self.hostname})")
     print(f"[*] Risk Score                 : {report.risk_score}/10 ({report.risk_label})")
     print(f"[*] Summary                    : {report.short_summary}")
     print(f"[*] Duration                   : {report.duration:.1f}s")

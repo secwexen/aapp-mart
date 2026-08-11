@@ -149,7 +149,7 @@ class AAPPMartDemo:
         for step in attack_chain:
             self._simulate_step(step)
 
-        risk_score = 9.4
+        risk_score = 9.6
         risk_label = get_risk_label(risk_score)
 
         compromised_assets = [

@@ -166,6 +166,7 @@ class AAPPMartDemo:
         return SimulationReport(
             simulation_id=self.simulation_id,
             target=self.target,
+            hostname=self.hostname,
             status="COMPLETED",
             risk_score=risk_score,
             risk_label=risk_label,

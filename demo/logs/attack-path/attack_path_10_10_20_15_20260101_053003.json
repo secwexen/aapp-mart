@@ -1,18 +1,19 @@
 {
     "simulation_id": "c9a7b538-2a1d-4f15-8c3b-d1e3456789ab",
     "target": "10.10.20.15",
+    "hostname": "WORKSTATION-01",
     "status": "COMPLETED",
-    "risk_score": 9.4,
+    "risk_score": 9.6,
     "risk_label": "CRITICAL",
     "engine_version": "v1.0.0-demo",
     "short_summary": "DC breached via Workstation kernel exploit. High-value target compromise.",
-    "executive_summary": "Simulated attack initiated on 10.10.20.15 resulted in a CRITICAL risk environment. The AI engine successfully pivoted through the network, compromising 3 critical assets including the Domain Controller.",
+    "executive_summary": "Simulated attack initiated on (10.10.20.15) (WORKSTATION-01) resulted in a CRITICAL risk environment. The AI engine successfully pivoted through the network, affecting 5 critical assets including the Domain Controller and Backup Server.",
     "attack_path": [
         {
             "agent": "Agent-Recon",
             "phase": "Reconnaissance",
             "mitre_id": "T1595",
-            "description": "Active scanning detected",
+            "description": "Active scanning detected on (10.10.20.15)",
             "severity": "LOW",
             "status": "SUCCESS",
             "duration": 1.4,
@@ -52,47 +53,30 @@
             "agent": "Agent-Pivot",
             "phase": "Lateral Movement",
             "mitre_id": "T1021",
-            "description": "Remote service pivoting to 10.10.20.45",
+            "description": "Remote service pivoting to (10.10.20.45)",
             "severity": "HIGH",
             "status": "SUCCESS",
             "duration": 3.2,
             "remediation": "Implement network micro-segmentation and restrict RDP/SSH access."
+        },
+        {
+            "agent": "Agent-Collection",
+            "phase": "Collection",
+            "mitre_id": "T1005",
+            "description": "Backup data discovery and collection on BACKUP-SERVER-01 (10.10.20.25)",
+            "severity": "CRITICAL",
+            "status": "SUCCESS",
+            "duration": 2.5,
+            "remediation": "Restrict access, enforce least-privilege permissions, and isolate backup infrastructure."
         }
     ],
     "compromised_assets": [
-        {
-            "system": "WORKSTATION-01",
-            "ip": "10.10.20.15",
-            "type": "Endpoint",
-            "severity": "HIGH",    
-            "status": "Compromised", 
-            "detail": "Initial Vector"
-        },
-        {
-            "system": "FILE-SERVER-01",      
-            "ip": "10.10.20.2",  
-            "type": "Storage",   
-            "severity": "HIGH",
-            "status": "Isolated",   
-            "detail": "Domain Admin"
-        },
-        {
-            "system": "DOMAIN-CONTROLLER-01", 
-            "ip": "10.10.20.45", 
-            "type": "Identity/AD",   
-            "severity": "CRITICAL", 
-            "status": "Compromised", 
-            "detail": "Data Exfiltrated"
-        },
-        {
-            "system": "HR-DB-01",
-            "ip": "10.10.20.12",
-            "type": "SQL Database",
-            "severity": "CRITICAL",
-            "status": "Blocked",
-            "detail": "Attack Blocked"
-        }   
+        "WORKSTATION-01       | IP: 10.10.20.15 | Type: Endpoint      | Severity: HIGH     | Status: Compromised | Detail: Initial Vector",
+        "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin",
+        "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated",
+        "BACKUP-SERVER-01     | IP: 10.10.20.25 | Type: Backup Server | Severity: HIGH     | Status: Compromised | Detail: Backup Access",
+        "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked"
     ],
-    "generated_at": "2026-01-01T05:30:03.123456+00:00",
-    "duration": 11.2
-}
+    "generated_at": "2026-01-01T01:01:01.123456+00:00",
+    "duration": 13.7
+}                 

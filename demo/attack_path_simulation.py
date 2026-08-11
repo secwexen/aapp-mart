@@ -50,6 +50,7 @@ class AttackStep:
 class SimulationReport:
     simulation_id: str
     target: str
+    hostname: str
     status: str
     risk_score: float
     risk_label: str

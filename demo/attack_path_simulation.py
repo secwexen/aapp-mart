@@ -16,7 +16,7 @@ Usage:
 
 Requirements:
     - Python >= 3.11
-    - Standard Library (json, random, time, uuid, datetime, pathlib, dataclasses)
+    - Standard Library (json, time, uuid, datetime, pathlib, dataclasses)
 
 Outputs:
     - JSON Execution Logs: aapp-mart/logs/attack-path/attack_path_<target>_<timestamp>.json
@@ -191,7 +191,7 @@ class AAPPMartDemo:
 
     def _simulate_step(self, step: AttackStep):
         print(
-            f"[+] [{step.agent:<13}]"
+            f"[+] [{step.agent:<18}]"
             f" {step.phase:<22}"
             f" | MITRE: {step.mitre_id:<8}"
             f" | Severity: {step.severity:<8}"

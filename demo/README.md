@@ -32,7 +32,7 @@ python demo/attack_path_simulation.py
 [*] Duration                   : 13.7s
 [*] Simulated Step Count       : 6 Stages
 [*] Affected Assets            : 5 Systems (3 Compromised, 1 Isolated, 1 Blocked)
-[*] Generated At               : 2026-08-11T21:04:42.578565+00:00
+[*] Generated At               : 2026-01-01T01:01:01.123456+00:00
 
 --- Affected Critical Assets ---
 
@@ -42,7 +42,7 @@ python demo/attack_path_simulation.py
 [!] BACKUP-SERVER-01     | IP: 10.10.20.25 | Type: Backup Server | Severity: HIGH     | Status: Compromised | Detail: Backup Access
 [!] HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked
 
-[+] Report Exported: aapp-mart/logs/attack-path/attack_path_10_10_20_15_20260811_130442.json
+[+] Report Exported: aapp-mart/logs/attack-path/attack_path_10_10_20_15_20260101_010101.json
 ```
 
 See the [Attack Path Simulation Logs](demo/logs/attack-path/attack_path_simulation_logs.json) json file.

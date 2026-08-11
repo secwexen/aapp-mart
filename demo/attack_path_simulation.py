@@ -70,6 +70,8 @@ class AAPPMartDemo:
     def __init__(self, target: str):
         self.target = target
         self.engine_version = "v1.0.0-demo"
+        self.simulation_id = str(uuid.uuid4())
+        self.started_at = datetime.now(timezone.utc).isoformat()
 
     def run(self) -> SimulationReport:
 
@@ -160,7 +162,7 @@ class AAPPMartDemo:
         self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
-            simulation_id=str(uuid.uuid4()),
+            simulation_id=self.simulation_id,,
             target=self.target,
             status="COMPLETED",
             risk_score=risk_score,

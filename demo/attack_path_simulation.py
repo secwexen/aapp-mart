@@ -70,6 +70,7 @@ class AAPPMartDemo:
 
     def __init__(self, target: str):
         self.target = target
+        self.hostname = "WORKSTATION-01"
         self.engine_version = "v1.0.0-demo"
         self.simulation_id = str(uuid.uuid4())
         self.started_at = datetime.now(timezone.utc).isoformat()

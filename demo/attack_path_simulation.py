@@ -86,7 +86,7 @@ class AAPPMartDemo:
                 agent="Agent-Recon",
                 phase="Reconnaissance",
                 mitre_id="T1595",
-                description="Active scanning detected",
+                description="Active scanning detected on 10.10.20.15",
                 severity="LOW",
                 status="SUCCESS",
                 duration=1.4,

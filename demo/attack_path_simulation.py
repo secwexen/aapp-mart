@@ -161,11 +161,11 @@ class AAPPMartDemo:
         ]
 
         short_summary = (
-            f"DC breached via Workstation kernel exploit. High-value target compromise."
+            f"DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel exploit. Backup Server (10.10.20.25) compromise."
         )
 
         executive_summary = (
-            f"Simulated attack initiated on {self.target} ({self.hostname}) resulted in a {risk_label} risk environment. "
+            f"Simulated attack initiated on ({self.target}) ({self.hostname}) resulted in a {risk_label} risk environment. "
             f"The AI engine successfully pivoted through the network, affecting {len(compromised_assets)} "
             f"critical assets including the Domain Controller and Backup Server."
         )

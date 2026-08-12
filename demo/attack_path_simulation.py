@@ -271,7 +271,6 @@ class ReportExporter:
             path = Path(output_path)
             path.parent.mkdir(parents=True, exist_ok=True)
             report_data = asdict(report)
-            report_data.pop("terminal_compromised_assets", None)
 
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=4, ensure_ascii=False)

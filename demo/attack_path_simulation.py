@@ -46,6 +46,15 @@ class AttackStep:
     remediation: str
 
 @dataclass
+class CompromisedAsset:
+    system: str
+    ip: str
+    type: str
+    severity: str
+    status: str
+    detail: str
+
+@dataclass
 class SimulationReport:
     simulation_id: str
     target: str
@@ -57,7 +66,8 @@ class SimulationReport:
     short_summary: str
     executive_summary: str
     attack_path: List[AttackStep]
-    compromised_assets: List[str]
+    compromised_assets: List[CompromisedAsset]
+    terminal_compromised_assets: List[str]
     generated_at: str
     duration: float
 
@@ -150,9 +160,52 @@ class AAPPMartDemo:
             self._simulate_step(step)
 
         risk_score = 9.6
-        risk_label = get_risk_label(risk_score)
+        risk_label = "CRITICAL"
 
         compromised_assets = [
+            CompromisedAsset(
+                system="WORKSTATION-01",
+                ip="10.10.20.15",
+                type="Endpoint",
+                severity="HIGH",
+                status="Compromised",
+                detail="Initial Vector"
+            ),
+            CompromisedAsset(
+                system="FILE-SERVER-01",
+                ip="10.10.20.2",
+                type="Storage",
+                severity="HIGH",
+                status="Isolated",
+                detail="Domain Admin"
+            ),
+            CompromisedAsset(
+                system="DOMAIN-CONTROLLER-01",
+                ip="10.10.20.45",
+                type="Identity/AD",
+                severity="CRITICAL",
+                status="Compromised",
+                detail="Data Exfiltrated"
+            ),
+            CompromisedAsset(
+                system="BACKUP-SERVER-01",
+                ip="10.10.20.25",
+                type="Backup Server",
+                severity="HIGH",
+                status="Compromised",
+                detail="Backup Access"
+            ),
+            CompromisedAsset(
+                system="HR-DB-01",
+                ip="10.10.20.12",
+                type="SQL Database",
+                severity="CRITICAL",
+                status="Blocked",
+                detail="Attack Blocked"
+            )
+        ]
+        
+        terminal_compromised_assets = [
             "WORKSTATION-01       | IP: 10.10.20.15 | Type: Endpoint      | Severity: HIGH     | Status: Compromised | Detail: Initial Vector",
             "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin",
             "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated",
@@ -185,6 +238,7 @@ class AAPPMartDemo:
             executive_summary=executive_summary,
             attack_path=attack_chain,
             compromised_assets=compromised_assets,
+            terminal_compromised_assets=terminal_compromised_assets,
             generated_at=datetime.now(timezone.utc).isoformat(),
             duration=total_duration
         )
@@ -217,6 +271,7 @@ class ReportExporter:
             path = Path(output_path)
             path.parent.mkdir(parents=True, exist_ok=True)
             report_data = asdict(report)
+            report_data.pop("terminal_compromised_assets", None)
 
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=4, ensure_ascii=False)
@@ -249,7 +304,7 @@ def main():
     print(f"[*] Generated At               : {report.generated_at}")
 
     print("\n--- Affected Critical Assets ---\n")
-    for asset in report.compromised_assets:
+    for asset in report.terminal_compromised_assets:
         print(f"[!] {asset}")
 
     clean_target = report.target.replace(".", "_")

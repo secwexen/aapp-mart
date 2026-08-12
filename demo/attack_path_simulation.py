@@ -136,7 +136,7 @@ class AAPPMartDemo:
                 agent="Agent-Collection",
                 phase="Collection",
                 mitre_id="T1005",
-                description="Backup data discovery and collection on BACKUP-SERVER-01 (10.10.20.25)",
+                description="Backup data discovery and collection on (10.10.20.25)",
                 severity="CRITICAL",
                 status="SUCCESS",
                 duration=2.5,

@@ -202,7 +202,7 @@ class AAPPMartDemo:
                 severity="CRITICAL",
                 status="Blocked",
                 detail="Attack Blocked"
-            )
+            ),
         ]
         
         terminal_compromised_assets = [

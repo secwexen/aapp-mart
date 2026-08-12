@@ -71,11 +71,46 @@
         }
     ],
     "compromised_assets": [
-        "WORKSTATION-01       | IP: 10.10.20.15 | Type: Endpoint      | Severity: HIGH     | Status: Compromised | Detail: Initial Vector",
-        "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin",
-        "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated",
-        "BACKUP-SERVER-01     | IP: 10.10.20.25 | Type: Backup Server | Severity: HIGH     | Status: Compromised | Detail: Backup Access",
-        "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked"
+        {
+            "system": "WORKSTATION-01",
+            "ip": "10.10.20.15",
+            "type": "Endpoint",
+            "severity": "HIGH",
+            "status": "Compromised",
+            "detail": "Initial Vector"
+        },
+        {
+            "system": "FILE-SERVER-01",
+            "ip": "10.10.20.2",
+            "type": "Storage",
+            "severity": "HIGH",
+            "status": "Isolated",
+            "detail": "Domain Admin"
+        },
+        {
+            "system": "DOMAIN-CONTROLLER-01",
+            "ip": "10.10.20.45",
+            "type": "Identity/AD",
+            "severity": "CRITICAL",
+            "status": "Compromised",
+            "detail": "Data Exfiltrated"
+        },
+        {
+            "system": "BACKUP-SERVER-01",
+            "ip": "10.10.20.25",
+            "type": "Backup Server",
+            "severity": "HIGH",
+            "status": "Compromised",
+            "detail": "Backup Access"
+        },
+        {
+            "system": "HR-DB-01",
+            "ip": "10.10.20.12",
+            "type": "SQL Database",
+            "severity": "CRITICAL",
+            "status": "Blocked",
+            "detail": "Attack Blocked"
+        }
     ],
     "generated_at": "2026-01-01T01:01:01.123456+00:00",
     "duration": 13.7

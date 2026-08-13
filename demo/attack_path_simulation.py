@@ -243,7 +243,7 @@ class AAPPMartDemo:
         print(
             f"[+] [{step.agent:<16}]"
             f" {step.phase:<20}"
-            f" | MITRE: {step.mitre_id:<6}"
+            f" | MITRE: {step.mitre_id:<5}"
             f" | Severity: {step.severity:<8}"
             f" | Status: {step.status:<8}"
             f" | {step.description}"

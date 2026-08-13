@@ -54,6 +54,6 @@ AAPP-MART envisions a world where organizations can:
 
 ## Call to Action
 
-We invite security researchers, cybersecuritys, red teams, developers, enterprises, and academia to contribute, collaborate, and innovate.
+We invite security researchers, cybersecurity professionals, red teams, developers, enterprises, and academia to contribute, collaborate, and innovate.
 
 By joining the AAPP-MART ecosystem, you become part of the movement to predict, simulate, and secure the digital world.

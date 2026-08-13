@@ -16,7 +16,6 @@
             "description": "Active scanning detected on (10.10.20.15)",
             "severity": "LOW",
             "status": "SUCCESS",
-            "duration": 1.4,
             "remediation": "Update firewall rules and IDS/IPS signatures."
         },
         {
@@ -26,7 +25,6 @@
             "description": "Credential harvesting attempt",
             "severity": "MEDIUM",
             "status": "SUCCESS",
-            "duration": 2.1,
             "remediation": "Enforce Multi-Factor Authentication (MFA) and tighten email filters."
         },
         {
@@ -36,7 +34,6 @@
             "description": "Valid account abuse",
             "severity": "HIGH",
             "status": "SUCCESS",
-            "duration": 1.8,
             "remediation": "Audit account privileges and enforce Privileged Access Management (PAM)."
         },
         {
@@ -46,7 +43,6 @@
             "description": "Kernel privilege escalation simulated",
             "severity": "CRITICAL",
             "status": "SUCCESS",
-            "duration": 2.7,
             "remediation": "Apply the latest OS kernel patches and security updates."
         },
         {
@@ -56,7 +52,6 @@
             "description": "Remote service pivoting to (10.10.20.45)",
             "severity": "HIGH",
             "status": "SUCCESS",
-            "duration": 3.2,
             "remediation": "Implement network micro-segmentation and restrict RDP/SSH access."
         },
         {
@@ -66,7 +61,6 @@
             "description": "Backup data discovery and collection on (10.10.20.25)",
             "severity": "CRITICAL",
             "status": "SUCCESS",
-            "duration": 2.5,
             "remediation": "Restrict access, enforce least-privilege permissions, and isolate backup infrastructure."
         }
     ],
@@ -114,5 +108,5 @@
     ],
     "started_at": "2026-01-01T01:01:01.123456+00:00",
     "generated_at": "2026-01-01T01:01:01.123456+00:00",
-    "duration": 13.7
+    "duration": 1.0s
 }                 

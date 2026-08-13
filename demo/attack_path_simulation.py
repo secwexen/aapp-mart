@@ -294,6 +294,19 @@ def main() -> int:
     engine = AAPPMartDemo(target=target)
     report = engine.run()
 
+    compromised = sum(
+    asset.status.lower() == "compromised"
+    for asset in report.compromised_assets
+    )
+    isolated = sum(
+    asset.status.lower() == "isolated"
+    for asset in report.compromised_assets
+    )
+    blocked = sum(
+    asset.status.lower() == "blocked"
+    for asset in report.compromised_assets
+    )
+
     print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
 
     print(f"[*] Target IP (Initial Entry)  : {report.target} ({report.hostname})")
@@ -301,7 +314,7 @@ def main() -> int:
     print(f"[*] Summary                    : {report.short_summary}")
     print(f"[*] Duration                   : {report.duration:.1f}s")
     print(f"[*] Simulated Step Count       : {len(report.attack_path)} Stages")
-    print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems (3 Compromised, 1 Isolated, 1 Blocked)")
+    print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
     print(f"[*] Started At                 : {report.started_at}") 
     print(f"[*] Generated At               : {report.generated_at}")
 
@@ -311,7 +324,7 @@ def main() -> int:
 
     clean_target = report.target.replace(".", "_")
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
     output_file = (
         f"aapp-mart/logs/attack-path/"

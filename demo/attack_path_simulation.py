@@ -68,6 +68,7 @@ class SimulationReport:
     attack_path: List[AttackStep]
     compromised_assets: List[CompromisedAsset]
     terminal_compromised_assets: List[str]
+    started_at: str
     generated_at: str
     duration: float
 
@@ -239,6 +240,7 @@ class AAPPMartDemo:
             attack_path=attack_chain,
             compromised_assets=compromised_assets,
             terminal_compromised_assets=terminal_compromised_assets,
+            started_at=self.started_at,
             generated_at=datetime.now(timezone.utc).isoformat(),
             duration=total_duration
         )
@@ -253,7 +255,7 @@ class AAPPMartDemo:
             f" | Duration: {step.duration:.1f}s"
             f" | {step.description}"
         )
-        time.sleep(0.8)
+        time.sleep(0.25)
 
     def _log(self, message: str, success: bool = False):
         prefix = "[✓]" if success else "[*]"
@@ -266,7 +268,7 @@ class AAPPMartDemo:
 class ReportExporter:
 
     @staticmethod
-    def export_json(report: SimulationReport, output_path: str):
+    def export_json(report: SimulationReport, output_path: str): -> bool
         try:
             path = Path(output_path)
             path.parent.mkdir(parents=True, exist_ok=True)
@@ -300,6 +302,7 @@ def main():
     print(f"[*] Duration                   : {report.duration:.1f}s")
     print(f"[*] Simulated Step Count       : {len(report.attack_path)} Stages")
     print(f"[*] Affected Assets            : {len(report.compromised_assets)} Systems (3 Compromised, 1 Isolated, 1 Blocked)")
+    print(f"[*] Started At                 : {report.started_at}") 
     print(f"[*] Generated At               : {report.generated_at}")
 
     print("\n--- Affected Critical Assets ---\n")
@@ -317,5 +320,7 @@ def main():
 
     ReportExporter.export_json(report, output_file)
 
+    return 0 if success else 1
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

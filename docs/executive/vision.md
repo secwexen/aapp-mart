@@ -2,6 +2,14 @@
 
 **AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is built with a clear and ambitious vision. To empower organizations to anticipate, simulate, and neutralize cyber threats before they materialize.
 
+## The Market Opportunity & Pain Point
+
+Modern enterprises face an unprecedented cyber resilience crisis:
+
+1. **Static Security Is Failing:** Legacy vulnerability scanners produce thousands of noisy alerts without context, leaving security teams overwhelmed (alert fatigue).  
+2. **Traditional Penetration Testing Doesn't Scale:** Manual red teaming is expensive, periodic, and unable to keep up with dynamic cloud and hybrid infrastructures.  
+3. **Adversaries Are Using AI:** Cybercriminals leverage automation and speed, while enterprise defenders remain trapped in manual response cycles.
+
 ## Our Mission
 
 Modern infrastructures are increasingly complex, dynamic, and interconnected. Traditional security tools—static scanners, reactive alerts, and predefined playbooks—cannot keep pace with adaptive, intelligent adversaries.

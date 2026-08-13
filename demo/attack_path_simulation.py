@@ -86,6 +86,7 @@ class AAPPMartDemo:
         self.started_at = datetime.now(timezone.utc).isoformat()
 
     def run(self) -> SimulationReport:
+        start = time.perf_counter()
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
@@ -155,10 +156,10 @@ class AAPPMartDemo:
             ),
         ]
 
-        total_duration = round(sum(step.duration for step in attack_chain), 1)
-
         for step in attack_chain:
             self._simulate_step(step)
+            
+        total_duration = round(time.perf_counter() - start, 1)    
 
         risk_score = 9.6
         risk_label = "CRITICAL"

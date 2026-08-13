@@ -308,12 +308,12 @@ This software is provided “as is” without warranty of any kind, express or i
 
 [*] Initial Entry Point Acquired: 10.10.20.15 (WORKSTATION-01) 
 
-[+] [Agent-Recon     ] Reconnaissance         | MITRE: T1595    | Severity: LOW      | Status: SUCCESS  | Duration: 1.4s | Active scanning detected on (10.10.20.15)
-[+] [Agent-Access    ] Phishing               | MITRE: T1566    | Severity: MEDIUM   | Status: SUCCESS  | Duration: 2.1s | Credential harvesting attempt
-[+] [Agent-Access    ] Initial Access         | MITRE: T1078    | Severity: HIGH     | Status: SUCCESS  | Duration: 1.8s | Valid account abuse
-[+] [Agent-Exploit   ] Privilege Escalation   | MITRE: T1068    | Severity: CRITICAL | Status: SUCCESS  | Duration: 2.7s | Kernel privilege escalation simulated
-[+] [Agent-Pivot     ] Lateral Movement       | MITRE: T1021    | Severity: HIGH     | Status: SUCCESS  | Duration: 3.2s | Remote service pivoting to (10.10.20.45)
-[+] [Agent-Collection] Collection             | MITRE: T1005    | Severity: CRITICAL | Status: SUCCESS  | Duration: 2.5s | Backup data discovery and collection on (10.10.20.25)
+[+] [Agent-Recon     ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Status: SUCCESS  | Active scanning detected on (10.10.20.15)
+[+] [Agent-Access    ] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Status: SUCCESS  | Credential harvesting attempt
+[+] [Agent-Access    ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Status: SUCCESS  | Valid account abuse
+[+] [Agent-Exploit   ] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Status: SUCCESS  | Kernel privilege escalation simulated
+[+] [Agent-Pivot     ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Status: SUCCESS  | Remote service pivoting to (10.10.20.45)
+[+] [Agent-Collection] Collection           | MITRE: T1005 | Severity: CRITICAL | Status: SUCCESS  | Backup data discovery and collection on (10.10.20.25)
 
 [✓] Simulation Completed Successfully
 
@@ -322,7 +322,7 @@ This software is provided “as is” without warranty of any kind, express or i
 [*] Target IP (Initial Entry)  : 10.10.20.15 (WORKSTATION-01)
 [*] Risk Score                 : 9.6/10 (CRITICAL)
 [*] Summary                    : DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel exploit. Backup Server (10.10.20.25) compromise.
-[*] Duration                   : 13.7s
+[*] Duration                   : 1.0s
 [*] Simulated Step Count       : 6 Stages
 [*] Affected Assets            : 5 Systems (3 Compromised, 1 Isolated, 1 Blocked)
 [*] Started At                 : 2026-01-01T01:01:01.123456+00:00

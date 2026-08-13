@@ -118,7 +118,7 @@ python demo/attack_path_simulation.py
 [+] [Agent-Access    ] Initial Access         | MITRE: T1078    | Severity: HIGH     | Status: SUCCESS  | Duration: 1.8s | Valid account abuse
 [+] [Agent-Exploit   ] Privilege Escalation   | MITRE: T1068    | Severity: CRITICAL | Status: SUCCESS  | Duration: 2.7s | Kernel privilege escalation simulated
 [+] [Agent-Pivot     ] Lateral Movement       | MITRE: T1021    | Severity: HIGH     | Status: SUCCESS  | Duration: 3.2s | Remote service pivoting to (10.10.20.45)
-[+] [Agent-Collection] Collection             | MITRE: T1005    | Severity: CRITICAL | Status: SUCCESS  | Duration: 2.5s | Backup data discovery and collection on BACKUP-SERVER-01 (10.10.20.25)
+[+] [Agent-Collection] Collection             | MITRE: T1005    | Severity: CRITICAL | Status: SUCCESS  | Duration: 2.5s | Backup data discovery and collection on (10.10.20.25)
 
 [✓] Simulation Completed Successfully
 

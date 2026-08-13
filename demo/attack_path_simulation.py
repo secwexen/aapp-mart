@@ -287,7 +287,7 @@ class ReportExporter:
 # Main
 # =========================
 
-def main():
+def main() -> int:
 
     target = "10.10.20.15"
 

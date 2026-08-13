@@ -112,6 +112,7 @@
             "detail": "Attack Blocked"
         }
     ],
+    "started_at": "2026-01-01T01:01:01.123456+00:00",
     "generated_at": "2026-01-01T01:01:01.123456+00:00",
     "duration": 13.7
 }                 

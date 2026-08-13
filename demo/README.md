@@ -32,6 +32,7 @@ python demo/attack_path_simulation.py
 [*] Duration                   : 13.7s
 [*] Simulated Step Count       : 6 Stages
 [*] Affected Assets            : 5 Systems (3 Compromised, 1 Isolated, 1 Blocked)
+[*] Started At                 : 2026-01-01T01:01:01.123456+00:00
 [*] Generated At               : 2026-01-01T01:01:01.123456+00:00
 
 --- Affected Critical Assets ---

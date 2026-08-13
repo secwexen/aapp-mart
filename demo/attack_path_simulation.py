@@ -42,7 +42,6 @@ class AttackStep:
     description: str
     severity: str
     status: str
-    duration: float
     remediation: str
 
 @dataclass
@@ -101,7 +100,6 @@ class AAPPMartDemo:
                 description="Active scanning detected on (10.10.20.15)",
                 severity="LOW",
                 status="SUCCESS",
-                duration=1.4,
                 remediation="Update firewall rules and IDS/IPS signatures."
             ),
             AttackStep(
@@ -111,7 +109,6 @@ class AAPPMartDemo:
                 description="Credential harvesting attempt",
                 severity="MEDIUM",
                 status="SUCCESS",
-                duration=2.1,
                 remediation="Enforce Multi-Factor Authentication (MFA) and tighten email filters."
             ),
             AttackStep(
@@ -121,7 +118,6 @@ class AAPPMartDemo:
                 description="Valid account abuse",
                 severity="HIGH",
                 status="SUCCESS",
-                duration=1.8,
                 remediation="Audit account privileges and enforce Privileged Access Management (PAM)."
             ),
             AttackStep(
@@ -131,7 +127,6 @@ class AAPPMartDemo:
                 description="Kernel privilege escalation simulated",
                 severity="CRITICAL",
                 status="SUCCESS",
-                duration=2.7,
                 remediation="Apply the latest OS kernel patches and security updates."
             ),
             AttackStep(
@@ -141,7 +136,6 @@ class AAPPMartDemo:
                 description="Remote service pivoting to (10.10.20.45)",
                 severity="HIGH",
                 status="SUCCESS",
-                duration=3.2,
                 remediation="Implement network micro-segmentation and restrict RDP/SSH access."
             ),
             AttackStep(
@@ -151,7 +145,6 @@ class AAPPMartDemo:
                 description="Backup data discovery and collection on (10.10.20.25)",
                 severity="CRITICAL",
                 status="SUCCESS",
-                duration=2.5,
                 remediation="Restrict access, enforce least-privilege permissions, and isolate backup infrastructure."
             ),
         ]
@@ -253,10 +246,8 @@ class AAPPMartDemo:
             f" | MITRE: {step.mitre_id:<8}"
             f" | Severity: {step.severity:<8}"
             f" | Status: {step.status:<8}"
-            f" | Duration: {step.duration:.1f}s"
             f" | {step.description}"
         )
-        time.sleep(0.25)
 
     def _log(self, message: str, success: bool = False):
         prefix = "[✓]" if success else "[*]"

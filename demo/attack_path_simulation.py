@@ -318,7 +318,7 @@ def main():
         f"attack_path_{clean_target}_{timestamp}.json"
     )
 
-    ReportExporter.export_json(report, output_file)
+    success = ReportExporter.export_json(report, output_file)
 
     return 0 if success else 1
 

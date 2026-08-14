@@ -12,7 +12,7 @@ Key Features:
     - Automated Incident Report Generation (JSON Export)
 
 Usage: 
-    python aapp_mart.py
+    python aapp_mart.py --target 10.10.20.15
 
 Requirements:
     - Python >= 3.11

@@ -166,7 +166,7 @@ class AAPPMartDemo:
 
         for step in attack_chain:
             self._simulate_step(step)
-            time.sleep(0.25)
+            time.sleep(0.15)
 
         risk_score = 9.6
         risk_label = calculate_risk_label(risk_score)

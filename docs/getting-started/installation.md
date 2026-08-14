@@ -24,8 +24,6 @@ cd aapp-mart
 
 Creating a virtual environment keeps dependencies isolated.
 
-### Using `venv`:
-
 ```bash
 # Create virtual environment
 python -m venv venv

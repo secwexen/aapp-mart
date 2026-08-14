@@ -335,7 +335,7 @@ def main() -> int:
     print(f"[*] Target IP (Initial Entry) : {report.target} ({report.hostname})")
     print(f"[*] Risk Score                : {report.risk_score}/10 ({report.risk_label})")
     print(f"[*] Summary                   : {report.short_summary}")
-    print(f"[*] Duration                  : {report.duration:.3f}s")
+    print(f"[*] Duration                  : {report.duration:.2f}s")
     print(f"[*] Simulated Step Count      : {len(report.attack_path)} Stages")
     print(f"[*] Affected Assets           : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
     print(f"[*] Started At                : {report.started_at}") 

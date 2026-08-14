@@ -5,7 +5,7 @@ This directory contains runnable demonstration scripts for the AAPP-MART securit
 ## Attack Path Simulation Demo
 
 ```bash
-python attack_path_simulation.py --target 10.10.20.15
+python aapp_mart.py --target 10.10.20.15
 ```
 
 ### Attack Path Simulation Demo Output
@@ -43,7 +43,7 @@ python attack_path_simulation.py --target 10.10.20.15
 [!] BACKUP-SERVER-01     | IP: 10.10.20.25 | Type: Backup Server | Severity: HIGH     | Status: Compromised | Detail: Backup Access
 [!] HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked
 
-[+] Report Exported: aapp-mart/logs/attack-path/attack_path_10_10_20_15_20260101_010101.json
+[+] Report Exported: logs/attack-path/attack_path_10_10_20_15_20260101_010101.json
 ```
 
 See the [Attack Path Simulation Logs](demo/logs/attack-path/attack_path_simulation_logs.json) json file.

@@ -2,13 +2,17 @@
 
 This directory contains runnable demonstration scripts for the AAPP-MART security engine.
 
-## Attack Path Simulation Demo
+## Attack Path Simulation
+
+This section demonstrates a runnable attack-path simulation for the AAPP-MART security engine.
+
+### Usage
 
 ```bash
 python aapp_mart.py --target 10.10.20.15
 ```
 
-### Attack Path Simulation Demo Output
+### Output
 
 ```text
 === AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===
@@ -46,7 +50,9 @@ python aapp_mart.py --target 10.10.20.15
 [+] Report Exported: logs/attack-path/attack_path_10_10_20_15_20260101_010101.json
 ```
 
-See the [Attack Path Simulation Logs](demo/logs/attack-path/attack_path_simulation_logs.json) json file.
+### Simulation Logs
+
+See the generated [Attack Path Simulation Logs](demo/logs/attack-path/attack_path_simulation_logs.json) for the JSON simulation report.
 
 > [!NOTE]
 > This IP/hostname is an example target used for demonstration purposes only.

@@ -11,7 +11,7 @@ Key Features:
     - Automated Risk Scoring & MITRE ATT&CK Mapping
     - Automated Incident Report Generation (JSON Export)
 
-Usage: 
+Usage:
     python aapp_mart.py --target 10.10.20.15
     python aapp_mart.py --help
 
@@ -213,7 +213,7 @@ class AAPPMartDemo:
                 detail="Attack Blocked"
             ),
         ]
-        
+
         terminal_compromised_assets = [
             (
                 f"{asset.system:<20} | "
@@ -290,7 +290,7 @@ class ReportExporter:
 
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=4, ensure_ascii=False)
-                
+
             print(f"\n[+] Report Exported: {output_path}")
             return True
         except (PermissionError, OSError, TypeError) as e:

@@ -13,6 +13,7 @@ Key Features:
 
 Usage: 
     python aapp_mart.py --target 10.10.20.15
+    python aapp_mart.py --help
 
 Requirements:
     - Python >= 3.11

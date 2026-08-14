@@ -12,14 +12,14 @@ Key Features:
     - Automated Incident Report Generation (JSON Export)
 
 Usage: 
-    python demo/attack_path_simulation.py
+    python aapp_mart.py
 
 Requirements:
     - Python >= 3.11
     - Standard Library (json, time, uuid, datetime, pathlib, dataclasses)
 
 Outputs:
-    - JSON Execution Logs: aapp-mart/logs/attack-path/attack_path_<target>_<timestamp>.json
+    - JSON Execution Logs: logs/attack-path/attack_path_<target>_<timestamp>.json
 """
 
 import argparse
@@ -341,7 +341,7 @@ def main() -> int:
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
     output_file = (
-        f"aapp-mart/logs/attack-path/"
+        f"logs/attack-path/"
         f"attack_path_{clean_target}_{timestamp}.json"
     )
 

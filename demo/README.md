@@ -5,7 +5,7 @@ This directory contains runnable demonstration scripts for the AAPP-MART securit
 ## Attack Path Simulation Demo
 
 ```bash
-python demo/attack_path_simulation.py --target 10.10.20.15
+python attack_path_simulation.py --target 10.10.20.15
 ```
 
 ### Attack Path Simulation Demo Output

@@ -74,6 +74,20 @@ class SimulationReport:
     duration: float
 
 # =========================
+# Risk Label Calculation
+# =========================
+
+def calculate_risk_label(score: float) -> str:
+    if score >= 9.0:
+        return "CRITICAL"
+    elif score >= 7.0:
+        return "HIGH"
+    elif score >= 4.0:
+        return "MEDIUM"
+    else:
+        return "LOW"
+
+# =========================
 # Demo Engine
 # =========================
 
@@ -155,7 +169,7 @@ class AAPPMartDemo:
             time.sleep(0.25)
 
         risk_score = 9.6
-        risk_label = "CRITICAL"
+        risk_label = calculate_risk_label(risk_score)
 
         compromised_assets = [
             CompromisedAsset(

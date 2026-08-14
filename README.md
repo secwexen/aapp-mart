@@ -103,7 +103,7 @@ This software is provided “as is” without warranty of any kind, express or i
 ## Demo
 
 ```bash
-python demo/attack_path_simulation.py --target 10.10.20.15
+python aapp-mart.py --target 10.10.20.15
 ```
 
 ### Demo Output

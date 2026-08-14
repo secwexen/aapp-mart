@@ -90,15 +90,17 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
-        self._log(f"Initial Entry Point Acquired: {self.target} ({self.hostname}) \n")
-        time.sleep(1)
+        self._log(
+            f"Initial Entry Point Acquired: "
+            f"{self.target} ({self.hostname})"
+        )
 
         attack_chain = [
             AttackStep(
                 agent="Agent-Recon",
                 phase="Reconnaissance",
                 mitre_id="T1595",
-                description="Active scanning detected on (10.10.20.15)",
+                description="Active scanning detected on ({self.target})",
                 severity="LOW",
                 status="SUCCESS",
                 remediation="Update firewall rules and IDS/IPS signatures."
@@ -151,9 +153,7 @@ class AAPPMartDemo:
         ]
 
         for step in attack_chain:
-            self._simulate_step(step)
-            
-        total_duration = round(time.perf_counter() - start, 1)    
+            self._simulate_step(step)  
 
         risk_score = 9.6
         risk_label = "CRITICAL"
@@ -161,7 +161,7 @@ class AAPPMartDemo:
         compromised_assets = [
             CompromisedAsset(
                 system="WORKSTATION-01",
-                ip="10.10.20.15",
+                ip=self.target,
                 type="Endpoint",
                 severity="HIGH",
                 status="Compromised",
@@ -202,15 +202,21 @@ class AAPPMartDemo:
         ]
         
         terminal_compromised_assets = [
-            "WORKSTATION-01       | IP: 10.10.20.15 | Type: Endpoint      | Severity: HIGH     | Status: Compromised | Detail: Initial Vector",
-            "FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin",
-            "DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated",
-            "BACKUP-SERVER-01     | IP: 10.10.20.25 | Type: Backup Server | Severity: HIGH     | Status: Compromised | Detail: Backup Access",
-            "HR-DB-01             | IP: 10.10.20.12 | Type: SQL Database  | Severity: CRITICAL | Status: Blocked     | Detail: Attack Blocked"
+            (
+                f"{asset.system:<20} | "
+                f"IP: {asset.ip:<13} | "
+                f"Type: {asset.type:<15} | "
+                f"Severity: {asset.severity:<8} | "
+                f"Status: {asset.status:<11} | "
+                f"Detail: {asset.detail}"
+            )
+            for asset in compromised_assets
         ]
 
         short_summary = (
-            f"DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel exploit. Backup Server (10.10.20.25) compromise."
+            f"DC (10.10.20.45) breached via "
+            f"Workstation ({self.target}) kernel exploit. "
+            f"Backup Server (10.10.20.25) compromise."
         )
 
         executive_summary = (
@@ -218,6 +224,8 @@ class AAPPMartDemo:
             f"The AI engine successfully pivoted through the network, affecting {len(compromised_assets)} "
             f"critical assets including the Domain Controller and Backup Server."
         )
+
+        total_duration = time.perf_counter() - start
 
         print()
         self._log("Simulation Completed Successfully", success=True)
@@ -326,7 +334,7 @@ def main() -> int:
     print(f"[*] Target IP (Initial Entry) : {report.target} ({report.hostname})")
     print(f"[*] Risk Score                : {report.risk_score}/10 ({report.risk_label})")
     print(f"[*] Summary                   : {report.short_summary}")
-    print(f"[*] Duration                  : {report.duration:.1f}s")
+    print(f"[*] Duration                  : {report.duration:.3f}s")
     print(f"[*] Simulated Step Count      : {len(report.attack_path)} Stages")
     print(f"[*] Affected Assets           : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
     print(f"[*] Started At                : {report.started_at}") 

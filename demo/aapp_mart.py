@@ -100,7 +100,7 @@ class AAPPMartDemo:
                 agent="Agent-Recon",
                 phase="Reconnaissance",
                 mitre_id="T1595",
-                description="Active scanning detected on ({self.target})",
+                description=f"Active scanning detected on ({self.target})",
                 severity="LOW",
                 status="SUCCESS",
                 remediation="Update firewall rules and IDS/IPS signatures."
@@ -153,7 +153,8 @@ class AAPPMartDemo:
         ]
 
         for step in attack_chain:
-            self._simulate_step(step)  
+            self._simulate_step(step)
+            time.sleep(0.25)
 
         risk_score = 9.6
         risk_label = "CRITICAL"

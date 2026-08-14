@@ -22,6 +22,7 @@ Outputs:
     - JSON Execution Logs: aapp-mart/logs/attack-path/attack_path_<target>_<timestamp>.json
 """
 
+import argparse
 import json
 import time
 import uuid
@@ -281,7 +282,28 @@ class ReportExporter:
 
 def main() -> int:
 
-    target = "10.10.20.15"
+    parser = argparse.ArgumentParser(
+        prog="aapp-mart",
+        description=(
+            "AAPP-MART — AI-Powered Autonomous Attack Path "
+            "Prediction & Multi-Agent Red Team Simulation Engine"
+        )
+    )
+
+    parser.add_argument(
+        "--target",
+        required=True,
+        help="Target IP address"
+    )
+
+    args = parser.parse_args()
+
+    if args.target != "10.10.20.15":
+        parser.error(
+            "This demo only supports target 10.10.20.15"
+        )
+    
+    target = args.target
 
     engine = AAPPMartDemo(target=target)
     report = engine.run()

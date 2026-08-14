@@ -33,7 +33,7 @@ python aapp_mart.py --target 10.10.20.15
 [*] Target IP (Initial Entry) : 10.10.20.15 (WORKSTATION-01)
 [*] Risk Score                : 9.6/10 (CRITICAL)
 [*] Summary                   : DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel exploit. Backup Server (10.10.20.25) compromise.
-[*] Duration                  : 1.000s
+[*] Duration                  : 1.00s
 [*] Simulated Step Count      : 6 Stages
 [*] Affected Assets           : 5 Systems (3 Compromised, 1 Isolated, 1 Blocked)
 [*] Started At                : 2026-01-01T01:01:01.123456+00:00

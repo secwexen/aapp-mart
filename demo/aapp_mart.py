@@ -90,10 +90,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
-        self._log(
-            f"Initial Entry Point Acquired: "
-            f"{self.target} ({self.hostname})"
-        )
+        self._log(f"Initial Entry Point Acquired: {self.target} ({self.hostname})")
 
         attack_chain = [
             AttackStep(
@@ -206,7 +203,7 @@ class AAPPMartDemo:
             (
                 f"{asset.system:<20} | "
                 f"IP: {asset.ip:<13} | "
-                f"Type: {asset.type:<15} | "
+                f"Type: {asset.type:<13} | "
                 f"Severity: {asset.severity:<8} | "
                 f"Status: {asset.status:<11} | "
                 f"Detail: {asset.detail}"

@@ -307,12 +307,15 @@ def main() -> int:
 
     args = parser.parse_args()
 
-    if args.target != "10.10.20.15":
+    target = args.target.strip()
+
+    if not target:
+        parser.error("Target cannot be empty.")
+
+    if target != "10.10.20.15":
         parser.error(
             "This demo only supports target 10.10.20.15"
         )
-    
-    target = args.target
 
     engine = AAPPMartDemo(target=target)
     report = engine.run()

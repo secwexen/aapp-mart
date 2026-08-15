@@ -52,3 +52,5 @@ Free capabilities include:
 - Basic audit logging
 
 The Free edition is intended to provide the complete core security engine experience without enterprise operational infrastructure.
+
+The core engine provides the foundation for Enterprise capabilities, while the public edition remains focused on attack-path analysis, security simulation, and risk assessment.

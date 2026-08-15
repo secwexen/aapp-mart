@@ -49,5 +49,6 @@ Free capabilities include:
 - Core model management
 - Core plugin architecture
 - Basic observability
+- Basic audit logging
 
 The Free edition is intended to provide the complete core security engine experience without enterprise operational infrastructure.

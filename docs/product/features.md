@@ -24,7 +24,7 @@ This document describes the core capabilities of AAPP-MART and the capability th
 - Manages the global environment state, event propagation, and scenario progression.  
 - Controls agent decision cycles, execution timing, and system‑wide synchronization.
 
-# Free Edition
+## Free Edition
 
 The Free edition focuses on the core AAPP-MART engine and security simulation capabilities.
 

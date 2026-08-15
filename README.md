@@ -100,6 +100,8 @@ This software is provided “as is” without warranty of any kind, express or i
 - Risk-Based Security Posture Analysis  
 - ML-Assisted Vulnerability Prioritization
 
+For full details, refer to the [Features](docs/product/features.md) file.
+
 ## Demo
 
 ### Attack Path Simulation

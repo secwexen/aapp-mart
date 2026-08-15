@@ -94,9 +94,9 @@ This software is provided “as is” without warranty of any kind, express or i
 
 - AI-Powered Autonomous Attack Path Prediction (AAPP)  
 - Multi-Agent Red Team Simulation (MART)  
-- Core Orchestration (ENGINE)  
-- Graph-Based Threat Modeling
-- MITRE ATT&CK Aligned Adversary Behavior
+- Core Security Engine & Orchestration  
+- Graph-Based Attack Path Modeling  
+- MITRE ATT&CK-Aligned Adversary Behavior  
 - Risk-Based Security Posture Analysis  
 - ML-Assisted Vulnerability Prioritization
 

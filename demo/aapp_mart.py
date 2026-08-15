@@ -3,8 +3,7 @@
 """
 === AAPP-MART Security Engine ===
 
-An AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine
-designed for enterprise security analysis.
+An AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine designed for enterprise security analysis.
 
 Key Features:
     - Multi-Agent Red Team (Recon, Access, Exploit, Pivot, Collection)

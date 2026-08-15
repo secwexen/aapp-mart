@@ -2,7 +2,27 @@
 
 AAPP-MART is an AI-powered security engine for attack-path prediction, multi-agent security simulation, risk analysis, and security assessment.
 
-This document describes the core capabilities of AAPP-MART and thecapability the Free edition.
+This document describes the core capabilities of AAPP-MART and the capability the Free edition.
+
+## Core Features
+
+### AI‑Powered Autonomous Attack Path Prediction (AAPP)
+
+- Uses machine learning models to estimate likely attacker movement.
+- Generates dynamic attack paths based on environment state and security posture.
+- Supports probabilistic and deterministic prediction modes.
+
+### Multi‑Agent Red Team Simulation (MART)
+
+- Autonomous adversarial agents emulate realistic attacker tactics.
+- Agents coordinate, compete, or specialize based on scenario configuration.
+- Behavior aligned with MITRE ATT&CK techniques.
+
+### Core Orchestration (ENGINE)
+
+- Coordinates the interaction between AAPP and MART to maintain a unified simulation flow.  
+- Manages the global environment state, event propagation, and scenario progression.  
+- Controls agent decision cycles, execution timing, and system‑wide synchronization.
 
 # Free Edition
 

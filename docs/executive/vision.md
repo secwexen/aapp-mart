@@ -1,6 +1,6 @@
 # Vision
 
-**AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is built with a clear and ambitious vision. To empower organizations to anticipate, simulate, and neutralize cyber threats before they materialize.
+**AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is built with a clear and ambitious vision. To empower organizations to anticipate, simulate, and better understand cyber threats before they materialize.
 
 ## The Market Opportunity & Pain Point
 
@@ -16,25 +16,26 @@ Modern infrastructures are increasingly complex, dynamic, and interconnected. Tr
 
 AAPP-MART’s mission is to:
 
-1. Predict: Forecast potential attack paths using AI-Powered modeling and graph-based threat analysis.
-2. Simulate: Enable autonomous multi-agent red team simulations that mirror real-world attacker behavior.
-3. Secure: Provide actionable, intelligence-driven insights for proactive defense and continuous security validation.
+1. Predict: Forecast potential attack paths using AI-Powered modeling and graph-based threat analysis.  
+2. Simulate: Enable autonomous multi-agent red team simulations that mirror real-world attacker behavior.  
+3. Assess: Provide actionable, intelligence-driven insights for proactive defense and continuous security validation.
 
 By combining predictive analytics, autonomous simulation, and risk-based scoring, AAPP-MART transforms security teams from reactive responders into anticipatory defenders.
 
 ## Core Principles
 
-1. Predictive Security – Anticipate attacks before they happen.
-2. Autonomy & Intelligence – Empower agents to simulate realistic adversary strategies.
-3. Actionable Insights – Deliver data-driven recommendations, not just alerts.
-4. Scalability & Modularity – Designed for enterprise-scale deployments with extensible components.
+1. Predictive Security – Anticipate attacks before they happen.  
+2. Autonomy & Intelligence – Empower agents to simulate realistic adversary strategies.  
+3. Actionable Insights – Deliver data-driven recommendations, not just alerts.  
+4. Scalability & Modularity – Designed for enterprise-scale deployments with extensible components.  
+5. Controlled Security Simulation – Provide safe, bounded, and policy-aware simulation capabilities for security research and validation.
 
 ## Long-Term Vision
 
-- Enterprise-Ready Simulation: Make AI-driven red team simulations accessible for large-scale security operations.
-- Realistic Attack Modeling: Continuously evolve agent behaviors to reflect emerging adversary tactics and MITRE ATT&CK techniques.
-- Integration Ecosystem: Seamless integration with SIEMs, dashboards, and enterprise security pipelines.
-- Predictive Risk Management: Combine attack-path prediction with proactive defense recommendations.
+- Enterprise-Ready Simulation: Make AI-driven red team simulations accessible for large-scale security operations.  
+- Realistic Attack Modeling: Continuously evolve agent behaviors to reflect emerging adversary tactics and MITRE ATT&CK techniques.  
+- Integration Ecosystem: Seamless integration with SIEMs, dashboards, and enterprise security pipelines.  
+- Predictive Risk Management: Combine attack-path prediction with proactive defense recommendations.  
 - Global Security Research Collaboration: Serve as a reference platform for academia, researchers, and security professionals worldwide.
 
 ## Future Outlook
@@ -47,9 +48,9 @@ Cyber attacks are no longer linear or predictable. Security teams need anticipat
 
 AAPP-MART envisions a world where organizations can:
 
-- Foresee attacker movements and plan defenses ahead of time
-- Validate and strengthen security controls continuously
-- Reduce incident response time with predictive simulations
+- Foresee attacker movements and plan defenses ahead of time  
+- Validate and strengthen security controls continuously  
+- Reduce incident response time with predictive simulations  
 - Drive research and innovation in autonomous cybersecurity
 
 ## Call to Action

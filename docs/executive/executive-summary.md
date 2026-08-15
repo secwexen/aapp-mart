@@ -10,3 +10,32 @@ By simulating sophisticated attack paths and behaviors—fully aligned with the 
 - Evolve from reactive defense to intelligence-driven, prevention-focused security operations
 
 AAPP-MART is engineered for seamless integration into modern enterprise environments, supporting regulatory compliance, risk management initiatives, and board-level reporting requirements. It empowers CISOs, security architects, and red teams to anticipate, emulate, and defeat even the most advanced threats—ensuring business resilience in an ever-changing cyber landscape.
+
+## Free Edition
+
+The Free edition focuses on the core AAPP-MART security engine and security simulation capabilities.
+
+Free capabilities include:
+
+- Attack-path prediction
+- Attack graph analysis
+- Multi-agent simulation
+- MITRE ATT&CK mapping
+- Risk scoring
+- CVE analysis
+- Basic threat intelligence
+- Basic agents
+- Prediction workflows
+- Risk workflows
+- Simulation workflows
+- JSON/CSV/HTML/Markdown reports
+- CLI
+- Basic API
+- Local execution
+- Core policy evaluation
+- Core model management
+- Core plugin architecture
+- Basic observability
+- Basic audit logging
+
+The Free edition is intended to provide the complete core security engine experience without enterprise operational infrastructure.

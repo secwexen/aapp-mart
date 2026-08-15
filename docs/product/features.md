@@ -1,76 +1,33 @@
-# Features
+# AAPP-MART Features
 
-This document provides a detailed overview of the system’s core capabilities.
+AAPP-MART is an AI-powered security engine for attack-path prediction, multi-agent security simulation, risk analysis, and security assessment.
 
-## Core Capabilities
+This document describes the core capabilities of AAPP-MART and thecapability the Free edition.
 
-### AAPP (AI‑Powered Autonomous Attack Path Prediction)
+# Free Edition
 
-- Uses machine learning models to estimate likely attacker movement.
-- Generates dynamic attack paths based on environment state and security posture.
-- Supports probabilistic and deterministic prediction modes.
+The Free edition focuses on the core AAPP-MART engine and security simulation capabilities.
 
-### MART (Multi‑Agent Red Team Simulation)
+Free capabilities include:
 
-- Autonomous adversarial agents emulate realistic attacker tactics.
-- Agents coordinate, compete, or specialize based on scenario configuration.
-- Behavior aligned with MITRE ATT&CK techniques.
+- Attack-path prediction
+- Attack graph analysis
+- Multi-agent simulation
+- MITRE ATT&CK mapping
+- Risk scoring
+- CVE analysis
+- Basic threat intelligence
+- Basic agents
+- Prediction workflows
+- Risk workflows
+- Simulation workflows
+- JSON/CSV/HTML/Markdown reports
+- CLI
+- Basic API
+- Local execution
+- Core policy evaluation
+- Core model management
+- Core plugin architecture
+- Basic observability
 
-### ENGINE (Core Orchestration)
-
-- Coordinates the interaction between AAPP and MART to maintain a unified simulation flow.  
-- Manages the global environment state, event propagation, and scenario progression.  
-- Controls agent decision cycles, execution timing, and system‑wide synchronization.
-
-## Intelligence & Analytics
-
-### Predictive Analytics Engine
-
-- Identifies high‑risk nodes, misconfigurations, and privilege‑escalation paths.
-- Computes attack feasibility scores and risk impact metrics.
-- Generates actionable insights for defenders.
-
-### Attack Graph Generation
-
-- Builds dynamic attack graphs from environment data.
-- Visualizes relationships between assets, vulnerabilities, and attack vectors.
-- Supports export for external analysis tools.
-
-## Security Validation
-
-### Continuous Security Assessment
-
-- Runs scheduled or on‑demand simulations.
-- Detects drift in security posture over time.
-- Validates defensive controls before real attackers exploit them.
-
-### Controlled Simulation Environment
-
-- Safe, isolated execution of adversarial behavior.
-- Configurable constraints for risk‑free testing.
-- Supports cloud, hybrid, and on‑prem environments.
-
-## Architecture & Extensibility
-
-### Modular Architecture
-
-- Pluggable components for agents, models, and environment adapters.
-- Easy integration with external tools and data sources.
-
-### Scenario‑Based Simulation
-
-- Customizable attack scenarios.
-- Supports training, testing, and research workflows.
-
-### API‑Driven Design
-
-- Python API for automation and scripting.
-- Extensible interfaces for custom agents and models.
-
-## Output & Reporting
-
-### Simulation Reports
-
-- Detailed logs of agent actions and attack sequences.
-- Risk scoring and impact summaries.
-- Exportable JSON/Markdown reports.
+The Free edition is intended to provide the complete core security engine experience without enterprise operational infrastructure.

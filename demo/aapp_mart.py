@@ -67,6 +67,7 @@ class SimulationReport:
     executive_summary: str
     attack_path: List[AttackStep]
     compromised_assets: List[CompromisedAsset]
+    terminal_compromised_assets: List[str]
     started_at: str
     generated_at: str
     duration: float
@@ -254,7 +255,6 @@ class AAPPMartDemo:
             executive_summary=executive_summary,
             attack_path=attack_chain,
             compromised_assets=compromised_assets,
-            terminal_compromised_assets=terminal_compromised_assets,
             started_at=self.started_at,
             generated_at=datetime.now(timezone.utc).isoformat(),
             duration=total_duration
@@ -262,7 +262,7 @@ class AAPPMartDemo:
 
     def _simulate_step(self, step: AttackStep):
         print(
-            f"[+] [{step.agent:<16}]"
+            f"[+] [{step.agent:<15}]"
             f" {step.phase:<20}"
             f" | MITRE: {step.mitre_id:<5}"
             f" | Severity: {step.severity:<8}"

@@ -100,7 +100,7 @@ class AAPPMartDemo:
 
     def run(self) -> SimulationReport:
         start = time.perf_counter()
-        self.started_at = datetime.now(timezone.utc).isoformat()
+        self.started_at: str = datetime.now(timezone.utc).isoformat()
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
@@ -336,17 +336,21 @@ def main() -> int:
         print("\n[!] Simulation Workflow Interrupted by User")
         return 130
 
+    except Exception as e:
+        print(f"\n[!] Simulation Workflow Failed: {e}")
+        return 1
+
     compromised = sum(
-    asset.status.lower() == "compromised"
-    for asset in report.compromised_assets
+        asset.status.lower() == "compromised"
+        for asset in report.compromised_assets
     )
     isolated = sum(
-    asset.status.lower() == "isolated"
-    for asset in report.compromised_assets
+        asset.status.lower() == "isolated"
+        for asset in report.compromised_assets
     )
     blocked = sum(
-    asset.status.lower() == "blocked"
-    for asset in report.compromised_assets
+        asset.status.lower() == "blocked"
+        for asset in report.compromised_assets
     )
 
     print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")

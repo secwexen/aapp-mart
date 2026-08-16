@@ -213,18 +213,6 @@ class AAPPMartDemo:
             ),
         ]
 
-        terminal_compromised_assets = [
-            (
-                f"{asset.system:<20} | "
-                f"IP: {asset.ip:<11} | "
-                f"Type: {asset.type:<13} | "
-                f"Severity: {asset.severity:<8} | "
-                f"Status: {asset.status:<11} | "
-                f"Detail: {asset.detail}"
-            )
-            for asset in compromised_assets
-        ]
-
         short_summary = (
             f"DC (10.10.20.45) breached via "
             f"Workstation ({self.target}) kernel exploit. "
@@ -363,8 +351,17 @@ def main() -> int:
     print(f"[*] Generated At              : {report.generated_at}")
 
     print("\n--- Affected Critical Assets ---\n")
-    for asset in terminal_compromised_assets:
-        print(f"[!] {asset}")
+
+    for asset in report.terminal_compromised_assets:
+        print(
+            f"[!] "
+            f"{asset.system:<20} | "
+            f"IP: {asset.ip:<11} | "
+            f"Type: {asset.type:<13} | "
+            f"Severity: {asset.severity:<8} | "
+            f"Status: {asset.status:<11} | "
+            f"Detail: {asset.detail}"
+        )
 
     clean_target = report.target.replace(".", "_")
 

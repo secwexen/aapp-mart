@@ -24,7 +24,7 @@ AAPP-MART combines **AI-powered attack path prediction**, **multi-agent red team
 
 Its **AAPP (AI-Powered Autonomous Attack Path Prediction)** capability identifies and prioritizes potential attack paths using predictive models, graph-based analysis, security-state information, and deterministic security rules. **MART (Multi-Agent Red Team Simulation)** then provides a controlled environment for modeling adversarial behavior across reconnaissance, initial access, privilege escalation, lateral movement, persistence, and other MITRE ATT&CK-aligned activities.
 
-This attack-path-centric approach connects **threat modeling, adversary emulation, breach and attack simulation (BAS), vulnerability intelligence, MITRE ATT&CK mapping, and risk analysis** within a modular security engine. The result is structured, repeatable, and actionable security intelligence that helps security teams understand not only where vulnerabilities exist, but how they could contribute to a broader attack scenario.
+AAPP-MART provides structured, repeatable, and actionable security intelligence that helps security teams understand not only where vulnerabilities exist, but how those vulnerabilities could contribute to a broader attack scenario.
 
 ## Use Cases
 

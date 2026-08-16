@@ -104,7 +104,7 @@ class AAPPMartDemo:
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
-        self._log("Simulation workflow started")
+        self._log("Simulation Workflow Started")
         self._log(f"Initial Entry Point: {self.target} ({self.hostname})\n")
 
         attack_chain = [

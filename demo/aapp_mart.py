@@ -262,7 +262,7 @@ class AAPPMartDemo:
 
     def _simulate_step(self, step: AttackStep):
         print(
-            f"[+] [{step.agent:<15}]"
+            f"[+] [{step.agent:<16}]"
             f" {step.phase:<20}"
             f" | MITRE: {step.mitre_id:<5}"
             f" | Severity: {step.severity:<8}"

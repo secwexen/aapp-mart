@@ -67,7 +67,6 @@ class SimulationReport:
     executive_summary: str
     attack_path: List[AttackStep]
     compromised_assets: List[CompromisedAsset]
-    terminal_compromised_assets: List[str]
     started_at: str
     generated_at: str
     duration: float

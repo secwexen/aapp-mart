@@ -253,7 +253,7 @@ class AAPPMartDemo:
             f" {step.phase:<20}"
             f" | MITRE: {step.mitre_id:<5}"
             f" | Severity: {step.severity:<8}"
-            f" | Status: {step.status:<8}"
+            f" | Status: {step.status:<7}"
             f" | {step.description}"
         )
 
@@ -352,7 +352,7 @@ def main() -> int:
 
     print("\n--- Affected Critical Assets ---\n")
 
-    for asset in report.terminal_compromised_assets:
+    for asset in report.compromised_assets:
         print(
             f"[!] "
             f"{asset.system:<20} | "

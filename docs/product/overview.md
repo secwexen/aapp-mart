@@ -4,7 +4,7 @@
 
 Unlike traditional static manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, execute defensive controls validation, and enhance cyber resilience through repeatable, scalable, and intelligence‑driven simulations.
 
-The system generates structured **attack-path reports**, **MITRE ATT&CK mapped insights**, and **dynamic risk scoring outputs** to support SOC operations, detection engineering, and proactive purple teaming for continuous security improvement.
+AAPP-MART is designed as an extensible security engine rather than a traditional vulnerability scanner or a collection of predefined attack playbooks, providing a foundation for proactive security validation, red teaming, purple teaming, security research, and enterprise security operations.
 
 At the core of AAPP-MART are two tightly integrated subsystems:
 

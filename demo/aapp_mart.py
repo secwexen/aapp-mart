@@ -97,10 +97,10 @@ class AAPPMartDemo:
         self.hostname = "WORKSTATION-01"
         self.engine_version = "v1.0.0-demo"
         self.simulation_id = str(uuid.uuid4())
-        self.started_at = datetime.now(timezone.utc).isoformat()
 
     def run(self) -> SimulationReport:
         start = time.perf_counter()
+        self.started_at = datetime.now(timezone.utc).isoformat()
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
@@ -328,9 +328,13 @@ def main() -> int:
         parser.error(
             "This demo only supports target 10.10.20.15"
         )
+    try:
+        engine = AAPPMartDemo(target=target)
+        report = engine.run()
 
-    engine = AAPPMartDemo(target=target)
-    report = engine.run()
+    except KeyboardInterrupt:
+        print("\n[!] Simulation Workflow Interrupted by User")
+        return 130
 
     compromised = sum(
     asset.status.lower() == "compromised"

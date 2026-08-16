@@ -67,7 +67,6 @@ class SimulationReport:
     executive_summary: str
     attack_path: List[AttackStep]
     compromised_assets: List[CompromisedAsset]
-    terminal_compromised_assets: List[str]
     started_at: str
     generated_at: str
     duration: float
@@ -364,7 +363,7 @@ def main() -> int:
     print(f"[*] Generated At              : {report.generated_at}")
 
     print("\n--- Affected Critical Assets ---\n")
-    for asset in report.terminal_compromised_assets:
+    for asset in terminal_compromised_assets:
         print(f"[!] {asset}")
 
     clean_target = report.target.replace(".", "_")

@@ -1,10 +1,10 @@
 # Demo
 
-This directory contains runnable demonstration scripts for the AAPP-MART security engine.
+This directory contains runnable demonstration scripts for the AAPP-MART cybersecurity engine.
 
 ### Attack Path Simulation
 
-This section demonstrates a runnable attack-path simulation for the AAPP-MART security engine.
+This section demonstrates a runnable attack-path simulation for the AAPP-MART cybersecurity engine.
 
 ### Usage
 

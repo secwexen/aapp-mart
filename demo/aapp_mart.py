@@ -76,6 +76,7 @@ class SimulationReport:
     started_at: str
     generated_at: str
     duration: float
+    duration=round(total_duration, 2)
 
 # =========================
 # Risk Label Calculation

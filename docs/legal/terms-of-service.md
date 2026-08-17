@@ -29,7 +29,7 @@ The following activities are not allowed:
 
 ## 5. Open Source License
 
-AAPP-MART is distributed under the Apache License 2.0. Users may use, modify, reproduce, and distribute the software in accordance with the terms of the license. The full license text is available in the [LICENSE](/LICENSE) file included with the project.
+AAPP-MART is distributed under the Apache-2.0 License. Users may use, modify, reproduce, and distribute the software in accordance with the terms of the license. The full license text is available in the [LICENSE](/LICENSE) file included with the project.
 
 ## 6. Intellectual Property  
 

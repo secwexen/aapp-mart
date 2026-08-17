@@ -312,7 +312,7 @@ def main() -> int:
 
     if target != "10.10.20.15":
         parser.error(
-            "This demo only supports target 10.10.20.15"
+            "This demo only supports target (10.10.20.15)"
         )
     try:
         engine = AAPPMartDemo(target=target)

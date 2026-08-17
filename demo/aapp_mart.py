@@ -100,6 +100,7 @@ class AAPPMARTDemo:
         self.hostname = "WORKSTATION-01"
         self.engine_version = "v1.0.0-demo"
         self.simulation_id = str(uuid.uuid4())
+        self.started_at = ""
 
     def run(self) -> SimulationReport:
         start = time.perf_counter()

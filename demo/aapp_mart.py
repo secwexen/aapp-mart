@@ -19,10 +19,21 @@ import argparse
 import json
 import time
 import uuid
+import logging
 from datetime import datetime, timezone
 from pathlib import Path
 from dataclasses import dataclass, asdict
 from typing import List
+
+# =========================
+# Logging Configuration
+# =========================
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(message)s'
+)
+logger = logging.getLogger("AAPPMART")
 
 # =========================
 # Data Models
@@ -82,7 +93,7 @@ def calculate_risk_label(score: float) -> str:
 # Demo Engine
 # =========================
 
-class AAPPMartDemo:
+class AAPPMARTDemo:
 
     def __init__(self, target: str):
         self.target = target
@@ -94,7 +105,7 @@ class AAPPMartDemo:
         start = time.perf_counter()
         self.started_at: str = datetime.now(timezone.utc).isoformat()
 
-        print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
+        logger.info("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
         self._log("Simulation Workflow Started")
         self._log(f"Initial Entry Point: {self.target} ({self.hostname})\n")
@@ -220,7 +231,7 @@ class AAPPMartDemo:
 
         total_duration = time.perf_counter() - start
 
-        print()
+        logger.info()
         self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
@@ -241,7 +252,7 @@ class AAPPMartDemo:
         )
 
     def _simulate_step(self, step: AttackStep):
-        print(
+        logger.info(
             f"[+] [{step.agent:<16}]"
             f" {step.phase:<20}"
             f" | MITRE: {step.mitre_id:<5}"
@@ -252,7 +263,7 @@ class AAPPMartDemo:
 
     def _log(self, message: str, success: bool = False):
         prefix = "[✓]" if success else "[*]"
-        print(f"{prefix} {message}")
+        logger.info(f"{prefix} {message}")
 
 # =========================
 # Report Export
@@ -270,10 +281,10 @@ class ReportExporter:
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=2, ensure_ascii=False)
 
-            print(f"\n[+] Report Exported: {output_path}")
+            logger.info(f"\n[+] Report Exported: {output_path}")
             return True
         except (PermissionError, OSError, TypeError) as e:
-            print(f"\n[!] Error exporting report: ({type(e).__name__}) {e}")
+            logger.error(f"\n[!] Error exporting report: ({type(e).__name__}) {e}")
             return False
 
 # =========================
@@ -308,15 +319,15 @@ def main() -> int:
             "This demo only supports target (10.10.20.15)"
         )
     try:
-        engine = AAPPMartDemo(target=target)
+        engine = AAPPMARTDemo(target=target)
         report = engine.run()
 
     except KeyboardInterrupt:
-        print("\n[!] Simulation Workflow Interrupted by User")
+        logger.warning("\n[!] Simulation Workflow Interrupted by User")
         return 130
 
     except Exception as e:
-        print(f"\n[!] Simulation Workflow Failed: {e}")
+        logger.error(f"\n[!] Simulation Workflow Failed: {e}")
         return 1
 
     compromised = sum(
@@ -332,21 +343,21 @@ def main() -> int:
         for asset in report.compromised_assets
     )
 
-    print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
+    logger.info("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
 
-    print(f"[*] Target IP (Initial Entry) : {report.target} ({report.hostname})")
-    print(f"[*] Risk Score                : {report.risk_score}/10 ({report.risk_label})")
-    print(f"[*] Summary                   : {report.short_summary}")
-    print(f"[*] Duration                  : {report.duration:.2f}s")
-    print(f"[*] Simulated Step Count      : {len(report.attack_path)} Stages")
-    print(f"[*] Affected Assets           : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
-    print(f"[*] Started At                : {report.started_at}") 
-    print(f"[*] Generated At              : {report.generated_at}")
+    logger.info(f"[*] Target IP (Initial Entry) : {report.target} ({report.hostname})")
+    logger.info(f"[*] Risk Score                : {report.risk_score}/10 ({report.risk_label})")
+    logger.info(f"[*] Summary                   : {report.short_summary}")
+    logger.info(f"[*] Duration                  : {report.duration:.2f}s")
+    logger.info(f"[*] Simulated Step Count      : {len(report.attack_path)} Stages")
+    logger.info(f"[*] Affected Assets           : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
+    logger.info(f"[*] Started At                : {report.started_at}") 
+    logger.info(f"[*] Generated At              : {report.generated_at}")
 
-    print("\n--- Affected Critical Assets ---\n")
+    logger.info("\n--- Affected Critical Assets ---\n")
 
     for asset in report.compromised_assets:
-        print(
+        logger.info(
             f"[!] "
             f"{asset.system:<20} | "
             f"IP: {asset.ip:<11} | "

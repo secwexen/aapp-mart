@@ -1,6 +1,6 @@
 # Roadmap
 
-This document outlines the planned evolution of AAPP-MART as a research and security engine.  
+This document outlines the planned evolution of AAPP-MART as a cybersecurity engine.  
 
 ## Short Term (Next Releases)
 

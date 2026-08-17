@@ -19,23 +19,10 @@ import argparse
 import json
 import time
 import uuid
-import logging
 from datetime import datetime, timezone
 from pathlib import Path
 from dataclasses import dataclass, asdict
 from typing import List
-
-# =========================
-# Logging Configuration
-# =========================
-
-Path("logs/attack-path").mkdir(parents=True, exist_ok=True)
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(message)s'
-)
-logger = logging.getLogger("AAPPMART")
 
 # =========================
 # Data Models
@@ -108,10 +95,10 @@ class AAPPMARTDemo:
         start = time.perf_counter()
         self.started_at: str = datetime.now(timezone.utc).isoformat()
 
-        logger.info("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
+        print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
-        self._log("Simulation Workflow Started")
-        self._log(f"Initial Entry Point: {self.target} ({self.hostname})\n")
+        print("Simulation Workflow Started")
+        print(f"Initial Entry Point: {self.target} ({self.hostname})\n")
 
         attack_chain = [
             AttackStep(
@@ -234,7 +221,7 @@ class AAPPMARTDemo:
 
         total_duration = time.perf_counter() - start
 
-        logger.info("")
+        print()
         self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
@@ -255,7 +242,7 @@ class AAPPMARTDemo:
         )
 
     def _simulate_step(self, step: AttackStep):
-        logger.info(
+        print(
             f"[+] [{step.agent:<16}]"
             f" {step.phase:<20}"
             f" | MITRE: {step.mitre_id:<5}"
@@ -266,7 +253,7 @@ class AAPPMARTDemo:
 
     def _log(self, message: str, success: bool = False):
         prefix = "[✓]" if success else "[*]"
-        logger.info(f"{prefix} {message}")
+        print(f"{prefix} {message}")
 
 # =========================
 # Report Export
@@ -326,11 +313,11 @@ def main() -> int:
         report = engine.run()
 
     except KeyboardInterrupt:
-        logger.warning("\n[!] Simulation Workflow Interrupted by User")
+        print("\n[!] Simulation Workflow Interrupted by User")
         return 130
 
     except Exception as e:
-        logger.error(f"\n[!] Simulation Workflow Failed: {e}")
+        print(f"\n[!] Simulation Workflow Failed: {e}")
         return 1
 
     compromised = sum(
@@ -346,21 +333,21 @@ def main() -> int:
         for asset in report.compromised_assets
     )
 
-    logger.info("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
+    print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
 
-    logger.info(f"[*] Target IP (Initial Entry Point) : {report.target} ({report.hostname})")
-    logger.info(f"[*] Risk Score                      : {report.risk_score}/10 ({report.risk_label})")
-    logger.info(f"[*] Summary                         : {report.short_summary}")
-    logger.info(f"[*] Duration                        : {report.duration:.2f}s")
-    logger.info(f"[*] Simulated Step Count            : {len(report.attack_path)} Stages")
-    logger.info(f"[*] Affected Assets                 : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
-    logger.info(f"[*] Started At                      : {report.started_at}") 
-    logger.info(f"[*] Generated At                    : {report.generated_at}")
+    print(f"[*] Target IP (Initial Entry Point) : {report.target} ({report.hostname})")
+    print(f"[*] Risk Score                      : {report.risk_score}/10 ({report.risk_label})")
+    print(f"[*] Summary                         : {report.short_summary}")
+    print(f"[*] Duration                        : {report.duration:.2f}s")
+    print(f"[*] Simulated Step Count            : {len(report.attack_path)} Stages")
+    print(f"[*] Affected Assets                 : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
+    print(f"[*] Started At                      : {report.started_at}") 
+    print(f"[*] Generated At                    : {report.generated_at}")
 
-    logger.info("\n--- Affected Critical Assets ---\n")
+    print("\n--- Affected Critical Assets ---\n")
 
     for asset in report.compromised_assets:
-        logger.info(
+        print(
             f"[!] "
             f"{asset.system:<20} | "
             f"IP: {asset.ip:<11} | "

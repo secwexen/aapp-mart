@@ -251,7 +251,7 @@ class AAPPMARTDemo:
             compromised_assets=compromised_assets,
             started_at=self.started_at,
             generated_at=datetime.now(timezone.utc).isoformat(),
-            duration=total_duration
+            duration=total_duration,
             duration=round(total_duration, 2)
         )
 

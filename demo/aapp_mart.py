@@ -76,7 +76,6 @@ class SimulationReport:
     started_at: str
     generated_at: str
     duration: float
-    duration=round(total_duration, 2)
 
 # =========================
 # Risk Label Calculation
@@ -253,6 +252,7 @@ class AAPPMARTDemo:
             started_at=self.started_at,
             generated_at=datetime.now(timezone.utc).isoformat(),
             duration=total_duration
+            duration=round(total_duration, 2)
         )
 
     def _simulate_step(self, step: AttackStep):

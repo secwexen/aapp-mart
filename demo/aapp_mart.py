@@ -348,14 +348,14 @@ def main() -> int:
 
     logger.info("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
 
-    logger.info(f"[*] Target IP (Initial Entry) : {report.target} ({report.hostname})")
-    logger.info(f"[*] Risk Score                : {report.risk_score}/10 ({report.risk_label})")
-    logger.info(f"[*] Summary                   : {report.short_summary}")
-    logger.info(f"[*] Duration                  : {report.duration:.2f}s")
-    logger.info(f"[*] Simulated Step Count      : {len(report.attack_path)} Stages")
-    logger.info(f"[*] Affected Assets           : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
-    logger.info(f"[*] Started At                : {report.started_at}") 
-    logger.info(f"[*] Generated At              : {report.generated_at}")
+    logger.info(f"[*] Target IP (Initial Entry Point) : {report.target} ({report.hostname})")
+    logger.info(f"[*] Risk Score                      : {report.risk_score}/10 ({report.risk_label})")
+    logger.info(f"[*] Summary                         : {report.short_summary}")
+    logger.info(f"[*] Duration                        : {report.duration:.2f}s")
+    logger.info(f"[*] Simulated Step Count            : {len(report.attack_path)} Stages")
+    logger.info(f"[*] Affected Assets                 : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
+    logger.info(f"[*] Started At                      : {report.started_at}") 
+    logger.info(f"[*] Generated At                    : {report.generated_at}")
 
     logger.info("\n--- Affected Critical Assets ---\n")
 

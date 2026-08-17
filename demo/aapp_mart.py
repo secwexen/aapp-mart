@@ -13,13 +13,6 @@ Key Features:
 Usage:
     python aapp_mart.py --target 10.10.20.15
     python aapp_mart.py --help
-
-Requirements:
-    - Python >= 3.11
-    - Standard Library (json, time, uuid, datetime, pathlib, dataclasses)
-
-Outputs:
-    - JSON Execution Logs: logs/attack-path/attack_path_<target>_<timestamp>.json
 """
 
 import argparse

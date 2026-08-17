@@ -29,6 +29,8 @@ from typing import List
 # Logging Configuration
 # =========================
 
+Path("logs/attack-path").mkdir(parents=True, exist_ok=True)
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(message)s'
@@ -232,7 +234,7 @@ class AAPPMARTDemo:
 
         total_duration = time.perf_counter() - start
 
-        logger.info()
+        logger.info("")
         self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(

@@ -193,7 +193,7 @@ class AAPPMARTDemo:
                 type="Storage",
                 severity="HIGH",
                 status="Isolated",
-                detail="Domain Admin"
+                detail="Domain Admin Access"
             ),
             CompromisedAsset(
                 system="DOMAIN-CONTROLLER-01",

@@ -2,6 +2,7 @@
   "simulation_id": "c9a7b538-2a1d-4f15-8c3b-d1e3456789ab",
   "target": "10.10.20.15",
   "hostname": "WORKSTATION-01",
+  "os": "Linux",
   "status": "COMPLETED",
   "risk_score": 9.6,
   "risk_label": "CRITICAL",
@@ -27,7 +28,7 @@
       "remediation": "Audit account privileges and enforce Privileged Access Management (PAM)."
     },
     {
-      "agent": "Agent-Exploit",
+      "agent": "Agent-Exploitation",
       "phase": "Privilege Escalation",
       "mitre_id": "T1068",
       "description": "Kernel privilege escalation simulated",

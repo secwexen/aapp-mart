@@ -65,6 +65,19 @@ class SimulationReport:
     duration: float
 
 # =========================
+# MITRE ATT&CK Mapping
+# =========================
+
+MITRE_ATTACK = {
+    "T1595": "Active Scanning",
+    "T1566": "Phishing",
+    "T1078": "Valid Accounts",
+    "T1068": "Exploitation for Privilege Escalation",
+    "T1021": "Remote Services",
+    "T1005": "Data from Local System"
+}
+
+# =========================
 # Risk Label Calculation
 # =========================
 
@@ -271,10 +284,10 @@ class ReportExporter:
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=2, ensure_ascii=False)
 
-            logger.info(f"\n[+] Report Exported: {output_path}")
+            print(f"\n[+] Report Exported: {output_path}")
             return True
         except (PermissionError, OSError, TypeError) as e:
-            logger.error(f"\n[!] Error exporting report: ({type(e).__name__}) {e}")
+            print(f"\n[!] Error exporting report: ({type(e).__name__}) {e}")
             return False
 
 # =========================

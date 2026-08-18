@@ -69,7 +69,7 @@
       "type": "Storage",
       "severity": "HIGH",
       "status": "Isolated",
-      "detail": "Domain Admin"
+      "detail": "Domain Admin Access"
     },
     {
       "system": "DOMAIN-CONTROLLER-01",
@@ -87,14 +87,6 @@
       "status": "Compromised",
       "detail": "Backup Access"
     },
-    {
-      "system": "HR-DB-01",
-      "ip": "10.10.20.12",
-      "type": "SQL Database",
-      "severity": "CRITICAL",
-      "status": "Blocked",
-      "detail": "Attack Blocked"
-    }
   ],
   "started_at": "2026-01-01T01:01:01.123456+00:00",
   "generated_at": "2026-01-01T01:01:01.123456+00:00",

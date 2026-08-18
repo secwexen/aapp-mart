@@ -118,7 +118,7 @@ python aapp_mart.py --target 10.10.20.15
 === AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===
 
 [*] Simulation Workflow Started
-[*] Initial Entry Point: 10.10.20.15 (WORKSTATION-01) 
+[*] Initial Entry Point: 10.10.20.15 (WORKSTATION-01, Linux) 
 
 [+] [Agent-Recon       ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Status: SUCCESS | Active scanning detected on (10.10.20.15)
 [+] [Agent-Access      ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Status: SUCCESS | Valid account abuse

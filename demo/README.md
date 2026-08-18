@@ -35,7 +35,7 @@ python aapp_mart.py --target 10.10.20.15
 [*] Summary                         : DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel privilege escalation using CVE-2024-1086. Backup Server (10.10.20.25) compromise.
 [*] Duration                        : 1.00s
 [*] Simulated Step Count            : 5 Stages
-[*] Affected Assets                 : 4 Systems (3 Compromised, 1 Isolated, 1 Blocked)
+[*] Affected Assets                 : 5 Systems (3 Compromised, 1 Isolated, 1 Blocked)
 [*] Started At                      : 2026-01-01T01:01:01.123456+00:00
 [*] Generated At                    : 2026-01-01T01:01:01.123456+00:00
 

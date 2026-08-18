@@ -42,7 +42,7 @@ python aapp_mart.py --target 10.10.20.15
 --- Affected Critical Assets ---
 
 [!] WORKSTATION-01       | IP: 10.10.20.15 | Type: Endpoint      | Severity: HIGH     | Status: Compromised | Detail: Initial Vector
-[!] FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin
+[!] FILE-SERVER-01       | IP: 10.10.20.2  | Type: Storage       | Severity: HIGH     | Status: Isolated    | Detail: Domain Admin Access
 [!] DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated
 [!] BACKUP-SERVER-01     | IP: 10.10.20.25 | Type: Backup Server | Severity: HIGH     | Status: Compromised | Detail: Backup Access
 

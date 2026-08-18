@@ -250,6 +250,7 @@ class AAPPMARTDemo:
             engine_version=self.engine_version,
             executive_summary=executive_summary,
             attack_path=attack_chain,
+            short_summary=short_summary,
             compromised_assets=compromised_assets,
             started_at=self.started_at,
             generated_at=datetime.now(timezone.utc).isoformat(),
@@ -285,6 +286,8 @@ class ReportExporter:
             path = Path(output_path)
             path.parent.mkdir(parents=True, exist_ok=True)
             report_data = asdict(report)
+
+            del report_data["short_summary"]
 
             for step in report_data["attack_path"]:
                 if step.get("cve_id") is None:

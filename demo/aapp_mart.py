@@ -58,7 +58,6 @@ class SimulationReport:
     risk_score: float
     risk_label: str
     engine_version: str
-    short_summary: str
     executive_summary: str
     attack_path: List[AttackStep]
     compromised_assets: List[CompromisedAsset]

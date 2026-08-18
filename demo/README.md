@@ -49,9 +49,5 @@ python aapp_mart.py --target 10.10.20.15
 [+] Report Exported: logs/attack-path/attack_path_10_10_20_15_20260101_010101.json
 ```
 
-### Simulation Logs
-
-See the generated [Attack Path Simulation Logs](demo/logs/attack-path/attack_path_simulation_logs.json) for the JSON simulation report.
-
 > [!NOTE]
 > This IP/hostname is an example target used for demonstration purposes only.

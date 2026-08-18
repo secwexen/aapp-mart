@@ -6,8 +6,7 @@
   "risk_score": 9.6,
   "risk_label": "CRITICAL",
   "engine_version": "v1.0.0-demo",
-  "short_summary": "DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel exploit. Backup Server (10.10.20.25) compromise.",
-  "executive_summary": "Simulated attack initiated on (10.10.20.15) (WORKSTATION-01) resulted in a CRITICAL risk environment. The AI engine successfully pivoted through the network, affecting 5 critical assets including the Domain Controller and Backup Server.",
+  "executive_summary": "Simulated attack initiated on (10.10.20.15) (WORKSTATION-01) resulted in a CRITICAL risk environment. The AI engine successfully performed simulated privilege escalation using CVE-2024-1086, affecting 5 critical assets including the Domain Controller and Backup Server.",
   "attack_path": [
     {
       "agent": "Agent-Recon",

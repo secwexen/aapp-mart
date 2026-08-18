@@ -102,8 +102,6 @@ For full details, refer to the [Features](docs/product/features.md) file.
 
 ## Demo
 
-### Attack Path Simulation
-
 This section demonstrates a runnable attack-path simulation for the AAPP-MART cybersecurity engine.
 
 ### Usage

@@ -19,15 +19,6 @@
     },
     {
       "agent": "Agent-Access",
-      "phase": "Phishing",
-      "mitre_id": "T1566",
-      "description": "Credential harvesting attempt",
-      "severity": "MEDIUM",
-      "status": "SUCCESS",
-      "remediation": "Enforce Multi-Factor Authentication (MFA) and tighten email filters."
-    },
-    {
-      "agent": "Agent-Access",
       "phase": "Initial Access",
       "mitre_id": "T1078",
       "description": "Valid account abuse",

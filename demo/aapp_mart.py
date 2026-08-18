@@ -261,7 +261,7 @@ class AAPPMARTDemo:
         cve_part = f" | CVE: {step.cve_id}" if step.cve_id else ""
         
         print(
-            f"[+] [{step.agent:<16}]"
+            f"[+] [{step.agent:<18}]"
             f" {step.phase:<20}"
             f" | MITRE: {step.mitre_id:<5}"
             f"{cve_part}"

@@ -33,6 +33,7 @@ class AttackStep:
     agent: str
     phase: str
     mitre_id: str
+    cve_id: str | None
     description: str
     severity: str
     status: str
@@ -52,6 +53,7 @@ class SimulationReport:
     simulation_id: str
     target: str
     hostname: str
+    os: str
     status: str
     risk_score: float
     risk_label: str
@@ -69,12 +71,11 @@ class SimulationReport:
 # =========================
 
 MITRE_ATTACK = {
-    "T1595": "Active Scanning",
-    "T1566": "Phishing",
-    "T1078": "Valid Accounts",
-    "T1068": "Exploitation for Privilege Escalation",
-    "T1021": "Remote Services",
-    "T1005": "Data from Local System"
+    "T1595",
+    "T1078",
+    "T1068",
+    "T1021",
+    "T1005"
 }
 
 # =========================
@@ -100,6 +101,7 @@ class AAPPMARTDemo:
     def __init__(self, target: str):
         self.target = target
         self.hostname = "WORKSTATION-01"
+        self.os = "Linux"
         self.engine_version = "v1.0.0-demo"
         self.simulation_id = str(uuid.uuid4())
         self.started_at = ""
@@ -111,13 +113,17 @@ class AAPPMARTDemo:
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 
         print("Simulation Workflow Started")
-        print(f"Initial Entry Point: {self.target} ({self.hostname})\n")
+        print(
+            f"Initial Entry Point: {self.target} "
+            f"({self.hostname}, {self.os})\n"
+        )
 
         attack_chain = [
             AttackStep(
                 agent="Agent-Recon",
                 phase="Reconnaissance",
                 mitre_id="T1595",
+                cve_id=None,
                 description=f"Active scanning detected on ({self.target})",
                 severity="LOW",
                 status="SUCCESS",
@@ -125,17 +131,9 @@ class AAPPMARTDemo:
             ),
             AttackStep(
                 agent="Agent-Access",
-                phase="Phishing",
-                mitre_id="T1566",
-                description="Credential harvesting attempt",
-                severity="MEDIUM",
-                status="SUCCESS",
-                remediation="Enforce Multi-Factor Authentication (MFA) and tighten email filters."
-            ),
-            AttackStep(
-                agent="Agent-Access",
                 phase="Initial Access",
                 mitre_id="T1078",
+                cve_id=None,
                 description="Valid account abuse",
                 severity="HIGH",
                 status="SUCCESS",
@@ -145,6 +143,7 @@ class AAPPMARTDemo:
                 agent="Agent-Exploitation",
                 phase="Privilege Escalation",
                 mitre_id="T1068",
+                cve_id="CVE-2024-1086",
                 description="Kernel privilege escalation simulated",
                 severity="CRITICAL",
                 status="SUCCESS",
@@ -154,6 +153,7 @@ class AAPPMARTDemo:
                 agent="Agent-Pivot",
                 phase="Lateral Movement",
                 mitre_id="T1021",
+                cve_id=None,
                 description="Remote service pivoting to (10.10.20.45)",
                 severity="HIGH",
                 status="SUCCESS",
@@ -163,6 +163,7 @@ class AAPPMARTDemo:
                 agent="Agent-Collection",
                 phase="Collection",
                 mitre_id="T1005",
+                cve_id=None,
                 description="Backup data discovery and collection on (10.10.20.25)",
                 severity="CRITICAL",
                 status="SUCCESS",
@@ -222,13 +223,14 @@ class AAPPMARTDemo:
 
         short_summary = (
             f"DC (10.10.20.45) breached via "
-            f"Workstation ({self.target}) kernel exploit. "
+            f"Workstation ({self.target}) kernel privilege escalation "
+            f"using CVE-2024-1086. "
             f"Backup Server (10.10.20.25) compromise."
         )
 
         executive_summary = (
             f"Simulated attack initiated on ({self.target}) ({self.hostname}) resulted in a {risk_label} risk environment. "
-            f"The AI engine successfully pivoted through the network, affecting {len(compromised_assets)} "
+            f"The AI engine successfully performed simulated privilege escalation using CVE-2024-1086, affecting {len(compromised_assets)} "
             f"critical assets including the Domain Controller and Backup Server."
         )
 
@@ -241,6 +243,7 @@ class AAPPMARTDemo:
             simulation_id=self.simulation_id,
             target=self.target,
             hostname=self.hostname,
+            os=self.os,
             status="COMPLETED",
             risk_score=risk_score,
             risk_label=risk_label,
@@ -255,10 +258,13 @@ class AAPPMARTDemo:
         )
 
     def _simulate_step(self, step: AttackStep):
+        cve_part = f" | CVE: {step.cve_id}" if step.cve_id else ""
+        
         print(
             f"[+] [{step.agent:<16}]"
             f" {step.phase:<20}"
             f" | MITRE: {step.mitre_id:<5}"
+            f"{cve_part}"
             f" | Severity: {step.severity:<8}"
             f" | Status: {step.status:<7}"
             f" | {step.description}"
@@ -280,6 +286,10 @@ class ReportExporter:
             path = Path(output_path)
             path.parent.mkdir(parents=True, exist_ok=True)
             report_data = asdict(report)
+
+            for step in report_data["attack_path"]:
+                if step.get("cve_id") is None:
+                    del step["cve_id"]
 
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=2, ensure_ascii=False)

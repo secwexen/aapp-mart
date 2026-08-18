@@ -211,14 +211,6 @@ class AAPPMARTDemo:
                 status="Compromised",
                 detail="Backup Access"
             ),
-            CompromisedAsset(
-                system="HR-DB-01",
-                ip="10.10.20.12",
-                type="SQL Database",
-                severity="CRITICAL",
-                status="Blocked",
-                detail="Attack Blocked"
-            ),
         ]
 
         short_summary = (

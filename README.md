@@ -120,17 +120,17 @@ python aapp_mart.py --target 10.10.20.15
 [*] Simulation Workflow Started
 [*] Initial Entry Point: 10.10.20.15 (WORKSTATION-01) 
 
-[+] [Agent-Recon     ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Status: SUCCESS | Active scanning detected on (10.10.20.15)
-[+] [Agent-Access    ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Status: SUCCESS | Valid account abuse
-[+] [Agent-Exploit   ] Privilege Escalation | MITRE: T1068 | CVE: CVE-2024-1086 | Severity: CRITICAL | Status: SUCCESS | Kernel privilege escalation simulated
-[+] [Agent-Pivot     ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Status: SUCCESS | Remote service pivoting to (10.10.20.45)
-[+] [Agent-Collection] Collection           | MITRE: T1005 | Severity: CRITICAL | Status: SUCCESS | Backup data discovery and collection on (10.10.20.25)
+[+] [Agent-Recon       ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Status: SUCCESS | Active scanning detected on (10.10.20.15)
+[+] [Agent-Access      ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Status: SUCCESS | Valid account abuse
+[+] [Agent-Exploitation] Privilege Escalation | MITRE: T1068 | CVE: CVE-2024-1086 | Severity: CRITICAL | Status: SUCCESS | Kernel privilege escalation simulated
+[+] [Agent-Pivot       ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Status: SUCCESS | Remote service pivoting to (10.10.20.45)
+[+] [Agent-Collection  ] Collection           | MITRE: T1005 | Severity: CRITICAL | Status: SUCCESS | Backup data discovery and collection on (10.10.20.25)
 
 [✓] Simulation Completed Successfully
 
 === COMPREHENSIVE RISK SUMMARY ===
 
-[*] Target IP (Initial Entry Point) : 10.10.20.15 (WORKSTATION-01)
+[*] Target IP (Initial Entry Point) : 10.10.20.15 (WORKSTATION-01, Linux)
 [*] Risk Score                      : 9.6/10 (CRITICAL)
 [*] Summary                         : DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel privilege escalation using CVE-2024-1086. Backup Server (10.10.20.25) compromise.
 [*] Duration                        : 1.00s

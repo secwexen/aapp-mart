@@ -247,7 +247,6 @@ class AAPPMARTDemo:
             risk_score=risk_score,
             risk_label=risk_label,
             engine_version=self.engine_version,
-            short_summary=short_summary,
             executive_summary=executive_summary,
             attack_path=attack_chain,
             compromised_assets=compromised_assets,

@@ -21,9 +21,8 @@ python aapp_mart.py --target 10.10.20.15
 [*] Initial Entry Point: 10.10.20.15 (WORKSTATION-01) 
 
 [+] [Agent-Recon     ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Status: SUCCESS | Active scanning detected on (10.10.20.15)
-[+] [Agent-Access    ] Phishing             | MITRE: T1566 | Severity: MEDIUM   | Status: SUCCESS | Credential harvesting attempt
 [+] [Agent-Access    ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Status: SUCCESS | Valid account abuse
-[+] [Agent-Exploit   ] Privilege Escalation | MITRE: T1068 | Severity: CRITICAL | Status: SUCCESS | Kernel privilege escalation simulated
+[+] [Agent-Exploit   ] Privilege Escalation | MITRE: T1068 | CVE: CVE-2024-1086 | Severity: CRITICAL | Status: SUCCESS | Kernel privilege escalation simulated
 [+] [Agent-Pivot     ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Status: SUCCESS | Remote service pivoting to (10.10.20.45)
 [+] [Agent-Collection] Collection           | MITRE: T1005 | Severity: CRITICAL | Status: SUCCESS | Backup data discovery and collection on (10.10.20.25)
 
@@ -33,10 +32,10 @@ python aapp_mart.py --target 10.10.20.15
 
 [*] Target IP (Initial Entry Point) : 10.10.20.15 (WORKSTATION-01)
 [*] Risk Score                      : 9.6/10 (CRITICAL)
-[*] Summary                         : DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel exploit. Backup Server (10.10.20.25) compromise.
+[*] Summary                         : DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel privilege escalation using CVE-2024-1086. Backup Server (10.10.20.25) compromise.
 [*] Duration                        : 1.00s
-[*] Simulated Step Count            : 6 Stages
-[*] Affected Assets                 : 5 Systems (3 Compromised, 1 Isolated, 1 Blocked)
+[*] Simulated Step Count            : 5 Stages
+[*] Affected Assets                 : 4 Systems (3 Compromised, 1 Isolated, 1 Blocked)
 [*] Started At                      : 2026-01-01T01:01:01.123456+00:00
 [*] Generated At                    : 2026-01-01T01:01:01.123456+00:00
 

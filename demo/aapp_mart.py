@@ -142,7 +142,7 @@ class AAPPMARTDemo:
                 remediation="Audit account privileges and enforce Privileged Access Management (PAM)."
             ),
             AttackStep(
-                agent="Agent-Exploit",
+                agent="Agent-Exploitation",
                 phase="Privilege Escalation",
                 mitre_id="T1068",
                 description="Kernel privilege escalation simulated",

@@ -93,6 +93,25 @@ MITRE_ATTACK = {
 }
 
 # =========================
+# Dynamic Risk Engine
+# =========================
+
+class RiskEngine:
+
+    W = {"LOW": 2, "MEDIUM": 5, "HIGH": 8, "CRITICAL": 10}
+
+    @classmethod
+    def calculate(cls, steps, assets):
+        if not steps:
+            return 0.0
+
+        s = sum(cls.W.get(x.severity.upper(), 0) for x in steps) / len(steps)
+        a = sum(cls.W.get(x.severity.upper(), 0) for x in assets) / max(len(assets), 1)
+        success = sum(x.status.upper() == "SUCCESS" for x in steps) / len(steps)
+
+        return round(min(s * .45 + a * .40 + success * 1.5, 10), 2)
+
+# =========================
 # Risk Label Calculation
 # =========================
 
@@ -188,9 +207,6 @@ class AAPPMARTDemo:
             self._simulate_step(step)
             time.sleep(0.5)
 
-        risk_score = 9.6
-        risk_label = calculate_risk_label(risk_score)
-
         compromised_assets = [
             CompromisedAsset(
                 system="WORKSTATION-01",
@@ -225,6 +241,9 @@ class AAPPMARTDemo:
                 detail="Backup Access"
             ),
         ]
+
+        risk_score = RiskEngine.calculate(attack_chain, compromised_assets)
+        risk_label = calculate_risk_label(risk_score)
 
         short_summary = (
             f"DC (10.10.20.45) breached via "

@@ -24,6 +24,9 @@ from pathlib import Path
 from dataclasses import dataclass, asdict
 from typing import List
 
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 # =========================
 # Data Models
 # =========================
@@ -109,6 +112,8 @@ class AAPPMARTDemo:
     def run(self) -> SimulationReport:
         start = time.perf_counter()
         self.started_at: str = datetime.now(timezone.utc).isoformat()
+
+        clear_screen()
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
 

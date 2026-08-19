@@ -71,8 +71,8 @@ class SimulationReport:
     status: str
     risk_score: float
     risk_label: str
-    engine_version: str
     generated_by: str
+    engine_version: str
     short_summary: str
     executive_summary: str
     attack_path: List[AttackStep]
@@ -140,8 +140,8 @@ class AAPPMARTDemo:
         self.target = target
         self.hostname = "WORKSTATION-01"
         self.os = "Linux"
-        self.engine_version = "v1.0.0-demo"
         self.generated_by = "AAPP-MART"
+        self.engine_version = "v1.0.0-demo"
         self.simulation_id = str(uuid.uuid4())
         self.started_at = ""
 
@@ -285,8 +285,8 @@ class AAPPMARTDemo:
             status="COMPLETED",
             risk_score=risk_score,
             risk_label=risk_label,
-            engine_version=self.engine_version,
             generated_by=self.generated_by,
+            engine_version=self.engine_version,
             executive_summary=executive_summary,
             remediation_summary=remediation_summary,
             attack_path=attack_chain,

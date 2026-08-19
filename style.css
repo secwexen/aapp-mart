@@ -102,10 +102,11 @@ footer {
 }
 .footer-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 24px;
-    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .footer-center {
     text-align: center;

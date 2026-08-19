@@ -64,6 +64,7 @@ class CompromisedAsset:
 
 @dataclass
 class SimulationReport:
+    schema_version: str
     simulation_id: str
     target: str
     hostname: str
@@ -142,6 +143,7 @@ class AAPPMARTDemo:
         self.os = "Linux"
         self.generated_by = "AAPP-MART"
         self.engine_version = "v1.0.0-demo"
+        self.schema_version = "1.0.0"
         self.simulation_id = str(uuid.uuid4())
         self.started_at = ""
 
@@ -278,6 +280,7 @@ class AAPPMARTDemo:
         self._log("Simulation Completed Successfully", success=True)
 
         return SimulationReport(
+            schema_version=self.schema_version,
             simulation_id=self.simulation_id,
             target=self.target,
             hostname=self.hostname,

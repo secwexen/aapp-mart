@@ -20,6 +20,9 @@ Key Features:
 Usage:
     python aapp_mart.py --target 10.10.20.15
     python aapp_mart.py --help
+
+This demo does NOT perform real exploitation, network scanning, credential
+access, lateral movement, or data collection. All activities are simulated.
 """
 
 import argparse
@@ -232,7 +235,7 @@ class AAPPMARTDemo:
 
         executive_summary = (
             f"Simulated attack initiated on ({self.target}) ({self.hostname}) resulted in a {risk_label} risk environment. "
-            f"The AI engine successfully performed simulated privilege escalation using CVE-2024-1086, affecting {len(compromised_assets)} "
+            f"The simulation engine successfully performed simulated privilege escalation using CVE-2024-1086, affecting {len(compromised_assets)} "
             f"critical assets including the Domain Controller and Backup Server."
         )
 

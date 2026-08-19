@@ -6,9 +6,16 @@
 An AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine designed for enterprise security analysis.
 
 Key Features:
-    - Multi-Agent Red Team (Recon, Access, Exploit, Pivot, Collection)
-    - Automated Risk Scoring & MITRE ATT&CK Mapping
-    - Automated Incident Report Generation (JSON Export)
+    - Multi-Agent Red Team Attack Simulation
+    - MITRE ATT&CK Mapping
+    - CVE-Associated Attack Steps
+    - Risk Scoring & Severity Classification
+    - Attack Path Simulation
+    - Compromised Asset Analysis
+    - Security Remediation Recommendations
+    - Simulation Workflow Execution
+    - JSON Report Generation
+    - CLI-Based Local Execution
 
 Usage:
     python aapp_mart.py --target 10.10.20.15

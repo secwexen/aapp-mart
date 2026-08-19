@@ -102,20 +102,20 @@ footer {
 }
 .footer-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 .footer-center {
-    margin-left: 230px;
+    text-align: center;
+    flex: 1;
 }
 .footer-left {
     text-align: left;
 }
 .footer-right {
     text-align: right;
-    margin-left: auto;
 }
 a {
     color: #4493f8;

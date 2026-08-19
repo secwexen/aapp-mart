@@ -76,6 +76,7 @@ class SimulationReport:
     executive_summary: str
     attack_path: List[AttackStep]
     compromised_assets: List[CompromisedAsset]
+    remediation_summary: List[str]
     started_at: str
     generated_at: str
     duration: float
@@ -248,6 +249,11 @@ class AAPPMARTDemo:
             ),
         ]
 
+        remediation_summary = list(dict.fromkeys(
+            step.remediation
+            for step in attack_chain
+        ))
+
         risk_score = RiskEngine.calculate(attack_chain, compromised_assets)
         risk_label = calculate_risk_label(risk_score)
 
@@ -279,6 +285,7 @@ class AAPPMARTDemo:
             risk_label=risk_label,
             engine_version=self.engine_version,
             executive_summary=executive_summary,
+            remediation_summary=remediation_summary,
             attack_path=attack_chain,
             short_summary=short_summary,
             compromised_assets=compromised_assets,
@@ -318,10 +325,6 @@ class ReportExporter:
             report_data = asdict(report)
 
             del report_data["short_summary"]
-
-            for step in report_data["attack_path"]:
-                if step.get("cve_id") is None:
-                    del step["cve_id"]
 
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=2, ensure_ascii=False)

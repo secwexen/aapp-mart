@@ -92,6 +92,9 @@ MITRE_ATTACK = {
     "T1005"
 }
 
+def validate_attack_steps(steps):
+    return all(step.mitre_id in MITRE_ATTACK for step in steps)
+
 # =========================
 # Dynamic Risk Engine
 # =========================
@@ -202,6 +205,9 @@ class AAPPMARTDemo:
                 remediation="Restrict access, enforce least-privilege permissions, and isolate backup infrastructure."
             ),
         ]
+
+        if not validate_attack_steps(attack_chain):
+            raise ValueError("Invalid MITRE ATT&CK technique detected.")
 
         for step in attack_chain:
             self._simulate_step(step)

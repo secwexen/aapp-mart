@@ -129,7 +129,7 @@ python aapp_mart.py --target 10.10.20.15
 === COMPREHENSIVE RISK SUMMARY ===
 
 [*] Target IP (Initial Entry Point) : 10.10.20.15 (WORKSTATION-01)
-[*] Risk Score                      : 9.6/10 (CRITICAL)
+[*] Risk Score                      : 8.32/10 (HIGH)
 [*] Summary                         : DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel privilege escalation using CVE-2024-1086. Backup Server (10.10.20.25) compromise.
 [*] Duration                        : 1.00s
 [*] Simulated Step Count            : 5 Stages

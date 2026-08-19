@@ -230,7 +230,7 @@ class AAPPMARTDemo:
                 type="Identity/AD",
                 severity="CRITICAL",
                 status="Compromised",
-                detail="Data Exfiltrated"
+                detail="Simulated Data Access"
             ),
             CompromisedAsset(
                 system="BACKUP-SERVER-01",

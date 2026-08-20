@@ -320,7 +320,7 @@ class AAPPMARTDemo:
         print(f"{prefix} {message}")
 
 # =========================
-# Report Export
+# JSON Report Export
 # =========================
 
 class ReportExporter:

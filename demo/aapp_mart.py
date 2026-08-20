@@ -15,6 +15,7 @@ Key Features:
     - Security Remediation Recommendations
     - Simulation Workflow Execution
     - JSON Report Generation
+    - CSV Report Generation
     - CLI-Based Local Execution
 
 Usage:
@@ -27,6 +28,7 @@ access, lateral movement, or data collection. All activities are simulated.
 
 import argparse
 import json
+import csv
 import os
 import time
 import uuid
@@ -342,6 +344,53 @@ class ReportExporter:
             return False
 
 # =========================
+# CSV Report Export
+# =========================
+
+class CSVReportExporter:
+
+    @staticmethod
+    def export_attack_path(report: SimulationReport, output_path: str) -> bool:
+        try:
+            path = Path(output_path)
+            path.parent.mkdir(parents=True, exist_ok=True)
+
+            with open(output_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.writer(f)
+
+                writer.writerow([
+                    "simulation_id",
+                    "agent",
+                    "phase",
+                    "mitre_id",
+                    "cve_id",
+                    "severity",
+                    "status",
+                    "description",
+                    "remediation"
+                ])
+
+                for step in report.attack_path:
+                    writer.writerow([
+                        report.simulation_id,
+                        step.agent,
+                        step.phase,
+                        step.mitre_id,
+                        step.cve_id or "",
+                        step.severity,
+                        step.status,
+                        step.description,
+                        step.remediation
+                    ])
+
+            print(f"[+] CSV Report Exported: {output_path}")
+            return True
+
+        except (PermissionError, OSError, csv.Error) as e:
+            print(f"[!] Error exporting CSV report: ({type(e).__name__}) {e}")
+            return False
+
+# =========================
 # Main
 # =========================
 
@@ -425,14 +474,39 @@ def main() -> int:
 
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
-    output_file = (
+    json_output_file = (
         f"logs/attack-path/"
         f"attack_path_{clean_target}_{timestamp}.json"
     )
 
-    success = ReportExporter.export_json(report, output_file)
+    csv_output_file = (
+        f"logs/attack-path/"
+        f"attack_path_{clean_target}_{timestamp}.csv"
+    )
 
-    return 0 if success else 1
+    print("\n=== REPORT EXPORT FORMAT ===\n")
+    print("[1] JSON")
+    print("[2] CSV")
+    print("[3] JSON + CSV")
+
+    while True:
+        choice = input("\nSelect report format [1-3]: ").strip()
+
+        if choice in {"1", "2", "3"}:
+            break
+
+        print("[!] Invalid selection. Please choose 1, 2, or 3.")
+
+    json_success = True
+    csv_success = True
+
+    if choice in {"1", "3"}:
+        json_success = ReportExporter.export_json(report, json_output_file)
+
+    if choice in {"2", "3"}:
+        csv_success = CSVReportExporter.export_csv(report, csv_output_file)
+
+    return 0 if json_success and csv_success else 1
 
 if __name__ == "__main__":
     raise SystemExit(main())

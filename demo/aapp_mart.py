@@ -10,7 +10,7 @@ Key Features:
     - MITRE ATT&CK Mapping
     - CVE-Associated Attack Steps
     - Risk Scoring & Severity Classification
-    - AI Confidence Scoring for Attack Path Predictions
+    - Attack Path Prediction Confidence Scoring
     - Attack Path Simulation
     - Compromised Asset Analysis
     - Simulation Metrics & Attack Outcome Analytics

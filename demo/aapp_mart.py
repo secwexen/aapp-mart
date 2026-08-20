@@ -53,6 +53,7 @@ class AttackStep:
     description: str
     severity: str
     status: str
+    confidence: float
     remediation: str
 
 @dataclass
@@ -169,6 +170,7 @@ class AAPPMARTDemo:
                 description=f"Active scanning detected on ({self.target})",
                 severity="LOW",
                 status="SUCCESS",
+                confidence=0.91,
                 remediation="Update firewall rules and IDS/IPS signatures."
             ),
             AttackStep(
@@ -179,6 +181,7 @@ class AAPPMARTDemo:
                 description="Valid account abuse",
                 severity="HIGH",
                 status="SUCCESS",
+                confidence=0.94,
                 remediation="Audit account privileges and enforce Privileged Access Management (PAM)."
             ),
             AttackStep(
@@ -189,6 +192,7 @@ class AAPPMARTDemo:
                 description="Kernel privilege escalation simulated",
                 severity="CRITICAL",
                 status="SUCCESS",
+                confidence=0.97,
                 remediation="Apply the latest OS kernel patches and security updates."
             ),
             AttackStep(
@@ -199,6 +203,7 @@ class AAPPMARTDemo:
                 description="Remote service pivoting to (10.10.20.45)",
                 severity="HIGH",
                 status="SUCCESS",
+                confidence=0.89,
                 remediation="Implement network micro-segmentation and restrict RDP/SSH access."
             ),
             AttackStep(
@@ -209,6 +214,7 @@ class AAPPMARTDemo:
                 description="Backup data discovery and collection on (10.10.20.25)",
                 severity="CRITICAL",
                 status="SUCCESS",
+                confidence=0.93,
                 remediation="Restrict access, enforce least-privilege permissions, and isolate backup infrastructure."
             ),
         ]
@@ -332,8 +338,6 @@ class ReportExporter:
             path.parent.mkdir(parents=True, exist_ok=True)
             report_data = asdict(report)
 
-            del report_data["short_summary"]
-
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=2, ensure_ascii=False)
 
@@ -366,6 +370,7 @@ class CSVReportExporter:
                     "cve_id",
                     "severity",
                     "status",
+                    "confidence",
                     "description",
                     "remediation"
                 ])
@@ -379,6 +384,7 @@ class CSVReportExporter:
                         step.cve_id or "",
                         step.severity,
                         step.status,
+                        step.confidence,
                         step.description,
                         step.remediation
                     ])

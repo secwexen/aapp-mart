@@ -273,7 +273,7 @@ class AAPPMARTDemo:
         executive_summary = (
             f"Simulated attack initiated on ({self.target}) ({self.hostname}) resulted in a {risk_label} risk environment. "
             f"The simulation engine successfully performed simulated privilege escalation using CVE-2024-1086, affecting {len(compromised_assets)} "
-            f"critical assets including the Domain Controller and Backup Server."
+            f"assets including the Domain Controller and Backup Server."
         )
 
         total_duration = time.perf_counter() - start

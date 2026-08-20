@@ -350,7 +350,7 @@ class ReportExporter:
 class CSVReportExporter:
 
     @staticmethod
-    def export_attack_path(report: SimulationReport, output_path: str) -> bool:
+    def export_csv(report: SimulationReport, output_path: str) -> bool:
         try:
             path = Path(output_path)
             path.parent.mkdir(parents=True, exist_ok=True)

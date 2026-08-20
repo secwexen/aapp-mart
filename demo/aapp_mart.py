@@ -10,8 +10,10 @@ Key Features:
     - MITRE ATT&CK Mapping
     - CVE-Associated Attack Steps
     - Risk Scoring & Severity Classification
+    - AI Confidence Scoring for Attack Path Predictions
     - Attack Path Simulation
     - Compromised Asset Analysis
+    - Simulation Metrics & Attack Outcome Analytics
     - Security Remediation Recommendations
     - Simulation Workflow Execution
     - JSON Report Generation
@@ -146,7 +148,7 @@ class AAPPMARTDemo:
         self.os = "Linux"
         self.generated_by = "AAPP-MART"
         self.engine_version = "v1.0.0-demo"
-        self.schema_version = "1.0.0"
+        self.schema_version = "1.1.0"
         self.simulation_id = str(uuid.uuid4())
         self.started_at = ""
 
@@ -491,9 +493,10 @@ def main() -> int:
     )
 
     print("\n=== REPORT EXPORT FORMAT ===\n")
-    print("[1] JSON")
-    print("[2] CSV")
-    print("[3] JSON + CSV")
+    
+    print("[1] JSON Report")
+    print("[2] CSV Report")
+    print("[3] JSON + CSV Report")
 
     while True:
         choice = input("\nSelect report format [1-3]: ").strip()

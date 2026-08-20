@@ -1,14 +1,14 @@
 # Terms of Service
 
-These Terms govern your use of AAPP-MART, a system. By using it, you agree to the conditions below.
+By using AAPP-MART, you agree to use this repository only for educational, defensive, research, and authorized security testing purposes and comply with all applicable laws and responsibilities.
 
-## 1. Acceptance of Terms  
+## 1. Acceptance of Terms
 
-By accessing or using AAPP-MART, you agree to be bound by these Terms of Service. If you do not agree, you must discontinue use of the platform.
+By accessing, downloading, copying, modifying, or using AAPP-MART, you agree to be bound by these Terms of Service. If you do not agree with these Terms, you must discontinue use of the repository and its contents.
 
-## 2. Description of Service  
+## 2. Changes to Terms
 
-AAPP-MART provides digital tools and features intended to support users in their online activities. The platform may evolve over time through updates, improvements, or new functionality.
+AAPP-MART may update these Terms of Service when necessary. Continued use of the project after updated Terms are published constitutes acceptance of the revised terms.
 
 ## 3. User Responsibilities  
 

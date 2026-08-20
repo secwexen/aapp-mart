@@ -337,10 +337,10 @@ class ReportExporter:
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, indent=2, ensure_ascii=False)
 
-            print(f"\n[+] Report Exported: {output_path}")
+            print(f"\n[+] JSON Report Exported: {output_path}")
             return True
         except (PermissionError, OSError, TypeError) as e:
-            print(f"\n[!] Error exporting report: ({type(e).__name__}) {e}")
+            print(f"\n[!] Error Exporting JSON Report: ({type(e).__name__}) {e}")
             return False
 
 # =========================
@@ -387,7 +387,7 @@ class CSVReportExporter:
             return True
 
         except (PermissionError, OSError, csv.Error) as e:
-            print(f"[!] Error exporting CSV report: ({type(e).__name__}) {e}")
+            print(f"[!] Error Exporting CSV Report: ({type(e).__name__}) {e}")
             return False
 
 # =========================

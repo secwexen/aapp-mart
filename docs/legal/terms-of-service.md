@@ -12,7 +12,8 @@ AAPP-MART may update these Terms of Service when necessary. Continued use of the
 
 ## 3. User Responsibilities  
 
-Users agree to:   
+Users agree to:
+
 - Maintain the confidentiality of their account credentials and are responsible for all activities conducted under their account.
 - Ensure all information provided to the platform is accurate and lawful.  
 - Use the service only for legal and authorized purposes.  
@@ -20,7 +21,8 @@ Users agree to:
 
 ## 4. Prohibited Activities  
 
-The following activities are not allowed:  
+The following activities are not allowed:
+
 - Unauthorized access attempts or security breaches.  
 - Uploading harmful, malicious, or illegal content.  
 - Interfering with platform functionality or performance.  

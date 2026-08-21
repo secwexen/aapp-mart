@@ -159,7 +159,7 @@ class AAPPMARTDemo:
         clear_screen()
 
         print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
-        print()
+
         print("[*] Simulation Workflow Started")
         print(f"[*] Initial Entry Point: {self.target} ({self.hostname}, {self.os})\n")
 
@@ -455,7 +455,7 @@ def main() -> int:
     )
 
     print("\n=== COMPREHENSIVE RISK SUMMARY ===\n")
-    print()
+
     print(f"[*] Target IP (Initial Entry Point) : {report.target} ({report.hostname})")
     print(f"[*] Risk Score                      : {report.risk_score}/10 ({report.risk_label})")
     print(f"[*] Summary                         : {report.short_summary}")
@@ -464,7 +464,7 @@ def main() -> int:
     print(f"[*] Affected Assets                 : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
     print(f"[*] Started At                      : {report.started_at}") 
     print(f"[*] Generated At                    : {report.generated_at}")
-    print()
+
     print("\n--- Affected Critical Assets ---\n")
 
     for asset in report.compromised_assets:
@@ -493,7 +493,7 @@ def main() -> int:
     )
 
     print("\n=== REPORT EXPORT FORMAT ===\n")
-    print()
+
     print("[1] JSON Report")
     print("[2] CSV Report")
     print("[3] JSON + CSV Report")

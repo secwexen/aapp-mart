@@ -1,6 +1,8 @@
 # Software Bill of Materials (SBOM)
 
-| Package           | Version Constraint | License  |
+Software Bill of Materials (SBOM) listing the software components and dependencies used by AAPP-MART, including their versions and license information.
+
+| Package           | Version Constraint | License      |
 |-------------------|--------------------|--------------|
 | networkx          | 3.2                | BSD          |
 | numpy             | 1.26               | BSD-3-Clause |

@@ -23,8 +23,13 @@ Usage:
     python aapp_mart.py --target 10.10.20.15
     python aapp_mart.py --help
 
-This demo does NOT perform real exploitation, network scanning, credential
-access, lateral movement, or data collection. All activities are simulated.
+Requirements:
+    Python 3.11+
+
+Safety:
+    This demo does NOT perform real exploitation, network scanning,
+    credential access, lateral movement, or data collection.
+    All activities are simulated.
 """
 
 import argparse

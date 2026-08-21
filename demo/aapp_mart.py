@@ -464,7 +464,7 @@ def main() -> int:
     print(f"[*] Affected Assets                 : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
     print(f"[*] Started At                      : {report.started_at}") 
     print(f"[*] Generated At                    : {report.generated_at}")
-
+    print()
     print("\n--- Affected Critical Assets ---\n")
 
     for asset in report.compromised_assets:

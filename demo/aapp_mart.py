@@ -434,7 +434,7 @@ def main() -> int:
         report = engine.run()
 
     except KeyboardInterrupt:
-        print("\n[!] Simulation Workflow Interrupted by User")
+        print("\n[!] Simulation Workflow Interrupted")
         return 130
 
     except Exception as e:

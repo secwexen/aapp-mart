@@ -43,8 +43,10 @@ from pathlib import Path
 from dataclasses import dataclass, asdict
 from typing import List
 
+
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 # =========================
 # Data Models
@@ -62,6 +64,7 @@ class AttackStep:
     confidence: float
     remediation: str
 
+
 @dataclass
 class CompromisedAsset:
     system: str
@@ -70,6 +73,7 @@ class CompromisedAsset:
     severity: str
     status: str
     detail: str
+
 
 @dataclass
 class SimulationReport:
@@ -92,9 +96,11 @@ class SimulationReport:
     generated_at: str
     duration: float
 
+
 # =========================
 # MITRE ATT&CK Mapping
 # =========================
+
 
 MITRE_ATTACK = {
     "T1595",
@@ -104,12 +110,15 @@ MITRE_ATTACK = {
     "T1005"
 }
 
+
 def validate_attack_steps(steps):
     return all(step.mitre_id in MITRE_ATTACK for step in steps)
+
 
 # =========================
 # Dynamic Risk Engine
 # =========================
+
 
 class RiskEngine:
 
@@ -126,9 +135,11 @@ class RiskEngine:
 
         return round(min(s * .45 + a * .40 + success * 1.5, 10), 2)
 
+
 # =========================
 # Risk Label Calculation
 # =========================
+
 
 def calculate_risk_label(score: float) -> str:
     if score >= 9.0:
@@ -140,9 +151,11 @@ def calculate_risk_label(score: float) -> str:
     else:
         return "LOW"
 
+
 # =========================
 # Demo Engine
 # =========================
+
 
 class AAPPMARTDemo:
 
@@ -314,6 +327,7 @@ class AAPPMARTDemo:
             duration=round(total_duration, 2)
         )
 
+
     def _simulate_step(self, step: AttackStep):
         cve_part = f" | CVE: {step.cve_id}" if step.cve_id else ""
 
@@ -327,13 +341,16 @@ class AAPPMARTDemo:
             f" | {step.description}"
         )
 
+
     def _log(self, message: str, success: bool = False):
         prefix = "[✓]" if success else "[*]"
         print(f"{prefix} {message}")
 
+
 # =========================
 # JSON Report Export
 # =========================
+
 
 class ReportExporter:
 
@@ -349,13 +366,16 @@ class ReportExporter:
 
             print(f"\n[+] JSON Report Exported: {output_path}")
             return True
+            
         except (PermissionError, OSError, TypeError) as e:
             print(f"\n[!] Error Exporting JSON Report: ({type(e).__name__}) {e}")
             return False
 
+
 # =========================
 # CSV Report Export
 # =========================
+
 
 class CSVReportExporter:
 
@@ -405,6 +425,7 @@ class CSVReportExporter:
 # =========================
 # Main
 # =========================
+
 
 def main() -> int:
 
@@ -520,6 +541,7 @@ def main() -> int:
         csv_success = CSVReportExporter.export_csv(report, csv_output_file)
 
     return 0 if json_success and csv_success else 1
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

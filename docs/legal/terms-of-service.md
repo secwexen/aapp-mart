@@ -35,7 +35,7 @@ AAPP-MART is distributed under the Apache-2.0 License. Users may use, modify, re
 
 ## 6. Intellectual Property  
 
-The AAPP-MART source code is provided under the Apache License 2.0. Users may use, modify, reproduce, and distribute the software in accordance with the terms of the license, and all copyright notices and license headers must be preserved in any copies or derivative works. The AAPP-MART name, logo, and other branding elements are not covered by the open-source license and their use is strictly prohibited.
+The AAPP-MART source code is provided under the Apache License 2.0. Users may use, modify, reproduce, and distribute the software in accordance with the terms of the license, and all copyright notices and license headers must be preserved in any copies or derivative works. The AAPP-MART name, logo, and other branding elements are not covered by the open-source license, and their use is strictly prohibited.
 
 ## 7. Data Usage  
 

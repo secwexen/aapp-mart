@@ -44,12 +44,14 @@ Older versions may not receive security fixes.
 This project does not provide exploit code.  
 
 Valid reports include:
+
 - Code-level security weaknesses  
 - Dependency vulnerabilities  
 - Logic flaws affecting security  
 - Configuration or deployment misconfigurations  
 
 Out of scope:
+
 - Social engineering  
 - Denial-of-service via unrealistic traffic  
 - Issues requiring physical access

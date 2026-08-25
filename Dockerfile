@@ -9,6 +9,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libmetis-dev \
+    libopenblas-dev \
+    liblapack-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m -r appuser
@@ -23,4 +25,4 @@ USER appuser
 
 EXPOSE 8080
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["python"]

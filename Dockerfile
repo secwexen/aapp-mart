@@ -8,14 +8,16 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
-    libmetis-dev \
+    graphviz \
+    libgraphviz-dev \
     libopenblas-dev \
     liblapack-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m -r appuser
 
-COPY --chown=appuser:appuser requirements.txt .
+COPY --chown=appuser:appuser requirements.txt requirements-dev.txt .
+
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 

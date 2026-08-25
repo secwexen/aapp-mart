@@ -7,6 +7,15 @@ coverage>=7.15.4
 
 # === Build tools ===
 build>=1.2
+wheel>=0.43
+
+# === Linting & Formatting ===
+black>=24.0
+flake8>=7.0
+isort>=5.13
+
+# === Type checking ===
+mypy>=1.10
 
 # === Logging ===
 loguru>=0.7

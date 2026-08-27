@@ -28,8 +28,8 @@ Requirements:
 
 Safety:
     This demo does NOT perform real exploitation, network scanning,
-    credential access, lateral movement, or data collection.
-    All activities are simulated.
+    credential access, lateral movement, persistence, or data collection.
+    All activities are simulated using predefined or scenario-based attack paths.
 """
 
 import argparse

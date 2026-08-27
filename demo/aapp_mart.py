@@ -38,6 +38,7 @@ import csv
 import os
 import time
 import uuid
+import ipaddress
 from datetime import datetime, timezone
 from pathlib import Path
 from dataclasses import dataclass, asdict
@@ -449,6 +450,11 @@ def main() -> int:
 
     if not target:
         parser.error("Target cannot be empty.")
+
+    try:
+        ipaddress.ip_address(target)
+    except ValueError:
+        parser.error("Target must be a valid IP address.")
 
     if target != "10.10.20.15":
         parser.error(

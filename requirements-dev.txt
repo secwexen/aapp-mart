@@ -7,7 +7,7 @@ coverage>=7.15.4
 
 # === Build tools ===
 build>=1.2
-wheel>=0.43
+wheel>=0.48.0
 
 # === Linting & Formatting ===
 black>=24.0

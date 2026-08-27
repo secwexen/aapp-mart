@@ -575,12 +575,21 @@ def main() -> int:
     print("[3] JSON + CSV Report")
 
     while True:
-        choice = input("\nSelect report format [1-3]: ").strip()
+        try:
+            choice = input("\nSelect report format [1-3]: ").strip()
 
-        if choice in {"1", "2", "3"}:
-            break
+            if choice in {"1", "2", "3"}:
+                break
 
-        print("[!] Invalid selection. Please choose 1, 2, or 3.")
+            print("[!] Invalid selection. Please choose 1, 2, or 3.")
+
+        except KeyboardInterrupt:
+            print("\n[!] Report selection cancelled.")
+            return 130
+
+        except EOFError:
+            print("\n[!] Input stream closed.")
+            return 130
 
     json_success = True
     csv_success = True

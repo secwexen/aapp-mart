@@ -39,6 +39,7 @@ import os
 import time
 import uuid
 import ipaddress
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from dataclasses import dataclass, asdict
@@ -111,6 +112,7 @@ MITRE_ATTACK = {
     "T1005"
 }
 
+CVE_PATTERN = re.compile(r"^CVE-\d{4}-\d{4,}$")
 
 VALID_SEVERITIES = {
     "LOW",

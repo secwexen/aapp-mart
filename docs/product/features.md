@@ -1,7 +1,5 @@
 # AAPP-MART Features
 
-AAPP-MART is an AI-powered security engine for attack-path prediction, multi-agent red team security simulation, risk analysis, and security assessment.
-
 This document describes the core capabilities of AAPP-MART and the capability the Free edition.
 
 ## Core Features

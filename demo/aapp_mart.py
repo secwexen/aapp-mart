@@ -112,8 +112,48 @@ MITRE_ATTACK = {
 }
 
 
+VALID_SEVERITIES = {
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL"
+}
+
+
+VALID_ASSET_STATUSES = {
+    "COMPROMISED",
+    "ISOLATED",
+    "BLOCKED"
+}
+
+
+VALID_STATUSES = {
+    "SUCCESS",
+    "FAILED",
+    "BLOCKED"
+}
+
+
 def validate_attack_steps(steps):
-    return all(step.mitre_id in MITRE_ATTACK for step in steps)
+    return all(
+        step.mitre_id in MITRE_ATTACK
+        and step.severity.upper() in VALID_SEVERITIES
+        and step.status.upper() in VALID_STATUSES
+        and 0.0 <= step.confidence <= 1.0
+        for step in steps
+    )
+
+
+def validate_assets(assets):
+    try:
+        return all(
+            ipaddress.ip_address(asset.ip)
+            and asset.severity.upper() in VALID_SEVERITIES
+            and asset.status.upper() in VALID_ASSET_STATUSES
+            for asset in assets
+        )
+    except (ValueError, AttributeError, TypeError):
+        return False
 
 
 # =========================
@@ -280,6 +320,9 @@ class AAPPMARTDemo:
                 detail="Backup Access"
             ),
         ]
+
+        if not validate_assets(compromised_assets):
+            raise ValueError("Invalid compromised asset data.")
 
         remediation_summary = list(dict.fromkeys(
             step.remediation

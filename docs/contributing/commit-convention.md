@@ -8,13 +8,13 @@ Commit convention is a standard format for writing commit messages in a consiste
 
 ## Types
 
-- feat     - A new feature  
-- fix      - A bug fix  
-- docs     - Documentation changes only  
-- refactor - Code change that neither fixes a bug nor adds a feature  
-- test     - Adding or updating tests  
-- chore    - Build process or auxiliary tool changes  
-- style    - Formatting, whitespace, etc. (no code logic change)
+- `feat`     - A new feature  
+- `fix`      - A bug fix  
+- `docs`     - Documentation changes only  
+- `refactor` - Code change that neither fixes a bug nor adds a feature  
+- `test`     - Adding or updating tests  
+- `chore`    - Build process or auxiliary tool changes  
+- `style`    - Formatting, whitespace, etc. (no code logic change)
 
 ## Scope
 

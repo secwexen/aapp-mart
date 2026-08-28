@@ -144,7 +144,16 @@ python aapp_mart.py --target 10.10.20.15
 [!] DOMAIN-CONTROLLER-01 | IP: 10.10.20.45 | Type: Identity/AD   | Severity: CRITICAL | Status: Compromised | Detail: Data Exfiltrated
 [!] BACKUP-SERVER-01     | IP: 10.10.20.25 | Type: Backup Server | Severity: HIGH     | Status: Compromised | Detail: Backup Access
 
-[+] Report Exported: logs/attack-path/attack_path_10_10_20_15_20260101_010101.json
+=== REPORT EXPORT FORMAT ===
+
+[1] JSON Report
+[2] CSV Report
+[3] JSON + CSV Report
+
+Select Report Format [1-3]: 3
+
+[+] JSON Report Exported: logs/attack-path/attack_path_10_10_20_15_20260101_010101.json
+[+] CSV Report Exported: logs/attack-path/attack_path_10_10_20_15_20260101_010101.csv
 ```
 
 > [!NOTE]

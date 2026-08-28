@@ -579,19 +579,19 @@ def main() -> int:
 
     while True:
         try:
-            choice = input("\nSelect report format [1-3]: ").strip()
+            choice = input("\nSelect Report Format [1-3]: ").strip()
 
             if choice in {"1", "2", "3"}:
                 break
 
-            print("[!] Invalid selection. Please choose 1, 2, or 3.")
+            print("[!] Invalid Selection. Please Choose 1, 2, or 3.")
 
         except KeyboardInterrupt:
-            print("\n[!] Report selection cancelled.")
+            print("\n[!] Report Selection Cancelled.")
             return 130
 
         except EOFError:
-            print("\n[!] Input stream closed.")
+            print("\n[!] Input Stream Closed.")
             return 130
 
     json_success = True

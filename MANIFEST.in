@@ -1,41 +1,33 @@
-# Include metadata & docs
-include README.md LICENSE CHANGELOG.md CITATION.cff
-include CODE_OF_CONDUCT.md CONTRIBUTING.md DISCLAIMER.md ETHICS.md GOVERNANCE.md NOTICE ROADMAP.md SBOM.md SECURITY.md SUPPORT.md
+# Package metadata & documentation
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CITATION.cff
+include CODE_OF_CONDUCT.md
+include CONTRIBUTING.md
+include DISCLAIMER.md
+include GOVERNANCE.md
+include NOTICE
+include ROADMAP.md
+include SBOM.md
+include SECURITY.md
+include SUPPORT.md
 
-# Include configuration & templates
+# Configuration templates
 include .env.example
-include requirements-dev.txt
-include requirements.txt
-recursive-include configs *.yaml
-recursive-include templates *
 
-# Include main Python source code
-recursive-include src/aapp_mart *.py
-recursive-include api *.py
-recursive-include attack_graph *.py
-recursive-include cli *.py
-recursive-include commands *.py
-recursive-include common *.py
-recursive-include cve *.py
-recursive-include domain *.py
-recursive-include modules *.py
-recursive-include network *.py
-recursive-include offline *.py
-recursive-include reports *.py
-recursive-include risk *.py
-recursive-include integrations/siem *.py
-recursive-include utils *.py
-
-# Include examples, demo, and notebooks
-recursive-include examples *.py *.json
-recursive-include demo *.py *.ipynb *.md
+# Documentation
 recursive-include docs *.md
 
-# Include assets
+# Examples
+recursive-include examples *.py *.json
+recursive-include demo *.py *.ipynb *.md
+
+# Assets
 recursive-include assets/images *.png
 
-# Exclude caches, temp files, and OS-specific files
-global-exclude __pycache__ *
+# Exclude caches, temporary files and OS-specific files
+global-exclude __pycache__
 global-exclude *.py[cod]
 global-exclude *.swp
 global-exclude *.DS_Store

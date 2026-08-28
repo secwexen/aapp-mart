@@ -76,7 +76,6 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://secwexen.github.io/aapp-mart/"
 Repository = "https://github.com/secwexen/aapp-mart"
 
 [project.entry-points.console_scripts]

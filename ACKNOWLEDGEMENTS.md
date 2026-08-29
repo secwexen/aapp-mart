@@ -27,3 +27,9 @@ Special thanks to the security researchers and early testers whose valuable feed
 ## Contributors
 
 We thank all contributors who have helped improve this project through code contributions, issue reporting, suggestions, and feature development.
+
+---
+
+Copyright © 2026 secwexen.
+
+AAPP-MART is licensed under the Apache-2.0 License. See [LICENSE](LICENSE) for the complete license text.

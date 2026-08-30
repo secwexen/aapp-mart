@@ -145,6 +145,10 @@ def validate_attack_steps(steps):
         and step.severity.upper() in VALID_SEVERITIES
         and step.status.upper() in VALID_STATUSES
         and 0.0 <= step.confidence <= 1.0
+        and (
+            step.cve_id is None
+            or CVE_PATTERN.fullmatch(step.cve_id) is not None
+        )
         for step in steps
     )
 

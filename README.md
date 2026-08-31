@@ -1,7 +1,7 @@
 # AAPP-MART
 
 <p align="center">
-<img src="assets/images/aapp-mart-logo.png" width="500" alt="AAPP-MART Logo" loading="lazy" decoding="async">
+<img src="assets/images/aapp-mart-logo.png" width="450" alt="AAPP-MART Logo" loading="lazy" decoding="async">
 </p>
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
@@ -163,13 +163,17 @@ Select Report Format [1-3]: 3
 
 ### Supported Operating Systems
 
-- Linux — primary, production & deployment recommended  
-- Windows — WSL2 + Docker required for full compatibility  
-- macOS — Docker or native development supported
+- Linux — Recommended for development, testing, automation, and deployment  
+- Windows — Supported for development and testing with Visual Studio Code and WSL2  
+- macOS — Supported for local development and testing
 
 ### Requirements
 
 - Python 3.11+
+- Git
+- pip
+- Make
+- pytest
 
 ## Quick Start
 

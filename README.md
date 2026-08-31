@@ -1,7 +1,7 @@
 # AAPP-MART
 
 <p align="center">
-<img src="assets/images/aapp-mart-logo.png" width="400" alt="AAPP-MART Logo" loading="lazy" decoding="async">
+<img src="assets/images/aapp-mart-logo.png" width="500" alt="AAPP-MART Logo" loading="lazy" decoding="async">
 </p>
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
@@ -229,11 +229,11 @@ See [CONTRIBUTING](CONTRIBUTING.md) for detailed contribution guidelines.
 
 Planned improvements include:
 
-- improved AI-Powered Attack Path Prediction
-- path-aware risk scoring based on simulated attack chains
-- optional visualization layer for simulation outputs
-- plugin ecosystem for custom modules and agents
-- distributed simulation support
+- Improved AI-Powered Attack Path Prediction
+- Path-aware risk scoring based on simulated attack chains
+- Optional visualization layer for simulation outputs
+- Plugin ecosystem for custom modules and agents
+- Distributed simulation support
 
 For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
 

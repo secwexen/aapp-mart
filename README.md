@@ -163,9 +163,9 @@ Select Report Format [1-3]: 3
 
 ### Supported Operating Systems
 
-- Linux (primary, production & deployment recommended)  
-- Windows (WSL2 + Docker required for full compatibility)  
-- macOS (Docker or native development supported)
+- Linux — primary, production & deployment recommended  
+- Windows — WSL2 + Docker required for full compatibility  
+- macOS — Docker or native development supported
 
 ### Requirements
 

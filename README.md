@@ -170,9 +170,6 @@ Select Report Format [1-3]: 3
 ### Requirements
 
 - Python 3.11+
-- Docker
-- Kubernetes (for deployment)
-- YAML / JSON-based configuration ecosystem
 
 ## Quick Start
 

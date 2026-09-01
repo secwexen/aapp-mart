@@ -12,7 +12,9 @@ All resources provided in this repository are developed strictly for educational
 
 **​1.4. Prior Authorization:** By using this software, users acknowledge that they have obtained all necessary permissions and authorizations prior to conducting any security testing activities.
 
-**1.5. Third-Party Policies:** This repository may contain links to or references for third-party tools, frameworks, and external resources. The repository owner is not responsible for the content, security, availability, accuracy, or functionality of any third-party materials.
+**1.5. License Terms:** Users must follow the repository’s [LICENSE](LICENSE); redistribution, modification, and commercial use are subject to its restrictions, and attribution/license notices must be preserved. If no explicit license is provided, all rights are reserved by the repository owner
+
+**1.6. Third-Party Policies:** This repository may contain links to or references for third-party tools, frameworks, and external resources. The repository owner is not responsible for the content, security, availability, accuracy, or functionality of any third-party materials.
 
 ## 2. Limitation of Liability
 

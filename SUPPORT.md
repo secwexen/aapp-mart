@@ -14,7 +14,7 @@ Comprehensive project [documentation](docs/), guides, and API references.
 
 Submit a new issue labeled `feature-request` to propose enhancements.
 
-## GitHub Issues (Primary Support Channel)
+## GitHub Issues
 
 Use the **Issues** tab for:
 

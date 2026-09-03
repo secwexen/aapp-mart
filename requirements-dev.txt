@@ -12,7 +12,7 @@ wheel>=0.48.0
 # === Linting & Formatting ===
 black>=24.0
 flake8>=7.0
-isort>=5.13
+isort>=9.0.1
 
 # === Type checking ===
 mypy>=2.3.1

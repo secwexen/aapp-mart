@@ -6,37 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 # Release v1.0.1 – 2026-03-07
 
-## AAPP-MART — Initial Open Source Release
+## AAPP‑MART — Initial Open Source Release
 
-Welcome to the first open‑source release of AAPP‑MART.  
-This version introduces the core architecture, modules, APIs, Helm charts, observability components, and documentation that form the foundation of the project.
+Welcome to the first open‑source release of **AAPP‑MART**.  
+
+This release introduces the core components and foundational architecture of the AAPP-MART Free Edition.
 
 ## Core Features
 
-- Modular prediction engine  
-- Agent framework (offensive, forensic, network, system)  
-- Risk engine with CVSS scoring  
-- API endpoints for agents, prediction, and reporting  
-- Command‑line interface (CLI)  
-- Comprehensive test suite  
-
-## Deployment
-
-- Helm chart for Kubernetes deployments  
-- Kubernetes manifests (Deployment, Service, Ingress)  
-- Observability stack (Grafana dashboards, Promtail, OpenTelemetry)  
+- AI‑Powered Autonomous Attack Path Prediction (AAPP)
+- Multi‑Agent Red Team Simulation (MART)
+- Core Orchestration (ENGINE)
 
 ## Documentation
 
-- Architecture overview  
-- Module and component breakdown  
-- API reference  
-- Quickstart and examples  
-- Ethical use guidelines  
-- Development and testing guides  
+- Architecture overview
+- Core module documentation
+- Quickstart and usage examples
+- Ethical use guidelines
+- Development and testing guidance
 
-## Security Notes
+## Security
 
-- No sensitive or production configuration is included  
-- All configuration files are provided as templates  
-- Private configuration values are intentionally omitted
+- No secrets, credentials, API keys, tokens, or private keys are included.
+- No sensitive or production configuration is included.
+- Configuration files are provided only as templates.
+- Private configuration values and environment-specific secrets are intentionally omitted.

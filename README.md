@@ -5,7 +5,7 @@
 </p>
 
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/releases)
+[![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart?include_prereleases)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 
 ⭐ If you find this project valuable, consider starring the repository.

@@ -13,7 +13,7 @@ An Attack Graph is a directed graph (G = (V, E)) where:
 
 Edges are annotated with likelihood and exploitability weights to support predictive scoring.
 
-### 2. AAPP (AI-Powered Autonomous Attack Path Prediction)
+### 2. AI-Powered Autonomous Attack Path Prediction (AAPP)
 
 AAPP analyzes the target environment to predict the most probable attack paths. It uses:
 
@@ -23,7 +23,7 @@ AAPP analyzes the target environment to predict the most probable attack paths. 
 
 AAPP outputs risk-scored attack paths for simulation or reporting.
 
-### 3. MART (Multi-Agent Red Team Simulation)
+### 3. Multi-Agent Red Team Simulation (MART)
 
 MART is the autonomous red team engine that simulates adversary behavior using specialized agents:
 

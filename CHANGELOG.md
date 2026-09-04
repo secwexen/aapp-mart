@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 # Release v1.0.1 – 2026-03-07
 
-## AAPP‑MART — Initial Open Source Release
+## AAPP-MART — Initial Open Source Release
 
 Welcome to the first open‑source release of **AAPP‑MART**.  
 

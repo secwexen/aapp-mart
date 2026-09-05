@@ -85,9 +85,6 @@ Repository = "https://github.com/secwexen/aapp-mart"
 [project.entry-points.console_scripts]
 aappmart = "aappmart.cli:main"
 
-[tool.setuptools]
-packages = { find = {} }
-
 [tool.setuptools.package-data]
 aappmart = [
   "**/*.json",

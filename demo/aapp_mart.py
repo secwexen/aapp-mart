@@ -7,6 +7,9 @@ An AAPP-MART (AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red T
 GitHub Repository: 
     https://github.com/secwexen/aapp-mart
 
+Author:
+    Secwexen https://github.com/secwexen
+
 Key Features:
     - Multi-Agent Red Team Attack Simulation
     - MITRE ATT&CK Mapping

@@ -241,7 +241,6 @@ For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
 ## Community & Support
 
 - **GitHub Issues** — Report bugs or request features
-- **GitHub Discussions** — Ask questions and share ideas
 - **Contributing** — Submit improvements
 
 ## Security

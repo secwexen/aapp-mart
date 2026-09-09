@@ -8,8 +8,6 @@
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart?include_prereleases)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)
 
-⭐ If you find this project valuable, consider starring the repository.
-
 ## About
 
 AAPP‑MART (AI‑Powered Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) is a cybersecurity engine for **adversary emulation**, **security validation**, **threat modeling**, and **risk assessment**.

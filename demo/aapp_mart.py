@@ -58,17 +58,17 @@ def confirm_exit():
         try:
             answer = input(
                 "\n[!] Simulation Detected. Exit? [y/N]: "
-            ).strip().lower()
+            ).strip()
 
-            if answer in {"y"}:
+            if answer == "y":
                print("[!] Exiting...")
                return True
 
-            if answer in {"n", ""}:
+            if answer == "N":
                print("[*] Resuming Simulation...")
                return False
 
-            print("[!] Please enter y or n.")
+            print("[!] Please enter y or N.")
 
         except EOFError:
             print("\n[!] Input Stream Closed.")
@@ -322,6 +322,9 @@ class AAPPMARTDemo:
                 except KeyboardInterrupt:
                     if confirm_exit():
                        raise
+
+                    print("[*] Continuing Simulation...")
+                    continue
 
         compromised_assets = [
             CompromisedAsset(

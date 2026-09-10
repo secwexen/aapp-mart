@@ -168,10 +168,14 @@ Select Report Format [1-3]: 3
 ### Requirements
 
 - Python 3.11+
-- Git
-- pip
-- Make
-- pytest
+- pip for Python dependency installation
+- Make for repository automation and common development tasks
+- Git for repository management
+- pytest for automated testing and validation
+
+### Optional Components
+
+- Docker: Used for containerized labs, and testing.
 
 ## Quick Start
 

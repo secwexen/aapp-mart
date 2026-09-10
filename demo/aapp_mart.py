@@ -591,8 +591,25 @@ def main() -> int:
             print("[!] Invalid Selection. Please Choose 1, 2, or 3.")
 
         except KeyboardInterrupt:
-            print("\n[!] Report Selection Cancelled.")
-            return 130
+            while True:
+                try:
+                    answer = input(
+                        "\n[!] Simulation Detected. Exit? [y/N]: "
+                    ).strip().lower()
+
+                    if answer in {"y"}:
+                        print("[!] Exiting...")
+                        return 130
+
+                    if answer in {"N"}:
+                        print("[*] Continuing...")
+                        break
+
+                    print("[!] Please enter y or N.")
+
+                except EOFError:
+                    print("\n[!] Input Stream Closed.")
+                    return 130
 
         except EOFError:
             print("\n[!] Input Stream Closed.")

@@ -64,7 +64,8 @@ def confirm_exit():
                print("[!] Exiting...")
                return True
 
-            if answer in {"n", ""}:
+            if answer in {"N"}:
+               print("[*] Resuming Simulation...")
                return False
 
             print("[!] Please enter y or N.")
@@ -321,8 +322,6 @@ class AAPPMARTDemo:
                 except KeyboardInterrupt:
                     if confirm_exit():
                        raise
-
-                   print("[*] Resuming Simulation...")
 
         compromised_assets = [
             CompromisedAsset(

@@ -64,11 +64,11 @@ def confirm_exit():
                print("[!] Exiting...")
                return True
 
-            if answer in {"N"}:
+            if answer in {"n", ""}:
                print("[*] Resuming Simulation...")
                return False
 
-            print("[!] Please enter y or N.")
+            print("[!] Please enter y or n.")
 
         except EOFError:
             print("\n[!] Input Stream Closed.")

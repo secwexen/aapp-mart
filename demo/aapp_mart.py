@@ -53,6 +53,27 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
+def confirm_exit():
+    while True:
+        try:
+            answer = input(
+                "\n[!] Simulation Detected. Exit? [y/N]: "
+            ).strip().lower()
+
+            if answer in {"y"}:
+               print("[!] Exiting...")
+               return 130
+
+            if answer in {"N"}:
+               print("[*] Continuing...")
+               break
+
+            print("[!] Please enter y or N.")
+
+        except EOFError:
+            print("\n[!] Input Stream Closed.")
+            return 130
+
 # =========================
 # Data Models
 # =========================
@@ -591,26 +612,9 @@ def main() -> int:
             print("[!] Invalid Selection. Please Choose 1, 2, or 3.")
 
         except KeyboardInterrupt:
-            while True:
-                try:
-                    answer = input(
-                        "\n[!] Simulation Detected. Exit? [y/N]: "
-                    ).strip().lower()
-
-                    if answer in {"y"}:
-                        print("[!] Exiting...")
-                        return 130
-
-                    if answer in {"N"}:
-                        print("[*] Continuing...")
-                        break
-
-                    print("[!] Please enter y or N.")
-
-                except EOFError:
-                    print("\n[!] Input Stream Closed.")
-                    return 130
-
+            if confirm_exit():
+                return 130
+        
         except EOFError:
             print("\n[!] Input Stream Closed.")
             return 130

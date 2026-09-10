@@ -62,17 +62,16 @@ def confirm_exit():
 
             if answer in {"y"}:
                print("[!] Exiting...")
-               return 130
+               return True
 
-            if answer in {"N"}:
-               print("[*] Continuing...")
-               break
+            if answer in {"n", ""}:
+               return False
 
             print("[!] Please enter y or N.")
 
         except EOFError:
             print("\n[!] Input Stream Closed.")
-            return 130
+            return True
 
 # =========================
 # Data Models
@@ -313,8 +312,17 @@ class AAPPMARTDemo:
             raise ValueError("Invalid MITRE ATT&CK technique detected.")
 
         for step in attack_chain:
-            self._simulate_step(step)
-            time.sleep(0.5)
+            while True:
+                try:
+                    self._simulate_step(step)
+                    time.sleep(0.5)
+                    break
+
+                except KeyboardInterrupt:
+                    if confirm_exit():
+                       raise
+
+                   print("[*] Resuming Simulation...")
 
         compromised_assets = [
             CompromisedAsset(

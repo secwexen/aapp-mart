@@ -204,7 +204,6 @@ For full details, refer to the [Quick Start](docs/getting-started/quickstart.md)
 - [Installation Guide](docs/getting-started/installation.md)  
 - [API Reference](docs/reference/api-reference.md)  
 - [Deployment Guide](docs/guides/deployment.md)  
-- [Security Policy](SECURITY.md)
 
 ## License
 

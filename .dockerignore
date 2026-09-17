@@ -8,6 +8,7 @@ __pycache__/
 venv/
 env/
 .venv
+.env
 
 # Build & Test Artifacts
 build/
@@ -34,7 +35,6 @@ dist/
 
 # Logs & Secrets
 *.log
-.env
 
 # Docker itself
 Dockerfile

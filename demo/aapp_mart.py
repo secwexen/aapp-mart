@@ -61,7 +61,7 @@ def confirm_exit():
                print("[!] Exiting...")
                return True
 
-            if answer == "N":
+            if answer in {"", "N"}:
                print("[*] Resuming Simulation...")
                return False
 

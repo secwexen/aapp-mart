@@ -79,6 +79,8 @@ The developers and contributors of this project assume no responsibility or liab
 
 This software is provided “as is” without warranty of any kind, express or implied.
 
+For more information, see the [DISCLAIMER](DISCLAIMER.md) and [Terms of Service](docs/legal/terms-of-service.md).
+
 ## Who is this for
 
 - CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  

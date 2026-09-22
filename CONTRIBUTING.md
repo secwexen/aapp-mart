@@ -34,15 +34,25 @@ cd aapp-mart
 git checkout -b feature/your-feature-name
 ```
 
-### 3. Set up a local development environment:
+### 3. Set up a local development environment
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+python -m venv .venv
+source .venv/bin/activate     # Linux/Mac
+.\.venv\Scripts\Activate.ps1  # Windows
+```
 
+### 4. Install dependencies
+
+```bash
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
+```
+
+### 5. Tests
+
+```bash
+python -m pytest -v
 ```
 
 ## Development Guidelines
@@ -52,7 +62,7 @@ pip install -r requirements-dev.txt
 - Add or update tests for new functionality.
 - Use the provided test framework (pytest) and ensure all tests pass:
 ```bash
-pytest tests/
+python -m pytest -v
 ```
 - All new features must align with the documented architecture.
 - Avoid introducing breaking changes without discussion.

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
-=== AAPP-MART Cybersecurity Engine ===
-
-An AAPP-MART (AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine) designed for enterprise security analysis.
+=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine Demo ===
 
 Key Features:
     - Multi-Agent Red Team Attack Simulation
@@ -22,9 +20,6 @@ Key Features:
 Usage:
     python aapp_mart.py --target 10.10.20.15
     python aapp_mart.py --help
-
-Requirements:
-    Python 3.11+
 
 Safety:
     This demo does NOT perform real exploitation, network scanning,
@@ -243,7 +238,7 @@ class AAPPMARTDemo:
 
         clear_screen()
 
-        print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===\n")
+        print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===\n")
 
         print("[*] Simulation Workflow Started")
         print(f"[*] Initial Entry Point: {self.target} ({self.hostname}, {self.os})\n")

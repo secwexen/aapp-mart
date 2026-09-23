@@ -588,12 +588,12 @@ def main() -> int:
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
     json_output_file = (
-        f"logs/attack-path/"
+        f"logs/"
         f"attack_path_{clean_target}_{timestamp}.json"
     )
 
     csv_output_file = (
-        f"logs/attack-path/"
+        f"logs/"
         f"attack_path_{clean_target}_{timestamp}.csv"
     )
 

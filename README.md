@@ -113,7 +113,7 @@ python aapp_mart.py --target 10.10.20.15
 ### Output
 
 ```text
-=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine ===
+=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===
 
 [*] Simulation Workflow Started
 [*] Initial Entry Point: 10.10.20.15 (WORKSTATION-01, Linux) 

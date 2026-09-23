@@ -152,8 +152,8 @@ python aapp_mart.py --target 10.10.20.15
 
 Select Report Format [1-3]: 3
 
-[+] JSON Report Exported: logs/attack-path/attack_path_10_10_20_15_20260101_010101.json
-[+] CSV Report Exported: logs/attack-path/attack_path_10_10_20_15_20260101_010101.csv
+[+] JSON Report Exported: logs/attack_path_10_10_20_15_20260101_010101.json
+[+] CSV Report Exported: logs/attack_path_10_10_20_15_20260101_010101.csv
 ```
 
 > [!NOTE]

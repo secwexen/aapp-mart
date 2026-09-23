@@ -4,10 +4,12 @@ pytest-asyncio>=0.23
 pytest-cov>=4.1
 pytest-mock>=3.15.1
 coverage>=7.16.1
+pytest-xdist>=3.5
 
 # === Build tools ===
 build>=1.2
 wheel>=0.48.0
+twine>=5.0
 
 # === Linting & Formatting ===
 black>=24.0
@@ -16,9 +18,15 @@ isort>=9.0.1
 
 # === Type checking ===
 mypy>=2.3.1
+types-requests>=2.32.0
+types-PyYAML>=6.0
 
 # === Logging ===
 loguru>=0.7
+
+# === Security / Dependency Audit ===
+bandit>=1.7
+pip-audit>=2.7
 
 # === Documentation ===
 sphinx>=9.0.4

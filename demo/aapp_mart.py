@@ -2,20 +2,20 @@
 """
 === AAPP-MART — AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine Demo ===
 
-Key Features:
-    - Multi-Agent Red Team Attack Simulation
-    - MITRE ATT&CK Mapping
-    - CVE-Associated Attack Steps
-    - Risk Scoring & Severity Classification
-    - Attack Path Prediction Confidence Scoring
-    - Attack Path Simulation
-    - Compromised Asset Analysis
-    - Simulation Metrics & Attack Outcome Analytics
-    - Security Remediation Recommendations
-    - Simulation Workflow Execution
-    - JSON Report Generation
-    - CSV Report Generation
-    - CLI-Based Local Execution
+Features:
+   - Multi-Agent Red Team Attack Simulation
+   - MITRE ATT&CK Mapping
+   - CVE-Associated Attack Steps
+   - Risk Scoring & Severity Classification
+   - Attack Path Prediction Confidence Scoring
+   - Attack Path Simulation
+   - Compromised Asset Analysis
+   - Simulation Metrics & Attack Outcome Analytics
+   - Security Remediation Recommendations
+   - Simulation Workflow Execution
+   - JSON Report Generation
+   - CSV Report Generation
+   - CLI-Based Local Execution
 
 Usage:
     python aapp_mart.py --target 10.10.20.15

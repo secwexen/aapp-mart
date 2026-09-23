@@ -19,7 +19,6 @@ The purpose of this governance model is to ensure transparent decision-making, c
   - Participate in discussions and community support.
 
 - Community Members
-  - Share feedback and ideas.
   - Help improve documentation and usability.
 
 ## Decision-Making Process

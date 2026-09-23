@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction and Multi-Agent Red Team Simulation Engine Demo ===
+=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===
 
 Features:
    - Multi-Agent Red Team Attack Simulation

@@ -3,40 +3,40 @@
 # Default: run tests
 all: test
 
-# Run unit tests with coverage and JSON report
-test: 
- nox -s tests
+# Run unit tests with coverage
+test:
+	nox -s tests
 
-# Run linting (flake8, ruff)
-lint: 
- nox -s lint
+# Run linting
+lint:
+	nox -s lint
 
-# Auto format code (black + isort + ruff format)
-format: 
- nox -s format
+# Auto-format code
+format:
+	nox -s format
 
-# Static type checking (mypy)
-typecheck: 
- nox -s typecheck
+# Static type checking
+typecheck:
+	nox -s typecheck
 
-# Security checks (bandit + safety)
-security: 
- nox -s security
+# Security checks
+security:
+	nox -s security
 
 # Setup development environment and install pre-commit hooks
 dev:
 	nox -s dev
-	poetry run pre-commit install || pip install pre-commit && pre-commit install
+	pre-commit install
 
 # Build distribution packages
-build: 
- python -m build
+build:
+	python -m build
 
 # Build local project documentation
-docs: 
- nox -s docs
+docs:
+	nox -s docs
 
-# Clean pycache, temporary files, build artifacts, and cache directories
+# Clean caches and build artifacts
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +
 	find . -type d -name ".pytest_cache" -exec rm -rf {} +

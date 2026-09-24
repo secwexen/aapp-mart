@@ -9,7 +9,7 @@ pytest-xdist>=3.5
 # === Build tools ===
 build>=1.2
 wheel>=0.48.0
-twine>=5.0
+twine>=7.0.0
 
 # === Linting & Formatting ===
 black>=24.0

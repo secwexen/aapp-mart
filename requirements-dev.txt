@@ -26,7 +26,7 @@ loguru>=0.7
 
 # === Security / Dependency Audit ===
 bandit>=1.9.4
-pip-audit>=2.7
+pip-audit>=2.10.1
 
 # === Documentation ===
 sphinx>=9.0.4

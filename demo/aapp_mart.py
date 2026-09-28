@@ -508,8 +508,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         prog="aapp-mart",
         description=(
-            "AAPP-MART — AI-Powered Autonomous Attack Path "
-            "Prediction & Multi-Agent Red Team Simulation Engine"
+            "AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo"
         )
     )
 

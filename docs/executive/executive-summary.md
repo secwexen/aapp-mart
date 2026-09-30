@@ -28,7 +28,7 @@ Free capabilities include:
 - Prediction workflows
 - Risk workflows
 - Simulation workflows
-- JSON/CSV/HTML/Markdown reports
+- JSON/CSV reports
 - CLI
 - Basic API
 - Local execution

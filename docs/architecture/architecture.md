@@ -20,127 +20,175 @@ All components communicate through a shared Knowledge Graph.
 ## Project Structure
 
 ```text
-aapp-mart/
-│   ACKNOWLEDGEMENTS.md
-│   bandit.yaml
-│   CHANGELOG.md
-│   CITATION.cff
-│   CODE_OF_CONDUCT.md
-│   CONTRIBUTING.md
-│   requirements-dev.txt
-│   DISCLAIMER.md
-│   Dockerfile
-│   docker-compose.yml
-│   GOVERNANCE.md
-│   LICENSE
-│   LICENSE‑3RD‑PARTY.md
-│   MAINTAINERS
-│   Makefile
-│   MANIFEST.in
-│   mypy.ini
-│   NOTICE
-│   noxfile.py
-│   pyproject.toml
-│   pytest.ini
-│   README.md
-│   requirements.txt
-│   ROADMAP.md
-│   SBOM.md
-│   SECURITY.md
-│   SUPPORT.md
-│           
-├─── assets/
-│   └─── images/
-│           
-├─── configs/
-│           
-├─── data/
-│   └─── sample_targets/
-│           
-├─── demo/
-│       
-├─── docs/
-│   ├─── ai/
-│   ├─── architecture/
-│   ├─── concepts/
-│   ├─── contributing/
-│   ├─── executive/
-│   ├─── guides/
-│   ├─── legal/
-│   ├─── product/
-│   ├─── reference/
-│   ├─── research/
-│   └─── start-here/
-│           
-├─── examples/
-│   └─── scripts/
-│           
-├─── helm/
-│   └─── aapp-mart/
-│       └─── templates/
-│               
-├─── observability/
-│   ├─── grafana_dashboards/     
-│   ├─── logging/     
-│   └─── metrics/
-│           
-├─── scripts/
-│   ├─── ci/    
-│   ├─── dev/     
-│   └───ops/
-│           
-├─── src/
-│   └─── aapp_mart/
-│       │   
-│       ├─── api/
-│       │   ├─── docs/
-│       │   ├─── endpoints/
-│       │   └─── schemas/
-│       │           
-│       ├─── attack_graph/
-│       │       
-│       ├─── cli/
-│       │   │   
-│       │   ├─── commands/
-│       │   ├─── data/
-│       │   │   └─── sample_targets/
-│       │   └─── examples/
-│       │       
-│       ├─── cve/
-│       │       
-│       ├─── domain/
-│       │   ├─── agents/
-│       │   │   └─── custom/
-│       │   │           
-│       │   ├─── predictors/
-│       │   │       
-│       │   ├─── reports/
-│       │   │   ├─── exporters/
-│       │   │   └─── templates/
-│       │   │       └─── attack/
-│       │   │               
-│       │   └─── risk/
-│       │           
-│       ├─── integrations/
-│       │   └─── siem/
-│       │           
-│       ├─── mart/
-│       │   └─── offensive/
-│       │           
-│       ├─── modules/
-│       │   ├─── automation/
-│       │   ├─── memory/
-│       │   ├─── network/
-│       │   ├─── offensive/
-│       │   └─── system/
-│       │           
-│       ├─── network/
-│       ├─── offline/
-│       ├─── rl/
-│       └─── utils/
-│       
-└─── tests/
-    └─── api/
+aapp-mart
+├── ACKNOWLEDGEMENTS.md
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── DISCLAIMER.md
+├── Dockerfile
+├── GOVERNANCE.md
+├── LICENSE
+├── LICENSE‑3RD‑PARTY.md
+├── MAINTAINERS
+├── MANIFEST.in
+├── Makefile
+├── NOTICE
+├── README.md
+├── ROADMAP.md
+├── SBOM.md
+├── SECURITY.md
+├── SUPPORT.md
+├── assets
+│   └── images
+│       └── aapp-mart-logo.png
+├── data
+│   └── samples
+│       ├── example_input.json
+│       └── example_output.json
+├── demo
+│   └── aapp_mart.py
+├── deployment
+│   ├── README.md
+│   ├── helm
+│   │   └── aapp-mart
+│   │       ├── Chart.yaml
+│   │       └── README.md
+│   └── observability
+│       └── README.md
+├── docs
+│   ├── FAQ.md
+│   ├── README.md
+│   ├── ai
+│   │   ├── ai-powered-autonomous-attack-path-prediction.md
+│   │   ├── models.md
+│   │   ├── predictors.md
+│   │   └── risk-model.md
+│   ├── architecture
+│   │   ├── architecture.md
+│   │   ├── components.md
+│   │   ├── design.md
+│   │   ├── modules.md
+│   │   └── threat-model.md
+│   ├── concepts
+│   │   ├── agents.md
+│   │   └── concepts.md
+│   ├── contributing
+│   │   └── commit-convention.md
+│   ├── executive
+│   │   ├── executive-summary.md
+│   │   ├── positioning.md
+│   │   └── vision.md
+│   ├── getting-started
+│   │   ├── getting-started.md
+│   │   ├── installation.md
+│   │   └── quickstart.md
+│   ├── guides
+│   │   ├── cli.md
+│   │   ├── deployment.md
+│   │   ├── development.md
+│   │   ├── testing.md
+│   │   ├── troubleshooting.md
+│   │   └── usage.md
+│   ├── legal
+│   │   ├── ethics.md
+│   │   ├── privacy-policy.md
+│   │   └── terms-of-service.md
+│   ├── product
+│   │   ├── differentiators.md
+│   │   ├── examples.md
+│   │   ├── features.md
+│   │   ├── overview.md
+│   │   └── what-is-aapp-mart.md
+│   ├── reference
+│   │   ├── api-reference.md
+│   │   ├── licensing.md
+│   │   └── references.md
+│   ├── research
+│   │   ├── benchmark.md
+│   │   └── research.md
+│   └── testing
+│       └── testing.md
+├── examples
+│   ├── basic_simulation.py
+│   ├── custom_agent_example.py
+│   ├── integration_example.py
+│   └── reports
+│       └── risk_summary.json
+├── models
+│   └── README.md
+├── observability
+│   └── metrics
+│       └── metrics.md
+├── scripts
+│   ├── ci
+│   │   ├── lint.sh
+│   │   └── test.sh
+│   └── dev
+│       ├── build_docs.sh
+│       ├── format_code.sh
+│       └── run_local.py
+├── src
+│   └── aapp_mart
+│       ├── __init__.py
+│       ├── __main__.py
+│       ├── aapp
+│       │   ├── analyzer.py
+│       │   ├── feature_pipeline.py
+│       │   └── scoring.py
+│       ├── attack_graph
+│       │   ├── builder.py
+│       │   ├── graph.py
+│       │   └── path_finder.py
+│       ├── cli
+│       │   ├── __init__.py
+│       │   ├── commands
+│       │   │   ├── predict.py
+│       │   │   ├── report.py
+│       │   │   └── simulate.py
+│       │   └── main.py
+│       ├── cve
+│       │   ├── __init__.py
+│       │   ├── cache.py
+│       │   ├── fetcher.py
+│       │   └── models.py
+│       ├── domain
+│       │   └── risk
+│       │       └── cvss_calculator.py
+│       ├── engine
+│       │   ├── contracts.py
+│       │   ├── exceptions.py
+│       │   ├── pipeline.py
+│       │   ├── state_machine.py
+│       │   └── utils.py
+│       ├── events
+│       │   ├── event.py
+│       │   ├── event_types.py
+│       │   ├── publisher.py
+│       │   └── subscriber.py
+│       ├── plugins
+│       │   ├── exceptions.py
+│       │   ├── interfaces.py
+│       │   ├── loader.py
+│       │   └── metadata.py
+│       ├── runtime
+│       │   ├── context.py
+│       │   ├── execution.py
+│       │   └── execution_result.py
+│       ├── shared
+│       │   ├── constants.py
+│       │   ├── utils.py
+│       │   └── validators.py
+│       └── storage
+│           ├── __init__.py
+│           ├── base.py
+│           ├── filesystem.py
+│           └── sqlite.py
+└── tests
+    ├── conftest.py
+    ├── test_aapp.py
+    ├── test_agents.py
+    └── test_attack_graph.py
 ```
 
 ## Component Breakdown

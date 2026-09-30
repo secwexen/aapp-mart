@@ -7,7 +7,6 @@ This guide explains how to set up the framework for local development, testing, 
 Before installing AAPP‑MART, ensure your environment meets the following requirements:
 
 - Python 3.11+
-- Docker
 - YAML / JSON based configuration ecosystem
 
 ## 1. Clone the Repository
@@ -26,9 +25,9 @@ Creating a virtual environment keeps dependencies isolated.
 
 ```bash
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+python -m venv .venv
+source .venv/bin/activate     # Linux/Mac
+.\.venv\Scripts\Activate.ps1  # Windows
 ```
 
 ## 3. Install Dependencies

@@ -187,25 +187,29 @@ git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+python -m venv .venv
+source .venv/bin/activate     # Linux/Mac
+.\.venv\Scripts\Activate.ps1  # Windows
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Install dev dependencies
 pip install -r requirements-dev.txt
+
+# Run the full pytest suite
+python -m pytest -v
 ```
 
 For full details, refer to the [Quick Start](docs/getting-started/quickstart.md) file.
 
 ## Documentation
 
-- [Quick Start](docs/getting-started/quickstart.md)  
 - [Installation Guide](docs/getting-started/installation.md)  
 - [API Reference](docs/reference/api-reference.md)  
 - [Deployment Guide](docs/guides/deployment.md)  
+- [Testing Guide](docs/testing/testing.md)  
+- [FAQ](docs/FAQ.md)  
 
 ## License
 

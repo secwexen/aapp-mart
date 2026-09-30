@@ -8,9 +8,9 @@ git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+python -m venv .venv
+source .venv/bin/activate     # Linux/Mac
+.\.venv\Scripts\Activate.ps1  # Windows
 
 # Install dependencies
 pip install -r requirements.txt

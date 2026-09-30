@@ -9,7 +9,7 @@ Unit tests ensure individual modules behave as expected. All new features or bug
 ### Run All Unit Tests
 
 ```bash
-pytest
+python -m pytest -v
 ```
 
 > Make sure all tests pass before submitting code or pull requests.
@@ -35,21 +35,13 @@ Maintain code consistency with PEP8 and project conventions.
 make lint
 ```
 
-### Directly with Pylint
-
-```bash
-pylint src/aapp_mart
-```
-
-Linting ensures readability, maintainability, and reduces errors.
-
 ## 3. Integration Testing
 
 Integration tests validate interactions between:
 
-- AAPP (AI-Powered Autonomous Attack Path Prediction)
-- MART (Multi-Agent Red Team Simulation Engine)
-- ENGINE (Simulation Brain / Core Orchestrator)
+- AI-Powered Autonomous Attack Path Prediction (AAPP)
+- Multi-Agent Red Team Simulation Engine (MART)
+- Core Orchestrator (ENGINE)
 
 Check that:
 
@@ -65,25 +57,14 @@ AAPP-MART simulations are deterministic when input data and configuration remain
 - Verify that repeated runs produce the same output
 - Ensure reports and risk scores are consistent
 
-## 5. Test Data & Examples
-
-Sample datasets for testing are included in:
-
-```
-src/aapp_mart/data/
-examples/
-```
-
-Use these datasets for both unit and integration tests.
-
-## 6. Continuous Integration (CI)
+## 5. Continuous Integration (CI)
 
 - GitHub Actions workflows are configured for testing and CodeQL analysis
 - All pull requests must pass CI checks before merging
 
 > CI ensures code quality and early detection of potential errors.
 
-## 7. Contributing Guidelines for Testing
+## 6. Contributing Guidelines for Testing
 
 1. Write tests for any new feature or bug fix
 2. Use existing test framework (pytest)
@@ -91,7 +72,7 @@ Use these datasets for both unit and integration tests.
 4. Ensure code style checks pass
 5. Document any new test cases or mock datasets
 
-## 8. Security Considerations
+## 7. Security Considerations
 
 Testing must never involve:
 

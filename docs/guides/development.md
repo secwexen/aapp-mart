@@ -6,9 +6,9 @@ AAPP‑MART is a modular, multi‑agent red team simulation engine powered by AI
 
 AAPP‑MART is built around three core components that work together to simulate realistic offensive security behavior:
 
-- AAPP (AI-Powered Autonomous Attack Path Prediction) — Analyzes the target environment and predicts potential attack paths based on vulnerabilities, configurations, and system topology.
-- MART (Multi‑Agent Red Team Simulation) — Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
-- ENGINE (Core Orchestrator) — Coordinates agents, manages execution flow, aggregates results, and generates reports.
+- AI-Powered Autonomous Attack Path Prediction (AAPP) — Analyzes the target environment and predicts potential attack paths based on vulnerabilities, configurations, and system topology.
+- Multi‑Agent Red Team Simulation (MART) — Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
+- Core Orchestrator (ENGINE) — Coordinates agents, manages execution flow, aggregates results, and generates reports.
 
 Each component is designed as an independent module to ensure extensibility and maintainability.
 
@@ -48,9 +48,9 @@ git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+python -m venv .venv
+source .venv/bin/activate     # Linux/Mac
+.\.venv\Scripts\Activate.ps1  # Windows
 
 # Install dependencies
 pip install -r requirements.txt
@@ -62,7 +62,7 @@ pip install -r requirements-dev.txt
 Run tests to verify the environment:
 
 ```bash
-pytest -v
+python -m pytest -v
 ```
 
 Create a feature branch before making changes:

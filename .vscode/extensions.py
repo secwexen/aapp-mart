@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "ms-python.vscode-python-envs",
+    "ms-python.black-formatter",
+    "ms-vscode.makefile-tools",
+    "ms-azuretools.vscode-containers",
+    "ms-vscode-remote.remote-wsl"
+  ]
+}

@@ -2,42 +2,20 @@
 
 This guide explains how to set up the framework for local development, testing, and future production use.
 
+## Supported Operating Systems
+
+- **Linux** — Recommended for development, testing, automation, and deployment  
+- **Windows** — Supported for development and testing with Visual Studio Code and WSL2  
+- **macOS** — Supported for local development and testing
+
 ## Requirements
 
-Before installing AAPP‑MART, ensure your environment meets the following requirements:
-
 - Python 3.11+
-- YAML / JSON based configuration ecosystem
+- pip for Python dependency installation
+- Make for repository automation and common development tasks
+- Git for repository management
+- pytest for automated testing and validation
 
-## 1. Clone the Repository
+## Optional Components
 
-Use Git to clone the AAPP‑MART repository:
-
-```bash
-# Clone repository
-git clone https://github.com/secwexen/aapp-mart.git
-cd aapp-mart
-```
-
-## 2. Create a Virtual Environment (Recommended)
-
-Creating a virtual environment keeps dependencies isolated.
-
-```bash
-# Create virtual environment
-python -m venv .venv
-source .venv/bin/activate     # Linux/Mac
-.\.venv\Scripts\Activate.ps1  # Windows
-```
-
-## 3. Install Dependencies
-
-Install all required Python packages:
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Install dev dependencies
-pip install -r requirements-dev.txt
-```
+- Docker: Used for containerized labs, and testing.

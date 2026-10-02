@@ -2,6 +2,8 @@
 
 This quickstart file helps you run your first AAPP-MART request in under 5 minutes.
 
+## Clone & Setup
+
 ```bash
 # Clone repository
 git clone https://github.com/secwexen/aapp-mart.git

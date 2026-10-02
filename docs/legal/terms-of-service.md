@@ -47,7 +47,7 @@ AAPP-MART aims to provide continuous access to the platform but does not guarant
 
 ## 9. Limitation of Liability  
 
-AAPP-MART is provided “as is” without warranties of any kind. The platform is not liable for any direct or indirect damages resulting from use of the service.
+AAPP-MART is provided "as is" without warranties of any kind. The platform is not liable for any direct or indirect damages resulting from use of the service.
 
 ## 10. Changes to Terms  
 

@@ -181,6 +181,8 @@ Select Report Format [1-3]: 3
 
 ## Quick Start
 
+## Clone & Setup
+
 ```bash
 # Clone repository
 git clone https://github.com/secwexen/aapp-mart.git

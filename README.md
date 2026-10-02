@@ -77,7 +77,7 @@ Unauthorized use of this system is strictly prohibited and may violate applicabl
 
 The developers and contributors of this project assume no responsibility or liability for misuse, damage, or legal consequences arising from the use of this software.
 
-This software is provided “as is” without warranty of any kind, express or implied.
+This software is provided "as is" without warranty of any kind, express or implied.
 
 For more information, see the [DISCLAIMER](DISCLAIMER.md) and [Terms of Service](docs/legal/terms-of-service.md).
 
@@ -163,9 +163,9 @@ Select Report Format [1-3]: 3
 
 ### Supported Operating Systems
 
-- Linux — Recommended for development, testing, automation, and deployment  
-- Windows — Supported for development and testing with Visual Studio Code and WSL2  
-- macOS — Supported for local development and testing
+- **Linux** — Recommended for development, testing, automation, and deployment  
+- **Windows** — Supported for development and testing with Visual Studio Code and WSL2  
+- **macOS** — Supported for local development and testing
 
 ### Requirements
 

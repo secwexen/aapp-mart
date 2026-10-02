@@ -181,7 +181,7 @@ Select Report Format [1-3]: 3
 
 ## Quick Start
 
-## Clone & Setup
+### Clone & Setup
 
 ```bash
 # Clone repository

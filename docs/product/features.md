@@ -18,8 +18,8 @@ This document describes the core capabilities of AAPP-MART and the capability th
 
 ### Core Orchestration (ENGINE)
 
-- Coordinates the interaction between AAPP and MART to maintain a unified simulation flow.  
-- Manages the global environment state, event propagation, and scenario progression.  
+- Coordinates the interaction between AAPP and MART to maintain a unified simulation flow.
+- Manages the global environment state, event propagation, and scenario progression.
 - Controls agent decision cycles, execution timing, and system‑wide synchronization.
 
 ## Free Edition

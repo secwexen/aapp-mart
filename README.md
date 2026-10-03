@@ -169,7 +169,7 @@ Select Report Format [1-3]: 3
 
 ### Requirements
 
-- Python 3.11+
+- Python 3.13+
 - pip for Python dependency installation
 - Make for repository automation and common development tasks
 - Git for repository management

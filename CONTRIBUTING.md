@@ -51,7 +51,7 @@ pip install -r requirements-dev.txt
 
 ### 5. Tests
 
-```bash
+```python
 python -m pytest -v
 ```
 
@@ -123,7 +123,7 @@ Harassment, abuse, or malicious contributions will not be tolerated.
 
 By contributing to AAPP-MART, you acknowledge and agree that all contributions submitted to the project will be licensed under the terms of the Apache-2.0 License.
 
-For full license details, see [LICENSE](/LICENSE).
+For full license details, see [LICENSE](LICENSE).
 
 ## Thank You
 

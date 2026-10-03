@@ -18,19 +18,19 @@ Submit a new issue labeled `feature-request` to propose enhancements.
 
 Use the **Issues** tab for:
 
-- Bug reports  
-- Documentation problems  
-- Broken links or missing files  
-- Feature requests  
+- Bug reports
+- Documentation problems
+- Broken links or missing files
+- Feature requests
 - General questions about repository usage
 
 Create an issue here: [Issues](https://github.com/secwexen/aapp-mart/issues)
 
 Please include:
 
-- Clear description of the problem  
-- Steps to reproduce  
-- Logs, screenshots, or error messages  
+- Clear description of the problem
+- Steps to reproduce
+- Logs, screenshots, or error messages
 - Environment details (OS, Python version, tools used)
 
 ## Security & Vulnerability Reports
@@ -46,8 +46,8 @@ This ensures responsible disclosure and safe handling.
 
 ## Response Commitments
 
-- Response Time: We aim to respond to issues within 24 business hours.  
-- Critical Bugs: Security or production-impacting bugs are prioritized.  
+- Response Time: We aim to respond to issues within 24 business hours.
+- Critical Bugs: Security or production-impacting bugs are prioritized.
 - Community Contributions: Pull requests are reviewed within 3 business days.
 
 ## Contributing
@@ -56,5 +56,5 @@ If you would like to contribute, please see [CONTRIBUTING](CONTRIBUTING.md) for 
 
 ## Thank You
 
-Your feedback helps improve the project and supports the cybersecurity community.  
+Your feedback helps improve the project and supports the cybersecurity community.
 We appreciate your interest and contributions!

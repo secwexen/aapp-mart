@@ -102,11 +102,9 @@ For full details, refer to the [Features](docs/product/features.md) file.
 
 ## Demo
 
-This section demonstrates a runnable attack-path simulation for the AAPP-MART cybersecurity engine.
-
 ### Usage
 
-```bash
+```python
 python aapp_mart.py --target 10.10.20.15
 ```
 

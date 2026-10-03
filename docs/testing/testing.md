@@ -8,7 +8,7 @@ Unit tests ensure individual modules behave as expected. All new features or bug
 
 ### Run All Unit Tests
 
-```bash
+```python
 python -m pytest -v
 ```
 

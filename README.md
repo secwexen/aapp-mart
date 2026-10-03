@@ -26,12 +26,12 @@ AAPP-MART provides structured, repeatable, and actionable security intelligence 
 
 ## Use Cases
 
-- AI-Powered Autonomous Attack Path Prediction (AAPP)  
-- Multi-Agent Red Team Simulation (MART)  
-- Attack Surface & Lateral Movement Modeling  
-- MITRE ATT&CK Aligned Threat Simulation  
-- Vulnerability Prioritization & Risk Scoring  
-- Continuous Security Assessment  
+- AI-Powered Autonomous Attack Path Prediction (AAPP)
+- Multi-Agent Red Team Simulation (MART)
+- Attack Surface & Lateral Movement Modeling
+- MITRE ATT&CK Aligned Threat Simulation
+- Vulnerability Prioritization & Risk Scoring
+- Continuous Security Assessment
 - Attack Simulation Research
 
 ## How it Works
@@ -44,11 +44,11 @@ Evaluates assets, configurations, permissions, and vulnerabilities to predict pr
 
 Autonomous agents simulate realistic adversary actions:
 
-- Reconnaissance  
-- Exploitation  
-- Lateral Movement  
-- Privilege Escalation  
-- Persistence  
+- Reconnaissance
+- Exploitation
+- Lateral Movement
+- Privilege Escalation
+- Persistence
 - Reporting
 
 ### 3. Core Orchestration (ENGINE)
@@ -59,8 +59,8 @@ Coordinates AAPP & MART, maintains a global knowledge graph, executes simulation
 
 The system is architected around three primary subsystems:
 
-- AI-Powered Autonomous Attack Path Prediction (AAPP)  
-- Multi-Agent Red Team Simulation (MART)  
+- AI-Powered Autonomous Attack Path Prediction (AAPP)
+- Multi-Agent Red Team Simulation (MART)
 - Core Orchestration (ENGINE)
 
 These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the engine.
@@ -83,19 +83,19 @@ For more information, see the [DISCLAIMER](DISCLAIMER.md) and [Terms of Service]
 
 ## Who is this for
 
-- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence  
-- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience  
-- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation  
+- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence
+- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience
+- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation
 - Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
 
 ## Features
 
-- AI-Powered Autonomous Attack Path Prediction (AAPP)  
-- Multi-Agent Red Team Simulation (MART)  
-- Core Security Engine & Orchestration  
-- Graph-Based Attack Path Modeling  
-- MITRE ATT&CK-Aligned Adversary Behavior  
-- Risk-Based Security Posture Analysis  
+- AI-Powered Autonomous Attack Path Prediction (AAPP)
+- Multi-Agent Red Team Simulation (MART)
+- Core Security Engine & Orchestration
+- Graph-Based Attack Path Modeling
+- MITRE ATT&CK-Aligned Adversary Behavior
+- Risk-Based Security Posture Analysis
 - ML-Assisted Vulnerability Prioritization
 
 For full details, refer to the [Features](docs/product/features.md) file.
@@ -163,8 +163,8 @@ Select Report Format [1-3]: 3
 
 ### Supported Operating Systems
 
-- **Linux** — Recommended for development, testing, automation, and deployment  
-- **Windows** — Supported for development and testing with Visual Studio Code and WSL2  
+- **Linux** — Recommended for development, testing, automation, and deployment
+- **Windows** — Supported for development and testing with Visual Studio Code and WSL2
 - **macOS** — Supported for local development and testing
 
 ### Requirements
@@ -204,11 +204,11 @@ For full details, refer to the [Quick Start](docs/getting-started/quickstart.md)
 
 ## Documentation
 
-- [Installation Guide](docs/getting-started/installation.md)  
-- [API Reference](docs/reference/api-reference.md)  
-- [Deployment Guide](docs/guides/deployment.md)  
-- [Testing Guide](docs/testing/testing.md)  
-- [FAQ](docs/FAQ.md)  
+- [Installation Guide](docs/getting-started/installation.md)
+- [API Reference](docs/reference/api-reference.md)
+- [Deployment Guide](docs/guides/deployment.md)
+- [Testing Guide](docs/testing/testing.md)
+- [FAQ](docs/FAQ.md)
 
 ## License
 

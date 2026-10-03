@@ -61,7 +61,7 @@ python -m pytest -v
 - Write clear, readable, and well-documented code.
 - Add or update tests for new functionality.
 - Use the provided test framework (pytest) and ensure all tests pass:
-```bash
+```python
 python -m pytest -v
 ```
 - All new features must align with the documented architecture.

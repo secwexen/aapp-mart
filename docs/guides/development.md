@@ -61,7 +61,7 @@ pip install -r requirements-dev.txt
 
 Run tests to verify the environment:
 
-```bash
+```python
 python -m pytest -v
 ```
 

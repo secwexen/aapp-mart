@@ -6,13 +6,13 @@ AAPP‑MART is developed as a hybrid project. Core components are fully open and
 
 The following components are fully open and available to the community:
 
-- Core simulation engine  
-- MART agent framework  
-- MITRE ATT&CK integration layer  
-- Attack graph engine  
-- Reporting templates  
+- Core simulation engine
+- MART agent framework
+- MITRE ATT&CK integration layer
+- Attack graph engine
+- Reporting templates
 - Documentation, examples, and developer guides  
-- Testing framework  
+- Testing framework
 
 These modules form the foundation of the platform and enable community collaboration, research, and extensibility.
 
@@ -26,10 +26,10 @@ This separation ensures security, controlled distribution, and long‑term maint
 
 This hybrid model ensures:
 
-- Transparency for core research and community development  
-- Security for sensitive components  
-- Commercial sustainability for enterprise‑grade features  
-- A clear separation between open‑source and proprietary modules  
+- Transparency for core research and community development
+- Security for sensitive components
+- Commercial sustainability for enterprise‑grade features
+- A clear separation between open‑source and proprietary modules
 
 ## Open Source License
 

@@ -23,14 +23,14 @@ The purpose of this governance model is to ensure transparent decision-making, c
 
 ## Decision-Making Process
 
-- Technical decisions are made by maintainers with input from contributors.  
-- Major changes (architecture, licensing, governance updates) require consensus among maintainers and approval via community discussion.  
+- Technical decisions are made by maintainers with input from contributors.
+- Major changes (architecture, licensing, governance updates) require consensus among maintainers and approval via community discussion.
 - In case of disagreement, a voting process among maintainers will be initiated.
 
 ## Release Management
 
 - Regular releases are scheduled every quarter.  
-- Security patches and hotfixes are released as needed.  
+- Security patches and hotfixes are released as needed.
 - Releases are documented in [CHANGELOG](CHANGELOG.md).
 
 ## Security and Compliance

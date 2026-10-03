@@ -23,7 +23,7 @@ tests/                # Automated tests
 
 ## 3. Install Python
 
-The project requires Python 3.11 or later.
+The project requires Python 3.13 or later.
 
 Check the installed version:
 
@@ -37,7 +37,7 @@ or:
 python3 --version
 ```
 
-Install Python 3.11+ if the required version is not available.
+Install Python 3.13+ if the required version is not available.
 
 ## 4. Install Dependencies
 

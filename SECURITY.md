@@ -16,27 +16,27 @@ Preferred method:
 
 ## Response Expectations
 
-- Initial response: We aim to respond within 24 bussiens hours  
-- Fix or mitigation: as soon as reasonably possible  
-- Security issues will be tracked via a ticket system or CVE where applicable  
+- Initial response: We aim to respond within 24 bussiens hours
+- Fix or mitigation: as soon as reasonably possible
+- Security issues will be tracked via a ticket system or CVE where applicable
 - Coordinated disclosure will be handled in collaboration with the reporter
 
 ## CVE Process
 
-Where applicable, security vulnerabilities may be assigned a **CVE (Common Vulnerabilities and Exposures)** identifier.  
+Where applicable, security vulnerabilities may be assigned a **CVE (Common Vulnerabilities and Exposures)** identifier.
 We will coordinate with the reporter to request and publish CVEs for confirmed issues, ensuring transparency and industry-standard tracking.
 
 ## Disclosure Timeline
 
-- Critical vulnerabilities will be disclosed publicly within 30 days of confirmation, or sooner if a fix/mitigation is available.  
-- High/Medium severity issues will be disclosed within 60 days.  
-- Low severity issues may be disclosed at the discretion of the maintainers.  
+- Critical vulnerabilities will be disclosed publicly within 30 days of confirmation, or sooner if a fix/mitigation is available.
+- High/Medium severity issues will be disclosed within 60 days.
+- Low severity issues may be disclosed at the discretion of the maintainers.
 
 This timeline ensures a balance between responsible disclosure and timely communication to the community.
 
 ## Supported Versions
 
-Security updates are provided only for the latest stable release of AAPP-MART.  
+Security updates are provided only for the latest stable release of AAPP-MART.
 Older versions may not receive security fixes.
 
 ## Scope
@@ -45,34 +45,34 @@ This project does not provide exploit code.
 
 Valid reports include:
 
-- Code-level security weaknesses  
-- Dependency vulnerabilities  
-- Logic flaws affecting security  
+- Code-level security weaknesses
+- Dependency vulnerabilities
+- Logic flaws affecting security
 - Configuration or deployment misconfigurations  
 
 Out of scope:
 
-- Social engineering  
-- Denial-of-service via unrealistic traffic  
+- Social engineering
+- Denial-of-service via unrealistic traffic
 - Issues requiring physical access
 
 ## Reporting Guidelines
 
 When submitting a security report, please include the following:
 
-- Software version: The version of AAPP-MART affected  
+- Software version: The version of AAPP-MART affected
 - Environment: OS, Python version, dependencies  
-- Steps to reproduce: Detailed instructions  
-- Observed behavior: What happens when the vulnerability occurs  
-- Expected behavior: What should happen  
-- Supporting evidence: Logs, screenshots, or proof-of-concept code  
+- Steps to reproduce: Detailed instructions
+- Observed behavior: What happens when the vulnerability occurs
+- Expected behavior: What should happen
+- Supporting evidence: Logs, screenshots, or proof-of-concept code
 - Additional context: Any other relevant information such as timing, frequency, or impact assessment
 
 ## Legal Notice
 
 Unauthorized testing or exploitation may violate applicable laws and regulations. Ensure you have explicit permission before performing any security testing.
 
-AAPP-MART, its authors, and contributors assume no responsibility or liability for any misuse, damage, or legal consequences arising from the use of this software.  
+AAPP-MART, its authors, and contributors assume no responsibility or liability for any misuse, damage, or legal consequences arising from the use of this software.
 Users are solely responsible for ensuring compliance with all applicable laws, regulations, and organizational policies.
 
 ## Credits

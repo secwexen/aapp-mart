@@ -12,11 +12,11 @@ For planned features and project direction, see [ROADMAP](ROADMAP.md).
 
 You may contribute in several ways:
 
-- Code Contributions  
-- Documentation  
-- Testing  
-- Issues & Suggestions  
-- Feature Suggestions  
+- Code Contributions
+- Documentation
+- Testing
+- Issues & Suggestions
+- Feature Suggestions
 - Security Contributions
 
 ## Getting Started
@@ -109,7 +109,7 @@ All pull requests must:
 
 AAPP-MART is a security-focused project.
 
-- Contributions must not include exploit code, malware, or content intended for illegal use.  
+- Contributions must not include exploit code, malware, or content intended for illegal use.
 - Contributions must remain within the scope of controlled, non-destructive security simulation.
 
 Security issues should be reported according to the [SECURITY](SECURITY.md) policy.
@@ -123,7 +123,7 @@ Harassment, abuse, or malicious contributions will not be tolerated.
 
 By contributing to AAPP-MART, you acknowledge and agree that all contributions submitted to the project will be licensed under the terms of the Apache-2.0 License.
 
-For full license details, see [LICENSE](LICENSE).
+For full license details, see [LICENSE](/LICENSE).
 
 ## Thank You
 

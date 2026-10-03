@@ -5,9 +5,9 @@ name: Python package
 
 on:
   push:
-    branches: [ "main", "develop", "release/*", "hotfix/*" ]
+    branches: [ "main", "develop" ]
   pull_request:
-    branches: [ "main", "develop", "release/*", "hotfix/*" ]
+    branches: [ "main", "develop" ]
 
 permissions:
   contents: read
@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.11"]
+        python-version: ["3.13"]
 
     steps:
     - uses: actions/checkout@v7

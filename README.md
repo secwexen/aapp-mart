@@ -55,16 +55,6 @@ Autonomous agents simulate realistic adversary actions:
 
 Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 
-## Architecture
-
-The system is architected around three primary subsystems:
-
-- AI-Powered Autonomous Attack Path Prediction (AAPP)
-- Multi-Agent Red Team Simulation (MART)
-- Core Orchestration (ENGINE)
-
-These subsystems operate in a tightly integrated manner through a shared attack graph (knowledge graph), enabling coordinated attack modeling, adversarial simulation, and unified risk analysis across the engine.
-
 ## Legal & Authorized Use Only
 
 AAPP-MART is intended solely for offensive security, adversary emulation, security validation, threat modeling, and risk assessment within environments where explicit permission has been granted.

@@ -4,8 +4,8 @@ We gratefully acknowledge the individuals, projects, and organizations whose sup
 
 ## Inspiration & Upstream Projects
 
-- The [MITRE ATT&CK](https://attack.mitre.org) framework, for its foundational threat modeling and adversary tactics knowledge base.  
-- The maintainers of Python, open source ML libraries, and graph libraries enabling rapid research and prototyping.  
+- The [MITRE ATT&CK](https://attack.mitre.org) framework, for its foundational threat modeling and adversary tactics knowledge base.
+- The maintainers of Python, open source ML libraries, and graph libraries enabling rapid research and prototyping.
 - The broader security and research community for continuously sharing knowledge, tools, and techniques.
 
 ## Key Dependencies

@@ -32,7 +32,7 @@ The Free Edition is intended for:
 - Cybersecurity students and learners
 - Developers and teams evaluating AAPP-MART's core attack-path simulation capabilities
 
-## Free Edition
+## Free Edition — 15 Capabilities
 
 The Free edition focuses on the core AAPP-MART engine and security simulation capabilities.
 

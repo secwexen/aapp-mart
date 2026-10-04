@@ -22,6 +22,16 @@ This document describes the core capabilities of AAPP-MART and the capability th
 - Manages the global environment state, event propagation, and scenario progression.
 - Controls agent decision cycles, execution timing, and system‑wide synchronization.
 
+## Free Edition Users
+
+The Free Edition is intended for:
+
+- Security researchers
+- Red team and penetration testing professionals
+- Purple team practitioners
+- Cybersecurity students and learners
+- Developers and teams evaluating AAPP-MART's core attack-path simulation capabilities
+
 ## Free Edition
 
 The Free edition focuses on the core AAPP-MART engine and security simulation capabilities.
@@ -35,19 +45,14 @@ Free capabilities include:
 - Risk scoring
 - CVE analysis
 - Basic threat intelligence
-- Basic agents
-- Prediction workflows
-- Risk workflows
-- Simulation workflows
+- Workflow orchestration
 - JSON/CSV reports
-- CLI
+- CLI-based local execution
 - Basic API
-- Local execution
 - Core policy evaluation
 - Core model management
 - Core plugin architecture
-- Basic observability
-- Basic audit logging
+- Basic observability and basic audit logging
 
 The Free edition is intended to provide the complete core security engine experience without enterprise operational infrastructure.
 

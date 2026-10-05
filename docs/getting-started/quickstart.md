@@ -11,12 +11,11 @@ cd aapp-mart
 
 # Create virtual environment
 python -m venv .venv
+
+# Activate virtual environment
 source .venv/bin/activate     # Linux/Mac
 .\.venv\Scripts\Activate.ps1  # Windows
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Install dev dependencies
-pip install -r requirements-dev.txt
+# Install AAPP-MART
+pip install .
 ```

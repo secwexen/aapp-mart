@@ -55,7 +55,7 @@ Autonomous agents simulate realistic adversary actions:
 
 Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 
-## Legal & Authorized Use Only
+## Legal & Authorized Use
 
 AAPP-MART is intended solely for offensive security, adversary emulation, security validation, threat modeling, and risk assessment within environments where explicit permission has been granted.
 
@@ -63,13 +63,7 @@ Users are fully responsible for ensuring compliance with all applicable laws, re
 
 Unauthorized use of this system is strictly prohibited and may violate applicable laws and regulations.
 
-## Legal Disclaimer
-
-The developers and contributors of this project assume no responsibility or liability for misuse, damage, or legal consequences arising from the use of this software.
-
-This software is provided "as is" without warranty of any kind, express or implied.
-
-For more information, see the [DISCLAIMER](DISCLAIMER.md) and [Terms of Service](docs/legal/terms-of-service.md).
+See [Ethics & Responsible Use Guidelines](docs/legal/ethics.md) for details.
 
 ## Who is this for
 

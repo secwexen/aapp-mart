@@ -138,7 +138,7 @@ Select Report Format [1-3]: 3
 [+] CSV Report Exported: logs/attack_path_10_10_20_15_20260101_010101.csv
 ```
 
-> [!NOTE]
+> [!WARNING]
 > This IP/hostname is an example target used for demonstration purposes only.
 
 ## Installation

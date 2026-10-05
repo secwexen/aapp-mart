@@ -25,3 +25,10 @@ After installation, verify the CLI:
 ```bash
 aapp-mart --help
 ```
+
+### 2. Run Tests
+
+```python
+# Run the full pytest suite
+python -m pytest -v
+```

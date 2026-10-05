@@ -4,6 +4,8 @@
 <img src="assets/images/aapp-mart-logo.png" width="500" alt="AAPP-MART Logo" loading="lazy" decoding="async">
 </p>
 
+⭐ Like this project? Please consider starring the repository to show your support!
+
 [![Build](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml/badge.svg)](https://github.com/secwexen/aapp-mart/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/secwexen/aapp-mart?include_prereleases)](https://github.com/secwexen/aapp-mart/releases)
 [![License](https://img.shields.io/github/license/secwexen/aapp-mart)](https://github.com/secwexen/aapp-mart/blob/main/LICENSE)

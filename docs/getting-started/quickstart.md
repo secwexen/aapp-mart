@@ -19,3 +19,9 @@ source .venv/bin/activate     # Linux/Mac
 # Install AAPP-MART
 pip install .
 ```
+
+After installation, verify the CLI:
+
+```bash
+aapp-mart --help
+```

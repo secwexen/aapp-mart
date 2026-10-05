@@ -181,6 +181,12 @@ source .venv/bin/activate     # Linux/Mac
 pip install .
 ```
 
+After installation, verify the CLI:
+
+```bash
+aapp-mart --help
+```
+
 For full details, refer to the [Quick Start](docs/getting-started/quickstart.md) file.
 
 ## Documentation

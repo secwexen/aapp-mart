@@ -59,16 +59,16 @@ Activate it on Windows:
 .\.venv\Scripts\Activate.ps1
 ```
 
-Install the project dependencies:
+Install AAPP-MART:
 
 ```bash
-pip install -r requirements.txt
+pip install .
 ```
 
-Install the project development dependencies:
+After installation, verify the CLI:
 
 ```bash
-pip install -r requirements-dev.txt
+aapp-mart --help
 ```
 
 ## 5. Run the Test Suite

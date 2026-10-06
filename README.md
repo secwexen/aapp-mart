@@ -14,7 +14,7 @@ AAPP‑MART (AI‑Powered Autonomous Attack Path Prediction & Multi‑Agent Red 
 
 Unlike traditional static manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, execute defensive controls validation, and enhance cyber resilience through repeatable, scalable, and intelligence‑driven simulations.
 
-AAPP-MART is designed as an extensible cybersecurity engine rather than a traditional vulnerability scanner or a collection of predefined attack playbooks, providing a foundation for proactive security validation, red teaming, purple teaming, and security research.
+AAPP-MART is designed as an extensible cybersecurity engine rather than a traditional vulnerability scanner or a collection of predefined attack playbooks, providing a foundation for proactive security validation, red teaming, blue team, and purple teaming.
 
 ## Why AAPP-MART?
 

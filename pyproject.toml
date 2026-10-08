@@ -67,7 +67,7 @@ dependencies = [
   "cryptography>=50.0.1",
   "python-dotenv>=1.2.3",
   "pyopenssl>=26.4.0",
-  "torch==2.14.0",
+  "torch==2.14.1",
   "transformers>=5.17.0"
 ]
 

@@ -155,7 +155,7 @@ Select Report Format [1-3]: 3
 - pip for Python dependency installation
 - Make for repository automation and common development tasks
 - Git for repository management
-- pytest for automated testing and validation
+- Pytest for automated testing and validation
 
 ### Optional Components
 

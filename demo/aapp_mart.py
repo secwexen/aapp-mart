@@ -153,11 +153,9 @@ VALID_STATUSES = {
 }
 
 
-def validate_attack_steps(steps):
+def validate_attack_steps(steps: List[AttackStep]) -> bool:
     return all(
-        step.mitre_id in MITRE_ATTACK
-        and step.severity.upper() in VALID_SEVERITIES
-        and step.status.upper() in VALID_STATUSES
+        MITRE_PATTERN.fullmatch(step.mitre_id) is not None
         and 0.0 <= step.confidence <= 1.0
         and (
             step.cve_id is None
@@ -165,7 +163,6 @@ def validate_attack_steps(steps):
         )
         for step in steps
     )
-
 
 def validate_assets(assets):
     try:

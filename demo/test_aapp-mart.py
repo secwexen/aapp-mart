@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+"""
+Usage:
+    python -m unittest test_aapp_mart.py
+"""
 import unittest
 from aapp_mart import calculate_risk_label, RiskEngine
 

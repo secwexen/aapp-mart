@@ -11,8 +11,6 @@ requires-python = ">=3.13"
 license = "Apache-2.0"
 license-files = [
     "LICENSE",
-    "LICENSE-3RD-PARTY.md",
-    "NOTICE",
 ]
 
 authors = [

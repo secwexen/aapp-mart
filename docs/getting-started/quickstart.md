@@ -23,7 +23,7 @@ pip install .
 After installation, verify the CLI:
 
 ```bash
-aapp-mart --help
+python -m pip install .
 ```
 
 ### 2. Run Tests

@@ -17,12 +17,6 @@ source .venv/bin/activate     # Linux/Mac
 .\.venv\Scripts\Activate.ps1  # Windows
 
 # Install AAPP-MART
-pip install .
-```
-
-After installation, verify the CLI:
-
-```bash
 python -m pip install .
 ```
 

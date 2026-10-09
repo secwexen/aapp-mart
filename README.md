@@ -181,12 +181,6 @@ source .venv/bin/activate     # Linux/Mac
 python -m pip install .
 ```
 
-After installation, verify the CLI:
-
-```bash
-aapp-mart --help
-```
-
 ### 2. Run Tests
 
 ```python

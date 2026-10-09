@@ -65,12 +65,6 @@ Install AAPP-MART:
 python -m pip install .
 ```
 
-After installation, verify the CLI:
-
-```bash
-aapp-mart --help
-```
-
 ## 5. Run the Test Suite
 
 Run the automated tests before making changes:

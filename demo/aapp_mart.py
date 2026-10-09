@@ -75,7 +75,7 @@ class AttackStep:
     agent: str
     phase: str
     mitre_id: str
-    cve_id: str | None
+    cve_id: Optional[str]
     description: str
     severity: str
     status: str

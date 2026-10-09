@@ -38,7 +38,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 from dataclasses import dataclass, asdict
-from typing import List
+from typing import List, Optional
 
 
 def clear_screen():

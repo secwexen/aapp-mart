@@ -52,3 +52,17 @@ It helps security teams:
 - Identify non-obvious attack chains
 
 Human analysts remain essential for interpretation, validation, and strategic decision-making.
+
+## 6. What outputs does AAPP-MART provide?
+
+AAPP-MART provides structured security analysis results to help users understand potential attack paths and associated risks.
+
+Depending on the capabilities enabled in the installed version, outputs may include:
+
+- Predicted attack paths and attack graph analysis
+- Risk scores and security findings
+- MITRE ATT&CK tactic and technique mappings
+- Multi-agent simulation results
+- JSON and CSV reports
+
+These outputs help security researchers and red, blue, and purple teams analyze potential attack scenarios, prioritize risks, and evaluate defensive controls in authorized environments.

@@ -9,7 +9,6 @@ description = "AI-powered autonomous attack path prediction and multi-agent red 
 readme = "README.md"
 requires-python = ">=3.13"
 license = "Apache-2.0"
-
 license-files = [
     "LICENSE",
     "LICENSE-3RD-PARTY.md",

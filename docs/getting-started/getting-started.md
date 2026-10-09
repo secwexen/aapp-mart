@@ -62,7 +62,7 @@ Activate it on Windows:
 Install AAPP-MART:
 
 ```bash
-pip install .
+python -m pip install .
 ```
 
 After installation, verify the CLI:

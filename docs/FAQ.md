@@ -4,7 +4,7 @@ This document provides answers to the most frequently asked questions about **AA
 
 ## 1. What is AAPP-MART?
 
-**AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine).
+**AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine).  
 It uses AI-assisted prediction and multi-agent simulation to help security teams identify potential attack paths, assess risks, and prioritize defensive improvements before exploitation occurs.
 
 ## 2. How does AAPP-MART differ from traditional penetration testing?

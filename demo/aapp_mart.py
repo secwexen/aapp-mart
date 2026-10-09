@@ -128,6 +128,7 @@ MITRE_ATTACK = {
     "T1005"
 }
 
+MITRE_PATTERN = re.compile(r"^T\d{4}(\.\d{3})?$")
 CVE_PATTERN = re.compile(r"^CVE-\d{4}-\d{4,}$")
 
 VALID_SEVERITIES = {

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Usage:
-    python -m unittest test_aapp_mart.py
+    python -m pytest test_aapp_mart.py -v
 """
 import unittest
 from aapp_mart import calculate_risk_label, RiskEngine

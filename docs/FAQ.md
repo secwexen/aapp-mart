@@ -66,3 +66,31 @@ Depending on the capabilities enabled in the installed version, outputs may incl
 - JSON and CSV reports
 
 These outputs help security researchers and red, blue, and purple teams analyze potential attack scenarios, prioritize risks, and evaluate defensive controls in authorized environments.
+
+## 7. How can I get started with AAPP-MART?
+
+Clone the repository, set up a Python virtual environment, and install the project dependencies according to the installation guide.
+
+For the initial setup:
+
+1. Clone the AAPP-MART repository.
+2. Create and activate a Python virtual environment.
+3. Install AAPP-MART using the documented installation instructions.
+4. Follow the [Quick Start](getting-started/quickstart.md) guide to explore the available capabilities.
+
+Refer to the [Installation Guide](getting-started/installation.md) for detailed setup instructions and the [Usage Guide](guides/usage.md) for supported workflows.
+
+## 8. What data does AAPP-MART use for security analysis?
+
+AAPP-MART analyzes available environment and security information to model potential attack paths, evaluate risks, and support adversary simulation.
+
+Depending on the analysis and configured capabilities, inputs may include:
+
+- Asset and environment information
+- Network and service relationships
+- Vulnerability and CVE data
+- Attack graph and security configuration data
+- MITRE ATT&CK tactics and techniques
+- Threat intelligence indicators
+
+The quality and completeness of the input data influence the relevance of predictions and risk assessments. Users should validate important findings against their actual environment and use the system only within explicitly authorized assessment scopes.

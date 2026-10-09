@@ -1,14 +1,20 @@
 [build-system]
-requires = ["setuptools>=68.0", "wheel"]
+requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "aapp-mart"
 version = "0.0.1"
-description = "AAPP-MART is a cybersecurity engine featuring AI-powered autonomous attack path prediction and multi-agent red team simulation. These features include adversary emulation, attack path analysis, threat modeling, security validation, risk assessment, and MITRE ATT&CK alignment."
+description = "AI-powered autonomous attack path prediction and multi-agent red team simulation engine."
 readme = "README.md"
 requires-python = ">=3.13"
-license = { file = "LICENSE" }
+license = "Apache-2.0"
+
+license-files = [
+    "LICENSE",
+    "LICENSE-3RD-PARTY.md",
+    "NOTICE",
+]
 
 authors = [
   { name = "secwexen" }
@@ -36,7 +42,6 @@ classifiers = [
   "Intended Audience :: Information Technology",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.13",
-  "License :: OSI Approved :: Apache-2.0 License",
   "Operating System :: OS Independent",
   "Topic :: Security"
 ]
@@ -89,10 +94,11 @@ Homepage = "https://github.com/secwexen/aapp-mart"
 Repository = "https://github.com/secwexen/aapp-mart"
 
 [project.entry-points.console_scripts]
-aappmart = "aappmart.cli:main"
+aappmart = "aapp_mart.cli.main:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["aapp_mart*"]
 
 [tool.setuptools.package-data]
 aapp_mart = [
@@ -101,8 +107,6 @@ aapp_mart = [
   "**/*.yml",
   "**/*.md",
   "**/*.txt",
-  "SBOM.md",
-  "LICENSE-3RD-PARTY.md",
 ]
 
 [tool.pytest.ini_options]

@@ -44,7 +44,7 @@ Free capabilities include:
 - MITRE ATT&CK mapping
 - Risk scoring
 - CVE analysis
-- Basic threat intelligence
+- Basic threat intelligence from Public Sources
 - Workflow orchestration
 - JSON/CSV reports
 - CLI-based local execution

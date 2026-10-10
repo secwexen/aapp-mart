@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Usage:
     python -m pytest test_aapp_mart.py -v

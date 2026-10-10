@@ -161,6 +161,8 @@ Select Report Format [1-3]: 3
 
 - Docker: Used for containerized labs, and testing.
 
+For full details, refer to the [Installation Guide](docs/getting-started/installation.md) file.
+
 ## Quick Start
 
 ### Clone & Setup
@@ -192,7 +194,6 @@ For full details, refer to the [Quick Start](docs/getting-started/quickstart.md)
 
 ## Documentation
 
-- [Installation Guide](docs/getting-started/installation.md)
 - [API Reference](docs/reference/api-reference.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Testing Guide](docs/testing/testing.md)

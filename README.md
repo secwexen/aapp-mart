@@ -89,7 +89,7 @@ For full details, refer to the [Features](docs/product/features.md) file.
 ### Usage
 
 ```python
-python aapp_mart.py --target 10.10.20.15
+python demo/aapp_mart.py --target 10.10.20.15
 ```
 
 ### Output

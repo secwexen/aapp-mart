@@ -78,6 +78,7 @@ aapp-mart
 │   │   └── usage.md
 │   ├── legal
 │   │   ├── ethics.md
+│   │   ├── licensing.md
 │   │   ├── privacy-policy.md
 │   │   └── terms-of-service.md
 │   ├── product
@@ -88,7 +89,6 @@ aapp-mart
 │   │   └── what-is-aapp-mart.md
 │   ├── reference
 │   │   ├── api-reference.md
-│   │   ├── licensing.md
 │   │   └── references.md
 │   ├── research
 │   │   ├── benchmark.md

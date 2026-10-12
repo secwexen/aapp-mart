@@ -1,68 +1,68 @@
 # Roadmap
 
-This document outlines the planned evolution of AAPP-MART as a cybersecurity engine.  
+This document outlines the planned evolution of AAPP-MART based on its existing architecture and core components.
 
 ## Short Term (Next Releases)
 
 ### Core Engine Improvements
 
-- Improve stability of the core simulation engine
+- Improve stability of the core execution engine
 - Optimize agent scheduling and task orchestration
-- Improve configuration validation and error handling
-- Standardize module interfaces
-- Expand logging capabilities and structured logging
+- Improve input validation and error handling
+- Standardize internal module interfaces
+- Improve structured logging and audit records
 
 ### Attack Graph & Prediction Engine
 
-- Improved attack graph generation algorithms
-- Attack path prioritization improvements
-- Better hybrid prediction strategies combining:
-  - rule-based analysis
-  - machine learning predictors
-- Path pruning and optimization algorithms
-- Attack path confidence scoring
+- Improve attack graph generation algorithms
+- Improve attack path prioritization
+- Refine prediction strategies combining:
+  - Rule-based analysis
+  - Existing machine learning predictors
+- Improve attack path search and pruning
+- Improve prediction scoring consistency
 
-### Risk Engine Enhancements
+### Risk & Vulnerability Analysis
 
-- Expanded vulnerability scoring support
-- Improved risk aggregation model
-- Environmental risk factors (network exposure, privilege level, etc.)
-- Better integration with the Common Vulnerability Scoring System (CVSS)
+- Improve vulnerability data analysis and scoring
+- Refine risk aggregation and prioritization
+- Improve the assessment of environmental risk factors
+- Improve CVSS calculation and vulnerability severity assessment
 
 ### CLI Improvements
 
-- Interactive CLI mode
-- Improved command help and documentation
-- Simulation templates
-- Batch simulation and automation support
+- Improve command help and documentation
+- Improve input validation and error messages
+- Improve prediction, risk analysis, simulation, and reporting commands
+- Improve CLI execution reliability
 
 ## Mid Term
 
-### Visualization & Dashboards
+### Attack Graph & Simulation Improvements
 
-- Interactive attack graph explorer
-- Attack path timeline visualization
-- Risk heatmap improvements
-- Agent activity tracking dashboards
-- Attack scenario replay
+- Improve attack graph analysis for larger input datasets
+- Improve coordination between prediction and simulation workflows
+- Improve simulation result consistency and reproducibility
+- Expand test coverage for core engine and simulation components
 
 ### Reporting Improvements
 
-- Extended HTML security reports
-- Executive risk summaries
-- Attack path explanations
-- Forensic investigation reports
+- Improve JSON and CSV report consistency
+- Improve attack path explanations in reports
+- Improve risk summaries and prioritization details
+- Improve report generation reliability
 
 ## Long Term
 
-### Research Capabilities
+### Performance & Scalability
 
-- Large-scale simulation environments
-- Attack campaign modeling
-- AI-driven adversary behavior models
-- Threat emulation based on real-world attack patterns
+- Optimize attack graph construction and path search for larger datasets
+- Improve execution efficiency across core components
+- Strengthen storage reliability and handling of execution results
 
-### Security Knowledge Integration
+### Security Knowledge & Data Quality
 
-- Integration with public vulnerability databases
-- ATT&CK-style attack technique mapping
+- Improve public vulnerability data retrieval and freshness handling
+- Improve CVE data caching and recovery when sources are unavailable
+- Improve MITRE ATT&CK mapping coverage
+- Improve correlation between vulnerability data, attack techniques, and risk assessments

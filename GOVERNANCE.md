@@ -18,9 +18,6 @@ The purpose of this governance model is to ensure transparent decision-making, c
   - Provide code contributions via pull requests.
   - Participate in discussions and community support.
 
-- Community Members
-  - Help improve documentation and usability.
-
 ## Decision-Making Process
 
 - Technical decisions are made by maintainers with input from contributors.

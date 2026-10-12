@@ -4,9 +4,9 @@
 
 It combines:
 
-- AI-Powered Autonomous Attack Path Prediction – Forecasts how an attacker could navigate your network.
-- Multi-Agent Red Team Simulation – Emulates realistic attacker behavior using multiple collaborating agents.
-- Core Orchestration Engine – Coordinates prediction, simulation, attack-path analysis, agent execution, state management, and result aggregation.
+- AI-Powered Autonomous Attack Path Prediction (AAPP) – Forecasts how an attacker could navigate your network.
+- Multi-Agent Red Team Simulation (MART) – Emulates realistic attacker behavior using multiple collaborating agents.
+- Core Orchestration (ENGINE) – Coordinates prediction, simulation, attack-path analysis, agent execution, state management, and result aggregation.
 - Graph-based threat modeling – Builds attack graphs from vulnerabilities, assets, and relationships.
 - Risk-based analysis – Prioritizes vulnerabilities and predicts likely attack vectors.
 

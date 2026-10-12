@@ -1,20 +1,27 @@
 # Research Foundations & Market Positioning
 
-AAPP-MART sits at the intersection of academic attack graph modeling, BAS tooling, and AI-assisted adversary simulation, combining deterministic graph-based prediction with controlled autonomous simulation.
+AAPP-MART combines attack graph analysis, attack-path prediction, risk assessment, and multi-agent simulation within a modular cybersecurity engine.
 
-It continuously models, predicts, and simulates attacker behavior, providing forward-looking defensive validation.
+Its architecture is designed to support the analysis of potential attack paths and controlled adversarial simulation workflows.
 
-Built on research-grade principles:
+## Research & Engineering Foundations
 
-- Attack Graph Theory – Models assets, privileges, and attacker transitions
-- Risk Modeling – Likelihood × Impact framework
-- Deterministic Simulation – Predictable multi-agent behavior
-- Graph Traversal – DFS, Best-First, or A* exploration
+- **Attack Graph Theory** – Represents relationships between relevant entities and potential attack transitions.
+- **Attack-Path Analysis** – Analyzes graph structures to identify and prioritize potential attack paths.
+- **Risk Assessment** – Evaluates and prioritizes risks using the scoring factors and methods implemented in the engine.
+- **Multi-Agent Simulation** – Coordinates specialized agents within controlled simulation workflows.
+- **Vulnerability Analysis** – Processes CVE data to support vulnerability analysis and risk assessment.
 
-Threat modeling ensures clarity and reproducibility:
+## Threat Modeling
 
-- STRIDE model (Spoofing, Tampering, Repudiation, Info Disclosure, DoS, Privilege Escalation)
-- Adversary Capability Model – Attacker skills, access scope, potential actions
-- Formal Risk Notation – Transparent likelihood, impact, and path scoring
+Threat modeling helps document system boundaries, assumptions, potential threats, and attack scenarios.
 
-Conclusion: AAPP-MART is a defensible, explainable, and academically credible simulation engine, elevating it from a standard tool to a research-grade security platform.
+The project may use established threat modeling methods, such as STRIDE, where explicitly defined in its threat model.
+
+Adversary capabilities and risk-scoring assumptions should be documented according to the models and mechanisms actually implemented.
+
+## Conclusion
+
+AAPP-MART provides a modular foundation for attack-path analysis, risk assessment, and multi-agent security simulation.
+
+Its accuracy, performance, reproducibility, and suitability for research should be evaluated through documented algorithms, reproducible experiments, and appropriate comparative testing.

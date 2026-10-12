@@ -1,25 +1,39 @@
 # Product Positioning
 
-## Proactive Security Validation
+## Proactive Security Analysis
 
-AAPP-MART is positioned as the enterprise choice for (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine). The system is purpose-built to address the needs of large-scale, complex organizations seeking to:
+AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is an open-source cybersecurity engine designed to support attack-path prediction, attack graph analysis, risk assessment, and controlled multi-agent security simulation.
 
-- Proactively test and improve their security controls using fully automated, AI-driven adversary emulation
-- Align offensive security operations with global standards (e.g., MITRE ATT&CK)
-- Support both periodic assessments and continuous cybersecurity validation initiatives
+The project aims to help security practitioners understand potential attack paths, analyze security risks, and explore adversarial scenarios in authorized environments.
+
+AAPP-MART focuses on:
+
+- Analyzing potential attack paths and relationships represented in attack graphs.
+- Supporting risk assessment and vulnerability analysis.
+- Coordinating multi-agent security simulation workflows.
+- Mapping relevant attack information to the MITRE ATT&CK framework.
+- Processing CVE data and basic threat intelligence from public sources.
+- Producing structured security reports for further analysis.
 
 ## Key Differentiators
 
-- AI-Native Simulation: Unlike traditional tools, AAPP-MART leverages machine learning to predict and prioritize likely attack paths unique to each enterprise environment.
-- Multi-Agent Red Team: Orchestrates coordinated, intelligent agents to mimic advanced persistent threats (APTs) and multi-vector attacks.
-- Comprehensive Reporting: Executive-level summaries and technical breakdowns for all stakeholders, supporting transparency and regulatory needs.
-- Integration-Ready: Designed to work with SIEM, SOAR and vulnerability management platforms for a unified security ecosystem.
+- **Attack-Path Analysis:** Combines attack graph analysis, path prediction, and risk assessment within a unified engine.
+- **Multi-Agent Architecture:** Provides a foundation for coordinating specialized agents in controlled security simulation workflows.
+- **Modular Design:** Separates core orchestration, prediction, simulation, risk analysis, and supporting components.
+- **Flexible Execution:** Supports local execution through a command-line interface, with a basic API for supported operations.
+- **Structured Reporting:** Supports JSON and CSV reports for security analysis and record keeping.
+- **Public Security Data:** Supports basic vulnerability analysis and threat intelligence using publicly available security information.
 
 ## Target Users
 
-- CISOs, InfoSec managers, and executive stakeholders seeking actionable security intelligence
-- Security, engineering, and risk teams aiming to proactively assess and improve cyber resilience
-- Internal/External red, blue, and purple teams requiring realistic, repeatable adversary emulation
-- Organizations subject to regulatory or compliance mandates (MITRE ATT&CK, NIST, CIS, PCI DSS, ISO 27001, etc.)
+- Security researchers exploring attack-path analysis and adversarial simulation.
+- Security engineers assessing potential attack paths and prioritizing risks.
+- Red, blue, and purple teams conducting authorized security assessments.
+- Developers and researchers experimenting with graph-based security analysis and multi-agent simulation.
+- Organizations seeking an extensible foundation for security analysis and controlled simulation.
 
-By integrating AAPP-MART, organizations transition from reactive security testing to data-driven risk reduction, closing gaps before adversaries find them.
+## Intended Use
+
+AAPP-MART is intended for authorized security assessment, defensive research, and controlled simulation environments.
+
+Its effectiveness, prediction accuracy, performance, and suitability for specific security workflows depend on the implemented capabilities, input data quality, configuration, and evaluation results.

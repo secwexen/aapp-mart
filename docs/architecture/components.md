@@ -15,3 +15,9 @@ Together, AAPP and MART create a fully automated offensive security engine capab
 ## Core Orchestration (ENGINE)
 
 The CORE engine coordinates multi-agent behavior, manages simulation flow, and ensures consistent interaction between all system modules.
+
+## Component Interaction
+
+ENGINE coordinates the overall workflow. AAPP supports attack-path and risk analysis, while MART handles the simulation workflows supported by the implementation.
+
+Actual capabilities depend on the implemented modules and their tests.

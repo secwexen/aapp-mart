@@ -1,15 +1,29 @@
-# AAPP-MART Testing
+# Testing
 
-This guide describes how to run, validate, and maintain the automated tests for the AAPP-MART project.
+This document describes how to run tests for AAPP-MART and verify the behavior of its core components.
 
-## 1. Unit Testing
+## Prerequisites
 
-Unit tests ensure individual modules behave as expected. All new features or bug fixes must include corresponding tests.
+- Install a compatible Python version.
+- Activate the project's virtual environment.
+- Install AAPP-MART and its test dependencies.
 
-### Run All Unit Tests
+## Running Tests
+
+Run the complete test suite:
+
+```python
+python -m pytest
+```
+
+Run tests with detailed output:
 
 ```python
 python -m pytest -v
 ```
 
-> Make sure all tests pass before submitting code or pull requests.
+Run tests from a specific directory:
+
+```python
+python -m pytest tests/
+```

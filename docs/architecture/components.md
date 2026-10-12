@@ -1,6 +1,8 @@
-# Components
+# Core Components
 
-AAPP‑MART operates through three major components that work together to predict and simulate attack paths.
+This document describes the three major subsystems of AAPP-MART: AI-Powered Autonomous Attack Path Prediction (AAPP), Multi-Agent Red Team Simulation (MART), and Core Orchestration (ENGINE).
+
+It outlines their responsibilities, relationships, and roles within the overall architecture.
 
 ## AI-Powered Autonomous Attack Path Prediction (AAPP)
 

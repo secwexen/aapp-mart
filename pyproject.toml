@@ -11,6 +11,7 @@ requires-python = ">=3.13"
 license = "Apache-2.0"
 license-files = [
     "LICENSE",
+    "NOTICE",
 ]
 
 authors = [
@@ -83,14 +84,15 @@ dev = [
   "black>=24.0",
   "build>=1.2",
   "loguru>=0.7",
-  "ruff>=0.4"
+  "ruff>=0.4",
+  "pre-commit"
 ]
 
 [project.urls]
 Homepage = "https://github.com/secwexen/aapp-mart"
 Repository = "https://github.com/secwexen/aapp-mart"
 
-[project.entry-points.console_scripts]
+[project.scripts]
 aappmart = "aapp_mart.cli.main:main"
 
 [tool.setuptools.packages.find]

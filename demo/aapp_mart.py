@@ -277,7 +277,10 @@ class AAPPMARTDemo:
 
         clear_screen()
 
-        print("\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===\n")
+        print(
+            "\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction "
+            "& Multi-Agent Red Team Simulation Engine Demo ===\n"
+        )
 
         print("[*] Simulation Workflow Started")
         print(f"[*] Initial Entry Point: {self.target} ({self.hostname}, {self.os})\n")
@@ -609,7 +612,7 @@ def main() -> int:
     print(f"[*] Duration                        : {report.duration:.2f}s")
     print(f"[*] Simulated Step Count            : {len(report.attack_path)} Stages")
     print(f"[*] Affected Assets                 : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
-    print(f"[*] Started At                      : {report.started_at}") 
+    print(f"[*] Started At                      : {report.started_at}")
     print(f"[*] Generated At                    : {report.generated_at}")
 
     print("\n--- Affected Critical Assets ---\n")

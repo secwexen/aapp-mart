@@ -83,3 +83,29 @@ make test
 ```
 
 The test command uses the project's configured pytest options, including coverage reporting.
+
+## 6. Run Code Quality Checks
+
+Run linting and formatting checks:
+
+```bash
+make lint
+```
+
+This checks the code using the tools configured in the project.
+
+To apply formatting and automatically fix supported import-order issues:
+
+```bash
+make format
+```
+
+## 7. Build the Package
+
+Build the distribution packages:
+
+```bash
+make build
+```
+
+The generated distribution files are placed in the `dist/` directory.

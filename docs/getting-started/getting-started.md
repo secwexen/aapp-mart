@@ -7,7 +7,6 @@ This guide will help you quickly set up and start using the AAPP-MART system for
 Clone the repository and move into the project directory:
 
 ```bash
-# Clone repository
 git clone https://github.com/secwexen/aapp-mart.git
 cd aapp-mart
 ```

@@ -1,31 +1,33 @@
 .PHONY: all test lint format typecheck security dev clean build docs
 
-# Default: run tests
+# Default target: run tests
 all: test
 
-# Run unit tests with coverage
+# Run tests with coverage
 test:
-	nox -s tests
+	python -m pytest
 
-# Run linting
+# Run linting and check formatting
 lint:
-	nox -s lint
+	python -m ruff check src/aapp_mart tests scripts demo
+	python -m black --check src/aapp_mart tests scripts demo
 
-# Auto-format code
+# Auto-format code and sort imports
 format:
-	nox -s format
+	python -m ruff check --select I --fix src/aapp_mart tests scripts demo
+	python -m black src/aapp_mart tests scripts demo
 
 # Static type checking
 typecheck:
-	nox -s typecheck
+	python -m mypy src/aapp_mart
 
-# Security checks
+# Security-focused static analysis
 security:
-	nox -s security
+	python -m ruff check --select S src/aapp_mart tests
 
-# Setup development environment and install pre-commit hooks
+# Install development dependencies and Git hooks
 dev:
-	nox -s dev
+	python -m pip install -e ".[dev]"
 	pre-commit install
 
 # Build distribution packages
@@ -34,15 +36,14 @@ build:
 
 # Build local project documentation
 docs:
-	nox -s docs
+	bash scripts/dev/build_docs.sh
 
 # Clean caches and build artifacts
 clean:
-	find . -type d -name "__pycache__" -exec rm -rf {} +
-	find . -type d -name ".pytest_cache" -exec rm -rf {} +
-	find . -type d -name ".nox" -exec rm -rf {} +
-	find . -type d -name ".mypy_cache" -exec rm -rf {} +
-	find . -type d -name ".ruff_cache" -exec rm -rf {} +
-	find . -type d -name "dist" -exec rm -rf {} +
-	find . -type d -name "build" -exec rm -rf {} +
-	find . -type d -name "*.egg-info" -exec rm -rf {} +
+	find . -type d -name "__pycache__" -prune -exec rm -rf {} +
+	find . -type d -name ".pytest_cache" -prune -exec rm -rf {} +
+	find . -type d -name ".mypy_cache" -prune -exec rm -rf {} +
+	find . -type d -name ".ruff_cache" -prune -exec rm -rf {} +
+	find . -type d -name "dist" -prune -exec rm -rf {} +
+	find . -type d -name "build" -prune -exec rm -rf {} +
+	find . -type d -name "*.egg-info" -prune -exec rm -rf {} +

@@ -113,6 +113,9 @@ addopts = "--cov=aapp_mart --cov-report=term-missing -n auto"
 testpaths = ["tests"]
 asyncio_mode = "auto"
 
+[tool.pylint.format]
+max-line-length = 120
+
 [tool.coverage.run]
 branch = true
 source = ["aapp_mart"]

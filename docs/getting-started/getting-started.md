@@ -17,8 +17,11 @@ cd aapp-mart
 The main project components are organized as follows:
 
 ```text
-docs/                 # Project documentation
-tests/                # Automated tests
+├── docs/                 # Project documentation
+├── src/aapp_mart/        # Application source code
+├── tests/                # Automated tests
+├── Makefile              # Development and build commands
+└── pyproject.toml        # Project and tool configuration
 ```
 
 ## 3. Install Python
@@ -72,3 +75,11 @@ Run the automated tests before making changes:
 ```python
 pytest -m pytest -v
 ```
+
+Alternatively, use the Makefile target:
+
+```bash
+make test
+```
+
+The test command uses the project's configured pytest options, including coverage reporting.

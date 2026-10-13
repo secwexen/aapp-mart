@@ -28,42 +28,45 @@ Safety:
 """
 
 import argparse
-import json
 import csv
+import ipaddress
+import json
 import os
+import re
+import subprocess
 import time
 import uuid
-import ipaddress
-import re
+from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from dataclasses import dataclass, asdict
-from typing import List, Optional
 
 
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+def clear_screen() -> None:
+    """Clear the terminal screen."""
+    command = ["cls"] if os.name == "nt" else ["clear"]
+    subprocess.run(command, check=False)
 
 
-def confirm_exit():
+def confirm_exit() -> bool:
+    """Ask whether to exit after an interruption."""
     while True:
         try:
-            answer = input(
-                "\n[!] Simulation Detected. Exit? [y/N]: "
-            ).strip()
+            answer = (
+                input("\n[!] Simulation interrupted. Exit? [y/N]: ").strip().lower()
+            )
 
-            if answer == "y":
-               print("[!] Exiting...")
-               return True
+            if answer in {"y", "yes"}:
+                print("[!] Exiting...")
+                return True
 
-            if answer in {"", "N"}:
-               print("[*] Resuming Simulation...")
-               return False
+            if answer in {"", "N", "no"}:
+                print("[*] Resuming simulation...")
+                return False
 
             print("[!] Please enter y or N.")
 
         except EOFError:
-            print("\n[!] Input Stream Closed.")
+            print("\n[!] Input stream closed. Exiting...")
             return True
 
 # =========================
@@ -72,6 +75,7 @@ def confirm_exit():
 
 @dataclass
 class AttackStep:
+    """Represent one step in a simulated attack path."""
     agent: str
     phase: str
     mitre_id: str
@@ -85,6 +89,7 @@ class AttackStep:
 
 @dataclass
 class CompromisedAsset:
+    """Represent an asset in the simulation results."""
     system: str
     ip: str
     type: str
@@ -95,6 +100,7 @@ class CompromisedAsset:
 
 @dataclass
 class SimulationReport:
+    """Store simulation metadata, attack steps, and results."""
     schema_version: str
     simulation_id: str
     target: str
@@ -153,25 +159,33 @@ VALID_STATUSES = {
 }
 
 
-def validate_attack_steps(steps: List[AttackStep]) -> bool:
+def validate_attack_steps(steps: list[AttackStep]) -> bool:
+    """Validate simulation steps and their supported ATT&CK techniques."""
     return all(
         MITRE_PATTERN.fullmatch(step.mitre_id) is not None
+        and step.mitre_id in MITRE_ATTACK
+        and step.severity.upper() in VALID_SEVERITIES
+        and step.status.upper() in VALID_STATUSES
         and 0.0 <= step.confidence <= 1.0
-        and (
-            step.cve_id is None
-            or CVE_PATTERN.fullmatch(step.cve_id) is not None
-        )
+        and (step.cve_id is None or CVE_PATTERN.fullmatch(step.cve_id) is not None)
         for step in steps
     )
 
-def validate_assets(assets):
+
+def validate_assets(assets: list[CompromisedAsset]) -> bool:
+    """Validate asset IP addresses, severity levels, and statuses."""
     try:
-        return all(
+        for asset in assets:
             ipaddress.ip_address(asset.ip)
-            and asset.severity.upper() in VALID_SEVERITIES
-            and asset.status.upper() in VALID_ASSET_STATUSES
-            for asset in assets
-        )
+
+            if asset.severity.upper() not in VALID_SEVERITIES:
+                return False
+
+            if asset.status.upper() not in VALID_ASSET_STATUSES:
+                return False
+
+        return True
+
     except (ValueError, AttributeError, TypeError):
         return False
 
@@ -182,19 +196,41 @@ def validate_assets(assets):
 
 
 class RiskEngine:
+    """Calculate a basic risk score for a simulated attack path."""
 
-    W = {"LOW": 2, "MEDIUM": 5, "HIGH": 8, "CRITICAL": 10}
+    W: dict[str, int] = {
+        "LOW": 2,
+        "MEDIUM": 5,
+        "HIGH": 8,
+        "CRITICAL": 10,
+    }
 
     @classmethod
-    def calculate(cls, steps, assets):
+    def calculate(
+        cls,
+        steps: list[AttackStep],
+        assets: list[CompromisedAsset],
+    ) -> float:
+        """Calculate a risk score from attack steps and affected assets."""
         if not steps:
             return 0.0
 
-        s = sum(cls.W.get(x.severity.upper(), 0) for x in steps) / len(steps)
-        a = sum(cls.W.get(x.severity.upper(), 0) for x in assets) / max(len(assets), 1)
-        success = sum(x.status.upper() == "SUCCESS" for x in steps) / len(steps)
+        step_score = sum(cls.W.get(step.severity.upper(), 0) for step in steps) / len(
+            steps
+        )
 
-        return round(min(s * .45 + a * .40 + success * 1.5, 10), 2)
+        asset_score = sum(
+            cls.W.get(asset.severity.upper(), 0) for asset in assets
+        ) / max(len(assets), 1)
+
+        success_ratio = sum(step.status.upper() == "SUCCESS" for step in steps) / len(
+            steps
+        )
+
+        return round(
+            min(step_score * 0.45 + asset_score * 0.40 + success_ratio * 1.5, 10),
+            2,
+        )
 
 
 # =========================
@@ -203,6 +239,7 @@ class RiskEngine:
 
 
 def calculate_risk_label(score: float) -> str:
+    """Convert a risk score into a severity label."""
     if score >= 9.0:
         return "CRITICAL"
     elif score >= 7.0:
@@ -219,8 +256,10 @@ def calculate_risk_label(score: float) -> str:
 
 
 class AAPPMARTDemo:
+    """Run the predefined AAPP-MART demonstration workflow."""
 
     def __init__(self, target: str):
+        """Initialize the demo with a target IP address."""
         self.target = target
         self.hostname = "WORKSTATION-01"
         self.os = "Linux"
@@ -231,6 +270,7 @@ class AAPPMARTDemo:
         self.started_at = ""
 
     def run(self) -> SimulationReport:
+        """Execute the predefined simulation and return its report."""
         start = time.perf_counter()
         self.started_at: str = datetime.now(timezone.utc).isoformat()
 
@@ -303,18 +343,15 @@ class AAPPMARTDemo:
             raise ValueError("Invalid MITRE ATT&CK technique detected.")
 
         for step in attack_chain:
-            while True:
-                try:
-                    self._simulate_step(step)
-                    time.sleep(0.5)
-                    break
+            self._simulate_step(step)
 
-                except KeyboardInterrupt:
-                    if confirm_exit():
-                       raise
+            try:
+                time.sleep(0.5)
+            except KeyboardInterrupt:
+                if confirm_exit():
+                    raise
 
-                    print("[*] Continuing Simulation...")
-                    continue
+                print("[*] Continuing simulation...")
 
         compromised_assets = [
             CompromisedAsset(
@@ -403,6 +440,7 @@ class AAPPMARTDemo:
 
 
     def _simulate_step(self, step: AttackStep):
+        """Display one simulated attack step."""
         cve_part = f" | CVE: {step.cve_id}" if step.cve_id else ""
 
         print(
@@ -417,6 +455,7 @@ class AAPPMARTDemo:
 
 
     def _log(self, message: str, success: bool = False):
+        """Print a simulation status message."""
         prefix = "[✓]" if success else "[*]"
         print(f"{prefix} {message}")
 
@@ -427,6 +466,7 @@ class AAPPMARTDemo:
 
 
 class ReportExporter:
+    """Export simulation results as JSON."""
 
     @staticmethod
     def export_json(report: SimulationReport, output_path: str) -> bool:
@@ -452,6 +492,7 @@ class ReportExporter:
 
 
 class CSVReportExporter:
+    """Export simulated attack steps as CSV."""
 
     @staticmethod
     def export_csv(report: SimulationReport, output_path: str) -> bool:
@@ -502,6 +543,7 @@ class CSVReportExporter:
 
 
 def main() -> int:
+    """Parse CLI arguments, run the demo, and export the selected report."""
 
     parser = argparse.ArgumentParser(
         prog="aapp-mart",
@@ -539,8 +581,8 @@ def main() -> int:
     except KeyboardInterrupt:
         return 130
 
-    except Exception as e:
-        print(f"\n[!] Simulation Workflow Failed: {e}")
+    except Exception as exc:  # pylint: disable=broad-exception-caught
+        print(f"\n[!] Simulation workflow failed: {exc}")
         return 1
 
     compromised = sum(

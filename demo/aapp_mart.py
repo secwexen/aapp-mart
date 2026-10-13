@@ -471,6 +471,7 @@ class ReportExporter:
 
     @staticmethod
     def export_json(report: SimulationReport, output_path: str) -> bool:
+        """Export the simulation report as JSON."""
         try:
             path = Path(output_path)
             path.parent.mkdir(parents=True, exist_ok=True)
@@ -497,6 +498,7 @@ class CSVReportExporter:
 
     @staticmethod
     def export_csv(report: SimulationReport, output_path: str) -> bool:
+        """Export the simulation attack steps as CSV."""
         try:
             path = Path(output_path)
             path.parent.mkdir(parents=True, exist_ok=True)

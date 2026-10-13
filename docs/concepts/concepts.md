@@ -1,77 +1,97 @@
 # Concepts
 
-This document introduces the key concepts and terminology behind **AAPP-MART** (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine). Understanding these concepts is essential for using, extending, or reviewing the system effectively.
+This document introduces the core concepts behind AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine).
 
 ## Core Concepts
 
 ### 1. Attack Graph
 
-An Attack Graph is a directed graph (G = (V, E)) where:
+An attack graph represents relationships between assets, security-relevant states, and potential attack transitions.
 
-- Vertices (V) represent assets or security-relevant states (hosts, users, privileges, network services).
-- Edges (E) represent feasible transitions an attacker could exploit (vulnerability exploitation, privilege escalation, lateral movement).
+- **Vertices (V):** Represent assets or security-relevant states.
+- **Edges (E):** Represent potential transitions between states.
+- **Graph Analysis:** Helps identify relationships and potential paths through the graph.
 
-Edges are annotated with likelihood and exploitability weights to support predictive scoring.
+Graph weights and exploitability metrics may be used when supported by the implemented model and available input data.
 
 ### 2. AI-Powered Autonomous Attack Path Prediction (AAPP)
 
-AAPP analyzes the target environment to predict the most probable attack paths. It uses:
+AAPP focuses on analyzing security-related data and attack graph structures to identify and prioritize potential attack paths.
 
-- Graph-based analysis
-- Rule-based, ML, or hybrid AI decision logic
-- Factors such as exploitability, exposure, and asset criticality
+Its intended responsibilities include:
 
-AAPP outputs risk-scored attack paths for simulation or reporting.
+- Graph-based analysis.
+- Attack-path identification and prioritization.
+- Risk-related scoring.
+- Processing relevant vulnerability information.
+
+The prediction methods and accuracy depend on the algorithms and models implemented in the application.
 
 ### 3. Multi-Agent Red Team Simulation (MART)
 
-MART is the autonomous red team engine that simulates adversary behavior using specialized agents:
+MART represents the multi-agent simulation subsystem of AAPP-MART.
 
-- Reconnaissance Agent – gathers environmental information
-- Exploitation Agent – attempts logical exploit chains
-- Privilege Escalation Agent – escalates permissions when possible
-- Lateral Movement Agent – moves across network boundaries
-- Persistence Agent – simulates maintaining access
-- Reporting Agent – logs and summarizes actions
+Its intended responsibilities include:
 
-Agents collaborate and make decisions independently, creating realistic attack simulations.
+- Coordinating supported simulation workflows.
+- Modeling adversarial behavior through implemented agent components.
+- Tracking simulation state and outcomes.
+- Associating relevant actions with MITRE ATT&CK techniques where supported.
 
-### 4. Simulation Modes
+The available agents and their capabilities depend on the current implementation. Simulated actions should not be interpreted as proof that a real system has been compromised.
 
-- Prediction-Only Mode – builds attack graphs and forecasts paths without executing actions. Safe for continuous monitoring.
-- Simulation Mode – runs controlled, non-destructive simulations to evaluate defenses. Intended for lab environments.
+### 4. Analysis and Simulation Workflows
+
+AAPP-MART is designed to support attack-path analysis, risk assessment, simulation, and reporting workflows.
+
+The exact workflow depends on the available commands and implemented components.
+
+Analysis results and simulation outcomes should be distinguished clearly. A simulated attack path does not, by itself, confirm a vulnerability or demonstrate successful exploitation.
 
 ### 5. Risk Scoring
 
-Risk is calculated as:
+Risk scoring helps prioritize potential security issues and attack paths.
 
-$$
-Risk = Likelihood \times Impact
-$$
+Depending on the implemented model, risk assessment may consider factors such as:
 
-Where:
+- Vulnerability severity.
+- Asset criticality.
+- Attack-path characteristics.
+- Exploitability-related information.
+- Other documented scoring factors.
 
-- **Likelihood** – probability of a given path succeeding
-- **Impact** – potential effect on assets or operations
-
-Additional modifiers include asset criticality weighting, CVSS integration, and confidence scores.
+The calculation method, score range, and interpretation must follow the actual implementation. Risk scores should not be interpreted as precise probabilities unless the model explicitly supports that interpretation.
 
 ### 6. Operational Safeguards
 
-AAPP-MART is designed for safe, authorized usage:
+AAPP-MART is intended for authorized security assessment, defensive research, and controlled simulation.
 
-- No destructive payloads
-- No uncontrolled exploitation
-- Scope is explicitly defined
-- Detailed logging and deterministic execution for auditability
+Responsible operation includes:
 
-### 7. MITRE ATT&CK Alignment
+- Testing only within authorized environments.
+- Defining and reviewing the intended scope.
+- Understanding the behavior of the selected workflow.
+- Reviewing execution results and logs where available.
+- Avoiding assumptions that simulated outcomes represent real security incidents.
 
-AAPP-MART maps predicted paths and agent behaviors to MITRE ATT&CK tactics and techniques for standardized reporting and defensible results.
+Specific safety controls depend on the implemented functionality and configuration.
 
-### 8. Deployment Patterns
+### 7. MITRE ATT&CK Mapping
 
-- Standalone CLI – local execution and automation
-- REST API (planned) – programmatic integration
-- Air-Gapped / Offline Mode – isolated environments
-- Containerization (planned) – Docker-based deployments
+MITRE ATT&CK provides a common reference for describing adversary tactics and techniques.
+
+AAPP-MART can use ATT&CK mapping to associate supported attack information or simulation steps with relevant techniques.
+
+The scope of mapping depends on the techniques and data structures implemented in the application. Mapping does not imply that every ATT&CK technique is supported or simulated.
+
+### 8. Execution and Deployment
+
+AAPP-MART Free is designed to support local execution through its command-line interface.
+
+Other execution options depend on the components included and configured in the installed version.
+
+- **CLI:** Provides access to supported command-line operations.
+- **API:** Exposes supported operations where the API implementation is available.
+- **Containerization:** Can be used according to the repository's Docker configuration.
+
+Deployment requirements and supported configurations should be documented based on tested implementations.

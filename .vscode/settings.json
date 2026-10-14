@@ -4,6 +4,9 @@
         "./src",
         "."
     ],
+
+    "files.insertFinalNewline": true,
+    "files.eol": "\n",
     
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,

@@ -93,7 +93,7 @@ Homepage = "https://github.com/secwexen/aapp-mart"
 Repository = "https://github.com/secwexen/aapp-mart"
 
 [project.scripts]
-aappmart = "aapp_mart.cli.main:main"
+aapp-mart = "aapp_mart.cli.main:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -115,6 +115,10 @@ asyncio_mode = "auto"
 
 [tool.pylint.format]
 max-line-length = 120
+
+[tool.black]
+line-length = 120
+target-version = ["py313"]
 
 [tool.coverage.run]
 branch = true

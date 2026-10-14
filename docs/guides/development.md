@@ -52,11 +52,11 @@ python -m venv .venv
 source .venv/bin/activate     # Linux/Mac
 .\.venv\Scripts\Activate.ps1  # Windows
 
-# Install dependencies
-pip install -r requirements.txt
+# Install AAPP-MART
+python -m pip install .
 
-# Install dev dependencies
-pip install -r requirements-dev.txt
+# Install the development dependencies
+python -m pip install -e ".[dev]"
 ```
 
 Run tests to verify the environment:

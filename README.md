@@ -181,6 +181,9 @@ source .venv/bin/activate     # Linux/Mac
 
 # Install AAPP-MART
 python -m pip install .
+
+# Install the development dependencies
+python -m pip install -e ".[dev]"
 ```
 
 ### 2. Run Tests

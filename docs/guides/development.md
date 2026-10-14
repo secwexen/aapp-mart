@@ -50,10 +50,20 @@ cd aapp-mart
 
 Create virtual environment:
 
-```bash
+```python
 python -m venv .venv
-source .venv/bin/activate     # Linux/Mac
-.\.venv\Scripts\Activate.ps1  # Windows
+```
+
+Activate it on Linux or macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+Activate it on Windows:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
 ```
 
 Install AAPP-MART:

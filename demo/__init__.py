@@ -1,1 +1,0 @@
-"""AAPP-MART demonstration modules."""

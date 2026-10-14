@@ -112,6 +112,10 @@ aapp_mart = [
 [tool.pytest.ini_options]
 addopts = "--cov=aapp_mart --cov-report=term-missing -n auto"
 testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+pythonpath = ["src", "."]
 asyncio_mode = "auto"
 
 [tool.pylint.format]

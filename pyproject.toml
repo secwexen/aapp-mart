@@ -91,6 +91,7 @@ dev = [
 [project.urls]
 Homepage = "https://github.com/secwexen/aapp-mart"
 Repository = "https://github.com/secwexen/aapp-mart"
+"Bug Tracker" = "https://github.com/secwexen/aapp-mart/issues"
 
 [project.scripts]
 aapp-mart = "aapp_mart.cli.main:main"

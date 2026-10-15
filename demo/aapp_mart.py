@@ -357,7 +357,6 @@ class AAPPMARTDemo:
                 if confirm_exit():
                     raise
 
-                print("[*] Continuing simulation...")
 
         compromised_assets = [
             CompromisedAsset(
@@ -654,9 +653,9 @@ def main() -> int:
 
     print("\n=== REPORT EXPORT FORMAT ===\n")
 
-    print("[1] JSON Report")
-    print("[2] CSV Report")
-    print("[3] JSON + CSV Report")
+    print("1. JSON Report")
+    print("2. CSV Report")
+    print("3. JSON + CSV Report")
 
     while True:
         try:

@@ -662,7 +662,7 @@ def main() -> int:
             if choice in {"1", "2", "3"}:
                 break
 
-            print("[!] Invalid Selection. Please Choose 1, 2, or 3.")
+            print("[!] Invalid Selection. Please Choose 1, 2, and 3.")
 
         except KeyboardInterrupt:
             if confirm_exit():

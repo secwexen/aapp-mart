@@ -17,8 +17,7 @@ Features:
    - CSV Report Generation
    - CLI-Based Local Execution
 
-Requirements:
-    Python 3.13+
+Install dependencies:
     python -m pip install rich
 
 Usage:

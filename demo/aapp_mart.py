@@ -17,6 +17,10 @@ Features:
    - CSV Report Generation
    - CLI-Based Local Execution
 
+Requirements:
+    Python 3.13+
+    python -m pip install rich
+
 Usage:
     python aapp_mart.py --target 10.10.20.15
     python aapp_mart.py --help

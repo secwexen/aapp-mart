@@ -489,7 +489,7 @@ class ReportExporter:
             return True
 
         except (PermissionError, OSError, TypeError) as e:
-            print(f"\n[!] Error Exporting JSON Report: ({type(e).__name__}) {e}")
+            print(f"\n[-] Error Exporting JSON Report: ({type(e).__name__}) {e}")
             return False
 
 
@@ -542,7 +542,7 @@ class CSVReportExporter:
             return True
 
         except (PermissionError, OSError, csv.Error) as e:
-            print(f"[!] Error Exporting CSV Report: ({type(e).__name__}) {e}")
+            print(f"[-] Error Exporting CSV Report: ({type(e).__name__}) {e}")
             return False
 
 # =========================
@@ -590,7 +590,7 @@ def main() -> int:
         return 130
 
     except Exception as exc:  # pylint: disable=broad-exception-caught
-        print(f"\n[!] Simulation workflow failed: {exc}")
+        print(f"\n[-] Simulation workflow failed: {exc}")
         return 1
 
     compromised = sum(

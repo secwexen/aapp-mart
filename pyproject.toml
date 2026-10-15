@@ -19,20 +19,26 @@ authors = [
 ]
 
 keywords = [
-  "python",
-  "security-automation",
-  "cybersecurity",
-  "offensive-security",
-  "red-team",
+  "adversary-emulation",
   "ai-security",
-  "defensive-security",
-  "multi-agent-system",
-  "mitre-attack",
   "attack-graph",
-  "risk-scoring",
+  "attack-path-analysis",
+  "attack-path-prediction",
   "attack-simulation",
-  "threat-simulation",
-  "attack-path-prediction"
+  "autonomous-agents",
+  "breach-and-attack-simulation",
+  "cybersecurity",
+  "defensive-security",
+  "mitre-attack",
+  "multi-agent-systems",
+  "offensive-security",
+  "purple-team",
+  "python",
+  "red-team",
+  "risk-assessment",
+  "security-automation",
+  "security-validation",
+  "threat-modeling",
 ]
 
 classifiers = [

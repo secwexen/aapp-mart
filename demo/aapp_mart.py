@@ -59,7 +59,7 @@ def confirm_exit() -> bool:
                 print("[!] Exiting...")
                 return True
 
-            if answer in {"", "N", "no"}:
+            if answer in {"", "n", "no"}:
                 print("[*] Resuming simulation...")
                 return False
 
@@ -662,7 +662,7 @@ def main() -> int:
             if choice in {"1", "2", "3"}:
                 break
 
-            print("[!] Invalid Selection. Please Choose 1, 2, and 3.")
+            print("[!] Invalid Selection. Please Choose 1, 2, or 3.")
 
         except KeyboardInterrupt:
             if confirm_exit():

@@ -411,9 +411,12 @@ class AAPPMARTDemo:
         )
 
         executive_summary = (
-            f"Simulated attack initiated on ({self.target}) ({self.hostname}) resulted in a {risk_label} risk environment. "
-            f"The simulation engine successfully performed simulated privilege escalation using CVE-2024-1086, affecting {len(compromised_assets)} "
-            f"assets including the Domain Controller and Backup Server."
+            f"Simulated attack initiated on ({self.target}) ({self.hostname}) "
+            f"resulted in a {risk_label} risk environment. "
+            f"The simulation engine successfully performed simulated "
+            f"privilege escalation using CVE-2024-1086, affecting "
+            f"{len(compromised_assets)} assets including the Domain Controller "
+            f"and Backup Server."
         )
 
         total_duration = time.perf_counter() - start
@@ -611,7 +614,12 @@ def main() -> int:
     print(f"[*] Summary                         : {report.short_summary}")
     print(f"[*] Duration                        : {report.duration:.2f}s")
     print(f"[*] Simulated Step Count            : {len(report.attack_path)} Stages")
-    print(f"[*] Affected Assets                 : {len(report.compromised_assets)} Systems ({compromised} Compromised, {isolated} Isolated, {blocked} Blocked)")
+    print(
+        f"[*] Affected Assets                 : " 
+        f"{len(report.compromised_assets)} Systems "
+        f"({compromised} Compromised, "
+        f"{isolated} Isolated, {blocked} Blocked)"
+    )
     print(f"[*] Started At                      : {report.started_at}")
     print(f"[*] Generated At                    : {report.generated_at}")
 

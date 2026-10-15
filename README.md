@@ -197,6 +197,7 @@ For full details, refer to the [Quick Start](docs/getting-started/quickstart.md)
 
 ## Documentation
 
+- [Architecture](docs/architecture/architecture.md)
 - [API Reference](docs/reference/api-reference.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Testing Guide](docs/testing/testing.md)

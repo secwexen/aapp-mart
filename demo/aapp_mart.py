@@ -488,7 +488,7 @@ class ReportExporter:
 
             print(f"\n[+] JSON Report Exported: {output_path}")
             return True
-            
+
         except (PermissionError, OSError, TypeError) as e:
             print(f"\n[!] Error Exporting JSON Report: ({type(e).__name__}) {e}")
             return False
@@ -615,7 +615,7 @@ def main() -> int:
     print(f"[*] Duration                        : {report.duration:.2f}s")
     print(f"[*] Simulated Step Count            : {len(report.attack_path)} Stages")
     print(
-        f"[*] Affected Assets                 : " 
+        f"[*] Affected Assets                 : "
         f"{len(report.compromised_assets)} Systems "
         f"({compromised} Compromised, "
         f"{isolated} Isolated, {blocked} Blocked)"
@@ -668,7 +668,7 @@ def main() -> int:
         except KeyboardInterrupt:
             if confirm_exit():
                 return 130
-        
+
         except EOFError:
             print("\n[!] Input Stream Closed.")
             return 130

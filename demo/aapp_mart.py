@@ -31,21 +31,20 @@ import argparse
 import csv
 import ipaddress
 import json
-import os
 import re
-import subprocess
 import time
 import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Optional
+from rich.console import Console
 
+console = Console()
 
 def clear_screen() -> None:
     """Clear the terminal screen."""
-    command = ["cls"] if os.name == "nt" else ["clear"]
-    subprocess.run(command, check=False)
+    console.clear()
 
 
 def confirm_exit() -> bool:

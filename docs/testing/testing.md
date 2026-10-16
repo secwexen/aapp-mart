@@ -38,8 +38,6 @@ Install the development dependencies:
 python -m pip install -e ".[dev]"
 ```
 
-The project requires Python 3.13+.
-
 ## Run Tests
 
 Run the complete test suite:

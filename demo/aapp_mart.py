@@ -473,7 +473,7 @@ class AAPPMARTDemo:
 # =========================
 
 
-class ReportExporter:
+class JSONReportExporter:
     """Export simulation results as JSON."""
 
     @staticmethod
@@ -490,7 +490,7 @@ class ReportExporter:
             print(f"\n[+] JSON Report Exported: {output_path}")
             return True
 
-        except (PermissionError, OSError, TypeError) as e:
+        except (PermissionError, OSError, json.Error) as e:
             print(f"\n[-] Error Exporting JSON Report: ({type(e).__name__}) {e}")
             return False
 
@@ -678,7 +678,7 @@ def main() -> int:
     csv_success = True
 
     if choice in {"1", "3"}:
-        json_success = ReportExporter.export_json(report, json_output_file)
+        json_success = JSONReportExporter.export_json(report, json_output_file)
 
     if choice in {"2", "3"}:
         csv_success = CSVReportExporter.export_csv(report, csv_output_file)

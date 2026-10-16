@@ -45,3 +45,9 @@ Run the complete test suite:
 ```python
 python -m pytest -v
 ```
+
+Alternatively, use the Makefile target:
+
+```bash
+make test
+```

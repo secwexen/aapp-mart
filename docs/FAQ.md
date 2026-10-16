@@ -94,3 +94,9 @@ Depending on the analysis and configured capabilities, inputs may include:
 - Threat intelligence indicators
 
 The quality and completeness of the input data influence the relevance of predictions and risk assessments. Users should validate important findings against their actual environment and use the system only within explicitly authorized assessment scopes.
+
+## 9. How can I contribute to AAPP-MART?
+
+Contributions are welcome.
+
+See the [Contributing](../CONTRIBUTING.md) for contribution guidelines.

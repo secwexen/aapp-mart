@@ -67,6 +67,12 @@ Install AAPP-MART:
 python -m pip install .
 ```
 
+Install the development dependencies:
+
+```bash
+python -m pip install -e ".[dev]"
+```
+
 ## 5. Run the Test Suite
 
 Run the automated tests before making changes:

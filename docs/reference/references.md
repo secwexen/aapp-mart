@@ -20,6 +20,6 @@ vulnerability intelligence, and security validation capabilities.
 ## 3. Supporting Security & Technical References
 
 - [MITRE D3FEND](https://d3fend.mitre.org/) — Defensive cybersecurity techniques and countermeasures.
-- [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks) — Secure configuration recommendations for systems and applications.
+- [Kaspersky Threat Intelligence Portal](https://www.kaspersky.com/enterprise-security/threat-intelligence-portal) — Threat intelligence research, IOC enrichment, threat investigation, and malware analysis.
 - [NetworkX Documentation](https://networkx.org/documentation/stable/) — Graph structures and algorithms for attack-graph construction and analysis.
 - [scikit-learn Documentation](https://scikit-learn.org/stable/) — Machine-learning algorithms, preprocessing, model evaluation, and predictive analysis.

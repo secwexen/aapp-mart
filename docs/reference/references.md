@@ -1,6 +1,7 @@
 # External References
 
-The following resources are recommended for additional learning, research, threat intelligence, security validation, and technical reference.
+The following resources are recommended for additional learning, attack-path prediction, attack-graph analysis, adversary emulation,
+vulnerability intelligence, and security validation capabilities.
 
 ## 1. Core References
 

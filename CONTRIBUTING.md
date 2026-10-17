@@ -21,7 +21,9 @@ You may contribute in several ways:
 
 ## Getting Started
 
-### 1. Fork the repository
+## 1. Clone the Repository
+
+Clone the repository and move into the project directory:
 
 ```bash
 git clone https://github.com/secwexen/aapp-mart.git
@@ -34,26 +36,83 @@ cd aapp-mart
 git checkout -b feature/your-feature-name
 ```
 
-### 3. Set up a local development environment
+## 3. Review the Repository Structure
 
-```bash
-python -m venv .venv
-source .venv/bin/activate     # Linux/Mac
-.\.venv\Scripts\Activate.ps1  # Windows
+The main project components are organized as follows:
+
+```text
+├── docs/                 # Project documentation
+├── src/aapp_mart/        # Application source code
+├── tests/                # Automated tests
+├── Makefile              # Development and build commands
+└── pyproject.toml        # Project and tool configuration
 ```
 
-### 4. Install dependencies
+## 4. Install Python
 
-```bash
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
-```
+The project requires Python 3.13 or later.
 
-### 5. Tests
+Check the installed version:
 
 ```python
-python -m pytest -v
+python --version
 ```
+
+or:
+
+```python
+python3 --version
+```
+
+Install Python 3.13+ if the required version is not available.
+
+## 5. Install Dependencies
+
+Create a virtual environment:
+
+```python
+python -m venv .venv
+```
+
+Activate it on Linux or macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+Activate it on Windows:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+Install AAPP-MART:
+
+```bash
+python -m pip install .
+```
+
+Install the development dependencies:
+
+```bash
+python -m pip install -e ".[dev]"
+```
+
+## 6. Run the Test Suite
+
+Run the automated tests before making changes:
+
+```python
+pytest -m pytest -v
+```
+
+Alternatively, use the Makefile target:
+
+```bash
+make test
+```
+
+The test command uses the project's configured pytest options, including coverage reporting.
 
 ## Development Guidelines
 

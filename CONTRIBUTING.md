@@ -21,7 +21,7 @@ You may contribute in several ways:
 
 ## Getting Started
 
-## 1. Clone the Repository
+### 1. Clone the Repository
 
 Clone the repository and move into the project directory:
 
@@ -36,7 +36,7 @@ cd aapp-mart
 git checkout -b feature/your-feature-name
 ```
 
-## 3. Review the Repository Structure
+### 3. Review the Repository Structure
 
 The main project components are organized as follows:
 
@@ -48,7 +48,7 @@ The main project components are organized as follows:
 └── pyproject.toml        # Project and tool configuration
 ```
 
-## 4. Install Python
+### 4. Install Python
 
 The project requires Python 3.13 or later.
 
@@ -66,7 +66,7 @@ python3 --version
 
 Install Python 3.13+ if the required version is not available.
 
-## 5. Install Dependencies
+### 5. Install Dependencies
 
 Create a virtual environment:
 
@@ -98,7 +98,7 @@ Install the development dependencies:
 python -m pip install -e ".[dev]"
 ```
 
-## 6. Run the Test Suite
+### 6. Run the Test Suite
 
 Run the automated tests before making changes:
 

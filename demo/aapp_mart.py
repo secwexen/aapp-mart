@@ -490,7 +490,7 @@ class JSONReportExporter:
             print(f"\n[+] JSON Report Exported: {output_path}")
             return True
 
-        except (PermissionError, OSError, json.Error) as e:
+        except (OSError, TypeError, ValueError) as e:
             print(f"\n[-] Error Exporting JSON Report: ({type(e).__name__}) {e}")
             return False
 

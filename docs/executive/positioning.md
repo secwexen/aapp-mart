@@ -2,7 +2,7 @@
 
 ## Proactive Security Analysis
 
-AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) is an open-source cybersecurity engine designed to support attack-path prediction, attack graph analysis, risk assessment, and controlled multi-agent security simulation.
+AAPP‑MART (AI‑Powered Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) is a cybersecurity engine for **adversary emulation**, **security validation**, **threat modeling**, and **risk assessment**.
 
 The project aims to help security practitioners understand potential attack paths, analyze security risks, and explore adversarial scenarios in authorized environments.
 

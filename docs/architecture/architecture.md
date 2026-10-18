@@ -16,6 +16,7 @@ aapp-mart
 ├── LICENSE
 ├── LICENSE‑3RD‑PARTY.md
 ├── MAINTAINERS
+├── MANIFEST.in
 ├── Makefile
 ├── NOTICE
 ├── README.md
@@ -224,6 +225,7 @@ aapp-mart
 │       │   ├── loader.py
 │       │   ├── models.py
 │       │   └── rules.py
+│       ├── py.typed
 │       ├── reports
 │       │   ├── __init__.py
 │       │   ├── csv_report.py
@@ -282,6 +284,8 @@ aapp-mart
     │   └── test_attack_graph.py
     ├── audit
     │   └── test_audit.py
+    ├── cli
+    │   └── test_cli.py
     ├── conftest.py
     ├── cve
     │   └── test_cve.py
@@ -289,6 +293,8 @@ aapp-mart
     │   └── test_aapp_mart.py
     ├── engine
     │   └── test_engine.py
+    ├── events
+    │   └── test_events.py
     ├── mart
     │   └── test_mart.py
     ├── mitre
@@ -305,6 +311,10 @@ aapp-mart
     │   └── test_reports.py
     ├── risk
     │   └── test_risk.py
+    ├── runtime
+    │   └── test_runtime.py
+    ├── shared
+    │   └── test_shared.py
     ├── simulation
     │   └── test_simulation.py
     ├── storage

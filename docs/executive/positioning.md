@@ -27,7 +27,7 @@ AAPP-MART focuses on:
 ## Target Users
 
 - Security researchers exploring attack-path analysis and adversarial simulation.
-- Security engineers assessing potential attack paths and prioritizing risks.
+- Security engineering assessing potential attack paths and prioritizing risks.
 - Red, blue, and purple teams conducting authorized security assessments.
 - Developers and researchers experimenting with graph-based security analysis and multi-agent simulation.
 - Organizations seeking an extensible foundation for security analysis and controlled simulation.

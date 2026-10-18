@@ -1,0 +1,22 @@
+include README.md
+include CHANGELOG.md
+include LICENSE
+include NOTICE
+include DISCLAIMER.md
+include ACKNOWLEDGEMENTS.md
+include LICENSE-3RD-PARTY.md
+include pyproject.toml
+
+recursive-include src/aapp_mart *.py *.json *.yaml *.yml *.md *.txt py.typed
+recursive-include docs *.md
+recursive-include demo *.py
+recursive-include examples *.py *.json
+recursive-include data/samples *.json
+recursive-include tests *.py
+recursive-include scripts *.py *.sh
+recursive-include deployment *.md *.yaml *.yml
+recursive-include assets/images *.png
+
+prune .github
+prune .vscode
+prune .devcontainer

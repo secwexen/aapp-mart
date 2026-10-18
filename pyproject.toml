@@ -108,6 +108,7 @@ include = ["aapp_mart*"]
 
 [tool.setuptools.package-data]
 aapp_mart = [
+  "py.typed",
   "**/*.json",
   "**/*.yaml",
   "**/*.yml",

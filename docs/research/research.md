@@ -1,6 +1,6 @@
 # Research Foundations & Market Positioning
 
-AAPP-MART combines attack graph analysis, attack-path prediction, risk assessment, and multi-agent simulation within a modular cybersecurity engine.
+AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) combines attack graph analysis, attack-path prediction, risk assessment, and multi-agent simulation within a modular cybersecurity engine.
 
 Its architecture is designed to support the analysis of potential attack paths and controlled adversarial simulation workflows.
 

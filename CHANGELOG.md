@@ -6,25 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 # Release v0.0.1 – 2026-09-05
 
-## AAPP‑MART — Initial Open Source Pre-Release
+## Added
 
-Welcome to the first open‑source pre-release of **AAPP‑MART**.  
-
-This pre-release introduces the core components and foundational architecture of the AAPP-MART Free Edition.
-
-## Core Features
-
-- AI-Powered Autonomous Attack Path Prediction (AAPP)
-- Multi-Agent Red Team Simulation (MART)
-- Core Orchestration (ENGINE)
-
-## Documentation
-
-- Architecture overview
-- Core module documentation
-- Quickstart and usage examples
-- Ethical use guidelines
-- Development and testing guidance
+- Initial open-source pre-release of AAPP-MART Free.
+- AI-Powered Autonomous Attack Path Prediction (AAPP).
+- Multi-Agent Red Team Simulation (MART).
+- Core orchestration engine.
+- Initial architecture and core module documentation.
+- Quickstart, usage, ethical-use, development, and testing documentation.
 
 ## Security
 

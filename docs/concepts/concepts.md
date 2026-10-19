@@ -1,6 +1,6 @@
 # Concepts
 
-This document introduces the core concepts behind AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine).
+This document introduces the core concepts behind AAPP-MART.
 
 ## Core Concepts
 

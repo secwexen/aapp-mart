@@ -1,6 +1,6 @@
 # Key Differentiators
 
-AAPP-MART sets itself apart in the cybersecurity market with the following core differentiators:
+AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) sets itself apart in the cybersecurity market with the following core differentiators:
 
 ## 1. AI-Powered Autonomous Attack Path Prediction (AAPP)
 

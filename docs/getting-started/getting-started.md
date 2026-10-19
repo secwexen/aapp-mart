@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide will help you quickly set up and start using the AAPP-MART engine for authorized security assessment and analysis.
+This guide will help you quickly set up and start using the AAPP-MART for authorized security assessment and analysis.
 
 ## 1. Clone the Repository
 

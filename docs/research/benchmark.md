@@ -2,7 +2,7 @@
 
 This document describes the benchmarking approach, performance evaluation criteria, and capability scope of AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine).
 
-AAPP-MART is designed to combine attack-path prediction, attack graph analysis, multi-agent simulation, and risk assessment in a unified security engine.
+AAPP-MART is designed to combine attack-path prediction, attack graph analysis, multi-agent simulation, and risk assessment in a unified cybersecurity engine.
 
 Performance and accuracy claims must be supported by reproducible measurements. The capability comparison below is qualitative and does not represent measured performance results.
 

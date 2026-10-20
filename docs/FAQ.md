@@ -65,7 +65,7 @@ Depending on the capabilities enabled in the installed version, outputs may incl
 - Multi-agent simulation results
 - JSON and CSV reports
 
-These outputs help security researchers and red, blue, and purple teams analyze potential attack scenarios, prioritize risks, and evaluate defensive controls in authorized environments.
+These outputs help security researchers and red and purple teams analyze potential attack scenarios, prioritize risks, and evaluate defensive controls in authorized environments.
 
 ## 7. How can I get started with AAPP-MART?
 

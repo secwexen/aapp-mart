@@ -14,7 +14,7 @@ This guide explains how to set up the framework for local development, testing, 
 - pip for Python dependency installation
 - Make for repository automation and common development tasks
 - Git for repository management
-- pytest for automated testing and validation
+- Pytest for automated testing and validation
 
 ## Optional Components
 

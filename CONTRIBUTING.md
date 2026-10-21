@@ -41,6 +41,7 @@ git checkout -b feature/feature-name
 The main project components are organized as follows:
 
 ```text
+aapp-mart
 ├── docs/                 # Project documentation
 ├── src/aapp_mart/        # Application source code
 ├── tests/                # Automated tests

@@ -324,35 +324,3 @@ aapp-mart
     └── workflows
         └── test_workflows.py
 ```
-
-## Component Breakdown
-
-### AI-Powered Autonomous Attack Path Prediction (AAPP)
-
-Builds attack graphs, predicts likely attack paths, and prioritizes risks:
-
-- Parsing target data  
-- Building attack graphs  
-- Predicting attack paths  
-- Scoring risks  
-
-### Multi-Agent Red Team Simulation (MART)
-
-Simulates attacker behavior using specialized agents:
-
-- Reconnaissance  
-- Exploitation  
-- Privilege escalation  
-- Lateral movement  
-- Persistence  
-- Reporting
-
-### Core Orchestration (ENGINE)
-
-Coordinates the entire system:
-
-- Runs AAPP  
-- Initializes MART agents  
-- Executes simulation loops  
-- Maintains global state  
-- Generates final reports

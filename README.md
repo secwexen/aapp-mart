@@ -100,11 +100,11 @@ python demo/aapp_mart.py --target 10.10.20.15
 [*] Simulation Started
 [*] Initial Entry Point: 10.10.20.15 (WORKSTATION-01, Linux)
 
-[+] [Agent-Recon       ] Reconnaissance       | MITRE: T1595 | Severity: LOW      | Status: SUCCESS | Active scanning detected on (10.10.20.15)
-[+] [Agent-Access      ] Initial Access       | MITRE: T1078 | Severity: HIGH     | Status: SUCCESS | Valid account abuse
+[+] [Agent-Recon       ] Reconnaissance       | MITRE: T1595 | CVE: N/A           | Severity: LOW      | Status: SUCCESS | Active scanning detected on (10.10.20.15)
+[+] [Agent-Access      ] Initial Access       | MITRE: T1078 | CVE: N/A           | Severity: HIGH     | Status: SUCCESS | Valid account abuse
 [+] [Agent-Exploitation] Privilege Escalation | MITRE: T1068 | CVE: CVE-2024-1086 | Severity: CRITICAL | Status: SUCCESS | Kernel privilege escalation simulated
-[+] [Agent-Pivot       ] Lateral Movement     | MITRE: T1021 | Severity: HIGH     | Status: SUCCESS | Remote service pivoting to (10.10.20.45)
-[+] [Agent-Collection  ] Collection           | MITRE: T1005 | Severity: CRITICAL | Status: SUCCESS | Backup data discovery and collection on (10.10.20.25)
+[+] [Agent-Pivot       ] Lateral Movement     | MITRE: T1021 | CVE: N/A           | Severity: HIGH     | Status: SUCCESS | Remote service pivoting to (10.10.20.45)
+[+] [Agent-Collection  ] Collection           | MITRE: T1005 | CVE: N/A           | Severity: CRITICAL | Status: SUCCESS | Backup data discovery and collection on (10.10.20.25)
 
 [✓] Simulation Completed Successfully
 

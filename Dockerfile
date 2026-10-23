@@ -1,7 +1,8 @@
 FROM python:3.13-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH="/app/src"
 
 WORKDIR /app
 
@@ -34,4 +35,4 @@ USER appuser
 
 EXPOSE 8080
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "aapp_mart.api.app:app", "--host", "0.0.0.0", "--port", "8080"]

@@ -1,6 +1,6 @@
 # AAPP-MART Features
 
-This document describes the core capabilities of AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) and the capability the Free edition.
+This document describes the core capabilities of AAPP-MART (AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine) and the capability the community edition.
 
 ## Core Features
 

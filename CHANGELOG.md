@@ -6,13 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 ## [v0.0.1] – 2026-09-05
 
-### Core Features
-
-- AI-Powered Autonomous Attack Path Prediction (AAPP).
-- Multi-Agent Red Team Simulation (MART).
-- Core Orchestration (ENGINE).
-
 ### Added
 
+- Initial open-source pre-release of AAPP-MART Free Edition.
 - Initial architecture and core module documentation.
-- Quickstart, usage, ethical-use, development, and testing documentation.
+- Quickstart and usage documentation.
+- Ethical-use, development, and testing documentation.

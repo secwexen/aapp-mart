@@ -97,7 +97,7 @@ python demo/aapp_mart.py --target 10.10.20.15
 ```text
 === AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===
 
-[*] Simulation Started
+[*] Simulation Started...
 [*] Initial Entry Point: 10.10.20.15 (WORKSTATION-01, Linux)
 
 [+] [Agent-Recon       ] Reconnaissance       | MITRE: T1595 | CVE: N/A           | Severity: LOW      | Status: SUCCESS | Active scanning detected on (10.10.20.15)

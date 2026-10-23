@@ -277,7 +277,7 @@ class AAPPMARTDemo:
             "& Multi-Agent Red Team Simulation Engine Demo ===\n"
         )
 
-        print("[*] Simulation Started")
+        print("[*] Simulation Started...")
         print(f"[*] Initial Entry Point: {self.target} ({self.hostname}, {self.os})\n")
 
         attack_chain = [

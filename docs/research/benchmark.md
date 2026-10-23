@@ -9,7 +9,7 @@ Performance and accuracy claims must be supported by reproducible measurements. 
 ## Capability Comparison
 
 | Capability                                 | Traditional Vulnerability Scanners | BAS Platforms     | AAPP-MART Community Edition                             |
-| ------------------------------------------ | ---------------------------------- | ----------------- | ------------------------------------------ |
+| ------------------------------------------ | ---------------------------------- | ----------------- | ---------------------------------- |
 | Known Vulnerability Analysis               | Yes / Varies by product            | Varies by product | Core capability; verify implementation     |
 | Attack-Path Prediction                     | Varies by product                  | Varies by product | Core capability; verify implementation     |
 | Attack Graph Analysis                      | Varies by product                  | Varies by product | Core capability; verify implementation     |

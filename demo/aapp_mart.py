@@ -2,19 +2,19 @@
 === AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===
 
 Features:
-   - Multi-Agent Red Team Attack Simulation
-   - MITRE ATT&CK Mapping
-   - CVE-Associated Attack Steps
-   - Risk Scoring & Severity Classification
-   - Attack Path Prediction Confidence Scoring
-   - Attack Path Simulation
-   - Compromised Asset Analysis
-   - Simulation Metrics & Attack Outcome Analytics
-   - Security Remediation Recommendations
-   - Simulation Workflow Execution
-   - JSON Report Generation
-   - CSV Report Generation
-   - CLI-Based Local Execution
+    - Multi-Agent Red Team Attack Simulation
+    - MITRE ATT&CK Mapping
+    - CVE-Associated Attack Steps
+    - Risk Scoring & Severity Classification
+    - Attack Path Prediction Confidence Scoring
+    - Attack Path Simulation
+    - Compromised Asset Analysis
+    - Simulation Metrics & Attack Outcome Analytics
+    - Security Remediation Recommendations
+    - Simulation Workflow Execution
+    - JSON Report Generation
+    - CSV Report Generation
+    - CLI-Based Local Execution
 
 Install dependencies:
     python -m pip install rich
@@ -127,7 +127,6 @@ class SimulationReport:
 # MITRE ATT&CK Mapping
 # =========================
 
-
 MITRE_ATTACK = {
     "T1595",
     "T1078",
@@ -146,13 +145,11 @@ VALID_SEVERITIES = {
     "CRITICAL"
 }
 
-
 VALID_ASSET_STATUSES = {
     "COMPROMISED",
     "ISOLATED",
     "BLOCKED"
 }
-
 
 VALID_STATUSES = {
     "SUCCESS",
@@ -196,7 +193,6 @@ def validate_assets(assets: list[CompromisedAsset]) -> bool:
 # Dynamic Risk Engine
 # =========================
 
-
 class RiskEngine:
     """Calculate a basic risk score for a simulated attack path."""
 
@@ -239,7 +235,6 @@ class RiskEngine:
 # Risk Label Calculation
 # =========================
 
-
 def calculate_risk_label(score: float) -> str:
     """Convert a risk score into a severity label."""
     if score >= 9.0:
@@ -255,7 +250,6 @@ def calculate_risk_label(score: float) -> str:
 # =========================
 # Demo Engine
 # =========================
-
 
 class AAPPMARTDemo:
     """Run the predefined AAPP-MART demonstration workflow."""
@@ -356,7 +350,6 @@ class AAPPMARTDemo:
                 if confirm_exit():
                     raise
 
-
         compromised_assets = [
             CompromisedAsset(
                 system="WORKSTATION-01",
@@ -445,7 +438,6 @@ class AAPPMARTDemo:
             duration=round(total_duration, 2)
         )
 
-
     def _simulate_step(self, step: AttackStep):
         """Display one simulated attack step."""
         cve_part = f" | CVE: {step.cve_id}" if step.cve_id else ""
@@ -460,7 +452,6 @@ class AAPPMARTDemo:
             f" | {step.description}"
         )
 
-
     def _log(self, message: str, success: bool = False):
         """Print a simulation status message."""
         prefix = "[✓]" if success else "[*]"
@@ -470,7 +461,6 @@ class AAPPMARTDemo:
 # =========================
 # JSON Report Export
 # =========================
-
 
 class JSONReportExporter:
     """Export simulation results as JSON."""
@@ -497,7 +487,6 @@ class JSONReportExporter:
 # =========================
 # CSV Report Export
 # =========================
-
 
 class CSVReportExporter:
     """Export simulated attack steps as CSV."""
@@ -549,7 +538,6 @@ class CSVReportExporter:
 # =========================
 # Main
 # =========================
-
 
 def main() -> int:
     """Parse CLI arguments, run the demo, and export the selected report."""

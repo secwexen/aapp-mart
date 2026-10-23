@@ -22,9 +22,9 @@ This document describes the core capabilities of AAPP-MART (AI-Powered Autonomou
 - Manages the global environment state, event propagation, and scenario progression.
 - Controls agent decision cycles, execution timing, and system‑wide synchronization.
 
-## Free Edition Users
+## Community Edition Users
 
-The Free Edition is intended for:
+The Community Edition is intended for:
 
 - Security researchers
 - Red team and penetration testing professionals
@@ -32,11 +32,11 @@ The Free Edition is intended for:
 - Cybersecurity students and learners
 - Developers and teams evaluating AAPP-MART's core attack-path simulation capabilities
 
-## Free Edition — 15 Capabilities
+## Community Edition — 15 Capabilities
 
-The Free edition focuses on the core AAPP-MART engine and security simulation capabilities.
+The Community edition focuses on the core AAPP-MART engine and security simulation capabilities.
 
-Free capabilities include:
+Community capabilities include:
 
 - Attack-path prediction
 - Attack graph analysis
@@ -54,6 +54,6 @@ Free capabilities include:
 - Core plugin architecture
 - Basic observability and basic audit logging
 
-The Free edition is intended to provide the complete core security engine experience without enterprise operational infrastructure.
+The Community edition is intended to provide the complete core security engine experience without enterprise operational infrastructure.
 
 The core engine provides the foundation for Enterprise capabilities, while the public edition remains focused on attack-path analysis, security simulation, and risk assessment.

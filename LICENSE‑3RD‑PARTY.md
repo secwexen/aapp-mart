@@ -1,6 +1,8 @@
 # Third‑Party Licenses
 
-This project includes the following third‑party dependencies and their respective licenses:
+This project uses third-party dependencies under their respective licenses.
+
+## Runtime and Application Dependencies
 
 - numpy — BSD-3-Clause
 - pandas — BSD-3-Clause
@@ -21,15 +23,20 @@ This project includes the following third‑party dependencies and their respect
 - matplotlib — PSF License
 - seaborn — BSD-3-Clause
 - pillow — HPND License
+- loguru — MIT
+
+## Development and Testing Dependencies
+
 - pytest — MIT
 - pytest-asyncio — Apache-2.0
 - pytest-cov — MIT
-- pylint — GPL-2.0
+- pylint — GPL-2.0-or-later
 - flake8 — MIT
 - black — MIT
 - isort — MIT
 - autoflake — MIT
 - build — MIT
-- loguru — MIT
 
 The copyrights and licenses for these third-party components remain the property of their respective owners.
+
+This list should be verified against the exact dependency versions and distribution artifacts used by the project.

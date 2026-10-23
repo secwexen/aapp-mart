@@ -86,7 +86,7 @@ The scope of mapping depends on the techniques and data structures implemented i
 
 ### 8. Execution and Deployment
 
-AAPP-MART Free is designed to support local execution through its command-line interface.
+AAPP-MART community edition is designed to support local execution through its command-line interface.
 
 Other execution options depend on the components included and configured in the installed version.
 

@@ -440,7 +440,7 @@ class AAPPMARTDemo:
 
     def _simulate_step(self, step: AttackStep):
         """Display one simulated attack step."""
-        cve_part = f" | CVE: {step.cve_id}" if step.cve_id else "N/A"
+        cve_str = step.cve_id if step.cve_id else "N/A"
         cve_part = f" | CVE: {cve_str:<13}"
 
         print(

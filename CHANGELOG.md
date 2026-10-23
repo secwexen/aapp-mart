@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 ### Added
 
-- Initial open-source pre-release of AAPP-MART Free Edition.
+- Initial open-source pre-release of AAPP-MART Community Edition.
 - Initial architecture and core module documentation.
 - Quickstart and usage documentation.
 - Ethical-use, development, and testing documentation.

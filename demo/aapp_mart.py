@@ -504,6 +504,11 @@ class CSVReportExporter:
 
                 writer.writerow([
                     "simulation_id",
+                    "step_id",
+                    "step_number",
+                    "target",
+                    "risk_score",
+                    "risk_label",
                     "agent",
                     "phase",
                     "mitre_id",
@@ -515,9 +520,16 @@ class CSVReportExporter:
                     "remediation"
                 ])
 
-                for step in report.attack_path:
+                for step_number, step in enumerate(report.attack_path, start=1):
+                    step_id = f"{report.simulation_id}-STEP-{step_number:03d}"
+
                     writer.writerow([
                         report.simulation_id,
+                        step_id,
+                        step_number,
+                        report.target,
+                        report.risk_score,
+                        report.risk_label,
                         step.agent,
                         step.phase,
                         step.mitre_id,

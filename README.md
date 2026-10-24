@@ -214,7 +214,7 @@ See the [LICENSE](LICENSE) file for full details.
 
 Contributions and suggestions are welcome!
 
-- Fork the repository and create a feature or fix branch (e.g. `feature/your-feature`, `fix/bug-name`, `docs/update-readme`, `chore/dependency-update`).
+- Fork the repository and create a feature or fix branch (e.g. `feature/feature-name`, `fix/bug-name`, `docs/update-readme`, `chore/dependency-update`).
 - Make your changes and add relevant tests.
 - Use clear commit messages (e.g. Conventional Commits: `feat:`, `fix:`, `docs:`, `refactor:`).
 - Ensure all tests pass (`pytest`) and code style checks (e.g. `make lint`).

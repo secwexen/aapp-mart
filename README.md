@@ -165,7 +165,7 @@ For full details, refer to the [Installation Guide](docs/getting-started/install
 
 ## Quick Start
 
-### Clone & Setup
+### 1. Clone & Setup
 
 ```bash
 # Clone repository

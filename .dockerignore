@@ -38,7 +38,7 @@ dist/
 # OS junk
 .DS_Store
 
-# Logs & Secrets
+# Logs
 *.log
 
 # Docker itself

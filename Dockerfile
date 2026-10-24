@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-# Keep only the system packages required by the application.
+# Install required system dependencies.
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     graphviz \
@@ -18,19 +18,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Create a non-root user.
 RUN useradd --create-home --system --user-group appuser
 
-# Install production dependencies first for better build caching.
-COPY requirements.txt .
+# Copy the project, including pyproject.toml.
+COPY . .
 
+# Install the project and its declared dependencies.
 RUN python -m pip install --no-cache-dir --upgrade pip && \
-    python -m pip install --no-cache-dir -r requirements.txt
+    python -m pip install --no-cache-dir .
 
-# Copy application files.
-COPY --chown=appuser:appuser . .
-
-# Ensure the application can write reports.
+# Create the logs directory and set permissions.
 RUN mkdir -p /app/logs && \
-    chown appuser:appuser /app/logs
+    chown -R appuser:appuser /app/logs
 
+# Run as a non-root user.
 USER appuser
 
 EXPOSE 8080

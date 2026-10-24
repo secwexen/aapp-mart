@@ -4,11 +4,16 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Virtual environments
-venv/
-env/
-.venv
+# Environments
 .env
+.envrc
+.venv
+.env.*
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Build & Test Artifacts
 build/

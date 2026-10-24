@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# Frequently Asked Questions (FAQ)
 
 This document provides answers to the most frequently asked questions about **AAPP-MART**.
 

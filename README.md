@@ -53,7 +53,7 @@ Autonomous agents simulate realistic adversary actions:
 
 ### 3. Core Orchestration Engine
 
-Coordinates AAPP & MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
+Coordinates AAPP and MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
 
 ## Legal & Authorized Use
 

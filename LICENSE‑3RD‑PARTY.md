@@ -2,7 +2,7 @@
 
 This project uses third-party dependencies under their respective licenses.
 
-## Runtime and Application Dependencies
+## Dependencies
 
 - numpy — BSD-3-Clause
 - pandas — BSD-3-Clause
@@ -25,7 +25,7 @@ This project uses third-party dependencies under their respective licenses.
 - pillow — HPND License
 - loguru — MIT
 
-## Development and Testing Dependencies
+## Development Dependencies
 
 - pytest — MIT
 - pytest-asyncio — Apache-2.0

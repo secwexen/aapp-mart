@@ -16,7 +16,7 @@ This document describes the core capabilities of AAPP-MART (AI-Powered Autonomou
 - Agents coordinate, compete, or specialize based on scenario configuration.
 - Behavior aligned with MITRE ATT&CK techniques.
 
-### Core Orchestration (ENGINE)
+### Core Orchestration Engine
 
 - Coordinates the interaction between AAPP and MART to maintain a unified simulation flow.
 - Manages the global environment state, event propagation, and scenario progression.

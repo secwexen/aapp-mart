@@ -76,7 +76,7 @@ See [Ethics & Responsible Use Guidelines](docs/legal/ethics.md) for details.
 
 - AI-Powered Autonomous Attack Path Prediction (AAPP)
 - Multi-Agent Red Team Simulation (MART)
-- Core Security Engine & Orchestration (ENGINE)
+- Core Orchestration (ENGINE)
 - Graph-Based Attack Path Modeling
 - MITRE ATT&CK-Aligned Adversary Behavior
 - Risk-Based Security Posture Analysis

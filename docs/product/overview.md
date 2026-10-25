@@ -6,10 +6,11 @@ Unlike traditional static manual penetration testing, AAPP‑MART uses predictiv
 
 AAPP-MART is designed as an extensible cybersecurity engine rather than a traditional vulnerability scanner or a collection of predefined attack playbooks, providing a foundation for proactive security validation, red teaming, purple teaming, security engineering, and enterprise security operations.
 
-At the core of AAPP-MART are two tightly integrated subsystems:
+AAPP-MART is organized around three complementary components:
 
-- AI-Powered Autonomous Attack Path Prediction (AAPP), which analyzes assets, identities, configurations, permissions, vulnerabilities, and relationships to forecast the most probable attack paths an adversary may exploit.
-- Multi-Agent Red Team Simulation (MART), which coordinates autonomous agents that emulate realistic attacker behavior across multiple stages of the cyber kill chain, including reconnaissance, initial access, lateral movement, privilege escalation, persistence, and reporting.
+- **AI-Powered Autonomous Attack Path Prediction (AAPP)**: Focuses on analyzing security-relevant entities and their relationships to identify and evaluate potential attack paths. The depth of prediction depends on the models, analysis methods, and data sources implemented in each version.
+- **Multi-Agent Red Team Simulation (MART)**: Coordinates specialized agents to model adversarial activities across selected stages of an attack scenario. Supported activities depend on the implemented agents and configured simulation workflows.
+- **Core Orchestration Engine**: Coordinates analysis and simulation workflows, manages shared attack-graph data, and produces structured results for further investigation.
 
 These components are orchestrated through a centralized knowledge graph that continuously maintains the security state of the target environment. By correlating infrastructure relationships with simulated adversarial actions, AAPP-MART produces data-driven attack-path analysis and realistic risk assessments that reflect how an actual attacker could progress through a network.
 

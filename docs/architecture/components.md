@@ -1,6 +1,6 @@
 # Core Components
 
-This document describes the three major subsystems of AAPP-MART: AI-Powered Autonomous Attack Path Prediction (AAPP), Multi-Agent Red Team Simulation (MART), and Core Orchestration (ENGINE).
+This document describes the three major subsystems of AAPP-MART: AI-Powered Autonomous Attack Path Prediction (AAPP), Multi-Agent Red Team Simulation (MART), and Core Orchestration Engine.
 
 It outlines their responsibilities, relationships, and roles within the overall architecture.
 
@@ -14,7 +14,7 @@ Executes autonomous red team simulations using specialized AI agents that emulat
 
 Together, AAPP and MART create a fully automated offensive security engine capable of forecasting and simulating attacks end-to-end.
 
-## Core Orchestration (ENGINE)
+## Core Orchestration Engine
 
 The CORE engine coordinates multi-agent behavior, manages simulation flow, and ensures consistent interaction between all system modules.
 

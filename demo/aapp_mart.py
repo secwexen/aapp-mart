@@ -69,7 +69,7 @@ def confirm_exit() -> bool:
 
         except EOFError:
             print("\n[!] Input stream closed. Exiting...")
-            return 130
+            return True
 
 # =========================
 # Data Models

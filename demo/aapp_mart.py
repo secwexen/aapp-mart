@@ -641,6 +641,8 @@ def main() -> int:
 
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
+    Path("logs").mkdir(parents=True, exist_ok=True)
+
     json_output_file = (
         f"logs/"
         f"attack_path_{clean_target}_{timestamp}.json"

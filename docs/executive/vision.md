@@ -38,28 +38,6 @@ By bringing these capabilities together, AAPP-MART aims to help practitioners mo
 5. **Explainability and Transparency** – Make analysis methods, assumptions, inputs, and results understandable to users.
 6. **Responsible Security Research** – Encourage authorized testing, reproducible evaluation, and responsible use.
 
-## Long-Term Vision
-
-### Improved Attack-Path Analysis
-
-Improve the analysis of attack graphs and potential attack paths, including the handling of larger datasets and more complex relationships.
-
-### Enhanced Simulation Capabilities
-
-Develop more capable multi-agent simulation workflows with improved coordination, reproducibility, and scenario management.
-
-### Stronger Vulnerability and Threat Intelligence
-
-Improve the collection, processing, caching, and assessment of publicly available vulnerability data and basic threat intelligence.
-
-### Risk Assessment Improvements
-
-Refine risk scoring and prioritization methods to help users understand why particular findings and attack paths require attention.
-
-### Research and Community Collaboration
-
-Encourage collaboration among security researchers, developers, and practitioners through an open development process, documented methods, and reproducible experiments.
-
 ## Future Outlook
 
 AAPP-MART aims to evolve into a modular platform for attack-path analysis, risk assessment, and controlled adversarial simulation.

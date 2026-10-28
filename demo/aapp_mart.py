@@ -260,7 +260,7 @@ class AAPPMARTDemo:
         self.hostname = "WORKSTATION-01"
         self.os = "Linux"
         self.generated_by = "AAPP-MART"
-        self.engine_version = "v1.0.0-demo"
+        self.engine_version = "v1.0.1-demo"
         self.schema_version = "1.1.0"
         self.simulation_id = str(uuid.uuid4())
         self.started_at = ""

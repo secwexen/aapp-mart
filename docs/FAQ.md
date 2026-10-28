@@ -99,7 +99,7 @@ The quality and completeness of the input data influence the relevance of predic
 
 Contributions are welcome.
 
-See the [Contributing](../CONTRIBUTING.md) for contribution guidelines.
+See the [Contributing Guide](../CONTRIBUTING.md) for contribution guidelines.
 
 ## 10. What is the difference between AAPP-MART Community Edition and Enterprise Edition?
 

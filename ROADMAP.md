@@ -1,68 +1,84 @@
 # Roadmap
 
-This document outlines the planned evolution of AAPP-MART based on its existing architecture and core components.
+This document describes planned improvements to the AAPP-MART Community Edition, focusing on the reliability, transparency, and usability of its existing simulation, risk assessment, and reporting capabilities.
 
 ## Short Term (Next Releases)
 
 ### Core Engine Improvements
 
-- Improve stability of the core execution engine
-- Optimize agent scheduling and task orchestration
-- Improve input validation and error handling
-- Standardize internal module interfaces
-- Improve structured logging and audit records
+- Improve simulation execution stability
+- Strengthen input validation and error handling
+- Improve consistency of simulation status reporting
+- Expand automated tests for core components
+- Improve structured logging and diagnostic messages
 
-### Attack Graph & Prediction Engine
+### Simulation Workflow Improvements
 
-- Improve attack graph generation algorithms
-- Improve attack path prioritization
-- Refine prediction strategies combining:
-  - Rule-based analysis
-  - Existing machine learning predictors
-- Improve attack path search and pruning
-- Improve prediction scoring consistency
+- Improve predefined attack scenario management
+- Make simulated attack steps and outcomes easier to understand
+- Improve simulation reproducibility
+- Validate scenario data before execution
+- Clearly distinguish simulated outcomes from verified security findings
 
-### Risk & Vulnerability Analysis
+### Risk Assessment
 
-- Improve vulnerability data analysis and scoring
-- Refine risk aggregation and prioritization
-- Improve the assessment of environmental risk factors
-- Improve CVSS calculation and vulnerability severity assessment
+- Document risk scoring weights and calculation methods
+- Improve consistency between risk scores and severity labels
+- Improve risk summaries and remediation recommendations
+- Add tests for risk calculation and classification
 
 ### CLI Improvements
 
-- Improve command help and documentation
+- Improve command help and usage documentation
 - Improve input validation and error messages
-- Improve prediction, risk analysis, simulation, and reporting commands
-- Improve CLI execution reliability
+- Improve interruption handling and execution reliability
+- Clarify supported targets and simulation limitations
 
 ## Mid Term
 
-### Attack Graph & Simulation Improvements
+### Attack-Path Representation
 
-- Improve attack graph analysis for larger input datasets
-- Improve coordination between prediction and simulation workflows
-- Improve simulation result consistency and reproducibility
-- Expand test coverage for core engine and simulation components
+- Improve the representation of relationships between modeled assets
+- Provide clearer explanations of predefined attack sequences
+- Improve traceability between attack steps, affected assets, and reported risks
+- Evaluate graph-based analysis capabilities as a future development direction
 
 ### Reporting Improvements
 
 - Improve JSON and CSV report consistency
-- Improve attack path explanations in reports
-- Improve risk summaries and prioritization details
-- Improve report generation reliability
+- Strengthen report schema validation
+- Improve report metadata and traceability
+- Improve export error handling
+- Expand automated tests for report generation
+
+### Documentation and Testing
+
+- Expand installation and usage examples
+- Document supported MITRE ATT&CK technique identifiers
+- Clarify the role of CVE identifiers in simulated scenarios
+- Improve testing and contribution documentation
 
 ## Long Term
 
-### Performance & Scalability
+### Extensibility and Reliability
 
-- Optimize attack graph construction and path search for larger datasets
-- Improve execution efficiency across core components
-- Strengthen storage reliability and handling of execution results
+- Improve the modularity of simulation components
+- Establish consistent interfaces for future extensions
+- Improve performance and reliability for larger scenarios
+- Evaluate additional analysis methods based on implementation and testing results
 
-### Security Knowledge & Data Quality
+### Security Data Quality
 
-- Improve public vulnerability data retrieval and freshness handling
-- Improve CVE data caching and recovery when sources are unavailable
-- Improve MITRE ATT&CK mapping coverage
-- Improve correlation between vulnerability data, attack techniques, and risk assessments
+- Improve validation of vulnerability-related metadata
+- Improve consistency of MITRE ATT&CK mappings
+- Evaluate options for integrating public vulnerability data
+- Document data-source limitations and handling of unavailable information
+
+### Future Analysis Capabilities
+
+- Evaluate graph-based attack-path analysis
+- Assess the feasibility of machine-learning-assisted prediction
+- Explore more advanced risk prioritization methods
+- Validate new capabilities through documented tests and reproducible experiments
+
+This roadmap describes planned development, not a guarantee that every capability is available in the current release. Priorities may change as the project evolves.

@@ -227,13 +227,16 @@ See [CONTRIBUTING](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 
-Planned improvements include:
+Planned improvements for the AAPP-MART Community Edition include:
 
-- Improved AI-Powered Attack Path Prediction
-- Path-aware risk scoring based on simulated attack chains
-- Optional visualization layer for simulation outputs
-- Plugin ecosystem for custom modules and agents
-- Distributed simulation support
+- Improved attack-path analysis and prioritization
+- Enhanced risk assessment and vulnerability analysis
+- Improved CLI usability and input validation
+- More consistent JSON and CSV reporting
+- Better performance, reliability, and simulation reproducibility
+- Improved CVE data handling and MITRE ATT&CK mapping coverage
+
+These items represent planned improvements and may evolve as development progresses.
 
 For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
 

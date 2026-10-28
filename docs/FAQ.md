@@ -100,3 +100,11 @@ The quality and completeness of the input data influence the relevance of predic
 Contributions are welcome.
 
 See the [Contributing](../CONTRIBUTING.md) for contribution guidelines.
+
+## 10. What is the difference between AAPP-MART Community Edition and Enterprise Edition?
+
+AAPP-MART Community Edition provides the capabilities documented in the public repository and its release documentation. AAPP-MART Enterprise Edition is maintained as a separate edition and may provide additional capabilities depending on its implementation and release.
+
+Feature availability, integrations, and deployment options may differ between editions. Users should consult the documentation for the relevant edition to confirm which capabilities are supported.
+
+For the latest available features and planned improvements, refer to the corresponding [README](../README.md), [Release Notes](https://github.com/secwexen/aapp-mart/releases), and [Changelog](../CHANGELOG.md).

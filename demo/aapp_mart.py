@@ -21,6 +21,7 @@ Install dependencies:
 
 Usage:
     python aapp_mart.py --target 10.10.20.15
+    python aapp_mart.py --version
     python aapp_mart.py --help
 
 Safety:
@@ -260,7 +261,7 @@ class AAPPMARTDemo:
         self.hostname = "WORKSTATION-01"
         self.os = "Linux"
         self.generated_by = "AAPP-MART"
-        self.engine_version = "v1.0.1-demo"
+        self.engine_version = "v1.0.2-demo"
         self.schema_version = "1.1.0"
         self.simulation_id = str(uuid.uuid4())
         self.started_at = ""
@@ -566,6 +567,12 @@ def main() -> int:
         "--target",
         required=True,
         help="Target IP address"
+    )
+
+    parser.add_argument(
+        "--version",
+        action="version",
+        version="v1.0.2-demo",
     )
 
     args = parser.parse_args()

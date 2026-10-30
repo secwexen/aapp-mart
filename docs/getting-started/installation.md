@@ -4,9 +4,9 @@ This guide explains how to set up the framework for local development, testing, 
 
 ## Supported Operating Systems
 
-- **Linux** — Recommended for development, testing, automation, and deployment  
-- **Windows** — Supported for development and testing with Visual Studio Code and WSL2  
-- **macOS** — Supported for local development and testing
+- **Linux**: Recommended for development, testing, automation, and deployment  
+- **Windows**: Supported for development and testing with Visual Studio Code and WSL2  
+- **macOS**: Supported for local development and testing
 
 ## Requirements
 

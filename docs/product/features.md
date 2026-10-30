@@ -4,13 +4,13 @@ This document describes the core capabilities of AAPP-MART (AI-Powered Autonomou
 
 ## Core Features
 
-### AI‑Powered Autonomous Attack Path Prediction (AAPP)
+### AI-Powered Autonomous Attack Path Prediction (AAPP)
 
 - Uses machine learning models to estimate likely attacker movement.
 - Generates dynamic attack paths based on environment state and security posture.
 - Supports probabilistic and deterministic prediction modes.
 
-### Multi‑Agent Red Team Simulation (MART)
+### Multi-Agent Red Team Simulation (MART)
 
 - Autonomous adversarial agents emulate realistic attacker tactics.
 - Agents coordinate, compete, or specialize based on scenario configuration.
@@ -32,7 +32,7 @@ The Community Edition is intended for:
 - Cybersecurity students and learners
 - Developers and teams evaluating AAPP-MART's core attack-path simulation capabilities
 
-## Community Edition — 15 Capabilities
+## Community Edition - 15 Capabilities
 
 The Community edition focuses on the core AAPP-MART engine and security simulation capabilities.
 

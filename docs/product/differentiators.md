@@ -16,7 +16,7 @@ Scales from small environments to complex, multi-cloud, hybrid enterprise networ
 
 ## 4. Continuous & Automated Security Assessments
 
-Enables not just one-time, but ongoing, automated threat modeling and security validation—reducing time to mitigation and minimizing human error.
+Enables not just one-time, but ongoing, automated threat modeling and security validation-reducing time to mitigation and minimizing human error.
 
 ## 5. Actionable, Executive-Ready Reporting
 
@@ -30,4 +30,4 @@ Compatible with leading SIEM, SOAR, and vulnerability management tools to streng
 
 Helps organizations demonstrate due diligence and meet key security frameworks and regulatory requirements.
 
-With AAPP-MART, enterprises gain proactive, unmatched visibility into their cyber risks and the confidence to defend against tomorrow’s threats—today.
+With AAPP-MART, enterprises gain proactive, unmatched visibility into their cyber risks and the confidence to defend against tomorrow’s threats-today.

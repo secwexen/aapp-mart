@@ -1,14 +1,14 @@
 # Developer Guide
 
-AAPP‑MART is a modular, multi‑agent red team simulation engine powered by AI‑Powered decision models. This guide provides developers with the architectural overview, contribution workflow, coding standards, and extension points required to build new features or improve the framework.
+AAPP-MART is a modular, multi-agent red team simulation engine powered by AI‑Powered decision models. This guide provides developers with the architectural overview, contribution workflow, coding standards, and extension points required to build new features or improve the framework.
 
 ## Project Architecture
 
-AAPP‑MART is built around three core components that work together to simulate realistic offensive security behavior:
+AAPP-MART is built around three core components that work together to simulate realistic offensive security behavior:
 
-- AI-Powered Autonomous Attack Path Prediction (AAPP) — Analyzes the target environment and predicts potential attack paths based on vulnerabilities, configurations, and system topology.
-- Multi‑Agent Red Team Simulation (MART) — Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
-- Core Orchestrator Engine — Coordinates agents, manages execution flow, aggregates results, and generates reports.
+- AI-Powered Autonomous Attack Path Prediction (AAPP) - Analyzes the target environment and predicts potential attack paths based on vulnerabilities, configurations, and system topology.
+- Multi-Agent Red Team Simulation (MART) - Executes offensive actions using specialized agents representing different stages of the attack lifecycle.
+- Core Orchestrator Engine - Coordinates agents, manages execution flow, aggregates results, and generates reports.
 
 Each component is designed as an independent module to ensure extensibility and maintainability.
 
@@ -111,7 +111,7 @@ Every new feature must include:
 - Agent behavior tests.
 - Workflow integration tests when applicable.
 
-Tests are stored under the [tests](/tests) directory and should follow a clear naming convention.
+Tests are stored under the [tests](../tests/) directory and should follow a clear naming convention.
 
 ## Extending Reporting
 

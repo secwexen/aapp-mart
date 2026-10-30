@@ -10,7 +10,7 @@
 
 ## About
 
-AAPP‑MART (AI‑Powered Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) is a cybersecurity engine for **adversary emulation**, **security validation**, **threat modeling**, and **risk assessment**.
+AAPP‑MART (AI-Powered Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) is a cybersecurity engine for **adversary emulation**, **security validation**, **threat modeling**, and **risk assessment**.
 
 Unlike traditional static manual penetration testing, AAPP‑MART uses predictive analytics, graph‑based threat modeling, and autonomous adversarial behavior to deliver continuous and realistic security evaluation. Its architecture helps defenders anticipate attack strategies, execute defensive controls validation, and enhance cyber resilience through repeatable, scalable, and intelligence‑driven simulations.
 
@@ -95,7 +95,7 @@ python demo/aapp_mart.py --target 10.10.20.15
 ### Output
 
 ```text
-=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===
+=== AAPP-MART - AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===
 
 [*] Simulation Started...
 [*] Initial Entry Point: 10.10.20.15 (WORKSTATION-01, Linux)
@@ -145,9 +145,9 @@ Select Report Format [1-3]: 3
 
 ### Supported Operating Systems
 
-- **Linux** — Recommended for development, testing, and deployment
-- **Windows** — Supported for development and testing with Visual Studio Code and WSL2
-- **macOS** — Supported for local development and testing
+- **Linux**: Recommended for development, testing, and deployment
+- **Windows**: Supported for development and testing with Visual Studio Code and WSL2
+- **macOS**: Supported for local development and testing
 
 ### Requirements
 

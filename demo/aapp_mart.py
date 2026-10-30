@@ -1,5 +1,5 @@
 """
-=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===
+=== AAPP-MART - AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo ===
 
 Features:
     - Multi-Agent Red Team Attack Simulation
@@ -274,7 +274,7 @@ class AAPPMARTDemo:
         clear_screen()
 
         print(
-            "\n=== AAPP-MART — AI-Powered Autonomous Attack Path Prediction "
+            "\n=== AAPP-MART - AI-Powered Autonomous Attack Path Prediction "
             "& Multi-Agent Red Team Simulation Engine Demo ===\n"
         )
 
@@ -559,7 +559,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         prog="aapp-mart",
         description=(
-            "AAPP-MART — AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo"
+            "AAPP-MART - AI-Powered Autonomous Attack Path Prediction & Multi-Agent Red Team Simulation Engine Demo"
         )
     )
 

@@ -9,11 +9,17 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 
+# Make both repo root and src importable to tests
 for path in (str(SRC), str(ROOT)):
-    if path not in sys.path:
-        sys.path.insert(0, path)
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
 
-os.environ.setdefault("PYTHONPATH", str(SRC) + os.pathsep + os.environ.get("PYTHONPATH", ""))
+# Ensure PYTHONPATH also includes src for subprocesses / tools
+pythonpath = os.environ.get("PYTHONPATH", "")
+paths = [str(SRC)]
+if pythonpath:
+    paths.append(pythonpath)
+os.environ["PYTHONPATH"] = os.pathsep.join(paths)
 
 @pytest.fixture(scope="session")
 def project_root() -> Path:

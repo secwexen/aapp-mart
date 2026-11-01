@@ -91,6 +91,7 @@ dev = [
   "build>=1.2",
   "loguru>=0.7",
   "ruff>=0.4",
+  "pylint>=3.0",
   "pre-commit",
 ]
 

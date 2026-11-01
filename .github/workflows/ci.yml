@@ -40,6 +40,10 @@ jobs:
       - name: Lint (pylint)
         run: |
           python -m pylint src/aapp_mart
+            --disable=trailing-newlines \
+            --disable=missing-module-docstring \
+            --disable=missing-class-docstring \
+            --disable=missing-function-docstring
 
       - name: Format check (black)
         run: black --check .

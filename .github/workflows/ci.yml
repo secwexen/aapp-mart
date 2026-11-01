@@ -38,7 +38,7 @@ jobs:
           python -m pip install -e ".[dev]"
 
       - name: Lint (pylint)
-        run: pylint $(git ls-files '*.py')
+        run: python -m pylint $(git ls-files '*.py')
 
       - name: Format check (black)
         run: black --check .

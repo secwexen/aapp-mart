@@ -92,6 +92,9 @@ dev = [
   "loguru>=0.7",
   "ruff>=0.4",
   "pylint>=3.0",
+  "bandit[toml]>=1.7",
+  "safety>=3.0",
+  "flake8>=7.0",
   "pre-commit",
 ]
 

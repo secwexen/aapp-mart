@@ -5,7 +5,7 @@ This document outlines the system architecture, core components, and internal da
 ## Project Structure
 
 ```text
-aapp-mart
+.
 │   .dockerignore
 │   .editorconfig
 │   .gitattributes
@@ -271,6 +271,28 @@ aapp-mart
 │       │       publisher.py
 │       │       subscriber.py
 │       │       __init__.py
+│       │       
+│       ├───installer
+│       │   │   bootstrap.py
+│       │   │   environment.py
+│       │   │   system_check.py
+│       │   │   validator.py
+│       │   │   wizard.py
+│       │   │   __init__.py
+│       │   │   
+│       │   ├───core
+│       │   │       context.py
+│       │   │       executor.py
+│       │   │       rollback.py
+│       │   │       steps.py
+│       │   │       __init__.py
+│       │   │       
+│       │   ├───templates
+│       │   │       .env.example
+│       │   │       
+│       │   └───ui
+│       │           console.py
+│       │           __init__.py
 │       │       
 │       ├───mart
 │       │       behavior.py

@@ -45,7 +45,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
-pytest_cache/
+.pytest_cache/
 src/**/.pytest_cache/
 nosetests.xml
 coverage.xml
@@ -145,6 +145,7 @@ celerybeat.pid
 .envrc
 .venv
 .env.*
+!.env.example
 env/
 venv/
 ENV/

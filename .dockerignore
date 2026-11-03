@@ -9,6 +9,7 @@ __pycache__/
 .envrc
 .venv
 .env.*
+!.env.example
 env/
 venv/
 ENV/

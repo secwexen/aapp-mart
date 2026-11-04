@@ -38,22 +38,15 @@ AAPP-MART provides structured, repeatable, and actionable security intelligence 
 
 ### 1. AI-Powered Autonomous Attack Path Prediction (AAPP)
 
-Evaluates assets, configurations, permissions, and vulnerabilities to predict probable attacker paths.
+Analyzes available asset, vulnerability, permission, and relationship data to identify and prioritize potential attack paths. Results depend on the input data and implemented analysis methods; they do not by themselves confirm that a path is exploitable.
 
 ### 2. Multi-Agent Red Team Simulation (MART)
 
-Autonomous agents simulate realistic adversary actions:
-
-- Reconnaissance
-- Exploitation
-- Lateral Movement
-- Privilege Escalation
-- Persistence
-- Reporting
+Coordinates the simulation workflows and agent capabilities supported by the current implementation. These workflows model selected adversary activities; simulated outcomes should not be interpreted as evidence of real compromise.
 
 ### 3. Core Orchestration Engine
 
-Coordinates AAPP and MART, maintains a global knowledge graph, executes simulations, and produces structured risk reports.
+Coordinates analysis and simulation workflows, manages simulation state, and produces structured results and reports. The available capabilities depend on the implemented modules and configuration.
 
 ## Legal & Authorized Use
 

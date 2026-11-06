@@ -186,6 +186,16 @@ python -m pytest -v
 
 For full details, refer to the [Quick Start](docs/getting-started/quickstart.md) file.
 
+## How to Use AAPP-MART
+
+1. Review the project documentation and deployment guidance.
+2. Run the demo to understand the expected workflow and outputs.
+3. Prepare an approved test target and valid input data.
+4. Execute the relevant command or module in a controlled environment.
+5. Review the generated report and validate the findings before using them operationally.
+
+AAPP-MART is a security assessment and simulation tool. Outputs must be reviewed with human judgment and used only within the authorized scope of the assessment.
+
 ## Documentation
 
 - [Architecture](docs/architecture/architecture.md)

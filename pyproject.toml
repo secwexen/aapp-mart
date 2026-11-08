@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "aapp-mart"
 version = "0.0.1"
-description = "AI-powered autonomous attack path prediction and multi-agent red team simulation engine."
+description = "AAPP-MART is a cybersecurity engine for AI-powered autonomous attack path prediction and multi-agent red team simulation. These capabilities include adversary emulation, threat modeling, security validation, risk assessment, and MITRE ATT&CK alignment."
 readme = "README.md"
 requires-python = ">=3.13"
 license = "Apache-2.0"

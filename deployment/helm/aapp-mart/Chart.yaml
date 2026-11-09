@@ -1,1 +1,6 @@
-
+apiVersion: v2
+name: aapp-mart
+description: Metadata-only Helm chart for the AAPP-MART project
+type: application
+version: 0.1.0
+appVersion: "0.0.1"

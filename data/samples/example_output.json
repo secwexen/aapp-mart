@@ -1,1 +1,14 @@
-
+{
+  "scenario_id": "offline-demo-001",
+  "status": "completed",
+  "results": [
+    {
+      "id": "demo-web-service",
+      "score": 12
+    },
+    {
+      "id": "demo-reporting-service",
+      "score": 4
+    }
+  ]
+}

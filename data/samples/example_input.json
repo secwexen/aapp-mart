@@ -1,1 +1,16 @@
-
+{
+  "scenario_id": "offline-demo-001",
+  "description": "Synthetic example data for local risk scoring",
+  "assets": [
+    {
+      "id": "demo-web-service",
+      "impact": 4,
+      "likelihood": 3
+    },
+    {
+      "id": "demo-reporting-service",
+      "impact": 2,
+      "likelihood": 2
+    }
+  ]
+}

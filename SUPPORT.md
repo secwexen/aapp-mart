@@ -33,7 +33,7 @@ Please include:
 - Logs, screenshots, or error messages
 - Environment details (OS, Python version, tools used)
 
-## Security & Vulnerability Reports
+## Reporting a Vulnerability
 
 If you discover a **security issue**, do **NOT** open a public GitHub issue.
 

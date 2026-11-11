@@ -107,8 +107,8 @@ python demo/aapp_mart.py --target 10.10.20.15
 [*] Duration                        : 1.00s
 [*] Simulated Step Count            : 5 Stages
 [*] Affected Assets                 : 4 Systems (3 Compromised, 1 Isolated, 0 Blocked)
-[*] Started At                      : 2026-01-01T01:01:01.123456+00:00
-[*] Generated At                    : 2026-01-01T01:01:01.123456+00:00
+[*] Started At                      : 2026-12-31T23:59:42.123456+00:00
+[*] Generated At                    : 2026-12-31T23:59:45.123456+00:00
 
 --- Affected Critical Assets ---
 
@@ -125,8 +125,8 @@ python demo/aapp_mart.py --target 10.10.20.15
 
 Select Report Format [1-3]: 3
 
-[+] JSON Report Exported: logs/attack_path_10_10_20_15_20260101_010101.json
-[+] CSV Report Exported: logs/attack_path_10_10_20_15_20260101_010101.csv
+[+] JSON Report Exported: logs/attack_path_10_10_20_15_20261231_235945.json
+[+] CSV Report Exported: logs/attack_path_10_10_20_15_20261231_235945.csv
 ```
 
 > [!WARNING]

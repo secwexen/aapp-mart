@@ -113,15 +113,15 @@ include = ["aapp_mart*"]
 [tool.setuptools.package-data]
 aapp_mart = [
   "py.typed",
-  "**/*.json",
-  "**/*.yaml",
-  "**/*.yml",
-  "**/*.md",
-  "**/*.txt",
+  "/*.json",
+  "/.yaml",
+  "**/.yml",
+  "/*.md",
+  "/*.txt"
 ]
 
 [tool.pytest.ini_options]
-addopts = "--cov=aapp_mart --cov-report=term-missing -n auto"
+addopts = "--cov=aapp_mart --cov-branch --cov-report=term-missing --cov-report=xml -n auto"
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
@@ -156,3 +156,4 @@ ignore = []
 python_version = "3.13"
 strict = true
 ignore_missing_imports = true
+mypy_path = "src"

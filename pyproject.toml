@@ -104,7 +104,7 @@ Repository = "https://github.com/secwexen/aapp-mart"
 "Bug Tracker" = "https://github.com/secwexen/aapp-mart/issues"
 
 [project.scripts]
-aapp-mart = "aapp_mart.cli.main:main"
+aapp-mart = "aapp_mart.cli.main:app"
 
 [tool.setuptools.packages.find]
 where = ["src"]

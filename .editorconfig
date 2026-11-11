@@ -22,6 +22,11 @@ indent_size = 2
 [*.md]
 trim_trailing_whitespace = false
 
+# Python project configuration
+[*.toml]
+indent_style = space
+indent_size = 4
+
 # Makefile
 [Makefile]
 indent_style = tab

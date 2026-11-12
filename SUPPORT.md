@@ -39,7 +39,7 @@ If you discover a **security issue**, do **NOT** open a public GitHub issue.
 
 Instead, follow the instructions in:
 
-- Open a [Private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new)  
+- Open a [private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new)  
 - [SECURITY](SECURITY.md)
 
 This ensures responsible disclosure and safe handling.

@@ -1,4 +1,4 @@
-"""Core engine public contracts."""
+"""Core engine public API."""
 
 from aapp_mart.engine.contracts import (
     AAPPInterface,
@@ -24,6 +24,12 @@ from aapp_mart.engine.exceptions import (
     ExecutionError,
 )
 
+from aapp_mart.engine.pipeline import ExecutionPipeline
+from aapp_mart.engine.state_machine import (
+    ExecutionStateMachine,
+    StateTransition,
+)
+
 __all__ = [
     "AAPPInterface",
     "AAPPMartError",
@@ -34,13 +40,16 @@ __all__ = [
     "EngineInterface",
     "ExecutionComponent",
     "ExecutionError",
+    "ExecutionPipeline",
     "ExecutionRequest",
     "ExecutionResult",
+    "ExecutionStateMachine",
     "ExecutionStatus",
     "MARTInterface",
     "PredictionRequest",
     "PredictionResult",
     "SimulationRequest",
     "SimulationResult",
+    "StateTransition",
     "new_contract_metadata",
 ]

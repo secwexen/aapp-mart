@@ -8,6 +8,7 @@ This document outlines the system architecture, core components, and internal da
 .
 │   .dockerignore
 │   .editorconfig
+│   .env.example
 │   .gitattributes
 │   .gitignore
 │   .pre-commit-config.yaml
@@ -52,11 +53,9 @@ This document outlines the system architecture, core components, and internal da
 │           ci.yml
 │           codeql.yml
 │           dependency-review.yml
-│           docker-image.yml
 │           docker-publish.yml
 │           greetings.yml
 │           label.yml
-│           makefile.yml
 │           pylint.yml
 │           python-package.yml
 │           release.yml
@@ -108,6 +107,7 @@ This document outlines the system architecture, core components, and internal da
 │   │       components.md
 │   │       design.md
 │   │       modules.md
+│   │       system-overview.md
 │   │       threat-model.md
 │   │       
 │   ├───concepts
@@ -293,7 +293,7 @@ This document outlines the system architecture, core components, and internal da
 │       │   └───ui
 │       │           console.py
 │       │           __init__.py
-│       │       
+│       │           
 │       ├───mart
 │       │       behavior.py
 │       │       coordinator.py
@@ -397,15 +397,31 @@ This document outlines the system architecture, core components, and internal da
     │   
     ├───aapp
     │       test_aapp.py
+    │       test_feature_pipeline.py
+    │       test_prediction.py
+    │       test_scoring.py
     │       
     ├───agents
     │       test_agents.py
+    │       test_agent_discovery.py
+    │       test_lateral_movement.py
+    │       test_privilege_escalation.py
+    │       test_recon.py
+    │       test_validation.py
     │       
     ├───api
     │       test_api.py
+    │       test_attack_graph_routes.py
+    │       test_prediction_routes.py
+    │       test_reports_routes.py
+    │       test_risk_routes.py
+    │       test_schemas.py
+    │       test_simulation_routes.py
     │       
     ├───attack_graph
     │       test_attack_graph.py
+    │       test_builder.py
+    │       test_path_finder.py
     │       
     ├───audit
     │       test_audit.py
@@ -413,57 +429,123 @@ This document outlines the system architecture, core components, and internal da
     ├───cli
     │       test_cli.py
     │       
+    ├───compliance
+    │       test_audit_compliance.py
+    │       
     ├───cve
+    │       test_cache.py
     │       test_cve.py
+    │       test_fetcher.py
     │       
     ├───demo
     │       test_aapp_mart.py
     │       
     ├───engine
     │       test_engine.py
+    │       test_pipeline.py
+    │       test_state_machine.py
     │       
     ├───events
     │       test_events.py
+    │       
+    ├───fixtures
+    │       attack_graphs.py
+    │       mock_services.py
+    │       vulnerabilities.py
+    │       
+    ├───installer
+    │       test_bootstrap.py
+    │       test_environment.py
+    │       test_rollback.py
+    │       test_system_check.py
+    │       test_validator.py
+    │       test_wizard.py
+    │       
+    ├───integration
+    │       test_agent_integration.py
+    │       test_api_integration.py
+    │       test_attack_graph_integration.py
+    │       test_end_to_end.py
+    │       test_plugin_integration.py
+    │       test_prediction_pipeline.py
+    │       test_risk_pipeline.py
+    │       test_simulation_pipeline.py
+    │       test_storage_integration.py
     │       
     ├───mart
     │       test_mart.py
     │       
     ├───mitre
+    │       test_attack_matrix.py
+    │       test_mapper.py
     │       test_mitre.py
     │       
     ├───model
+    │       test_loader.py
+    │       test_metadata.py
     │       test_model.py
+    │       test_registry.py
     │       
     ├───observability
     │       test_observability.py
     │       
     ├───plugins
+    │       test_interfaces.py
+    │       test_loader.py
     │       test_plugins.py
     │       
     ├───policy
+    │       test_evaluator.py
     │       test_policy.py
+    │       test_rules.py
+    │       
+    ├───regression
+    │       test_prediction_regression.py
+    │       test_risk_regression.py
     │       
     ├───reports
     │       test_reports.py
+    │       
+    ├───resilience
+    │       test_database_failure.py
+    │       test_external_service_failure.py
     │       
     ├───risk
     │       test_risk.py
     │       
     ├───runtime
+    │       test_execution.py
     │       test_runtime.py
+    │       
+    ├───security
+    │       test_injection_protection.py
+    │       test_input_validation.py
+    │       test_path_traversal.py
+    │       test_plugin_security.py
+    │       test_sensitive_data_exposure.py
+    │       test_ssrf_protection.py
     │       
     ├───shared
     │       test_shared.py
     │       
     ├───simulation
     │       test_simulation.py
+    │       test_simulator.py
     │       
     ├───storage
+    │       test_filesystem.py
+    │       test_sqlite.py
     │       test_storage.py
     │       
     ├───threat_intel
+    │       test_client.py
+    │       test_correlation.py
+    │       test_feeds.py
     │       test_threat_intel.py
     │       
     └───workflows
+            test_prediction_workflow.py
+            test_risk_workflow.py
+            test_simulation_workflow.py
             test_workflows.py
 ```

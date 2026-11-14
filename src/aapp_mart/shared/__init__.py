@@ -15,7 +15,6 @@ __all__ = [
     "DEFAULT_ENCODING",
     "DEFAULT_RETRY_COUNT",
     "DEFAULT_TIMEOUT_SECONDS",
-    "SUPPORTED_SYMMETRY_LEVELS",
     "flatten",
     "normalize_name",
     "require_list",

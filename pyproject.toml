@@ -128,6 +128,8 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 pythonpath = ["src", "."]
 asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+import_mode = "importlib"
 
 [tool.pylint.format]
 max-line-length = 120

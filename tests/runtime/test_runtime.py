@@ -309,7 +309,7 @@ def test_execution_with_cancelled_context_cannot_start(request_obj):
     context.request_cancellation()
     execution = RuntimeExecution(request_obj, context=context)
 
-    with pytest.raises(ExecutionError, match="pending"):
+    with pytest.raises(ExecutionError, match="cancelled"):
         execution.start()
 
 

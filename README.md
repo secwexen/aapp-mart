@@ -14,7 +14,7 @@ AAPP‑MART (AI-Powered Autonomous Attack Path Prediction & Multi‑Agent Red Te
 
 AAPP-MART is designed to analyze available security and environment data, model potential attack paths, and support controlled simulation workflows. Its capabilities and results depend on the implemented components, configuration, and input data. Simulated outcomes do not confirm real-world exploitability or compromise.
 
-The project provides an extensible foundation for authorized security assessment, threat modeling, risk analysis, and security research. It complements—not replaces—vulnerability scanners, compliance assessments, and human-led red or purple team exercises.
+The project provides an extensible foundation for authorized security assessment, threat modeling, risk analysis, and security research. It complements-not replaces-vulnerability scanners, compliance assessments, and human-led red or purple team exercises.
 
 ## Why AAPP-MART?
 

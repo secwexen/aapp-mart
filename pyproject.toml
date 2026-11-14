@@ -121,7 +121,7 @@ aapp_mart = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "--cov=aapp_mart --cov-branch --cov-report=term-missing --cov-report=xml -n auto"
+addopts = "--cov=aapp_mart --cov-branch --cov-report=term-missing --cov-report=xml -n auto --import-mode=importlib"
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
@@ -129,7 +129,6 @@ python_functions = ["test_*"]
 pythonpath = ["src", "."]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
-import_mode = "importlib"
 
 [tool.pylint.format]
 max-line-length = 120

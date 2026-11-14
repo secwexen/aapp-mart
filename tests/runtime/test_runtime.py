@@ -7,7 +7,6 @@ without defining a second result model.
 
 from __future__ import annotations
 
-import inspect
 from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 from uuid import uuid4
@@ -37,49 +36,18 @@ def _build_request(
     seed: int | None = 37,
     timeout_seconds: float | None = None,
 ) -> ExecutionRequest:
-    """Build a valid request while supplying the common input-field variants.
+    """Build a valid execution request using the canonical engine contract."""
 
-    ``ExecutionRequest`` is the engine's public contract. The input mapping is
-    passed under the field name exposed by the contract, so this test helper
-    remains compatible with the existing payload/input naming convention.
-    Unknown required fields are intentionally surfaced as a test setup error.
-    """
-
-    parameters = inspect.signature(ExecutionRequest).parameters
-    candidates = {
-        "execution_id": execution_id or uuid4(),
-        "component": component,
-        "metadata": new_contract_metadata(),
-        "deterministic": deterministic,
-        "seed": seed,
-        "timeout_seconds": timeout_seconds,
-        "payload": {"operation": "runtime-test"},
-        "input": {"operation": "runtime-test"},
-        "input_data": {"operation": "runtime-test"},
-        "data": {"operation": "runtime-test"},
-        "parameters": {"operation": "runtime-test"},
-    }
-
-    kwargs = {
-        name: candidates[name]
-        for name in parameters
-        if name in candidates
-    }
-    missing = [
-        name
-        for name, parameter in parameters.items()
-        if name not in kwargs
-        and parameter.default is inspect.Parameter.empty
-        and parameter.kind
-        in (inspect.Parameter.POSITIONAL_OR_KEYWORD, inspect.Parameter.KEYWORD_ONLY)
-    ]
-    if missing:
-        raise AssertionError(
-            "ExecutionRequest added required constructor fields that this test "
-            f"helper does not populate: {', '.join(missing)}"
-        )
-
-    return ExecutionRequest(**kwargs)
+    return ExecutionRequest(
+        component=component,
+        operation="runtime-test",
+        payload={"operation": "runtime-test"},
+        metadata=new_contract_metadata(),
+        execution_id=execution_id if execution_id is not None else uuid4(),
+        timeout_seconds=timeout_seconds,
+        deterministic=deterministic,
+        seed=seed,
+    )
 
 
 @pytest.fixture

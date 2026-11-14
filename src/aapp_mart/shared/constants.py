@@ -53,3 +53,8 @@ MAX_RISK_SCORE: float = 10.0
 # Attack graph analysis limits.
 DEFAULT_MAX_PATHS: int = 20
 DEFAULT_MAX_PATH_DEPTH: int = 8
+
+# Shared I/O defaults.
+DEFAULT_ENCODING: str = "utf-8"
+DEFAULT_RETRY_COUNT: int = 3
+DEFAULT_TIMEOUT_SECONDS: float = 30.0

@@ -1,8 +1,9 @@
+"""Public exports for shared AAPP-MART utilities."""
+
 from aapp_mart.shared.constants import (
     DEFAULT_ENCODING,
     DEFAULT_RETRY_COUNT,
     DEFAULT_TIMEOUT_SECONDS,
-    SUPPORTED_SYMMETRY_LEVELS,
 )
 from aapp_mart.shared.utils import flatten, normalize_name
 from aapp_mart.shared.validators import (

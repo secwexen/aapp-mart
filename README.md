@@ -34,15 +34,15 @@ AAPP analyzes available security and environment data to identify potential atta
 
 ## How it Works
 
-### 1. AI-Powered Autonomous Attack Path Prediction (AAPP)
+### AI-Powered Autonomous Attack Path Prediction (AAPP)
 
 Analyzes available asset, vulnerability, permission, and relationship data to identify and prioritize potential attack paths. Results depend on the input data and implemented analysis methods; they do not by themselves confirm that a path is exploitable.
 
-### 2. Multi-Agent Red Team Simulation (MART)
+### Multi-Agent Red Team Simulation (MART)
 
 Coordinates the simulation workflows and agent capabilities supported by the current implementation. These workflows model selected adversary activities; simulated outcomes should not be interpreted as evidence of real compromise.
 
-### 3. Core Orchestration Engine
+### Core Orchestration Engine
 
 Coordinates analysis and simulation workflows, manages simulation state, and produces structured results and reports. The available capabilities depend on the implemented modules and configuration.
 

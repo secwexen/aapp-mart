@@ -11,6 +11,7 @@ requires-python = ">=3.13"
 license = "Apache-2.0"
 license-files = [
     "LICENSE",
+    "LICENSE-3RD-PARTY.md",
     "NOTICE",
 ]
 
@@ -112,16 +113,17 @@ include = ["aapp_mart*"]
 
 [tool.setuptools.package-data]
 aapp_mart = [
-  "py.typed",
-  "/*.json",
-  "/.yaml",
-  "**/.yml",
-  "/*.md",
-  "/*.txt"
+    "py.typed",
+    "**/*.json",
+    "**/*.yaml",
+    "**/*.yml",
+    "**/*.md",
+    "**/*.txt",
+    "**/.env.example",
 ]
 
 [tool.pytest.ini_options]
-addopts = "--cov=aapp_mart --cov-branch --cov-report=term-missing --cov-report=xml -n auto --import-mode=importlib"
+addopts = "--cov=aapp_mart --cov-branch --cov-report=term-missing --cov-report=html --cov-report=xml -n auto --import-mode=importlib"
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
@@ -144,6 +146,14 @@ source = ["aapp_mart"]
 [tool.coverage.report]
 fail_under = 80
 show_missing = true
+skip_covered = false
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+]
+
+[tool.coverage.html]
+directory = "reports/coverage"
 
 [tool.ruff]
 line-length = 120

@@ -4,12 +4,12 @@
 
 It combines:
 
-- **AI-Powered Autonomous Attack Path Prediction (AAPP)** – Analyzes target data and attack graph structures to identify and prioritize potential attack paths.
-- **Multi-Agent Red Team Simulation (MART)** – Coordinates specialized agents to simulate adversarial behavior within controlled simulation workflows.
-- **Core Orchestration Engine** – Coordinates prediction and simulation workflows, manages execution state, and controls component interactions.
-- **Attack Graph Analysis** – Represents relationships between relevant assets, vulnerabilities, privileges, and potential attack transitions.
-- **Risk and Vulnerability Analysis** – Analyzes vulnerability-related data and prioritizes risks using the implemented assessment methods.
-- **Threat Intelligence** – Supports the collection and processing of basic threat intelligence from public sources.
+- **AI-Powered Autonomous Attack Path Prediction (AAPP)** - Analyzes target data and attack graph structures to identify and prioritize potential attack paths.
+- **Multi-Agent Red Team Simulation (MART)** - Coordinates specialized agents to simulate adversarial behavior within controlled simulation workflows.
+- **Core Orchestration Engine** - Coordinates prediction and simulation workflows, manages execution state, and controls component interactions.
+- **Attack Graph Analysis** - Represents relationships between relevant assets, vulnerabilities, privileges, and potential attack transitions.
+- **Risk and Vulnerability Analysis** - Analyzes vulnerability-related data and prioritizes risks using the implemented assessment methods.
+- **Threat Intelligence** - Supports the collection and processing of basic threat intelligence from public sources.
 
 AAPP-MART is designed to combine attack-path analysis, risk assessment, and multi-agent simulation within a unified engine. Its results depend on the quality of the input data, the implemented analysis methods, and the configuration of the simulation environment.
 

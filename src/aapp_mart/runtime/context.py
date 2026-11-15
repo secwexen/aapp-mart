@@ -27,7 +27,7 @@ class ExecutionContext:
     seed: int | None
     created_at: datetime
     timeout_seconds: float | None = None
-    attributes: dict[str, Any] = field(default_factory=dict)
+    attributes: dict[str, Any] = field(default_factory=dict[str, Any])
     _cancel_event: Event = field(
         default_factory=Event,
         repr=False,

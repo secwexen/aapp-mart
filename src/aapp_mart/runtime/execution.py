@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from datetime import datetime
 from threading import RLock
 from typing import Any, Mapping
 
@@ -16,6 +17,12 @@ from aapp_mart.engine.state_machine import (
     StateTransition,
 )
 from aapp_mart.engine.utils import normalize_error, utc_now
+from aapp_mart.events import (
+    Event,
+    EventMetadata,
+    EventPublisher,
+    EventType,
+)
 from aapp_mart.runtime.context import ExecutionContext
 
 
@@ -26,6 +33,8 @@ class RuntimeExecution:
         self,
         request: ExecutionRequest,
         context: ExecutionContext | None = None,
+        *,
+        event_publisher: EventPublisher | None = None,
     ) -> None:
         """Initialize an execution from its request and context."""
 
@@ -44,10 +53,27 @@ class RuntimeExecution:
                 "Runtime context component does not match request"
             )
 
+        self._event_publisher = (
+            event_publisher
+            if event_publisher is not None
+            else EventPublisher()
+        )
+
         self._state_machine = ExecutionStateMachine()
-        self._started_at = None
+        self._started_at: datetime | None = None
         self._result: ExecutionResult | None = None
         self._lock = RLock()
+
+        self._publish_lifecycle_event(
+            EventType.EXECUTION_SUBMITTED,
+            ExecutionStatus.PENDING,
+        )
+
+    @property
+    def event_publisher(self) -> EventPublisher:
+        """Return the event publisher used by this execution."""
+
+        return self._event_publisher
 
     @property
     def status(self) -> ExecutionStatus:
@@ -56,7 +82,7 @@ class RuntimeExecution:
         return self._state_machine.status
 
     @property
-    def started_at(self):
+    def started_at(self) -> datetime | None:
         """Return the execution start timestamp."""
 
         return self._started_at
@@ -108,6 +134,11 @@ class RuntimeExecution:
                 ExecutionStatus.RUNNING
             )
 
+        self._publish_lifecycle_event(
+            EventType.EXECUTION_STARTED,
+            ExecutionStatus.RUNNING,
+        )
+
     def succeed(
         self,
         output: Mapping[str, Any] | None = None,
@@ -121,7 +152,7 @@ class RuntimeExecution:
                 ExecutionStatus.SUCCEEDED
             )
 
-            self._result = ExecutionResult(
+            result = ExecutionResult(
                 execution_id=self.request.execution_id,
                 component=self.request.component,
                 status=ExecutionStatus.SUCCEEDED,
@@ -131,7 +162,14 @@ class RuntimeExecution:
                 metadata=self.request.metadata,
             )
 
-            return self._result
+            self._result = result
+
+        self._publish_lifecycle_event(
+            EventType.EXECUTION_SUCCEEDED,
+            ExecutionStatus.SUCCEEDED,
+        )
+
+        return result
 
     def fail(
         self,
@@ -146,7 +184,7 @@ class RuntimeExecution:
                 ExecutionStatus.FAILED
             )
 
-            self._result = ExecutionResult(
+            result = ExecutionResult(
                 execution_id=self.request.execution_id,
                 component=self.request.component,
                 status=ExecutionStatus.FAILED,
@@ -156,7 +194,14 @@ class RuntimeExecution:
                 metadata=self.request.metadata,
             )
 
-            return self._result
+            self._result = result
+
+        self._publish_lifecycle_event(
+            EventType.EXECUTION_FAILED,
+            ExecutionStatus.FAILED,
+        )
+
+        return result
 
     def cancel(self) -> ExecutionResult:
         """Cancel a pending or running execution."""
@@ -174,7 +219,7 @@ class RuntimeExecution:
                 ExecutionStatus.CANCELLED
             )
 
-            self._result = ExecutionResult(
+            result = ExecutionResult(
                 execution_id=self.request.execution_id,
                 component=self.request.component,
                 status=ExecutionStatus.CANCELLED,
@@ -184,7 +229,46 @@ class RuntimeExecution:
                 metadata=self.request.metadata,
             )
 
-            return self._result
+            self._result = result
+
+        self._publish_lifecycle_event(
+            EventType.EXECUTION_CANCELLED,
+            ExecutionStatus.CANCELLED,
+        )
+
+        return result
+
+    def _publish_lifecycle_event(
+        self,
+        event_type: EventType,
+        status: ExecutionStatus,
+    ) -> None:
+        """Publish a runtime lifecycle event safely."""
+
+        try:
+            event = Event(
+                event_type=event_type,
+                payload={
+                    "execution_id": str(self.request.execution_id),
+                    "component": self.request.component.value,
+                    "operation": self.request.operation,
+                    "status": status.value,
+                },
+                metadata=EventMetadata(
+                    source="aapp_mart.runtime",
+                    correlation_id=self.request.metadata.correlation_id,
+                    attributes={
+                        "execution_id": str(self.request.execution_id),
+                        "component": self.request.component.value,
+                    },
+                ),
+            )
+
+            self._event_publisher.publish(event)
+
+        except Exception:  # pylint: disable=broad-exception-caught
+            # Event delivery must not interrupt runtime execution.
+            return
 
     def _ensure_running(self) -> None:
         """Ensure that the execution is currently running."""
@@ -194,3 +278,6 @@ class RuntimeExecution:
                 "Operation requires a running execution.",
                 execution_id=str(self.request.execution_id),
             )
+
+
+__all__ = ["RuntimeExecution"]

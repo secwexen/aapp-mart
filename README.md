@@ -104,11 +104,11 @@ python demo/aapp_mart.py --target 10.10.20.15
 [*] Target IP (Initial Entry Point) : 10.10.20.15 (WORKSTATION-01)
 [*] Risk Score                      : 8.32/10 (HIGH)
 [*] Summary                         : DC (10.10.20.45) breached via Workstation (10.10.20.15) kernel privilege escalation using CVE-2024-1086. Backup Server (10.10.20.25) compromise.
-[*] Duration                        : 1.00s
+[*] Duration                        : 2.50s
 [*] Simulated Step Count            : 5 Stages
 [*] Affected Assets                 : 4 Systems (3 Compromised, 1 Isolated, 0 Blocked)
-[*] Started At                      : 2026-12-31T23:59:42.123456+00:00
-[*] Generated At                    : 2026-12-31T23:59:45.123456+00:00
+[*] Started At                      : 2026-12-31T23:59:42.114291+00:00
+[*] Generated At                    : 2026-12-31T23:59:45.329446+00:00
 
 --- Affected Critical Assets ---
 

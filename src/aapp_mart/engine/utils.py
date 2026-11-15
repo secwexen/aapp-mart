@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import hashlib
 from datetime import datetime, timezone
-from typing import Any
 
 from aapp_mart.engine.contracts import ExecutionRequest
 
@@ -30,11 +29,6 @@ def validate_execution_request(
     request: ExecutionRequest,
 ) -> None:
     """Validate the structure of an execution request."""
-
-    if not isinstance(request, ExecutionRequest):
-        raise TypeError(
-            "request must be an ExecutionRequest instance."
-        )
 
     if not request.operation.strip():
         raise ValueError(
@@ -72,9 +66,6 @@ def derive_seed(
     namespace: str,
 ) -> int:
     """Derive a reproducible seed for a named execution component."""
-
-    if not isinstance(base_seed, int):
-        raise TypeError("base_seed must be an integer.")
 
     if not namespace.strip():
         raise ValueError("namespace must not be empty.")

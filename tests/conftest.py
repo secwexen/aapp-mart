@@ -1,3 +1,9 @@
+"""Shared pytest fixtures and test environment configuration.
+
+Provides repository paths and configures Python import paths
+for the AAPP-MART test suite.
+"""
+
 from __future__ import annotations
 
 import os

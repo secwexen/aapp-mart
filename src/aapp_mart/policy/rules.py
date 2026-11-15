@@ -1,3 +1,5 @@
+"""Policy scope normalization and validation rules."""
+
 from aapp_mart.policy.models import Policy
 
 
@@ -16,8 +18,6 @@ def normalize_scope_value(value: str) -> str:
 
 def validate_policy(policy: Policy) -> None:
     """Check policy invariants before the policy is used."""
-    if not isinstance(policy.enabled, bool):
-        raise ValueError("'enabled' must be a boolean.")
 
     for target in policy.allowed_targets:
         normalize_scope_value(target)

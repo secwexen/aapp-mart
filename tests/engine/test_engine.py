@@ -1,6 +1,6 @@
 """Integration tests for the AAPP-MART core execution engine."""
 
-from uuid import uuid4
+from uuid import UUID
 
 import pytest
 
@@ -11,11 +11,9 @@ from aapp_mart.engine.contracts import (
     ExecutionStatus,
     new_contract_metadata,
 )
-from aapp_mart.engine.exceptions import (
-    ComponentNotRegisteredError,
-    ExecutionError,
-)
+from aapp_mart.engine.exceptions import ComponentNotRegisteredError, ExecutionError
 from aapp_mart.engine.pipeline import ExecutionPipeline
+from aapp_mart.events import Event, EventPublisher, EventType
 
 
 class SuccessfulComponent:
@@ -53,7 +51,7 @@ class FailingComponent:
 
 
 class MismatchedComponent:
-    """Test component that returns an incorrect execution ID."""
+    """Component that returns a result with an incorrect execution ID."""
 
     component_name = ComponentName.AAPP
 
@@ -61,13 +59,14 @@ class MismatchedComponent:
         self,
         request: ExecutionRequest,
     ) -> ExecutionResult:
-        """Return a result with a mismatched execution ID."""
+        """Return a result with a different execution ID."""
 
         return ExecutionResult(
-            execution_id=uuid4(),
+            execution_id=UUID(int=request.execution_id.int ^ 1),
             component=self.component_name,
             status=ExecutionStatus.SUCCEEDED,
-            output={"message": "Invalid execution result"},
+            output={"message": "Execution completed"},
+            metadata=request.metadata,
         )
 
 
@@ -89,6 +88,26 @@ class PendingComponent:
         )
 
 
+class CancelledComponent:
+    """Test component that returns a cancelled execution result."""
+
+    component_name = ComponentName.AAPP
+
+    def execute(
+        self,
+        request: ExecutionRequest,
+    ) -> ExecutionResult:
+        """Return a cancelled execution result."""
+
+        return ExecutionResult(
+            execution_id=request.execution_id,
+            component=self.component_name,
+            status=ExecutionStatus.CANCELLED,
+            output={"reason": "Execution cancelled"},
+            metadata=request.metadata,
+        )
+
+
 def create_request(
     component: ComponentName = ComponentName.AAPP,
 ) -> ExecutionRequest:
@@ -104,11 +123,16 @@ def create_request(
     )
 
 
-@pytest.fixture
-def pipeline() -> ExecutionPipeline:
+@pytest.fixture(name="pipeline")
+def _pipeline_fixture() -> ExecutionPipeline:
     """Provide a fresh execution pipeline."""
 
     return ExecutionPipeline()
+
+
+# ---------------------------------------------------------------------------
+# Component registration
+# ---------------------------------------------------------------------------
 
 
 def test_register_component(
@@ -177,6 +201,11 @@ def test_unregister_missing_component(
     assert removed is False
 
 
+# ---------------------------------------------------------------------------
+# Execution pipeline
+# ---------------------------------------------------------------------------
+
+
 def test_submit_successful_execution(
     pipeline: ExecutionPipeline,
 ) -> None:
@@ -191,9 +220,7 @@ def test_submit_successful_execution(
     assert result.execution_id == request.execution_id
     assert result.component is ComponentName.AAPP
     assert result.status is ExecutionStatus.SUCCEEDED
-    assert result.output["message"] == (
-        "Execution completed successfully"
-    )
+    assert result.output["message"] == ("Execution completed successfully")
 
 
 def test_submit_unregistered_component(
@@ -278,6 +305,11 @@ def test_duplicate_execution_id_is_rejected(
         pipeline.submit(request)
 
 
+# ---------------------------------------------------------------------------
+# Execution state
+# ---------------------------------------------------------------------------
+
+
 def test_execution_state_after_success(
     pipeline: ExecutionPipeline,
 ) -> None:
@@ -327,7 +359,127 @@ def test_failed_execution_state(
 
     pipeline.submit(request)
 
-    assert (
-        pipeline.get_state(request.execution_id)
-        is ExecutionStatus.FAILED
+    assert pipeline.get_state(request.execution_id) is ExecutionStatus.FAILED
+
+
+# ---------------------------------------------------------------------------
+# Engine Events integration
+# ---------------------------------------------------------------------------
+
+
+def test_pipeline_publishes_successful_lifecycle_events(
+    pipeline: ExecutionPipeline,
+) -> None:
+    """Verify successful execution lifecycle events."""
+
+    received: list[Event] = []
+    observed_states: list[ExecutionStatus] = []
+
+    request = create_request()
+
+    def record_event(event: Event) -> None:
+        """Record events and observe the submission state."""
+
+        received.append(event)
+
+        if event.event_type == EventType.EXECUTION_SUBMITTED:
+            observed_states.append(pipeline.get_state(request.execution_id))
+
+    pipeline.event_publisher.subscribe(record_event)
+    pipeline.register_component(SuccessfulComponent())
+
+    result = pipeline.submit(request)
+
+    assert result.status is ExecutionStatus.SUCCEEDED
+
+    assert [event.event_type for event in received] == [
+        EventType.EXECUTION_SUBMITTED,
+        EventType.EXECUTION_STARTED,
+        EventType.EXECUTION_SUCCEEDED,
+    ]
+
+    assert observed_states == [ExecutionStatus.PENDING]
+
+    assert all(event.correlation_id == request.metadata.correlation_id for event in received)
+
+    assert all(event.payload["execution_id"] == str(request.execution_id) for event in received)
+
+
+def test_pipeline_publishes_failed_lifecycle_events(
+    pipeline: ExecutionPipeline,
+) -> None:
+    """Verify failed execution lifecycle events."""
+
+    received: list[Event] = []
+    request = create_request(ComponentName.MART)
+
+    pipeline.event_publisher.subscribe(received.append)
+    pipeline.register_component(FailingComponent())
+
+    result = pipeline.submit(request)
+
+    assert result.status is ExecutionStatus.FAILED
+
+    assert [event.event_type for event in received] == [
+        EventType.EXECUTION_SUBMITTED,
+        EventType.EXECUTION_STARTED,
+        EventType.EXECUTION_FAILED,
+    ]
+
+    assert received[-1].correlation_id == (request.metadata.correlation_id)
+
+
+def test_pipeline_publishes_cancelled_lifecycle_events(
+    pipeline: ExecutionPipeline,
+) -> None:
+    """Verify cancelled execution lifecycle events."""
+
+    received: list[Event] = []
+    request = create_request()
+
+    pipeline.event_publisher.subscribe(received.append)
+    pipeline.register_component(CancelledComponent())
+
+    result = pipeline.submit(request)
+
+    assert result.status is ExecutionStatus.CANCELLED
+
+    assert [event.event_type for event in received] == [
+        EventType.EXECUTION_SUBMITTED,
+        EventType.EXECUTION_STARTED,
+        EventType.EXECUTION_CANCELLED,
+    ]
+
+    assert pipeline.get_state(request.execution_id) is ExecutionStatus.CANCELLED
+
+
+def test_subscriber_failure_does_not_interrupt_pipeline() -> None:
+    """Verify subscriber failures do not interrupt execution."""
+
+    publisher = EventPublisher()
+    received: list[Event] = []
+
+    def failing_subscriber(_event: Event) -> None:
+        """Simulate a failing event subscriber."""
+
+        raise RuntimeError("Observer unavailable")
+
+    publisher.subscribe(failing_subscriber)
+    publisher.subscribe(received.append)
+
+    pipeline = ExecutionPipeline(
+        event_publisher=publisher,
     )
+
+    pipeline.register_component(SuccessfulComponent())
+
+    result = pipeline.submit(create_request())
+
+    assert result.status is ExecutionStatus.SUCCEEDED
+    assert len(received) == 3
+
+    assert [event.event_type for event in received] == [
+        EventType.EXECUTION_SUBMITTED,
+        EventType.EXECUTION_STARTED,
+        EventType.EXECUTION_SUCCEEDED,
+    ]

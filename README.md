@@ -107,8 +107,8 @@ python demo/aapp_mart.py --target 10.10.20.15
 [*] Duration                        : 2.50s
 [*] Simulated Step Count            : 5 Stages
 [*] Affected Assets                 : 4 Systems (3 Compromised, 1 Isolated, 0 Blocked)
-[*] Started At                      : 2026-12-31T23:59:42.114291+00:00
-[*] Generated At                    : 2026-12-31T23:59:45.329446+00:00
+[*] Started At                      : 2026-12-31T23:59:42.114Z
+[*] Generated At                    : 2026-12-31T23:59:45.329Z
 
 --- Affected Critical Assets ---
 

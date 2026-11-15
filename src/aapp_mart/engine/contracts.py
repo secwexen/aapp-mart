@@ -32,11 +32,9 @@ class ContractMetadata:
     """Common metadata attached to requests and results."""
 
     correlation_id: str
-    created_at: datetime = field(
-        default_factory=lambda: datetime.now(timezone.utc)
-    )
+    created_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     schema_version: str = "1.0"
-    labels: Mapping[str, str] = field(default_factory=dict)
+    labels: Mapping[str, str] = field(default_factory=dict[str, str])
 
     def __post_init__(self) -> None:
         if not self.correlation_id.strip():
@@ -66,18 +64,11 @@ class ExecutionRequest:
         if not self.operation.strip():
             raise ValueError("operation must not be empty")
 
-        if (
-            self.timeout_seconds is not None
-            and self.timeout_seconds <= 0
-        ):
-            raise ValueError(
-                "timeout_seconds must be greater than zero"
-            )
+        if self.timeout_seconds is not None and self.timeout_seconds <= 0:
+            raise ValueError("timeout_seconds must be greater than zero")
 
         if self.deterministic and self.seed is None:
-            raise ValueError(
-                "deterministic execution requires a seed"
-            )
+            raise ValueError("deterministic execution requires a seed")
 
 
 @dataclass(frozen=True, slots=True)
@@ -87,43 +78,24 @@ class ExecutionResult:
     execution_id: UUID
     component: ComponentName
     status: ExecutionStatus
-    output: Mapping[str, Any] = field(default_factory=dict)
+    output: Mapping[str, Any] = field(default_factory=dict[str, Any])
     error: Mapping[str, str] | None = None
     started_at: datetime | None = None
-    completed_at: datetime = field(
-        default_factory=lambda: datetime.now(timezone.utc)
-    )
+    completed_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     metadata: ContractMetadata | None = None
 
     def __post_init__(self) -> None:
         if self.completed_at.tzinfo is None:
-            raise ValueError(
-                "completed_at must be timezone-aware"
-            )
+            raise ValueError("completed_at must be timezone-aware")
 
-        if (
-            self.started_at is not None
-            and self.started_at.tzinfo is None
-        ):
-            raise ValueError(
-                "started_at must be timezone-aware"
-            )
+        if self.started_at is not None and self.started_at.tzinfo is None:
+            raise ValueError("started_at must be timezone-aware")
 
-        if (
-            self.status is ExecutionStatus.FAILED
-            and not self.error
-        ):
-            raise ValueError(
-                "failed results must include error details"
-            )
+        if self.status is ExecutionStatus.FAILED and not self.error:
+            raise ValueError("failed results must include error details")
 
-        if (
-            self.status is not ExecutionStatus.FAILED
-            and self.error is not None
-        ):
-            raise ValueError(
-                "only failed results may include error details"
-            )
+        if self.status is not ExecutionStatus.FAILED and self.error is not None:
+            raise ValueError("only failed results may include error details")
 
 
 @dataclass(frozen=True, slots=True)
@@ -156,9 +128,7 @@ class PredictionResult:
 
     def __post_init__(self) -> None:
         if not 0.0 <= self.confidence <= 1.0:
-            raise ValueError(
-                "confidence must be between 0 and 1"
-            )
+            raise ValueError("confidence must be between 0 and 1")
 
         if not self.rationale.strip():
             raise ValueError("rationale must not be empty")
@@ -194,18 +164,11 @@ class SimulationResult:
     metadata: ContractMetadata
 
     def __post_init__(self) -> None:
-        if (
-            self.started_at.tzinfo is None
-            or self.completed_at.tzinfo is None
-        ):
-            raise ValueError(
-                "simulation timestamps must be timezone-aware"
-            )
+        if self.started_at.tzinfo is None or self.completed_at.tzinfo is None:
+            raise ValueError("simulation timestamps must be timezone-aware")
 
         if self.completed_at < self.started_at:
-            raise ValueError(
-                "completed_at cannot precede started_at"
-            )
+            raise ValueError("completed_at cannot precede started_at")
 
 
 class ExecutionComponent(Protocol):
@@ -214,12 +177,14 @@ class ExecutionComponent(Protocol):
     @property
     def component_name(self) -> ComponentName:
         """Return the component identifier."""
+        ...
 
     def execute(
         self,
         request: ExecutionRequest,
     ) -> ExecutionResult:
         """Execute a request and return a normalized result."""
+        ...
 
 
 class AAPPInterface(Protocol):
@@ -230,6 +195,7 @@ class AAPPInterface(Protocol):
         request: PredictionRequest,
     ) -> PredictionResult:
         """Produce a prediction without asserting real-world compromise."""
+        ...
 
 
 class MARTInterface(Protocol):
@@ -240,6 +206,7 @@ class MARTInterface(Protocol):
         request: SimulationRequest,
     ) -> SimulationResult:
         """Run a bounded simulation and return its observed events."""
+        ...
 
 
 class EngineInterface(Protocol):
@@ -250,6 +217,7 @@ class EngineInterface(Protocol):
         request: ExecutionRequest,
     ) -> ExecutionResult:
         """Submit and execute a normalized component request."""
+        ...
 
 
 def new_contract_metadata(

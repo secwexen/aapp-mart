@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from threading import RLock
+from typing import ClassVar
 
 from aapp_mart.engine.contracts import ExecutionStatus
 
@@ -21,7 +22,7 @@ class StateTransition:
 class ExecutionStateMachine:
     """Manage valid execution lifecycle transitions."""
 
-    _ALLOWED_TRANSITIONS = {
+    _ALLOWED_TRANSITIONS: ClassVar[dict[ExecutionStatus, set[ExecutionStatus]]] = {
         ExecutionStatus.PENDING: {
             ExecutionStatus.RUNNING,
             ExecutionStatus.CANCELLED,
@@ -78,10 +79,7 @@ class ExecutionStateMachine:
             allowed = self._ALLOWED_TRANSITIONS[self._status]
 
             if target not in allowed:
-                raise ValueError(
-                    f"Invalid execution transition: "
-                    f"{self._status.value} -> {target.value}"
-                )
+                raise ValueError(f"Invalid execution transition: " f"{self._status.value} -> {target.value}")
 
             transition = StateTransition(
                 previous=self._status,

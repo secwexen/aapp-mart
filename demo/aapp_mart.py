@@ -34,6 +34,12 @@ def clear_screen() -> None:
     """Clear the terminal screen."""
     console.clear()
 
+def format_timestamp(value: str) -> str:
+    """Format a UTC timestamp for human-readable CLI output."""
+    timestamp = datetime.fromisoformat(value)
+    return timestamp.isoformat(
+        timespec="milliseconds"
+    ).replace("+00:00", "Z")
 
 def confirm_exit() -> bool:
     """Ask whether to exit after an interruption."""
@@ -613,8 +619,8 @@ def main() -> int:
         f"({compromised} Compromised, "
         f"{isolated} Isolated, {blocked} Blocked)"
     )
-    print(f"[*] Started At                      : {report.started_at}")
-    print(f"[*] Generated At                    : {report.generated_at}")
+    print(f"[*] Started At                      : " f"{format_timestamp(report.started_at)}")
+    print(f"[*] Generated At                    : " f"{format_timestamp(report.generated_at)}")
 
     print("\n--- Affected Critical Assets ---\n")
 

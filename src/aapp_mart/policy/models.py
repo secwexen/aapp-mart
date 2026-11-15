@@ -1,8 +1,12 @@
+"""Data models for policy evaluation and authorization decisions."""
+
 from dataclasses import dataclass
 from enum import StrEnum
 
 
 class Decision(StrEnum):
+    """Represent the outcome of a policy evaluation."""
+    
     ALLOW = "allow"
     DENY = "deny"
 
@@ -27,5 +31,7 @@ class PolicyRequest:
 
 @dataclass(frozen=True, slots=True)
 class PolicyResult:
+    """Represent the decision and explanation returned by policy evaluation."""
+    
     decision: Decision
     reason: str

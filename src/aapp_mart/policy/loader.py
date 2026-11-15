@@ -1,5 +1,7 @@
+"""Load and validate policy definitions from YAML files."""
+
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 import yaml
 
@@ -12,19 +14,24 @@ class PolicyFileError(ValueError):
 
 
 def _read_string_list(data: dict[str, Any], key: str) -> frozenset[str]:
+    """Read and validate a list of strings from policy data."""
+
     value = data.get(key)
 
     if not isinstance(value, list):
         raise PolicyFileError(f"'{key}' must be a list of strings.")
 
-    if any(not isinstance(item, str) for item in value):
+    items = cast(list[object], value)
+
+    if any(not isinstance(item, str) for item in items):
         raise PolicyFileError(f"Every item in '{key}' must be a string.")
 
-    return frozenset(value)
+    return frozenset(cast(list[str], items))
 
 
 def load_policy(path: str | Path) -> Policy:
-    """Load a policy from YAML without performing any network or system actions."""
+    """Load a policy from YAML without performing network or system actions."""
+
     policy_path = Path(path)
 
     try:
@@ -33,20 +40,29 @@ def load_policy(path: str | Path) -> Policy:
         raise PolicyFileError(f"Could not read policy file: {policy_path}") from exc
 
     try:
-        data = yaml.safe_load(text)
+        parsed: object = yaml.safe_load(text)
     except yaml.YAMLError as exc:
         raise PolicyFileError("Policy file contains invalid YAML.") from exc
 
-    if not isinstance(data, dict):
+    if not isinstance(parsed, dict):
         raise PolicyFileError("Policy file must contain a YAML object.")
 
+    raw_data = cast(dict[object, object], parsed)
+
+    if any(not isinstance(key, str) for key in raw_data):
+        raise PolicyFileError("Policy field names must be strings.")
+
+    data = cast(dict[str, Any], raw_data)
+
     allowed_keys = {"enabled", "allowed_targets", "allowed_actions"}
-    unknown_keys = set(data) - allowed_keys
+    unknown_keys: set[str] = set(data) - allowed_keys
+
     if unknown_keys:
-        names = ", ".join(sorted(str(key) for key in unknown_keys))
+        names = ", ".join(sorted(unknown_keys))
         raise PolicyFileError(f"Unknown policy field(s): {names}")
 
-    enabled = data.get("enabled", True)
+    enabled: object = data.get("enabled", True)
+
     if not isinstance(enabled, bool):
         raise PolicyFileError("'enabled' must be a boolean.")
 

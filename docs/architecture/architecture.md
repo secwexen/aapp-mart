@@ -550,3 +550,529 @@ This document describes the architecture of AAPP-MART Community Edition, includi
             test_simulation_workflow.py
             test_workflows.py
 ```
+
+## Architecture Diagram
+
+AAPP-MART is built with a modular architecture designed to support multiple execution modes while maintaining a shared core processing engine.
+
+```mermaid
+flowchart TB
+
+    %% =========================================================
+    %% CLIENT / ACCESS LAYER
+    %% =========================================================
+
+    subgraph ACCESS["Client / Access Layer"]
+        direction LR
+
+        USER["Users / Administrators"]
+        CLI["Command Line Interface"]
+        API["Basic API"]
+
+        USER --> CLI
+        USER --> API
+    end
+
+    %% =========================================================
+    %% COMMUNITY EDITION
+    %% =========================================================
+
+    subgraph COMMUNITY["AAPP-MART Community Edition"]
+        direction TB
+
+        %% =====================================================
+        %% ENGINE - CORE ORCHESTRATION
+        %% =====================================================
+
+        subgraph ENGINE["ENGINE - Core Orchestration"]
+            direction TB
+
+            ENTRY["Execution Entry Point"]
+            PIPELINE["Execution Pipeline"]
+            CONTRACTS["Shared Execution Contracts"]
+            RUNTIME["Runtime Manager"]
+            STATE["Execution State Machine"]
+            EXCEPTIONS["Execution Error Handling"]
+
+            ENTRY --> PIPELINE
+            PIPELINE --> CONTRACTS
+            PIPELINE --> RUNTIME
+            RUNTIME --> STATE
+            PIPELINE -.-> EXCEPTIONS
+        end
+
+        %% =====================================================
+        %% AAPP - AI-POWERED AUTONOMOUS ATTACK PATH PREDICTION
+        %% =====================================================
+
+        subgraph AAPP["AAPP - AI-Powered Autonomous Attack Path Prediction"]
+            direction TB
+
+            subgraph ATTACK_GRAPH["Attack Graph Analysis"]
+                direction LR
+
+                GRAPH_BUILDER["Attack Graph Builder"]
+                GRAPH_MODELS["Graph / Node / Edge Models"]
+                PATH_FINDER["Attack Path Finder"]
+
+                GRAPH_BUILDER --> GRAPH_MODELS
+                GRAPH_MODELS --> PATH_FINDER
+            end
+
+            subgraph AAPP_ANALYSIS["Prediction Analysis"]
+                direction LR
+
+                ANALYZER["Attack Graph Analyzer"]
+                FEATURES["Feature Pipeline"]
+                PREDICTOR["Pluggable Prediction Backend"]
+                PREDICTION["Prediction Orchestrator"]
+
+                ANALYZER --> FEATURES
+                FEATURES --> PREDICTOR
+                PREDICTOR --> PREDICTION
+            end
+
+            SCORING["AAPP Risk Scoring"]
+
+            ATTACK_GRAPH --> ANALYZER
+            PREDICTION --> SCORING
+        end
+
+        %% =====================================================
+        %% MART - MULTI-AGENT RED TEAM SIMULATION
+        %% =====================================================
+
+        subgraph MART["MART - Multi-Agent Red Team Simulation"]
+            direction TB
+
+            subgraph AGENT_LAYER["Agent Management"]
+                direction LR
+
+                AGENT_BASE["Base Agent"]
+                RECON["Recon Agent"]
+                DISCOVERY["Discovery Agent"]
+                LATERAL["Lateral Movement Agent"]
+                PRIVILEGE["Privilege Escalation Agent"]
+                VALIDATION_AGENT["Validation Agent"]
+
+                AGENT_BASE --> RECON
+                AGENT_BASE --> DISCOVERY
+                AGENT_BASE --> LATERAL
+                AGENT_BASE --> PRIVILEGE
+                AGENT_BASE --> VALIDATION_AGENT
+            end
+
+            subgraph MART_COORDINATION["Agent Coordination"]
+                direction LR
+
+                COORDINATOR["Agent Coordinator"]
+                STRATEGY["Agent Strategy"]
+                BEHAVIOR["Agent Behavior"]
+                MART_STATE["Agent State"]
+
+                COORDINATOR --> STRATEGY
+                STRATEGY --> BEHAVIOR
+                BEHAVIOR --> MART_STATE
+            end
+
+            subgraph SIMULATION["Simulation Environment"]
+                direction LR
+
+                SCENARIO["Scenario Management"]
+                SIMULATOR["Simulation Engine"]
+                SIM_STATE["Simulation State"]
+                SIM_STEP["Simulation Step"]
+                SIM_RESULT["Simulation Result"]
+
+                SCENARIO --> SIMULATOR
+                SIMULATOR --> SIM_STATE
+                SIMULATOR --> SIM_STEP
+                SIMULATOR --> SIM_RESULT
+            end
+
+            AGENT_LAYER --> MART_COORDINATION
+            MART_COORDINATION --> SIMULATION
+
+            %% Agent decision cycle and environment feedback
+            SIMULATION -.-> MART_COORDINATION
+        end
+
+        %% =====================================================
+        %% MITRE ATT&CK MAPPING
+        %% =====================================================
+
+        subgraph MITRE["MITRE ATT&CK Mapping"]
+            direction LR
+
+            ATTACK_MATRIX["ATT&CK Matrix"]
+            TACTICS["Tactics"]
+            TECHNIQUES["Techniques"]
+            MITRE_MAPPER["ATT&CK Mapper"]
+
+            ATTACK_MATRIX --> TACTICS
+            ATTACK_MATRIX --> TECHNIQUES
+            TACTICS --> MITRE_MAPPER
+            TECHNIQUES --> MITRE_MAPPER
+        end
+
+        %% =====================================================
+        %% CVE ANALYSIS
+        %% =====================================================
+
+        subgraph CVE["CVE Analysis"]
+            direction LR
+
+            CVE_FETCHER["CVE Fetcher"]
+            CVE_ANALYZER["CVE Analyzer"]
+            CVE_MODELS["CVE Models"]
+            CVE_CACHE["CVE Cache"]
+
+            CVE_FETCHER --> CVE_ANALYZER
+            CVE_ANALYZER --> CVE_MODELS
+            CVE_FETCHER --> CVE_CACHE
+        end
+
+        %% =====================================================
+        %% THREAT INTELLIGENCE
+        %% =====================================================
+
+        subgraph THREAT_INTEL["Basic Threat Intelligence - Public Sources"]
+            direction LR
+
+            TI_CLIENT["Threat Intelligence Client"]
+            TI_FEEDS["Public Threat Feeds"]
+            TI_INDICATORS["Threat Indicators"]
+            TI_CORRELATION["Threat Correlation"]
+
+            TI_CLIENT --> TI_FEEDS
+            TI_FEEDS --> TI_INDICATORS
+            TI_INDICATORS --> TI_CORRELATION
+        end
+
+        %% =====================================================
+        %% RISK ASSESSMENT
+        %% =====================================================
+
+        subgraph RISK["Risk Assessment"]
+            direction LR
+
+            RISK_MODELS["Risk Models"]
+            RISK_FACTORS["Risk Factors"]
+            RISK_CALCULATOR["Risk Calculator"]
+            RISK_SCORER["Risk Scorer"]
+
+            RISK_MODELS --> RISK_CALCULATOR
+            RISK_FACTORS --> RISK_CALCULATOR
+            RISK_CALCULATOR --> RISK_SCORER
+        end
+
+        %% =====================================================
+        %% POLICY EVALUATION
+        %% =====================================================
+
+        subgraph POLICY["Core Policy Evaluation"]
+            direction LR
+
+            POLICY_MODELS["Policy Models"]
+            POLICY_LOADER["Policy Loader"]
+            POLICY_RULES["Policy Rules"]
+            POLICY_EVALUATOR["Policy Evaluator"]
+
+            POLICY_LOADER --> POLICY_MODELS
+            POLICY_MODELS --> POLICY_EVALUATOR
+            POLICY_RULES --> POLICY_EVALUATOR
+        end
+
+        %% =====================================================
+        %% WORKFLOW ORCHESTRATION
+        %% =====================================================
+
+        subgraph WORKFLOWS["Workflow Orchestration"]
+            direction LR
+
+            WORKFLOW_BASE["Workflow Base"]
+            PREDICTION_WORKFLOW["Prediction Workflow"]
+            RISK_WORKFLOW["Risk Workflow"]
+            SIMULATION_WORKFLOW["Simulation Workflow"]
+
+            WORKFLOW_BASE --> PREDICTION_WORKFLOW
+            WORKFLOW_BASE --> RISK_WORKFLOW
+            WORKFLOW_BASE --> SIMULATION_WORKFLOW
+        end
+
+        %% =====================================================
+        %% MODEL MANAGEMENT
+        %% =====================================================
+
+        subgraph MODEL_MANAGEMENT["Core Model Management"]
+            direction LR
+
+            MODEL_BASE["Model Base"]
+            MODEL_LOADER["Model Loader"]
+            MODEL_MANAGER["Model Manager"]
+            MODEL_REGISTRY["Model Registry"]
+            MODEL_METADATA["Model Metadata"]
+
+            MODEL_BASE --> MODEL_MANAGER
+            MODEL_MANAGER --> MODEL_LOADER
+            MODEL_MANAGER --> MODEL_REGISTRY
+            MODEL_REGISTRY --> MODEL_METADATA
+        end
+
+        %% =====================================================
+        %% PLUGIN ARCHITECTURE
+        %% =====================================================
+
+        subgraph PLUGINS["Core Plugin Architecture"]
+            direction LR
+
+            PLUGIN_INTERFACES["Plugin Interfaces"]
+            PLUGIN_METADATA["Plugin Metadata"]
+            PLUGIN_LOADER["Plugin Loader"]
+            PLUGIN_EXCEPTIONS["Plugin Exceptions"]
+
+            PLUGIN_INTERFACES --> PLUGIN_LOADER
+            PLUGIN_LOADER --> PLUGIN_METADATA
+            PLUGIN_LOADER -.-> PLUGIN_EXCEPTIONS
+        end
+
+        %% =====================================================
+        %% REPORTING
+        %% =====================================================
+
+        subgraph REPORTING["JSON / CSV Reporting"]
+            direction LR
+
+            REPORT_MODELS["Report Models"]
+            REPORT_GENERATOR["Report Generator"]
+            JSON_REPORT["JSON Report Export"]
+            CSV_REPORT["CSV Report Export"]
+
+            REPORT_MODELS --> REPORT_GENERATOR
+            REPORT_GENERATOR --> JSON_REPORT
+            REPORT_GENERATOR --> CSV_REPORT
+        end
+
+        %% =====================================================
+        %% STORAGE
+        %% =====================================================
+
+        subgraph STORAGE["Storage Infrastructure"]
+            direction LR
+
+            STORAGE_BASE["Storage Interface"]
+            FILESYSTEM["Filesystem Storage"]
+            SQLITE["SQLite Storage"]
+
+            STORAGE_BASE --> FILESYSTEM
+            STORAGE_BASE --> SQLITE
+        end
+
+        %% =====================================================
+        %% SHARED INFRASTRUCTURE
+        %% =====================================================
+
+        subgraph SHARED["Shared Infrastructure"]
+            direction TB
+
+            VALIDATORS["Shared Input Validators"]
+            CONSTANTS["Shared Constants"]
+            UTILS["Shared Utilities"]
+
+            subgraph EVENT_SYSTEM["Event System"]
+                direction LR
+
+                EVENT_TYPES["Event Types"]
+                EVENT_PUBLISHER["Event Publisher"]
+                EVENT_SUBSCRIBER["Event Subscribers"]
+
+                EVENT_TYPES --> EVENT_PUBLISHER
+                EVENT_PUBLISHER --> EVENT_SUBSCRIBER
+            end
+
+            subgraph OBSERVABILITY["Basic Observability"]
+                direction LR
+
+                LOGGING["Logging"]
+                METRICS["Metrics"]
+                HEALTH["Health Monitoring"]
+            end
+
+            subgraph AUDIT["Basic Audit Logging"]
+                direction LR
+
+                AUDIT_EVENTS["Audit Events"]
+                AUDIT_MODELS["Audit Models"]
+                AUDIT_LOGGER["Audit Logger"]
+
+                AUDIT_EVENTS --> AUDIT_MODELS
+                AUDIT_MODELS --> AUDIT_LOGGER
+            end
+        end
+
+        %% =====================================================
+        %% CORE EXECUTION INTEGRATION
+        %% =====================================================
+
+        PIPELINE --> PREDICTION
+        PIPELINE --> SIMULATOR
+
+        %% =====================================================
+        %% SECURITY INTELLIGENCE INTEGRATION
+        %% =====================================================
+
+        MITRE_MAPPER -.-> MART
+        MITRE_MAPPER -.-> ATTACK_GRAPH
+
+        CVE_ANALYZER -.-> ATTACK_GRAPH
+        TI_CORRELATION -.-> ATTACK_GRAPH
+
+        %% =====================================================
+        %% RISK INTEGRATION
+        %% =====================================================
+
+        SCORING -.-> RISK_SCORER
+        CVE_ANALYZER -.-> RISK_SCORER
+        TI_CORRELATION -.-> RISK_SCORER
+
+        %% =====================================================
+        %% POLICY INTEGRATION
+        %% =====================================================
+
+        POLICY_EVALUATOR -.-> PIPELINE
+
+        %% =====================================================
+        %% WORKFLOW INTEGRATION
+        %% =====================================================
+
+        PIPELINE -.-> WORKFLOW_BASE
+
+        PREDICTION_WORKFLOW -.-> PREDICTION
+        RISK_WORKFLOW -.-> RISK_SCORER
+        SIMULATION_WORKFLOW -.-> SIMULATOR
+
+        %% =====================================================
+        %% MODEL MANAGEMENT INTEGRATION
+        %% =====================================================
+
+        MODEL_MANAGER -.-> PREDICTOR
+
+        %% =====================================================
+        %% PLUGIN EXTENSION POINTS
+        %% =====================================================
+
+        PLUGIN_LOADER -.-> ENGINE
+        PLUGIN_LOADER -.-> AAPP
+        PLUGIN_LOADER -.-> MART
+
+        %% =====================================================
+        %% VALIDATION AND SHARED SERVICES
+        %% =====================================================
+
+        VALIDATORS -.-> ENGINE
+        VALIDATORS -.-> AAPP
+        VALIDATORS -.-> MART
+
+        CONSTANTS -.-> ENGINE
+        UTILS -.-> ENGINE
+
+        %% =====================================================
+        %% EVENT AND OBSERVABILITY INTEGRATION
+        %% =====================================================
+
+        PIPELINE --> EVENT_PUBLISHER
+        RUNTIME --> EVENT_PUBLISHER
+
+        EVENT_SUBSCRIBER -.-> OBSERVABILITY
+        EVENT_SUBSCRIBER -.-> AUDIT
+
+        %% =====================================================
+        %% STORAGE INTEGRATION
+        %% =====================================================
+
+        STORAGE_BASE -.-> REPORTING
+        STORAGE_BASE -.-> MODEL_MANAGEMENT
+
+        %% =====================================================
+        %% REPORTING INTEGRATION
+        %% =====================================================
+
+        PREDICTION -.-> REPORT_GENERATOR
+        SIM_RESULT -.-> REPORT_GENERATOR
+        RISK_SCORER -.-> REPORT_GENERATOR
+
+    end
+
+    %% =========================================================
+    %% ACCESS INTEGRATION
+    %% =========================================================
+
+    CLI --> ENTRY
+    API --> ENTRY
+
+    %% =========================================================
+    %% COMPONENT STYLING
+    %% =========================================================
+
+    classDef access fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef engine fill:#d1fae5,stroke:#059669,color:#064e3b
+    classDef aapp fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef mart fill:#ffedd5,stroke:#ea580c,color:#7c2d12
+    classDef security fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef governance fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef shared fill:#f3f4f6,stroke:#6b7280,color:#1f2937
+    classDef extension fill:#fce7f3,stroke:#db2777,color:#831843
+
+    class USER,CLI,API access
+
+    class ENTRY,PIPELINE,CONTRACTS,RUNTIME,STATE,EXCEPTIONS engine
+
+    class GRAPH_BUILDER,GRAPH_MODELS,PATH_FINDER,ANALYZER,FEATURES,PREDICTOR,PREDICTION,SCORING aapp
+
+    class AGENT_BASE,RECON,DISCOVERY,LATERAL,PRIVILEGE,VALIDATION_AGENT,COORDINATOR,STRATEGY,BEHAVIOR,MART_STATE,SIMULATOR,SCENARIO,SIM_STATE,SIM_STEP,SIM_RESULT mart
+
+    class ATTACK_MATRIX,TACTICS,TECHNIQUES,MITRE_MAPPER,CVE_FETCHER,CVE_ANALYZER,CVE_MODELS,CVE_CACHE,TI_CLIENT,TI_FEEDS,TI_INDICATORS,TI_CORRELATION security
+
+    class RISK_MODELS,RISK_FACTORS,RISK_CALCULATOR,RISK_SCORER,POLICY_MODELS,POLICY_LOADER,POLICY_RULES,POLICY_EVALUATOR governance
+
+    class WORKFLOW_BASE,PREDICTION_WORKFLOW,RISK_WORKFLOW,SIMULATION_WORKFLOW governance
+
+    class MODEL_BASE,MODEL_LOADER,MODEL_MANAGER,MODEL_REGISTRY,MODEL_METADATA governance
+
+    class PLUGIN_INTERFACES,PLUGIN_METADATA,PLUGIN_LOADER,PLUGIN_EXCEPTIONS extension
+
+    class REPORT_MODELS,REPORT_GENERATOR,JSON_REPORT,CSV_REPORT governance
+
+    class STORAGE_BASE,FILESYSTEM,SQLITE governance
+
+    class VALIDATORS,CONSTANTS,UTILS,EVENT_TYPES,EVENT_PUBLISHER,EVENT_SUBSCRIBER,LOGGING,METRICS,HEALTH,AUDIT_EVENTS,AUDIT_MODELS,AUDIT_LOGGER shared
+
+    %% =====================================================
+    %% SUBGRAPH STYLING
+    %% =====================================================
+
+    style ACCESS fill:#eff6ff,stroke:#2563eb,stroke-width:2px
+    style COMMUNITY fill:#ffffff,stroke:#334155,stroke-width:3px
+    style ENGINE fill:#ecfdf5,stroke:#059669,stroke-width:2px
+    style AAPP fill:#f5f3ff,stroke:#7c3aed,stroke-width:2px
+    style MART fill:#fff7ed,stroke:#ea580c,stroke-width:2px
+    style ATTACK_GRAPH fill:#faf5ff,stroke:#8b5cf6,stroke-width:1.5px
+    style AAPP_ANALYSIS fill:#faf5ff,stroke:#8b5cf6,stroke-width:1.5px
+    style AGENT_LAYER fill:#fff7ed,stroke:#f97316,stroke-width:1.5px
+    style MART_COORDINATION fill:#fff7ed,stroke:#f97316,stroke-width:1.5px
+    style SIMULATION fill:#fff7ed,stroke:#f97316,stroke-width:1.5px
+    style MITRE fill:#fef2f2,stroke:#dc2626,stroke-width:2px
+    style CVE fill:#fef2f2,stroke:#dc2626,stroke-width:2px
+    style THREAT_INTEL fill:#fef2f2,stroke:#dc2626,stroke-width:2px
+    style RISK fill:#fffbeb,stroke:#d97706,stroke-width:2px
+    style POLICY fill:#fffbeb,stroke:#d97706,stroke-width:2px
+    style WORKFLOWS fill:#eff6ff,stroke:#3b82f6,stroke-width:2px
+    style MODEL_MANAGEMENT fill:#f5f3ff,stroke:#8b5cf6,stroke-width:2px
+    style PLUGINS fill:#fdf2f8,stroke:#db2777,stroke-width:2px
+    style REPORTING fill:#f1f5f9,stroke:#64748b,stroke-width:2px
+    style STORAGE fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
+    style SHARED fill:#f9fafb,stroke:#6b7280,stroke-width:2px
+    style EVENT_SYSTEM fill:#ffffff,stroke:#9ca3af,stroke-width:1px
+    style OBSERVABILITY fill:#ffffff,stroke:#9ca3af,stroke-width:1px
+    style AUDIT fill:#ffffff,stroke:#9ca3af,stroke-width:1px
+```

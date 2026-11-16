@@ -1,6 +1,6 @@
-# Architecture
+# AAPP-MART Architecture
 
-This document outlines the system architecture, core components, and internal data flow.
+This document describes the architecture of AAPP-MART Community Edition, including its core components, supporting modules, system boundaries, and internal execution flows.
 
 ## Project Structure
 

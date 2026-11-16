@@ -553,7 +553,7 @@ This document describes the architecture of AAPP-MART Community Edition, includi
 
 ## Architecture Diagram
 
-AAPP-MART is built with a modular architecture designed to support multiple execution modes while maintaining a shared core processing engine.
+This diagram illustrates the AAPP-MART Community Edition architecture, highlighting ENGINE orchestration, AAPP prediction, MART simulation, and supporting modules.
 
 ```mermaid
 flowchart TB

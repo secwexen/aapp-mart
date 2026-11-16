@@ -642,12 +642,12 @@ def main() -> int:
     Path("logs").mkdir(parents=True, exist_ok=True)
 
     json_output_file = (
-        f"logs/"
+        f"demo/logs/"
         f"attack_path_{clean_target}_{timestamp}.json"
     )
 
     csv_output_file = (
-        f"logs/"
+        f"demo/logs/"
         f"attack_path_{clean_target}_{timestamp}.csv"
     )
 

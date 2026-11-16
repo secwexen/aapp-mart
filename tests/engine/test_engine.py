@@ -4,11 +4,16 @@ from uuid import UUID
 
 import pytest
 
+from aapp_mart.aapp.models import PredictionMode
+from aapp_mart.aapp.prediction import Prediction
+from aapp_mart.aapp.predictor import Predictor
 from aapp_mart.engine.contracts import (
     ComponentName,
     ExecutionRequest,
     ExecutionResult,
     ExecutionStatus,
+    PredictionRequest,
+    PredictionResult,
     new_contract_metadata,
 )
 from aapp_mart.engine.exceptions import ComponentNotRegisteredError, ExecutionError
@@ -18,6 +23,8 @@ from aapp_mart.events import Event, EventPublisher, EventType
 
 class SuccessfulComponent:
     """Test component that always returns a successful result."""
+
+    # pylint: disable=too-few-public-methods
 
     component_name = ComponentName.AAPP
 
@@ -39,6 +46,8 @@ class SuccessfulComponent:
 class FailingComponent:
     """Test component that raises an execution exception."""
 
+    # pylint: disable=too-few-public-methods
+
     component_name = ComponentName.MART
 
     def execute(
@@ -52,6 +61,8 @@ class FailingComponent:
 
 class MismatchedComponent:
     """Component that returns a result with an incorrect execution ID."""
+
+    # pylint: disable=too-few-public-methods
 
     component_name = ComponentName.AAPP
 
@@ -73,6 +84,8 @@ class MismatchedComponent:
 class PendingComponent:
     """Test component that returns a non-terminal execution status."""
 
+    # pylint: disable=too-few-public-methods
+
     component_name = ComponentName.AAPP
 
     def execute(
@@ -90,6 +103,8 @@ class PendingComponent:
 
 class CancelledComponent:
     """Test component that returns a cancelled execution result."""
+
+    # pylint: disable=too-few-public-methods
 
     component_name = ComponentName.AAPP
 
@@ -483,3 +498,159 @@ def test_subscriber_failure_does_not_interrupt_pipeline() -> None:
         EventType.EXECUTION_STARTED,
         EventType.EXECUTION_SUCCEEDED,
     ]
+
+
+# ---------------------------------------------------------------------------
+# AAPP - ENGINE integration
+# ---------------------------------------------------------------------------
+
+
+class MockAAPPBackend:
+    """Provide controlled prediction results for ENGINE integration tests."""
+
+    # pylint: disable=too-few-public-methods
+
+    def predict(
+        self,
+        request: PredictionRequest,
+        mode: PredictionMode,
+    ) -> PredictionResult:
+        """Return a controlled prediction result."""
+
+        return PredictionResult(
+            subject=request.subject,
+            predicted_paths=(
+                {
+                    "path_id": "path-001",
+                    "nodes": ("entry", "target"),
+                    "mode": mode.value,
+                },
+            ),
+            confidence=0.85,
+            rationale="Mock AAPP prediction.",
+            metadata=request.metadata,
+        )
+
+
+def create_aapp_request() -> ExecutionRequest:
+    """Create a valid AAPP prediction execution request."""
+
+    return ExecutionRequest(
+        component=ComponentName.AAPP,
+        operation="predict",
+        payload={
+            "subject": "server-01",
+            "objective": "Identify potential attack paths.",
+            "features": {
+                "hostname": "server-01",
+                "port": 443,
+                "is_external": True,
+            },
+            "mode": PredictionMode.DETERMINISTIC.value,
+        },
+        metadata=new_contract_metadata(
+            correlation_id="aapp-engine-integration",
+        ),
+    )
+
+
+def test_register_aapp_prediction_component(
+    pipeline: ExecutionPipeline,
+) -> None:
+    """Register the AAPP prediction component in ENGINE."""
+
+    prediction = Prediction(
+        predictor=Predictor(
+            backend=MockAAPPBackend(),
+        ),
+    )
+
+    pipeline.register_component(prediction)
+
+    assert ComponentName.AAPP in pipeline.registered_components
+
+
+def test_engine_executes_aapp_prediction(
+    pipeline: ExecutionPipeline,
+) -> None:
+    """Execute an AAPP prediction through ENGINE."""
+
+    prediction = Prediction(
+        predictor=Predictor(
+            backend=MockAAPPBackend(),
+        ),
+    )
+
+    pipeline.register_component(prediction)
+
+    request = create_aapp_request()
+    result = pipeline.submit(request)
+
+    assert result.execution_id == request.execution_id
+    assert result.component is ComponentName.AAPP
+    assert result.status is ExecutionStatus.SUCCEEDED
+    assert result.output["subject"] == "server-01"
+    assert result.output["confidence"] == 0.85
+    assert result.error is None
+
+
+def test_engine_handles_aapp_prediction_failure(
+    pipeline: ExecutionPipeline,
+) -> None:
+    """Normalize AAPP prediction backend failures through ENGINE."""
+
+    prediction = Prediction()
+
+    pipeline.register_component(prediction)
+
+    request = create_aapp_request()
+    result = pipeline.submit(request)
+
+    assert result.execution_id == request.execution_id
+    assert result.component is ComponentName.AAPP
+    assert result.status is ExecutionStatus.FAILED
+
+    assert result.error is not None
+    assert result.error["type"] == "PredictionBackendNotConfiguredError"
+
+    assert pipeline.get_state(request.execution_id) is ExecutionStatus.FAILED
+
+
+def test_engine_tracks_aapp_prediction_lifecycle(
+    pipeline: ExecutionPipeline,
+) -> None:
+    """Track AAPP prediction execution lifecycle."""
+
+    prediction = Prediction(
+        predictor=Predictor(
+            backend=MockAAPPBackend(),
+        ),
+    )
+
+    received: list[Event] = []
+
+    pipeline.event_publisher.subscribe(received.append)
+    pipeline.register_component(prediction)
+
+    request = create_aapp_request()
+    result = pipeline.submit(request)
+
+    assert result.status is ExecutionStatus.SUCCEEDED
+
+    assert [event.event_type for event in received] == [
+        EventType.EXECUTION_SUBMITTED,
+        EventType.EXECUTION_STARTED,
+        EventType.EXECUTION_SUCCEEDED,
+    ]
+
+    assert all(event.payload["execution_id"] == str(request.execution_id) for event in received)
+
+    assert all(event.payload["component"] == ComponentName.AAPP.value for event in received)
+
+    assert pipeline.get_state(request.execution_id) is ExecutionStatus.SUCCEEDED
+
+    history = pipeline.get_state_history(request.execution_id)
+
+    assert len(history) == 2
+    assert history[0].current is ExecutionStatus.RUNNING
+    assert history[1].current is ExecutionStatus.SUCCEEDED

@@ -675,3 +675,67 @@ def test_engine_and_runtime_can_share_event_publisher(
     assert all(event.source == "aapp_mart.engine" for event in received[:3])
 
     assert all(event.source == "aapp_mart.runtime" for event in received[3:])
+
+
+def test_submission_event_can_be_deferred_and_published_once(
+    request_factory: RequestFactory,
+) -> None:
+    """Verify submission events can be deferred and published exactly once."""
+
+    publisher = EventPublisher()
+    received: list[Event] = []
+    publisher.subscribe(received.append)
+
+    execution = RuntimeExecution(
+        request_factory(),
+        event_publisher=publisher,
+        publish_submitted=False,
+    )
+
+    assert not received
+
+    execution.publish_submitted()
+    execution.publish_submitted()
+
+    assert len(received) == 1
+    assert received[0].event_type is EventType.EXECUTION_SUBMITTED
+
+
+def test_pending_execution_can_fail_before_start(
+    request_factory: RequestFactory,
+) -> None:
+    """Verify a pending execution can fail before its component starts."""
+
+    publisher = EventPublisher()
+    received: list[Event] = []
+    publisher.subscribe(received.append)
+
+    execution = RuntimeExecution(
+        request_factory(),
+        event_publisher=publisher,
+    )
+
+    result = execution.fail_before_start(RuntimeError("Startup failed"))
+
+    assert result.status is ExecutionStatus.FAILED
+    assert result.started_at is None
+    assert result.error is not None
+    assert "Startup failed" in str(result.error)
+    assert execution.status is ExecutionStatus.FAILED
+    assert execution.is_terminal is True
+
+    assert [event.event_type for event in received] == [
+        EventType.EXECUTION_SUBMITTED,
+        EventType.EXECUTION_FAILED,
+    ]
+
+
+def test_running_execution_cannot_fail_before_start(
+    execution: RuntimeExecution,
+) -> None:
+    """Reject fail-before-start after execution has started."""
+
+    execution.start()
+
+    with pytest.raises(ExecutionError, match="pending"):
+        execution.fail_before_start(RuntimeError("Invalid transition"))

@@ -437,9 +437,6 @@ This document describes the architecture of AAPP-MART Community Edition, includi
     │       test_cve.py
     │       test_fetcher.py
     │       
-    ├───demo
-    │       test_aapp_mart.py
-    │       
     ├───engine
     │       test_engine.py
     │       test_pipeline.py

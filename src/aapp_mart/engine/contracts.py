@@ -1,10 +1,13 @@
-"""Core execution contracts shared by AAPP, MART, and ENGINE."""
+"""Shared execution contracts for AAPP, MART, and ENGINE."""
 
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from enum import StrEnum
+from functools import partial
+from numbers import Real
 from typing import Any, Mapping, Protocol, Sequence
 from uuid import UUID, uuid4
 
@@ -27,6 +30,13 @@ class ExecutionStatus(StrEnum):
     CANCELLED = "cancelled"
 
 
+def _validate_seed(seed: object) -> None:
+    """Validate an optional integer seed."""
+
+    if seed is not None and (isinstance(seed, bool) or not isinstance(seed, int)):
+        raise ValueError("seed must be an integer or None")
+
+
 @dataclass(frozen=True, slots=True)
 class ContractMetadata:
     """Common metadata attached to requests and results."""
@@ -34,7 +44,7 @@ class ContractMetadata:
     correlation_id: str
     created_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     schema_version: str = "1.0"
-    labels: Mapping[str, str] = field(default_factory=dict[str, str])
+    labels: Mapping[str, str] = field(default_factory=partial(dict[str, str]))
 
     def __post_init__(self) -> None:
         if not self.correlation_id.strip():
@@ -48,7 +58,7 @@ class ContractMetadata:
 
 
 @dataclass(frozen=True, slots=True)
-class ExecutionRequest:
+class ExecutionRequest:  # pylint: disable=too-many-instance-attributes
     """Immutable request submitted to the core execution engine."""
 
     component: ComponentName
@@ -64,21 +74,29 @@ class ExecutionRequest:
         if not self.operation.strip():
             raise ValueError("operation must not be empty")
 
-        if self.timeout_seconds is not None and self.timeout_seconds <= 0:
-            raise ValueError("timeout_seconds must be greater than zero")
+        if self.timeout_seconds is not None:
+            if (
+                isinstance(self.timeout_seconds, bool)
+                or not isinstance(self.timeout_seconds, Real)
+                or not math.isfinite(self.timeout_seconds)
+                or self.timeout_seconds <= 0
+            ):
+                raise ValueError("timeout_seconds must be a finite number greater than zero")
+
+        _validate_seed(self.seed)
 
         if self.deterministic and self.seed is None:
             raise ValueError("deterministic execution requires a seed")
 
 
 @dataclass(frozen=True, slots=True)
-class ExecutionResult:
+class ExecutionResult:  # pylint: disable=too-many-instance-attributes
     """Normalized result returned by AAPP, MART, or ENGINE."""
 
     execution_id: UUID
     component: ComponentName
     status: ExecutionStatus
-    output: Mapping[str, Any] = field(default_factory=dict[str, Any])
+    output: Mapping[str, Any] = field(default_factory=partial(dict[str, Any]))
     error: Mapping[str, str] | None = None
     started_at: datetime | None = None
     completed_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
@@ -107,6 +125,8 @@ class PredictionRequest:
     objective: str
     metadata: ContractMetadata
     model_name: str | None = None
+    deterministic: bool = True
+    seed: int | None = 0
 
     def __post_init__(self) -> None:
         if not self.subject.strip():
@@ -114,6 +134,11 @@ class PredictionRequest:
 
         if not self.objective.strip():
             raise ValueError("objective must not be empty")
+
+        _validate_seed(self.seed)
+
+        if self.deterministic and self.seed is None:
+            raise ValueError("deterministic prediction requires a seed")
 
 
 @dataclass(frozen=True, slots=True)
@@ -127,8 +152,13 @@ class PredictionResult:
     metadata: ContractMetadata
 
     def __post_init__(self) -> None:
-        if not 0.0 <= self.confidence <= 1.0:
-            raise ValueError("confidence must be between 0 and 1")
+        if (
+            isinstance(self.confidence, bool)
+            or not isinstance(self.confidence, Real)
+            or not math.isfinite(self.confidence)
+            or not 0.0 <= self.confidence <= 1.0
+        ):
+            raise ValueError("confidence must be a finite number between 0 and 1")
 
         if not self.rationale.strip():
             raise ValueError("rationale must not be empty")
@@ -142,7 +172,8 @@ class SimulationRequest:
     target: str
     parameters: Mapping[str, Any]
     metadata: ContractMetadata
-    seed: int = 0
+    seed: int | None = 0
+    deterministic: bool = True
 
     def __post_init__(self) -> None:
         if not self.scenario.strip():
@@ -150,6 +181,11 @@ class SimulationRequest:
 
         if not self.target.strip():
             raise ValueError("target must not be empty")
+
+        _validate_seed(self.seed)
+
+        if self.deterministic and self.seed is None:
+            raise ValueError("deterministic simulation requires a seed")
 
 
 @dataclass(frozen=True, slots=True)
@@ -187,7 +223,7 @@ class ExecutionComponent(Protocol):
         ...
 
 
-class AAPPInterface(Protocol):
+class AAPPInterface(Protocol):  # pylint: disable=too-few-public-methods
     """Public boundary exposed by the AAPP prediction component."""
 
     def predict(
@@ -198,7 +234,7 @@ class AAPPInterface(Protocol):
         ...
 
 
-class MARTInterface(Protocol):
+class MARTInterface(Protocol):  # pylint: disable=too-few-public-methods
     """Public boundary exposed by the MART simulation component."""
 
     def simulate(
@@ -209,7 +245,7 @@ class MARTInterface(Protocol):
         ...
 
 
-class EngineInterface(Protocol):
+class EngineInterface(Protocol):  # pylint: disable=too-few-public-methods
     """Public orchestration boundary exposed by ENGINE."""
 
     def submit(
@@ -231,3 +267,21 @@ def new_contract_metadata(
         correlation_id=correlation_id or str(uuid4()),
         labels=dict(labels or {}),
     )
+
+
+__all__ = [
+    "AAPPInterface",
+    "ComponentName",
+    "ContractMetadata",
+    "EngineInterface",
+    "ExecutionComponent",
+    "ExecutionRequest",
+    "ExecutionResult",
+    "ExecutionStatus",
+    "MARTInterface",
+    "PredictionRequest",
+    "PredictionResult",
+    "SimulationRequest",
+    "SimulationResult",
+    "new_contract_metadata",
+]

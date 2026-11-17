@@ -50,6 +50,8 @@ class Prediction:
             objective=request.objective,
             metadata=request.metadata,
             model_name=request.model_name,
+            deterministic=request.deterministic,
+            seed=request.seed,
         )
 
         return self._predictor.predict(
@@ -145,6 +147,8 @@ class Prediction:
             objective=objective,
             metadata=request.metadata,
             model_name=model_name,
+            deterministic=request.deterministic,
+            seed=request.seed,
         )
 
     @staticmethod

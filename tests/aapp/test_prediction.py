@@ -162,6 +162,28 @@ def test_prediction_preserves_request_metadata(
     assert backend.last_request.metadata == prediction_request.metadata
 
 
+def test_prediction_preserves_seed_and_deterministic(
+    prediction: Prediction,
+    metadata: ContractMetadata,
+    backend: MockPredictionBackend,
+) -> None:
+    """Preserve seed and deterministic settings during preparation."""
+    request = PredictionRequest(
+        subject="server-01",
+        features={"port": 443},
+        objective="Identify potential attack paths.",
+        metadata=metadata,
+        deterministic=True,
+        seed=42,
+    )
+
+    prediction.predict(request)
+
+    assert backend.last_request is not None
+    assert backend.last_request.seed == 42
+    assert backend.last_request.deterministic is True
+
+
 def test_prediction_without_backend_raises_error(
     prediction_request: PredictionRequest,
 ) -> None:
@@ -199,6 +221,62 @@ def test_prediction_engine_execution(
     assert result.status == ExecutionStatus.SUCCEEDED
     assert result.output["subject"] == "server-01"
     assert result.error is None
+
+
+def test_prediction_engine_execution_preserves_seed(
+    prediction: Prediction,
+    metadata: ContractMetadata,
+    backend: MockPredictionBackend,
+) -> None:
+    """Preserve seed and deterministic settings through ENGINE execution."""
+    execution_request = ExecutionRequest(
+        component=ComponentName.AAPP,
+        operation="predict",
+        payload={
+            "subject": "server-01",
+            "objective": "Identify potential attack paths.",
+            "features": {"port": 443},
+            "mode": "deterministic",
+        },
+        metadata=metadata,
+        deterministic=True,
+        seed=42,
+    )
+
+    result = prediction.execute(execution_request)
+
+    assert result.status == ExecutionStatus.SUCCEEDED
+    assert backend.last_request is not None
+    assert backend.last_request.seed == 42
+    assert backend.last_request.deterministic is True
+
+
+def test_prediction_engine_execution_without_deterministic_seed(
+    prediction: Prediction,
+    metadata: ContractMetadata,
+    backend: MockPredictionBackend,
+) -> None:
+    """Preserve non-deterministic execution settings through ENGINE."""
+    execution_request = ExecutionRequest(
+        component=ComponentName.AAPP,
+        operation="predict",
+        payload={
+            "subject": "server-01",
+            "objective": "Identify potential attack paths.",
+            "features": {"port": 443},
+            "mode": "probabilistic",
+        },
+        metadata=metadata,
+        deterministic=False,
+        seed=None,
+    )
+
+    result = prediction.execute(execution_request)
+
+    assert result.status == ExecutionStatus.SUCCEEDED
+    assert backend.last_request is not None
+    assert backend.last_request.seed is None
+    assert backend.last_request.deterministic is False
 
 
 def test_prediction_engine_execution_with_probabilistic_mode(

@@ -25,6 +25,7 @@ class ExecutionStateMachine:
     _ALLOWED_TRANSITIONS: ClassVar[dict[ExecutionStatus, set[ExecutionStatus]]] = {
         ExecutionStatus.PENDING: {
             ExecutionStatus.RUNNING,
+            ExecutionStatus.FAILED,
             ExecutionStatus.CANCELLED,
         },
         ExecutionStatus.RUNNING: {

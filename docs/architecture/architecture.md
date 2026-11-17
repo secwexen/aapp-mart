@@ -260,6 +260,7 @@ This document describes the architecture of AAPP-MART Community Edition, includi
 │       ├───engine
 │       │       contracts.py
 │       │       exceptions.py
+│       │       orchestration.py
 │       │       pipeline.py
 │       │       state_machine.py
 │       │       utils.py
@@ -364,6 +365,7 @@ This document describes the architecture of AAPP-MART Community Edition, includi
 │       │       __init__.py
 │       │       
 │       ├───simulation
+│       │       registry.py
 │       │       result.py
 │       │       scenario.py
 │       │       simulator.py

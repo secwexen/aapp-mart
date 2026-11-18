@@ -1,3 +1,5 @@
+"""Evaluate policy requests against explicitly authorized scopes."""
+
 from aapp_mart.policy.models import Decision, Policy, PolicyRequest, PolicyResult
 
 

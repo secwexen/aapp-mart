@@ -1,15 +1,21 @@
-"""Tests for the AAPP-MART audit logging functionality."""
+"""Tests for audit event recording and hash-chain integrity."""
 
 import json
 from pathlib import Path
 
 import pytest
 
-from aapp_mart.audit import AuditLogError, AuditOutcome, create_event, record_event, verify_log
+from aapp_mart.audit import (
+    AuditLogError,
+    AuditOutcome,
+    create_event,
+    record_event,
+    verify_log,
+)
 
 
 def test_records_and_verifies_event(tmp_path: Path) -> None:
-    """Verify that an audit event is recorded and its log is valid."""
+    """Record an event and verify its contents and integrity."""
     log_path = tmp_path / "audit.jsonl"
     event = create_event(
         actor="test-user",
@@ -28,7 +34,7 @@ def test_records_and_verifies_event(tmp_path: Path) -> None:
 
 
 def test_detects_modified_record(tmp_path: Path) -> None:
-    """Verify that modifications to an audit record are detected."""
+    """Detect modifications to an existing audit record."""
     log_path = tmp_path / "audit.jsonl"
     event = create_event(
         actor="test-user",
@@ -50,7 +56,7 @@ def test_detects_modified_record(tmp_path: Path) -> None:
 
 
 def test_rejects_event_without_actor() -> None:
-    """Verify that events without an actor are rejected."""
+    """Reject audit events with an empty actor."""
     with pytest.raises(ValueError, match="actor"):
         create_event(
             actor=" ",
@@ -61,8 +67,10 @@ def test_rejects_event_without_actor() -> None:
         )
 
 
-def test_does_not_append_if_existing_log_is_tampered(tmp_path: Path) -> None:
-    """Verify that events cannot be appended to a tampered audit log."""
+def test_does_not_append_if_existing_log_is_tampered(
+    tmp_path: Path,
+) -> None:
+    """Prevent appending events to a tampered audit log."""
     log_path = tmp_path / "audit.jsonl"
     event = create_event(
         actor="test-user",

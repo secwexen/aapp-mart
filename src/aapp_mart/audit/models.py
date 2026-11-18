@@ -1,4 +1,4 @@
-"""Data models for audit events and their outcomes."""
+"""Audit event models and outcome definitions."""
 
 from dataclasses import dataclass
 from datetime import datetime
@@ -6,7 +6,7 @@ from enum import StrEnum
 
 
 class AuditOutcome(StrEnum):
-    """Represent the possible outcomes of an audited operation."""
+    """Represent the outcome of an audited action."""
 
     ALLOWED = "allowed"
     DENIED = "denied"
@@ -27,7 +27,6 @@ class AuditEvent:
     reason: str
 
     def __post_init__(self) -> None:
-        """Validate required fields and timezone-aware timestamps."""
         for field_name in ("event_id", "actor", "action", "target", "reason"):
             value = getattr(self, field_name)
             if not isinstance(value, str) or not value.strip():

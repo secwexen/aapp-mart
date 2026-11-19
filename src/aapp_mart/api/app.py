@@ -1,12 +1,31 @@
 """AAPP-MART API application entry point."""
 
+from collections.abc import AsyncGenerator
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 
+from aapp_mart.aapp.prediction import Prediction
 from aapp_mart.api.routes.attack_graph import router as attack_graph_router
 from aapp_mart.api.routes.prediction import router as prediction_router
 from aapp_mart.api.routes.reports import router as reports_router
 from aapp_mart.api.routes.risk import router as risk_router
 from aapp_mart.api.routes.simulation import router as simulation_router
+from aapp_mart.engine.pipeline import ExecutionPipeline
+
+
+@asynccontextmanager
+async def lifespan(application: FastAPI) -> AsyncGenerator[None, None]:
+    """Initialize and release application execution resources."""
+    pipeline = ExecutionPipeline()
+    pipeline.register_component(Prediction())
+
+    application.state.execution_pipeline = pipeline
+
+    yield
+
+    application.state.execution_pipeline = None
+
 
 app = FastAPI(
     title="AAPP-MART Community Edition",
@@ -16,6 +35,7 @@ app = FastAPI(
     ),
     docs_url="/docs",
     redoc_url="/redoc",
+    lifespan=lifespan,
 )
 
 app.include_router(prediction_router)

@@ -41,7 +41,9 @@ def test_prediction_executes_through_engine_pipeline() -> None:
 
     assert result["execution_id"]
     assert result["component"] == "aapp"
-    assert result["status"] in {"succeeded", "failed"}
+    assert result["status"] == "failed"
+
+    assert result["error"]["type"] == "PredictionBackendNotConfiguredError"
 
 
 def test_prediction_returns_service_unavailable_when_pipeline_is_unavailable() -> None:

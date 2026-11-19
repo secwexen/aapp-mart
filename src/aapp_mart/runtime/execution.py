@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 from datetime import datetime
 from threading import RLock
 from typing import Any, Mapping
@@ -12,6 +13,8 @@ from aapp_mart.engine.state_machine import ExecutionStateMachine, StateTransitio
 from aapp_mart.engine.utils import normalize_error, utc_now
 from aapp_mart.events import Event, EventMetadata, EventPublisher, EventType
 from aapp_mart.runtime.context import ExecutionContext
+
+logger = logging.getLogger(__name__)
 
 
 class RuntimeExecution:  # pylint: disable=too-many-instance-attributes
@@ -318,8 +321,12 @@ class RuntimeExecution:  # pylint: disable=too-many-instance-attributes
             self._event_publisher.publish(event)
 
         except Exception:  # pylint: disable=broad-exception-caught
-            # Event delivery must not interrupt runtime execution.
-            pass
+            logger.warning(
+                "Runtime lifecycle event publication failed "
+                "(event_type=%s, execution_id=%s).",
+                event_type.value,
+                self.request.execution_id,
+            )
 
     def _ensure_running(self) -> None:
         """Ensure that the execution is currently running."""

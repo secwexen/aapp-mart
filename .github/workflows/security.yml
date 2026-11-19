@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Bandit
         run: |
-          python -m bandit -r . -ll
+          python -m bandit -r src -ll
 
       - name: Run pip-audit
         run: |

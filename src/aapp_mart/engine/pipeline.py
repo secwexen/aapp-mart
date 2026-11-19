@@ -13,6 +13,7 @@ from aapp_mart.engine.contracts import (
     ExecutionStatus,
 )
 from aapp_mart.engine.exceptions import ComponentNotRegisteredError, ExecutionError
+from aapp_mart.engine.state_machine import StateTransition
 from aapp_mart.engine.utils import validate_execution_request
 from aapp_mart.events import EventPublisher
 from aapp_mart.runtime.execution import RuntimeExecution
@@ -119,7 +120,7 @@ class ExecutionPipeline:
     def get_state_history(
         self,
         execution_id: UUID,
-    ):
+    ) -> tuple[StateTransition, ...]:
         """Return the transition history for an execution."""
         with self._lock:
             runtime = self._states.get(execution_id)

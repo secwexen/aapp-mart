@@ -1,8 +1,11 @@
 """API routes for AAPP prediction."""
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException, Request
 
-from aapp_mart.api.schemas import PredictionRequestSchema, PredictionResponseSchema
+from aapp_mart.api.schemas import ExecutionResponseSchema, PredictionRequestSchema
+from aapp_mart.engine.contracts import ComponentName, ExecutionRequest, new_contract_metadata
+from aapp_mart.engine.exceptions import ComponentNotRegisteredError, ContractValidationError, ExecutionError
+from aapp_mart.engine.pipeline import ExecutionPipeline
 
 router = APIRouter(
     prefix="/predictions",
@@ -12,18 +15,69 @@ router = APIRouter(
 
 @router.post(
     "/",
-    response_model=PredictionResponseSchema,
+    response_model=ExecutionResponseSchema,
     status_code=200,
 )
 async def create_prediction(
     request: PredictionRequestSchema,
-) -> PredictionResponseSchema:
-    """Accept an AAPP prediction request.
+    http_request: Request,
+) -> ExecutionResponseSchema:
+    """Execute an AAPP prediction through the ENGINE pipeline."""
+    pipeline: ExecutionPipeline | None = getattr(
+        http_request.app.state,
+        "execution_pipeline",
+        None,
+    )
 
-    The AAPP execution integration will be implemented in a
-    subsequent development step.
-    """
-    raise NotImplementedError("AAPP prediction integration has not been implemented yet.")
+    if pipeline is None:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "error": "execution_pipeline_unavailable",
+                "message": "The execution pipeline is not available.",
+            },
+        )
+
+    try:
+        execution_request = ExecutionRequest(
+            component=ComponentName.AAPP,
+            operation="predict",
+            payload=request.model_dump(),
+            metadata=new_contract_metadata(),
+            deterministic=request.deterministic,
+            seed=request.seed,
+        )
+
+        result = pipeline.submit(execution_request)
+
+        return ExecutionResponseSchema.model_validate(result)
+
+    except ContractValidationError as exc:
+        raise HTTPException(
+            status_code=422,
+            detail={
+                "error": "invalid_execution_request",
+                "message": str(exc),
+            },
+        ) from exc
+
+    except ComponentNotRegisteredError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "error": "component_unavailable",
+                "message": str(exc),
+            },
+        ) from exc
+
+    except ExecutionError as exc:
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "error": "execution_conflict",
+                "message": str(exc),
+            },
+        ) from exc
 
 
 __all__ = ["router"]

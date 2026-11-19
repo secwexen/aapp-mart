@@ -16,8 +16,8 @@ def test_prediction_route_is_registered() -> None:
     assert "post" in response.json()["paths"]["/predictions/"]
 
 
-def test_prediction_returns_not_implemented() -> None:
-    """Verify that prediction requests report the unimplemented integration."""
+def test_prediction_returns_service_unavailable_when_pipeline_is_unavailable() -> None:
+    """Verify structured error handling when the execution pipeline is unavailable."""
     payload: dict[str, object] = {
         "subject": "staging.example.test",
         "features": {},
@@ -29,8 +29,13 @@ def test_prediction_returns_not_implemented() -> None:
 
     response = client.post("/predictions/", json=payload)
 
-    assert response.status_code == 500
-    assert response.text == "Internal Server Error"
+    assert response.status_code == 503
+    assert response.json() == {
+        "detail": {
+            "error": "execution_pipeline_unavailable",
+            "message": "The execution pipeline is not available.",
+        }
+    }
 
 
 def test_prediction_rejects_invalid_request() -> None:

@@ -5,13 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from aapp_mart.audit import (
-    AuditLogError,
-    AuditOutcome,
-    create_event,
-    record_event,
-    verify_log,
-)
+from aapp_mart.audit import AuditLogError, AuditOutcome, create_event, record_event, verify_log
 
 
 def test_records_and_verifies_event(tmp_path: Path) -> None:

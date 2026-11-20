@@ -219,7 +219,7 @@ AAPP-MART is a security assessment and simulation tool. Outputs must be reviewed
 - [API Reference](docs/reference/api-reference.md)
 - [Deployment Guide](docs/guides/deployment.md)
 - [Testing Guide](docs/testing/testing.md)
-- [FAQ](docs/FAQ.md)
+- [Core Concepts](docs/concepts/concepts.md)
 
 ## License
 
@@ -241,7 +241,7 @@ Contributions and suggestions are welcome!
 
 Please open an issue before submitting major changes or new features.
 
-See [CONTRIBUTING](CONTRIBUTING.md) for detailed contribution guidelines.
+See [Contributing Guidelines](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## Roadmap
 
@@ -267,4 +267,4 @@ For the full roadmap and upcoming features, see [Roadmap](ROADMAP.md).
 
 If you discover a security vulnerability, please follow our responsible disclosure process.
 
-See [SECURITY](SECURITY.md) for instructions on reporting issues securely.
+See [Security Guide](SECURITY.md) for instructions on reporting issues securely.

@@ -41,11 +41,11 @@ Contributors are encouraged to:
 - Releases are published when maintainers determine that the project is ready for release.
 - Security fixes and critical bug fixes may be released outside the regular release cycle.
 - Each release should include appropriate version information and release notes.
-- Release history is documented in [CHANGELOG](CHANGELOG.md).
+- Release history is documented in [Changelog](CHANGELOG.md).
 
 ## Security and Compliance
 
-- Security vulnerabilities should be reported through the process described in [SECURITY](SECURITY.md), when available.
+- Security vulnerabilities should be reported through the process described in [Security Policy](SECURITY.md), when available.
 - Third-party attributions and license information are documented in [NOTICE](NOTICE) and [LICENSE 3RD PARTY](LICENSE-3RD-PARTY.md), as applicable.
 - Contributors must ensure that submitted code and dependencies comply with the project's licensing and security requirements.
 

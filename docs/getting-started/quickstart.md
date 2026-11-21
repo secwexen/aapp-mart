@@ -42,7 +42,8 @@ The API binds to `127.0.0.1` by default and is accessible only from the local ma
 
 ### 2. Run Tests
 
+Run the full pytest suite:
+
 ```python
-# Run the full pytest suite
 python -m pytest -v
 ```

@@ -1,6 +1,6 @@
 # Support
 
-Thank you for your interest in the **AAPP-MART** project.
+Thank you for your interest in the AAPP-MART project.
 
 We are committed to providing support for users and contributors.
 
@@ -40,7 +40,7 @@ If you discover a **security issue**, do **NOT** open a public GitHub issue.
 Instead, follow the instructions in:
 
 - Open a [private GitHub Security Advisory](https://github.com/secwexen/aapp-mart/security/advisories/new)  
-- [SECURITY](SECURITY.md)
+- [Security Policy](SECURITY.md)
 
 This ensures responsible disclosure and safe handling.
 
@@ -52,7 +52,7 @@ This ensures responsible disclosure and safe handling.
 
 ## Contributing
 
-If you would like to contribute, please see [CONTRIBUTING](CONTRIBUTING.md) for guidelines.
+If you would like to contribute, please see [Contributing Guidelines](CONTRIBUTING.md) for guidelines.
 
 ## Thank You
 

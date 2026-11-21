@@ -6,7 +6,7 @@ We welcome contributions that improve code quality, security, documentation, and
 
 ## Project Overview
 
-For planned features and project direction, see [ROADMAP](ROADMAP.md).
+For planned features and project direction, see [Roadmap](ROADMAP.md).
 
 ## Ways to Contribute
 
@@ -41,7 +41,7 @@ git checkout -b feature/feature-name
 The main project components are organized as follows:
 
 ```text
-.
+aapp-mart/
 ├── docs/                 # Project documentation
 ├── src/aapp_mart/        # Application source code
 ├── tests/                # Automated tests
@@ -162,7 +162,7 @@ All pull requests must:
 ## Documentation Contributions
 
 - Contributions to the documentation are gladly accepted.
-- Update [README](README.md) or other documentation as needed
+- Update [Readme](README.md) or other documentation as needed
 - Follow Markdown formatting and style conventions
 
 ## Security and Ethics
@@ -172,7 +172,7 @@ AAPP-MART is a security-focused project.
 - Contributions must not include exploit code, malware, or content intended for illegal use.
 - Contributions must remain within the scope of controlled, non-destructive security simulation.
 
-Security issues should be reported according to the [SECURITY](SECURITY.md) policy.
+Security issues should be reported according to the [Security Policy](SECURITY.md) policy.
 
 ## Code of Conduct
 

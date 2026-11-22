@@ -74,7 +74,24 @@ Install the development dependencies:
 python -m pip install -e ".[dev]"
 ```
 
-## 5. Run the Test Suite
+## 5. Run the API
+
+Start the local API server:
+
+```bash
+uvicorn aapp_mart.api.app:app --app-dir src --host 127.0.0.1 --port 8000
+```
+
+The API will be available at:
+
+- **Health Check:** `http://127.0.0.1:8000/health`
+- **Swagger UI:** `http://127.0.0.1:8000/docs`
+- **ReDoc:** `http://127.0.0.1:8000/redoc`
+- **OpenAPI Schema:** `http://127.0.0.1:8000/openapi.json`
+
+The API binds to `127.0.0.1` by default and is accessible only from the local machine.
+
+## 6. Run the Test Suite
 
 Run the automated tests before making changes:
 
@@ -89,29 +106,3 @@ make test
 ```
 
 The test command uses the project's configured pytest options, including coverage reporting.
-
-## 6. Run Code Quality Checks
-
-Run linting and formatting checks:
-
-```bash
-make lint
-```
-
-This checks the code using the tools configured in the project.
-
-To apply formatting and automatically fix supported import-order issues:
-
-```bash
-make format
-```
-
-## 7. Build the Package
-
-Build the distribution packages:
-
-```bash
-make build
-```
-
-The generated distribution files are placed in the `dist/` directory.

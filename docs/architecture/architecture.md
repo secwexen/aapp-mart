@@ -55,7 +55,6 @@ This document describes the architecture of AAPP-MART Community Edition, includi
 │           dependency-review.yml
 │           docker-publish.yml
 │           greetings.yml
-│           label.yml
 │           pylint.yml
 │           python-package.yml
 │           release.yml

@@ -1,16 +1,37 @@
 name: Greetings
 
-on: [pull_request_target, issues]
+on:
+  pull_request:
+    types: [opened]
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
 
 jobs:
   greeting:
+    name: Greet First-Time Contributors
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
+
     steps:
-    - uses: actions/first-interaction@v3
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Message that will be displayed on users' first issue"
-        pr-message: "Message that will be displayed on users' first pull request"
+      - name: Welcome First-Time Contributors
+        uses: actions/first-interaction@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            👋 Welcome!
+
+            Thank you for opening your first issue!
+            We appreciate your contribution.
+
+            Your issue will be reviewed as soon as possible.
+
+          pr-message: |
+            🎉 Welcome!
+
+            Thank you for submitting your first pull request!
+            We appreciate your contribution to this project.
+            
+            Your changes will be reviewed as soon as possible.

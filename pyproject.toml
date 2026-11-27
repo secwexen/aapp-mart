@@ -20,16 +20,16 @@ authors = [
 ]
 
 keywords = [
-  "ai",
+  "adversary-emulation",
+  "agentic-ai",
   "ai-security",
+  "artificial-intelligence",
   "attack-graph",
-  "autonomous-red-teaming",
+  "attack-path-analysis",
   "attack-path-prediction",
-  "attack-simulation",
-  "autonomous-agents",
+  "autonomous-red-teaming",
   "breach-and-attack-simulation",
   "cybersecurity",
-  "devsecops",
   "mitre-attack",
   "multi-agent-systems",
   "offensive-security",

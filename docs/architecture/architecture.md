@@ -59,8 +59,6 @@ This document describes the architecture of AAPP-MART Community Edition, includi
 │           release.yml
 │           secret-scan.yml
 │           security.yml
-│           stale.yml
-│           summary.yml
 │           
 ├───.vscode
 │       extensions.json

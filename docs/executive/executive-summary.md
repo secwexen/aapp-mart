@@ -6,9 +6,9 @@ As digital infrastructures grow in complexity, security teams need better ways t
 
 The architecture consists of three major subsystems:
 
-- **AI-Powered Autonomous Attack Path Prediction (AAPP)** – Analyzes available target data and attack graph structures to identify and prioritize potential attack paths.
-- **Multi-Agent Red Team Simulation (MART)** – Coordinates specialized agents within controlled simulation workflows.
-- **Core Orchestration Engine** – Coordinates execution, manages simulation state, and connects the core components.
+- **AI-Powered Autonomous Attack Path Prediction (AAPP)** - Analyzes available target data and attack graph structures to identify and prioritize potential attack paths.
+- **Multi-Agent Red Team Simulation (MART)** - Coordinates specialized agents within controlled simulation workflows.
+- **Core Orchestration Engine** - Coordinates execution, manages simulation state, and connects the core components.
 
 AAPP-MART is designed to help security teams:
 

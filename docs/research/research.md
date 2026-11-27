@@ -6,11 +6,11 @@ Its architecture is designed to support the analysis of potential attack paths a
 
 ## Research & Engineering Foundations
 
-- **Attack Graph Theory** – Represents relationships between relevant entities and potential attack transitions.
-- **Attack-Path Analysis** – Analyzes graph structures to identify and prioritize potential attack paths.
-- **Risk Assessment** – Evaluates and prioritizes risks using the scoring factors and methods implemented in the engine.
-- **Multi-Agent Simulation** – Coordinates specialized agents within controlled simulation workflows.
-- **Vulnerability Analysis** – Processes CVE data to support vulnerability analysis and risk assessment.
+- **Attack Graph Theory** - Represents relationships between relevant entities and potential attack transitions.
+- **Attack-Path Analysis** - Analyzes graph structures to identify and prioritize potential attack paths.
+- **Risk Assessment** - Evaluates and prioritizes risks using the scoring factors and methods implemented in the engine.
+- **Multi-Agent Simulation** - Coordinates specialized agents within controlled simulation workflows.
+- **Vulnerability Analysis** - Processes CVE data to support vulnerability analysis and risk assessment.
 
 ## Threat Modeling
 
